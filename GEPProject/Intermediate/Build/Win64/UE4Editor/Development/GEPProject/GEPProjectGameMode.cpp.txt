@@ -13,6 +13,8 @@ E:\epk\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\DebugTextInf
 E:\epk\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\HUD.generated.h
 E:\Github\GEP\GEPProject\Intermediate\Build\Win64\UE4Editor\Inc\GEPProject\GEPProjectHUD.generated.h
 E:\Github\GEP\GEPProject\Source\GEPProject\GEPProjectCharacter.h
+E:\Github\GEP\GEPProject\Source\GEPProject\Pawnable.h
+E:\Github\GEP\GEPProject\Intermediate\Build\Win64\UE4Editor\Inc\GEPProject\Pawnable.generated.h
 E:\epk\UE_4.25\Engine\Source\Runtime\Engine\Classes\GameFramework/Character.h
 E:\epk\UE_4.25\Engine\Source\Runtime\Engine\Classes\GameFramework/RootMotionSource.h
 E:\epk\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\RootMotionSource.generated.h

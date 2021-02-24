@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\GEPProject.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{5C76F974-4D1F-4F11-B1F5-E68D3CC98D70}</UniqueIdentifier>
+      <UniqueIdentifier>{8DD18AA4-4A1C-4FD5-B4E3-202851FBCF48}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\GEPProject.Target.cs">
       <Filter>Source</Filter>
@@ -11,8 +11,9 @@
     <None Include="..\..\Source\GEPProjectEditor.Target.cs">
       <Filter>Source</Filter>
     </None>
+    <None Include="..\..\GEPProject.sln.DotSettings.user" />
     <Filter Include="Config">
-      <UniqueIdentifier>{55DEDA5C-F543-486E-B67D-775661F4BDD7}</UniqueIdentifier>
+      <UniqueIdentifier>{ACDB0921-EB18-49DF-B2A1-FD30DDAE9EFC}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,8 +31,14 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\GEPProject">
-      <UniqueIdentifier>{194D7BA3-3E8E-494B-80E3-0D6539A8962A}</UniqueIdentifier>
+      <UniqueIdentifier>{B87A6A42-9374-49C6-A4D0-F44A90C0B993}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\GEPProject\Fireable.cpp">
+      <Filter>Source\GEPProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\GEPProject\Fireable.h">
+      <Filter>Source\GEPProject</Filter>
+    </ClInclude>
     <None Include="..\..\Source\GEPProject\GEPProject.Build.cs">
       <Filter>Source\GEPProject</Filter>
     </None>
@@ -63,6 +70,24 @@
       <Filter>Source\GEPProject</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\GEPProject\GEPProjectProjectile.h">
+      <Filter>Source\GEPProject</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\GEPProject\Pawnable.cpp">
+      <Filter>Source\GEPProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\GEPProject\Pawnable.h">
+      <Filter>Source\GEPProject</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\GEPProject\Weapon_Base.cpp">
+      <Filter>Source\GEPProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\GEPProject\Weapon_Base.h">
+      <Filter>Source\GEPProject</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\GEPProject\Weapon_Hitscan.cpp">
+      <Filter>Source\GEPProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\GEPProject\Weapon_Hitscan.h">
       <Filter>Source\GEPProject</Filter>
     </ClInclude>
   </ItemGroup>
