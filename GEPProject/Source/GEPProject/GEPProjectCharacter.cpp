@@ -8,7 +8,9 @@
 #include "GameFramework/InputSettings.h"
 #include "Components/ChildActorComponent.h"
 #include "Fireable.h"
+#include "Interactable.h"
 #include "GameFramework/Pawn.h"
+#include "Kismet/GameplayStatics.h"
 
 DEFINE_LOG_CATEGORY_STATIC(LogFPChar, Warning, All);
 
@@ -71,6 +73,9 @@ void AGEPProjectCharacter::SetupPlayerInputComponent(class UInputComponent* Play
 	PlayerInputComponent->BindAxis("TurnRate", this, &AGEPProjectCharacter::TurnAtRate);
 	PlayerInputComponent->BindAxis("LookUp", this, &APawn::AddControllerPitchInput);
 	PlayerInputComponent->BindAxis("LookUpRate", this, &AGEPProjectCharacter::LookUpAtRate);
+
+	PlayerInputComponent->BindAction("Fire", IE_Pressed, this, &AGEPProjectCharacter::OnFire);
+	PlayerInputComponent->BindAction("Interact", IE_Pressed, this, &AGEPProjectCharacter::OnInteract);
 }
 
 void AGEPProjectCharacter::OnFire()
@@ -79,8 +84,31 @@ void AGEPProjectCharacter::OnFire()
 	IFireable* weaponCast = Cast<IFireable>(child); //cast to Interface through Actor
 	if (weaponCast)
 	{
-		GEngine->AddOnScreenDebugMessage(-1,5.f,FColor::Red,FString::Printf(TEXT("Cast Success yay")));
 		weaponCast->Execute_Fire(child);
+	}
+}
+
+void AGEPProjectCharacter::OnInteract()
+{
+	UWorld* const world = GetWorld();
+	if (world != nullptr)
+	{
+		FHitResult hit(ForceInit);
+		FVector start = UGameplayStatics::GetPlayerController(world, 0)->PlayerCameraManager->GetCameraLocation();
+		FVector forward = UGameplayStatics::GetPlayerController(world, 0)->PlayerCameraManager->GetActorForwardVector();
+		FVector end = (forward * interactRange) + start;
+		
+		FCollisionQueryParams collsionParams;
+
+		if (world->LineTraceSingleByChannel(hit, start,end, ECC_Visibility, collsionParams))
+		{
+			IInteractable* shootableCast = Cast<IInteractable>(hit.GetActor()); //cast to Interface through Actor
+			if (shootableCast)
+			{
+				shootableCast->Execute_OnInteract(hit.GetActor());
+			}
+			//hit.Actor->K2_DestroyActor();
+		}
 	}
 }
 

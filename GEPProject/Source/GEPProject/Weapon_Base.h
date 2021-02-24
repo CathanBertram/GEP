@@ -7,7 +7,7 @@
 #include "Fireable.h"
 #include "Weapon_Base.generated.h"
 
-UCLASS(Abstract)
+UCLASS(Abstract   )
 class GEPPROJECT_API AWeapon_Base : public AActor, public IFireable
 {
 	GENERATED_BODY()

@@ -2,6 +2,7 @@
 
 
 #include "Weapon_Hitscan.h"
+#include "Shootable.h"
 #include "Engine/World.h"
 #include "Engine/Engine.h"
 #include "Components/ArrowComponent.h"
@@ -22,16 +23,21 @@ bool AWeapon_Hitscan::Fire_Implementation()
 		FVector end = (forward * range) + start;
 		//FVector start = ((muzzle != nullptr) ? muzzle->GetComponentLocation() : GetActorLocation());
 		//FVector end = (((muzzle != nullptr) ? muzzle->GetForwardVector() : GetActorForwardVector()) * 100000);
-
+		
+		
 		const FName traceTag("TraceTag");
-		world->DebugDrawTraceTag = traceTag;
-		FCollisionQueryParams collsionParams;
-		collsionParams.TraceTag = traceTag;
+		world->DebugDrawTraceTag = traceTag; //Draws arrow at hit point
+		FCollisionQueryParams collisionParams;
+		collisionParams.TraceTag = traceTag;
 
-		if (world->LineTraceSingleByChannel(hit, start,end, ECC_Visibility, collsionParams))
+		if (world->LineTraceSingleByChannel(hit, start,end, ECC_Visibility, collisionParams))
 		{
-			GEngine->AddOnScreenDebugMessage(-1,5.f,FColor::Red,hit.GetActor()->GetName());
-			hit.Actor->K2_DestroyActor();
+			IShootable* shootableCast = Cast<IShootable>(hit.GetActor()); //cast to Interface through Actor
+			if (shootableCast)
+			{
+				shootableCast->Execute_GetShot(hit.GetActor());
+			}
+			//hit.Actor->K2_DestroyActor();
 		}
 	}
 	return true;

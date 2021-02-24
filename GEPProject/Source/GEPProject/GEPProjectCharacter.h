@@ -41,11 +41,15 @@ public:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category=Camera)
 	float BaseLookUpRate;
 
+private:
+	UPROPERTY(EditAnywhere, Category = "PlayerVariables")
+	float interactRange;
 protected:
 	
 	/** Fires a projectile. */
 	void OnFire();
 
+	void OnInteract();
 	/** Handles moving forward/backward */
 	void MoveForward(float Val);
 
