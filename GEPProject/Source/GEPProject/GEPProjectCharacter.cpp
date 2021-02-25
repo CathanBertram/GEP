@@ -94,7 +94,7 @@ void AGEPProjectCharacter::OnInteract()
 	if (world != nullptr)
 	{
 		FHitResult hit(ForceInit);
-		FVector start = UGameplayStatics::GetPlayerController(world, 0)->PlayerCameraManager->GetCameraLocation();
+		FVector start = UGameplayStatics::GetPlayerController(world, 0)->PlayerCameraManager->GetCameraLocation(); 
 		FVector forward = UGameplayStatics::GetPlayerController(world, 0)->PlayerCameraManager->GetActorForwardVector();
 		FVector end = (forward * interactRange) + start;
 		
