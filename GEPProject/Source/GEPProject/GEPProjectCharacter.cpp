@@ -7,8 +7,8 @@
 #include "Components/InputComponent.h"
 #include "GameFramework/InputSettings.h"
 #include "Components/ChildActorComponent.h"
-#include "Fireable.h"
-#include "Interactable.h"
+#include "Interfaces/Fireable.h"
+#include "Interfaces/Interactable.h"
 #include "GameFramework/Pawn.h"
 #include "Kismet/GameplayStatics.h"
 

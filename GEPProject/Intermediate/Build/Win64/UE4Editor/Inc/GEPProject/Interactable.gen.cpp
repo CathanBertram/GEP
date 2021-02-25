@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "GEPProject/Interactable.h"
+#include "GEPProject/Interfaces/Interactable.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -46,7 +46,7 @@ void EmptyLinkFunctionForGeneratedCodeInteractable() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UInteractable_OnInteract_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Interactable.h" },
+		{ "ModuleRelativePath", "Interfaces/Interactable.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UInteractable_OnInteract_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UInteractable, nullptr, "OnInteract", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UInteractable_OnInteract_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UInteractable_OnInteract_Statics::Function_MetaDataParams)) };
@@ -78,11 +78,11 @@ void EmptyLinkFunctionForGeneratedCodeInteractable() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_GEPProject,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UInteractable_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UInteractable_OnInteract, "OnInteract" }, // 2313501441
+		{ &Z_Construct_UFunction_UInteractable_OnInteract, "OnInteract" }, // 1535209596
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UInteractable_Statics::Class_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Interactable.h" },
+		{ "ModuleRelativePath", "Interfaces/Interactable.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UInteractable_Statics::StaticCppClassTypeInfo = {
@@ -112,7 +112,7 @@ void EmptyLinkFunctionForGeneratedCodeInteractable() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UInteractable, 2553339545);
+	IMPLEMENT_CLASS(UInteractable, 1330532841);
 	template<> GEPPROJECT_API UClass* StaticClass<UInteractable>()
 	{
 		return UInteractable::StaticClass();

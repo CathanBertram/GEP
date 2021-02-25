@@ -4,8 +4,8 @@
 
 #include "CoreMinimal.h"
 
-#include "Interactable.h"
-#include "Shootable.h"
+#include "Interfaces/Interactable.h"
+#include "Interfaces/Shootable.h"
 #include "GameFramework/Actor.h"
 #include "TestBlock.generated.h"
 

@@ -3,7 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "Pawnable.h"
+#include "Interfaces/Pawnable.h"
 #include "GameFramework/Character.h"
 #include "GEPProjectCharacter.generated.h"
 

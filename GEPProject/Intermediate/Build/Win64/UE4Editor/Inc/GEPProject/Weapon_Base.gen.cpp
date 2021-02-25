@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "GEPProject/Weapon_Base.h"
+#include "GEPProject/Weapons/Weapon_Base.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -64,7 +64,7 @@ void EmptyLinkFunctionForGeneratedCodeWeapon_Base() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AWeapon_Base_Fire_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Weapon_Base.h" },
+		{ "ModuleRelativePath", "Weapons/Weapon_Base.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AWeapon_Base_Fire_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AWeapon_Base, nullptr, "Fire", nullptr, nullptr, sizeof(Weapon_Base_eventFire_Parms), Z_Construct_UFunction_AWeapon_Base_Fire_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AWeapon_Base_Fire_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AWeapon_Base_Fire_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AWeapon_Base_Fire_Statics::Function_MetaDataParams)) };
@@ -110,19 +110,19 @@ void EmptyLinkFunctionForGeneratedCodeWeapon_Base() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_GEPProject,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AWeapon_Base_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AWeapon_Base_Fire, "Fire" }, // 2799772280
+		{ &Z_Construct_UFunction_AWeapon_Base_Fire, "Fire" }, // 1045537727
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AWeapon_Base_Statics::Class_MetaDataParams[] = {
-		{ "IncludePath", "Weapon_Base.h" },
-		{ "ModuleRelativePath", "Weapon_Base.h" },
+		{ "IncludePath", "Weapons/Weapon_Base.h" },
+		{ "ModuleRelativePath", "Weapons/Weapon_Base.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AWeapon_Base_Statics::NewProp_gunMuzzle_MetaData[] = {
 		{ "Category", "Weapon_Base" },
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Weapon_Base.h" },
+		{ "ModuleRelativePath", "Weapons/Weapon_Base.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AWeapon_Base_Statics::NewProp_gunMuzzle = { "gunMuzzle", nullptr, (EPropertyFlags)0x00400000000b0009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AWeapon_Base, gunMuzzle), Z_Construct_UClass_UArrowComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AWeapon_Base_Statics::NewProp_gunMuzzle_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AWeapon_Base_Statics::NewProp_gunMuzzle_MetaData)) };
@@ -130,7 +130,7 @@ void EmptyLinkFunctionForGeneratedCodeWeapon_Base() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AWeapon_Base_Statics::NewProp_gunMesh_MetaData[] = {
 		{ "Category", "Weapon_Base" },
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Weapon_Base.h" },
+		{ "ModuleRelativePath", "Weapons/Weapon_Base.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AWeapon_Base_Statics::NewProp_gunMesh = { "gunMesh", nullptr, (EPropertyFlags)0x00400000000b0009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AWeapon_Base, gunMesh), Z_Construct_UClass_USkeletalMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AWeapon_Base_Statics::NewProp_gunMesh_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AWeapon_Base_Statics::NewProp_gunMesh_MetaData)) };
@@ -138,7 +138,7 @@ void EmptyLinkFunctionForGeneratedCodeWeapon_Base() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AWeapon_Base_Statics::NewProp_root_MetaData[] = {
 		{ "Category", "Weapon_Base" },
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Weapon_Base.h" },
+		{ "ModuleRelativePath", "Weapons/Weapon_Base.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AWeapon_Base_Statics::NewProp_root = { "root", nullptr, (EPropertyFlags)0x00400000000b0009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AWeapon_Base, root), Z_Construct_UClass_USceneComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AWeapon_Base_Statics::NewProp_root_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AWeapon_Base_Statics::NewProp_root_MetaData)) };
@@ -177,7 +177,7 @@ void EmptyLinkFunctionForGeneratedCodeWeapon_Base() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AWeapon_Base, 751437043);
+	IMPLEMENT_CLASS(AWeapon_Base, 302993713);
 	template<> GEPPROJECT_API UClass* StaticClass<AWeapon_Base>()
 	{
 		return AWeapon_Base::StaticClass();

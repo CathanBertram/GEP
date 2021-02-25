@@ -2,7 +2,7 @@
 
 
 #include "Weapon_Hitscan.h"
-#include "Shootable.h"
+#include "GEPProject/Interfaces/Shootable.h"
 #include "Engine/World.h"
 #include "Engine/Engine.h"
 #include "Components/ArrowComponent.h"

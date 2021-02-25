@@ -4,7 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
-#include "Fireable.h"
+#include "GEPProject/Interfaces/Fireable.h"
 #include "Weapon_Base.generated.h"
 
 UCLASS(Abstract   )

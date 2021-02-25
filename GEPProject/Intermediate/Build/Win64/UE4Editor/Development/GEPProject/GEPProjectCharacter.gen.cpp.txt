@@ -2,7 +2,7 @@ E:\Github\GEP\GEPProject\Intermediate\Build\Win64\UE4Editor\Development\GEPProje
 E:\epk\UE_4.25\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
 E:\epk\UE_4.25\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
 E:\Github\GEP\GEPProject\Source\GEPProject/GEPProjectCharacter.h
-E:\Github\GEP\GEPProject\Source\GEPProject\Pawnable.h
+E:\Github\GEP\GEPProject\Source\GEPProject\Interfaces/Pawnable.h
 E:\Github\GEP\GEPProject\Intermediate\Build\Win64\UE4Editor\Inc\GEPProject\Pawnable.generated.h
 E:\epk\UE_4.25\Engine\Source\Runtime\Engine\Classes\GameFramework/Character.h
 E:\epk\UE_4.25\Engine\Source\Runtime\Engine\Classes\GameFramework/RootMotionSource.h

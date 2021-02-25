@@ -1,8 +1,8 @@
 E:\Github\GEP\GEPProject\Intermediate\Build\Win64\UE4Editor\Development\GEPProject\Definitions.GEPProject.h
 E:\Github\GEP\GEPProject\Source\GEPProject\TestBlock.h
-E:\Github\GEP\GEPProject\Source\GEPProject\Interactable.h
+E:\Github\GEP\GEPProject\Source\GEPProject\Interfaces/Interactable.h
 E:\Github\GEP\GEPProject\Intermediate\Build\Win64\UE4Editor\Inc\GEPProject\Interactable.generated.h
-E:\Github\GEP\GEPProject\Source\GEPProject\Shootable.h
+E:\Github\GEP\GEPProject\Source\GEPProject\Interfaces/Shootable.h
 E:\Github\GEP\GEPProject\Intermediate\Build\Win64\UE4Editor\Inc\GEPProject\Shootable.generated.h
 E:\Github\GEP\GEPProject\Intermediate\Build\Win64\UE4Editor\Inc\GEPProject\TestBlock.generated.h
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\INCLUDE\string

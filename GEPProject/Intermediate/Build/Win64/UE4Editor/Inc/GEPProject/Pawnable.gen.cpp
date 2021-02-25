@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "GEPProject/Pawnable.h"
+#include "GEPProject/Interfaces/Pawnable.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -55,7 +55,7 @@ void EmptyLinkFunctionForGeneratedCodePawnable() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UPawnable_GetAsPawn_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Pawnable.h" },
+		{ "ModuleRelativePath", "Interfaces/Pawnable.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UPawnable_GetAsPawn_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UPawnable, nullptr, "GetAsPawn", nullptr, nullptr, sizeof(Pawnable_eventGetAsPawn_Parms), Z_Construct_UFunction_UPawnable_GetAsPawn_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UPawnable_GetAsPawn_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UPawnable_GetAsPawn_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UPawnable_GetAsPawn_Statics::Function_MetaDataParams)) };
@@ -87,11 +87,11 @@ void EmptyLinkFunctionForGeneratedCodePawnable() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_GEPProject,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UPawnable_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UPawnable_GetAsPawn, "GetAsPawn" }, // 1301038161
+		{ &Z_Construct_UFunction_UPawnable_GetAsPawn, "GetAsPawn" }, // 1959231463
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UPawnable_Statics::Class_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Pawnable.h" },
+		{ "ModuleRelativePath", "Interfaces/Pawnable.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UPawnable_Statics::StaticCppClassTypeInfo = {
@@ -121,7 +121,7 @@ void EmptyLinkFunctionForGeneratedCodePawnable() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UPawnable, 2601682870);
+	IMPLEMENT_CLASS(UPawnable, 3090350944);
 	template<> GEPPROJECT_API UClass* StaticClass<UPawnable>()
 	{
 		return UPawnable::StaticClass();

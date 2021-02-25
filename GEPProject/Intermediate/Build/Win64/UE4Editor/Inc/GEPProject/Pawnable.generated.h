@@ -14,20 +14,20 @@ class APawn;
 #endif
 #define GEPPROJECT_Pawnable_generated_h
 
-#define GEPProject_Source_GEPProject_Pawnable_h_13_SPARSE_DATA
-#define GEPProject_Source_GEPProject_Pawnable_h_13_RPC_WRAPPERS \
+#define GEPProject_Source_GEPProject_Interfaces_Pawnable_h_13_SPARSE_DATA
+#define GEPProject_Source_GEPProject_Interfaces_Pawnable_h_13_RPC_WRAPPERS \
 	virtual APawn* GetAsPawn_Implementation() { return NULL; }; \
  \
 	DECLARE_FUNCTION(execGetAsPawn);
 
 
-#define GEPProject_Source_GEPProject_Pawnable_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
+#define GEPProject_Source_GEPProject_Interfaces_Pawnable_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
 	virtual APawn* GetAsPawn_Implementation() { return NULL; }; \
  \
 	DECLARE_FUNCTION(execGetAsPawn);
 
 
-#define GEPProject_Source_GEPProject_Pawnable_h_13_EVENT_PARMS \
+#define GEPProject_Source_GEPProject_Interfaces_Pawnable_h_13_EVENT_PARMS \
 	struct Pawnable_eventGetAsPawn_Parms \
 	{ \
 		APawn* ReturnValue; \
@@ -40,8 +40,8 @@ class APawn;
 	};
 
 
-#define GEPProject_Source_GEPProject_Pawnable_h_13_CALLBACK_WRAPPERS
-#define GEPProject_Source_GEPProject_Pawnable_h_13_STANDARD_CONSTRUCTORS \
+#define GEPProject_Source_GEPProject_Interfaces_Pawnable_h_13_CALLBACK_WRAPPERS
+#define GEPProject_Source_GEPProject_Interfaces_Pawnable_h_13_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	GEPPROJECT_API UPawnable(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UPawnable) \
@@ -54,7 +54,7 @@ private: \
 public:
 
 
-#define GEPProject_Source_GEPProject_Pawnable_h_13_ENHANCED_CONSTRUCTORS \
+#define GEPProject_Source_GEPProject_Interfaces_Pawnable_h_13_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	GEPPROJECT_API UPawnable(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
@@ -67,7 +67,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UPawnable); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UPawnable)
 
 
-#define GEPProject_Source_GEPProject_Pawnable_h_13_GENERATED_UINTERFACE_BODY() \
+#define GEPProject_Source_GEPProject_Interfaces_Pawnable_h_13_GENERATED_UINTERFACE_BODY() \
 private: \
 	static void StaticRegisterNativesUPawnable(); \
 	friend struct Z_Construct_UClass_UPawnable_Statics; \
@@ -76,22 +76,22 @@ public: \
 	DECLARE_SERIALIZER(UPawnable)
 
 
-#define GEPProject_Source_GEPProject_Pawnable_h_13_GENERATED_BODY_LEGACY \
+#define GEPProject_Source_GEPProject_Interfaces_Pawnable_h_13_GENERATED_BODY_LEGACY \
 		PRAGMA_DISABLE_DEPRECATION_WARNINGS \
-	GEPProject_Source_GEPProject_Pawnable_h_13_GENERATED_UINTERFACE_BODY() \
-	GEPProject_Source_GEPProject_Pawnable_h_13_STANDARD_CONSTRUCTORS \
+	GEPProject_Source_GEPProject_Interfaces_Pawnable_h_13_GENERATED_UINTERFACE_BODY() \
+	GEPProject_Source_GEPProject_Interfaces_Pawnable_h_13_STANDARD_CONSTRUCTORS \
 	PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define GEPProject_Source_GEPProject_Pawnable_h_13_GENERATED_BODY \
+#define GEPProject_Source_GEPProject_Interfaces_Pawnable_h_13_GENERATED_BODY \
 	PRAGMA_DISABLE_DEPRECATION_WARNINGS \
-	GEPProject_Source_GEPProject_Pawnable_h_13_GENERATED_UINTERFACE_BODY() \
-	GEPProject_Source_GEPProject_Pawnable_h_13_ENHANCED_CONSTRUCTORS \
+	GEPProject_Source_GEPProject_Interfaces_Pawnable_h_13_GENERATED_UINTERFACE_BODY() \
+	GEPProject_Source_GEPProject_Interfaces_Pawnable_h_13_ENHANCED_CONSTRUCTORS \
 private: \
 	PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define GEPProject_Source_GEPProject_Pawnable_h_13_INCLASS_IINTERFACE_NO_PURE_DECLS \
+#define GEPProject_Source_GEPProject_Interfaces_Pawnable_h_13_INCLASS_IINTERFACE_NO_PURE_DECLS \
 protected: \
 	virtual ~IPawnable() {} \
 public: \
@@ -101,7 +101,7 @@ public: \
 	virtual UObject* _getUObject() const { check(0 && "Missing required implementation."); return nullptr; }
 
 
-#define GEPProject_Source_GEPProject_Pawnable_h_13_INCLASS_IINTERFACE \
+#define GEPProject_Source_GEPProject_Interfaces_Pawnable_h_13_INCLASS_IINTERFACE \
 protected: \
 	virtual ~IPawnable() {} \
 public: \
@@ -111,28 +111,28 @@ public: \
 	virtual UObject* _getUObject() const { check(0 && "Missing required implementation."); return nullptr; }
 
 
-#define GEPProject_Source_GEPProject_Pawnable_h_10_PROLOG \
-	GEPProject_Source_GEPProject_Pawnable_h_13_EVENT_PARMS
+#define GEPProject_Source_GEPProject_Interfaces_Pawnable_h_10_PROLOG \
+	GEPProject_Source_GEPProject_Interfaces_Pawnable_h_13_EVENT_PARMS
 
 
-#define GEPProject_Source_GEPProject_Pawnable_h_21_GENERATED_BODY_LEGACY \
+#define GEPProject_Source_GEPProject_Interfaces_Pawnable_h_21_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	GEPProject_Source_GEPProject_Pawnable_h_13_SPARSE_DATA \
-	GEPProject_Source_GEPProject_Pawnable_h_13_RPC_WRAPPERS \
-	GEPProject_Source_GEPProject_Pawnable_h_13_CALLBACK_WRAPPERS \
-	GEPProject_Source_GEPProject_Pawnable_h_13_INCLASS_IINTERFACE \
+	GEPProject_Source_GEPProject_Interfaces_Pawnable_h_13_SPARSE_DATA \
+	GEPProject_Source_GEPProject_Interfaces_Pawnable_h_13_RPC_WRAPPERS \
+	GEPProject_Source_GEPProject_Interfaces_Pawnable_h_13_CALLBACK_WRAPPERS \
+	GEPProject_Source_GEPProject_Interfaces_Pawnable_h_13_INCLASS_IINTERFACE \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define GEPProject_Source_GEPProject_Pawnable_h_21_GENERATED_BODY \
+#define GEPProject_Source_GEPProject_Interfaces_Pawnable_h_21_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	GEPProject_Source_GEPProject_Pawnable_h_13_SPARSE_DATA \
-	GEPProject_Source_GEPProject_Pawnable_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
-	GEPProject_Source_GEPProject_Pawnable_h_13_CALLBACK_WRAPPERS \
-	GEPProject_Source_GEPProject_Pawnable_h_13_INCLASS_IINTERFACE_NO_PURE_DECLS \
+	GEPProject_Source_GEPProject_Interfaces_Pawnable_h_13_SPARSE_DATA \
+	GEPProject_Source_GEPProject_Interfaces_Pawnable_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
+	GEPProject_Source_GEPProject_Interfaces_Pawnable_h_13_CALLBACK_WRAPPERS \
+	GEPProject_Source_GEPProject_Interfaces_Pawnable_h_13_INCLASS_IINTERFACE_NO_PURE_DECLS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -140,7 +140,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 template<> GEPPROJECT_API UClass* StaticClass<class UPawnable>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID GEPProject_Source_GEPProject_Pawnable_h
+#define CURRENT_FILE_ID GEPProject_Source_GEPProject_Interfaces_Pawnable_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -1,11 +1,11 @@
 E:\Github\GEP\GEPProject\Intermediate\Build\Win64\UE4Editor\Development\GEPProject\Definitions.GEPProject.h
-E:\Github\GEP\GEPProject\Source\GEPProject\Weapon_Hitscan.h
-E:\Github\GEP\GEPProject\Source\GEPProject\Weapon_Base.h
-E:\Github\GEP\GEPProject\Source\GEPProject\Fireable.h
+E:\Github\GEP\GEPProject\Source\GEPProject\Weapons\Weapon_Hitscan.h
+E:\Github\GEP\GEPProject\Source\GEPProject\Weapons\Weapon_Base.h
+E:\Github\GEP\GEPProject\Source\GEPProject/Interfaces/Fireable.h
 E:\Github\GEP\GEPProject\Intermediate\Build\Win64\UE4Editor\Inc\GEPProject\Fireable.generated.h
 E:\Github\GEP\GEPProject\Intermediate\Build\Win64\UE4Editor\Inc\GEPProject\Weapon_Base.generated.h
 E:\Github\GEP\GEPProject\Intermediate\Build\Win64\UE4Editor\Inc\GEPProject\Weapon_Hitscan.generated.h
-E:\Github\GEP\GEPProject\Source\GEPProject\Shootable.h
+E:\Github\GEP\GEPProject\Source\GEPProject/Interfaces/Shootable.h
 E:\Github\GEP\GEPProject\Intermediate\Build\Win64\UE4Editor\Inc\GEPProject\Shootable.generated.h
 E:\epk\UE_4.25\Engine\Source\Runtime\Engine\Classes\Components/ArrowComponent.h
 E:\epk\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ArrowComponent.generated.h

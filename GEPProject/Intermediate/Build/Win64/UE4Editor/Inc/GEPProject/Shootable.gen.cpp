@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "GEPProject/Shootable.h"
+#include "GEPProject/Interfaces/Shootable.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -46,7 +46,7 @@ void EmptyLinkFunctionForGeneratedCodeShootable() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UShootable_GetShot_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Shootable.h" },
+		{ "ModuleRelativePath", "Interfaces/Shootable.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UShootable_GetShot_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UShootable, nullptr, "GetShot", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UShootable_GetShot_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UShootable_GetShot_Statics::Function_MetaDataParams)) };
@@ -78,11 +78,11 @@ void EmptyLinkFunctionForGeneratedCodeShootable() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_GEPProject,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UShootable_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UShootable_GetShot, "GetShot" }, // 3620068136
+		{ &Z_Construct_UFunction_UShootable_GetShot, "GetShot" }, // 3357023858
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UShootable_Statics::Class_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Shootable.h" },
+		{ "ModuleRelativePath", "Interfaces/Shootable.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UShootable_Statics::StaticCppClassTypeInfo = {
@@ -112,7 +112,7 @@ void EmptyLinkFunctionForGeneratedCodeShootable() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UShootable, 1960231752);
+	IMPLEMENT_CLASS(UShootable, 1869123021);
 	template<> GEPPROJECT_API UClass* StaticClass<UShootable>()
 	{
 		return UShootable::StaticClass();

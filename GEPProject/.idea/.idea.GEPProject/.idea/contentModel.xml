@@ -43523,8 +43523,6 @@
       <e p="packages" t="ExcludeRecursive" />
       <e p="Source" t="Include">
         <e p="GEPProject" t="Include">
-          <e p="Fireable.cpp" t="Include" />
-          <e p="Fireable.h" t="Include" />
           <e p="GEPProject.Build.cs" t="Include" />
           <e p="GEPProject.cpp" t="Include" />
           <e p="GEPProject.h" t="Include" />
@@ -43536,18 +43534,26 @@
           <e p="GEPProjectHUD.h" t="Include" />
           <e p="GEPProjectProjectile.cpp" t="Include" />
           <e p="GEPProjectProjectile.h" t="Include" />
-          <e p="Interactable.cpp" t="Include" />
-          <e p="Interactable.h" t="Include" />
-          <e p="Pawnable.cpp" t="Include" />
-          <e p="Pawnable.h" t="Include" />
-          <e p="Shootable.cpp" t="Include" />
-          <e p="Shootable.h" t="Include" />
+          <e p="Interfaces" t="Include">
+            <e p="Fireable.cpp" t="Include" />
+            <e p="Fireable.h" t="Include" />
+            <e p="Interactable.cpp" t="Include" />
+            <e p="Interactable.h" t="Include" />
+            <e p="Pawnable.cpp" t="Include" />
+            <e p="Pawnable.h" t="Include" />
+            <e p="Shootable.cpp" t="Include" />
+            <e p="Shootable.h" t="Include" />
+          </e>
           <e p="TestBlock.cpp" t="Include" />
           <e p="TestBlock.h" t="Include" />
-          <e p="Weapon_Base.cpp" t="Include" />
-          <e p="Weapon_Base.h" t="Include" />
-          <e p="Weapon_Hitscan.cpp" t="Include" />
-          <e p="Weapon_Hitscan.h" t="Include" />
+          <e p="Weapons" t="Include">
+            <e p="Weapon_Base.cpp" t="Include" />
+            <e p="Weapon_Base.h" t="Include" />
+            <e p="Weapon_Hitscan.cpp" t="Include" />
+            <e p="Weapon_Hitscan.h" t="Include" />
+            <e p="Weapon_Projectile.cpp" t="Include" />
+            <e p="Weapon_Projectile.h" t="Include" />
+          </e>
         </e>
         <e p="GEPProject.Target.cs" t="Include" />
         <e p="GEPProjectEditor.Target.cs" t="Include" />

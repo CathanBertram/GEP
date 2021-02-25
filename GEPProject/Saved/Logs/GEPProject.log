@@ -650,3 +650,583 @@ LogConfig: Setting CVar [[r.setres:1280x720]]
 [2021.02.25-13.55.14:046][  0]LogAssetRegistry: Asset discovery search completed in 30.6612 seconds
 [2021.02.25-13.55.14:050][  0]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000002 seconds (updated 0 objects)
 [2021.02.25-13.55.14:063][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2021.02.25-14.14.18:417][638]LogSlate: Took 0.001150 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2021.02.25-14.14.18:477][638]LogSlate: WidgetSwitcher ('None') active index changed to -1
+[2021.02.25-14.14.18:478][638]LogSlate: WidgetSwitcher ('None') active index changed to 0
+[2021.02.25-14.14.18:579][638]LogSlate: Took 0.009116 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2021.02.25-14.14.31:996][181]LogSlate: WidgetSwitcher ('None') active index changed to 1
+[2021.02.25-14.14.42:561][435]Running E:/epk/UE_4.25/Engine/Binaries/DotNET/UnrealBuildTool.exe  -projectfiles -project="E:/Github/GEP/GEPProject/GEPProject.uproject" -game -rocket -progress
+[2021.02.25-14.14.42:966][435]Discovering modules, targets and source code for project...
+[2021.02.25-14.14.45:170][435]Binding IntelliSense data...
+[2021.02.25-14.14.47:787][435]Binding IntelliSense data... 100%
+[2021.02.25-14.14.47:787][435]Writing project files...
+[2021.02.25-14.14.53:512][435]Writing project files... 100%
+[2021.02.25-14.14.53:629][435]Candidate modules for hot reload:
+[2021.02.25-14.14.53:629][435]  GEPProject
+[2021.02.25-14.14.53:629][435]Launching UnrealBuildTool... [E:/epk/UE_4.25/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=GEPProject,8065 GEPProjectEditor Win64 Development -Project="E:/Github/GEP/GEPProject/GEPProject.uproject" "E:/Github/GEP/GEPProject/GEPProject.uproject"  -IgnoreJunk]
+[2021.02.25-14.15.52:151][435]CompilerResultsLog: New page: Compilation - 25 Feb 2021, 14:15:52
+[2021.02.25-14.15.52:151][435]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (E:\Github\GEP).
+[2021.02.25-14.15.52:151][435]CompilerResultsLog: Creating makefile for GEPProjectEditor (no existing makefile)
+[2021.02.25-14.15.52:151][435]CompilerResultsLog: Parsing headers for GEPProjectEditor
+[2021.02.25-14.15.52:151][435]CompilerResultsLog:   Running UnrealHeaderTool "E:\Github\GEP\GEPProject\GEPProject.uproject" "E:\Github\GEP\GEPProject\Intermediate\Build\Win64\GEPProjectEditor\Development\GEPProjectEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\cathan\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
+[2021.02.25-14.15.52:152][435]CompilerResultsLog: Reflection code generated for GEPProjectEditor in 32.0433176 seconds
+[2021.02.25-14.15.52:152][435]CompilerResultsLog: Building GEPProjectEditor...
+[2021.02.25-14.15.52:152][435]CompilerResultsLog: Using Visual Studio 2019 14.24.28316 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2021.02.25-14.15.52:152][435]CompilerResultsLog: Building 23 actions with 16 processes...
+[2021.02.25-14.15.52:152][435]CompilerResultsLog:   [1/23] Weapon_Hitscan.cpp
+[2021.02.25-14.15.52:152][435]CompilerResultsLog:   E:\Github\GEP\GEPProject\Source\GEPProject\Weapons\Weapon_Base.h(7): fatal error C1083: Cannot open include file: 'Fireable.h': No such file or directory
+[2021.02.25-14.15.52:152][435]CompilerResultsLog:   [2/23] GEPProjectCharacter.cpp
+[2021.02.25-14.15.52:152][435]CompilerResultsLog:   E:\Github\GEP\GEPProject\Source\GEPProject\GEPProjectCharacter.h(6): fatal error C1083: Cannot open include file: 'Pawnable.h': No such file or directory
+[2021.02.25-14.15.52:152][435]CompilerResultsLog:   [3/23] Weapon_Base.cpp
+[2021.02.25-14.15.52:152][435]CompilerResultsLog:   E:\Github\GEP\GEPProject\Source\GEPProject\Weapons\Weapon_Base.h(7): fatal error C1083: Cannot open include file: 'Fireable.h': No such file or directory
+[2021.02.25-14.15.52:152][435]CompilerResultsLog:   [4/23] Weapon_Projectile.cpp
+[2021.02.25-14.15.52:152][435]CompilerResultsLog:   E:\Github\GEP\GEPProject\Source\GEPProject\Weapon_Projectile.h(6): fatal error C1083: Cannot open include file: 'Weapon_Base.h': No such file or directory
+[2021.02.25-14.15.52:152][435]CompilerResultsLog:   [5/23] TestBlock.cpp
+[2021.02.25-14.15.52:152][435]CompilerResultsLog:   E:\Github\GEP\GEPProject\Source\GEPProject\TestBlock.h(7): fatal error C1083: Cannot open include file: 'Interactable.h': No such file or directory
+[2021.02.25-14.15.52:152][435]CompilerResultsLog:   [6/23] Weapon_Base.gen.cpp
+[2021.02.25-14.15.52:152][435]CompilerResultsLog:   E:\Github\GEP\GEPProject\Source\GEPProject/Weapons/Weapon_Base.h(7): fatal error C1083: Cannot open include file: 'Fireable.h': No such file or directory
+[2021.02.25-14.15.52:152][435]CompilerResultsLog:   [7/23] Weapon_Hitscan.gen.cpp
+[2021.02.25-14.15.52:152][435]CompilerResultsLog:   E:\Github\GEP\GEPProject\Source\GEPProject\Weapons\Weapon_Base.h(7): fatal error C1083: Cannot open include file: 'Fireable.h': No such file or directory
+[2021.02.25-14.15.52:152][435]CompilerResultsLog:   [8/23] Weapon_Projectile.gen.cpp
+[2021.02.25-14.15.52:152][435]CompilerResultsLog:   E:\Github\GEP\GEPProject\Source\GEPProject/Weapon_Projectile.h(6): fatal error C1083: Cannot open include file: 'Weapon_Base.h': No such file or directory
+[2021.02.25-14.15.52:152][435]CompilerResultsLog:   [9/23] GEPProjectCharacter.gen.cpp
+[2021.02.25-14.15.52:152][435]CompilerResultsLog:   E:\Github\GEP\GEPProject\Source\GEPProject/GEPProjectCharacter.h(6): fatal error C1083: Cannot open include file: 'Pawnable.h': No such file or directory
+[2021.02.25-14.15.52:152][435]CompilerResultsLog:   [10/23] TestBlock.gen.cpp
+[2021.02.25-14.15.52:152][435]CompilerResultsLog:   E:\Github\GEP\GEPProject\Source\GEPProject/TestBlock.h(7): fatal error C1083: Cannot open include file: 'Interactable.h': No such file or directory
+[2021.02.25-14.15.52:152][435]CompilerResultsLog:   [11/23] GEPProjectGameMode.cpp
+[2021.02.25-14.15.52:152][435]CompilerResultsLog:   E:\Github\GEP\GEPProject\Source\GEPProject\GEPProjectCharacter.h(6): fatal error C1083: Cannot open include file: 'Pawnable.h': No such file or directory
+[2021.02.25-14.15.52:152][435]CompilerResultsLog:   [12/23] GEPProject.init.gen.cpp
+[2021.02.25-14.15.52:152][435]CompilerResultsLog:   [13/23] Pawnable.cpp
+[2021.02.25-14.15.52:152][435]CompilerResultsLog:   [14/23] Shootable.cpp
+[2021.02.25-14.15.52:152][435]CompilerResultsLog:   [15/23] Interactable.cpp
+[2021.02.25-14.15.52:152][435]CompilerResultsLog:   [16/23] Fireable.cpp
+[2021.02.25-14.15.52:152][435]CompilerResultsLog:   [17/23] Interactable.gen.cpp
+[2021.02.25-14.15.52:152][435]CompilerResultsLog:   [18/23] Shootable.gen.cpp
+[2021.02.25-14.15.52:152][435]CompilerResultsLog:   [19/23] Fireable.gen.cpp
+[2021.02.25-14.15.52:152][435]CompilerResultsLog:   [20/23] Pawnable.gen.cpp
+[2021.02.25-14.15.52:152][435]LogMainFrame: MainFrame: Module compiling took 58.537 seconds
+[2021.02.25-14.15.52:154][435]Warning: HotReload failed, recompile failed
+[2021.02.25-14.15.52:154][435]Warning: RebindPackages failed because compilation failed.
+[2021.02.25-14.16.01:507][435]LogSlate: Window 'Message' being destroyed
+[2021.02.25-14.16.01:512][435]Message dialog closed, result: No, title: Message, text: Successfully added class 'Weapon_Projectile', however you must recompile the 'GEPProject' module before it will appear in the Content Browser. Failed to automatically hot reload the 'GEPProject' module.
+
+Would you like to open the Output Log to see more details?
+[2021.02.25-14.16.01:513][435]LogSlate: Window 'Add C++ Class' being destroyed
+[2021.02.25-14.25.17:130][ 19]Candidate modules for hot reload:
+[2021.02.25-14.25.17:131][ 19]  GEPProject
+[2021.02.25-14.25.17:131][ 19]Launching UnrealBuildTool... [E:/epk/UE_4.25/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=GEPProject,8494 GEPProjectEditor Win64 Development -Project="E:/Github/GEP/GEPProject/GEPProject.uproject" "E:/Github/GEP/GEPProject/GEPProject.uproject"  -IgnoreJunk]
+[2021.02.25-14.25.17:135][ 19]Warning: Starting HotReload took  0.0s.
+[2021.02.25-14.25.36:127][248]CompilerResultsLog: New page: Compilation - 25 Feb 2021, 14:25:36
+[2021.02.25-14.25.36:128][248]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (E:\Github\GEP).
+[2021.02.25-14.25.36:128][248]CompilerResultsLog: Invalidating makefile for GEPProjectEditor (source file added)
+[2021.02.25-14.25.36:128][248]CompilerResultsLog: Parsing headers for GEPProjectEditor
+[2021.02.25-14.25.36:128][248]CompilerResultsLog:   Running UnrealHeaderTool "E:\Github\GEP\GEPProject\GEPProject.uproject" "E:\Github\GEP\GEPProject\Intermediate\Build\Win64\GEPProjectEditor\Development\GEPProjectEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\cathan\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
+[2021.02.25-14.25.36:128][248]CompilerResultsLog: Reflection code generated for GEPProjectEditor in 7.5290335 seconds
+[2021.02.25-14.25.36:128][248]CompilerResultsLog: Building GEPProjectEditor...
+[2021.02.25-14.25.36:128][248]CompilerResultsLog: Using Visual Studio 2019 14.24.28316 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2021.02.25-14.25.36:128][248]CompilerResultsLog: Building 15 actions with 16 processes...
+[2021.02.25-14.25.36:128][248]CompilerResultsLog:   [1/15] GEPProjectCharacter.cpp
+[2021.02.25-14.25.36:128][248]CompilerResultsLog:   E:\Github\GEP\GEPProject\Source\GEPProject\GEPProjectCharacter.h(6): fatal error C1083: Cannot open include file: 'Pawnable.h': No such file or directory
+[2021.02.25-14.25.36:128][248]CompilerResultsLog:   [2/15] TestBlock.cpp
+[2021.02.25-14.25.36:128][248]CompilerResultsLog:   E:\Github\GEP\GEPProject\Source\GEPProject\TestBlock.h(7): fatal error C1083: Cannot open include file: 'Interactable.h': No such file or directory
+[2021.02.25-14.25.36:128][248]CompilerResultsLog:   [3/15] Weapon_Base.cpp
+[2021.02.25-14.25.36:128][248]CompilerResultsLog:   E:\Github\GEP\GEPProject\Source\GEPProject\Weapons\Weapon_Base.h(7): fatal error C1083: Cannot open include file: 'Fireable.h': No such file or directory
+[2021.02.25-14.25.36:128][248]CompilerResultsLog:   [4/15] Weapon_Projectile.cpp
+[2021.02.25-14.25.36:128][248]CompilerResultsLog:   E:\Github\GEP\GEPProject\Source\GEPProject\Weapons\Weapon_Base.h(7): fatal error C1083: Cannot open include file: 'Fireable.h': No such file or directory
+[2021.02.25-14.25.36:128][248]CompilerResultsLog:   [5/15] Weapon_Hitscan.cpp
+[2021.02.25-14.25.36:128][248]CompilerResultsLog:   E:\Github\GEP\GEPProject\Source\GEPProject\Weapons\Weapon_Base.h(7): fatal error C1083: Cannot open include file: 'Fireable.h': No such file or directory
+[2021.02.25-14.25.36:128][248]CompilerResultsLog:   [6/15] TestBlock.gen.cpp
+[2021.02.25-14.25.36:128][248]CompilerResultsLog:   E:\Github\GEP\GEPProject\Source\GEPProject/TestBlock.h(7): fatal error C1083: Cannot open include file: 'Interactable.h': No such file or directory
+[2021.02.25-14.25.36:128][248]CompilerResultsLog:   [7/15] Weapon_Base.gen.cpp
+[2021.02.25-14.25.36:128][248]CompilerResultsLog:   E:\Github\GEP\GEPProject\Source\GEPProject/Weapons/Weapon_Base.h(7): fatal error C1083: Cannot open include file: 'Fireable.h': No such file or directory
+[2021.02.25-14.25.36:128][248]CompilerResultsLog:   [8/15] GEPProjectCharacter.gen.cpp
+[2021.02.25-14.25.36:128][248]CompilerResultsLog:   E:\Github\GEP\GEPProject\Source\GEPProject/GEPProjectCharacter.h(6): fatal error C1083: Cannot open include file: 'Pawnable.h': No such file or directory
+[2021.02.25-14.25.36:128][248]CompilerResultsLog:   [9/15] Weapon_Hitscan.gen.cpp
+[2021.02.25-14.25.36:128][248]CompilerResultsLog:   E:\Github\GEP\GEPProject\Source\GEPProject\Weapons\Weapon_Base.h(7): fatal error C1083: Cannot open include file: 'Fireable.h': No such file or directory
+[2021.02.25-14.25.36:128][248]CompilerResultsLog:   [10/15] Weapon_Projectile.gen.cpp
+[2021.02.25-14.25.36:128][248]CompilerResultsLog:   E:\Github\GEP\GEPProject\Source\GEPProject\Weapons\Weapon_Base.h(7): fatal error C1083: Cannot open include file: 'Fireable.h': No such file or directory
+[2021.02.25-14.25.36:128][248]CompilerResultsLog:   [11/15] GEPProjectGameMode.cpp
+[2021.02.25-14.25.36:128][248]CompilerResultsLog:   E:\Github\GEP\GEPProject\Source\GEPProject\GEPProjectCharacter.h(6): fatal error C1083: Cannot open include file: 'Pawnable.h': No such file or directory
+[2021.02.25-14.25.36:128][248]CompilerResultsLog:   [12/15] GEPProject.init.gen.cpp
+[2021.02.25-14.25.36:128][248]LogMainFrame: MainFrame: Module compiling took 19.002 seconds
+[2021.02.25-14.25.36:128][248]Warning: HotReload failed, recompile failed
+[2021.02.25-14.25.38:816][562]LogSlate: Took 0.010816 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/DroidSansMono.ttf' (77K)
+[2021.02.25-14.27.37:626][375]Candidate modules for hot reload:
+[2021.02.25-14.27.37:626][375]  GEPProject
+[2021.02.25-14.27.37:626][375]Launching UnrealBuildTool... [E:/epk/UE_4.25/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=GEPProject,2858 GEPProjectEditor Win64 Development -Project="E:/Github/GEP/GEPProject/GEPProject.uproject" "E:/Github/GEP/GEPProject/GEPProject.uproject"  -IgnoreJunk]
+[2021.02.25-14.27.37:629][375]Warning: Starting HotReload took  0.0s.
+[2021.02.25-14.27.38:775][473]LogSlate: Window 'Message Log' being destroyed
+[2021.02.25-14.27.38:781][473]LogSlate: Window 'Message Log' being destroyed
+[2021.02.25-14.27.47:608][526]CompilerResultsLog: New page: Compilation - 25 Feb 2021, 14:27:47
+[2021.02.25-14.27.47:608][526]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (E:\Github\GEP).
+[2021.02.25-14.27.47:608][526]CompilerResultsLog: Parsing headers for GEPProjectEditor
+[2021.02.25-14.27.47:608][526]CompilerResultsLog:   Running UnrealHeaderTool "E:\Github\GEP\GEPProject\GEPProject.uproject" "E:\Github\GEP\GEPProject\Intermediate\Build\Win64\GEPProjectEditor\Development\GEPProjectEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\cathan\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
+[2021.02.25-14.27.47:608][526]CompilerResultsLog: Reflection code generated for GEPProjectEditor in 6.259292 seconds
+[2021.02.25-14.27.47:608][526]CompilerResultsLog: Building GEPProjectEditor...
+[2021.02.25-14.27.47:608][526]CompilerResultsLog: Using Visual Studio 2019 14.24.28316 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2021.02.25-14.27.47:608][526]CompilerResultsLog: Building 14 actions with 16 processes...
+[2021.02.25-14.27.47:608][526]CompilerResultsLog:   [1/14] Weapon_Hitscan.cpp
+[2021.02.25-14.27.47:608][526]CompilerResultsLog:   E:\Github\GEP\GEPProject\Source\GEPProject\Weapons\Weapon_Hitscan.cpp(5): fatal error C1083: Cannot open include file: 'Shootable.h': No such file or directory
+[2021.02.25-14.27.47:609][526]CompilerResultsLog:   [2/14] TestBlock.cpp
+[2021.02.25-14.27.47:609][526]CompilerResultsLog:   [3/14] GEPProjectGameMode.cpp
+[2021.02.25-14.27.47:609][526]CompilerResultsLog:   [4/14] Weapon_Projectile.cpp
+[2021.02.25-14.27.47:609][526]CompilerResultsLog:   [5/14] GEPProjectCharacter.gen.cpp
+[2021.02.25-14.27.47:609][526]CompilerResultsLog:   [6/14] TestBlock.gen.cpp
+[2021.02.25-14.27.47:609][526]CompilerResultsLog:   [7/14] Weapon_Projectile.gen.cpp
+[2021.02.25-14.27.47:609][526]CompilerResultsLog:   [8/14] Weapon_Base.gen.cpp
+[2021.02.25-14.27.47:609][526]CompilerResultsLog:   [9/14] Weapon_Base.cpp
+[2021.02.25-14.27.47:609][526]CompilerResultsLog:   [10/14] Weapon_Hitscan.gen.cpp
+[2021.02.25-14.27.47:609][526]CompilerResultsLog:   [11/14] GEPProjectCharacter.cpp
+[2021.02.25-14.27.47:609][526]LogMainFrame: MainFrame: Module compiling took 9.987 seconds
+[2021.02.25-14.27.47:609][526]Warning: HotReload failed, recompile failed
+[2021.02.25-14.28.16:830][976]Candidate modules for hot reload:
+[2021.02.25-14.28.16:830][976]  GEPProject
+[2021.02.25-14.28.16:830][976]Launching UnrealBuildTool... [E:/epk/UE_4.25/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=GEPProject,2632 GEPProjectEditor Win64 Development -Project="E:/Github/GEP/GEPProject/GEPProject.uproject" "E:/Github/GEP/GEPProject/GEPProject.uproject"  -IgnoreJunk]
+[2021.02.25-14.28.16:833][976]Warning: Starting HotReload took  0.0s.
+[2021.02.25-14.28.20:298][354]CompilerResultsLog: New page: Compilation - 25 Feb 2021, 14:28:20
+[2021.02.25-14.28.20:298][354]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (E:\Github\GEP).
+[2021.02.25-14.28.20:298][354]CompilerResultsLog: Building GEPProjectEditor...
+[2021.02.25-14.28.20:298][354]CompilerResultsLog: Using Visual Studio 2019 14.24.28316 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2021.02.25-14.28.20:298][354]CompilerResultsLog: Building 4 actions with 16 processes...
+[2021.02.25-14.28.20:298][354]CompilerResultsLog:   [1/4] Weapon_Hitscan.cpp
+[2021.02.25-14.28.20:298][354]CompilerResultsLog:   [2/4] UE4Editor-GEPProject-2632.lib
+[2021.02.25-14.28.20:298][354]CompilerResultsLog:      Creating library E:\Github\GEP\GEPProject\Intermediate\Build\Win64\UE4Editor\Development\GEPProject\UE4Editor-GEPProject-2632.lib and object E:\Github\GEP\GEPProject\Intermediate\Build\Win64\UE4Editor\Development\GEPProject\UE4Editor-GEPProject-2632.exp
+[2021.02.25-14.28.20:298][354]CompilerResultsLog:   [3/4] UE4Editor-GEPProject-2632.dll
+[2021.02.25-14.28.20:298][354]CompilerResultsLog:      Creating library E:\Github\GEP\GEPProject\Intermediate\Build\Win64\UE4Editor\Development\GEPProject\UE4Editor-GEPProject-2632.suppressed.lib and object E:\Github\GEP\GEPProject\Intermediate\Build\Win64\UE4Editor\Development\GEPProject\UE4Editor-GEPProject-2632.suppressed.exp
+[2021.02.25-14.28.20:298][354]CompilerResultsLog:   [4/4] GEPProjectEditor.target
+[2021.02.25-14.28.20:298][354]CompilerResultsLog: Total time in Parallel executor: 2.67 seconds
+[2021.02.25-14.28.20:298][354]CompilerResultsLog: Total execution time: 3.36 seconds
+[2021.02.25-14.28.20:298][354]LogMainFrame: MainFrame: Module compiling took 3.472 seconds
+[2021.02.25-14.28.20:339][354]LogClass: Could not find existing class Fireable in package /Script/GEPProject for HotReload, assuming new class
+[2021.02.25-14.28.20:339][354]LogClass: Function Fire is new.
+[2021.02.25-14.28.20:342][354]LogClass: Could not find existing class Interactable in package /Script/GEPProject for HotReload, assuming new class
+[2021.02.25-14.28.20:342][354]LogClass: Function OnInteract is new.
+[2021.02.25-14.28.20:342][354]LogClass: Could not find existing class Pawnable in package /Script/GEPProject for HotReload, assuming new class
+[2021.02.25-14.28.20:342][354]LogClass: Function GetAsPawn is new.
+[2021.02.25-14.28.20:342][354]LogClass: Could not find existing class Shootable in package /Script/GEPProject for HotReload, assuming new class
+[2021.02.25-14.28.20:342][354]LogClass: Function GetShot is new.
+[2021.02.25-14.28.20:343][354]LogClass: Could not find existing class Weapon_Base in package /Script/GEPProject for HotReload, assuming new class
+[2021.02.25-14.28.20:343][354]LogClass: Function Fire is new.
+[2021.02.25-14.28.20:343][354]LogClass: Could not find existing class Weapon_Hitscan in package /Script/GEPProject for HotReload, assuming new class
+[2021.02.25-14.28.20:343][354]LogClass: Could not find existing class Weapon_Projectile in package /Script/GEPProject for HotReload, assuming new class
+[2021.02.25-14.28.20:348][354]LogHotReload: Re-instancing Fireable after hot-reload.
+[2021.02.25-14.28.20:363][354]LogHotReload: Re-instancing Interactable after hot-reload.
+[2021.02.25-14.28.20:368][354]LogHotReload: Re-instancing Pawnable after hot-reload.
+[2021.02.25-14.28.20:372][354]LogHotReload: Re-instancing Shootable after hot-reload.
+[2021.02.25-14.28.20:378][354]LogHotReload: Re-instancing Weapon_Base after hot-reload.
+[2021.02.25-14.28.20:383][354]LogHotReload: Re-instancing Weapon_Hitscan after hot-reload.
+[2021.02.25-14.28.20:401][354]LogContentBrowser: Native class hierarchy updated for 'GEPProject' in 0.0006 seconds. Added 12 classes and 4 folders.
+[2021.02.25-14.28.20:403][354]Display: HotReload successful (4 functions remapped  0 scriptstructs remapped)
+[2021.02.25-14.28.20:457][354]LogContentBrowser: Native class hierarchy populated in 0.0109 seconds. Added 3439 classes and 825 folders.
+[2021.02.25-14.28.20:458][354]Display: HotReload took  3.6s.
+[2021.02.25-14.28.47:351][450]LogSlate: WidgetSwitcher ('None') active index changed to -1
+[2021.02.25-14.28.47:351][450]LogSlate: WidgetSwitcher ('None') active index changed to 1
+[2021.02.25-14.28.53:780][203]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/BP_Weapon_Projectile.BP_Weapon_Projectile
+[2021.02.25-14.28.54:487][203]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0008 seconds. Added 125 classes and 0 folders.
+[2021.02.25-14.28.55:669][203]LogSlate: Window 'Add Blueprint Class' being destroyed
+[2021.02.25-14.28.55:767][203]LogRenderer: Reallocating scene render targets to support 1208x588 Format 10 NumSamples 1 (Frame:1).
+[2021.02.25-14.28.58:183][413]LogSlate: Took 0.008627 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2021.02.25-14.29.20:039][438]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/FirstPersonCPP/Blueprints/FirstPersonCharacter.FirstPersonCharacter
+[2021.02.25-14.29.23:491][755]LogWorld: UWorld::CleanupWorld for World_5, bSessionEnded=true, bCleanupResources=true
+[2021.02.25-14.29.23:491][755]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.02.25-14.29.23:568][755]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/FirstPersonCPP/Blueprints/FirstPersonCharacter.FirstPersonCharacter
+[2021.02.25-14.29.27:171][ 58]LogSlate: Prevented a slow task dialog from being summoned while a context menu was open
+[2021.02.25-14.29.34:897][837]LogUObjectHash: Compacting FUObjectHashTables data took   2.20ms
+[2021.02.25-14.29.34:974][837]LogSavePackage: Moving '../../../../../Github/GEP/GEPProject/Saved/FirstPersonExampleMapC3DDDBFF4DD29694AA1C2EB9D1D1CB15.tmp' to '../../../../../Github/GEP/GEPProject/Content/FirstPersonCPP/Maps/FirstPersonExampleMap.umap'
+[2021.02.25-14.29.35:744][837]LogSavePackage: Moving '../../../../../Github/GEP/GEPProject/Saved/FirstPersonExampleMap_BuiltData5FDAE389452B76B3229AC7BCFBFFB885.tmp' to '../../../../../Github/GEP/GEPProject/Content/FirstPersonCPP/Maps/FirstPersonExampleMap_BuiltData.uasset'
+[2021.02.25-14.29.35:772][837]AssetCheck: New page: Asset Save: multiple assets
+[2021.02.25-14.29.35:772][837]LogContentValidation: Display: Validating World /Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap
+[2021.02.25-14.29.35:772][837]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/FirstPersonCPP/Maps/FirstPersonExampleMap_BuiltData.FirstPersonExampleMap_BuiltData
+[2021.02.25-14.29.36:606][929]BlueprintLog: New page: Compile FirstPersonCharacter
+[2021.02.25-14.29.36:663][929]LogUObjectHash: Compacting FUObjectHashTables data took   1.71ms
+[2021.02.25-14.29.37:049][969]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/FirstPersonCPP/Blueprints/FirstPersonCharacter" FILE="../../../../../Github/GEP/GEPProject/Content/FirstPersonCPP/Blueprints/FirstPersonCharacter.uasset" SILENT=true
+[2021.02.25-14.29.37:073][969]LogSavePackage: Moving '../../../../../Github/GEP/GEPProject/Saved/FirstPersonCharacterE45605274C3FD89DD52E92904C383477.tmp' to '../../../../../Github/GEP/GEPProject/Content/FirstPersonCPP/Blueprints/FirstPersonCharacter.uasset'
+[2021.02.25-14.29.37:090][969]AssetCheck: New page: Asset Save: FirstPersonCharacter
+[2021.02.25-14.29.37:090][969]LogContentValidation: Display: Validating Blueprint /Game/FirstPersonCPP/Blueprints/FirstPersonCharacter.FirstPersonCharacter
+[2021.02.25-14.29.56:547][709]LogEditorTransaction: Undo Modify Component(s)
+[2021.02.25-14.30.13:555][389]LogTemp: Repeating last play command: Selected Viewport
+[2021.02.25-14.30.13:582][389]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.02.25-14.30.13:582][389]PIE: New page: PIE session: FirstPersonExampleMap (25 Feb 2021, 14:30:13)
+[2021.02.25-14.30.13:591][389]LogOnline: OSS: Creating online subsystem instance for: NULL
+[2021.02.25-14.30.13:594][389]LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for module [NULL]
+[2021.02.25-14.30.13:594][389]LogPlayLevel: Creating play world package: /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap
+[2021.02.25-14.30.13:609][389]LogPlayLevel: PIE: StaticDuplicateObject took: (0.013758s)
+[2021.02.25-14.30.13:610][389]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2021.02.25-14.30.13:611][389]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001D62A268E00), frame # 30389
+[2021.02.25-14.30.13:611][389]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001D62A311800), frame # 30389
+[2021.02.25-14.30.13:611][389]LogPlayLevel: PIE: World Init took: (0.002151s)
+[2021.02.25-14.30.13:611][389]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.016478s)
+[2021.02.25-14.30.13:636][389]LogUObjectHash: Compacting FUObjectHashTables data took   1.85ms
+[2021.02.25-14.30.13:643][389]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.02.25-14.30.13:643][389]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.02.25-14.30.13:643][389]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.02.25-14.30.13:643][389]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.02.25-14.30.13:643][389]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.02.25-14.30.13:643][389]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.02.25-14.30.13:643][389]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.02.25-14.30.13:643][389]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.02.25-14.30.13:643][389]LogAudio: Display: Using built-in audio occlusion.
+[2021.02.25-14.30.13:643][389]LogAudioMixer: Display: Initializing audio mixer.
+[2021.02.25-14.30.13:651][389]LogAudioMixer: Display: 0: FrontLeft
+[2021.02.25-14.30.13:651][389]LogAudioMixer: Display: 1: FrontRight
+[2021.02.25-14.30.13:672][389]LogAudioMixer: Display: Using Audio Device OUT 1-2 (BEHRINGER UMC 202HD 192k)
+[2021.02.25-14.30.13:672][389]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.02.25-14.30.13:672][389]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.02.25-14.30.13:672][389]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.02.25-14.30.13:673][389]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.02.25-14.30.13:685][389]LogInit: FAudioDevice initialized.
+[2021.02.25-14.30.13:700][389]LogLoad: Game class is 'GEPProjectGameMode'
+[2021.02.25-14.30.13:710][389]LogWorld: Bringing World /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 0) at 2021.02.25-14.30.13
+[2021.02.25-14.30.13:712][389]LogWorld: Bringing up level for play took: 0.003115
+[2021.02.25-14.30.13:713][389]LogOnline: OSS: Creating online subsystem instance for: :Context_8
+[2021.02.25-14.30.13:733][389]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0005 seconds. Added 20 classes and 0 folders.
+[2021.02.25-14.30.13:737][389]PIE: Server logged in
+[2021.02.25-14.30.13:739][389]PIE: Play in editor total start time 0.164 seconds.
+[2021.02.25-14.30.16:610][645]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.02.25-14.30.16:610][645]LogWorld: BeginTearingDown for /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap
+[2021.02.25-14.30.16:610][645]LogWorld: UWorld::CleanupWorld for FirstPersonExampleMap, bSessionEnded=true, bCleanupResources=true
+[2021.02.25-14.30.16:611][645]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.02.25-14.30.16:616][645]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.02.25-14.30.16:619][645]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.02.25-14.30.16:661][645]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.02.25-14.30.16:663][645]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001D62A311800), frame # 30645
+[2021.02.25-14.30.16:663][645]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001D62A268E00), frame # 30645
+[2021.02.25-14.30.16:683][645]LogUObjectHash: Compacting FUObjectHashTables data took   3.08ms
+[2021.02.25-14.30.16:720][646]LogPlayLevel: Display: Destroying online subsystem :Context_8
+[2021.02.25-14.30.23:637][267]LogTemp: Repeating last play command: Selected Viewport
+[2021.02.25-14.30.23:655][267]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.02.25-14.30.23:655][267]PIE: New page: PIE session: FirstPersonExampleMap (25 Feb 2021, 14:30:23)
+[2021.02.25-14.30.23:680][267]LogPlayLevel: Creating play world package: /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap
+[2021.02.25-14.30.23:692][267]LogPlayLevel: PIE: StaticDuplicateObject took: (0.011621s)
+[2021.02.25-14.30.23:693][267]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2021.02.25-14.30.23:693][267]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001D5E54BE800), frame # 31267
+[2021.02.25-14.30.23:694][267]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001D596F61940), frame # 31267
+[2021.02.25-14.30.23:694][267]LogPlayLevel: PIE: World Init took: (0.001943s)
+[2021.02.25-14.30.23:694][267]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.013791s)
+[2021.02.25-14.30.23:724][267]LogUObjectHash: Compacting FUObjectHashTables data took   2.59ms
+[2021.02.25-14.30.23:726][267]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.02.25-14.30.23:726][267]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.02.25-14.30.23:727][267]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.02.25-14.30.23:727][267]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.02.25-14.30.23:727][267]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.02.25-14.30.23:727][267]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.02.25-14.30.23:727][267]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.02.25-14.30.23:727][267]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.02.25-14.30.23:727][267]LogAudio: Display: Using built-in audio occlusion.
+[2021.02.25-14.30.23:727][267]LogAudioMixer: Display: Initializing audio mixer.
+[2021.02.25-14.30.23:734][267]LogAudioMixer: Display: 0: FrontLeft
+[2021.02.25-14.30.23:734][267]LogAudioMixer: Display: 1: FrontRight
+[2021.02.25-14.30.23:751][267]LogAudioMixer: Display: Using Audio Device OUT 1-2 (BEHRINGER UMC 202HD 192k)
+[2021.02.25-14.30.23:752][267]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.02.25-14.30.23:752][267]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.02.25-14.30.23:752][267]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.02.25-14.30.23:752][267]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.02.25-14.30.23:763][267]LogInit: FAudioDevice initialized.
+[2021.02.25-14.30.23:770][267]LogLoad: Game class is 'GEPProjectGameMode'
+[2021.02.25-14.30.23:772][267]LogWorld: Bringing World /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 0) at 2021.02.25-14.30.23
+[2021.02.25-14.30.23:772][267]LogWorld: Bringing up level for play took: 0.001315
+[2021.02.25-14.30.23:772][267]LogOnline: OSS: Creating online subsystem instance for: :Context_9
+[2021.02.25-14.30.23:774][267]PIE: Server logged in
+[2021.02.25-14.30.23:775][267]PIE: Play in editor total start time 0.12 seconds.
+[2021.02.25-14.30.24:149][293]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.02.25-14.30.24:149][293]LogWorld: BeginTearingDown for /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap
+[2021.02.25-14.30.24:149][293]LogWorld: UWorld::CleanupWorld for FirstPersonExampleMap, bSessionEnded=true, bCleanupResources=true
+[2021.02.25-14.30.24:150][293]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.02.25-14.30.24:157][293]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.02.25-14.30.24:160][293]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.02.25-14.30.24:194][293]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.02.25-14.30.24:194][293]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001D596F61940), frame # 31293
+[2021.02.25-14.30.24:194][293]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001D5E54BE800), frame # 31293
+[2021.02.25-14.30.24:197][293]LogUObjectHash: Compacting FUObjectHashTables data took   2.66ms
+[2021.02.25-14.30.24:229][294]LogPlayLevel: Display: Destroying online subsystem :Context_9
+[2021.02.25-14.30.25:618][428]LogTemp: Repeating last play command: Selected Viewport
+[2021.02.25-14.30.25:637][428]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.02.25-14.30.25:637][428]PIE: New page: PIE session: FirstPersonExampleMap (25 Feb 2021, 14:30:25)
+[2021.02.25-14.30.25:637][428]LogPlayLevel: Creating play world package: /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap
+[2021.02.25-14.30.25:648][428]LogPlayLevel: PIE: StaticDuplicateObject took: (0.010967s)
+[2021.02.25-14.30.25:649][428]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2021.02.25-14.30.25:649][428]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001D59742E200), frame # 31428
+[2021.02.25-14.30.25:649][428]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001D618AC60C0), frame # 31428
+[2021.02.25-14.30.25:650][428]LogPlayLevel: PIE: World Init took: (0.001357s)
+[2021.02.25-14.30.25:650][428]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.012476s)
+[2021.02.25-14.30.25:674][428]LogUObjectHash: Compacting FUObjectHashTables data took   2.28ms
+[2021.02.25-14.30.25:675][428]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.02.25-14.30.25:676][428]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.02.25-14.30.25:676][428]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.02.25-14.30.25:676][428]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.02.25-14.30.25:676][428]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.02.25-14.30.25:676][428]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.02.25-14.30.25:676][428]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.02.25-14.30.25:676][428]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.02.25-14.30.25:676][428]LogAudio: Display: Using built-in audio occlusion.
+[2021.02.25-14.30.25:676][428]LogAudioMixer: Display: Initializing audio mixer.
+[2021.02.25-14.30.25:682][428]LogAudioMixer: Display: 0: FrontLeft
+[2021.02.25-14.30.25:682][428]LogAudioMixer: Display: 1: FrontRight
+[2021.02.25-14.30.25:700][428]LogAudioMixer: Display: Using Audio Device OUT 1-2 (BEHRINGER UMC 202HD 192k)
+[2021.02.25-14.30.25:700][428]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.02.25-14.30.25:700][428]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.02.25-14.30.25:700][428]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.02.25-14.30.25:701][428]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.02.25-14.30.25:712][428]LogInit: FAudioDevice initialized.
+[2021.02.25-14.30.25:721][428]LogLoad: Game class is 'GEPProjectGameMode'
+[2021.02.25-14.30.25:723][428]LogWorld: Bringing World /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 0) at 2021.02.25-14.30.25
+[2021.02.25-14.30.25:723][428]LogWorld: Bringing up level for play took: 0.001417
+[2021.02.25-14.30.25:723][428]LogOnline: OSS: Creating online subsystem instance for: :Context_10
+[2021.02.25-14.30.25:725][428]PIE: Server logged in
+[2021.02.25-14.30.25:726][428]PIE: Play in editor total start time 0.09 seconds.
+[2021.02.25-14.30.28:301][690]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.02.25-14.30.28:301][690]LogWorld: BeginTearingDown for /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap
+[2021.02.25-14.30.28:301][690]LogWorld: UWorld::CleanupWorld for FirstPersonExampleMap, bSessionEnded=true, bCleanupResources=true
+[2021.02.25-14.30.28:302][690]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.02.25-14.30.28:310][690]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.02.25-14.30.28:313][690]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.02.25-14.30.28:335][690]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.02.25-14.30.28:350][690]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001D618AC60C0), frame # 31690
+[2021.02.25-14.30.28:351][690]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001D59742E200), frame # 31690
+[2021.02.25-14.30.28:353][690]LogUObjectHash: Compacting FUObjectHashTables data took   2.27ms
+[2021.02.25-14.30.28:389][691]LogPlayLevel: Display: Destroying online subsystem :Context_10
+[2021.02.25-14.30.33:332][135]LogSlate: Prevented a slow task dialog from being summoned while a context menu was open
+[2021.02.25-14.30.38:169][623]LogTemp: Repeating last play command: Selected Viewport
+[2021.02.25-14.30.38:188][623]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.02.25-14.30.38:189][623]PIE: New page: PIE session: FirstPersonExampleMap (25 Feb 2021, 14:30:38)
+[2021.02.25-14.30.38:232][623]LogPlayLevel: Creating play world package: /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap
+[2021.02.25-14.30.38:245][623]LogPlayLevel: PIE: StaticDuplicateObject took: (0.012330s)
+[2021.02.25-14.30.38:245][623]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2021.02.25-14.30.38:246][623]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001D62A2AFE00), frame # 32623
+[2021.02.25-14.30.38:246][623]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001D5A7FACB80), frame # 32623
+[2021.02.25-14.30.38:246][623]LogPlayLevel: PIE: World Init took: (0.001083s)
+[2021.02.25-14.30.38:246][623]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.013592s)
+[2021.02.25-14.30.38:272][623]LogUObjectHash: Compacting FUObjectHashTables data took   2.27ms
+[2021.02.25-14.30.38:274][623]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.02.25-14.30.38:274][623]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.02.25-14.30.38:274][623]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.02.25-14.30.38:274][623]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.02.25-14.30.38:274][623]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.02.25-14.30.38:274][623]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.02.25-14.30.38:274][623]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.02.25-14.30.38:274][623]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.02.25-14.30.38:274][623]LogAudio: Display: Using built-in audio occlusion.
+[2021.02.25-14.30.38:274][623]LogAudioMixer: Display: Initializing audio mixer.
+[2021.02.25-14.30.38:281][623]LogAudioMixer: Display: 0: FrontLeft
+[2021.02.25-14.30.38:281][623]LogAudioMixer: Display: 1: FrontRight
+[2021.02.25-14.30.38:299][623]LogAudioMixer: Display: Using Audio Device OUT 1-2 (BEHRINGER UMC 202HD 192k)
+[2021.02.25-14.30.38:300][623]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.02.25-14.30.38:300][623]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.02.25-14.30.38:300][623]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.02.25-14.30.38:300][623]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.02.25-14.30.38:311][623]LogInit: FAudioDevice initialized.
+[2021.02.25-14.30.38:316][623]LogLoad: Game class is 'GEPProjectGameMode'
+[2021.02.25-14.30.38:318][623]LogWorld: Bringing World /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 0) at 2021.02.25-14.30.38
+[2021.02.25-14.30.38:318][623]LogWorld: Bringing up level for play took: 0.001875
+[2021.02.25-14.30.38:318][623]LogOnline: OSS: Creating online subsystem instance for: :Context_11
+[2021.02.25-14.30.38:320][623]PIE: Server logged in
+[2021.02.25-14.30.38:321][623]PIE: Play in editor total start time 0.133 seconds.
+[2021.02.25-14.30.39:633][759]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.02.25-14.30.39:633][759]LogWorld: BeginTearingDown for /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap
+[2021.02.25-14.30.39:633][759]LogWorld: UWorld::CleanupWorld for FirstPersonExampleMap, bSessionEnded=true, bCleanupResources=true
+[2021.02.25-14.30.39:634][759]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.02.25-14.30.39:643][759]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.02.25-14.30.39:647][759]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.02.25-14.30.39:682][759]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.02.25-14.30.39:682][759]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001D5A7FACB80), frame # 32759
+[2021.02.25-14.30.39:682][759]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001D62A2AFE00), frame # 32759
+[2021.02.25-14.30.39:685][759]LogUObjectHash: Compacting FUObjectHashTables data took   2.29ms
+[2021.02.25-14.30.39:722][760]LogPlayLevel: Display: Destroying online subsystem :Context_11
+[2021.02.25-14.30.40:874][860]BlueprintLog: New page: Compile BP_Weapon_Projectile
+[2021.02.25-14.30.40:922][860]LogUObjectHash: Compacting FUObjectHashTables data took   2.36ms
+[2021.02.25-14.30.41:674][926]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BP_Weapon_Projectile" FILE="../../../../../Github/GEP/GEPProject/Content/BP_Weapon_Projectile.uasset" SILENT=true
+[2021.02.25-14.30.41:693][926]LogSavePackage: Moving '../../../../../Github/GEP/GEPProject/Saved/BP_Weapon_Projectile554205AF4F70CA31487446B0A154B073.tmp' to '../../../../../Github/GEP/GEPProject/Content/BP_Weapon_Projectile.uasset'
+[2021.02.25-14.30.41:711][926]AssetCheck: New page: Asset Save: BP_Weapon_Projectile
+[2021.02.25-14.30.41:711][926]LogContentValidation: Display: Validating Blueprint /Game/BP_Weapon_Projectile.BP_Weapon_Projectile
+[2021.02.25-14.30.42:723][  9]LogTemp: Repeating last play command: Selected Viewport
+[2021.02.25-14.30.42:741][  9]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.02.25-14.30.42:741][  9]PIE: New page: PIE session: FirstPersonExampleMap (25 Feb 2021, 14:30:42)
+[2021.02.25-14.30.42:741][  9]LogPlayLevel: Creating play world package: /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap
+[2021.02.25-14.30.42:756][  9]LogPlayLevel: PIE: StaticDuplicateObject took: (0.015043s)
+[2021.02.25-14.30.42:757][  9]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2021.02.25-14.30.42:757][  9]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001D590016000), frame # 33009
+[2021.02.25-14.30.42:757][  9]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001D597376340), frame # 33009
+[2021.02.25-14.30.42:758][  9]LogPlayLevel: PIE: World Init took: (0.001297s)
+[2021.02.25-14.30.42:758][  9]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.016512s)
+[2021.02.25-14.30.42:784][  9]LogUObjectHash: Compacting FUObjectHashTables data took   2.69ms
+[2021.02.25-14.30.42:786][  9]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.02.25-14.30.42:786][  9]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.02.25-14.30.42:786][  9]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.02.25-14.30.42:786][  9]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.02.25-14.30.42:786][  9]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.02.25-14.30.42:786][  9]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.02.25-14.30.42:786][  9]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.02.25-14.30.42:786][  9]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.02.25-14.30.42:786][  9]LogAudio: Display: Using built-in audio occlusion.
+[2021.02.25-14.30.42:786][  9]LogAudioMixer: Display: Initializing audio mixer.
+[2021.02.25-14.30.42:794][  9]LogAudioMixer: Display: 0: FrontLeft
+[2021.02.25-14.30.42:794][  9]LogAudioMixer: Display: 1: FrontRight
+[2021.02.25-14.30.42:814][  9]LogAudioMixer: Display: Using Audio Device OUT 1-2 (BEHRINGER UMC 202HD 192k)
+[2021.02.25-14.30.42:814][  9]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.02.25-14.30.42:814][  9]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.02.25-14.30.42:814][  9]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.02.25-14.30.42:815][  9]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.02.25-14.30.42:827][  9]LogInit: FAudioDevice initialized.
+[2021.02.25-14.30.42:833][  9]LogLoad: Game class is 'GEPProjectGameMode'
+[2021.02.25-14.30.42:834][  9]LogWorld: Bringing World /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 0) at 2021.02.25-14.30.42
+[2021.02.25-14.30.42:835][  9]LogWorld: Bringing up level for play took: 0.001367
+[2021.02.25-14.30.42:835][  9]LogOnline: OSS: Creating online subsystem instance for: :Context_12
+[2021.02.25-14.30.42:837][  9]PIE: Server logged in
+[2021.02.25-14.30.42:838][  9]PIE: Play in editor total start time 0.098 seconds.
+[2021.02.25-14.30.48:485][593]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.02.25-14.30.48:485][593]LogWorld: BeginTearingDown for /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap
+[2021.02.25-14.30.48:485][593]LogWorld: UWorld::CleanupWorld for FirstPersonExampleMap, bSessionEnded=true, bCleanupResources=true
+[2021.02.25-14.30.48:486][593]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.02.25-14.30.48:493][593]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.02.25-14.30.48:496][593]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.02.25-14.30.48:532][593]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.02.25-14.30.48:533][593]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001D597376340), frame # 33593
+[2021.02.25-14.30.48:533][593]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001D590016000), frame # 33593
+[2021.02.25-14.30.48:536][593]LogUObjectHash: Compacting FUObjectHashTables data took   2.25ms
+[2021.02.25-14.30.48:571][594]LogPlayLevel: Display: Destroying online subsystem :Context_12
+[2021.02.25-14.30.58:148][587]LogSlate: Prevented a slow task dialog from being summoned while a context menu was open
+[2021.02.25-14.31.02:767][ 37]BlueprintLog: New page: Compile BP_Weapon_Projectile
+[2021.02.25-14.31.02:813][ 37]LogUObjectHash: Compacting FUObjectHashTables data took   2.42ms
+[2021.02.25-14.31.03:242][ 70]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BP_Weapon_Projectile" FILE="../../../../../Github/GEP/GEPProject/Content/BP_Weapon_Projectile.uasset" SILENT=true
+[2021.02.25-14.31.03:272][ 70]LogSavePackage: Moving '../../../../../Github/GEP/GEPProject/Saved/BP_Weapon_ProjectileCF34ECFC42713E20036CB4AA287F677F.tmp' to '../../../../../Github/GEP/GEPProject/Content/BP_Weapon_Projectile.uasset'
+[2021.02.25-14.31.03:286][ 70]AssetCheck: New page: Asset Save: BP_Weapon_Projectile
+[2021.02.25-14.31.03:286][ 70]LogContentValidation: Display: Validating Blueprint /Game/BP_Weapon_Projectile.BP_Weapon_Projectile
+[2021.02.25-14.31.04:401][187]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/FirstPersonCPP/Blueprints/FirstPersonCharacter" FILE="../../../../../Github/GEP/GEPProject/Content/FirstPersonCPP/Blueprints/FirstPersonCharacter.uasset" SILENT=true
+[2021.02.25-14.31.04:416][187]LogSavePackage: Moving '../../../../../Github/GEP/GEPProject/Saved/FirstPersonCharacterE3FFBBEC4E41823E0AE887BC8D641DCE.tmp' to '../../../../../Github/GEP/GEPProject/Content/FirstPersonCPP/Blueprints/FirstPersonCharacter.uasset'
+[2021.02.25-14.31.04:429][187]AssetCheck: New page: Asset Save: FirstPersonCharacter
+[2021.02.25-14.31.04:429][187]LogContentValidation: Display: Validating Blueprint /Game/FirstPersonCPP/Blueprints/FirstPersonCharacter.FirstPersonCharacter
+[2021.02.25-14.31.06:054][362]BlueprintLog: New page: Compile FirstPersonCharacter
+[2021.02.25-14.31.06:098][362]LogUObjectHash: Compacting FUObjectHashTables data took   2.90ms
+[2021.02.25-14.31.07:263][488]LogSlate: Window 'FirstPersonCharacter' being destroyed
+[2021.02.25-14.31.07:270][488]LogSlate: Window 'FirstPersonCharacter' being destroyed
+[2021.02.25-14.31.07:293][488]LogWorld: UWorld::CleanupWorld for World_1, bSessionEnded=true, bCleanupResources=true
+[2021.02.25-14.31.07:293][488]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.02.25-14.31.07:350][488]LogActorComponent: UnregisterComponent: (/Engine/Transient.EditorFloorComp) Not registered. Aborting.
+[2021.02.25-14.31.07:350][488]LogWorld: UWorld::CleanupWorld for World_6, bSessionEnded=true, bCleanupResources=true
+[2021.02.25-14.31.07:351][488]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.02.25-14.31.08:845][660]LogSlate: Window 'Message Log' being destroyed
+[2021.02.25-14.31.08:852][660]LogSlate: Window 'Message Log' being destroyed
+[2021.02.25-14.32.19:865][545]LogUObjectHash: Compacting FUObjectHashTables data took   2.79ms
+[2021.02.25-14.32.19:897][545]LogSavePackage: Moving '../../../../../Github/GEP/GEPProject/Saved/FirstPersonExampleMapCB3F489944DFF2086240AAAC8BEB31F9.tmp' to '../../../../../Github/GEP/GEPProject/Content/FirstPersonCPP/Maps/FirstPersonExampleMap.umap'
+[2021.02.25-14.32.20:309][545]LogSavePackage: Moving '../../../../../Github/GEP/GEPProject/Saved/FirstPersonExampleMap_BuiltData5343E2264A5E7CD5F3F77BA20F359E9C.tmp' to '../../../../../Github/GEP/GEPProject/Content/FirstPersonCPP/Maps/FirstPersonExampleMap_BuiltData.uasset'
+[2021.02.25-14.32.20:327][545]AssetCheck: New page: Asset Save: multiple assets
+[2021.02.25-14.32.20:327][545]LogContentValidation: Display: Validating World /Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap
+[2021.02.25-14.32.20:327][545]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/FirstPersonCPP/Maps/FirstPersonExampleMap_BuiltData.FirstPersonExampleMap_BuiltData
+[2021.02.25-14.32.20:862][586]LogUObjectHash: Compacting FUObjectHashTables data took   2.62ms
+[2021.02.25-14.32.20:893][586]LogSavePackage: Moving '../../../../../Github/GEP/GEPProject/Saved/FirstPersonExampleMap1DB8B7AC424E5E35C68E55A60F1F3FE5.tmp' to '../../../../../Github/GEP/GEPProject/Content/FirstPersonCPP/Maps/FirstPersonExampleMap.umap'
+[2021.02.25-14.32.21:297][586]LogSavePackage: Moving '../../../../../Github/GEP/GEPProject/Saved/FirstPersonExampleMap_BuiltData04B69B3940DB5B7A583EA792CAA5BAC8.tmp' to '../../../../../Github/GEP/GEPProject/Content/FirstPersonCPP/Maps/FirstPersonExampleMap_BuiltData.uasset'
+[2021.02.25-14.32.21:311][586]AssetCheck: New page: Asset Save: multiple assets
+[2021.02.25-14.32.21:311][586]LogContentValidation: Display: Validating World /Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap
+[2021.02.25-14.32.21:311][586]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/FirstPersonCPP/Maps/FirstPersonExampleMap_BuiltData.FirstPersonExampleMap_BuiltData
+[2021.02.25-14.32.21:987][663]LogUObjectHash: Compacting FUObjectHashTables data took   1.93ms
+[2021.02.25-14.32.22:082][663]LogSlate: Window 'GEPProject - Unreal Editor' being destroyed
+[2021.02.25-14.32.22:217][664]Cmd: QUIT_EDITOR
+[2021.02.25-14.32.22:218][664]LogCore: Engine exit requested (reason: UUnrealEdEngine::CloseEditor())
+[2021.02.25-14.32.22:228][664]LogCore: Engine exit requested (reason: EngineExit() was called; note: exit was already requested)
+[2021.02.25-14.32.22:492][664]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
+[2021.02.25-14.32.22:513][664]LogExit: Preparing to exit.
+[2021.02.25-14.32.23:712][664]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.02.25-14.32.23:712][664]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.02.25-14.32.23:712][664]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.02.25-14.32.23:712][664]LogWorld: UWorld::CleanupWorld for World_0, bSessionEnded=true, bCleanupResources=true
+[2021.02.25-14.32.23:713][664]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.02.25-14.32.23:713][664]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.02.25-14.32.23:713][664]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.02.25-14.32.23:713][664]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.02.25-14.32.23:713][664]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.02.25-14.32.23:713][664]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.02.25-14.32.23:713][664]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.02.25-14.32.23:713][664]LogWorld: UWorld::CleanupWorld for None, bSessionEnded=true, bCleanupResources=true
+[2021.02.25-14.32.23:714][664]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.02.25-14.32.23:714][664]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.02.25-14.32.23:714][664]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.02.25-14.32.23:714][664]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.02.25-14.32.23:714][664]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.02.25-14.32.23:714][664]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.02.25-14.32.23:714][664]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.02.25-14.32.23:714][664]LogWorld: UWorld::CleanupWorld for None, bSessionEnded=true, bCleanupResources=true
+[2021.02.25-14.32.23:715][664]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.02.25-14.32.23:715][664]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.02.25-14.32.23:715][664]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.02.25-14.32.23:715][664]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.02.25-14.32.23:715][664]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.02.25-14.32.23:715][664]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.02.25-14.32.23:715][664]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.02.25-14.32.23:715][664]LogWorld: UWorld::CleanupWorld for None, bSessionEnded=true, bCleanupResources=true
+[2021.02.25-14.32.23:748][664]LogDemo: Cleaned up 0 splitscreen connections with owner deletion
+[2021.02.25-14.32.23:774][664]LogExit: Editor shut down
+[2021.02.25-14.32.23:775][664]LogExit: Transaction tracking system shut down
+[2021.02.25-14.32.23:999][664]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001D590073200), frame # 36664
+[2021.02.25-14.32.23:999][664]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001D5FA3EE0C0), frame # 36664
+[2021.02.25-14.32.24:068][664]LogAISub: UAISubsystem::~UAISubsystem AISubsystem (000001D5F420DF80), frame # 36664
+[2021.02.25-14.32.24:068][664]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001D5F40AA980), frame # 36664
+[2021.02.25-14.32.24:069][664]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001D5F41FAA00), frame # 36664
+[2021.02.25-14.32.24:201][664]LogExit: Object subsystem successfully closed.
+[2021.02.25-14.32.24:259][664]LogShaderCompilers: Display: Shaders left to compile 0
+[2021.02.25-14.32.24:342][664]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (809)
+[2021.02.25-14.32.24:342][664]LogModuleManager: Shutting down and abandoning module Voice (807)
+[2021.02.25-14.32.24:343][664]LogModuleManager: Shutting down and abandoning module BlueprintGraph (805)
+[2021.02.25-14.32.24:343][664]LogModuleManager: Shutting down and abandoning module GEPProject (803)
+[2021.02.25-14.32.24:343][664]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (802)
+[2021.02.25-14.32.24:343][664]LogModuleManager: Shutting down and abandoning module SceneOutliner (800)
+[2021.02.25-14.32.24:343][664]LogModuleManager: Shutting down and abandoning module AddContentDialog (798)
+[2021.02.25-14.32.24:348][664]LogModuleManager: Shutting down and abandoning module WidgetCarousel (797)
+[2021.02.25-14.32.24:348][664]LogModuleManager: Shutting down and abandoning module EditorWidgets (794)
+[2021.02.25-14.32.24:348][664]LogModuleManager: Shutting down and abandoning module CollectionManager (792)
+[2021.02.25-14.32.24:348][664]LogModuleManager: Shutting down and abandoning module StatsViewer (790)
+[2021.02.25-14.32.24:349][664]LogModuleManager: Shutting down and abandoning module VirtualTexturingEditor (788)
+[2021.02.25-14.32.24:350][664]LogModuleManager: Shutting down and abandoning module FoliageEdit (786)
+[2021.02.25-14.32.24:351][664]LogModuleManager: Shutting down and abandoning module LandscapeEditor (784)
+[2021.02.25-14.32.24:353][664]LogModuleManager: Shutting down and abandoning module MeshPaintMode (782)
+[2021.02.25-14.32.24:353][664]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (780)
+[2021.02.25-14.32.24:353][664]LogModuleManager: Shutting down and abandoning module ActorPickerMode (778)
+[2021.02.25-14.32.24:353][664]LogModuleManager: Shutting down and abandoning module PIEPreviewDeviceProfileSelector (776)
+[2021.02.25-14.32.24:355][664]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (774)
+[2021.02.25-14.32.24:355][664]LogModuleManager: Shutting down and abandoning module AutomationWorker (772)
+[2021.02.25-14.32.24:355][664]LogModuleManager: Shutting down and abandoning module SteamVREditor (770)
+[2021.02.25-14.32.24:355][664]LogModuleManager: Shutting down and abandoning module OculusMR (768)
+[2021.02.25-14.32.24:356][664]LogModuleManager: Shutting down and abandoning module GooglePADEditor (766)
+[2021.02.25-14.32.24:356][664]LogModuleManager: Shutting down and abandoning module AudioCaptureEditor (764)
+[2021.02.25-14.32.24:356][664]LogModuleManager: Shutting down and abandoning module TemplateSequenceEditor (762)
+[2021.02.25-14.32.24:357][664]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (760)
+[2021.02.25-14.32.24:357][664]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (758)
+[2021.02.25-14.32.24:359][664]LogModuleManager: Shutting down and abandoning module ActorSequenceEditor (756)
+[2021.02.25-14.32.24:360][664]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (754)
+[2021.02.25-14.32.24:360][664]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (752)
+[2021.02.25-14.32.24:360][664]LogModuleManager: Shutting down and abandoning module WebMMediaFactory (750)
+[2021.02.25-14.32.24:360][664]LogModuleManager: Shutting down and abandoning module WebMMediaEditor (748)
+[2021.02.25-14.32.24:360][664]LogModuleManager: Shutting down and abandoning module WebMMedia (746)
+[2021.02.25-14.32.24:360][664]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (744)
+[2021.02.25-14.32.24:361][664]LogModuleManager: Shutting down and abandoning module MediaCompositingEditor (742)
+[2021.02.25-14.32.24:362][664]LogModuleManager: Shutting down and abandoning module SequenceRecorder (741)
+[2021.02.25-14.32.24:362][664]LogModuleManager: Shutting down and abandoning module OpenExrWrapper (738)
+[2021.02.25-14.32.24:362][664]LogModuleManager: Shutting down and abandoning module ImgMediaFactory (736)
+[2021.02.25-14.32.24:362][664]LogModuleManager: Shutting down and abandoning module ImgMediaEditor (734)
+[2021.02.25-14.32.24:362][664]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (732)
+[2021.02.25-14.32.24:362][664]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (730)
+[2021.02.25-14.32.24:362][664]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (728)
+[2021.02.25-14.32.24:363][664]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (726)
+[2021.02.25-14.32.24:363][664]LogModuleManager: Shutting down and abandoning module MagicLeapMediaCodecFactory (724)
+[2021.02.25-14.32.24:363][664]LogModuleManager: Shutting down and abandoning module MagicLeapMediaFactory (722)
+[2021.02.25-14.32.24:363][664]LogModuleManager: Shutting down and abandoning module MagicLeapMediaEditor (720)
+[2021.02.25-14.32.24:363][664]LogModuleManager: Shutting down and abandoning module PlanarCut (718)
+[2021.02.25-14.32.24:363][664]LogModuleManager: Shutting down and abandoning module CharacterAI (716)
+[2021.02.25-14.32.24:363][664]LogModuleManager: Shutting down and abandoning module TextureAlignMode (714)
+[2021.02.25-14.32.24:363][664]LogModuleManager: Shutting down and abandoning module BspMode (712)
+[2021.02.25-14.32.24:364][664]LogModuleManager: Shutting down and abandoning module PlacementMode (711)
+[2021.02.25-14.32.24:364][664]LogModuleManager: Shutting down and abandoning module GeometryMode (708)
+[2021.02.25-14.32.24:364][664]LogModuleManager: Shutting down and abandoning module CameraShakePreviewer (706)
+[2021.02.25-14.32.24:365][664]LogModuleManager: Shutting down and abandoning module SmartSnapping (704)
+[2021.02.25-14.32.24:365][664]LogModuleManager: Shutting down and abandoning module SessionServices (702)
+[2021.02.25-14.32.24:365][664]LogModuleManager: Shutting down and abandoning module MeshPaint (700)
+[2021.02.25-14.32.24:366][664]LogModuleManager: Shutting down and abandoning module ViewportSnapping (698)
+[2021.02.25-14.32.24:366][664]LogModuleManager: Shutting down and abandoning module ViewportInteraction (696)
+[2021.02.25-14.32.24:366][664]LogModuleManager: Shutting down and abandoning module ClothPainter (694)
+[2021.02.25-14.32.24:367][664]LogModuleManager: Shutting down and abandoning module SkeletalMeshEditor (693)
+[2021.02.25-14.32.24:369][664]LogModuleManager: Shutting down and abandoning module LogVisualizer (690)
+[2021.02.25-14.32.24:371][664]LogModuleManager: Shutting down and abandoning module IntroTutorials (688)
+[2021.02.25-14.32.24:371][664]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (687)
+[2021.02.25-14.32.24:371][664]LogModuleManager: Shutting down and abandoning module LuminPlatformEditor (684)
+[2021.02.25-14.32.24:371][664]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (682)
+[2021.02.25-14.32.24:371][664]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (680)
+[2021.02.25-14.32.24:371][664]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (679)
