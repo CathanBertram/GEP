@@ -7,7 +7,7 @@
 #include "Weapon_Hitscan.generated.h"
 
 /**
- * 
+DECLARE_DYNAMIC_MULTICAST_DELEGATE(FDelegateName, ReturnType?)
  */
 UCLASS(Abstract)
 class GEPPROJECT_API AWeapon_Hitscan : public AWeapon_Base
@@ -17,6 +17,8 @@ class GEPPROJECT_API AWeapon_Hitscan : public AWeapon_Base
 public:
 	virtual bool Fire_Implementation() override;
 
+	//UProperty(BlueprintAssignable)
+	//FDelegateName onDelegateName
 protected:
 	UPROPERTY(EditAnywhere, Category = "Weapon Variables")
 	float range;

@@ -45,9 +45,10 @@ void EmptyLinkFunctionForGeneratedCodeWeapon_Hitscan() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AWeapon_Hitscan_Statics::Class_MetaDataParams[] = {
-		{ "Comment", "/**\n * \n */" },
+		{ "Comment", "/**\nDECLARE_DYNAMIC_MULTICAST_DELEGATE(FDelegateName, ReturnType?)\n */" },
 		{ "IncludePath", "Weapons/Weapon_Hitscan.h" },
 		{ "ModuleRelativePath", "Weapons/Weapon_Hitscan.h" },
+		{ "ToolTip", "DECLARE_DYNAMIC_MULTICAST_DELEGATE(FDelegateName, ReturnType?)" },
 	};
 #endif
 #if WITH_METADATA
@@ -87,7 +88,7 @@ void EmptyLinkFunctionForGeneratedCodeWeapon_Hitscan() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AWeapon_Hitscan, 934131241);
+	IMPLEMENT_CLASS(AWeapon_Hitscan, 214701890);
 	template<> GEPPROJECT_API UClass* StaticClass<AWeapon_Hitscan>()
 	{
 		return AWeapon_Hitscan::StaticClass();

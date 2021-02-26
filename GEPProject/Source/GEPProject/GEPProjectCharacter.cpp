@@ -60,9 +60,6 @@ void AGEPProjectCharacter::SetupPlayerInputComponent(class UInputComponent* Play
 	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Jump);
 	PlayerInputComponent->BindAction("Jump", IE_Released, this, &ACharacter::StopJumping);
 
-	// Bind fire event
-	PlayerInputComponent->BindAction("Fire", IE_Pressed, this, &AGEPProjectCharacter::OnFire);
-
 	PlayerInputComponent->BindAxis("MoveForward", this, &AGEPProjectCharacter::MoveForward);
 	PlayerInputComponent->BindAxis("MoveRight", this, &AGEPProjectCharacter::MoveRight);
 
@@ -73,7 +70,7 @@ void AGEPProjectCharacter::SetupPlayerInputComponent(class UInputComponent* Play
 	PlayerInputComponent->BindAxis("TurnRate", this, &AGEPProjectCharacter::TurnAtRate);
 	PlayerInputComponent->BindAxis("LookUp", this, &APawn::AddControllerPitchInput);
 	PlayerInputComponent->BindAxis("LookUpRate", this, &AGEPProjectCharacter::LookUpAtRate);
-
+	
 	PlayerInputComponent->BindAction("Fire", IE_Pressed, this, &AGEPProjectCharacter::OnFire);
 	PlayerInputComponent->BindAction("Interact", IE_Pressed, this, &AGEPProjectCharacter::OnInteract);
 }
