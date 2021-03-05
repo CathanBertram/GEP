@@ -1,6 +1,8 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
 #include "GEPProjectCharacter.h"
+
+#include "EventSystem.h"
 #include "GEPProjectProjectile.h"
 #include "Camera/CameraComponent.h"
 #include "Components/CapsuleComponent.h"
@@ -43,6 +45,11 @@ void AGEPProjectCharacter::BeginPlay()
 	Super::BeginPlay();
 }
 
+void AGEPProjectCharacter::FireEvent()
+{	
+	GetGameInstance()->GetSubsystem<UEventSystem>()->OnEventName();
+}
+
 APawn* AGEPProjectCharacter::GetAsPawn_Implementation()
 {
 	return this;
@@ -73,6 +80,8 @@ void AGEPProjectCharacter::SetupPlayerInputComponent(class UInputComponent* Play
 	
 	PlayerInputComponent->BindAction("Fire", IE_Pressed, this, &AGEPProjectCharacter::OnFire);
 	PlayerInputComponent->BindAction("Interact", IE_Pressed, this, &AGEPProjectCharacter::OnInteract);
+
+	PlayerInputComponent->BindAction("Test", IE_Pressed, this, &AGEPProjectCharacter::FireEvent);
 }
 
 void AGEPProjectCharacter::OnFire()

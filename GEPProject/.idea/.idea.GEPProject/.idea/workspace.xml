@@ -8,81 +8,51 @@
     <list default="true" id="37f4dc96-c088-407b-80a2-d8740801dcca" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GEPProject/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GEPProject/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GEPProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GEPProject/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-GEPProject.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-GEPProject.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Binaries/Win64/UE4Editor.modules" beforeDir="false" afterPath="$PROJECT_DIR$/Binaries/Win64/UE4Editor.modules" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/DefaultInput.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultInput.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/FirstPersonCPP/Blueprints/FirstPersonCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/FirstPersonCPP/Blueprints/FirstPersonCharacter.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/FirstPersonCPP/Maps/FirstPersonExampleMap.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/FirstPersonCPP/Maps/FirstPersonExampleMap.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GEPProject.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/GEPProject.sln.DotSettings.user" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Intermediate/Build/SourceFileCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/SourceFileCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/GEPProjectEditor/ActionHistory.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/GEPProjectEditor/ActionHistory.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/GEPProjectEditor/Development/DependencyCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/GEPProjectEditor/Development/DependencyCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/GEPProjectEditor/Development/GEPProjectEditor.uhtmanifest" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/GEPProjectEditor/Development/GEPProjectEditor.uhtmanifest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/GEPProjectEditor/Development/HotReload.state" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/GEPProjectEditor/Development/HotReload.state" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/GEPProjectEditor/Development/Makefile.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/GEPProjectEditor/Development/Makefile.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/GEPProjectEditor/Development/Metadata-HotReload.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/GEPProjectEditor/Development/Metadata-HotReload.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/Fireable.cpp.obj.response" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/Fireable.cpp.obj.response" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/Fireable.cpp.obj.response.old" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/Fireable.cpp.obj.response.old" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/Fireable.cpp.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/Fireable.cpp.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/Fireable.gen.cpp.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/Fireable.gen.cpp.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/GEPProjectCharacter.cpp.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/GEPProjectCharacter.cpp.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/GEPProjectCharacter.gen.cpp.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/GEPProjectCharacter.gen.cpp.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/GEPProjectGameMode.cpp.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/GEPProjectGameMode.cpp.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/Interactable.cpp.obj.response" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/Interactable.cpp.obj.response" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/Interactable.cpp.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/Interactable.cpp.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/Interactable.gen.cpp.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/Interactable.gen.cpp.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/Pawnable.cpp.obj.response" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/Pawnable.cpp.obj.response" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/Pawnable.cpp.obj.response.old" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/Pawnable.cpp.obj.response.old" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/Pawnable.cpp.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/Pawnable.cpp.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/Pawnable.gen.cpp.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/Pawnable.gen.cpp.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/Shootable.cpp.obj.response" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/Shootable.cpp.obj.response" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/Shootable.cpp.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/Shootable.cpp.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/Shootable.gen.cpp.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/Shootable.gen.cpp.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/TestBlock.cpp.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/TestBlock.cpp.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/TestBlock.gen.cpp.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/TestBlock.gen.cpp.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/UE4Editor-GEPProject.dll.response" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/UE4Editor-GEPProject.dll.response" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/UE4Editor-GEPProject.dll.response.old" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/UE4Editor-GEPProject.dll.response.old" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/UE4Editor-GEPProject.exp" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/UE4Editor-GEPProject.exp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/UE4Editor-GEPProject.lib.response" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/UE4Editor-GEPProject.lib.response" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/UE4Editor-GEPProject.lib.response.old" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/UE4Editor-GEPProject.lib.response.old" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/Weapon_Base.cpp.obj.response" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/Weapon_Base.cpp.obj.response" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/UE4Editor-GEPProject.suppressed.exp" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/UE4Editor-GEPProject.suppressed.exp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/Weapon_Base.cpp.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/Weapon_Base.cpp.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/Weapon_Base.gen.cpp.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/Weapon_Base.gen.cpp.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/Weapon_Hitscan.cpp.obj.response" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/Weapon_Hitscan.cpp.obj.response" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/Weapon_Hitscan.cpp.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/Weapon_Hitscan.cpp.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/Weapon_Hitscan.gen.cpp.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/Weapon_Hitscan.gen.cpp.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Inc/GEPProject/Fireable.gen.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Inc/GEPProject/Fireable.gen.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Inc/GEPProject/Fireable.generated.h" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Inc/GEPProject/Fireable.generated.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Inc/GEPProject/GEPProject.init.gen.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Inc/GEPProject/GEPProject.init.gen.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Inc/GEPProject/Interactable.gen.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Inc/GEPProject/Interactable.gen.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Inc/GEPProject/Interactable.generated.h" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Inc/GEPProject/Interactable.generated.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Inc/GEPProject/Pawnable.gen.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Inc/GEPProject/Pawnable.gen.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Inc/GEPProject/Pawnable.generated.h" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Inc/GEPProject/Pawnable.generated.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Inc/GEPProject/Shootable.gen.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Inc/GEPProject/Shootable.gen.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Inc/GEPProject/Shootable.generated.h" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Inc/GEPProject/Shootable.generated.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Inc/GEPProject/Timestamp" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Inc/GEPProject/Timestamp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Inc/GEPProject/Weapon_Base.gen.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Inc/GEPProject/Weapon_Base.gen.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Inc/GEPProject/Weapon_Base.generated.h" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Inc/GEPProject/Weapon_Base.generated.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Inc/GEPProject/Weapon_Hitscan.gen.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Inc/GEPProject/Weapon_Hitscan.gen.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Inc/GEPProject/Weapon_Hitscan.generated.h" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Inc/GEPProject/Weapon_Hitscan.generated.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Intermediate/CachedAssetRegistry.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/CachedAssetRegistry.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/Config/CoalescedSourceConfigs/Input.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Config/CoalescedSourceConfigs/Input.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Intermediate/ProjectFiles/GEPProject.vcxproj" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/ProjectFiles/GEPProject.vcxproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Intermediate/ProjectFiles/GEPProject.vcxproj.filters" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/ProjectFiles/GEPProject.vcxproj.filters" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Intermediate/ProjectFiles/UE4.vcxproj.filters" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/ProjectFiles/UE4.vcxproj.filters" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Saved/AutoScreenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/Saved/AutoScreenshot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Saved/Config/CrashReportClient/UE4CC-Windows-0852D7B346FFAA2F4EFD2CA5972FDBE0/CrashReportClient.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Saved/Config/CrashReportClient/UE4CC-Windows-65902F7748CA8B2CBEBD069A15A25B0F/CrashReportClient.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Saved/Config/CrashReportClient/UE4CC-Windows-8741FA8044AC0831F73A2EBA557A85C9/CrashReportClient.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Saved/Config/CrashReportClient/UE4CC-Windows-94E2EA5C43D842713D34FFB61365D8C4/CrashReportClient.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Saved/Config/CrashReportClient/UE4CC-Windows-A38448E74DD3100BE2473987F393C565/CrashReportClient.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Saved/Config/CrashReportClient/UE4CC-Windows-B8CEB71D43C34DAF562BAFB7D4205E45/CrashReportClient.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Saved/Config/CrashReportClient/UE4CC-Windows-D61085194BF16E4FDB8DDFAA37E1D696/CrashReportClient.ini" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Saved/Config/Windows/EditorPerProjectUserSettings.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Saved/Config/Windows/EditorPerProjectUserSettings.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Config/Windows/Engine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Saved/Config/Windows/Engine.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Saved/Logs/GEPProject.log" beforeDir="false" afterPath="$PROJECT_DIR$/Saved/Logs/GEPProject.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/GEPProject/Fireable.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/GEPProject/Interfaces/Fireable.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/GEPProject/Fireable.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/GEPProject/Interfaces/Fireable.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/GEPProject/GEPProjectCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/GEPProject/GEPProjectCharacter.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/GEPProject/GEPProjectCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/GEPProject/GEPProjectCharacter.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/GEPProject/Interactable.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/GEPProject/Interfaces/Interactable.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/GEPProject/Interactable.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/GEPProject/Interfaces/Interactable.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/GEPProject/Pawnable.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/GEPProject/Interfaces/Pawnable.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/GEPProject/Pawnable.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/GEPProject/Interfaces/Pawnable.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/GEPProject/Shootable.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/GEPProject/Interfaces/Shootable.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/GEPProject/Shootable.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/GEPProject/Interfaces/Shootable.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/GEPProject/TestBlock.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/GEPProject/TestBlock.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/GEPProject/Weapon_Base.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/GEPProject/Weapons/Weapon_Base.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/GEPProject/Weapon_Base.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/GEPProject/Weapons/Weapon_Base.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/GEPProject/Weapon_Hitscan.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/GEPProject/Weapons/Weapon_Hitscan.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/GEPProject/Weapon_Hitscan.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/GEPProject/Weapons/Weapon_Hitscan.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/GEPProject/Weapons/Weapon_Base.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/GEPProject/Weapons/Weapon_Base.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/GEPProject/Weapons/Weapon_Base.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/GEPProject/Weapons/Weapon_Base.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/GEPProject/Weapons/Weapon_Hitscan.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/GEPProject/Weapons/Weapon_Hitscan.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/GEPProject/Weapons/Weapon_Hitscan.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/GEPProject/Weapons/Weapon_Hitscan.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,11 +65,16 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/../../../epk/UE_4.25/Engine/Source/Runtime/Engine/Classes/Components/BoxComponent.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../epk/UE_4.25/Engine/Source/Runtime/Engine/Private/StaticMesh.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../epk/UE_4.25/Engine/Source/Runtime/CoreUObject/Private/UObject/UObjectBase.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../epk/UE_4.25/Engine/Source/Runtime/Core/Public/Delegates/DelegateCombinations.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../epk/UE_4.25/Engine/Source/Runtime/Engine/Classes/Engine/Engine.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../epk/UE_4.25/Engine/Source/Runtime/Engine/Private/Actor.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../epk/UE_4.25/Engine/Source/Runtime/Engine/Private/UnrealEngine.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../epk/UE_4.25/Engine/Source/Runtime/Engine/Private/PlayerCameraManager.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../epk/UE_4.25/Engine/Source/Runtime/Engine/Private/Controller.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../epk/UE_4.25/Engine/Source/Runtime/Engine/Classes/Kismet/GameplayStatics.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../epk/UE_4.25/Engine/Source/Runtime/Core/Public/UObject/ScriptDelegates.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../epk/UE_4.25/Engine/Source/Runtime/Engine/Classes/Components/InputComponent.h" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -113,12 +88,16 @@
       <option value="$PROJECT_DIR$/Source/GEPProject/Interactable.h" />
       <option value="$PROJECT_DIR$/Source/GEPProject/TestBlock.cpp" />
       <option value="$PROJECT_DIR$/Source/GEPProject/Weapon_Hitscan.cpp" />
-      <option value="$PROJECT_DIR$/Source/GEPProject/GEPProjectCharacter.cpp" />
       <option value="$PROJECT_DIR$/Source/GEPProject/Weapons/Weapon_Projectile.h" />
       <option value="$PROJECT_DIR$/Source/GEPProject/Weapons/Weapon_Projectile.cpp" />
-      <option value="$PROJECT_DIR$/Source/GEPProject/GEPProjectCharacter.h" />
       <option value="$PROJECT_DIR$/Source/GEPProject/TestBlock.h" />
+      <option value="$PROJECT_DIR$/Source/GEPProject/GEPProjectCharacter.h" />
+      <option value="$PROJECT_DIR$/Source/GEPProject/GEPProjectCharacter.cpp" />
       <option value="$PROJECT_DIR$/Source/GEPProject/Weapons/Weapon_Base.h" />
+      <option value="$PROJECT_DIR$/Source/GEPProject/Weapons/Weapon_Hitscan.h" />
+      <option value="$PROJECT_DIR$/Source/GEPProject/Weapons/Weapon_Base.cpp" />
+      <option value="$PROJECT_DIR$/Source/GEPProject/EventSystem.h" />
+      <option value="$PROJECT_DIR$/Source/GEPProject/EventSystem.cpp" />
       <option value="$PROJECT_DIR$/Source/GEPProject/Weapons/Weapon_Hitscan.cpp" />
     </changedPaths>
   </component>
@@ -367,6 +346,11 @@
       <workItem from="1614161194021" duration="1530000" />
       <workItem from="1614162862715" duration="11005000" />
       <workItem from="1614261246074" duration="2290000" />
+      <workItem from="1614609464083" duration="547000" />
+      <workItem from="1614611389752" duration="133000" />
+      <workItem from="1614612105014" duration="43000" />
+      <workItem from="1614938895080" duration="5272000" />
+      <workItem from="1614949616941" duration="109000" />
     </task>
     <servers />
   </component>

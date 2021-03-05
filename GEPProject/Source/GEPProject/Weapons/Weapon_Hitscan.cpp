@@ -2,13 +2,21 @@
 
 
 #include "Weapon_Hitscan.h"
+
+#include "K2Node_GetSubsystem.h"
 #include "GEPProject/Interfaces/Shootable.h"
 #include "Engine/World.h"
 #include "Engine/Engine.h"
 #include "Components/ArrowComponent.h"
 #include "Camera/PlayerCameraManager.h"
+#include "GEPProject/EventSystem.h"
 #include "Kismet/GameplayStatics.h"
 
+void AWeapon_Hitscan::BeginPlay()
+{
+	Super::BeginPlay();
+	GetGameInstance()->GetSubsystem<UEventSystem>()->onEventName.AddDynamic(this, &AWeapon_Hitscan::DoEvent);
+}
 bool AWeapon_Hitscan::Fire_Implementation()
 {
 	UWorld* const world = GetWorld();
@@ -20,6 +28,8 @@ bool AWeapon_Hitscan::Fire_Implementation()
 		UArrowComponent* muzzle = GetGunMuzzle();
 		FVector start = UGameplayStatics::GetPlayerController(world, 0)->PlayerCameraManager->GetCameraLocation();
 		FVector forward = UGameplayStatics::GetPlayerController(world, 0)->PlayerCameraManager->GetActorForwardVector();
+			
+		
 		FVector end = (forward * range) + start;
 		//FVector start = ((muzzle != nullptr) ? muzzle->GetComponentLocation() : GetActorLocation());
 		//FVector end = (((muzzle != nullptr) ? muzzle->GetForwardVector() : GetActorForwardVector()) * 100000);
@@ -37,10 +47,14 @@ bool AWeapon_Hitscan::Fire_Implementation()
 			{
 				shootableCast->Execute_GetShot(hit.GetActor());
 			}
-			//hit.Actor->K2_DestroyActor();
+			//hit.Actor->Destroy(false, false);
 		}
 	}
 	return true;
 }
 
+void AWeapon_Hitscan::DoEvent()
+{
+	GEngine->AddOnScreenDebugMessage(-1,5.f,FColor::Red,"event work");
+}
 

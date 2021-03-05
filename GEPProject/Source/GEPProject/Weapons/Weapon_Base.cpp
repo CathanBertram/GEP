@@ -5,6 +5,7 @@
 #include "Components/SkeletalMeshComponent.h"
 #include "Components/ArrowComponent.h"
 #include "Engine/Engine.h"
+#include "GEPProject/EventSystem.h"
 
 // Sets default values
 AWeapon_Base::AWeapon_Base()
@@ -24,7 +25,6 @@ AWeapon_Base::AWeapon_Base()
 void AWeapon_Base::BeginPlay()
 {
 	Super::BeginPlay();
-	
 }
 
 bool AWeapon_Base::Fire_Implementation()
@@ -32,6 +32,8 @@ bool AWeapon_Base::Fire_Implementation()
 	GEngine->AddOnScreenDebugMessage(-1,5.f,FColor::Red,FString::Printf(TEXT("Firing base weapon class")));
 	return true;
 }
+
+
 
 
 

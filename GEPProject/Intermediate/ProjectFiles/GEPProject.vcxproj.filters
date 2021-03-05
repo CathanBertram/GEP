@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\GEPProject.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{6CD06766-E667-4DBC-83B7-E1CE7B2B265F}</UniqueIdentifier>
+      <UniqueIdentifier>{E92DE2FF-A0C1-4AF3-85E4-2D8A1CED9492}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\GEPProject.Target.cs">
       <Filter>Source</Filter>
@@ -13,7 +13,7 @@
     </None>
     <None Include="..\..\GEPProject.sln.DotSettings.user" />
     <Filter Include="Config">
-      <UniqueIdentifier>{222C1747-AC58-4ABD-94AA-F8104245C201}</UniqueIdentifier>
+      <UniqueIdentifier>{810330E2-C844-4AB6-A253-637B38CCA640}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -31,8 +31,14 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\GEPProject">
-      <UniqueIdentifier>{0DB234A2-7179-4F9B-9181-149CC1A9EEF7}</UniqueIdentifier>
+      <UniqueIdentifier>{E7C9AFED-F412-4151-BBEC-7DEC3B259AFB}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\GEPProject\EventSystem.cpp">
+      <Filter>Source\GEPProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\GEPProject\EventSystem.h">
+      <Filter>Source\GEPProject</Filter>
+    </ClInclude>
     <None Include="..\..\Source\GEPProject\GEPProject.Build.cs">
       <Filter>Source\GEPProject</Filter>
     </None>
@@ -72,14 +78,8 @@
     <ClInclude Include="..\..\Source\GEPProject\TestBlock.h">
       <Filter>Source\GEPProject</Filter>
     </ClInclude>
-    <ClCompile Include="..\..\Source\GEPProject\Weapon_Projectile.cpp">
-      <Filter>Source\GEPProject</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\GEPProject\Weapon_Projectile.h">
-      <Filter>Source\GEPProject</Filter>
-    </ClInclude>
     <Filter Include="Source\GEPProject\Interfaces">
-      <UniqueIdentifier>{671D3CD8-C0E4-4F3B-A015-811F2CAC08DB}</UniqueIdentifier>
+      <UniqueIdentifier>{3803A61C-71E5-411F-9CC2-DC19A9E059D1}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\GEPProject\Interfaces\Fireable.cpp">
       <Filter>Source\GEPProject\Interfaces</Filter>
@@ -106,7 +106,7 @@
       <Filter>Source\GEPProject\Interfaces</Filter>
     </ClInclude>
     <Filter Include="Source\GEPProject\Weapons">
-      <UniqueIdentifier>{936D0BEF-73CB-4F15-A90F-75A09A6CF476}</UniqueIdentifier>
+      <UniqueIdentifier>{951D7C29-F513-4590-B64E-D02D54B6219D}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\GEPProject\Weapons\Weapon_Base.cpp">
       <Filter>Source\GEPProject\Weapons</Filter>
@@ -118,6 +118,12 @@
       <Filter>Source\GEPProject\Weapons</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\GEPProject\Weapons\Weapon_Hitscan.h">
+      <Filter>Source\GEPProject\Weapons</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\GEPProject\Weapons\Weapon_Projectile.cpp">
+      <Filter>Source\GEPProject\Weapons</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\GEPProject\Weapons\Weapon_Projectile.h">
       <Filter>Source\GEPProject\Weapons</Filter>
     </ClInclude>
   </ItemGroup>
