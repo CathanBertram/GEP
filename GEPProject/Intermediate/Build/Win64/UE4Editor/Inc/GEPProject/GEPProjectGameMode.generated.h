@@ -58,7 +58,10 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AGEPProjectGameMode); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AGEPProjectGameMode)
 
 
-#define GEPProject_Source_GEPProject_GEPProjectGameMode_h_12_PRIVATE_PROPERTY_OFFSET
+#define GEPProject_Source_GEPProject_GEPProjectGameMode_h_12_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__playerControllers() { return STRUCT_OFFSET(AGEPProjectGameMode, playerControllers); }
+
+
 #define GEPProject_Source_GEPProject_GEPProjectGameMode_h_9_PROLOG
 #define GEPProject_Source_GEPProject_GEPProjectGameMode_h_12_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \

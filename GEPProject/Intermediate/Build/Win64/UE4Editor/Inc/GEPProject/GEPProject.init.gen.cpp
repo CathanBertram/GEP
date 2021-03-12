@@ -11,22 +11,18 @@
 #endif
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeGEPProject_init() {}
-	GEPPROJECT_API UFunction* Z_Construct_UDelegateFunction_GEPProject_EventName__DelegateSignature();
 	UPackage* Z_Construct_UPackage__Script_GEPProject()
 	{
 		static UPackage* ReturnPackage = nullptr;
 		if (!ReturnPackage)
 		{
-			static UObject* (*const SingletonFuncArray[])() = {
-				(UObject* (*)())Z_Construct_UDelegateFunction_GEPProject_EventName__DelegateSignature,
-			};
 			static const UE4CodeGen_Private::FPackageParams PackageParams = {
 				"/Script/GEPProject",
-				SingletonFuncArray,
-				UE_ARRAY_COUNT(SingletonFuncArray),
+				nullptr,
+				0,
 				PKG_CompiledIn | 0x00000000,
-				0x35845122,
-				0xAB6D756E,
+				0x3F9785CC,
+				0xECDB1EA9,
 				METADATA_PARAMS(nullptr, 0)
 			};
 			UE4CodeGen_Private::ConstructUPackage(ReturnPackage, PackageParams);

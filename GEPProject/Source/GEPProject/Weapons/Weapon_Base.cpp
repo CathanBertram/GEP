@@ -5,7 +5,6 @@
 #include "Components/SkeletalMeshComponent.h"
 #include "Components/ArrowComponent.h"
 #include "Engine/Engine.h"
-#include "GEPProject/EventSystem.h"
 
 // Sets default values
 AWeapon_Base::AWeapon_Base()

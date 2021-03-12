@@ -9,13 +9,11 @@
 #include "Engine/Engine.h"
 #include "Components/ArrowComponent.h"
 #include "Camera/PlayerCameraManager.h"
-#include "GEPProject/EventSystem.h"
 #include "Kismet/GameplayStatics.h"
 
 void AWeapon_Hitscan::BeginPlay()
 {
 	Super::BeginPlay();
-	GetGameInstance()->GetSubsystem<UEventSystem>()->onEventName.AddDynamic(this, &AWeapon_Hitscan::DoEvent);
 }
 bool AWeapon_Hitscan::Fire_Implementation()
 {
@@ -51,10 +49,5 @@ bool AWeapon_Hitscan::Fire_Implementation()
 		}
 	}
 	return true;
-}
-
-void AWeapon_Hitscan::DoEvent()
-{
-	GEngine->AddOnScreenDebugMessage(-1,5.f,FColor::Red,"event work");
 }
 

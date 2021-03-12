@@ -14,8 +14,6 @@ E:\Github\GEP\GEPProject\Source\GEPProject/Interfaces/Shootable.h
 E:\Github\GEP\GEPProject\Intermediate\Build\Win64\UE4Editor\Inc\GEPProject\Shootable.generated.h
 E:\epk\UE_4.25\Engine\Source\Runtime\Engine\Classes\Components/ArrowComponent.h
 E:\epk\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ArrowComponent.generated.h
-E:\Github\GEP\GEPProject\Source\GEPProject/EventSystem.h
-E:\Github\GEP\GEPProject\Intermediate\Build\Win64\UE4Editor\Inc\GEPProject\EventSystem.generated.h
 E:\epk\UE_4.25\Engine\Source\Runtime\Engine\Classes\Kismet/GameplayStatics.h
 E:\epk\UE_4.25\Engine\Source\Runtime\Engine\Classes\Kismet/KismetSystemLibrary.h
 E:\epk\UE_4.25\Engine\Source\Runtime\CoreUObject\Public\UObject/PropertyAccessUtil.h

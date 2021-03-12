@@ -3,15 +3,14 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "Interfaces/InitableChar.h"
+#include "Interfaces/Inputable.h"
 #include "Interfaces/Pawnable.h"
 #include "GameFramework/Character.h"
 #include "GEPProjectCharacter.generated.h"
 
-class UInputComponent;
-class APawn;
-
 UCLASS(config=Game)
-class AGEPProjectCharacter : public ACharacter, public IPawnable
+class AGEPProjectCharacter : public ACharacter, public IInputable, public IInitableChar, public IPawnable
 {
 	GENERATED_BODY()
 
@@ -29,12 +28,59 @@ public:
 	APawn* GetAsPawn();
 	virtual APawn* GetAsPawn_Implementation() override;
 
-protected:
-	virtual void BeginPlay();
-
-	void FireEvent();
-
 public:
+#pragma region InitableChar_Interface
+	UFUNCTION(BlueprintCallable,BlueprintNativeEvent)
+	void Init();
+	virtual void Init_Implementation() override;
+
+	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
+	AGEPProjectCharacter* GetAsChar();
+	virtual AGEPProjectCharacter* GetAsChar_Implementation() override;
+#pragma endregion
+
+#pragma region Inputable_Interface
+	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
+	void JumpPressed();
+	virtual void JumpPressed_Implementation() override;
+	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
+	void JumpReleased();
+	virtual void JumpReleased_Implementation() override;
+	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
+	void FirePressed();
+	virtual void FirePressed_Implementation() override;
+	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
+	void FireReleased();
+	virtual void FireReleased_Implementation() override;
+	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
+	void InteractPressed();
+	virtual void InteractPressed_Implementation() override;
+	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
+	void InteractReleased();
+	virtual void InteractReleased_Implementation() override;
+
+	void OnInteract();
+	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
+	void MoveForward(float value);
+	virtual void MoveForward_Implementation(float value) override;
+	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
+	void MoveRight(float value);
+	virtual void MoveRight_Implementation(float value) override;
+	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
+	void LookUpAtRate(float value);
+	virtual void LookUpAtRate_Implementation(float value) override;
+	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
+	void TurnAtRate(float value);
+	virtual void TurnAtRate_Implementation(float value) override;
+	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
+	void LookUp(float value);
+	virtual void LookUp_Implementation(float value) override;
+	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
+	void Turn(float value);
+	virtual void Turn_Implementation(float value) override;
+#pragma endregion 
+
+	
 	/** Base turn rate, in deg/sec. Other scaling may affect final turn rate. */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category=Camera)
 	float BaseTurnRate;
@@ -46,33 +92,6 @@ public:
 private:
 	UPROPERTY(EditAnywhere, Category = "PlayerVariables")
 	float interactRange;
-protected:
-	
-	/** Fires a projectile. */
-	void OnFire();
-
-	void OnInteract();
-	/** Handles moving forward/backward */
-	void MoveForward(float Val);
-
-	/** Handles stafing movement, left and right */
-	void MoveRight(float Val);
-
-	/**
-	 * Called via input to turn at a given rate.
-	 * @param Rate	This is a normalized rate, i.e. 1.0 means 100% of desired turn rate
-	 */
-	void TurnAtRate(float Rate);
-
-	/**
-	 * Called via input to turn look up/down at a given rate.
-	 * @param Rate	This is a normalized rate, i.e. 1.0 means 100% of desired turn rate
-	 */
-	void LookUpAtRate(float Rate);
-	
-	// APawn interface
-	virtual void SetupPlayerInputComponent(UInputComponent* InputComponent) override;
-	// End of APawn interface
 	
 public:
 	/** Returns FirstPersonCameraComponent subobject **/
