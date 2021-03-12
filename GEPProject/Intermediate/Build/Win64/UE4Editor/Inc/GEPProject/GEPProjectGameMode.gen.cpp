@@ -80,7 +80,7 @@ void EmptyLinkFunctionForGeneratedCodeGEPProjectGameMode() {}
 		0,
 		UE_ARRAY_COUNT(Z_Construct_UClass_AGEPProjectGameMode_Statics::PropPointers),
 		0,
-		0x008802ACu,
+		0x008002ADu,
 		METADATA_PARAMS(Z_Construct_UClass_AGEPProjectGameMode_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_AGEPProjectGameMode_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AGEPProjectGameMode()
@@ -92,7 +92,7 @@ void EmptyLinkFunctionForGeneratedCodeGEPProjectGameMode() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AGEPProjectGameMode, 289148594);
+	IMPLEMENT_CLASS(AGEPProjectGameMode, 178060334);
 	template<> GEPPROJECT_API UClass* StaticClass<AGEPProjectGameMode>()
 	{
 		return AGEPProjectGameMode::StaticClass();

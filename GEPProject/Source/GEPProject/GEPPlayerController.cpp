@@ -38,7 +38,7 @@ void AGEPPlayerController::Init_Implementation()
 			AGEPProjectCharacter* tempChar = IInitableChar::Execute_GetAsChar(tempPawn);
 			
 			//Bind Events
-
+			
 			IInitableChar::Execute_Init(tempPawn);
 		}
 		Possess(tempPawn);

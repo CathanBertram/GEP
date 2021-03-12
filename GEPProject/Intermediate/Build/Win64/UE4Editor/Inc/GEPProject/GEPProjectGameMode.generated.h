@@ -21,7 +21,7 @@ private: \
 	static void StaticRegisterNativesAGEPProjectGameMode(); \
 	friend struct Z_Construct_UClass_AGEPProjectGameMode_Statics; \
 public: \
-	DECLARE_CLASS(AGEPProjectGameMode, AGameModeBase, COMPILED_IN_FLAGS(0 | CLASS_Transient | CLASS_Config), CASTCLASS_None, TEXT("/Script/GEPProject"), GEPPROJECT_API) \
+	DECLARE_CLASS(AGEPProjectGameMode, AGameModeBase, COMPILED_IN_FLAGS(CLASS_Abstract | CLASS_Transient | CLASS_Config), CASTCLASS_None, TEXT("/Script/GEPProject"), NO_API) \
 	DECLARE_SERIALIZER(AGEPProjectGameMode)
 
 
@@ -30,30 +30,30 @@ private: \
 	static void StaticRegisterNativesAGEPProjectGameMode(); \
 	friend struct Z_Construct_UClass_AGEPProjectGameMode_Statics; \
 public: \
-	DECLARE_CLASS(AGEPProjectGameMode, AGameModeBase, COMPILED_IN_FLAGS(0 | CLASS_Transient | CLASS_Config), CASTCLASS_None, TEXT("/Script/GEPProject"), GEPPROJECT_API) \
+	DECLARE_CLASS(AGEPProjectGameMode, AGameModeBase, COMPILED_IN_FLAGS(CLASS_Abstract | CLASS_Transient | CLASS_Config), CASTCLASS_None, TEXT("/Script/GEPProject"), NO_API) \
 	DECLARE_SERIALIZER(AGEPProjectGameMode)
 
 
 #define GEPProject_Source_GEPProject_GEPProjectGameMode_h_12_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
-	GEPPROJECT_API AGEPProjectGameMode(const FObjectInitializer& ObjectInitializer); \
+	NO_API AGEPProjectGameMode(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AGEPProjectGameMode) \
-	DECLARE_VTABLE_PTR_HELPER_CTOR(GEPPROJECT_API, AGEPProjectGameMode); \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, AGEPProjectGameMode); \
 DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AGEPProjectGameMode); \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
-	GEPPROJECT_API AGEPProjectGameMode(AGEPProjectGameMode&&); \
-	GEPPROJECT_API AGEPProjectGameMode(const AGEPProjectGameMode&); \
+	NO_API AGEPProjectGameMode(AGEPProjectGameMode&&); \
+	NO_API AGEPProjectGameMode(const AGEPProjectGameMode&); \
 public:
 
 
 #define GEPProject_Source_GEPProject_GEPProjectGameMode_h_12_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
-	GEPPROJECT_API AGEPProjectGameMode(AGEPProjectGameMode&&); \
-	GEPPROJECT_API AGEPProjectGameMode(const AGEPProjectGameMode&); \
+	NO_API AGEPProjectGameMode(AGEPProjectGameMode&&); \
+	NO_API AGEPProjectGameMode(const AGEPProjectGameMode&); \
 public: \
-	DECLARE_VTABLE_PTR_HELPER_CTOR(GEPPROJECT_API, AGEPProjectGameMode); \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, AGEPProjectGameMode); \
 DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AGEPProjectGameMode); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AGEPProjectGameMode)
 
