@@ -15,8 +15,10 @@ class AGEPProjectCharacter : public ACharacter, public IInputable, public IInita
 	GENERATED_BODY()
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
-	class UChildActorComponent* childActorGun;
-	
+	UChildActorComponent* equippedWeapon;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+	TArray<TSubclassOf<AActor>> weaponArray;
 	/** First person camera */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
 	class UCameraComponent* FirstPersonCameraComponent;
@@ -58,6 +60,22 @@ public:
 	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
 	void InteractReleased();
 	virtual void InteractReleased_Implementation() override;
+	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
+    void Key1Pressed();
+	virtual void Key1Pressed_Implementation() override;
+	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
+    void Key2Pressed();
+	virtual void Key2Pressed_Implementation() override;
+	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
+    void Key3Pressed();
+	virtual void Key3Pressed_Implementation() override;
+	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
+    void Key4Pressed();
+	virtual void Key4Pressed_Implementation() override;
+	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
+    void Key5Pressed();
+	virtual void Key5Pressed_Implementation() override;
+	
 
 	void OnInteract();
 	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
@@ -104,6 +122,8 @@ private:
 	float maxHealth;
 	UPROPERTY(EditAnywhere, Category = "PlayerVariables")
 	float currentHealth;
+
+	void SwitchWeapon(int i);
 public:
 	/** Returns FirstPersonCameraComponent subobject **/
 	FORCEINLINE class UCameraComponent* GetFirstPersonCameraComponent() const { return FirstPersonCameraComponent; }

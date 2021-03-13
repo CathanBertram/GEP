@@ -11,22 +11,29 @@
 #include "Camera/PlayerCameraManager.h"
 #include "Kismet/GameplayStatics.h"
 
-void AWeapon_Hitscan::BeginPlay()
+
+AWeapon_Hitscan::AWeapon_Hitscan() : AWeapon_Base()
 {
-	Super::BeginPlay();
+	range = 100000.f;
+	shootCooldown = 1.f;
+	damage = 10.f;
 }
+
 bool AWeapon_Hitscan::Fire_Implementation()
 {
+	if (!canShoot) return false;
+
+	canShoot = false;
 	UWorld* const world = GetWorld();
 	if (world != nullptr)
-	{
-		
-		
+	{	
 		FHitResult hit(ForceInit);
-		UArrowComponent* muzzle = GetGunMuzzle();
+		USceneComponent* muzzle = GetGunMuzzle();
 		FVector start = UGameplayStatics::GetPlayerController(world, 0)->PlayerCameraManager->GetCameraLocation();
 		FVector forward = UGameplayStatics::GetPlayerController(world, 0)->PlayerCameraManager->GetActorForwardVector();
-			
+
+		UGameplayStatics::PlaySound2D(world, shootSound);
+		UGameplayStatics::SpawnEmitterAtLocation(world, muzzleFlash , muzzle->GetComponentLocation());
 		
 		FVector end = (forward * range) + start;
 		//FVector start = ((muzzle != nullptr) ? muzzle->GetComponentLocation() : GetActorLocation());
@@ -45,9 +52,16 @@ bool AWeapon_Hitscan::Fire_Implementation()
 			{
 				shootableCast->Execute_GetShot(hit.GetActor());
 			}
-			//hit.Actor->Destroy(false, false);
+			//hit.Actor->Destroy(false, false);			
 		}
 	}
+	world->GetTimerManager().SetTimer(WeaponResetTimerHandle, this, &AWeapon_Hitscan::ResetShoot, shootCooldown);
 	return true;
+}
+
+
+void AWeapon_Hitscan::ResetShoot()
+{
+	canShoot = true;
 }
 

@@ -89,7 +89,7 @@ void EmptyLinkFunctionForGeneratedCodeWeapon_Projectile() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AWeapon_Projectile, 2100346821);
+	IMPLEMENT_CLASS(AWeapon_Projectile, 4216230501);
 	template<> GEPPROJECT_API UClass* StaticClass<AWeapon_Projectile>()
 	{
 		return AWeapon_Projectile::StaticClass();

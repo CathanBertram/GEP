@@ -21,6 +21,11 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	virtual void LookUpAtRate_Implementation(float value) {}; \
 	virtual void MoveRight_Implementation(float value) {}; \
 	virtual void MoveForward_Implementation(float value) {}; \
+	virtual void Key5Pressed_Implementation() {}; \
+	virtual void Key4Pressed_Implementation() {}; \
+	virtual void Key3Pressed_Implementation() {}; \
+	virtual void Key2Pressed_Implementation() {}; \
+	virtual void Key1Pressed_Implementation() {}; \
 	virtual void InteractReleased_Implementation() {}; \
 	virtual void InteractPressed_Implementation() {}; \
 	virtual void FireReleased_Implementation() {}; \
@@ -34,6 +39,11 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	DECLARE_FUNCTION(execLookUpAtRate); \
 	DECLARE_FUNCTION(execMoveRight); \
 	DECLARE_FUNCTION(execMoveForward); \
+	DECLARE_FUNCTION(execKey5Pressed); \
+	DECLARE_FUNCTION(execKey4Pressed); \
+	DECLARE_FUNCTION(execKey3Pressed); \
+	DECLARE_FUNCTION(execKey2Pressed); \
+	DECLARE_FUNCTION(execKey1Pressed); \
 	DECLARE_FUNCTION(execInteractReleased); \
 	DECLARE_FUNCTION(execInteractPressed); \
 	DECLARE_FUNCTION(execFireReleased); \
@@ -49,6 +59,11 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	virtual void LookUpAtRate_Implementation(float value) {}; \
 	virtual void MoveRight_Implementation(float value) {}; \
 	virtual void MoveForward_Implementation(float value) {}; \
+	virtual void Key5Pressed_Implementation() {}; \
+	virtual void Key4Pressed_Implementation() {}; \
+	virtual void Key3Pressed_Implementation() {}; \
+	virtual void Key2Pressed_Implementation() {}; \
+	virtual void Key1Pressed_Implementation() {}; \
 	virtual void InteractReleased_Implementation() {}; \
 	virtual void InteractPressed_Implementation() {}; \
 	virtual void FireReleased_Implementation() {}; \
@@ -62,6 +77,11 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	DECLARE_FUNCTION(execLookUpAtRate); \
 	DECLARE_FUNCTION(execMoveRight); \
 	DECLARE_FUNCTION(execMoveForward); \
+	DECLARE_FUNCTION(execKey5Pressed); \
+	DECLARE_FUNCTION(execKey4Pressed); \
+	DECLARE_FUNCTION(execKey3Pressed); \
+	DECLARE_FUNCTION(execKey2Pressed); \
+	DECLARE_FUNCTION(execKey1Pressed); \
 	DECLARE_FUNCTION(execInteractReleased); \
 	DECLARE_FUNCTION(execInteractPressed); \
 	DECLARE_FUNCTION(execFireReleased); \
@@ -160,6 +180,11 @@ public: \
 	static void Execute_InteractReleased(UObject* O); \
 	static void Execute_JumpPressed(UObject* O); \
 	static void Execute_JumpReleased(UObject* O); \
+	static void Execute_Key1Pressed(UObject* O); \
+	static void Execute_Key2Pressed(UObject* O); \
+	static void Execute_Key3Pressed(UObject* O); \
+	static void Execute_Key4Pressed(UObject* O); \
+	static void Execute_Key5Pressed(UObject* O); \
 	static void Execute_LookUp(UObject* O, float value); \
 	static void Execute_LookUpAtRate(UObject* O, float value); \
 	static void Execute_MoveForward(UObject* O, float value); \
@@ -181,6 +206,11 @@ public: \
 	static void Execute_InteractReleased(UObject* O); \
 	static void Execute_JumpPressed(UObject* O); \
 	static void Execute_JumpReleased(UObject* O); \
+	static void Execute_Key1Pressed(UObject* O); \
+	static void Execute_Key2Pressed(UObject* O); \
+	static void Execute_Key3Pressed(UObject* O); \
+	static void Execute_Key4Pressed(UObject* O); \
+	static void Execute_Key5Pressed(UObject* O); \
 	static void Execute_LookUp(UObject* O, float value); \
 	static void Execute_LookUpAtRate(UObject* O, float value); \
 	static void Execute_MoveForward(UObject* O, float value); \

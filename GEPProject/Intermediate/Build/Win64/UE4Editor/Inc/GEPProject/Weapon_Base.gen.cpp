@@ -17,9 +17,8 @@ void EmptyLinkFunctionForGeneratedCodeWeapon_Base() {}
 	GEPPROJECT_API UClass* Z_Construct_UClass_AWeapon_Base();
 	ENGINE_API UClass* Z_Construct_UClass_AActor();
 	UPackage* Z_Construct_UPackage__Script_GEPProject();
-	ENGINE_API UClass* Z_Construct_UClass_UArrowComponent_NoRegister();
-	ENGINE_API UClass* Z_Construct_UClass_USkeletalMeshComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_USceneComponent_NoRegister();
+	ENGINE_API UClass* Z_Construct_UClass_USkeletalMeshComponent_NoRegister();
 	GEPPROJECT_API UClass* Z_Construct_UClass_UFireable_NoRegister();
 // End Cross Module References
 	DEFINE_FUNCTION(AWeapon_Base::execFire)
@@ -125,7 +124,7 @@ void EmptyLinkFunctionForGeneratedCodeWeapon_Base() {}
 		{ "ModuleRelativePath", "Weapons/Weapon_Base.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AWeapon_Base_Statics::NewProp_gunMuzzle = { "gunMuzzle", nullptr, (EPropertyFlags)0x00400000000b0009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AWeapon_Base, gunMuzzle), Z_Construct_UClass_UArrowComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AWeapon_Base_Statics::NewProp_gunMuzzle_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AWeapon_Base_Statics::NewProp_gunMuzzle_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AWeapon_Base_Statics::NewProp_gunMuzzle = { "gunMuzzle", nullptr, (EPropertyFlags)0x00400000000b0009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AWeapon_Base, gunMuzzle), Z_Construct_UClass_USceneComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AWeapon_Base_Statics::NewProp_gunMuzzle_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AWeapon_Base_Statics::NewProp_gunMuzzle_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AWeapon_Base_Statics::NewProp_gunMesh_MetaData[] = {
 		{ "Category", "Weapon_Base" },
@@ -177,7 +176,7 @@ void EmptyLinkFunctionForGeneratedCodeWeapon_Base() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AWeapon_Base, 302993713);
+	IMPLEMENT_CLASS(AWeapon_Base, 3425808834);
 	template<> GEPPROJECT_API UClass* StaticClass<AWeapon_Base>()
 	{
 		return AWeapon_Base::StaticClass();

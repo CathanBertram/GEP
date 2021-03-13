@@ -4,6 +4,8 @@
 
 #include "CoreMinimal.h"
 #include "Weapon_Base.h"
+#include "Sound/SoundCue.h"
+
 #include "Weapon_Hitscan.generated.h"
 
 
@@ -15,10 +17,24 @@ class GEPPROJECT_API AWeapon_Hitscan : public AWeapon_Base
 public:
 	virtual bool Fire_Implementation() override;
 
+	AWeapon_Hitscan();
+
 protected:
 	UPROPERTY(EditAnywhere, Category = "Weapon Variables")
 	float range;
+	UPROPERTY(EditAnywhere, Category = "Weapon Variables")
+	float shootCooldown;
+	UPROPERTY(EditAnywhere, Category = "Weapon Variables")
+	float damage;
+	UPROPERTY(EditAnywhere)
+	USoundCue* shootSound;
+	UPROPERTY(EditAnywhere)
+	UParticleSystem* muzzleFlash;
 
-	virtual void BeginPlay() override;
+	bool canShoot = true;
+	
+	void ResetShoot();
+
+	FTimerHandle WeaponResetTimerHandle;
 	
 };

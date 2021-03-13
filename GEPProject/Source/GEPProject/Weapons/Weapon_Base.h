@@ -20,11 +20,8 @@ public:
 	bool Fire();
 	virtual bool Fire_Implementation() override;
 
-	FORCEINLINE class UArrowComponent* GetGunMuzzle() const {return gunMuzzle;}
-protected:
-	// Called when the game starts or when spawned
-	virtual void BeginPlay() override;
-	
+	FORCEINLINE class USceneComponent* GetGunMuzzle() const {return gunMuzzle;}
+
 private:
 	UPROPERTY(VisibleDefaultsOnly)
 	class USceneComponent* root;
@@ -33,6 +30,6 @@ private:
 	class USkeletalMeshComponent* gunMesh;
 
 	UPROPERTY(VisibleDefaultsOnly)
-	class UArrowComponent* gunMuzzle;
+	class USceneComponent* gunMuzzle;
 
 };

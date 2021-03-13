@@ -19,6 +19,8 @@ void EmptyLinkFunctionForGeneratedCodeGEPProjectCharacter() {}
 	UPackage* Z_Construct_UPackage__Script_GEPProject();
 	ENGINE_API UClass* Z_Construct_UClass_APawn_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
+	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UChildActorComponent_NoRegister();
 	GEPPROJECT_API UClass* Z_Construct_UClass_UInputable_NoRegister();
 	GEPPROJECT_API UClass* Z_Construct_UClass_UInitableChar_NoRegister();
@@ -70,6 +72,41 @@ void EmptyLinkFunctionForGeneratedCodeGEPProjectCharacter() {}
 		P_FINISH;
 		P_NATIVE_BEGIN;
 		P_THIS->MoveForward_Implementation(Z_Param_value);
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(AGEPProjectCharacter::execKey5Pressed)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->Key5Pressed_Implementation();
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(AGEPProjectCharacter::execKey4Pressed)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->Key4Pressed_Implementation();
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(AGEPProjectCharacter::execKey3Pressed)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->Key3Pressed_Implementation();
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(AGEPProjectCharacter::execKey2Pressed)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->Key2Pressed_Implementation();
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(AGEPProjectCharacter::execKey1Pressed)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->Key1Pressed_Implementation();
 		P_NATIVE_END;
 	}
 	DEFINE_FUNCTION(AGEPProjectCharacter::execInteractReleased)
@@ -184,6 +221,31 @@ void EmptyLinkFunctionForGeneratedCodeGEPProjectCharacter() {}
 	{
 		ProcessEvent(FindFunctionChecked(NAME_AGEPProjectCharacter_JumpReleased),NULL);
 	}
+	static FName NAME_AGEPProjectCharacter_Key1Pressed = FName(TEXT("Key1Pressed"));
+	void AGEPProjectCharacter::Key1Pressed()
+	{
+		ProcessEvent(FindFunctionChecked(NAME_AGEPProjectCharacter_Key1Pressed),NULL);
+	}
+	static FName NAME_AGEPProjectCharacter_Key2Pressed = FName(TEXT("Key2Pressed"));
+	void AGEPProjectCharacter::Key2Pressed()
+	{
+		ProcessEvent(FindFunctionChecked(NAME_AGEPProjectCharacter_Key2Pressed),NULL);
+	}
+	static FName NAME_AGEPProjectCharacter_Key3Pressed = FName(TEXT("Key3Pressed"));
+	void AGEPProjectCharacter::Key3Pressed()
+	{
+		ProcessEvent(FindFunctionChecked(NAME_AGEPProjectCharacter_Key3Pressed),NULL);
+	}
+	static FName NAME_AGEPProjectCharacter_Key4Pressed = FName(TEXT("Key4Pressed"));
+	void AGEPProjectCharacter::Key4Pressed()
+	{
+		ProcessEvent(FindFunctionChecked(NAME_AGEPProjectCharacter_Key4Pressed),NULL);
+	}
+	static FName NAME_AGEPProjectCharacter_Key5Pressed = FName(TEXT("Key5Pressed"));
+	void AGEPProjectCharacter::Key5Pressed()
+	{
+		ProcessEvent(FindFunctionChecked(NAME_AGEPProjectCharacter_Key5Pressed),NULL);
+	}
 	static FName NAME_AGEPProjectCharacter_LookUp = FName(TEXT("LookUp"));
 	void AGEPProjectCharacter::LookUp(float value)
 	{
@@ -239,6 +301,11 @@ void EmptyLinkFunctionForGeneratedCodeGEPProjectCharacter() {}
 			{ "InteractReleased", &AGEPProjectCharacter::execInteractReleased },
 			{ "JumpPressed", &AGEPProjectCharacter::execJumpPressed },
 			{ "JumpReleased", &AGEPProjectCharacter::execJumpReleased },
+			{ "Key1Pressed", &AGEPProjectCharacter::execKey1Pressed },
+			{ "Key2Pressed", &AGEPProjectCharacter::execKey2Pressed },
+			{ "Key3Pressed", &AGEPProjectCharacter::execKey3Pressed },
+			{ "Key4Pressed", &AGEPProjectCharacter::execKey4Pressed },
+			{ "Key5Pressed", &AGEPProjectCharacter::execKey5Pressed },
 			{ "LookUp", &AGEPProjectCharacter::execLookUp },
 			{ "LookUpAtRate", &AGEPProjectCharacter::execLookUpAtRate },
 			{ "MoveForward", &AGEPProjectCharacter::execMoveForward },
@@ -458,6 +525,116 @@ void EmptyLinkFunctionForGeneratedCodeGEPProjectCharacter() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_AGEPProjectCharacter_Key1Pressed_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AGEPProjectCharacter_Key1Pressed_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Player/GEPProjectCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AGEPProjectCharacter_Key1Pressed_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AGEPProjectCharacter, nullptr, "Key1Pressed", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AGEPProjectCharacter_Key1Pressed_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AGEPProjectCharacter_Key1Pressed_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AGEPProjectCharacter_Key1Pressed()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AGEPProjectCharacter_Key1Pressed_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AGEPProjectCharacter_Key2Pressed_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AGEPProjectCharacter_Key2Pressed_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Player/GEPProjectCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AGEPProjectCharacter_Key2Pressed_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AGEPProjectCharacter, nullptr, "Key2Pressed", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AGEPProjectCharacter_Key2Pressed_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AGEPProjectCharacter_Key2Pressed_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AGEPProjectCharacter_Key2Pressed()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AGEPProjectCharacter_Key2Pressed_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AGEPProjectCharacter_Key3Pressed_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AGEPProjectCharacter_Key3Pressed_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Player/GEPProjectCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AGEPProjectCharacter_Key3Pressed_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AGEPProjectCharacter, nullptr, "Key3Pressed", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AGEPProjectCharacter_Key3Pressed_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AGEPProjectCharacter_Key3Pressed_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AGEPProjectCharacter_Key3Pressed()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AGEPProjectCharacter_Key3Pressed_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AGEPProjectCharacter_Key4Pressed_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AGEPProjectCharacter_Key4Pressed_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Player/GEPProjectCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AGEPProjectCharacter_Key4Pressed_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AGEPProjectCharacter, nullptr, "Key4Pressed", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AGEPProjectCharacter_Key4Pressed_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AGEPProjectCharacter_Key4Pressed_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AGEPProjectCharacter_Key4Pressed()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AGEPProjectCharacter_Key4Pressed_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AGEPProjectCharacter_Key5Pressed_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AGEPProjectCharacter_Key5Pressed_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Player/GEPProjectCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AGEPProjectCharacter_Key5Pressed_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AGEPProjectCharacter, nullptr, "Key5Pressed", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AGEPProjectCharacter_Key5Pressed_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AGEPProjectCharacter_Key5Pressed_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AGEPProjectCharacter_Key5Pressed()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AGEPProjectCharacter_Key5Pressed_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_AGEPProjectCharacter_LookUp_Statics
 	{
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_value;
@@ -670,9 +847,14 @@ void EmptyLinkFunctionForGeneratedCodeGEPProjectCharacter() {}
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_FirstPersonCameraComponent;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_childActorGun_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_weaponArray_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_childActorGun;
+		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_weaponArray;
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_weaponArray_Inner;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_equippedWeapon_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_equippedWeapon;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const UE4CodeGen_Private::FImplementedInterfaceParams InterfaceParams[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
@@ -692,6 +874,11 @@ void EmptyLinkFunctionForGeneratedCodeGEPProjectCharacter() {}
 		{ &Z_Construct_UFunction_AGEPProjectCharacter_InteractReleased, "InteractReleased" }, // 641448505
 		{ &Z_Construct_UFunction_AGEPProjectCharacter_JumpPressed, "JumpPressed" }, // 402378054
 		{ &Z_Construct_UFunction_AGEPProjectCharacter_JumpReleased, "JumpReleased" }, // 3791557464
+		{ &Z_Construct_UFunction_AGEPProjectCharacter_Key1Pressed, "Key1Pressed" }, // 2228155099
+		{ &Z_Construct_UFunction_AGEPProjectCharacter_Key2Pressed, "Key2Pressed" }, // 2653410446
+		{ &Z_Construct_UFunction_AGEPProjectCharacter_Key3Pressed, "Key3Pressed" }, // 3349214231
+		{ &Z_Construct_UFunction_AGEPProjectCharacter_Key4Pressed, "Key4Pressed" }, // 382216466
+		{ &Z_Construct_UFunction_AGEPProjectCharacter_Key5Pressed, "Key5Pressed" }, // 1654963871
 		{ &Z_Construct_UFunction_AGEPProjectCharacter_LookUp, "LookUp" }, // 1369221430
 		{ &Z_Construct_UFunction_AGEPProjectCharacter_LookUpAtRate, "LookUpAtRate" }, // 2965759498
 		{ &Z_Construct_UFunction_AGEPProjectCharacter_MoveForward, "MoveForward" }, // 4285191866
@@ -773,14 +960,23 @@ void EmptyLinkFunctionForGeneratedCodeGEPProjectCharacter() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AGEPProjectCharacter_Statics::NewProp_FirstPersonCameraComponent = { "FirstPersonCameraComponent", nullptr, (EPropertyFlags)0x00400000000a001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AGEPProjectCharacter, FirstPersonCameraComponent), Z_Construct_UClass_UCameraComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AGEPProjectCharacter_Statics::NewProp_FirstPersonCameraComponent_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AGEPProjectCharacter_Statics::NewProp_FirstPersonCameraComponent_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AGEPProjectCharacter_Statics::NewProp_childActorGun_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AGEPProjectCharacter_Statics::NewProp_weaponArray_MetaData[] = {
+		{ "AllowPrivateAccess", "true" },
+		{ "Category", "GEPProjectCharacter" },
+		{ "ModuleRelativePath", "Player/GEPProjectCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AGEPProjectCharacter_Statics::NewProp_weaponArray = { "weaponArray", nullptr, (EPropertyFlags)0x0044000000000015, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AGEPProjectCharacter, weaponArray), EArrayPropertyFlags::None, METADATA_PARAMS(Z_Construct_UClass_AGEPProjectCharacter_Statics::NewProp_weaponArray_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AGEPProjectCharacter_Statics::NewProp_weaponArray_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AGEPProjectCharacter_Statics::NewProp_weaponArray_Inner = { "weaponArray", nullptr, (EPropertyFlags)0x0004000000000000, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_AActor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AGEPProjectCharacter_Statics::NewProp_equippedWeapon_MetaData[] = {
 		{ "AllowPrivateAccess", "true" },
 		{ "Category", "GEPProjectCharacter" },
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Player/GEPProjectCharacter.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AGEPProjectCharacter_Statics::NewProp_childActorGun = { "childActorGun", nullptr, (EPropertyFlags)0x004000000008001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AGEPProjectCharacter, childActorGun), Z_Construct_UClass_UChildActorComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AGEPProjectCharacter_Statics::NewProp_childActorGun_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AGEPProjectCharacter_Statics::NewProp_childActorGun_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AGEPProjectCharacter_Statics::NewProp_equippedWeapon = { "equippedWeapon", nullptr, (EPropertyFlags)0x004000000008001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AGEPProjectCharacter, equippedWeapon), Z_Construct_UClass_UChildActorComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AGEPProjectCharacter_Statics::NewProp_equippedWeapon_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AGEPProjectCharacter_Statics::NewProp_equippedWeapon_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AGEPProjectCharacter_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGEPProjectCharacter_Statics::NewProp_currentHealth,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGEPProjectCharacter_Statics::NewProp_maxHealth,
@@ -790,7 +986,9 @@ void EmptyLinkFunctionForGeneratedCodeGEPProjectCharacter() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGEPProjectCharacter_Statics::NewProp_ControllerLookUpRate,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGEPProjectCharacter_Statics::NewProp_ControllerTurnRate,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGEPProjectCharacter_Statics::NewProp_FirstPersonCameraComponent,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGEPProjectCharacter_Statics::NewProp_childActorGun,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGEPProjectCharacter_Statics::NewProp_weaponArray,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGEPProjectCharacter_Statics::NewProp_weaponArray_Inner,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGEPProjectCharacter_Statics::NewProp_equippedWeapon,
 	};
 		const UE4CodeGen_Private::FImplementedInterfaceParams Z_Construct_UClass_AGEPProjectCharacter_Statics::InterfaceParams[] = {
 			{ Z_Construct_UClass_UInputable_NoRegister, (int32)VTABLE_OFFSET(AGEPProjectCharacter, IInputable), false },
@@ -824,7 +1022,7 @@ void EmptyLinkFunctionForGeneratedCodeGEPProjectCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AGEPProjectCharacter, 913562917);
+	IMPLEMENT_CLASS(AGEPProjectCharacter, 1038179503);
 	template<> GEPPROJECT_API UClass* StaticClass<AGEPProjectCharacter>()
 	{
 		return AGEPProjectCharacter::StaticClass();

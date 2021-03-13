@@ -35,7 +35,8 @@ private:
 	void JumpPressed(); void JumpReleased();
 	void FirePressed(); void FireReleased();
 	void InteractPressed(); void InteractReleased();
-
+	void Key1Pressed(); void Key2Pressed(); void Key3Pressed(); void Key4Pressed(); void Key5Pressed();
+	
 	void MoveForward(float value);
 	void MoveRight(float value);
 	void LookUpAtRate(float value);

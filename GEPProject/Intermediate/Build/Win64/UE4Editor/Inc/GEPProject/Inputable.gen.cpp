@@ -66,6 +66,41 @@ void EmptyLinkFunctionForGeneratedCodeInputable() {}
 		P_THIS->MoveForward_Implementation(Z_Param_value);
 		P_NATIVE_END;
 	}
+	DEFINE_FUNCTION(IInputable::execKey5Pressed)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->Key5Pressed_Implementation();
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(IInputable::execKey4Pressed)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->Key4Pressed_Implementation();
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(IInputable::execKey3Pressed)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->Key3Pressed_Implementation();
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(IInputable::execKey2Pressed)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->Key2Pressed_Implementation();
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(IInputable::execKey1Pressed)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->Key1Pressed_Implementation();
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(IInputable::execInteractReleased)
 	{
 		P_FINISH;
@@ -132,6 +167,26 @@ void EmptyLinkFunctionForGeneratedCodeInputable() {}
 	{
 		check(0 && "Do not directly call Event functions in Interfaces. Call Execute_JumpReleased instead.");
 	}
+	void IInputable::Key1Pressed()
+	{
+		check(0 && "Do not directly call Event functions in Interfaces. Call Execute_Key1Pressed instead.");
+	}
+	void IInputable::Key2Pressed()
+	{
+		check(0 && "Do not directly call Event functions in Interfaces. Call Execute_Key2Pressed instead.");
+	}
+	void IInputable::Key3Pressed()
+	{
+		check(0 && "Do not directly call Event functions in Interfaces. Call Execute_Key3Pressed instead.");
+	}
+	void IInputable::Key4Pressed()
+	{
+		check(0 && "Do not directly call Event functions in Interfaces. Call Execute_Key4Pressed instead.");
+	}
+	void IInputable::Key5Pressed()
+	{
+		check(0 && "Do not directly call Event functions in Interfaces. Call Execute_Key5Pressed instead.");
+	}
 	void IInputable::LookUp(float value)
 	{
 		check(0 && "Do not directly call Event functions in Interfaces. Call Execute_LookUp instead.");
@@ -166,6 +221,11 @@ void EmptyLinkFunctionForGeneratedCodeInputable() {}
 			{ "InteractReleased", &IInputable::execInteractReleased },
 			{ "JumpPressed", &IInputable::execJumpPressed },
 			{ "JumpReleased", &IInputable::execJumpReleased },
+			{ "Key1Pressed", &IInputable::execKey1Pressed },
+			{ "Key2Pressed", &IInputable::execKey2Pressed },
+			{ "Key3Pressed", &IInputable::execKey3Pressed },
+			{ "Key4Pressed", &IInputable::execKey4Pressed },
+			{ "Key5Pressed", &IInputable::execKey5Pressed },
 			{ "LookUp", &IInputable::execLookUp },
 			{ "LookUpAtRate", &IInputable::execLookUpAtRate },
 			{ "MoveForward", &IInputable::execMoveForward },
@@ -306,6 +366,116 @@ void EmptyLinkFunctionForGeneratedCodeInputable() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UInputable_JumpReleased_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UInputable_Key1Pressed_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UInputable_Key1Pressed_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Interfaces/Inputable.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UInputable_Key1Pressed_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UInputable, nullptr, "Key1Pressed", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UInputable_Key1Pressed_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UInputable_Key1Pressed_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UInputable_Key1Pressed()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UInputable_Key1Pressed_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UInputable_Key2Pressed_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UInputable_Key2Pressed_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Interfaces/Inputable.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UInputable_Key2Pressed_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UInputable, nullptr, "Key2Pressed", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UInputable_Key2Pressed_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UInputable_Key2Pressed_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UInputable_Key2Pressed()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UInputable_Key2Pressed_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UInputable_Key3Pressed_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UInputable_Key3Pressed_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Interfaces/Inputable.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UInputable_Key3Pressed_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UInputable, nullptr, "Key3Pressed", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UInputable_Key3Pressed_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UInputable_Key3Pressed_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UInputable_Key3Pressed()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UInputable_Key3Pressed_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UInputable_Key4Pressed_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UInputable_Key4Pressed_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Interfaces/Inputable.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UInputable_Key4Pressed_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UInputable, nullptr, "Key4Pressed", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UInputable_Key4Pressed_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UInputable_Key4Pressed_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UInputable_Key4Pressed()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UInputable_Key4Pressed_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UInputable_Key5Pressed_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UInputable_Key5Pressed_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Interfaces/Inputable.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UInputable_Key5Pressed_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UInputable, nullptr, "Key5Pressed", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UInputable_Key5Pressed_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UInputable_Key5Pressed_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UInputable_Key5Pressed()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UInputable_Key5Pressed_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -504,6 +674,11 @@ void EmptyLinkFunctionForGeneratedCodeInputable() {}
 		{ &Z_Construct_UFunction_UInputable_InteractReleased, "InteractReleased" }, // 3879000600
 		{ &Z_Construct_UFunction_UInputable_JumpPressed, "JumpPressed" }, // 3247159624
 		{ &Z_Construct_UFunction_UInputable_JumpReleased, "JumpReleased" }, // 442075331
+		{ &Z_Construct_UFunction_UInputable_Key1Pressed, "Key1Pressed" }, // 3659692625
+		{ &Z_Construct_UFunction_UInputable_Key2Pressed, "Key2Pressed" }, // 2190902828
+		{ &Z_Construct_UFunction_UInputable_Key3Pressed, "Key3Pressed" }, // 4008342584
+		{ &Z_Construct_UFunction_UInputable_Key4Pressed, "Key4Pressed" }, // 854580678
+		{ &Z_Construct_UFunction_UInputable_Key5Pressed, "Key5Pressed" }, // 2600907487
 		{ &Z_Construct_UFunction_UInputable_LookUp, "LookUp" }, // 4286820
 		{ &Z_Construct_UFunction_UInputable_LookUpAtRate, "LookUpAtRate" }, // 2458505921
 		{ &Z_Construct_UFunction_UInputable_MoveForward, "MoveForward" }, // 1291555142
@@ -543,7 +718,7 @@ void EmptyLinkFunctionForGeneratedCodeInputable() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UInputable, 2272661125);
+	IMPLEMENT_CLASS(UInputable, 3815758001);
 	template<> GEPPROJECT_API UClass* StaticClass<UInputable>()
 	{
 		return UInputable::StaticClass();
@@ -638,6 +813,81 @@ void EmptyLinkFunctionForGeneratedCodeInputable() {}
 		else if (auto I = (IInputable*)(O->GetNativeInterfaceAddress(UInputable::StaticClass())))
 		{
 			I->JumpReleased_Implementation();
+		}
+	}
+	static FName NAME_UInputable_Key1Pressed = FName(TEXT("Key1Pressed"));
+	void IInputable::Execute_Key1Pressed(UObject* O)
+	{
+		check(O != NULL);
+		check(O->GetClass()->ImplementsInterface(UInputable::StaticClass()));
+		UFunction* const Func = O->FindFunction(NAME_UInputable_Key1Pressed);
+		if (Func)
+		{
+			O->ProcessEvent(Func, NULL);
+		}
+		else if (auto I = (IInputable*)(O->GetNativeInterfaceAddress(UInputable::StaticClass())))
+		{
+			I->Key1Pressed_Implementation();
+		}
+	}
+	static FName NAME_UInputable_Key2Pressed = FName(TEXT("Key2Pressed"));
+	void IInputable::Execute_Key2Pressed(UObject* O)
+	{
+		check(O != NULL);
+		check(O->GetClass()->ImplementsInterface(UInputable::StaticClass()));
+		UFunction* const Func = O->FindFunction(NAME_UInputable_Key2Pressed);
+		if (Func)
+		{
+			O->ProcessEvent(Func, NULL);
+		}
+		else if (auto I = (IInputable*)(O->GetNativeInterfaceAddress(UInputable::StaticClass())))
+		{
+			I->Key2Pressed_Implementation();
+		}
+	}
+	static FName NAME_UInputable_Key3Pressed = FName(TEXT("Key3Pressed"));
+	void IInputable::Execute_Key3Pressed(UObject* O)
+	{
+		check(O != NULL);
+		check(O->GetClass()->ImplementsInterface(UInputable::StaticClass()));
+		UFunction* const Func = O->FindFunction(NAME_UInputable_Key3Pressed);
+		if (Func)
+		{
+			O->ProcessEvent(Func, NULL);
+		}
+		else if (auto I = (IInputable*)(O->GetNativeInterfaceAddress(UInputable::StaticClass())))
+		{
+			I->Key3Pressed_Implementation();
+		}
+	}
+	static FName NAME_UInputable_Key4Pressed = FName(TEXT("Key4Pressed"));
+	void IInputable::Execute_Key4Pressed(UObject* O)
+	{
+		check(O != NULL);
+		check(O->GetClass()->ImplementsInterface(UInputable::StaticClass()));
+		UFunction* const Func = O->FindFunction(NAME_UInputable_Key4Pressed);
+		if (Func)
+		{
+			O->ProcessEvent(Func, NULL);
+		}
+		else if (auto I = (IInputable*)(O->GetNativeInterfaceAddress(UInputable::StaticClass())))
+		{
+			I->Key4Pressed_Implementation();
+		}
+	}
+	static FName NAME_UInputable_Key5Pressed = FName(TEXT("Key5Pressed"));
+	void IInputable::Execute_Key5Pressed(UObject* O)
+	{
+		check(O != NULL);
+		check(O->GetClass()->ImplementsInterface(UInputable::StaticClass()));
+		UFunction* const Func = O->FindFunction(NAME_UInputable_Key5Pressed);
+		if (Func)
+		{
+			O->ProcessEvent(Func, NULL);
+		}
+		else if (auto I = (IInputable*)(O->GetNativeInterfaceAddress(UInputable::StaticClass())))
+		{
+			I->Key5Pressed_Implementation();
 		}
 	}
 	static FName NAME_UInputable_LookUp = FName(TEXT("LookUp"));

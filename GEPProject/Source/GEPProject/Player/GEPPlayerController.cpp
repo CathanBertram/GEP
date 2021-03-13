@@ -60,7 +60,11 @@ void AGEPPlayerController::SetupInputComponent()
 	InputComponent->BindAction("Fire", IE_Released, this, &AGEPPlayerController::FireReleased);
 	InputComponent->BindAction("Interact", IE_Pressed, this, &AGEPPlayerController::InteractPressed);
 	InputComponent->BindAction("Interact", IE_Released, this, &AGEPPlayerController::InteractReleased);
-
+	InputComponent->BindAction("Key1", IE_Pressed, this, &AGEPPlayerController::Key1Pressed);
+	InputComponent->BindAction("Key2", IE_Pressed, this, &AGEPPlayerController::Key2Pressed);
+	InputComponent->BindAction("Key3", IE_Pressed, this, &AGEPPlayerController::Key3Pressed);
+	InputComponent->BindAction("Key4", IE_Pressed, this, &AGEPPlayerController::Key4Pressed);
+	InputComponent->BindAction("Key5", IE_Pressed, this, &AGEPPlayerController::Key5Pressed);
 	
 	InputComponent->BindAxis("MoveForward", this, &AGEPPlayerController::MoveForward);
 	InputComponent->BindAxis("MoveRight", this, &AGEPPlayerController::MoveRight);
@@ -122,6 +126,51 @@ void AGEPPlayerController::InteractReleased()
 	if (UKismetSystemLibrary::DoesImplementInterface(pawn, UInputable::StaticClass()))
 	{
 		IInputable::Execute_InteractReleased(pawn);
+	}
+}
+
+void AGEPPlayerController::Key1Pressed()
+{
+	APawn* pawn = GetPawn();
+	if (UKismetSystemLibrary::DoesImplementInterface(pawn, UInputable::StaticClass()))
+	{
+		IInputable::Execute_Key1Pressed(pawn);
+	}
+}
+
+void AGEPPlayerController::Key2Pressed()
+{
+	APawn* pawn = GetPawn();
+	if (UKismetSystemLibrary::DoesImplementInterface(pawn, UInputable::StaticClass()))
+	{
+		IInputable::Execute_Key2Pressed(pawn);
+	}
+}
+
+void AGEPPlayerController::Key3Pressed()
+{
+	APawn* pawn = GetPawn();
+	if (UKismetSystemLibrary::DoesImplementInterface(pawn, UInputable::StaticClass()))
+	{
+		IInputable::Execute_Key3Pressed(pawn);
+	}
+}
+
+void AGEPPlayerController::Key4Pressed()
+{
+	APawn* pawn = GetPawn();
+	if (UKismetSystemLibrary::DoesImplementInterface(pawn, UInputable::StaticClass()))
+	{
+		IInputable::Execute_Key4Pressed(pawn);
+	}
+}
+
+void AGEPPlayerController::Key5Pressed()
+{
+	APawn* pawn = GetPawn();
+	if (UKismetSystemLibrary::DoesImplementInterface(pawn, UInputable::StaticClass()))
+	{
+		IInputable::Execute_Key5Pressed(pawn);
 	}
 }
 

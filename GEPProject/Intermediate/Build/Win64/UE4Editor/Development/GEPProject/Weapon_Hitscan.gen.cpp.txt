@@ -6,4 +6,8 @@ E:\Github\GEP\GEPProject\Source\GEPProject\Weapons\Weapon_Base.h
 E:\Github\GEP\GEPProject\Source\GEPProject/Interfaces/Fireable.h
 E:\Github\GEP\GEPProject\Intermediate\Build\Win64\UE4Editor\Inc\GEPProject\Fireable.generated.h
 E:\Github\GEP\GEPProject\Intermediate\Build\Win64\UE4Editor\Inc\GEPProject\Weapon_Base.generated.h
+E:\epk\UE_4.25\Engine\Source\Runtime\Engine\Classes\Sound/SoundCue.h
+E:\epk\UE_4.25\Engine\Source\Runtime\Engine\Classes\Sound/SoundNode.h
+E:\epk\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\SoundNode.generated.h
+E:\epk\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\SoundCue.generated.h
 E:\Github\GEP\GEPProject\Intermediate\Build\Win64\UE4Editor\Inc\GEPProject\Weapon_Hitscan.generated.h

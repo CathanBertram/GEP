@@ -13,7 +13,7 @@ bool AWeapon_Projectile::Fire_Implementation()
 	UWorld* const world = GetWorld();
 	if (world != nullptr && projectile != nullptr)
 	{
-		UArrowComponent* muzzle = GetGunMuzzle();
+		USceneComponent* muzzle = GetGunMuzzle();
 		FVector spawnLocation = ((muzzle != nullptr) ? muzzle->GetComponentLocation() : GetActorLocation());
 		FRotator spawnRotation = ((muzzle != nullptr) ? muzzle->GetComponentRotation() : GetActorRotation());
 

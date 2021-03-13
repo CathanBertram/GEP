@@ -23,6 +23,11 @@ class APawn;
 	virtual void LookUpAtRate_Implementation(float value); \
 	virtual void MoveRight_Implementation(float value); \
 	virtual void MoveForward_Implementation(float value); \
+	virtual void Key5Pressed_Implementation(); \
+	virtual void Key4Pressed_Implementation(); \
+	virtual void Key3Pressed_Implementation(); \
+	virtual void Key2Pressed_Implementation(); \
+	virtual void Key1Pressed_Implementation(); \
 	virtual void InteractReleased_Implementation(); \
 	virtual void InteractPressed_Implementation(); \
 	virtual void FireReleased_Implementation(); \
@@ -39,6 +44,11 @@ class APawn;
 	DECLARE_FUNCTION(execLookUpAtRate); \
 	DECLARE_FUNCTION(execMoveRight); \
 	DECLARE_FUNCTION(execMoveForward); \
+	DECLARE_FUNCTION(execKey5Pressed); \
+	DECLARE_FUNCTION(execKey4Pressed); \
+	DECLARE_FUNCTION(execKey3Pressed); \
+	DECLARE_FUNCTION(execKey2Pressed); \
+	DECLARE_FUNCTION(execKey1Pressed); \
 	DECLARE_FUNCTION(execInteractReleased); \
 	DECLARE_FUNCTION(execInteractPressed); \
 	DECLARE_FUNCTION(execFireReleased); \
@@ -58,6 +68,11 @@ class APawn;
 	DECLARE_FUNCTION(execLookUpAtRate); \
 	DECLARE_FUNCTION(execMoveRight); \
 	DECLARE_FUNCTION(execMoveForward); \
+	DECLARE_FUNCTION(execKey5Pressed); \
+	DECLARE_FUNCTION(execKey4Pressed); \
+	DECLARE_FUNCTION(execKey3Pressed); \
+	DECLARE_FUNCTION(execKey2Pressed); \
+	DECLARE_FUNCTION(execKey1Pressed); \
 	DECLARE_FUNCTION(execInteractReleased); \
 	DECLARE_FUNCTION(execInteractPressed); \
 	DECLARE_FUNCTION(execFireReleased); \
@@ -162,7 +177,8 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AGEPProjectCharacter); \
 
 
 #define GEPProject_Source_GEPProject_Player_GEPProjectCharacter_h_15_PRIVATE_PROPERTY_OFFSET \
-	FORCEINLINE static uint32 __PPO__childActorGun() { return STRUCT_OFFSET(AGEPProjectCharacter, childActorGun); } \
+	FORCEINLINE static uint32 __PPO__equippedWeapon() { return STRUCT_OFFSET(AGEPProjectCharacter, equippedWeapon); } \
+	FORCEINLINE static uint32 __PPO__weaponArray() { return STRUCT_OFFSET(AGEPProjectCharacter, weaponArray); } \
 	FORCEINLINE static uint32 __PPO__FirstPersonCameraComponent() { return STRUCT_OFFSET(AGEPProjectCharacter, FirstPersonCameraComponent); } \
 	FORCEINLINE static uint32 __PPO__interactRange() { return STRUCT_OFFSET(AGEPProjectCharacter, interactRange); } \
 	FORCEINLINE static uint32 __PPO__maxHealth() { return STRUCT_OFFSET(AGEPProjectCharacter, maxHealth); } \

@@ -35,6 +35,16 @@ public:
 	void InteractPressed();
 	UFUNCTION(BlueprintCallable,BlueprintNativeEvent)
 	void InteractReleased();
+	UFUNCTION(BlueprintCallable,BlueprintNativeEvent)
+    void Key1Pressed();
+	UFUNCTION(BlueprintCallable,BlueprintNativeEvent)
+    void Key2Pressed();
+	UFUNCTION(BlueprintCallable,BlueprintNativeEvent)
+    void Key3Pressed();
+	UFUNCTION(BlueprintCallable,BlueprintNativeEvent)
+    void Key4Pressed();
+	UFUNCTION(BlueprintCallable,BlueprintNativeEvent)
+    void Key5Pressed();
 
 	//Axis Mappings
 	UFUNCTION(BlueprintCallable,BlueprintNativeEvent)

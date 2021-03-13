@@ -15,16 +15,11 @@ AWeapon_Base::AWeapon_Base()
 	gunMesh = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("Gun"));
 	gunMesh->SetupAttachment(root);
 
-	gunMuzzle = CreateDefaultSubobject<UArrowComponent>(TEXT("GunMuzzle"));
+	gunMuzzle = CreateDefaultSubobject<USceneComponent>(TEXT("GunMuzzle"));
 	gunMuzzle->SetupAttachment(gunMesh);
 
 }
 
-// Called when the game starts or when spawned
-void AWeapon_Base::BeginPlay()
-{
-	Super::BeginPlay();
-}
 
 bool AWeapon_Base::Fire_Implementation()
 {
