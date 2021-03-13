@@ -1,8 +1,8 @@
-﻿Log file open, 03/12/21 15:19:49
+﻿Log file open, 03/13/21 20:05:30
 LogInit: Display: Running engine for game: GEPProject
 LogPlatformFile: Not using cached read wrapper
 LogTaskGraph: Started task graph with 5 named threads and 47 total threads with 3 sets of task threads.
-LogStats: Stats thread started at 0.209326
+LogStats: Stats thread started at 0.369674
 LogD3D11RHI: Loaded GFSDK_Aftermath_Lib.x64.dll
 LogICUInternationalization: ICU TimeZone Detection - Raw Offset: +0:00, Platform Override: ''
 LogPluginManager: Mounting plugin Paper2D
@@ -195,852 +195,766 @@ LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
 LogInit: Object subsystem initialized
 LogConfig: Setting CVar [[con.DebugEarlyDefault:1]]
 LogConfig: Setting CVar [[r.setres:1280x720]]
-[2021.03.12-15.19.50:157][  0]LogConfig: Setting CVar [[r.VSync:0]]
-[2021.03.12-15.19.50:157][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
-[2021.03.12-15.19.50:157][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [E:/Github/GEP/GEPProject/Saved/Config/Windows/Engine.ini]
-[2021.03.12-15.19.50:157][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
-[2021.03.12-15.19.50:157][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [E:/Github/GEP/GEPProject/Saved/Config/Windows/Engine.ini]
-[2021.03.12-15.19.50:157][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [E:/Github/GEP/GEPProject/Saved/Config/Windows/Engine.ini]
-[2021.03.12-15.19.50:157][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
-[2021.03.12-15.19.50:157][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
-[2021.03.12-15.19.50:157][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
-[2021.03.12-15.19.50:157][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
-[2021.03.12-15.19.50:157][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
-[2021.03.12-15.19.50:157][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
-[2021.03.12-15.19.50:157][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
-[2021.03.12-15.19.50:157][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
-[2021.03.12-15.19.50:157][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
-[2021.03.12-15.19.50:157][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
-[2021.03.12-15.19.50:157][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
-[2021.03.12-15.19.50:157][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
-[2021.03.12-15.19.50:157][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
-[2021.03.12-15.19.50:157][  0]LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
-[2021.03.12-15.19.50:157][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [E:/Github/GEP/GEPProject/Saved/Config/Windows/Engine.ini]
-[2021.03.12-15.19.50:157][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
-[2021.03.12-15.19.50:157][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
-[2021.03.12-15.19.50:157][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
-[2021.03.12-15.19.50:157][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
-[2021.03.12-15.19.50:157][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
-[2021.03.12-15.19.50:157][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
-[2021.03.12-15.19.50:157][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:25165824]]
-[2021.03.12-15.19.50:157][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
-[2021.03.12-15.19.50:157][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
-[2021.03.12-15.19.50:157][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
-[2021.03.12-15.19.50:157][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
-[2021.03.12-15.19.50:158][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
-[2021.03.12-15.19.50:158][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
-[2021.03.12-15.19.50:158][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [E:/Github/GEP/GEPProject/Saved/Config/Windows/Engine.ini]
-[2021.03.12-15.19.50:158][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [E:/Github/GEP/GEPProject/Saved/Config/Windows/Engine.ini]
-[2021.03.12-15.19.50:165][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [E:/Github/GEP/GEPProject/Saved/Config/Windows/Scalability.ini]
-[2021.03.12-15.19.50:165][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
-[2021.03.12-15.19.50:165][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
-[2021.03.12-15.19.50:165][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [E:/Github/GEP/GEPProject/Saved/Config/Windows/Scalability.ini]
-[2021.03.12-15.19.50:165][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
-[2021.03.12-15.19.50:165][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [E:/Github/GEP/GEPProject/Saved/Config/Windows/Scalability.ini]
-[2021.03.12-15.19.50:165][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
-[2021.03.12-15.19.50:165][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
-[2021.03.12-15.19.50:165][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
-[2021.03.12-15.19.50:165][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
-[2021.03.12-15.19.50:165][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
-[2021.03.12-15.19.50:165][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
-[2021.03.12-15.19.50:165][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
-[2021.03.12-15.19.50:165][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
-[2021.03.12-15.19.50:165][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
-[2021.03.12-15.19.50:165][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
-[2021.03.12-15.19.50:165][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
-[2021.03.12-15.19.50:165][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
-[2021.03.12-15.19.50:165][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
-[2021.03.12-15.19.50:165][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
-[2021.03.12-15.19.50:165][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
-[2021.03.12-15.19.50:165][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
-[2021.03.12-15.19.50:165][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
-[2021.03.12-15.19.50:165][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
-[2021.03.12-15.19.50:165][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [E:/Github/GEP/GEPProject/Saved/Config/Windows/Scalability.ini]
-[2021.03.12-15.19.50:165][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
-[2021.03.12-15.19.50:165][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
-[2021.03.12-15.19.50:165][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
-[2021.03.12-15.19.50:165][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
-[2021.03.12-15.19.50:165][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
-[2021.03.12-15.19.50:165][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
-[2021.03.12-15.19.50:165][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
-[2021.03.12-15.19.50:165][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
-[2021.03.12-15.19.50:165][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
-[2021.03.12-15.19.50:165][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
-[2021.03.12-15.19.50:165][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
-[2021.03.12-15.19.50:165][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
-[2021.03.12-15.19.50:165][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
-[2021.03.12-15.19.50:165][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
-[2021.03.12-15.19.50:165][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
-[2021.03.12-15.19.50:166][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
-[2021.03.12-15.19.50:166][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
-[2021.03.12-15.19.50:166][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
-[2021.03.12-15.19.50:166][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
-[2021.03.12-15.19.50:166][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
-[2021.03.12-15.19.50:166][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
-[2021.03.12-15.19.50:166][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
-[2021.03.12-15.19.50:166][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
-[2021.03.12-15.19.50:166][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
-[2021.03.12-15.19.50:166][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
-[2021.03.12-15.19.50:166][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
-[2021.03.12-15.19.50:166][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
-[2021.03.12-15.19.50:166][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
-[2021.03.12-15.19.50:166][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
-[2021.03.12-15.19.50:166][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
-[2021.03.12-15.19.50:166][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [E:/Github/GEP/GEPProject/Saved/Config/Windows/Scalability.ini]
-[2021.03.12-15.19.50:166][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
-[2021.03.12-15.19.50:166][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
-[2021.03.12-15.19.50:166][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
-[2021.03.12-15.19.50:166][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
-[2021.03.12-15.19.50:166][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
-[2021.03.12-15.19.50:166][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
-[2021.03.12-15.19.50:166][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
-[2021.03.12-15.19.50:166][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
-[2021.03.12-15.19.50:166][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
-[2021.03.12-15.19.50:166][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [E:/Github/GEP/GEPProject/Saved/Config/Windows/Scalability.ini]
-[2021.03.12-15.19.50:166][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
-[2021.03.12-15.19.50:166][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
-[2021.03.12-15.19.50:166][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
-[2021.03.12-15.19.50:166][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
-[2021.03.12-15.19.50:166][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
-[2021.03.12-15.19.50:166][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
-[2021.03.12-15.19.50:166][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
-[2021.03.12-15.19.50:166][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
-[2021.03.12-15.19.50:166][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
-[2021.03.12-15.19.50:166][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
-[2021.03.12-15.19.50:166][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
-[2021.03.12-15.19.50:166][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
-[2021.03.12-15.19.50:166][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
-[2021.03.12-15.19.50:166][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
-[2021.03.12-15.19.50:166][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
-[2021.03.12-15.19.50:166][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
-[2021.03.12-15.19.50:166][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
-[2021.03.12-15.19.50:166][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
-[2021.03.12-15.19.50:166][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
-[2021.03.12-15.19.50:166][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
-[2021.03.12-15.19.50:166][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
-[2021.03.12-15.19.50:166][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
-[2021.03.12-15.19.50:166][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
-[2021.03.12-15.19.50:166][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
-[2021.03.12-15.19.50:166][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
-[2021.03.12-15.19.50:166][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
-[2021.03.12-15.19.50:166][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [E:/Github/GEP/GEPProject/Saved/Config/Windows/Scalability.ini]
-[2021.03.12-15.19.50:166][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
-[2021.03.12-15.19.50:166][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
-[2021.03.12-15.19.50:166][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [E:/Github/GEP/GEPProject/Saved/Config/Windows/Scalability.ini]
-[2021.03.12-15.19.50:166][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
-[2021.03.12-15.19.50:166][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
-[2021.03.12-15.19.50:166][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
-[2021.03.12-15.19.50:166][  0]LogConfig: Setting CVar [[r.HairStrands.DeepShadow.SuperSampling:0]]
-[2021.03.12-15.19.50:166][  0]LogConfig: Setting CVar [[r.HairStrands.VisibilityPPLL:0]]
-[2021.03.12-15.19.50:166][  0]LogConfig: Setting CVar [[r.HairStrands.RasterizationScale:0.5]]
-[2021.03.12-15.19.50:166][  0]LogConfig: Setting CVar [[r.HairStrands.VelocityRasterizationScale:1]]
-[2021.03.12-15.19.50:166][  0]LogInit: Selected Device Profile: [Windows]
-[2021.03.12-15.19.50:166][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
-[2021.03.12-15.19.50:166][  0]LogHAL: Display: Platform has ~ 16 GB [17123741696 / 17179869184 / 16], which maps to Larger [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
-[2021.03.12-15.19.50:166][  0]LogInit: Going up to parent DeviceProfile []
-[2021.03.12-15.19.50:166][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [E:/Github/GEP/GEPProject/Saved/Config/Windows/Scalability.ini]
-[2021.03.12-15.19.50:166][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
-[2021.03.12-15.19.50:166][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
-[2021.03.12-15.19.50:167][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [E:/Github/GEP/GEPProject/Saved/Config/Windows/Scalability.ini]
-[2021.03.12-15.19.50:167][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
-[2021.03.12-15.19.50:167][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [E:/Github/GEP/GEPProject/Saved/Config/Windows/Scalability.ini]
-[2021.03.12-15.19.50:167][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
-[2021.03.12-15.19.50:167][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
-[2021.03.12-15.19.50:167][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
-[2021.03.12-15.19.50:167][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
-[2021.03.12-15.19.50:167][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
-[2021.03.12-15.19.50:167][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
-[2021.03.12-15.19.50:167][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
-[2021.03.12-15.19.50:167][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
-[2021.03.12-15.19.50:167][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
-[2021.03.12-15.19.50:167][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
-[2021.03.12-15.19.50:167][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
-[2021.03.12-15.19.50:167][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
-[2021.03.12-15.19.50:167][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
-[2021.03.12-15.19.50:167][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
-[2021.03.12-15.19.50:167][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
-[2021.03.12-15.19.50:167][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
-[2021.03.12-15.19.50:167][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
-[2021.03.12-15.19.50:167][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
-[2021.03.12-15.19.50:167][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [E:/Github/GEP/GEPProject/Saved/Config/Windows/Scalability.ini]
-[2021.03.12-15.19.50:167][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
-[2021.03.12-15.19.50:167][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
-[2021.03.12-15.19.50:167][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
-[2021.03.12-15.19.50:167][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
-[2021.03.12-15.19.50:167][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
-[2021.03.12-15.19.50:167][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
-[2021.03.12-15.19.50:167][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
-[2021.03.12-15.19.50:167][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
-[2021.03.12-15.19.50:167][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
-[2021.03.12-15.19.50:167][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
-[2021.03.12-15.19.50:167][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
-[2021.03.12-15.19.50:167][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
-[2021.03.12-15.19.50:167][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
-[2021.03.12-15.19.50:167][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
-[2021.03.12-15.19.50:167][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
-[2021.03.12-15.19.50:167][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
-[2021.03.12-15.19.50:167][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
-[2021.03.12-15.19.50:167][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
-[2021.03.12-15.19.50:167][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
-[2021.03.12-15.19.50:167][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
-[2021.03.12-15.19.50:167][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
-[2021.03.12-15.19.50:167][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
-[2021.03.12-15.19.50:167][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
-[2021.03.12-15.19.50:167][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
-[2021.03.12-15.19.50:167][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
-[2021.03.12-15.19.50:167][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
-[2021.03.12-15.19.50:167][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
-[2021.03.12-15.19.50:167][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
-[2021.03.12-15.19.50:167][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
-[2021.03.12-15.19.50:167][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
-[2021.03.12-15.19.50:167][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [E:/Github/GEP/GEPProject/Saved/Config/Windows/Scalability.ini]
-[2021.03.12-15.19.50:167][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
-[2021.03.12-15.19.50:167][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
-[2021.03.12-15.19.50:167][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
-[2021.03.12-15.19.50:167][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
-[2021.03.12-15.19.50:167][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
-[2021.03.12-15.19.50:167][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
-[2021.03.12-15.19.50:167][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
-[2021.03.12-15.19.50:167][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
-[2021.03.12-15.19.50:167][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
-[2021.03.12-15.19.50:167][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [E:/Github/GEP/GEPProject/Saved/Config/Windows/Scalability.ini]
-[2021.03.12-15.19.50:167][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
-[2021.03.12-15.19.50:167][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
-[2021.03.12-15.19.50:167][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
-[2021.03.12-15.19.50:167][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
-[2021.03.12-15.19.50:167][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
-[2021.03.12-15.19.50:167][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
-[2021.03.12-15.19.50:167][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
-[2021.03.12-15.19.50:167][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
-[2021.03.12-15.19.50:167][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
-[2021.03.12-15.19.50:167][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
-[2021.03.12-15.19.50:167][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
-[2021.03.12-15.19.50:167][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
-[2021.03.12-15.19.50:167][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
-[2021.03.12-15.19.50:167][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
-[2021.03.12-15.19.50:168][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
-[2021.03.12-15.19.50:168][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
-[2021.03.12-15.19.50:168][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
-[2021.03.12-15.19.50:168][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
-[2021.03.12-15.19.50:168][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
-[2021.03.12-15.19.50:168][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
-[2021.03.12-15.19.50:168][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
-[2021.03.12-15.19.50:168][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
-[2021.03.12-15.19.50:168][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
-[2021.03.12-15.19.50:168][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
-[2021.03.12-15.19.50:168][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
-[2021.03.12-15.19.50:168][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
-[2021.03.12-15.19.50:168][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [E:/Github/GEP/GEPProject/Saved/Config/Windows/Scalability.ini]
-[2021.03.12-15.19.50:168][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
-[2021.03.12-15.19.50:168][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
-[2021.03.12-15.19.50:168][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [E:/Github/GEP/GEPProject/Saved/Config/Windows/Scalability.ini]
-[2021.03.12-15.19.50:168][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
-[2021.03.12-15.19.50:168][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
-[2021.03.12-15.19.50:168][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
-[2021.03.12-15.19.50:168][  0]LogConfig: Setting CVar [[r.HairStrands.DeepShadow.SuperSampling:0]]
-[2021.03.12-15.19.50:168][  0]LogConfig: Setting CVar [[r.HairStrands.VisibilityPPLL:0]]
-[2021.03.12-15.19.50:168][  0]LogConfig: Setting CVar [[r.HairStrands.RasterizationScale:0.5]]
-[2021.03.12-15.19.50:168][  0]LogConfig: Setting CVar [[r.HairStrands.VelocityRasterizationScale:1]]
-[2021.03.12-15.19.50:168][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
-[2021.03.12-15.19.50:168][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
-[2021.03.12-15.19.50:168][  0]LogConfig: Setting CVar [[p.chaos.AllowCreatePhysxBodies:1]]
-[2021.03.12-15.19.50:168][  0]LogConfig: Setting CVar [[fx.SkipVectorVMBackendOptimizations:1]]
-[2021.03.12-15.19.50:168][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [E:/Github/GEP/GEPProject/Saved/Config/Windows/Engine.ini]
-[2021.03.12-15.19.50:168][  0]LogInit: Computer: DESKTOP-8MPSU4G
-[2021.03.12-15.19.50:168][  0]LogInit: User: cathan
-[2021.03.12-15.19.50:168][  0]LogInit: CPU Page size=4096, Cores=8
-[2021.03.12-15.19.50:168][  0]LogInit: High frequency timer resolution =10.000000 MHz
-[2021.03.12-15.19.50:168][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
-[2021.03.12-15.19.50:168][  0]LogMemory: Platform Memory Stats for Windows
-[2021.03.12-15.19.50:169][  0]LogMemory: Process Physical Memory: 118.49 MB used, 118.50 MB peak
-[2021.03.12-15.19.50:169][  0]LogMemory: Process Virtual Memory: 106.11 MB used, 106.11 MB peak
-[2021.03.12-15.19.50:169][  0]LogMemory: Physical Memory: 13917.12 MB used,  2413.36 MB free, 16330.47 MB total
-[2021.03.12-15.19.50:169][  0]LogMemory: Virtual Memory: 5195.04 MB used,  134212536.00 MB free, 134217728.00 MB total
-[2021.03.12-15.19.50:175][  0]LogWindows: WindowsPlatformFeatures enabled
-[2021.03.12-15.19.50:237][  0]LogInit: Physics initialised using underlying interface: PhysX
-[2021.03.12-15.19.50:238][  0]LogInit: Using OS detected language (en-GB).
-[2021.03.12-15.19.50:238][  0]LogInit: Using OS detected locale (en-GB).
-[2021.03.12-15.19.50:242][  0]LogTextLocalizationManager: No specific localization for 'en-GB' exists, so the 'en' localization will be used.
-[2021.03.12-15.19.50:438][  0]LogInit: Setting process to per monitor DPI aware
-[2021.03.12-15.19.50:485][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
-[2021.03.12-15.19.50:485][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
-[2021.03.12-15.19.50:715][  0]LogHMD: Failed to initialize OpenVR with code 110
-[2021.03.12-15.19.50:715][  0]LogD3D11RHI: D3D11 min allowed feature level: 11_0
-[2021.03.12-15.19.50:715][  0]LogD3D11RHI: D3D11 max allowed feature level: 11_0
-[2021.03.12-15.19.50:715][  0]LogD3D11RHI: D3D11 adapters:
-[2021.03.12-15.19.50:843][  0]LogD3D11RHI:    0. 'NVIDIA GeForce RTX 2060' (Feature Level 11_0)
-[2021.03.12-15.19.50:843][  0]LogD3D11RHI:       5980/0/8165 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:2, VendorId:0x10de
-[2021.03.12-15.19.50:846][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
-[2021.03.12-15.19.50:846][  0]LogD3D11RHI:       0/0/8165 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
-[2021.03.12-15.19.50:846][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
-[2021.03.12-15.19.50:860][  0]LogD3D11RHI: Creating new Direct3DDevice
-[2021.03.12-15.19.50:860][  0]LogD3D11RHI:     GPU DeviceId: 0x1f08 (for the marketing name, search the web for "GPU Device Id")
-[2021.03.12-15.19.50:860][  0]LogWindows: EnumDisplayDevices:
-[2021.03.12-15.19.50:861][  0]LogWindows:    0. 'NVIDIA GeForce RTX 2060' (P:1 D:1)
-[2021.03.12-15.19.50:861][  0]LogWindows:    1. 'NVIDIA GeForce RTX 2060' (P:0 D:1)
-[2021.03.12-15.19.50:861][  0]LogWindows:    2. 'NVIDIA GeForce RTX 2060' (P:0 D:0)
-[2021.03.12-15.19.50:861][  0]LogWindows:    3. 'NVIDIA GeForce RTX 2060' (P:0 D:0)
-[2021.03.12-15.19.50:861][  0]LogWindows: DebugString: FoundDriverCount:4 
-[2021.03.12-15.19.50:861][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce RTX 2060
-[2021.03.12-15.19.50:861][  0]LogD3D11RHI:   Driver Version: 460.79 (internal:27.21.14.6079, unified:460.79)
-[2021.03.12-15.19.50:862][  0]LogD3D11RHI:      Driver Date: 12-3-2020
-[2021.03.12-15.19.50:862][  0]LogRHI: Texture pool is 4186 MB (70% of 5980 MB)
-[2021.03.12-15.19.50:957][  0]LogD3D11RHI: RHI has support for 64 bit atomics
-[2021.03.12-15.19.50:957][  0]LogD3D11RHI: Async texture creation enabled
-[2021.03.12-15.19.50:957][  0]LogD3D11RHI: Array index from any shader is supported
-[2021.03.12-15.19.50:994][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
-[2021.03.12-15.19.51:300][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AllDesktop'
-[2021.03.12-15.19.51:323][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android'
-[2021.03.12-15.19.51:323][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTC'
-[2021.03.12-15.19.51:323][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXT'
-[2021.03.12-15.19.51:323][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2'
-[2021.03.12-15.19.51:323][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AndroidClient'
-[2021.03.12-15.19.51:323][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTCClient'
-[2021.03.12-15.19.51:323][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXTClient'
-[2021.03.12-15.19.51:323][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2Client'
-[2021.03.12-15.19.51:323][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_Multi'
-[2021.03.12-15.19.51:323][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_MultiClient'
-[2021.03.12-15.19.51:351][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOSClient'
-[2021.03.12-15.19.51:351][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOS'
-[2021.03.12-15.19.51:363][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Linux'
-[2021.03.12-15.19.51:375][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxNoEditor'
-[2021.03.12-15.19.51:386][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxClient'
-[2021.03.12-15.19.51:397][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxServer'
-[2021.03.12-15.19.51:407][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64NoEditor'
-[2021.03.12-15.19.51:418][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Client'
-[2021.03.12-15.19.51:429][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Server'
-[2021.03.12-15.19.51:461][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Lumin'
-[2021.03.12-15.19.51:461][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LuminClient'
-[2021.03.12-15.19.51:480][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOSClient'
-[2021.03.12-15.19.51:480][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOS'
-[2021.03.12-15.19.51:490][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsNoEditor'
-[2021.03.12-15.19.51:502][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Windows'
-[2021.03.12-15.19.51:512][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsClient'
-[2021.03.12-15.19.51:523][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsServer'
-[2021.03.12-15.19.51:523][  0]LogTargetPlatformManager: Display: Building Assets For Windows
-[2021.03.12-15.19.51:534][  0]LogAudioDebug: Display: Lib vorbis DLL was dynamically loaded.
-[2021.03.12-15.19.51:612][  0]LogShaderCompilers: Guid format shader working directory is 10 characters bigger than the processId version (../../../../../Github/GEP/GEPProject/Intermediate/Shaders/WorkingDirectory/11540/).
-[2021.03.12-15.19.51:612][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/cathan/AppData/Local/Temp/UnrealShaderWorkingDir/6CBB7EC64002F94D2FF8D987A266533E/'.
-[2021.03.12-15.19.51:613][  0]LogXGEController: Cleaning working directory: C:/Users/cathan/AppData/Local/Temp/UnrealXGEWorkingDir/
-[2021.03.12-15.19.51:613][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
-[2021.03.12-15.19.51:613][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
-[2021.03.12-15.19.51:613][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
-[2021.03.12-15.19.52:446][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
-[2021.03.12-15.19.52:515][  0]LogDerivedDataCache: Loaded boot cache 0.07s 76MB C:/Users/cathan/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc.
-[2021.03.12-15.19.52:515][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/cathan/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc
-[2021.03.12-15.19.52:516][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../Github/GEP/GEPProject/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
-[2021.03.12-15.19.52:516][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
-[2021.03.12-15.19.52:516][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../Github/GEP/GEPProject/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2021.03.12-15.19.52:516][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
-[2021.03.12-15.19.52:530][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
-[2021.03.12-15.19.52:530][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  EnterprisePak pak cache file ../../../Enterprise/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2021.03.12-15.19.52:530][  0]LogDerivedDataCache: Unable to find inner node EnterprisePak for hierarchical cache Hierarchy.
-[2021.03.12-15.19.52:532][  0]LogDerivedDataCache: Using Local data cache path C:/Users/cathan/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
-[2021.03.12-15.19.52:532][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
-[2021.03.12-15.19.52:532][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
-[2021.03.12-15.19.52:592][  0]LogSlate: Using FreeType 2.10.0
-[2021.03.12-15.19.52:593][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2021.03.12-15.19.52:624][  0]LogAssetRegistry: FAssetRegistry took 0.0036 seconds to start up
-[2021.03.12-15.19.52:917][  0]LogInit: Selected Device Profile: [Windows]
-[2021.03.12-15.19.53:039][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
-[2021.03.12-15.19.53:039][  0]LogMeshReduction: Using SimplygonMeshReduction for automatic skeletal mesh reduction
-[2021.03.12-15.19.53:039][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
-[2021.03.12-15.19.53:039][  0]LogMeshReduction: No distributed automatic mesh merging module available
-[2021.03.12-15.19.53:039][  0]LogMeshMerging: No distributed automatic mesh merging module available
-[2021.03.12-15.19.53:059][  0]LogNetVersion: GEPProject 1.0.0, NetCL: 13144385, EngineNetVer: 14, GameNetVer: 0 (Checksum: 386946200)
-[2021.03.12-15.19.53:567][  0]LogAISub: UAISubsystem::UAISubsystem AISubsystem (000001E7453C42C0), frame # 0
-[2021.03.12-15.19.53:567][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001E745AFEAC0), frame # 0
-[2021.03.12-15.19.53:570][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001E745B74800), frame # 0
-[2021.03.12-15.19.53:687][  0]LogPackageLocalizationCache: Processed 19 localized package path(s) for 1 prioritized culture(s) in 0.103938 seconds
-[2021.03.12-15.19.53:694][  0]LogUObjectArray: 15917 objects as part of root set at end of initial load.
-[2021.03.12-15.19.53:694][  0]LogUObjectAllocator: 3965568 out of 0 bytes used by permanent object pool.
-[2021.03.12-15.19.53:694][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
-[2021.03.12-15.19.54:190][  0]LogTcpMessaging: Initializing TcpMessaging bridge
-[2021.03.12-15.19.54:195][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
-[2021.03.12-15.19.54:354][  0]SourceControl: Source control is disabled
-[2021.03.12-15.19.54:354][  0]SourceControl: Source control is disabled
-[2021.03.12-15.19.54:358][  0]SourceControl: Source control is disabled
-[2021.03.12-15.19.54:363][  0]SourceControl: Source control is disabled
-[2021.03.12-15.19.54:377][  0]SourceControl: Source control is disabled
-[2021.03.12-15.19.54:691][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
-[2021.03.12-15.19.54:719][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
-[2021.03.12-15.19.54:719][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
-[2021.03.12-15.19.54:779][  0]LogOcInput: OculusInput pre-init called
-[2021.03.12-15.19.54:791][  0]LogWindows: Failed to load 'OVRPlugin.dll' (GetLastError=126)
-[2021.03.12-15.19.54:791][  0]LogWindows: File 'OVRPlugin.dll' does not exist
-[2021.03.12-15.19.54:867][  0]LogEngine: Initializing Engine...
-[2021.03.12-15.19.54:868][  0]LogHMD: Failed to initialize OpenVR with code 110
-[2021.03.12-15.19.54:868][  0]LogMagicLeap: Warning: VR disabled because ZI is not enabled.  To enable, in the editor, Edit -> Project Settings -> Plugins -> Magic Leap Plugin -> Enable Zero Iteration
-[2021.03.12-15.19.54:869][  0]LogStats: UGameplayTagsManager::InitializeManager -  0.000 s
-[2021.03.12-15.19.55:067][  0]LogInit: Initializing FReadOnlyCVARCache
-[2021.03.12-15.19.55:078][  0]LogAIModule: Creating AISystem for world Untitled
-[2021.03.12-15.19.55:078][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001E74D9DBC00), frame # 0
-[2021.03.12-15.19.55:078][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001E74DA45440), frame # 0
-[2021.03.12-15.19.55:086][  0]LogAudioMixer: Display: Audio Mixer Platform Settings:
-[2021.03.12-15.19.55:086][  0]LogAudioMixer: Display: 	Sample Rate:						  48000
-[2021.03.12-15.19.55:086][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
-[2021.03.12-15.19.55:086][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
-[2021.03.12-15.19.55:086][  0]LogAudioMixer: Display: 	Number of buffers to queue:			  2
-[2021.03.12-15.19.55:086][  0]LogAudioMixer: Display: 	Max Channels (voices):				  32
-[2021.03.12-15.19.55:086][  0]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
-[2021.03.12-15.19.55:087][  0]LogAudio: Display: AudioDevice MaxSources: 32
-[2021.03.12-15.19.55:087][  0]LogAudio: Display: Using built-in audio occlusion.
-[2021.03.12-15.19.55:087][  0]LogAudioMixer: Display: Initializing audio mixer.
-[2021.03.12-15.19.55:107][  0]LogAudioMixer: Display: 0: FrontLeft
-[2021.03.12-15.19.55:107][  0]LogAudioMixer: Display: 1: FrontRight
-[2021.03.12-15.19.55:160][  0]LogAudioMixer: Display: Using Audio Device OUT 1-2 (BEHRINGER UMC 202HD 192k)
-[2021.03.12-15.19.55:161][  0]LogAudioMixer: Display: Initializing Sound Submixes...
-[2021.03.12-15.19.55:164][  0]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
-[2021.03.12-15.19.55:164][  0]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
-[2021.03.12-15.19.55:165][  0]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
-[2021.03.12-15.19.55:167][  0]LogInit: FAudioDevice initialized.
-[2021.03.12-15.19.55:167][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
-[2021.03.12-15.19.55:259][  0]LogDerivedDataCache: Saved boot cache 0.09s 76MB C:/Users/cathan/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc.
-[2021.03.12-15.19.55:265][  0]LogInit: Texture streaming: Enabled
-[2021.03.12-15.19.55:287][  0]LogEngineSessionManager: EngineSessionManager initialized
-[2021.03.12-15.19.55:287][  0]LogEngineSessionManager: EngineSessionManager sent abnormal shutdown report. Type=Crashed, SessionId={5028572A-4018-3494-D1F4-2393482A5FFB}
-[2021.03.12-15.19.55:287][  0]LogEditorSessionSummary: Verbose: Initializing EditorSessionSummaryWriter for editor session tracking
-[2021.03.12-15.19.55:289][  0]LogEditorSessionSummary: EditorSessionSummaryWriter initialized
-[2021.03.12-15.19.55:373][  0]LogInit: Transaction tracking system initialized
-[2021.03.12-15.19.55:401][  0]BlueprintLog: New page: Editor Load
-[2021.03.12-15.19.55:494][  0]LocalizationService: Localization service is disabled
-[2021.03.12-15.19.55:694][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
-[2021.03.12-15.19.55:694][  0]LogCook: Display: Mobile HDR setting 1
-[2021.03.12-15.19.55:871][  0]LogFileCache: Scanning file cache for directory 'E:/Github/GEP/GEPProject/Content/' took 0.01s
-[2021.03.12-15.19.56:102][  0]SourceControl: Source control is disabled
-[2021.03.12-15.19.56:102][  0]LogUnrealEdMisc: Loading editor; pre map load, took 8.130
-[2021.03.12-15.19.56:102][  0]Cmd: MAP LOAD FILE="../../../../../Github/GEP/GEPProject/Content/FirstPersonCPP/Maps/FirstPersonExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2021.03.12-15.19.56:103][  0]LightingResults: New page: Lighting Build
-[2021.03.12-15.19.56:103][  0]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
-[2021.03.12-15.19.56:104][  0]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
-[2021.03.12-15.19.56:104][  0]MapCheck: New page: Map Check
-[2021.03.12-15.19.56:104][  0]LightingResults: New page: Lighting Build
-[2021.03.12-15.19.56:119][  0]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001E74D9DBC00), frame # 0
-[2021.03.12-15.19.56:119][  0]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001E74DA45440), frame # 0
-[2021.03.12-15.19.56:120][  0]LogUObjectHash: Compacting FUObjectHashTables data took   0.84ms
-[2021.03.12-15.19.56:314][  0]LogAIModule: Creating AISystem for world FirstPersonExampleMap
-[2021.03.12-15.19.56:314][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001E738813E00), frame # 0
-[2021.03.12-15.19.56:314][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001E73881B880), frame # 0
-[2021.03.12-15.19.56:320][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2021.03.12-15.19.56:342][  0]LogUObjectHash: Compacting FUObjectHashTables data took   1.11ms
-[2021.03.12-15.19.56:343][  0]Cmd: MAP CHECKDEP NOCLEARLOG
-[2021.03.12-15.19.56:343][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.153ms to complete.
-[2021.03.12-15.19.56:343][  0]LogFileHelpers: Loading map 'FirstPersonExampleMap' took 0.241
-[2021.03.12-15.19.56:347][  0]LogUnrealEdMisc: Total Editor Startup Time, took 8.374
-[2021.03.12-15.19.56:496][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2021.03.12-15.19.56:504][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2021.03.12-15.19.56:512][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2021.03.12-15.19.56:519][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2021.03.12-15.19.56:526][  0]LogCollectionManager: Loaded 0 collections in 0.001018 seconds
-[2021.03.12-15.19.56:544][  0]LogFileCache: Scanning file cache for directory 'E:/Github/GEP/GEPProject/Saved/Collections/' took 0.00s
-[2021.03.12-15.19.56:545][  0]LogFileCache: Scanning file cache for directory 'E:/Github/GEP/GEPProject/Content/Developers/cathan/Collections/' took 0.00s
-[2021.03.12-15.19.56:545][  0]LogFileCache: Scanning file cache for directory 'E:/Github/GEP/GEPProject/Content/Collections/' took 0.00s
-[2021.03.12-15.19.56:545][  0]LogContentBrowser: Native class hierarchy populated in 0.0121 seconds. Added 3443 classes and 825 folders.
-[2021.03.12-15.19.56:548][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0005 seconds. Added 0 classes and 0 folders.
-[2021.03.12-15.19.56:649][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0005 seconds. Added 0 classes and 0 folders.
-[2021.03.12-15.19.56:650][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0005 seconds. Added 2 classes and 0 folders.
-[2021.03.12-15.19.56:682][  0]LogSlate: Took 0.000339 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
-[2021.03.12-15.19.56:684][  0]LogSlate: Took 0.000261 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
-[2021.03.12-15.19.56:691][  0]LogSlate: Took 0.000534 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
-[2021.03.12-15.19.56:765][  0]LogRenderer: Reallocating scene render targets to support 1208x572 Format 10 NumSamples 1 (Frame:1).
-[2021.03.12-15.19.56:826][  0]LogSlate: Took 0.000236 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
-[2021.03.12-15.19.56:874][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0006 seconds. Added 0 classes and 0 folders.
-[2021.03.12-15.19.56:874][  0]LogLoad: (Engine Initialization) Total time: 8.90 seconds
-[2021.03.12-15.19.56:874][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
-[2021.03.12-15.19.56:899][  0]LogActor: Warning: BP_TestBlock_C /Engine/Transient.World_0:PersistentLevel.BP_TestBlock_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2021.03.12-15.19.56:934][  0]LogAssetRegistry: Asset discovery search completed in 4.3115 seconds
-[2021.03.12-15.19.56:938][  0]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000003 seconds (updated 0 objects)
-[2021.03.12-15.19.56:941][  0]LogContentStreaming: Texture pool size now 1000 MB
-[2021.03.12-15.20.02:607][468]LogTemp: Repeating last play command: Selected Viewport
-[2021.03.12-15.20.02:631][468]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2021.03.12-15.20.02:632][468]PIE: New page: PIE session: FirstPersonExampleMap (12 Mar 2021, 15:20:02)
-[2021.03.12-15.20.02:633][468]LogOnline: OSS: Creating online subsystem instance for: NULL
-[2021.03.12-15.20.02:634][468]LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for module [NULL]
-[2021.03.12-15.20.02:634][468]LogPlayLevel: Creating play world package: /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap
-[2021.03.12-15.20.02:648][468]LogPlayLevel: PIE: StaticDuplicateObject took: (0.014179s)
-[2021.03.12-15.20.02:649][468]LogAIModule: Creating AISystem for world FirstPersonExampleMap
-[2021.03.12-15.20.02:649][468]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001E768A3C600), frame # 468
-[2021.03.12-15.20.02:649][468]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001E744CF87C0), frame # 468
-[2021.03.12-15.20.02:650][468]LogPlayLevel: PIE: World Init took: (0.001311s)
-[2021.03.12-15.20.02:650][468]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.015693s)
-[2021.03.12-15.20.02:672][468]LogUObjectHash: Compacting FUObjectHashTables data took   0.59ms
-[2021.03.12-15.20.02:675][468]LogAudioMixer: Display: Audio Mixer Platform Settings:
-[2021.03.12-15.20.02:675][468]LogAudioMixer: Display: 	Sample Rate:						  48000
-[2021.03.12-15.20.02:675][468]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
-[2021.03.12-15.20.02:675][468]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
-[2021.03.12-15.20.02:675][468]LogAudioMixer: Display: 	Number of buffers to queue:			  2
-[2021.03.12-15.20.02:675][468]LogAudioMixer: Display: 	Max Channels (voices):				  32
-[2021.03.12-15.20.02:675][468]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
-[2021.03.12-15.20.02:675][468]LogAudio: Display: AudioDevice MaxSources: 32
-[2021.03.12-15.20.02:676][468]LogAudio: Display: Using built-in audio occlusion.
-[2021.03.12-15.20.02:676][468]LogAudioMixer: Display: Initializing audio mixer.
-[2021.03.12-15.20.02:683][468]LogAudioMixer: Display: 0: FrontLeft
-[2021.03.12-15.20.02:683][468]LogAudioMixer: Display: 1: FrontRight
-[2021.03.12-15.20.03:295][468]LogAudioMixer: Display: Using Audio Device OUT 1-2 (BEHRINGER UMC 202HD 192k)
-[2021.03.12-15.20.03:296][468]LogAudioMixer: Display: Initializing Sound Submixes...
-[2021.03.12-15.20.03:296][468]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
-[2021.03.12-15.20.03:296][468]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
-[2021.03.12-15.20.03:297][468]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
-[2021.03.12-15.20.03:309][468]LogInit: FAudioDevice initialized.
-[2021.03.12-15.20.03:322][468]LogLoad: Game class is 'BP_GEPGamemode_C'
-[2021.03.12-15.20.03:324][468]LogWorld: Bringing World /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 0) at 2021.03.12-15.20.03
-[2021.03.12-15.20.03:324][468]LogWorld: Bringing up level for play took: 0.001752
-[2021.03.12-15.20.03:325][468]LogOnline: OSS: Creating online subsystem instance for: :Context_2
-[2021.03.12-15.20.03:327][468]LogOutputDevice: Warning: 
-
-Script Stack (2 frames):
-GEPProjectCharacter.Init
-GEPPlayerController.Init
-
-[2021.03.12-15.20.04:128][468]LogStats: FPlatformStackWalk::StackWalkAndDump -  0.801 s
-[2021.03.12-15.20.04:128][468]LogOutputDevice: Error: === Handled ensure: ===
-[2021.03.12-15.20.04:128][468]LogOutputDevice: Error: 
-[2021.03.12-15.20.04:128][468]LogOutputDevice: Error: Ensure condition failed: ActorHasBegunPlay == EActorBeginPlayState::BeginningPlay [File:D:/Build/++UE4/Sync/Engine/Source/Runtime/Engine/Private/Actor.cpp] [Line: 3421]
-[2021.03.12-15.20.04:128][468]LogOutputDevice: Error: BeginPlay was called on actor /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.GEPProjectCharacter_0 which was in state 0
-[2021.03.12-15.20.04:128][468]LogOutputDevice: Error: Stack: 
-[2021.03.12-15.20.04:128][468]LogOutputDevice: Error: [Callstack] 0x00007ffa2814c730 UE4Editor-Engine.dll!UnknownFunction []
-[2021.03.12-15.20.04:128][468]LogOutputDevice: Error: [Callstack] 0x00007ffa268d4aa1 UE4Editor-Engine.dll!UnknownFunction []
-[2021.03.12-15.20.04:128][468]LogOutputDevice: Error: [Callstack] 0x00007ffa2bc70b34 UE4Editor-CoreUObject.dll!UnknownFunction []
-[2021.03.12-15.20.04:128][468]LogOutputDevice: Error: [Callstack] 0x00007ffa2bee4753 UE4Editor-CoreUObject.dll!UnknownFunction []
-[2021.03.12-15.20.04:128][468]LogOutputDevice: Error: [Callstack] 0x00007ffa2690afe5 UE4Editor-Engine.dll!UnknownFunction []
-[2021.03.12-15.20.04:128][468]LogOutputDevice: Error: [Callstack] 0x00007ffa10d86fdd UE4Editor-GEPProject.dll!AGEPPlayerController::Init_Implementation() [E:\Github\GEP\GEPProject\Source\GEPProject\GEPPlayerController.cpp:44]
-[2021.03.12-15.20.04:128][468]LogOutputDevice: Error: [Callstack] 0x00007ffa2bc70b34 UE4Editor-CoreUObject.dll!UnknownFunction []
-[2021.03.12-15.20.04:128][468]LogOutputDevice: Error: [Callstack] 0x00007ffa2bee4753 UE4Editor-CoreUObject.dll!UnknownFunction []
-[2021.03.12-15.20.04:128][468]LogOutputDevice: Error: [Callstack] 0x00007ffa2690afe5 UE4Editor-Engine.dll!UnknownFunction []
-[2021.03.12-15.20.04:128][468]LogOutputDevice: Error: [Callstack] 0x00007ffa10d88cbb UE4Editor-GEPProject.dll!AGEPProjectGameMode::PostLogin() [E:\Github\GEP\GEPProject\Source\GEPProject\GEPProjectGameMode.cpp:40]
-[2021.03.12-15.20.04:128][468]LogOutputDevice: Error: [Callstack] 0x00007ffa27195099 UE4Editor-Engine.dll!UnknownFunction []
-[2021.03.12-15.20.04:128][468]LogOutputDevice: Error: [Callstack] 0x00007ffa271e4f9d UE4Editor-Engine.dll!UnknownFunction []
-[2021.03.12-15.20.04:128][468]LogOutputDevice: Error: [Callstack] 0x00007ffa26fe43b9 UE4Editor-Engine.dll!UnknownFunction []
-[2021.03.12-15.20.04:128][468]LogOutputDevice: Error: [Callstack] 0x00007ffa2a0b595c UE4Editor-UnrealEd.dll!UnknownFunction []
-[2021.03.12-15.20.04:128][468]LogOutputDevice: Error: [Callstack] 0x00007ffa2a0d682c UE4Editor-UnrealEd.dll!UnknownFunction []
-[2021.03.12-15.20.04:129][468]LogOutputDevice: Error: [Callstack] 0x00007ffa2a0b6899 UE4Editor-UnrealEd.dll!UnknownFunction []
-[2021.03.12-15.20.04:129][468]LogOutputDevice: Error: [Callstack] 0x00007ffa2a0f23da UE4Editor-UnrealEd.dll!UnknownFunction []
-[2021.03.12-15.20.04:129][468]LogOutputDevice: Error: [Callstack] 0x00007ffa2a0f569d UE4Editor-UnrealEd.dll!UnknownFunction []
-[2021.03.12-15.20.04:129][468]LogOutputDevice: Error: [Callstack] 0x00007ffa2a0f5078 UE4Editor-UnrealEd.dll!UnknownFunction []
-[2021.03.12-15.20.04:129][468]LogOutputDevice: Error: [Callstack] 0x00007ffa29b7a854 UE4Editor-UnrealEd.dll!UnknownFunction []
-[2021.03.12-15.20.04:129][468]LogOutputDevice: Error: [Callstack] 0x00007ffa2a4537e6 UE4Editor-UnrealEd.dll!UnknownFunction []
-[2021.03.12-15.20.04:129][468]LogOutputDevice: Error: [Callstack] 0x00007ff6aca77800 UE4Editor.exe!UnknownFunction []
-[2021.03.12-15.20.04:129][468]LogOutputDevice: Error: [Callstack] 0x00007ff6aca8ba7c UE4Editor.exe!UnknownFunction []
-[2021.03.12-15.20.04:129][468]LogOutputDevice: Error: [Callstack] 0x00007ff6aca8bb5a UE4Editor.exe!UnknownFunction []
-[2021.03.12-15.20.04:129][468]LogOutputDevice: Error: [Callstack] 0x00007ff6aca9e31d UE4Editor.exe!UnknownFunction []
-[2021.03.12-15.20.04:129][468]LogOutputDevice: Error: [Callstack] 0x00007ff6acaa145a UE4Editor.exe!UnknownFunction []
-[2021.03.12-15.20.04:129][468]LogOutputDevice: Error: [Callstack] 0x00007ffaedbb6fd4 KERNEL32.DLL!UnknownFunction []
-[2021.03.12-15.20.04:129][468]LogOutputDevice: Error: [Callstack] 0x00007ffaefafcec1 ntdll.dll!UnknownFunction []
-[2021.03.12-15.20.04:129][468]LogOutputDevice: Error: 
-[2021.03.12-15.20.04:137][468]LogStats:                SubmitErrorReport -  0.000 s
-[2021.03.12-15.20.06:165][468]LogStats:                    SendNewReport -  2.028 s
-[2021.03.12-15.20.06:165][468]LogStats:             FDebug::EnsureFailed -  2.838 s
-[2021.03.12-15.20.06:167][468]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0005 seconds. Added 20 classes and 0 folders.
-[2021.03.12-15.20.06:171][468]PIE: Server logged in
-[2021.03.12-15.20.06:172][468]PIE: Play in editor total start time 3.542 seconds.
-[2021.03.12-15.20.06:182][468]LogTemp: Resetting audio stream to device id 
-[2021.03.12-15.20.06:211][468]LogAudioMixer: Display: 0: FrontLeft
-[2021.03.12-15.20.06:211][468]LogAudioMixer: Display: 1: FrontRight
-[2021.03.12-15.20.08:263][700]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2021.03.12-15.20.08:263][700]LogWorld: BeginTearingDown for /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap
-[2021.03.12-15.20.08:263][700]LogWorld: UWorld::CleanupWorld for FirstPersonExampleMap, bSessionEnded=true, bCleanupResources=true
-[2021.03.12-15.20.08:263][700]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
-[2021.03.12-15.20.08:273][700]LogPlayLevel: Display: Shutting down PIE online subsystems
-[2021.03.12-15.20.08:275][700]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
-[2021.03.12-15.20.08:303][700]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2021.03.12-15.20.08:305][700]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001E744CF87C0), frame # 700
-[2021.03.12-15.20.08:305][700]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001E768A3C600), frame # 700
-[2021.03.12-15.20.08:306][700]LogUObjectHash: Compacting FUObjectHashTables data took   0.75ms
-[2021.03.12-15.20.08:339][701]LogPlayLevel: Display: Destroying online subsystem :Context_2
-[2021.03.12-15.20.11:021][  0]LogSlate: Took 0.000238 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
-[2021.03.12-15.20.11:039][  0]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/BP_GEPPlayerController.BP_GEPPlayerController
-[2021.03.12-15.20.11:275][  0]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0008 seconds. Added 125 classes and 0 folders.
-[2021.03.12-15.20.22:502][123]BlueprintLog: New page: Compile BP_GEPPlayerController
-[2021.03.12-15.20.22:536][123]LogUObjectHash: Compacting FUObjectHashTables data took   1.99ms
-[2021.03.12-15.20.22:871][156]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BP_GEPPlayerController" FILE="../../../../../Github/GEP/GEPProject/Content/BP_GEPPlayerController.uasset" SILENT=true
-[2021.03.12-15.20.22:989][156]LogSavePackage: Moving '../../../../../Github/GEP/GEPProject/Saved/BP_GEPPlayerController21D53C8A414E4082924700802A3DCD1F.tmp' to '../../../../../Github/GEP/GEPProject/Content/BP_GEPPlayerController.uasset'
-[2021.03.12-15.20.23:008][156]AssetCheck: New page: Asset Save: BP_GEPPlayerController
-[2021.03.12-15.20.23:008][156]LogContentValidation: Display: Validating Blueprint /Game/BP_GEPPlayerController.BP_GEPPlayerController
-[2021.03.12-15.20.23:622][226]LogSlate: Window 'BP_GEPPlayerController' being destroyed
-[2021.03.12-15.20.23:654][226]LogWorld: UWorld::CleanupWorld for World_1, bSessionEnded=true, bCleanupResources=true
-[2021.03.12-15.20.23:654][226]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
-[2021.03.12-15.20.32:364][225]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/BP_GEPPlayerController.BP_GEPPlayerController
-[2021.03.12-15.20.33:284][274]LogSlate: Prevented a slow task dialog from being summoned while a context menu was open
-[2021.03.12-15.20.36:645][583]BlueprintLog: New page: Compile BP_GEPPlayerController
-[2021.03.12-15.20.36:680][583]LogUObjectHash: Compacting FUObjectHashTables data took   2.28ms
-[2021.03.12-15.20.37:063][619]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BP_GEPPlayerController" FILE="../../../../../Github/GEP/GEPProject/Content/BP_GEPPlayerController.uasset" SILENT=true
-[2021.03.12-15.20.37:076][619]LogSavePackage: Moving '../../../../../Github/GEP/GEPProject/Saved/BP_GEPPlayerControllerBA2FFF6943CD28FF4CC5E3A0F438339F.tmp' to '../../../../../Github/GEP/GEPProject/Content/BP_GEPPlayerController.uasset'
-[2021.03.12-15.20.37:093][619]AssetCheck: New page: Asset Save: BP_GEPPlayerController
-[2021.03.12-15.20.37:093][619]LogContentValidation: Display: Validating Blueprint /Game/BP_GEPPlayerController.BP_GEPPlayerController
-[2021.03.12-15.20.37:652][676]LogSlate: Window 'BP_GEPPlayerController' being destroyed
-[2021.03.12-15.20.37:658][676]LogWorld: UWorld::CleanupWorld for World_2, bSessionEnded=true, bCleanupResources=true
-[2021.03.12-15.20.37:658][676]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
-[2021.03.12-15.20.39:924][911]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/FirstPersonCPP/Blueprints/FirstPersonCharacter.FirstPersonCharacter
-[2021.03.12-15.20.43:806][263]LogSlate: Window 'FirstPersonCharacter' being destroyed
-[2021.03.12-15.20.43:846][263]LogWorld: UWorld::CleanupWorld for World_3, bSessionEnded=true, bCleanupResources=true
-[2021.03.12-15.20.43:846][263]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
-[2021.03.12-15.20.43:917][263]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/FirstPersonCPP/Blueprints/FirstPersonCharacter.FirstPersonCharacter
-[2021.03.12-15.20.44:334][263]LogSlate: Took 0.001067 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
-[2021.03.12-15.20.44:897][311]LogSlate: Took 0.000301 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf' (157K)
-[2021.03.12-15.20.48:017][625]LogSlate: Window 'FirstPersonCharacter' being destroyed
-[2021.03.12-15.20.48:023][625]LogSlate: Window 'FirstPersonCharacter' being destroyed
-[2021.03.12-15.20.48:032][625]LogWorld: UWorld::CleanupWorld for World_4, bSessionEnded=true, bCleanupResources=true
-[2021.03.12-15.20.48:032][625]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
-[2021.03.12-15.20.48:885][715]LogTemp: Repeating last play command: Selected Viewport
-[2021.03.12-15.20.48:904][715]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2021.03.12-15.20.48:904][715]PIE: New page: PIE session: FirstPersonExampleMap (12 Mar 2021, 15:20:48)
-[2021.03.12-15.20.48:937][715]LogPlayLevel: Creating play world package: /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap
-[2021.03.12-15.20.48:948][715]LogPlayLevel: PIE: StaticDuplicateObject took: (0.010441s)
-[2021.03.12-15.20.48:949][715]LogAIModule: Creating AISystem for world FirstPersonExampleMap
-[2021.03.12-15.20.48:949][715]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001E7729C5800), frame # 4715
-[2021.03.12-15.20.48:949][715]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001E744CF8B80), frame # 4715
-[2021.03.12-15.20.48:949][715]LogPlayLevel: PIE: World Init took: (0.001310s)
-[2021.03.12-15.20.48:949][715]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.011982s)
-[2021.03.12-15.20.48:972][715]LogUObjectHash: Compacting FUObjectHashTables data took   1.99ms
-[2021.03.12-15.20.48:974][715]LogAudioMixer: Display: Audio Mixer Platform Settings:
-[2021.03.12-15.20.48:974][715]LogAudioMixer: Display: 	Sample Rate:						  48000
-[2021.03.12-15.20.48:974][715]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
-[2021.03.12-15.20.48:974][715]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
-[2021.03.12-15.20.48:974][715]LogAudioMixer: Display: 	Number of buffers to queue:			  2
-[2021.03.12-15.20.48:974][715]LogAudioMixer: Display: 	Max Channels (voices):				  32
-[2021.03.12-15.20.48:974][715]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
-[2021.03.12-15.20.48:974][715]LogAudio: Display: AudioDevice MaxSources: 32
-[2021.03.12-15.20.48:975][715]LogAudio: Display: Using built-in audio occlusion.
-[2021.03.12-15.20.48:975][715]LogAudioMixer: Display: Initializing audio mixer.
-[2021.03.12-15.20.48:982][715]LogAudioMixer: Display: 0: FrontLeft
-[2021.03.12-15.20.48:982][715]LogAudioMixer: Display: 1: FrontRight
-[2021.03.12-15.20.49:001][715]LogAudioMixer: Display: Using Audio Device OUT 1-2 (BEHRINGER UMC 202HD 192k)
-[2021.03.12-15.20.49:002][715]LogAudioMixer: Display: Initializing Sound Submixes...
-[2021.03.12-15.20.49:002][715]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
-[2021.03.12-15.20.49:002][715]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
-[2021.03.12-15.20.49:002][715]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
-[2021.03.12-15.20.49:014][715]LogInit: FAudioDevice initialized.
-[2021.03.12-15.20.49:020][715]LogLoad: Game class is 'BP_GEPGamemode_C'
-[2021.03.12-15.20.49:021][715]LogWorld: Bringing World /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 0) at 2021.03.12-15.20.49
-[2021.03.12-15.20.49:022][715]LogWorld: Bringing up level for play took: 0.001445
-[2021.03.12-15.20.49:022][715]LogOnline: OSS: Creating online subsystem instance for: :Context_7
-[2021.03.12-15.20.49:027][715]PIE: Server logged in
-[2021.03.12-15.20.49:028][715]PIE: Play in editor total start time 0.124 seconds.
-[2021.03.12-15.20.59:079][908]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2021.03.12-15.20.59:079][908]LogWorld: BeginTearingDown for /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap
-[2021.03.12-15.20.59:079][908]LogWorld: UWorld::CleanupWorld for FirstPersonExampleMap, bSessionEnded=true, bCleanupResources=true
-[2021.03.12-15.20.59:079][908]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
-[2021.03.12-15.20.59:089][908]LogPlayLevel: Display: Shutting down PIE online subsystems
-[2021.03.12-15.20.59:092][908]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
-[2021.03.12-15.20.59:124][908]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2021.03.12-15.20.59:125][908]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001E744CF8B80), frame # 5908
-[2021.03.12-15.20.59:125][908]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001E7729C5800), frame # 5908
-[2021.03.12-15.20.59:127][908]LogUObjectHash: Compacting FUObjectHashTables data took   1.78ms
-[2021.03.12-15.20.59:161][909]LogPlayLevel: Display: Destroying online subsystem :Context_7
-[2021.03.12-15.21.47:462][511]Cmd: DELETE
-[2021.03.12-15.21.47:463][511]Cmd: ACTOR DELETE
-[2021.03.12-15.21.47:483][511]LogEditorActor: Deleted Actor: FirstPersonCharacter_C
-[2021.03.12-15.21.47:512][511]LogUObjectHash: Compacting FUObjectHashTables data took   1.95ms
-[2021.03.12-15.21.47:515][511]LogEditorActor: Deleted 1 Actors (0.043 secs)
-[2021.03.12-15.21.48:618][636]LogTemp: Repeating last play command: Selected Viewport
-[2021.03.12-15.21.48:639][636]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2021.03.12-15.21.48:639][636]PIE: New page: PIE session: FirstPersonExampleMap (12 Mar 2021, 15:21:48)
-[2021.03.12-15.21.48:686][636]LogPlayLevel: Creating play world package: /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap
-[2021.03.12-15.21.48:696][636]LogPlayLevel: PIE: StaticDuplicateObject took: (0.010049s)
-[2021.03.12-15.21.48:697][636]LogAIModule: Creating AISystem for world FirstPersonExampleMap
-[2021.03.12-15.21.48:697][636]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001E768A3D200), frame # 7636
-[2021.03.12-15.21.48:697][636]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001E779BD9580), frame # 7636
-[2021.03.12-15.21.48:697][636]LogPlayLevel: PIE: World Init took: (0.001391s)
-[2021.03.12-15.21.48:697][636]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.011664s)
-[2021.03.12-15.21.48:717][636]LogUObjectHash: Compacting FUObjectHashTables data took   2.14ms
-[2021.03.12-15.21.48:719][636]LogAudioMixer: Display: Audio Mixer Platform Settings:
-[2021.03.12-15.21.48:719][636]LogAudioMixer: Display: 	Sample Rate:						  48000
-[2021.03.12-15.21.48:719][636]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
-[2021.03.12-15.21.48:719][636]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
-[2021.03.12-15.21.48:719][636]LogAudioMixer: Display: 	Number of buffers to queue:			  2
-[2021.03.12-15.21.48:719][636]LogAudioMixer: Display: 	Max Channels (voices):				  32
-[2021.03.12-15.21.48:719][636]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
-[2021.03.12-15.21.48:719][636]LogAudio: Display: AudioDevice MaxSources: 32
-[2021.03.12-15.21.48:719][636]LogAudio: Display: Using built-in audio occlusion.
-[2021.03.12-15.21.48:719][636]LogAudioMixer: Display: Initializing audio mixer.
-[2021.03.12-15.21.48:726][636]LogAudioMixer: Display: 0: FrontLeft
-[2021.03.12-15.21.48:726][636]LogAudioMixer: Display: 1: FrontRight
-[2021.03.12-15.21.48:746][636]LogAudioMixer: Display: Using Audio Device OUT 1-2 (BEHRINGER UMC 202HD 192k)
-[2021.03.12-15.21.48:746][636]LogAudioMixer: Display: Initializing Sound Submixes...
-[2021.03.12-15.21.48:746][636]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
-[2021.03.12-15.21.48:746][636]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
-[2021.03.12-15.21.48:747][636]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
-[2021.03.12-15.21.48:758][636]LogInit: FAudioDevice initialized.
-[2021.03.12-15.21.48:763][636]LogLoad: Game class is 'BP_GEPGamemode_C'
-[2021.03.12-15.21.48:765][636]LogWorld: Bringing World /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 0) at 2021.03.12-15.21.48
-[2021.03.12-15.21.48:765][636]LogWorld: Bringing up level for play took: 0.001159
-[2021.03.12-15.21.48:765][636]LogOnline: OSS: Creating online subsystem instance for: :Context_8
-[2021.03.12-15.21.48:770][636]PIE: Server logged in
-[2021.03.12-15.21.48:771][636]PIE: Play in editor total start time 0.133 seconds.
-[2021.03.12-15.21.57:078][625]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2021.03.12-15.21.57:078][625]LogWorld: BeginTearingDown for /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap
-[2021.03.12-15.21.57:079][625]LogWorld: UWorld::CleanupWorld for FirstPersonExampleMap, bSessionEnded=true, bCleanupResources=true
-[2021.03.12-15.21.57:079][625]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
-[2021.03.12-15.21.57:090][625]LogPlayLevel: Display: Shutting down PIE online subsystems
-[2021.03.12-15.21.57:093][625]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
-[2021.03.12-15.21.57:108][625]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2021.03.12-15.21.57:123][625]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001E779BD9580), frame # 8625
-[2021.03.12-15.21.57:123][625]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001E768A3D200), frame # 8625
-[2021.03.12-15.21.57:125][625]LogUObjectHash: Compacting FUObjectHashTables data took   1.65ms
-[2021.03.12-15.21.57:158][626]LogPlayLevel: Display: Destroying online subsystem :Context_8
-[2021.03.12-15.21.58:683][791]LogUObjectHash: Compacting FUObjectHashTables data took   1.61ms
-[2021.03.12-15.21.58:728][791]LogSavePackage: Moving '../../../../../Github/GEP/GEPProject/Saved/FirstPersonExampleMap0B92BCC145ED65AD986DAC9A8B83A479.tmp' to '../../../../../Github/GEP/GEPProject/Content/FirstPersonCPP/Maps/FirstPersonExampleMap.umap'
-[2021.03.12-15.21.59:512][791]LogSavePackage: Moving '../../../../../Github/GEP/GEPProject/Saved/FirstPersonExampleMap_BuiltData049E02E54B98D7368024CBABCC748E04.tmp' to '../../../../../Github/GEP/GEPProject/Content/FirstPersonCPP/Maps/FirstPersonExampleMap_BuiltData.uasset'
-[2021.03.12-15.21.59:554][791]AssetCheck: New page: Asset Save: multiple assets
-[2021.03.12-15.21.59:554][791]LogContentValidation: Display: Validating World /Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap
-[2021.03.12-15.21.59:554][791]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/FirstPersonCPP/Maps/FirstPersonExampleMap_BuiltData.FirstPersonExampleMap_BuiltData
-[2021.03.12-15.22.06:454][572]LogSlate: Window 'Open Level' being destroyed
-[2021.03.12-15.22.28:088][ 90]LogAssetEditorSubsystem: Opening Asset editor for MapBuildDataRegistry /Game/Levels/TestLevel_BuiltData.TestLevel_BuiltData
-[2021.03.12-15.22.29:856][293]LogSlate: Window 'TestLevel_BuiltData' being destroyed
-[2021.03.12-15.22.29:862][293]LogSlate: Window 'TestLevel_BuiltData' being destroyed
-[2021.03.12-15.22.36:199][ 32]LogAssetEditorSubsystem: Opening Asset editor for World /Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap
-[2021.03.12-15.22.36:217][ 32]LogUObjectHash: Compacting FUObjectHashTables data took   1.78ms
-[2021.03.12-15.22.36:223][ 32]Cmd: MAP LOAD FILE="../../../../../Github/GEP/GEPProject/Content/FirstPersonCPP/Maps/FirstPersonExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2021.03.12-15.22.36:223][ 32]LightingResults: New page: Lighting Build
-[2021.03.12-15.22.36:223][ 32]LoadErrors: New page: Loading map: FirstPersonExampleMap.umap
-[2021.03.12-15.22.36:246][ 32]LogWorld: UWorld::CleanupWorld for FirstPersonExampleMap, bSessionEnded=true, bCleanupResources=true
-[2021.03.12-15.22.36:247][ 32]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
-[2021.03.12-15.22.36:247][ 32]MapCheck: New page: Map Check
-[2021.03.12-15.22.36:247][ 32]LightingResults: New page: Lighting Build
-[2021.03.12-15.22.36:266][ 32]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001E738813E00), frame # 13032
-[2021.03.12-15.22.36:266][ 32]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001E73881B880), frame # 13032
-[2021.03.12-15.22.36:268][ 32]LogUObjectHash: Compacting FUObjectHashTables data took   1.85ms
-[2021.03.12-15.22.36:301][ 32]LogAIModule: Creating AISystem for world FirstPersonExampleMap
-[2021.03.12-15.22.36:301][ 32]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001E74DB7B000), frame # 13032
-[2021.03.12-15.22.36:301][ 32]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001E738787EC0), frame # 13032
-[2021.03.12-15.22.36:320][ 32]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2021.03.12-15.22.36:340][ 32]LogUObjectHash: Compacting FUObjectHashTables data took   1.59ms
-[2021.03.12-15.22.36:376][ 32]Cmd: MAP CHECKDEP NOCLEARLOG
-[2021.03.12-15.22.36:376][ 32]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.107ms to complete.
-[2021.03.12-15.22.36:376][ 32]LogFileHelpers: Loading map 'FirstPersonExampleMap' took 0.154
-[2021.03.12-15.22.51:797][563]LogStaticMesh: Building static mesh Floor_400x400...
-[2021.03.12-15.22.51:802][563]LogStaticMesh: Built static mesh [0.00s] /Game/StarterContent/Architecture/Floor_400x400.Floor_400x400
-[2021.03.12-15.22.52:105][563]LogAssetEditorSubsystem: Opening Asset editor for World /Game/StarterContent/Maps/StarterMap.StarterMap
-[2021.03.12-15.22.52:133][563]LogUObjectHash: Compacting FUObjectHashTables data took   3.72ms
-[2021.03.12-15.22.52:138][563]Cmd: MAP LOAD FILE="../../../../../Github/GEP/GEPProject/Content/StarterContent/Maps/StarterMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2021.03.12-15.22.52:138][563]LightingResults: New page: Lighting Build
-[2021.03.12-15.22.52:138][563]LoadErrors: New page: Loading map: StarterMap.umap
-[2021.03.12-15.22.52:194][563]LogWorld: UWorld::CleanupWorld for FirstPersonExampleMap, bSessionEnded=true, bCleanupResources=true
-[2021.03.12-15.22.52:194][563]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
-[2021.03.12-15.22.52:194][563]MapCheck: New page: Map Check
-[2021.03.12-15.22.52:194][563]LightingResults: New page: Lighting Build
-[2021.03.12-15.22.52:214][563]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001E738787EC0), frame # 14563
-[2021.03.12-15.22.52:214][563]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001E74DB7B000), frame # 14563
-[2021.03.12-15.22.52:217][563]LogUObjectHash: Compacting FUObjectHashTables data took   2.42ms
-[2021.03.12-15.22.52:245][563]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2021.03.12-15.22.52:245][563]LogAIModule: Creating AISystem for world StarterMap
-[2021.03.12-15.22.52:245][563]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001E74DB7BC00), frame # 14563
-[2021.03.12-15.22.52:245][563]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001E7A6890540), frame # 14563
-[2021.03.12-15.22.52:272][563]LogUObjectHash: Compacting FUObjectHashTables data took   2.54ms
-[2021.03.12-15.22.52:318][563]Cmd: MAP CHECKDEP NOCLEARLOG
-[2021.03.12-15.22.52:318][563]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.163ms to complete.
-[2021.03.12-15.22.52:318][563]LogFileHelpers: Loading map 'StarterMap' took 0.180
-[2021.03.12-15.23.35:555][916]LogAssetEditorSubsystem: Opening Asset editor for World /Game/StarterContent/Maps/Minimal_Default.Minimal_Default
-[2021.03.12-15.23.35:572][916]LogUObjectHash: Compacting FUObjectHashTables data took   1.47ms
-[2021.03.12-15.23.35:577][916]Cmd: MAP LOAD FILE="../../../../../Github/GEP/GEPProject/Content/StarterContent/Maps/Minimal_Default.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2021.03.12-15.23.35:577][916]LightingResults: New page: Lighting Build
-[2021.03.12-15.23.35:578][916]LoadErrors: New page: Loading map: Minimal_Default.umap
-[2021.03.12-15.23.35:607][916]LogWorld: UWorld::CleanupWorld for StarterMap, bSessionEnded=true, bCleanupResources=true
-[2021.03.12-15.23.35:607][916]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
-[2021.03.12-15.23.35:607][916]MapCheck: New page: Map Check
-[2021.03.12-15.23.35:607][916]LightingResults: New page: Lighting Build
-[2021.03.12-15.23.35:626][916]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001E7A6890540), frame # 18916
-[2021.03.12-15.23.35:626][916]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001E74DB7BC00), frame # 18916
-[2021.03.12-15.23.35:630][916]LogUObjectHash: Compacting FUObjectHashTables data took   2.15ms
-[2021.03.12-15.23.35:634][916]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2021.03.12-15.23.35:634][916]LogAIModule: Creating AISystem for world Minimal_Default
-[2021.03.12-15.23.35:634][916]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001E7A65D9400), frame # 18916
-[2021.03.12-15.23.35:634][916]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001E7A6B40F40), frame # 18916
-[2021.03.12-15.23.35:653][916]LogUObjectHash: Compacting FUObjectHashTables data took   1.85ms
-[2021.03.12-15.23.35:689][916]Cmd: MAP CHECKDEP NOCLEARLOG
-[2021.03.12-15.23.35:689][916]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.101ms to complete.
-[2021.03.12-15.23.35:689][916]LogFileHelpers: Loading map 'Minimal_Default' took 0.112
-[2021.03.12-15.23.43:093][662]LogAssetEditorSubsystem: Opening Asset editor for World /Game/StarterContent/Maps/Advanced_Lighting.Advanced_Lighting
-[2021.03.12-15.23.43:114][662]LogUObjectHash: Compacting FUObjectHashTables data took   2.21ms
-[2021.03.12-15.23.43:117][662]Cmd: MAP LOAD FILE="../../../../../Github/GEP/GEPProject/Content/StarterContent/Maps/Advanced_Lighting.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2021.03.12-15.23.43:117][662]LightingResults: New page: Lighting Build
-[2021.03.12-15.23.43:117][662]LoadErrors: New page: Loading map: Advanced_Lighting.umap
-[2021.03.12-15.23.43:119][662]LogWorld: UWorld::CleanupWorld for Minimal_Default, bSessionEnded=true, bCleanupResources=true
-[2021.03.12-15.23.43:119][662]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
-[2021.03.12-15.23.43:119][662]MapCheck: New page: Map Check
-[2021.03.12-15.23.43:119][662]LightingResults: New page: Lighting Build
-[2021.03.12-15.23.43:136][662]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001E7A6B40F40), frame # 19662
-[2021.03.12-15.23.43:137][662]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001E7A65D9400), frame # 19662
-[2021.03.12-15.23.43:139][662]LogUObjectHash: Compacting FUObjectHashTables data took   1.94ms
-[2021.03.12-15.23.43:144][662]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2021.03.12-15.23.43:144][662]LogAIModule: Creating AISystem for world Advanced_Lighting
-[2021.03.12-15.23.43:144][662]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001E7A65D9200), frame # 19662
-[2021.03.12-15.23.43:144][662]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001E7A523D580), frame # 19662
-[2021.03.12-15.23.43:163][662]LogUObjectHash: Compacting FUObjectHashTables data took   1.67ms
-[2021.03.12-15.23.43:199][662]Cmd: MAP CHECKDEP NOCLEARLOG
-[2021.03.12-15.23.43:199][662]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.1ms to complete.
-[2021.03.12-15.23.43:199][662]LogFileHelpers: Loading map 'Advanced_Lighting' took 0.082
-[2021.03.12-15.24.24:135][625]LogSlate: Window 'Open Level' being destroyed
-[2021.03.12-15.24.34:337][720]LogAssetEditorSubsystem: Opening Asset editor for World /Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap
-[2021.03.12-15.24.34:356][720]LogUObjectHash: Compacting FUObjectHashTables data took   1.93ms
-[2021.03.12-15.24.34:362][720]Cmd: MAP LOAD FILE="../../../../../Github/GEP/GEPProject/Content/FirstPersonCPP/Maps/FirstPersonExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2021.03.12-15.24.34:363][720]LightingResults: New page: Lighting Build
-[2021.03.12-15.24.34:363][720]LoadErrors: New page: Loading map: FirstPersonExampleMap.umap
-[2021.03.12-15.24.34:386][720]LogWorld: UWorld::CleanupWorld for Advanced_Lighting, bSessionEnded=true, bCleanupResources=true
-[2021.03.12-15.24.34:386][720]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
-[2021.03.12-15.24.34:386][720]MapCheck: New page: Map Check
-[2021.03.12-15.24.34:386][720]LightingResults: New page: Lighting Build
-[2021.03.12-15.24.34:408][720]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001E7A523D580), frame # 24720
-[2021.03.12-15.24.34:408][720]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001E7A65D9200), frame # 24720
-[2021.03.12-15.24.34:410][720]LogUObjectHash: Compacting FUObjectHashTables data took   1.80ms
-[2021.03.12-15.24.34:414][720]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2021.03.12-15.24.34:414][720]LogAIModule: Creating AISystem for world FirstPersonExampleMap
-[2021.03.12-15.24.34:414][720]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001E74E47DE00), frame # 24720
-[2021.03.12-15.24.34:414][720]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001E7A5223C40), frame # 24720
-[2021.03.12-15.24.34:436][720]LogUObjectHash: Compacting FUObjectHashTables data took   1.80ms
-[2021.03.12-15.24.34:471][720]Cmd: MAP CHECKDEP NOCLEARLOG
-[2021.03.12-15.24.34:471][720]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.116ms to complete.
-[2021.03.12-15.24.34:471][720]LogFileHelpers: Loading map 'FirstPersonExampleMap' took 0.109
-[2021.03.12-15.31.08:939][290]LogTemp: Repeating last play command: Selected Viewport
-[2021.03.12-15.31.08:967][290]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2021.03.12-15.31.08:967][290]PIE: New page: PIE session: FirstPersonExampleMap (12 Mar 2021, 15:31:08)
-[2021.03.12-15.31.08:967][290]LogPlayLevel: Creating play world package: /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap
-[2021.03.12-15.31.08:982][290]LogPlayLevel: PIE: StaticDuplicateObject took: (0.014257s)
-[2021.03.12-15.31.08:983][290]LogAIModule: Creating AISystem for world FirstPersonExampleMap
-[2021.03.12-15.31.08:984][290]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001E7A6BC6000), frame # 32290
-[2021.03.12-15.31.08:984][290]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001E7A6B9AFC0), frame # 32290
-[2021.03.12-15.31.08:984][290]LogPlayLevel: PIE: World Init took: (0.001654s)
-[2021.03.12-15.31.08:984][290]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.016113s)
-[2021.03.12-15.31.09:006][290]LogUObjectHash: Compacting FUObjectHashTables data took   2.73ms
-[2021.03.12-15.31.09:018][290]LogAudioMixer: Display: Audio Mixer Platform Settings:
-[2021.03.12-15.31.09:018][290]LogAudioMixer: Display: 	Sample Rate:						  48000
-[2021.03.12-15.31.09:018][290]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
-[2021.03.12-15.31.09:018][290]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
-[2021.03.12-15.31.09:018][290]LogAudioMixer: Display: 	Number of buffers to queue:			  2
-[2021.03.12-15.31.09:018][290]LogAudioMixer: Display: 	Max Channels (voices):				  32
-[2021.03.12-15.31.09:018][290]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
-[2021.03.12-15.31.09:018][290]LogAudio: Display: AudioDevice MaxSources: 32
-[2021.03.12-15.31.09:019][290]LogAudio: Display: Using built-in audio occlusion.
-[2021.03.12-15.31.09:019][290]LogAudioMixer: Display: Initializing audio mixer.
-[2021.03.12-15.31.09:027][290]LogAudioMixer: Display: 0: FrontLeft
-[2021.03.12-15.31.09:027][290]LogAudioMixer: Display: 1: FrontRight
-[2021.03.12-15.31.09:048][290]LogAudioMixer: Display: Using Audio Device OUT 1-2 (BEHRINGER UMC 202HD 192k)
-[2021.03.12-15.31.09:048][290]LogAudioMixer: Display: Initializing Sound Submixes...
-[2021.03.12-15.31.09:048][290]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
-[2021.03.12-15.31.09:048][290]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
-[2021.03.12-15.31.09:049][290]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
-[2021.03.12-15.31.09:060][290]LogInit: FAudioDevice initialized.
-[2021.03.12-15.31.09:067][290]LogLoad: Game class is 'BP_GEPGamemode_C'
-[2021.03.12-15.31.09:069][290]LogWorld: Bringing World /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 0) at 2021.03.12-15.31.09
-[2021.03.12-15.31.09:069][290]LogWorld: Bringing up level for play took: 0.001337
-[2021.03.12-15.31.09:069][290]LogOnline: OSS: Creating online subsystem instance for: :Context_10
-[2021.03.12-15.31.09:074][290]PIE: Server logged in
-[2021.03.12-15.31.09:075][290]PIE: Play in editor total start time 0.109 seconds.
-[2021.03.12-15.33.19:711][935]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2021.03.12-15.33.19:711][935]LogWorld: BeginTearingDown for /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap
-[2021.03.12-15.33.19:711][935]LogWorld: UWorld::CleanupWorld for FirstPersonExampleMap, bSessionEnded=true, bCleanupResources=true
-[2021.03.12-15.33.19:712][935]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
-[2021.03.12-15.33.19:722][935]LogPlayLevel: Display: Shutting down PIE online subsystems
-[2021.03.12-15.33.19:725][935]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
-[2021.03.12-15.33.19:745][935]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2021.03.12-15.33.19:762][935]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001E7A6B9AFC0), frame # 47935
-[2021.03.12-15.33.19:763][935]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001E7A6BC6000), frame # 47935
-[2021.03.12-15.33.19:765][935]LogUObjectHash: Compacting FUObjectHashTables data took   2.18ms
-[2021.03.12-15.33.19:805][936]LogPlayLevel: Display: Destroying online subsystem :Context_10
-[2021.03.12-15.33.35:081][763]LogUObjectHash: Compacting FUObjectHashTables data took   1.77ms
-[2021.03.12-15.33.35:184][763]LogSlate: Window 'GEPProject - Unreal Editor' being destroyed
-[2021.03.12-15.33.35:322][764]Cmd: QUIT_EDITOR
-[2021.03.12-15.33.35:322][764]LogCore: Engine exit requested (reason: UUnrealEdEngine::CloseEditor())
-[2021.03.12-15.33.35:333][764]LogCore: Engine exit requested (reason: EngineExit() was called; note: exit was already requested)
-[2021.03.12-15.33.36:367][764]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
-[2021.03.12-15.33.36:379][764]LogExit: Preparing to exit.
+[2021.03.13-20.05.31:579][  0]LogConfig: Setting CVar [[r.VSync:0]]
+[2021.03.13-20.05.31:579][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
+[2021.03.13-20.05.31:580][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [E:/Github/GEP/GEPProject/Saved/Config/Windows/Engine.ini]
+[2021.03.13-20.05.31:580][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
+[2021.03.13-20.05.31:580][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [E:/Github/GEP/GEPProject/Saved/Config/Windows/Engine.ini]
+[2021.03.13-20.05.31:580][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [E:/Github/GEP/GEPProject/Saved/Config/Windows/Engine.ini]
+[2021.03.13-20.05.31:580][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+[2021.03.13-20.05.31:580][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+[2021.03.13-20.05.31:580][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+[2021.03.13-20.05.31:580][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+[2021.03.13-20.05.31:580][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+[2021.03.13-20.05.31:580][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+[2021.03.13-20.05.31:580][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+[2021.03.13-20.05.31:580][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+[2021.03.13-20.05.31:580][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+[2021.03.13-20.05.31:580][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+[2021.03.13-20.05.31:580][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+[2021.03.13-20.05.31:580][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+[2021.03.13-20.05.31:580][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+[2021.03.13-20.05.31:580][  0]LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+[2021.03.13-20.05.31:580][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [E:/Github/GEP/GEPProject/Saved/Config/Windows/Engine.ini]
+[2021.03.13-20.05.31:580][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
+[2021.03.13-20.05.31:580][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
+[2021.03.13-20.05.31:580][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
+[2021.03.13-20.05.31:580][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
+[2021.03.13-20.05.31:580][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
+[2021.03.13-20.05.31:580][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
+[2021.03.13-20.05.31:580][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:25165824]]
+[2021.03.13-20.05.31:580][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
+[2021.03.13-20.05.31:580][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
+[2021.03.13-20.05.31:580][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
+[2021.03.13-20.05.31:580][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
+[2021.03.13-20.05.31:580][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
+[2021.03.13-20.05.31:580][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
+[2021.03.13-20.05.31:580][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [E:/Github/GEP/GEPProject/Saved/Config/Windows/Engine.ini]
+[2021.03.13-20.05.31:580][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [E:/Github/GEP/GEPProject/Saved/Config/Windows/Engine.ini]
+[2021.03.13-20.05.31:588][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [E:/Github/GEP/GEPProject/Saved/Config/Windows/Scalability.ini]
+[2021.03.13-20.05.31:588][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2021.03.13-20.05.31:588][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2021.03.13-20.05.31:588][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [E:/Github/GEP/GEPProject/Saved/Config/Windows/Scalability.ini]
+[2021.03.13-20.05.31:588][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2021.03.13-20.05.31:588][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [E:/Github/GEP/GEPProject/Saved/Config/Windows/Scalability.ini]
+[2021.03.13-20.05.31:588][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2021.03.13-20.05.31:588][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2021.03.13-20.05.31:588][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2021.03.13-20.05.31:588][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2021.03.13-20.05.31:588][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2021.03.13-20.05.31:588][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2021.03.13-20.05.31:588][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2021.03.13-20.05.31:588][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2021.03.13-20.05.31:589][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2021.03.13-20.05.31:589][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2021.03.13-20.05.31:589][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2021.03.13-20.05.31:589][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2021.03.13-20.05.31:589][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2021.03.13-20.05.31:589][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2021.03.13-20.05.31:589][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2021.03.13-20.05.31:589][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2021.03.13-20.05.31:589][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2021.03.13-20.05.31:589][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2021.03.13-20.05.31:589][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [E:/Github/GEP/GEPProject/Saved/Config/Windows/Scalability.ini]
+[2021.03.13-20.05.31:589][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2021.03.13-20.05.31:589][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2021.03.13-20.05.31:589][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2021.03.13-20.05.31:589][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2021.03.13-20.05.31:589][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2021.03.13-20.05.31:589][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2021.03.13-20.05.31:589][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2021.03.13-20.05.31:589][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2021.03.13-20.05.31:589][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2021.03.13-20.05.31:589][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2021.03.13-20.05.31:589][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2021.03.13-20.05.31:589][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2021.03.13-20.05.31:589][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2021.03.13-20.05.31:589][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2021.03.13-20.05.31:589][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2021.03.13-20.05.31:589][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2021.03.13-20.05.31:589][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2021.03.13-20.05.31:589][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2021.03.13-20.05.31:589][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2021.03.13-20.05.31:589][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2021.03.13-20.05.31:589][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2021.03.13-20.05.31:589][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2021.03.13-20.05.31:589][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2021.03.13-20.05.31:589][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2021.03.13-20.05.31:589][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2021.03.13-20.05.31:589][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2021.03.13-20.05.31:589][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2021.03.13-20.05.31:589][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2021.03.13-20.05.31:589][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2021.03.13-20.05.31:589][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2021.03.13-20.05.31:589][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [E:/Github/GEP/GEPProject/Saved/Config/Windows/Scalability.ini]
+[2021.03.13-20.05.31:589][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2021.03.13-20.05.31:589][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2021.03.13-20.05.31:589][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2021.03.13-20.05.31:589][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2021.03.13-20.05.31:589][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2021.03.13-20.05.31:589][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2021.03.13-20.05.31:589][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2021.03.13-20.05.31:589][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2021.03.13-20.05.31:589][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2021.03.13-20.05.31:589][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [E:/Github/GEP/GEPProject/Saved/Config/Windows/Scalability.ini]
+[2021.03.13-20.05.31:589][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2021.03.13-20.05.31:589][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2021.03.13-20.05.31:589][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2021.03.13-20.05.31:589][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2021.03.13-20.05.31:589][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2021.03.13-20.05.31:589][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2021.03.13-20.05.31:589][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2021.03.13-20.05.31:589][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2021.03.13-20.05.31:589][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2021.03.13-20.05.31:589][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2021.03.13-20.05.31:589][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2021.03.13-20.05.31:589][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2021.03.13-20.05.31:589][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2021.03.13-20.05.31:589][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2021.03.13-20.05.31:589][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2021.03.13-20.05.31:589][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2021.03.13-20.05.31:589][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
+[2021.03.13-20.05.31:589][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2021.03.13-20.05.31:589][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2021.03.13-20.05.31:589][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2021.03.13-20.05.31:589][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
+[2021.03.13-20.05.31:589][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2021.03.13-20.05.31:589][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
+[2021.03.13-20.05.31:589][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2021.03.13-20.05.31:589][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2021.03.13-20.05.31:589][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2021.03.13-20.05.31:589][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [E:/Github/GEP/GEPProject/Saved/Config/Windows/Scalability.ini]
+[2021.03.13-20.05.31:589][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2021.03.13-20.05.31:589][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2021.03.13-20.05.31:590][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [E:/Github/GEP/GEPProject/Saved/Config/Windows/Scalability.ini]
+[2021.03.13-20.05.31:590][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
+[2021.03.13-20.05.31:590][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
+[2021.03.13-20.05.31:590][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
+[2021.03.13-20.05.31:590][  0]LogConfig: Setting CVar [[r.HairStrands.DeepShadow.SuperSampling:0]]
+[2021.03.13-20.05.31:590][  0]LogConfig: Setting CVar [[r.HairStrands.VisibilityPPLL:0]]
+[2021.03.13-20.05.31:590][  0]LogConfig: Setting CVar [[r.HairStrands.RasterizationScale:0.5]]
+[2021.03.13-20.05.31:590][  0]LogConfig: Setting CVar [[r.HairStrands.VelocityRasterizationScale:1]]
+[2021.03.13-20.05.31:591][  0]LogInit: Selected Device Profile: [Windows]
+[2021.03.13-20.05.31:591][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2021.03.13-20.05.31:592][  0]LogHAL: Display: Platform has ~ 16 GB [17123741696 / 17179869184 / 16], which maps to Larger [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2021.03.13-20.05.31:592][  0]LogInit: Going up to parent DeviceProfile []
+[2021.03.13-20.05.31:593][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [E:/Github/GEP/GEPProject/Saved/Config/Windows/Scalability.ini]
+[2021.03.13-20.05.31:593][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2021.03.13-20.05.31:593][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2021.03.13-20.05.31:593][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [E:/Github/GEP/GEPProject/Saved/Config/Windows/Scalability.ini]
+[2021.03.13-20.05.31:593][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2021.03.13-20.05.31:593][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [E:/Github/GEP/GEPProject/Saved/Config/Windows/Scalability.ini]
+[2021.03.13-20.05.31:593][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2021.03.13-20.05.31:593][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2021.03.13-20.05.31:593][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2021.03.13-20.05.31:593][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2021.03.13-20.05.31:593][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2021.03.13-20.05.31:593][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2021.03.13-20.05.31:593][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2021.03.13-20.05.31:593][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2021.03.13-20.05.31:593][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2021.03.13-20.05.31:593][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2021.03.13-20.05.31:593][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2021.03.13-20.05.31:593][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2021.03.13-20.05.31:593][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2021.03.13-20.05.31:593][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2021.03.13-20.05.31:593][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2021.03.13-20.05.31:593][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2021.03.13-20.05.31:593][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2021.03.13-20.05.31:593][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2021.03.13-20.05.31:593][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [E:/Github/GEP/GEPProject/Saved/Config/Windows/Scalability.ini]
+[2021.03.13-20.05.31:593][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2021.03.13-20.05.31:593][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2021.03.13-20.05.31:593][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2021.03.13-20.05.31:593][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2021.03.13-20.05.31:593][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2021.03.13-20.05.31:593][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2021.03.13-20.05.31:593][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2021.03.13-20.05.31:593][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2021.03.13-20.05.31:593][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2021.03.13-20.05.31:593][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2021.03.13-20.05.31:593][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2021.03.13-20.05.31:593][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2021.03.13-20.05.31:593][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2021.03.13-20.05.31:593][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2021.03.13-20.05.31:593][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2021.03.13-20.05.31:593][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2021.03.13-20.05.31:593][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2021.03.13-20.05.31:593][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2021.03.13-20.05.31:593][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2021.03.13-20.05.31:593][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2021.03.13-20.05.31:593][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2021.03.13-20.05.31:593][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2021.03.13-20.05.31:593][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2021.03.13-20.05.31:593][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2021.03.13-20.05.31:593][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2021.03.13-20.05.31:593][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2021.03.13-20.05.31:593][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2021.03.13-20.05.31:593][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2021.03.13-20.05.31:593][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2021.03.13-20.05.31:593][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2021.03.13-20.05.31:593][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [E:/Github/GEP/GEPProject/Saved/Config/Windows/Scalability.ini]
+[2021.03.13-20.05.31:593][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2021.03.13-20.05.31:593][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2021.03.13-20.05.31:593][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2021.03.13-20.05.31:593][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2021.03.13-20.05.31:593][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2021.03.13-20.05.31:593][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2021.03.13-20.05.31:593][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2021.03.13-20.05.31:593][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2021.03.13-20.05.31:593][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2021.03.13-20.05.31:593][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [E:/Github/GEP/GEPProject/Saved/Config/Windows/Scalability.ini]
+[2021.03.13-20.05.31:593][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2021.03.13-20.05.31:593][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2021.03.13-20.05.31:593][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2021.03.13-20.05.31:593][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2021.03.13-20.05.31:593][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2021.03.13-20.05.31:593][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2021.03.13-20.05.31:593][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2021.03.13-20.05.31:593][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2021.03.13-20.05.31:593][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2021.03.13-20.05.31:593][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2021.03.13-20.05.31:593][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2021.03.13-20.05.31:593][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2021.03.13-20.05.31:593][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2021.03.13-20.05.31:593][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2021.03.13-20.05.31:593][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2021.03.13-20.05.31:594][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2021.03.13-20.05.31:594][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
+[2021.03.13-20.05.31:594][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2021.03.13-20.05.31:594][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2021.03.13-20.05.31:594][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2021.03.13-20.05.31:594][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
+[2021.03.13-20.05.31:594][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2021.03.13-20.05.31:594][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
+[2021.03.13-20.05.31:594][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2021.03.13-20.05.31:594][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2021.03.13-20.05.31:594][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2021.03.13-20.05.31:594][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [E:/Github/GEP/GEPProject/Saved/Config/Windows/Scalability.ini]
+[2021.03.13-20.05.31:594][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2021.03.13-20.05.31:594][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2021.03.13-20.05.31:594][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [E:/Github/GEP/GEPProject/Saved/Config/Windows/Scalability.ini]
+[2021.03.13-20.05.31:594][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
+[2021.03.13-20.05.31:594][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
+[2021.03.13-20.05.31:594][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
+[2021.03.13-20.05.31:594][  0]LogConfig: Setting CVar [[r.HairStrands.DeepShadow.SuperSampling:0]]
+[2021.03.13-20.05.31:594][  0]LogConfig: Setting CVar [[r.HairStrands.VisibilityPPLL:0]]
+[2021.03.13-20.05.31:594][  0]LogConfig: Setting CVar [[r.HairStrands.RasterizationScale:0.5]]
+[2021.03.13-20.05.31:594][  0]LogConfig: Setting CVar [[r.HairStrands.VelocityRasterizationScale:1]]
+[2021.03.13-20.05.31:594][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
+[2021.03.13-20.05.31:594][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
+[2021.03.13-20.05.31:594][  0]LogConfig: Setting CVar [[p.chaos.AllowCreatePhysxBodies:1]]
+[2021.03.13-20.05.31:594][  0]LogConfig: Setting CVar [[fx.SkipVectorVMBackendOptimizations:1]]
+[2021.03.13-20.05.31:594][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [E:/Github/GEP/GEPProject/Saved/Config/Windows/Engine.ini]
+[2021.03.13-20.05.31:595][  0]LogInit: Computer: DESKTOP-8MPSU4G
+[2021.03.13-20.05.31:595][  0]LogInit: User: cathan
+[2021.03.13-20.05.31:596][  0]LogInit: CPU Page size=4096, Cores=8
+[2021.03.13-20.05.31:596][  0]LogInit: High frequency timer resolution =10.000000 MHz
+[2021.03.13-20.05.31:596][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
+[2021.03.13-20.05.31:596][  0]LogMemory: Platform Memory Stats for Windows
+[2021.03.13-20.05.31:596][  0]LogMemory: Process Physical Memory: 118.11 MB used, 118.11 MB peak
+[2021.03.13-20.05.31:596][  0]LogMemory: Process Virtual Memory: 106.09 MB used, 106.09 MB peak
+[2021.03.13-20.05.31:596][  0]LogMemory: Physical Memory: 13998.46 MB used,  2332.01 MB free, 16330.47 MB total
+[2021.03.13-20.05.31:596][  0]LogMemory: Virtual Memory: 5195.04 MB used,  134212536.00 MB free, 134217728.00 MB total
+[2021.03.13-20.05.31:608][  0]LogWindows: WindowsPlatformFeatures enabled
+[2021.03.13-20.05.32:032][  0]LogInit: Physics initialised using underlying interface: PhysX
+[2021.03.13-20.05.32:039][  0]LogInit: Using OS detected language (en-GB).
+[2021.03.13-20.05.32:039][  0]LogInit: Using OS detected locale (en-GB).
+[2021.03.13-20.05.32:086][  0]LogTextLocalizationManager: No specific localization for 'en-GB' exists, so the 'en' localization will be used.
+[2021.03.13-20.05.32:444][  0]LogInit: Setting process to per monitor DPI aware
+[2021.03.13-20.05.32:594][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2021.03.13-20.05.32:595][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2021.03.13-20.05.36:833][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2021.03.13-20.05.36:833][  0]LogD3D11RHI: D3D11 min allowed feature level: 11_0
+[2021.03.13-20.05.36:833][  0]LogD3D11RHI: D3D11 max allowed feature level: 11_0
+[2021.03.13-20.05.36:833][  0]LogD3D11RHI: D3D11 adapters:
+[2021.03.13-20.05.36:963][  0]LogD3D11RHI:    0. 'NVIDIA GeForce RTX 2060' (Feature Level 11_0)
+[2021.03.13-20.05.36:963][  0]LogD3D11RHI:       5980/0/8165 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:2, VendorId:0x10de
+[2021.03.13-20.05.36:967][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2021.03.13-20.05.36:967][  0]LogD3D11RHI:       0/0/8165 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2021.03.13-20.05.36:967][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2021.03.13-20.05.36:983][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2021.03.13-20.05.36:984][  0]LogD3D11RHI:     GPU DeviceId: 0x1f08 (for the marketing name, search the web for "GPU Device Id")
+[2021.03.13-20.05.36:984][  0]LogWindows: EnumDisplayDevices:
+[2021.03.13-20.05.36:984][  0]LogWindows:    0. 'NVIDIA GeForce RTX 2060' (P:1 D:1)
+[2021.03.13-20.05.36:984][  0]LogWindows:    1. 'NVIDIA GeForce RTX 2060' (P:0 D:1)
+[2021.03.13-20.05.36:984][  0]LogWindows:    2. 'NVIDIA GeForce RTX 2060' (P:0 D:0)
+[2021.03.13-20.05.36:984][  0]LogWindows:    3. 'NVIDIA GeForce RTX 2060' (P:0 D:0)
+[2021.03.13-20.05.36:985][  0]LogWindows: DebugString: FoundDriverCount:4 
+[2021.03.13-20.05.36:985][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce RTX 2060
+[2021.03.13-20.05.36:985][  0]LogD3D11RHI:   Driver Version: 460.79 (internal:27.21.14.6079, unified:460.79)
+[2021.03.13-20.05.36:985][  0]LogD3D11RHI:      Driver Date: 12-3-2020
+[2021.03.13-20.05.36:985][  0]LogRHI: Texture pool is 4186 MB (70% of 5980 MB)
+[2021.03.13-20.05.37:079][  0]LogD3D11RHI: RHI has support for 64 bit atomics
+[2021.03.13-20.05.37:079][  0]LogD3D11RHI: Async texture creation enabled
+[2021.03.13-20.05.37:079][  0]LogD3D11RHI: Array index from any shader is supported
+[2021.03.13-20.05.37:169][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2021.03.13-20.05.37:501][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AllDesktop'
+[2021.03.13-20.05.37:547][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android'
+[2021.03.13-20.05.37:547][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTC'
+[2021.03.13-20.05.37:547][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXT'
+[2021.03.13-20.05.37:547][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2'
+[2021.03.13-20.05.37:547][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AndroidClient'
+[2021.03.13-20.05.37:547][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTCClient'
+[2021.03.13-20.05.37:547][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXTClient'
+[2021.03.13-20.05.37:547][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2Client'
+[2021.03.13-20.05.37:547][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_Multi'
+[2021.03.13-20.05.37:547][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_MultiClient'
+[2021.03.13-20.05.37:645][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOSClient'
+[2021.03.13-20.05.37:645][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOS'
+[2021.03.13-20.05.37:689][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Linux'
+[2021.03.13-20.05.37:718][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxNoEditor'
+[2021.03.13-20.05.37:747][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxClient'
+[2021.03.13-20.05.37:777][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxServer'
+[2021.03.13-20.05.37:811][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64NoEditor'
+[2021.03.13-20.05.37:843][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Client'
+[2021.03.13-20.05.37:874][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Server'
+[2021.03.13-20.05.37:932][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Lumin'
+[2021.03.13-20.05.37:932][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LuminClient'
+[2021.03.13-20.05.37:970][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOSClient'
+[2021.03.13-20.05.37:970][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOS'
+[2021.03.13-20.05.37:999][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsNoEditor'
+[2021.03.13-20.05.38:029][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Windows'
+[2021.03.13-20.05.38:057][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsClient'
+[2021.03.13-20.05.38:086][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsServer'
+[2021.03.13-20.05.38:087][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2021.03.13-20.05.38:180][  0]LogAudioDebug: Display: Lib vorbis DLL was dynamically loaded.
+[2021.03.13-20.05.38:634][  0]LogShaderCompilers: Guid format shader working directory is 9 characters bigger than the processId version (../../../../../Github/GEP/GEPProject/Intermediate/Shaders/WorkingDirectory/197028/).
+[2021.03.13-20.05.38:634][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/cathan/AppData/Local/Temp/UnrealShaderWorkingDir/BD48A9CA4FE60C96917F17B57F8B1E62/'.
+[2021.03.13-20.05.38:635][  0]LogXGEController: Cleaning working directory: C:/Users/cathan/AppData/Local/Temp/UnrealXGEWorkingDir/
+[2021.03.13-20.05.38:636][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
+[2021.03.13-20.05.38:636][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
+[2021.03.13-20.05.38:636][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2021.03.13-20.05.42:853][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2021.03.13-20.05.43:067][  0]LogDerivedDataCache: Loaded boot cache 0.21s 76MB C:/Users/cathan/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc.
+[2021.03.13-20.05.43:068][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/cathan/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc
+[2021.03.13-20.05.43:068][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../Github/GEP/GEPProject/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2021.03.13-20.05.43:068][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2021.03.13-20.05.43:068][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../Github/GEP/GEPProject/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2021.03.13-20.05.43:068][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2021.03.13-20.05.43:092][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2021.03.13-20.05.43:092][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  EnterprisePak pak cache file ../../../Enterprise/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2021.03.13-20.05.43:092][  0]LogDerivedDataCache: Unable to find inner node EnterprisePak for hierarchical cache Hierarchy.
+[2021.03.13-20.05.43:094][  0]LogDerivedDataCache: Using Local data cache path C:/Users/cathan/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2021.03.13-20.05.43:094][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
+[2021.03.13-20.05.43:094][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
+[2021.03.13-20.05.43:157][  0]LogSlate: Using FreeType 2.10.0
+[2021.03.13-20.05.43:180][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2021.03.13-20.05.43:546][  0]LogAssetRegistry: FAssetRegistry took 0.0063 seconds to start up
+[2021.03.13-20.05.44:140][  0]LogInit: Selected Device Profile: [Windows]
+[2021.03.13-20.05.44:729][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2021.03.13-20.05.44:729][  0]LogMeshReduction: Using SimplygonMeshReduction for automatic skeletal mesh reduction
+[2021.03.13-20.05.44:729][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
+[2021.03.13-20.05.44:729][  0]LogMeshReduction: No distributed automatic mesh merging module available
+[2021.03.13-20.05.44:730][  0]LogMeshMerging: No distributed automatic mesh merging module available
+[2021.03.13-20.05.44:844][  0]LogNetVersion: GEPProject 1.0.0, NetCL: 13144385, EngineNetVer: 14, GameNetVer: 0 (Checksum: 386946200)
+[2021.03.13-20.05.49:467][  0]LogAISub: UAISubsystem::UAISubsystem AISubsystem (000002212CDBE980), frame # 0
+[2021.03.13-20.05.49:467][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000002212CC7E980), frame # 0
+[2021.03.13-20.05.49:475][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000002212CDC6A00), frame # 0
+[2021.03.13-20.05.49:618][  0]LogPackageLocalizationCache: Processed 19 localized package path(s) for 1 prioritized culture(s) in 0.081132 seconds
+[2021.03.13-20.05.49:623][  0]LogUObjectArray: 15917 objects as part of root set at end of initial load.
+[2021.03.13-20.05.49:623][  0]LogUObjectAllocator: 3965568 out of 0 bytes used by permanent object pool.
+[2021.03.13-20.05.49:623][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2021.03.13-20.05.52:598][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2021.03.13-20.05.52:627][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2021.03.13-20.05.53:263][  0]SourceControl: Source control is disabled
+[2021.03.13-20.05.53:264][  0]SourceControl: Source control is disabled
+[2021.03.13-20.05.53:295][  0]SourceControl: Source control is disabled
+[2021.03.13-20.05.53:322][  0]SourceControl: Source control is disabled
+[2021.03.13-20.05.53:400][  0]SourceControl: Source control is disabled
+[2021.03.13-20.05.55:802][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2021.03.13-20.05.55:948][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2021.03.13-20.05.55:948][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2021.03.13-20.05.56:396][  0]LogOcInput: OculusInput pre-init called
+[2021.03.13-20.05.56:450][  0]LogWindows: Failed to load 'OVRPlugin.dll' (GetLastError=126)
+[2021.03.13-20.05.56:450][  0]LogWindows: File 'OVRPlugin.dll' does not exist
+[2021.03.13-20.05.57:070][  0]LogEngine: Initializing Engine...
+[2021.03.13-20.05.57:080][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2021.03.13-20.05.57:081][  0]LogMagicLeap: Warning: VR disabled because ZI is not enabled.  To enable, in the editor, Edit -> Project Settings -> Plugins -> Magic Leap Plugin -> Enable Zero Iteration
+[2021.03.13-20.05.57:087][  0]LogStats: UGameplayTagsManager::InitializeManager -  0.003 s
+[2021.03.13-20.05.57:685][  0]LogInit: Initializing FReadOnlyCVARCache
+[2021.03.13-20.05.57:775][  0]LogAIModule: Creating AISystem for world Untitled
+[2021.03.13-20.05.57:775][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (0000022133AAFC00), frame # 0
+[2021.03.13-20.05.57:775][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (0000022133B15580), frame # 0
+[2021.03.13-20.05.58:088][  0]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.03.13-20.05.58:088][  0]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.03.13-20.05.58:088][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.03.13-20.05.58:088][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.03.13-20.05.58:088][  0]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.03.13-20.05.58:088][  0]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.03.13-20.05.58:088][  0]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.03.13-20.05.58:088][  0]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.03.13-20.05.58:091][  0]LogAudio: Display: Using built-in audio occlusion.
+[2021.03.13-20.05.58:091][  0]LogAudioMixer: Display: Initializing audio mixer.
+[2021.03.13-20.05.58:144][  0]LogAudioMixer: Display: 0: FrontLeft
+[2021.03.13-20.05.58:144][  0]LogAudioMixer: Display: 1: FrontRight
+[2021.03.13-20.05.58:188][  0]LogAudioMixer: Display: Using Audio Device OUT 1-2 (BEHRINGER UMC 202HD 192k)
+[2021.03.13-20.05.58:191][  0]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.03.13-20.05.58:223][  0]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.03.13-20.05.58:224][  0]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.03.13-20.05.58:227][  0]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.03.13-20.05.58:229][  0]LogInit: FAudioDevice initialized.
+[2021.03.13-20.05.58:231][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2021.03.13-20.06.05:258][  0]LogDerivedDataCache: Saved boot cache 7.03s 76MB C:/Users/cathan/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc.
+[2021.03.13-20.06.05:266][  0]LogInit: Texture streaming: Enabled
+[2021.03.13-20.06.05:403][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2021.03.13-20.06.05:403][  0]LogEditorSessionSummary: Verbose: Initializing EditorSessionSummaryWriter for editor session tracking
+[2021.03.13-20.06.05:408][  0]LogEditorSessionSummary: EditorSessionSummaryWriter initialized
+[2021.03.13-20.06.05:592][  0]LogInit: Transaction tracking system initialized
+[2021.03.13-20.06.05:814][  0]BlueprintLog: New page: Editor Load
+[2021.03.13-20.06.06:454][  0]LocalizationService: Localization service is disabled
+[2021.03.13-20.06.07:720][  0]LogFileCache: Scanning file cache for directory 'E:/Github/GEP/GEPProject/Content/' took 0.02s
+[2021.03.13-20.06.07:720][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2021.03.13-20.06.07:721][  0]LogCook: Display: Mobile HDR setting 1
+[2021.03.13-20.06.09:277][  0]SourceControl: Source control is disabled
+[2021.03.13-20.06.09:278][  0]LogUnrealEdMisc: Loading editor; pre map load, took 41.404
+[2021.03.13-20.06.09:281][  0]Cmd: MAP LOAD FILE="../../../../../Github/GEP/GEPProject/Content/GameLevel.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2021.03.13-20.06.09:284][  0]LightingResults: New page: Lighting Build
+[2021.03.13-20.06.09:298][  0]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2021.03.13-20.06.09:301][  0]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.03.13-20.06.09:304][  0]MapCheck: New page: Map Check
+[2021.03.13-20.06.09:304][  0]LightingResults: New page: Lighting Build
+[2021.03.13-20.06.09:356][  0]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (0000022133AAFC00), frame # 0
+[2021.03.13-20.06.09:356][  0]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (0000022133B15580), frame # 0
+[2021.03.13-20.06.09:358][  0]LogUObjectHash: Compacting FUObjectHashTables data took   0.72ms
+[2021.03.13-20.06.10:210][  0]LogAIModule: Creating AISystem for world GameLevel
+[2021.03.13-20.06.10:210][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000002211DA80A00), frame # 0
+[2021.03.13-20.06.10:210][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000002211DA1E5C0), frame # 0
+[2021.03.13-20.06.10:270][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2021.03.13-20.06.10:303][  0]LogUObjectHash: Compacting FUObjectHashTables data took   1.05ms
+[2021.03.13-20.06.10:304][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2021.03.13-20.06.10:304][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.635ms to complete.
+[2021.03.13-20.06.10:304][  0]LogFileHelpers: Loading map 'GameLevel' took 1.025
+[2021.03.13-20.06.10:367][  0]LogUnrealEdMisc: Total Editor Startup Time, took 42.493
+[2021.03.13-20.06.10:601][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.03.13-20.06.10:619][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.03.13-20.06.10:626][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.03.13-20.06.10:636][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.03.13-20.06.10:675][  0]LogCollectionManager: Loaded 0 collections in 0.001056 seconds
+[2021.03.13-20.06.10:725][  0]LogFileCache: Scanning file cache for directory 'E:/Github/GEP/GEPProject/Saved/Collections/' took 0.00s
+[2021.03.13-20.06.10:725][  0]LogFileCache: Scanning file cache for directory 'E:/Github/GEP/GEPProject/Content/Developers/cathan/Collections/' took 0.00s
+[2021.03.13-20.06.10:725][  0]LogFileCache: Scanning file cache for directory 'E:/Github/GEP/GEPProject/Content/Collections/' took 0.00s
+[2021.03.13-20.06.10:725][  0]LogContentBrowser: Native class hierarchy populated in 0.0158 seconds. Added 3448 classes and 827 folders.
+[2021.03.13-20.06.10:741][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0006 seconds. Added 0 classes and 0 folders.
+[2021.03.13-20.06.11:614][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0006 seconds. Added 0 classes and 0 folders.
+[2021.03.13-20.06.11:626][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0015 seconds. Added 2 classes and 0 folders.
+[2021.03.13-20.06.11:780][  0]LogSlate: Took 0.008877 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2021.03.13-20.06.11:792][  0]LogSlate: Took 0.007595 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2021.03.13-20.06.11:813][  0]LogSlate: Took 0.008676 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2021.03.13-20.06.11:973][  0]LogRenderer: Reallocating scene render targets to support 1208x572 Format 10 NumSamples 1 (Frame:1).
+[2021.03.13-20.06.12:125][  0]LogSlate: Took 0.008745 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2021.03.13-20.06.12:247][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0007 seconds. Added 0 classes and 0 folders.
+[2021.03.13-20.06.12:247][  0]LogLoad: (Engine Initialization) Total time: 44.37 seconds
+[2021.03.13-20.06.12:247][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2021.03.13-20.06.12:287][  0]LogActor: Warning: BP_TestBlock_C /Engine/Transient.World_0:PersistentLevel.BP_TestBlock_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2021.03.13-20.06.12:331][  0]LogAssetRegistry: Asset discovery search completed in 28.7880 seconds
+[2021.03.13-20.06.12:336][  0]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000265 seconds (updated 0 objects)
+[2021.03.13-20.06.12:351][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2021.03.13-20.06.12:600][  1]LogActor: Warning: BP_DefaultEnemyLvl2_C /Engine/Transient.World_1:PersistentLevel.BP_DefaultEnemyLvl2_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2021.03.13-20.06.12:607][  1]LogActor: Warning: BP_DefaultEnemyLv3_C /Engine/Transient.World_2:PersistentLevel.BP_DefaultEnemyLv3_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2021.03.13-20.06.12:934][  2]LogActor: Warning: BP_DefaultEnemy_C /Engine/Transient.World_3:PersistentLevel.BP_DefaultEnemy_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2021.03.13-20.09.06:008][509]LogSlate: Took 0.000247 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2021.03.13-20.09.06:026][509]LogFactory: FactoryCreateFile: StaticMesh with FbxFactory (0 0 C:\Users\cathan\OneDrive\Documents\temp\SM_Wep_Rifle_Plasma_02.fbx)
+[2021.03.13-20.09.06:064][509]LogFbx: Loading FBX Scene from C:\Users\cathan\OneDrive\Documents\temp\SM_Wep_Rifle_Plasma_02.fbx
+[2021.03.13-20.09.06:076][509]LogFbx: FBX Scene Loaded Succesfully
+[2021.03.13-20.09.22:730][509]LogSlate: Window 'FBX Import Options' being destroyed
+[2021.03.13-20.09.23:046][509]LogFbxMaterialImport: Display: Unable to find Texture file U:/Dropbox/SyntyStudios/PolygonSciFi/_Working/_Textures/Alts/PolygonScifi_.psd
+[2021.03.13-20.09.23:048][509]LogMaterial: Display: Missing cached shader map for material lambert1, compiling. 
+[2021.03.13-20.09.23:091][509]LogFbx: Display: Triangulating static mesh SM_Wep_Rifle_Plasma_02
+[2021.03.13-20.09.23:125][509]LogShaderCompilers: Display: Worker (1/13): shaders left to compile 15
+[2021.03.13-20.09.23:125][509]LogShaderCompilers: Display: Worker (2/13): shaders left to compile 13
+[2021.03.13-20.09.23:125][509]LogShaderCompilers: Display: Worker (3/13): shaders left to compile 11
+[2021.03.13-20.09.23:125][509]LogShaderCompilers: Display: Worker (4/13): shaders left to compile 9
+[2021.03.13-20.09.23:125][509]LogShaderCompilers: Display: Worker (5/13): shaders left to compile 7
+[2021.03.13-20.09.23:125][509]LogShaderCompilers: Display: Worker (6/13): shaders left to compile 5
+[2021.03.13-20.09.23:125][509]LogShaderCompilers: Display: Worker (7/13): shaders left to compile 3
+[2021.03.13-20.09.23:125][509]LogShaderCompilers: Display: Worker (8/13): shaders left to compile 1
+[2021.03.13-20.09.23:126][509]LogStaticMesh: Building static mesh SM_Wep_Rifle_Plasma_02_SM_Wep_Rifle_Plasma_02...
+[2021.03.13-20.09.23:144][509]LogStaticMesh: Built static mesh [0.02s] /Game/Models/SM_Wep_Rifle_Plasma_02_SM_Wep_Rifle_Plasma_02.SM_Wep_Rifle_Plasma_02_SM_Wep_Rifle_Plasma_02
+[2021.03.13-20.09.23:150][509]LogStaticMesh: Warning: SM_Wep_Rifle_Plasma_02_SM_Wep_Rifle_Plasma_02 has degenerate tangent bases which will result in incorrect shading.  MikkTSpace relies on tangent bases and may result in mesh corruption, consider disabling this option.
+[2021.03.13-20.09.23:150][509]LogStaticMesh: Warning: SM_Wep_Rifle_Plasma_02_SM_Wep_Rifle_Plasma_02 has some nearly zero bi-normals which can create some issues. (Tolerance of 1E-4)
+[2021.03.13-20.09.23:163][509]LogFbx: Display: Triangulating static mesh SM_Wep_Rifle_Plasma_Trigger_02
+[2021.03.13-20.09.23:165][509]LogStaticMesh: Building static mesh SM_Wep_Rifle_Plasma_02_SM_Wep_Rifle_Plasma_Trigger_02...
+[2021.03.13-20.09.23:166][509]LogStaticMesh: Built static mesh [0.00s] /Game/Models/SM_Wep_Rifle_Plasma_02_SM_Wep_Rifle_Plasma_Trigger_02.SM_Wep_Rifle_Plasma_02_SM_Wep_Rifle_Plasma_Trigger_02
+[2021.03.13-20.09.23:166][509]LogStaticMesh: Warning: SM_Wep_Rifle_Plasma_02_SM_Wep_Rifle_Plasma_Trigger_02 has degenerate tangent bases which will result in incorrect shading.  MikkTSpace relies on tangent bases and may result in mesh corruption, consider disabling this option.
+[2021.03.13-20.09.23:166][509]LogStaticMesh: Warning: SM_Wep_Rifle_Plasma_02_SM_Wep_Rifle_Plasma_Trigger_02 has some nearly zero bi-normals which can create some issues. (Tolerance of 1E-4)
+[2021.03.13-20.09.23:174][509]FBXImport: Warning: No smoothing group information was found in this FBX scene.  Please make sure to enable the 'Export Smoothing Groups' option in the FBX Exporter plug-in before exporting the file.  Even for tools that don't support smoothing groups, the FBX Exporter will generate appropriate smoothing data at export-time so that correct vertex normals can be inferred while importing. 
+[2021.03.13-20.09.23:174][509]FBXImport: Warning: SM_Wep_Rifle_Plasma_02_SM_Wep_Rifle_Plasma_02 has degenerate tangent bases which will result in incorrect shading.  MikkTSpace relies on tangent bases and may result in mesh corruption, consider disabling this option. 
+[2021.03.13-20.09.23:174][509]FBXImport: Warning: SM_Wep_Rifle_Plasma_02_SM_Wep_Rifle_Plasma_02 has some nearly zero bi-normals which can create some issues. (Tolerance of 1E-4) 
+[2021.03.13-20.09.23:174][509]FBXImport: Warning: SM_Wep_Rifle_Plasma_02_SM_Wep_Rifle_Plasma_Trigger_02 has degenerate tangent bases which will result in incorrect shading.  MikkTSpace relies on tangent bases and may result in mesh corruption, consider disabling this option. 
+[2021.03.13-20.09.23:174][509]FBXImport: Warning: SM_Wep_Rifle_Plasma_02_SM_Wep_Rifle_Plasma_Trigger_02 has some nearly zero bi-normals which can create some issues. (Tolerance of 1E-4) 
+[2021.03.13-20.09.23:290][509]LogFactory: FactoryCreateFile: StaticMesh with FbxFactory (0 0 C:\Users\cathan\OneDrive\Documents\temp\SM_Wep_Shotgun_Plasma_01.fbx)
+[2021.03.13-20.09.23:311][509]LogFbx: Loading FBX Scene from C:\Users\cathan\OneDrive\Documents\temp\SM_Wep_Shotgun_Plasma_01.fbx
+[2021.03.13-20.09.23:332][509]LogFbx: FBX Scene Loaded Succesfully
+[2021.03.13-20.09.23:338][509]LogFbx: Display: Triangulating static mesh SM_Wep_Shotgun_Plasma_01
+[2021.03.13-20.09.23:381][509]LogStaticMesh: Building static mesh SM_Wep_Shotgun_Plasma_01_SM_Wep_Shotgun_Plasma_01...
+[2021.03.13-20.09.23:395][509]LogStaticMesh: Built static mesh [0.01s] /Game/Models/SM_Wep_Shotgun_Plasma_01_SM_Wep_Shotgun_Plasma_01.SM_Wep_Shotgun_Plasma_01_SM_Wep_Shotgun_Plasma_01
+[2021.03.13-20.09.23:399][509]LogStaticMesh: Warning: SM_Wep_Shotgun_Plasma_01_SM_Wep_Shotgun_Plasma_01 has degenerate tangent bases which will result in incorrect shading.  MikkTSpace relies on tangent bases and may result in mesh corruption, consider disabling this option.
+[2021.03.13-20.09.23:399][509]LogStaticMesh: Warning: SM_Wep_Shotgun_Plasma_01_SM_Wep_Shotgun_Plasma_01 has some nearly zero bi-normals which can create some issues. (Tolerance of 1E-4)
+[2021.03.13-20.09.23:411][509]LogFbx: Display: Triangulating static mesh SM_Wep_Shotgun_Plasma_Pump_01
+[2021.03.13-20.09.23:425][509]LogStaticMesh: Building static mesh SM_Wep_Shotgun_Plasma_01_SM_Wep_Shotgun_Plasma_Pump_01...
+[2021.03.13-20.09.23:428][509]LogStaticMesh: Built static mesh [0.00s] /Game/Models/SM_Wep_Shotgun_Plasma_01_SM_Wep_Shotgun_Plasma_Pump_01.SM_Wep_Shotgun_Plasma_01_SM_Wep_Shotgun_Plasma_Pump_01
+[2021.03.13-20.09.23:430][509]LogStaticMesh: Warning: SM_Wep_Shotgun_Plasma_01_SM_Wep_Shotgun_Plasma_Pump_01 has degenerate tangent bases which will result in incorrect shading.  MikkTSpace relies on tangent bases and may result in mesh corruption, consider disabling this option.
+[2021.03.13-20.09.23:431][509]LogStaticMesh: Warning: SM_Wep_Shotgun_Plasma_01_SM_Wep_Shotgun_Plasma_Pump_01 has some nearly zero bi-normals which can create some issues. (Tolerance of 1E-4)
+[2021.03.13-20.09.23:438][509]LogFbx: Display: Triangulating static mesh SM_Wep_Shotgun_Plasma_Trigger_01
+[2021.03.13-20.09.23:442][509]LogStaticMesh: Building static mesh SM_Wep_Shotgun_Plasma_01_SM_Wep_Shotgun_Plasma_Trigger_01...
+[2021.03.13-20.09.23:442][509]LogStaticMesh: Built static mesh [0.00s] /Game/Models/SM_Wep_Shotgun_Plasma_01_SM_Wep_Shotgun_Plasma_Trigger_01.SM_Wep_Shotgun_Plasma_01_SM_Wep_Shotgun_Plasma_Trigger_01
+[2021.03.13-20.09.23:443][509]LogStaticMesh: Warning: SM_Wep_Shotgun_Plasma_01_SM_Wep_Shotgun_Plasma_Trigger_01 has degenerate tangent bases which will result in incorrect shading.  MikkTSpace relies on tangent bases and may result in mesh corruption, consider disabling this option.
+[2021.03.13-20.09.23:443][509]LogStaticMesh: Warning: SM_Wep_Shotgun_Plasma_01_SM_Wep_Shotgun_Plasma_Trigger_01 has some nearly zero bi-normals which can create some issues. (Tolerance of 1E-4)
+[2021.03.13-20.09.23:456][509]FBXImport: Warning: No smoothing group information was found in this FBX scene.  Please make sure to enable the 'Export Smoothing Groups' option in the FBX Exporter plug-in before exporting the file.  Even for tools that don't support smoothing groups, the FBX Exporter will generate appropriate smoothing data at export-time so that correct vertex normals can be inferred while importing. 
+[2021.03.13-20.09.23:456][509]FBXImport: Warning: SM_Wep_Shotgun_Plasma_01_SM_Wep_Shotgun_Plasma_01 has degenerate tangent bases which will result in incorrect shading.  MikkTSpace relies on tangent bases and may result in mesh corruption, consider disabling this option. 
+[2021.03.13-20.09.23:456][509]FBXImport: Warning: SM_Wep_Shotgun_Plasma_01_SM_Wep_Shotgun_Plasma_01 has some nearly zero bi-normals which can create some issues. (Tolerance of 1E-4) 
+[2021.03.13-20.09.23:456][509]FBXImport: Warning: SM_Wep_Shotgun_Plasma_01_SM_Wep_Shotgun_Plasma_Pump_01 has degenerate tangent bases which will result in incorrect shading.  MikkTSpace relies on tangent bases and may result in mesh corruption, consider disabling this option. 
+[2021.03.13-20.09.23:457][509]FBXImport: Warning: SM_Wep_Shotgun_Plasma_01_SM_Wep_Shotgun_Plasma_Pump_01 has some nearly zero bi-normals which can create some issues. (Tolerance of 1E-4) 
+[2021.03.13-20.09.23:457][509]FBXImport: Warning: SM_Wep_Shotgun_Plasma_01_SM_Wep_Shotgun_Plasma_Trigger_01 has degenerate tangent bases which will result in incorrect shading.  MikkTSpace relies on tangent bases and may result in mesh corruption, consider disabling this option. 
+[2021.03.13-20.09.23:457][509]FBXImport: Warning: SM_Wep_Shotgun_Plasma_01_SM_Wep_Shotgun_Plasma_Trigger_01 has some nearly zero bi-normals which can create some issues. (Tolerance of 1E-4) 
+[2021.03.13-20.09.23:462][509]LogFactory: FactoryCreateFile: StaticMesh with FbxFactory (0 0 C:\Users\cathan\OneDrive\Documents\temp\SM_Wep_SMG_01.fbx)
+[2021.03.13-20.09.23:476][509]LogFbx: Loading FBX Scene from C:\Users\cathan\OneDrive\Documents\temp\SM_Wep_SMG_01.fbx
+[2021.03.13-20.09.23:487][509]LogFbx: FBX Scene Loaded Succesfully
+[2021.03.13-20.09.23:492][509]LogFbx: Display: Triangulating static mesh SM_Wep_SMG_01
+[2021.03.13-20.09.23:536][509]LogStaticMesh: Building static mesh SM_Wep_SMG_01_SM_Wep_SMG_01...
+[2021.03.13-20.09.23:555][509]LogStaticMesh: Built static mesh [0.02s] /Game/Models/SM_Wep_SMG_01_SM_Wep_SMG_01.SM_Wep_SMG_01_SM_Wep_SMG_01
+[2021.03.13-20.09.23:558][509]LogStaticMesh: Warning: SM_Wep_SMG_01_SM_Wep_SMG_01 has degenerate tangent bases which will result in incorrect shading.  MikkTSpace relies on tangent bases and may result in mesh corruption, consider disabling this option.
+[2021.03.13-20.09.23:558][509]LogStaticMesh: Warning: SM_Wep_SMG_01_SM_Wep_SMG_01 has some nearly zero bi-normals which can create some issues. (Tolerance of 1E-4)
+[2021.03.13-20.09.23:569][509]LogFbx: Display: Triangulating static mesh SM_Wep_SMG_Trigger_01
+[2021.03.13-20.09.23:572][509]LogStaticMesh: Building static mesh SM_Wep_SMG_01_SM_Wep_SMG_Trigger_01...
+[2021.03.13-20.09.23:573][509]LogStaticMesh: Built static mesh [0.00s] /Game/Models/SM_Wep_SMG_01_SM_Wep_SMG_Trigger_01.SM_Wep_SMG_01_SM_Wep_SMG_Trigger_01
+[2021.03.13-20.09.23:574][509]LogStaticMesh: Warning: SM_Wep_SMG_01_SM_Wep_SMG_Trigger_01 has degenerate tangent bases which will result in incorrect shading.  MikkTSpace relies on tangent bases and may result in mesh corruption, consider disabling this option.
+[2021.03.13-20.09.23:574][509]LogStaticMesh: Warning: SM_Wep_SMG_01_SM_Wep_SMG_Trigger_01 has some nearly zero bi-normals which can create some issues. (Tolerance of 1E-4)
+[2021.03.13-20.09.23:583][509]LogFbx: Display: Triangulating static mesh SM_Wep_SMG_Mag_01
+[2021.03.13-20.09.23:587][509]LogStaticMesh: Building static mesh SM_Wep_SMG_01_SM_Wep_SMG_Mag_01...
+[2021.03.13-20.09.23:589][509]LogStaticMesh: Built static mesh [0.00s] /Game/Models/SM_Wep_SMG_01_SM_Wep_SMG_Mag_01.SM_Wep_SMG_01_SM_Wep_SMG_Mag_01
+[2021.03.13-20.09.23:599][509]LogFbx: Display: Triangulating static mesh SM_Wep_SMG_Stock_01
+[2021.03.13-20.09.23:604][509]LogStaticMesh: Building static mesh SM_Wep_SMG_01_SM_Wep_SMG_Stock_01...
+[2021.03.13-20.09.23:606][509]LogStaticMesh: Built static mesh [0.00s] /Game/Models/SM_Wep_SMG_01_SM_Wep_SMG_Stock_01.SM_Wep_SMG_01_SM_Wep_SMG_Stock_01
+[2021.03.13-20.09.23:607][509]LogStaticMesh: Warning: SM_Wep_SMG_01_SM_Wep_SMG_Stock_01 has degenerate tangent bases which will result in incorrect shading.  MikkTSpace relies on tangent bases and may result in mesh corruption, consider disabling this option.
+[2021.03.13-20.09.23:607][509]LogStaticMesh: Warning: SM_Wep_SMG_01_SM_Wep_SMG_Stock_01 has some nearly zero bi-normals which can create some issues. (Tolerance of 1E-4)
+[2021.03.13-20.09.23:619][509]FBXImport: Warning: No smoothing group information was found in this FBX scene.  Please make sure to enable the 'Export Smoothing Groups' option in the FBX Exporter plug-in before exporting the file.  Even for tools that don't support smoothing groups, the FBX Exporter will generate appropriate smoothing data at export-time so that correct vertex normals can be inferred while importing. 
+[2021.03.13-20.09.23:619][509]FBXImport: Warning: SM_Wep_SMG_01_SM_Wep_SMG_01 has degenerate tangent bases which will result in incorrect shading.  MikkTSpace relies on tangent bases and may result in mesh corruption, consider disabling this option. 
+[2021.03.13-20.09.23:619][509]FBXImport: Warning: SM_Wep_SMG_01_SM_Wep_SMG_01 has some nearly zero bi-normals which can create some issues. (Tolerance of 1E-4) 
+[2021.03.13-20.09.23:619][509]FBXImport: Warning: SM_Wep_SMG_01_SM_Wep_SMG_Trigger_01 has degenerate tangent bases which will result in incorrect shading.  MikkTSpace relies on tangent bases and may result in mesh corruption, consider disabling this option. 
+[2021.03.13-20.09.23:619][509]FBXImport: Warning: SM_Wep_SMG_01_SM_Wep_SMG_Trigger_01 has some nearly zero bi-normals which can create some issues. (Tolerance of 1E-4) 
+[2021.03.13-20.09.23:619][509]FBXImport: Warning: SM_Wep_SMG_01_SM_Wep_SMG_Stock_01 has degenerate tangent bases which will result in incorrect shading.  MikkTSpace relies on tangent bases and may result in mesh corruption, consider disabling this option. 
+[2021.03.13-20.09.23:619][509]FBXImport: Warning: SM_Wep_SMG_01_SM_Wep_SMG_Stock_01 has some nearly zero bi-normals which can create some issues. (Tolerance of 1E-4) 
+[2021.03.13-20.09.23:626][509]LogFactory: FactoryCreateFile: StaticMesh with FbxFactory (0 0 C:\Users\cathan\OneDrive\Documents\temp\SM_Wep_Pistol_01.fbx)
+[2021.03.13-20.09.23:639][509]LogFbx: Loading FBX Scene from C:\Users\cathan\OneDrive\Documents\temp\SM_Wep_Pistol_01.fbx
+[2021.03.13-20.09.23:647][509]LogFbx: FBX Scene Loaded Succesfully
+[2021.03.13-20.09.23:653][509]LogFbx: Display: Triangulating static mesh SM_Wep_Pistol_01
+[2021.03.13-20.09.23:670][509]LogStaticMesh: Building static mesh SM_Wep_Pistol_01_SM_Wep_Pistol_01...
+[2021.03.13-20.09.23:680][509]LogStaticMesh: Built static mesh [0.01s] /Game/Models/SM_Wep_Pistol_01_SM_Wep_Pistol_01.SM_Wep_Pistol_01_SM_Wep_Pistol_01
+[2021.03.13-20.09.23:681][509]LogStaticMesh: Warning: SM_Wep_Pistol_01_SM_Wep_Pistol_01 has degenerate tangent bases which will result in incorrect shading.  MikkTSpace relies on tangent bases and may result in mesh corruption, consider disabling this option.
+[2021.03.13-20.09.23:682][509]LogStaticMesh: Warning: SM_Wep_Pistol_01_SM_Wep_Pistol_01 has some nearly zero bi-normals which can create some issues. (Tolerance of 1E-4)
+[2021.03.13-20.09.23:696][509]LogFbxMaterialImport: Display: Unable to find Texture file U:/Dropbox/SyntyStudios/PolygonSciFi/_Working/_Textures/PolygonScifi_Texture.psd
+[2021.03.13-20.09.23:697][509]LogMaterial: Display: Missing cached shader map for material lambert16, compiling. 
+[2021.03.13-20.09.23:707][509]LogShaderCompilers: Display: Worker (9/13): shaders left to compile 15
+[2021.03.13-20.09.23:707][509]LogShaderCompilers: Display: Worker (10/13): shaders left to compile 13
+[2021.03.13-20.09.23:707][509]LogShaderCompilers: Display: Worker (11/13): shaders left to compile 11
+[2021.03.13-20.09.23:707][509]LogShaderCompilers: Display: Worker (12/13): shaders left to compile 9
+[2021.03.13-20.09.23:707][509]LogFbx: Display: Triangulating static mesh SM_Wep_Pistol_Trigger_01
+[2021.03.13-20.09.23:711][509]LogStaticMesh: Building static mesh SM_Wep_Pistol_01_SM_Wep_Pistol_Trigger_01...
+[2021.03.13-20.09.23:712][509]LogStaticMesh: Built static mesh [0.00s] /Game/Models/SM_Wep_Pistol_01_SM_Wep_Pistol_Trigger_01.SM_Wep_Pistol_01_SM_Wep_Pistol_Trigger_01
+[2021.03.13-20.09.23:712][509]LogStaticMesh: Warning: SM_Wep_Pistol_01_SM_Wep_Pistol_Trigger_01 has degenerate tangent bases which will result in incorrect shading.  MikkTSpace relies on tangent bases and may result in mesh corruption, consider disabling this option.
+[2021.03.13-20.09.23:712][509]LogStaticMesh: Warning: SM_Wep_Pistol_01_SM_Wep_Pistol_Trigger_01 has some nearly zero bi-normals which can create some issues. (Tolerance of 1E-4)
+[2021.03.13-20.09.23:721][509]LogFbx: Display: Triangulating static mesh SM_Wep_Pistol_Slide_01
+[2021.03.13-20.09.23:745][509]LogStaticMesh: Building static mesh SM_Wep_Pistol_01_SM_Wep_Pistol_Slide_01...
+[2021.03.13-20.09.23:751][509]LogStaticMesh: Built static mesh [0.01s] /Game/Models/SM_Wep_Pistol_01_SM_Wep_Pistol_Slide_01.SM_Wep_Pistol_01_SM_Wep_Pistol_Slide_01
+[2021.03.13-20.09.23:753][509]LogStaticMesh: Warning: SM_Wep_Pistol_01_SM_Wep_Pistol_Slide_01 has degenerate tangent bases which will result in incorrect shading.  MikkTSpace relies on tangent bases and may result in mesh corruption, consider disabling this option.
+[2021.03.13-20.09.23:753][509]LogStaticMesh: Warning: SM_Wep_Pistol_01_SM_Wep_Pistol_Slide_01 has some nearly zero bi-normals which can create some issues. (Tolerance of 1E-4)
+[2021.03.13-20.09.23:769][509]FBXImport: Warning: No smoothing group information was found in this FBX scene.  Please make sure to enable the 'Export Smoothing Groups' option in the FBX Exporter plug-in before exporting the file.  Even for tools that don't support smoothing groups, the FBX Exporter will generate appropriate smoothing data at export-time so that correct vertex normals can be inferred while importing. 
+[2021.03.13-20.09.23:769][509]FBXImport: Warning: SM_Wep_Pistol_01_SM_Wep_Pistol_01 has degenerate tangent bases which will result in incorrect shading.  MikkTSpace relies on tangent bases and may result in mesh corruption, consider disabling this option. 
+[2021.03.13-20.09.23:769][509]FBXImport: Warning: SM_Wep_Pistol_01_SM_Wep_Pistol_01 has some nearly zero bi-normals which can create some issues. (Tolerance of 1E-4) 
+[2021.03.13-20.09.23:769][509]FBXImport: Warning: SM_Wep_Pistol_01_SM_Wep_Pistol_Trigger_01 has degenerate tangent bases which will result in incorrect shading.  MikkTSpace relies on tangent bases and may result in mesh corruption, consider disabling this option. 
+[2021.03.13-20.09.23:769][509]FBXImport: Warning: SM_Wep_Pistol_01_SM_Wep_Pistol_Trigger_01 has some nearly zero bi-normals which can create some issues. (Tolerance of 1E-4) 
+[2021.03.13-20.09.23:769][509]FBXImport: Warning: SM_Wep_Pistol_01_SM_Wep_Pistol_Slide_01 has degenerate tangent bases which will result in incorrect shading.  MikkTSpace relies on tangent bases and may result in mesh corruption, consider disabling this option. 
+[2021.03.13-20.09.23:769][509]FBXImport: Warning: SM_Wep_Pistol_01_SM_Wep_Pistol_Slide_01 has some nearly zero bi-normals which can create some issues. (Tolerance of 1E-4) 
+[2021.03.13-20.09.23:776][509]LogFactory: FactoryCreateFile: StaticMesh with FbxFactory (0 0 C:\Users\cathan\OneDrive\Documents\temp\SM_Wep_Revolver_01.fbx)
+[2021.03.13-20.09.23:794][509]LogFbx: Loading FBX Scene from C:\Users\cathan\OneDrive\Documents\temp\SM_Wep_Revolver_01.fbx
+[2021.03.13-20.09.23:809][509]LogFbx: FBX Scene Loaded Succesfully
+[2021.03.13-20.09.23:818][509]LogFbx: Display: Triangulating static mesh SM_Wep_Revolver_01
+[2021.03.13-20.09.23:866][509]LogStaticMesh: Building static mesh SM_Wep_Revolver_01_SM_Wep_Revolver_01...
+[2021.03.13-20.09.23:891][509]LogStaticMesh: Built static mesh [0.03s] /Game/Models/SM_Wep_Revolver_01_SM_Wep_Revolver_01.SM_Wep_Revolver_01_SM_Wep_Revolver_01
+[2021.03.13-20.09.23:895][509]LogStaticMesh: Warning: SM_Wep_Revolver_01_SM_Wep_Revolver_01 has degenerate tangent bases which will result in incorrect shading.  MikkTSpace relies on tangent bases and may result in mesh corruption, consider disabling this option.
+[2021.03.13-20.09.23:895][509]LogStaticMesh: Warning: SM_Wep_Revolver_01_SM_Wep_Revolver_01 has some nearly zero bi-normals which can create some issues. (Tolerance of 1E-4)
+[2021.03.13-20.09.23:908][509]LogFbx: Display: Triangulating static mesh SM_Wep_Revolver_Cylinder_01
+[2021.03.13-20.09.23:926][509]LogStaticMesh: Building static mesh SM_Wep_Revolver_01_SM_Wep_Revolver_Cylinder_01...
+[2021.03.13-20.09.23:937][509]LogStaticMesh: Built static mesh [0.01s] /Game/Models/SM_Wep_Revolver_01_SM_Wep_Revolver_Cylinder_01.SM_Wep_Revolver_01_SM_Wep_Revolver_Cylinder_01
+[2021.03.13-20.09.23:938][509]LogStaticMesh: Warning: SM_Wep_Revolver_01_SM_Wep_Revolver_Cylinder_01 has degenerate tangent bases which will result in incorrect shading.  MikkTSpace relies on tangent bases and may result in mesh corruption, consider disabling this option.
+[2021.03.13-20.09.23:938][509]LogStaticMesh: Warning: SM_Wep_Revolver_01_SM_Wep_Revolver_Cylinder_01 has some nearly zero bi-normals which can create some issues. (Tolerance of 1E-4)
+[2021.03.13-20.09.23:949][509]LogFbx: Display: Triangulating static mesh SM_Wep_Revolver_Hammer_01
+[2021.03.13-20.09.23:960][509]LogStaticMesh: Building static mesh SM_Wep_Revolver_01_SM_Wep_Revolver_Hammer_01...
+[2021.03.13-20.09.23:961][509]LogStaticMesh: Built static mesh [0.00s] /Game/Models/SM_Wep_Revolver_01_SM_Wep_Revolver_Hammer_01.SM_Wep_Revolver_01_SM_Wep_Revolver_Hammer_01
+[2021.03.13-20.09.23:963][509]LogStaticMesh: Warning: SM_Wep_Revolver_01_SM_Wep_Revolver_Hammer_01 has degenerate tangent bases which will result in incorrect shading.  MikkTSpace relies on tangent bases and may result in mesh corruption, consider disabling this option.
+[2021.03.13-20.09.23:963][509]LogStaticMesh: Warning: SM_Wep_Revolver_01_SM_Wep_Revolver_Hammer_01 has some nearly zero bi-normals which can create some issues. (Tolerance of 1E-4)
+[2021.03.13-20.09.23:973][509]LogFbx: Display: Triangulating static mesh SM_Wep_Revolver_Trigger_01
+[2021.03.13-20.09.23:976][509]LogStaticMesh: Building static mesh SM_Wep_Revolver_01_SM_Wep_Revolver_Trigger_01...
+[2021.03.13-20.09.23:977][509]LogStaticMesh: Built static mesh [0.00s] /Game/Models/SM_Wep_Revolver_01_SM_Wep_Revolver_Trigger_01.SM_Wep_Revolver_01_SM_Wep_Revolver_Trigger_01
+[2021.03.13-20.09.23:978][509]LogStaticMesh: Warning: SM_Wep_Revolver_01_SM_Wep_Revolver_Trigger_01 has degenerate tangent bases which will result in incorrect shading.  MikkTSpace relies on tangent bases and may result in mesh corruption, consider disabling this option.
+[2021.03.13-20.09.23:978][509]LogStaticMesh: Warning: SM_Wep_Revolver_01_SM_Wep_Revolver_Trigger_01 has some nearly zero bi-normals which can create some issues. (Tolerance of 1E-4)
+[2021.03.13-20.09.23:994][509]FBXImport: Warning: No smoothing group information was found in this FBX scene.  Please make sure to enable the 'Export Smoothing Groups' option in the FBX Exporter plug-in before exporting the file.  Even for tools that don't support smoothing groups, the FBX Exporter will generate appropriate smoothing data at export-time so that correct vertex normals can be inferred while importing. 
+[2021.03.13-20.09.23:994][509]FBXImport: Warning: SM_Wep_Revolver_01_SM_Wep_Revolver_01 has degenerate tangent bases which will result in incorrect shading.  MikkTSpace relies on tangent bases and may result in mesh corruption, consider disabling this option. 
+[2021.03.13-20.09.23:995][509]FBXImport: Warning: SM_Wep_Revolver_01_SM_Wep_Revolver_01 has some nearly zero bi-normals which can create some issues. (Tolerance of 1E-4) 
+[2021.03.13-20.09.23:995][509]FBXImport: Warning: SM_Wep_Revolver_01_SM_Wep_Revolver_Cylinder_01 has degenerate tangent bases which will result in incorrect shading.  MikkTSpace relies on tangent bases and may result in mesh corruption, consider disabling this option. 
+[2021.03.13-20.09.23:995][509]FBXImport: Warning: SM_Wep_Revolver_01_SM_Wep_Revolver_Cylinder_01 has some nearly zero bi-normals which can create some issues. (Tolerance of 1E-4) 
+[2021.03.13-20.09.23:995][509]FBXImport: Warning: SM_Wep_Revolver_01_SM_Wep_Revolver_Hammer_01 has degenerate tangent bases which will result in incorrect shading.  MikkTSpace relies on tangent bases and may result in mesh corruption, consider disabling this option. 
+[2021.03.13-20.09.23:995][509]FBXImport: Warning: SM_Wep_Revolver_01_SM_Wep_Revolver_Hammer_01 has some nearly zero bi-normals which can create some issues. (Tolerance of 1E-4) 
+[2021.03.13-20.09.23:995][509]FBXImport: Warning: SM_Wep_Revolver_01_SM_Wep_Revolver_Trigger_01 has degenerate tangent bases which will result in incorrect shading.  MikkTSpace relies on tangent bases and may result in mesh corruption, consider disabling this option. 
+[2021.03.13-20.09.23:995][509]FBXImport: Warning: SM_Wep_Revolver_01_SM_Wep_Revolver_Trigger_01 has some nearly zero bi-normals which can create some issues. (Tolerance of 1E-4) 
+[2021.03.13-20.09.24:094][509]LogSlate: Took 0.017080 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/DroidSansMono.ttf' (77K)
+[2021.03.13-20.09.24:869][537]LogShaderCompilers: Display: Worker (7/13): shaders left to compile 7
+[2021.03.13-20.09.24:923][541]LogShaderCompilers: Display: Worker (8/13): shaders left to compile 6
+[2021.03.13-20.09.25:499][582]LogShaderCompilers: Display: Worker (9/13): shaders left to compile 5
+[2021.03.13-20.09.25:529][584]LogShaderCompilers: Display: Worker (1/13): shaders left to compile 4
+[2021.03.13-20.09.25:601][589]LogShaderCompilers: Display: Worker (6/13): shaders left to compile 3
+[2021.03.13-20.09.25:822][609]LogShaderCompilers: Display: Worker (10/13): shaders left to compile 2
+[2021.03.13-20.09.25:958][619]LogShaderCompilers: Display: Worker (5/13): shaders left to compile 1
+[2021.03.13-20.09.26:624][658]LogActorFactory: Actor Factory created SM_Wep_Pistol_01_SM_Wep_Pistol_01
+[2021.03.13-20.09.27:306][720]LogActorFactory: Actor Factory created SM_Wep_Pistol_01_SM_Wep_Pistol_01
+[2021.03.13-20.09.39:269][ 81]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SM_Wep_Pistol_01_SM_Wep_Pistol_01)
+[2021.03.13-20.09.40:671][229]LogActorFactory: Actor Factory created SM_Wep_Shotgun_Plasma_01_SM_Wep_Shotgun_Plasma_01
+[2021.03.13-20.09.41:591][324]LogActorFactory: Actor Factory created SM_Wep_Shotgun_Plasma_01_SM_Wep_Shotgun_Plasma_01
+[2021.03.13-20.09.42:432][420]Cmd: DELETE
+[2021.03.13-20.09.42:432][420]Cmd: ACTOR DELETE
+[2021.03.13-20.09.42:449][420]LogEditorActor: Deleted Actor: StaticMeshActor
+[2021.03.13-20.09.42:464][420]LogUObjectHash: Compacting FUObjectHashTables data took   0.71ms
+[2021.03.13-20.09.42:465][420]LogEditorActor: Deleted 1 Actors (0.024 secs)
+[2021.03.13-20.09.44:307][630]LogActorFactory: Actor Factory created SM_Wep_Pistol_01_SM_Wep_Pistol_01
+[2021.03.13-20.09.44:844][678]LogActorFactory: Actor Factory created SM_Wep_Pistol_01_SM_Wep_Pistol_01
+[2021.03.13-20.09.46:718][895]Cmd: DELETE
+[2021.03.13-20.09.46:718][895]Cmd: ACTOR DELETE
+[2021.03.13-20.09.46:720][895]LogEditorActor: Deleted Actor: StaticMeshActor
+[2021.03.13-20.09.46:733][895]LogUObjectHash: Compacting FUObjectHashTables data took   0.61ms
+[2021.03.13-20.09.46:734][895]LogEditorActor: Deleted 1 Actors (0.016 secs)
+[2021.03.13-20.09.47:213][952]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SM_Wep_Pistol_01_SM_Wep_Pistol_01)
+[2021.03.13-20.09.47:507][983]Cmd: DELETE
+[2021.03.13-20.09.47:507][983]Cmd: ACTOR DELETE
+[2021.03.13-20.09.47:509][983]LogEditorActor: Deleted Actor: StaticMeshActor
+[2021.03.13-20.09.47:522][983]LogUObjectHash: Compacting FUObjectHashTables data took   0.27ms
+[2021.03.13-20.09.47:523][983]LogEditorActor: Deleted 1 Actors (0.016 secs)
+[2021.03.13-20.09.49:661][229]LogActorFactory: Actor Factory created SM_Wep_SMG_01_SM_Wep_SMG_01
+[2021.03.13-20.09.50:349][307]LogActorFactory: Actor Factory created SM_Wep_SMG_01_SM_Wep_SMG_01
+[2021.03.13-20.09.51:405][429]Cmd: DELETE
+[2021.03.13-20.09.51:405][429]Cmd: ACTOR DELETE
+[2021.03.13-20.09.51:407][429]LogEditorActor: Deleted Actor: StaticMeshActor
+[2021.03.13-20.09.51:420][429]LogUObjectHash: Compacting FUObjectHashTables data took   0.49ms
+[2021.03.13-20.09.51:422][429]LogEditorActor: Deleted 1 Actors (0.016 secs)
+[2021.03.13-20.09.53:567][668]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/Models/SM_Wep_Rifle_Plasma_02_SM_Wep_Rifle_Plasma_02.SM_Wep_Rifle_Plasma_02_SM_Wep_Rifle_Plasma_02
+[2021.03.13-20.09.54:056][668]LogWorld: UWorld::CleanupWorld for World_6, bSessionEnded=true, bCleanupResources=true
+[2021.03.13-20.09.54:056][668]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.03.13-20.09.54:299][668]LogRenderer: Reallocating scene render targets to support 1432x920 Format 10 NumSamples 1 (Frame:1).
+[2021.03.13-20.09.54:299][668]LogSlate: Took 0.008247 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2021.03.13-20.10.04:704][770]LogSlate: Window 'SM_Wep_Rifle_Plasma_02_SM_Wep_Rifle_Plasma_02' being destroyed
+[2021.03.13-20.10.04:710][770]LogSlate: Window 'SM_Wep_Rifle_Plasma_02_SM_Wep_Rifle_Plasma_02' being destroyed
+[2021.03.13-20.10.04:712][770]LogWorld: UWorld::CleanupWorld for World_7, bSessionEnded=true, bCleanupResources=true
+[2021.03.13-20.10.04:712][770]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.03.13-20.10.55:712][420]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/GameLevel" FILE="../../../../../Github/GEP/GEPProject/Content/GameLevel.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2021.03.13-20.10.55:731][420]LogUObjectHash: Compacting FUObjectHashTables data took   0.68ms
+[2021.03.13-20.10.55:776][420]LogSavePackage: Moving '../../../../../Github/GEP/GEPProject/Saved/GameLevelA8F03569476B0BAFF5011488CEAA683C.tmp' to '../../../../../Github/GEP/GEPProject/Content/GameLevel.umap'
+[2021.03.13-20.10.55:826][420]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/GameLevel_BuiltData" FILE="../../../../../Github/GEP/GEPProject/Content/GameLevel_BuiltData.uasset" SILENT=true
+[2021.03.13-20.10.55:849][420]LogSavePackage: Moving '../../../../../Github/GEP/GEPProject/Saved/GameLevel_BuiltData88E146F540A4A9C84CD3B6B8C7BC72FD.tmp' to '../../../../../Github/GEP/GEPProject/Content/GameLevel_BuiltData.uasset'
+[2021.03.13-20.10.55:863][420]AssetCheck: New page: Asset Save: multiple assets
+[2021.03.13-20.10.55:863][420]LogContentValidation: Display: Validating World /Game/GameLevel.GameLevel
+[2021.03.13-20.10.55:863][420]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/GameLevel_BuiltData.GameLevel_BuiltData
+[2021.03.13-20.10.57:004][552]LogUObjectHash: Compacting FUObjectHashTables data took   0.60ms
+[2021.03.13-20.11.00:670][552]LogSlate: Window 'Save Content' being destroyed
+[2021.03.13-20.11.00:718][552]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Models/lambert1" FILE="../../../../../Github/GEP/GEPProject/Content/Models/lambert1.uasset" SILENT=true
+[2021.03.13-20.11.00:733][552]LogSavePackage: Moving '../../../../../Github/GEP/GEPProject/Saved/lambert1E5FF9FBF4D2A8318B3C815BB8341B399.tmp' to '../../../../../Github/GEP/GEPProject/Content/Models/lambert1.uasset'
+[2021.03.13-20.11.00:749][552]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Models/lambert16" FILE="../../../../../Github/GEP/GEPProject/Content/Models/lambert16.uasset" SILENT=true
+[2021.03.13-20.11.00:762][552]LogSavePackage: Moving '../../../../../Github/GEP/GEPProject/Saved/lambert1682586DDB45085B4C749E0FA6FE817DCC.tmp' to '../../../../../Github/GEP/GEPProject/Content/Models/lambert16.uasset'
+[2021.03.13-20.11.00:783][552]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Models/SM_Wep_Pistol_01_SM_Wep_Pistol_01" FILE="../../../../../Github/GEP/GEPProject/Content/Models/SM_Wep_Pistol_01_SM_Wep_Pistol_01.uasset" SILENT=true
+[2021.03.13-20.11.00:800][552]LogSavePackage: Moving '../../../../../Github/GEP/GEPProject/Saved/SM_Wep_Pistol_01_SM_Wep_Pistol_01F281B804503E3DC9ECF50862415DB7F.tmp' to '../../../../../Github/GEP/GEPProject/Content/Models/SM_Wep_Pistol_01_SM_Wep_Pistol_01.uasset'
+[2021.03.13-20.11.00:816][552]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Models/SM_Wep_Pistol_01_SM_Wep_Pistol_Slide_01" FILE="../../../../../Github/GEP/GEPProject/Content/Models/SM_Wep_Pistol_01_SM_Wep_Pistol_Slide_01.uasset" SILENT=true
+[2021.03.13-20.11.00:831][552]LogSavePackage: Moving '../../../../../Github/GEP/GEPProject/Saved/SM_Wep_Pistol_01_SM_Wep_Pistol_S269F8F3D4A2E9386B9DB759CCA8243F7.tmp' to '../../../../../Github/GEP/GEPProject/Content/Models/SM_Wep_Pistol_01_SM_Wep_Pistol_Slide_01.uasset'
+[2021.03.13-20.11.00:870][552]LogSavePackage: Moving '../../../../../Github/GEP/GEPProject/Saved/SM_Wep_Pistol_01_SM_Wep_Pistol_T191410BE43A65779F92744B648FEA4AC.tmp' to '../../../../../Github/GEP/GEPProject/Content/Models/SM_Wep_Pistol_01_SM_Wep_Pistol_Trigger_01.uasset'
+[2021.03.13-20.11.00:886][552]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Models/SM_Wep_Revolver_01_SM_Wep_Revolver_01" FILE="../../../../../Github/GEP/GEPProject/Content/Models/SM_Wep_Revolver_01_SM_Wep_Revolver_01.uasset" SILENT=true
+[2021.03.13-20.11.00:910][552]LogSavePackage: Moving '../../../../../Github/GEP/GEPProject/Saved/SM_Wep_Revolver_01_SM_Wep_Revolv2ABFCFA9402AA27E6CE17CA4C2044AC0.tmp' to '../../../../../Github/GEP/GEPProject/Content/Models/SM_Wep_Revolver_01_SM_Wep_Revolver_01.uasset'
+[2021.03.13-20.11.00:945][552]LogSavePackage: Moving '../../../../../Github/GEP/GEPProject/Saved/SM_Wep_Revolver_01_SM_Wep_RevolvD463615F4765DF55108BD4830C9BBAF6.tmp' to '../../../../../Github/GEP/GEPProject/Content/Models/SM_Wep_Revolver_01_SM_Wep_Revolver_Cylinder_01.uasset'
+[2021.03.13-20.11.00:978][552]LogSavePackage: Moving '../../../../../Github/GEP/GEPProject/Saved/SM_Wep_Revolver_01_SM_Wep_RevolvF8269BCA4A3AA0EC4721A7B8B5EA7A95.tmp' to '../../../../../Github/GEP/GEPProject/Content/Models/SM_Wep_Revolver_01_SM_Wep_Revolver_Hammer_01.uasset'
+[2021.03.13-20.11.01:012][552]LogSavePackage: Moving '../../../../../Github/GEP/GEPProject/Saved/SM_Wep_Revolver_01_SM_Wep_Revolv190DBAC44D93382D2B3293B1F9968662.tmp' to '../../../../../Github/GEP/GEPProject/Content/Models/SM_Wep_Revolver_01_SM_Wep_Revolver_Trigger_01.uasset'
+[2021.03.13-20.11.01:048][552]LogSavePackage: Moving '../../../../../Github/GEP/GEPProject/Saved/SM_Wep_Rifle_Plasma_02_SM_Wep_RiA32C79AA41FB5C1927E19D90F465134E.tmp' to '../../../../../Github/GEP/GEPProject/Content/Models/SM_Wep_Rifle_Plasma_02_SM_Wep_Rifle_Plasma_02.uasset'
+[2021.03.13-20.11.01:083][552]LogSavePackage: Moving '../../../../../Github/GEP/GEPProject/Saved/SM_Wep_Rifle_Plasma_02_SM_Wep_RiB2F2B1E54B8558680984FDB3569B0BAC.tmp' to '../../../../../Github/GEP/GEPProject/Content/Models/SM_Wep_Rifle_Plasma_02_SM_Wep_Rifle_Plasma_Trigger_02.uasset'
+[2021.03.13-20.11.01:120][552]LogSavePackage: Moving '../../../../../Github/GEP/GEPProject/Saved/SM_Wep_Shotgun_Plasma_01_SM_Wep_F6F8FF4C49C87FFCB34EACB7D8962000.tmp' to '../../../../../Github/GEP/GEPProject/Content/Models/SM_Wep_Shotgun_Plasma_01_SM_Wep_Shotgun_Plasma_01.uasset'
+[2021.03.13-20.11.01:157][552]LogSavePackage: Moving '../../../../../Github/GEP/GEPProject/Saved/SM_Wep_Shotgun_Plasma_01_SM_Wep_2AA6EE9C449EE0FA4B75059756168D14.tmp' to '../../../../../Github/GEP/GEPProject/Content/Models/SM_Wep_Shotgun_Plasma_01_SM_Wep_Shotgun_Plasma_Pump_01.uasset'
+[2021.03.13-20.11.01:189][552]LogSavePackage: Moving '../../../../../Github/GEP/GEPProject/Saved/SM_Wep_Shotgun_Plasma_01_SM_Wep_CCAC343F470C539CF94E5A98764FFEA5.tmp' to '../../../../../Github/GEP/GEPProject/Content/Models/SM_Wep_Shotgun_Plasma_01_SM_Wep_Shotgun_Plasma_Trigger_01.uasset'
+[2021.03.13-20.11.01:206][552]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Models/SM_Wep_SMG_01_SM_Wep_SMG_01" FILE="../../../../../Github/GEP/GEPProject/Content/Models/SM_Wep_SMG_01_SM_Wep_SMG_01.uasset" SILENT=true
+[2021.03.13-20.11.01:227][552]LogSavePackage: Moving '../../../../../Github/GEP/GEPProject/Saved/SM_Wep_SMG_01_SM_Wep_SMG_010314B01F4DCA87369C84928E97AD0A30.tmp' to '../../../../../Github/GEP/GEPProject/Content/Models/SM_Wep_SMG_01_SM_Wep_SMG_01.uasset'
+[2021.03.13-20.11.01:245][552]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Models/SM_Wep_SMG_01_SM_Wep_SMG_Mag_01" FILE="../../../../../Github/GEP/GEPProject/Content/Models/SM_Wep_SMG_01_SM_Wep_SMG_Mag_01.uasset" SILENT=true
+[2021.03.13-20.11.01:260][552]LogSavePackage: Moving '../../../../../Github/GEP/GEPProject/Saved/SM_Wep_SMG_01_SM_Wep_SMG_Mag_014D5BC5C1499A05D3A1B15790588B370F.tmp' to '../../../../../Github/GEP/GEPProject/Content/Models/SM_Wep_SMG_01_SM_Wep_SMG_Mag_01.uasset'
+[2021.03.13-20.11.01:275][552]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Models/SM_Wep_SMG_01_SM_Wep_SMG_Stock_01" FILE="../../../../../Github/GEP/GEPProject/Content/Models/SM_Wep_SMG_01_SM_Wep_SMG_Stock_01.uasset" SILENT=true
+[2021.03.13-20.11.01:292][552]LogSavePackage: Moving '../../../../../Github/GEP/GEPProject/Saved/SM_Wep_SMG_01_SM_Wep_SMG_Stock_05993022149FDC5A1DCE7F888DC677A77.tmp' to '../../../../../Github/GEP/GEPProject/Content/Models/SM_Wep_SMG_01_SM_Wep_SMG_Stock_01.uasset'
+[2021.03.13-20.11.01:309][552]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Models/SM_Wep_SMG_01_SM_Wep_SMG_Trigger_01" FILE="../../../../../Github/GEP/GEPProject/Content/Models/SM_Wep_SMG_01_SM_Wep_SMG_Trigger_01.uasset" SILENT=true
+[2021.03.13-20.11.01:326][552]LogSavePackage: Moving '../../../../../Github/GEP/GEPProject/Saved/SM_Wep_SMG_01_SM_Wep_SMG_Trigger619F1C434159C13A467A59824F3A8CD3.tmp' to '../../../../../Github/GEP/GEPProject/Content/Models/SM_Wep_SMG_01_SM_Wep_SMG_Trigger_01.uasset'
+[2021.03.13-20.11.01:455][552]LogSlate: Window 'Message Log' being destroyed
+[2021.03.13-20.11.01:457][552]LogSlate: Window 'GEPProject - Unreal Editor' being destroyed
+[2021.03.13-20.11.01:459][552]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
+[2021.03.13-20.11.01:678][552]AssetCheck: New page: Asset Save: multiple assets
+[2021.03.13-20.11.01:678][552]LogContentValidation: Display: Validating Material /Game/Models/lambert1.lambert1
+[2021.03.13-20.11.01:678][552]LogContentValidation: Display: Validating Material /Game/Models/lambert16.lambert16
+[2021.03.13-20.11.01:678][552]LogContentValidation: Display: Validating StaticMesh /Game/Models/SM_Wep_Pistol_01_SM_Wep_Pistol_01.SM_Wep_Pistol_01_SM_Wep_Pistol_01
+[2021.03.13-20.11.01:678][552]LogContentValidation: Display: Validating StaticMesh /Game/Models/SM_Wep_Pistol_01_SM_Wep_Pistol_Slide_01.SM_Wep_Pistol_01_SM_Wep_Pistol_Slide_01
+[2021.03.13-20.11.01:679][552]LogContentValidation: Display: Validating StaticMesh /Game/Models/SM_Wep_Pistol_01_SM_Wep_Pistol_Trigger_01.SM_Wep_Pistol_01_SM_Wep_Pistol_Trigger_01
+[2021.03.13-20.11.01:679][552]LogContentValidation: Display: Validating StaticMesh /Game/Models/SM_Wep_Revolver_01_SM_Wep_Revolver_01.SM_Wep_Revolver_01_SM_Wep_Revolver_01
+[2021.03.13-20.11.01:679][552]LogContentValidation: Display: Validating StaticMesh /Game/Models/SM_Wep_Revolver_01_SM_Wep_Revolver_Cylinder_01.SM_Wep_Revolver_01_SM_Wep_Revolver_Cylinder_01
+[2021.03.13-20.11.01:679][552]LogContentValidation: Display: Validating StaticMesh /Game/Models/SM_Wep_Revolver_01_SM_Wep_Revolver_Hammer_01.SM_Wep_Revolver_01_SM_Wep_Revolver_Hammer_01
+[2021.03.13-20.11.01:679][552]LogContentValidation: Display: Validating StaticMesh /Game/Models/SM_Wep_Revolver_01_SM_Wep_Revolver_Trigger_01.SM_Wep_Revolver_01_SM_Wep_Revolver_Trigger_01
+[2021.03.13-20.11.01:679][552]LogContentValidation: Display: Validating StaticMesh /Game/Models/SM_Wep_Rifle_Plasma_02_SM_Wep_Rifle_Plasma_02.SM_Wep_Rifle_Plasma_02_SM_Wep_Rifle_Plasma_02
+[2021.03.13-20.11.01:679][552]LogContentValidation: Display: Validating StaticMesh /Game/Models/SM_Wep_Rifle_Plasma_02_SM_Wep_Rifle_Plasma_Trigger_02.SM_Wep_Rifle_Plasma_02_SM_Wep_Rifle_Plasma_Trigger_02
+[2021.03.13-20.11.01:679][552]LogContentValidation: Display: Validating StaticMesh /Game/Models/SM_Wep_Shotgun_Plasma_01_SM_Wep_Shotgun_Plasma_01.SM_Wep_Shotgun_Plasma_01_SM_Wep_Shotgun_Plasma_01
+[2021.03.13-20.11.01:679][552]LogContentValidation: Display: Validating StaticMesh /Game/Models/SM_Wep_Shotgun_Plasma_01_SM_Wep_Shotgun_Plasma_Pump_01.SM_Wep_Shotgun_Plasma_01_SM_Wep_Shotgun_Plasma_Pump_01
+[2021.03.13-20.11.01:679][552]LogContentValidation: Display: Validating StaticMesh /Game/Models/SM_Wep_Shotgun_Plasma_01_SM_Wep_Shotgun_Plasma_Trigger_01.SM_Wep_Shotgun_Plasma_01_SM_Wep_Shotgun_Plasma_Trigger_01
+[2021.03.13-20.11.01:679][552]LogContentValidation: Display: Validating StaticMesh /Game/Models/SM_Wep_SMG_01_SM_Wep_SMG_01.SM_Wep_SMG_01_SM_Wep_SMG_01
+[2021.03.13-20.11.01:679][552]LogContentValidation: Display: Validating StaticMesh /Game/Models/SM_Wep_SMG_01_SM_Wep_SMG_Mag_01.SM_Wep_SMG_01_SM_Wep_SMG_Mag_01
+[2021.03.13-20.11.01:679][552]LogContentValidation: Display: Validating StaticMesh /Game/Models/SM_Wep_SMG_01_SM_Wep_SMG_Stock_01.SM_Wep_SMG_01_SM_Wep_SMG_Stock_01
+[2021.03.13-20.11.01:679][552]LogContentValidation: Display: Validating StaticMesh /Game/Models/SM_Wep_SMG_01_SM_Wep_SMG_Trigger_01.SM_Wep_SMG_01_SM_Wep_SMG_Trigger_01
+[2021.03.13-20.11.01:736][553]Cmd: QUIT_EDITOR
+[2021.03.13-20.11.01:736][553]LogCore: Engine exit requested (reason: UUnrealEdEngine::CloseEditor())
+[2021.03.13-20.11.01:749][553]LogCore: Engine exit requested (reason: EngineExit() was called; note: exit was already requested)
+[2021.03.13-20.11.01:816][553]LogExit: Preparing to exit.
+[2021.03.13-20.11.02:963][553]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.03.13-20.11.02:964][553]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.03.13-20.11.02:964][553]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.03.13-20.11.02:964][553]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.03.13-20.11.02:964][553]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.03.13-20.11.02:964][553]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.03.13-20.11.02:964][553]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.03.13-20.11.02:964][553]LogWorld: UWorld::CleanupWorld for None, bSessionEnded=true, bCleanupResources=true
+[2021.03.13-20.11.02:964][553]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.03.13-20.11.02:964][553]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.03.13-20.11.02:964][553]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.03.13-20.11.02:964][553]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.03.13-20.11.02:964][553]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.03.13-20.11.02:964][553]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.03.13-20.11.02:964][553]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.03.13-20.11.02:964][553]LogWorld: UWorld::CleanupWorld for None, bSessionEnded=true, bCleanupResources=true
+[2021.03.13-20.11.02:964][553]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.03.13-20.11.02:964][553]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.03.13-20.11.02:964][553]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.03.13-20.11.02:964][553]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.03.13-20.11.02:964][553]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.03.13-20.11.02:964][553]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.03.13-20.11.02:964][553]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.03.13-20.11.02:964][553]LogWorld: UWorld::CleanupWorld for None, bSessionEnded=true, bCleanupResources=true
+[2021.03.13-20.11.02:964][553]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.03.13-20.11.02:964][553]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.03.13-20.11.02:964][553]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.03.13-20.11.02:964][553]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.03.13-20.11.02:964][553]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.03.13-20.11.02:964][553]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.03.13-20.11.02:964][553]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.03.13-20.11.02:964][553]LogWorld: UWorld::CleanupWorld for None, bSessionEnded=true, bCleanupResources=true
+[2021.03.13-20.11.02:964][553]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.03.13-20.11.02:964][553]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.03.13-20.11.02:964][553]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.03.13-20.11.02:964][553]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.03.13-20.11.02:964][553]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.03.13-20.11.02:964][553]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.03.13-20.11.02:964][553]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.03.13-20.11.02:964][553]LogWorld: UWorld::CleanupWorld for None, bSessionEnded=true, bCleanupResources=true
+[2021.03.13-20.11.02:964][553]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.03.13-20.11.02:964][553]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.03.13-20.11.02:964][553]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.03.13-20.11.02:964][553]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.03.13-20.11.02:964][553]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.03.13-20.11.02:964][553]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.03.13-20.11.02:964][553]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.03.13-20.11.02:964][553]LogWorld: UWorld::CleanupWorld for None, bSessionEnded=true, bCleanupResources=true
+[2021.03.13-20.11.02:978][553]LogDemo: Cleaned up 0 splitscreen connections with owner deletion

@@ -4,7 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "Weapon_Base.h"
-#include "GEPProject/GEPProjectProjectile.h"
+#include "GEPProject/Weapons/GEPProjectProjectile.h"
 #include "Weapon_Projectile.generated.h"
 
 /**

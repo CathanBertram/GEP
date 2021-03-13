@@ -33,10 +33,10 @@ bool AWeapon_Hitscan::Fire_Implementation()
 		//FVector end = (((muzzle != nullptr) ? muzzle->GetForwardVector() : GetActorForwardVector()) * 100000);
 		
 		
-		const FName traceTag("TraceTag");
-		world->DebugDrawTraceTag = traceTag; //Draws arrow at hit point
+		// const FName traceTag("TraceTag");
+		// world->DebugDrawTraceTag = traceTag; //Draws arrow at hit point
 		FCollisionQueryParams collisionParams;
-		collisionParams.TraceTag = traceTag;
+		//collisionParams.TraceTag = traceTag;
 
 		if (world->LineTraceSingleByChannel(hit, start,end, ECC_Visibility, collisionParams))
 		{

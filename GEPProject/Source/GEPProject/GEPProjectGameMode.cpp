@@ -2,7 +2,7 @@
 
 #include "GEPProjectGameMode.h"
 #include "Interfaces/InitablePC.h"
-#include "GEPPlayerController.h"
+#include "Player/GEPPlayerController.h"
 #include "GameFramework/PlayerStart.h"
 #include "Kismet/GameplayStatics.h"
 

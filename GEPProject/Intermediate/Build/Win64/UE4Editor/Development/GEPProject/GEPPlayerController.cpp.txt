@@ -1,11 +1,11 @@
 E:\Github\GEP\GEPProject\Intermediate\Build\Win64\UE4Editor\Development\GEPProject\Definitions.GEPProject.h
-E:\Github\GEP\GEPProject\Source\GEPProject\GEPPlayerController.h
-E:\Github\GEP\GEPProject\Source\GEPProject\Interfaces/InitablePC.h
+E:\Github\GEP\GEPProject\Source\GEPProject\Player\GEPPlayerController.h
+E:\Github\GEP\GEPProject\Source\GEPProject/Interfaces/InitablePC.h
 E:\Github\GEP\GEPProject\Intermediate\Build\Win64\UE4Editor\Inc\GEPProject\InitablePC.generated.h
 E:\Github\GEP\GEPProject\Intermediate\Build\Win64\UE4Editor\Inc\GEPProject\GEPPlayerController.generated.h
-E:\Github\GEP\GEPProject\Source\GEPProject\Interfaces/InitableChar.h
+E:\Github\GEP\GEPProject\Source\GEPProject/Interfaces/InitableChar.h
 E:\Github\GEP\GEPProject\Intermediate\Build\Win64\UE4Editor\Inc\GEPProject\InitableChar.generated.h
-E:\Github\GEP\GEPProject\Source\GEPProject\Interfaces/Inputable.h
+E:\Github\GEP\GEPProject\Source\GEPProject/Interfaces/Inputable.h
 E:\Github\GEP\GEPProject\Intermediate\Build\Win64\UE4Editor\Inc\GEPProject\Inputable.generated.h
 E:\epk\UE_4.25\Engine\Source\Runtime\Engine\Classes\GameFramework/GameModeBase.h
 E:\epk\UE_4.25\Engine\Source\Runtime\Engine\Classes\Engine/ServerStatReplicator.h

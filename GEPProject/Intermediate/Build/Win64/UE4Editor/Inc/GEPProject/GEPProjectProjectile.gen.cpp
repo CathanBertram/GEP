@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "GEPProject/GEPProjectProjectile.h"
+#include "GEPProject/Weapons/GEPProjectProjectile.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -104,7 +104,7 @@ void EmptyLinkFunctionForGeneratedCodeGEPProjectProjectile() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AGEPProjectProjectile_OnHit_Statics::Function_MetaDataParams[] = {
 		{ "Comment", "/** called when projectile hits something */" },
-		{ "ModuleRelativePath", "GEPProjectProjectile.h" },
+		{ "ModuleRelativePath", "Weapons/GEPProjectProjectile.h" },
 		{ "ToolTip", "called when projectile hits something" },
 	};
 #endif
@@ -146,12 +146,12 @@ void EmptyLinkFunctionForGeneratedCodeGEPProjectProjectile() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_GEPProject,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AGEPProjectProjectile_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AGEPProjectProjectile_OnHit, "OnHit" }, // 1993683269
+		{ &Z_Construct_UFunction_AGEPProjectProjectile_OnHit, "OnHit" }, // 1309708451
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AGEPProjectProjectile_Statics::Class_MetaDataParams[] = {
-		{ "IncludePath", "GEPProjectProjectile.h" },
-		{ "ModuleRelativePath", "GEPProjectProjectile.h" },
+		{ "IncludePath", "Weapons/GEPProjectProjectile.h" },
+		{ "ModuleRelativePath", "Weapons/GEPProjectProjectile.h" },
 	};
 #endif
 #if WITH_METADATA
@@ -160,7 +160,7 @@ void EmptyLinkFunctionForGeneratedCodeGEPProjectProjectile() {}
 		{ "Category", "Movement" },
 		{ "Comment", "/** Projectile movement component */" },
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "GEPProjectProjectile.h" },
+		{ "ModuleRelativePath", "Weapons/GEPProjectProjectile.h" },
 		{ "ToolTip", "Projectile movement component" },
 	};
 #endif
@@ -170,7 +170,7 @@ void EmptyLinkFunctionForGeneratedCodeGEPProjectProjectile() {}
 		{ "Category", "Projectile" },
 		{ "Comment", "/** Sphere collision component */" },
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "GEPProjectProjectile.h" },
+		{ "ModuleRelativePath", "Weapons/GEPProjectProjectile.h" },
 		{ "ToolTip", "Sphere collision component" },
 	};
 #endif
@@ -206,7 +206,7 @@ void EmptyLinkFunctionForGeneratedCodeGEPProjectProjectile() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AGEPProjectProjectile, 3584565400);
+	IMPLEMENT_CLASS(AGEPProjectProjectile, 4253263502);
 	template<> GEPPROJECT_API UClass* StaticClass<AGEPProjectProjectile>()
 	{
 		return AGEPProjectProjectile::StaticClass();

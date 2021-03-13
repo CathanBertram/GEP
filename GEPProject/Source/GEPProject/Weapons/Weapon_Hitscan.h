@@ -21,5 +21,4 @@ protected:
 
 	virtual void BeginPlay() override;
 	
-	void DoEvent();
 };

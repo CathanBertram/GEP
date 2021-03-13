@@ -1,0 +1,112 @@
+// Copyright Epic Games, Inc. All Rights Reserved.
+
+#pragma once
+
+#include "CoreMinimal.h"
+#include "GEPProject/Interfaces/InitableChar.h"
+#include "GEPProject/Interfaces/Inputable.h"
+#include "GEPProject/Interfaces/Pawnable.h"
+#include "GameFramework/Character.h"
+#include "GEPProjectCharacter.generated.h"
+
+UCLASS(config=Game)
+class AGEPProjectCharacter : public ACharacter, public IInputable, public IInitableChar, public IPawnable
+{
+	GENERATED_BODY()
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+	class UChildActorComponent* childActorGun;
+	
+	/** First person camera */
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
+	class UCameraComponent* FirstPersonCameraComponent;
+
+public:
+	AGEPProjectCharacter();
+
+	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
+	APawn* GetAsPawn();
+	virtual APawn* GetAsPawn_Implementation() override;
+
+public:
+#pragma region InitableChar_Interface
+	UFUNCTION(BlueprintCallable,BlueprintNativeEvent)
+	void Init();
+	virtual void Init_Implementation() override;
+
+	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
+	AGEPProjectCharacter* GetAsChar();
+	virtual AGEPProjectCharacter* GetAsChar_Implementation() override;
+#pragma endregion
+
+#pragma region Inputable_Interface
+	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
+	void JumpPressed();
+	virtual void JumpPressed_Implementation() override;
+	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
+	void JumpReleased();
+	virtual void JumpReleased_Implementation() override;
+	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
+	void FirePressed();
+	virtual void FirePressed_Implementation() override;
+	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
+	void FireReleased();
+	virtual void FireReleased_Implementation() override;
+	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
+	void InteractPressed();
+	virtual void InteractPressed_Implementation() override;
+	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
+	void InteractReleased();
+	virtual void InteractReleased_Implementation() override;
+
+	void OnInteract();
+	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
+	void MoveForward(float value);
+	virtual void MoveForward_Implementation(float value) override;
+	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
+	void MoveRight(float value);
+	virtual void MoveRight_Implementation(float value) override;
+	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
+	void LookUpAtRate(float value);
+	virtual void LookUpAtRate_Implementation(float value) override;
+	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
+	void TurnAtRate(float value);
+	virtual void TurnAtRate_Implementation(float value) override;
+	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
+	void LookUp(float value);
+	virtual void LookUp_Implementation(float value) override;
+	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
+	void Turn(float value);
+	virtual void Turn_Implementation(float value) override;
+#pragma endregion 
+
+	
+	/** Base turn rate, in deg/sec. Other scaling may affect final turn rate. */
+	UPROPERTY(EditAnywhere, Category=Camera)
+	float ControllerTurnRate;
+
+	/** Base look up/down rate, in deg/sec. Other scaling may affect final rate. */
+	UPROPERTY(EditAnywhere, Category=Camera)
+	float ControllerLookUpRate;
+
+	UPROPERTY(EditAnywhere, Category=Camera)
+	float MouseTurnRate;
+
+	/** Base look up/down rate, in deg/sec. Other scaling may affect final rate. */
+	UPROPERTY(EditAnywhere, Category=Camera)
+	float MouseLookUpRate;
+
+private:
+	UPROPERTY(EditAnywhere, Category = "PlayerVariables")
+	float interactRange;
+
+	UPROPERTY(EditAnywhere, Category = "PlayerVariables")
+	float maxHealth;
+	UPROPERTY(EditAnywhere, Category = "PlayerVariables")
+	float currentHealth;
+public:
+	/** Returns FirstPersonCameraComponent subobject **/
+	FORCEINLINE class UCameraComponent* GetFirstPersonCameraComponent() const { return FirstPersonCameraComponent; }
+
+};
+

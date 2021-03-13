@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "GEPProject/GEPPlayerController.h"
+#include "GEPProject/Player/GEPPlayerController.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -71,7 +71,7 @@ void EmptyLinkFunctionForGeneratedCodeGEPPlayerController() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AGEPPlayerController_GetAsPC_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "GEPPlayerController.h" },
+		{ "ModuleRelativePath", "Player/GEPPlayerController.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AGEPPlayerController_GetAsPC_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AGEPPlayerController, nullptr, "GetAsPC", nullptr, nullptr, sizeof(GEPPlayerController_eventGetAsPC_Parms), Z_Construct_UFunction_AGEPPlayerController_GetAsPC_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AGEPPlayerController_GetAsPC_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AGEPPlayerController_GetAsPC_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AGEPPlayerController_GetAsPC_Statics::Function_MetaDataParams)) };
@@ -93,7 +93,7 @@ void EmptyLinkFunctionForGeneratedCodeGEPPlayerController() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AGEPPlayerController_Init_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "GEPPlayerController.h" },
+		{ "ModuleRelativePath", "Player/GEPPlayerController.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AGEPPlayerController_Init_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AGEPPlayerController, nullptr, "Init", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AGEPPlayerController_Init_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AGEPPlayerController_Init_Statics::Function_MetaDataParams)) };
@@ -131,21 +131,21 @@ void EmptyLinkFunctionForGeneratedCodeGEPPlayerController() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_GEPProject,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AGEPPlayerController_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AGEPPlayerController_GetAsPC, "GetAsPC" }, // 1716075128
-		{ &Z_Construct_UFunction_AGEPPlayerController_Init, "Init" }, // 1034351822
+		{ &Z_Construct_UFunction_AGEPPlayerController_GetAsPC, "GetAsPC" }, // 2774112060
+		{ &Z_Construct_UFunction_AGEPPlayerController_Init, "Init" }, // 1555184307
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AGEPPlayerController_Statics::Class_MetaDataParams[] = {
 		{ "Comment", "/**\n * \n */" },
 		{ "HideCategories", "Collision Rendering Utilities|Transformation" },
-		{ "IncludePath", "GEPPlayerController.h" },
-		{ "ModuleRelativePath", "GEPPlayerController.h" },
+		{ "IncludePath", "Player/GEPPlayerController.h" },
+		{ "ModuleRelativePath", "Player/GEPPlayerController.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AGEPPlayerController_Statics::NewProp_pawnToSpawn_MetaData[] = {
 		{ "Category", "GEPPlayerController" },
-		{ "ModuleRelativePath", "GEPPlayerController.h" },
+		{ "ModuleRelativePath", "Player/GEPPlayerController.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AGEPPlayerController_Statics::NewProp_pawnToSpawn = { "pawnToSpawn", nullptr, (EPropertyFlags)0x0024080000000001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AGEPPlayerController, pawnToSpawn), Z_Construct_UClass_APawn_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AGEPPlayerController_Statics::NewProp_pawnToSpawn_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AGEPPlayerController_Statics::NewProp_pawnToSpawn_MetaData)) };
@@ -182,7 +182,7 @@ void EmptyLinkFunctionForGeneratedCodeGEPPlayerController() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AGEPPlayerController, 631677349);
+	IMPLEMENT_CLASS(AGEPPlayerController, 591841571);
 	template<> GEPPROJECT_API UClass* StaticClass<AGEPPlayerController>()
 	{
 		return AGEPPlayerController::StaticClass();
