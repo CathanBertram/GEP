@@ -18,7 +18,7 @@ public:
 	virtual bool Fire_Implementation() override;
 
 	AWeapon_Hitscan();
-
+	void ResetShoot();
 protected:
 	UPROPERTY(EditAnywhere, Category = "Weapon Variables")
 	float range;
@@ -33,7 +33,7 @@ protected:
 
 	bool canShoot = true;
 	
-	void ResetShoot();
+	virtual void Shoot();
 
 	FTimerHandle WeaponResetTimerHandle;
 	

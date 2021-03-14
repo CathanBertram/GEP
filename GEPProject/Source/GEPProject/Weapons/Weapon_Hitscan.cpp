@@ -21,7 +21,19 @@ AWeapon_Hitscan::AWeapon_Hitscan() : AWeapon_Base()
 
 bool AWeapon_Hitscan::Fire_Implementation()
 {
-	if (!canShoot) return false;
+	Shoot();
+	return true;
+}
+
+
+void AWeapon_Hitscan::ResetShoot()
+{
+	canShoot = true;
+}
+
+void AWeapon_Hitscan::Shoot()
+{
+	if (!canShoot) return;
 
 	canShoot = false;
 	UWorld* const world = GetWorld();
@@ -56,12 +68,5 @@ bool AWeapon_Hitscan::Fire_Implementation()
 		}
 	}
 	world->GetTimerManager().SetTimer(WeaponResetTimerHandle, this, &AWeapon_Hitscan::ResetShoot, shootCooldown);
-	return true;
-}
-
-
-void AWeapon_Hitscan::ResetShoot()
-{
-	canShoot = true;
 }
 

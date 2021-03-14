@@ -9,6 +9,7 @@
 #include "GEPProject/Interfaces/Fireable.h"
 #include "GEPProject/Interfaces/Interactable.h"
 #include "GameFramework/Pawn.h"
+#include "GEPProject/Interfaces/FireReleaseable.h"
 #include "Kismet/GameplayStatics.h"
 
 DEFINE_LOG_CATEGORY_STATIC(LogFPChar, Warning, All);
@@ -79,6 +80,11 @@ void AGEPProjectCharacter::FirePressed_Implementation()
 
 void AGEPProjectCharacter::FireReleased_Implementation()
 {
+	AActor* child = equippedWeapon->GetChildActor();
+	if (child->GetClass()->ImplementsInterface(UFireReleaseable::StaticClass()))
+	{
+		IFireReleaseable::Execute_FireReleased(child);
+	}
 }
 
 void AGEPProjectCharacter::InteractPressed_Implementation()

@@ -43539,6 +43539,8 @@
           <e p="Interfaces" t="Include">
             <e p="Fireable.cpp" t="Include" />
             <e p="Fireable.h" t="Include" />
+            <e p="FireReleaseable.cpp" t="Include" />
+            <e p="FireReleaseable.h" t="Include" />
             <e p="Initable.cpp" t="Include" />
             <e p="Initable.h" t="Include" />
             <e p="InitableChar.cpp" t="Include" />
@@ -43573,8 +43575,14 @@
             <e p="Weapon_Base.h" t="Include" />
             <e p="Weapon_Hitscan.cpp" t="Include" />
             <e p="Weapon_Hitscan.h" t="Include" />
+            <e p="Weapon_Hitscan_Auto.cpp" t="Include" />
+            <e p="Weapon_Hitscan_Auto.h" t="Include" />
+            <e p="Weapon_Hitscan_Charge.cpp" t="Include" />
+            <e p="Weapon_Hitscan_Charge.h" t="Include" />
             <e p="Weapon_Projectile.cpp" t="Include" />
             <e p="Weapon_Projectile.h" t="Include" />
+            <e p="Weapon_Shotgun.cpp" t="Include" />
+            <e p="Weapon_Shotgun.h" t="Include" />
           </e>
         </e>
         <e p="GEPProject.Target.cs" t="Include" />
