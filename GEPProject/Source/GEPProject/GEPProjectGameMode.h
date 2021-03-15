@@ -26,7 +26,6 @@ protected:
 	TArray<AController*> playerControllers;
 
 	virtual void BeginPlay() override;
-
 };
 
 
