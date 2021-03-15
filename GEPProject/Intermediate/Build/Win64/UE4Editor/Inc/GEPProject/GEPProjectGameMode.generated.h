@@ -14,8 +14,18 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define GEPPROJECT_GEPProjectGameMode_generated_h
 
 #define GEPProject_Source_GEPProject_GEPProjectGameMode_h_12_SPARSE_DATA
-#define GEPProject_Source_GEPProject_GEPProjectGameMode_h_12_RPC_WRAPPERS
-#define GEPProject_Source_GEPProject_GEPProjectGameMode_h_12_RPC_WRAPPERS_NO_PURE_DECLS
+#define GEPProject_Source_GEPProject_GEPProjectGameMode_h_12_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execLoseCurrency); \
+	DECLARE_FUNCTION(execGainCurrency);
+
+
+#define GEPProject_Source_GEPProject_GEPProjectGameMode_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execLoseCurrency); \
+	DECLARE_FUNCTION(execGainCurrency);
+
+
 #define GEPProject_Source_GEPProject_GEPProjectGameMode_h_12_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAGEPProjectGameMode(); \

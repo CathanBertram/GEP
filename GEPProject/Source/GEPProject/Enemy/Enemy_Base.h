@@ -45,7 +45,7 @@ protected:
 	UParticleSystem* explosionParticles;
 
 	UPROPERTY(EditAnywhere)
-	float currencyToDrop;
+	int currencyToDrop;
 	
 	void Death();
 };

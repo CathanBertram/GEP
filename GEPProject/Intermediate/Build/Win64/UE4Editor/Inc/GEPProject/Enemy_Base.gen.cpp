@@ -211,7 +211,7 @@ void EmptyLinkFunctionForGeneratedCodeEnemy_Base() {}
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_currencyToDrop_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_currencyToDrop;
+		static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_currencyToDrop;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_explosionParticles_MetaData[];
 #endif
@@ -251,7 +251,7 @@ void EmptyLinkFunctionForGeneratedCodeEnemy_Base() {}
 		{ "ModuleRelativePath", "Enemy/Enemy_Base.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AEnemy_Base_Statics::NewProp_currencyToDrop = { "currencyToDrop", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AEnemy_Base, currencyToDrop), METADATA_PARAMS(Z_Construct_UClass_AEnemy_Base_Statics::NewProp_currencyToDrop_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AEnemy_Base_Statics::NewProp_currencyToDrop_MetaData)) };
+	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UClass_AEnemy_Base_Statics::NewProp_currencyToDrop = { "currencyToDrop", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AEnemy_Base, currencyToDrop), METADATA_PARAMS(Z_Construct_UClass_AEnemy_Base_Statics::NewProp_currencyToDrop_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AEnemy_Base_Statics::NewProp_currencyToDrop_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AEnemy_Base_Statics::NewProp_explosionParticles_MetaData[] = {
 		{ "Category", "Enemy_Base" },
@@ -311,7 +311,7 @@ void EmptyLinkFunctionForGeneratedCodeEnemy_Base() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AEnemy_Base, 1206154508);
+	IMPLEMENT_CLASS(AEnemy_Base, 831891500);
 	template<> GEPPROJECT_API UClass* StaticClass<AEnemy_Base>()
 	{
 		return AEnemy_Base::StaticClass();

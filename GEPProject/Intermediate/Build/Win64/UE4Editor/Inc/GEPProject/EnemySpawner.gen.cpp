@@ -22,6 +22,13 @@ void EmptyLinkFunctionForGeneratedCodeEnemySpawner() {}
 	ENGINE_API UClass* Z_Construct_UClass_UBoxComponent_NoRegister();
 	GEPPROJECT_API UClass* Z_Construct_UClass_UInitable_NoRegister();
 // End Cross Module References
+	DEFINE_FUNCTION(AEnemySpawner::execEnemyDied)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->EnemyDied();
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(AEnemySpawner::execInit)
 	{
 		P_FINISH;
@@ -38,9 +45,32 @@ void EmptyLinkFunctionForGeneratedCodeEnemySpawner() {}
 	{
 		UClass* Class = AEnemySpawner::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
+			{ "EnemyDied", &AEnemySpawner::execEnemyDied },
 			{ "Init", &AEnemySpawner::execInit },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_AEnemySpawner_EnemyDied_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AEnemySpawner_EnemyDied_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Enemy/EnemySpawner.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AEnemySpawner_EnemyDied_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AEnemySpawner, nullptr, "EnemyDied", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AEnemySpawner_EnemyDied_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AEnemySpawner_EnemyDied_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AEnemySpawner_EnemyDied()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AEnemySpawner_EnemyDied_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	struct Z_Construct_UFunction_AEnemySpawner_Init_Statics
 	{
@@ -98,6 +128,7 @@ void EmptyLinkFunctionForGeneratedCodeEnemySpawner() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_GEPProject,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AEnemySpawner_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_AEnemySpawner_EnemyDied, "EnemyDied" }, // 962483173
 		{ &Z_Construct_UFunction_AEnemySpawner_Init, "Init" }, // 4063685979
 	};
 #if WITH_METADATA
@@ -165,7 +196,7 @@ void EmptyLinkFunctionForGeneratedCodeEnemySpawner() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AEnemySpawner, 2486171339);
+	IMPLEMENT_CLASS(AEnemySpawner, 211614526);
 	template<> GEPPROJECT_API UClass* StaticClass<AEnemySpawner>()
 	{
 		return AEnemySpawner::StaticClass();

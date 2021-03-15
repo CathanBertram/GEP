@@ -1,6 +1,8 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
 #include "GEPProjectGameMode.h"
+
+#include "EventSystem.h"
 #include "Interfaces/InitablePC.h"
 #include "Player/GEPPlayerController.h"
 #include "GameFramework/PlayerStart.h"
@@ -57,4 +59,9 @@ void AGEPProjectGameMode::BeginPlay()
 	UGameplayStatics::RemovePlayer(UGameplayStatics::GetPlayerController(GetWorld(), 0), true);
 
 	UGameplayStatics::CreatePlayer(GetWorld());
+
+	currency = 0;
+	GetGameInstance()->GetSubsystem<UEventSystem>()->onCurrencyGain.AddDynamic(this, &AGEPProjectGameMode::GainCurrency);
+	GetGameInstance()->GetSubsystem<UEventSystem>()->onCurrencyLoss.AddDynamic(this, &AGEPProjectGameMode::LoseCurrency);
 }
+

@@ -63,6 +63,5 @@ void AEnemySpawner::SpawnEnemy()
 void AEnemySpawner::EnemyDied()
 {
 	curEnemyCount--;
-	GEngine->AddOnScreenDebugMessage(-1,5.f,FColor::Red, "enemydied");
 }
 

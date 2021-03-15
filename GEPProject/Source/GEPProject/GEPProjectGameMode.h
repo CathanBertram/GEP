@@ -26,6 +26,13 @@ protected:
 	TArray<AController*> playerControllers;
 
 	virtual void BeginPlay() override;
+
+	int currency;
+
+	UFUNCTION()
+	void GainCurrency(int curToGain) {currency += curToGain;}
+	UFUNCTION()
+    void LoseCurrency(int curToLose) {currency -= curToLose;}
 };
 
 

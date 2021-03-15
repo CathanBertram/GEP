@@ -34,6 +34,7 @@ protected:
 	int curEnemyCount;
 	
 	void SpawnEnemy();
+	UFUNCTION()
 	void EnemyDied();
 	FTimerHandle EnemySpawnTimerHandle;
 

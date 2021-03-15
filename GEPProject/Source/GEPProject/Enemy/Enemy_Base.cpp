@@ -3,6 +3,8 @@
 
 #include "Enemy_Base.h"
 
+
+#include "GEPProject/EventSystem.h"
 #include "Kismet/GameplayStatics.h"
 
 // Sets default values
@@ -14,7 +16,7 @@ AEnemy_Base::AEnemy_Base()
 
 void AEnemy_Base::GetShot_Implementation()
 {
-	//Give Currency
+	GetGameInstance()->GetSubsystem<UEventSystem>()->OnCurrencyGain(currencyToDrop);
 	Death();
 }
 
@@ -37,8 +39,10 @@ void AEnemy_Base::EndOfLifetime()
 void AEnemy_Base::Death()
 {
 	OnDeath.Broadcast();
+	GetGameInstance()->GetSubsystem<UEventSystem>()->OnEvent();
 	UGameplayStatics::PlaySoundAtLocation(GetWorld(), explosionSound, GetActorLocation());
 	UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), explosionParticles, GetActorLocation());
 	Destroy(false,false);
 }
+
 

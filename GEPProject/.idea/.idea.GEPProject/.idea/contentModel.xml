@@ -43529,6 +43529,8 @@
             <e p="EnemySpawner.cpp" t="Include" />
             <e p="EnemySpawner.h" t="Include" />
           </e>
+          <e p="EventSystem.cpp" t="Include" />
+          <e p="EventSystem.h" t="Include" />
           <e p="GEPProject.Build.cs" t="Include" />
           <e p="GEPProject.cpp" t="Include" />
           <e p="GEPProject.h" t="Include" />

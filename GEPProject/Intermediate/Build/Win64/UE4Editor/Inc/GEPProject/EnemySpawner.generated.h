@@ -17,11 +17,13 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define GEPProject_Source_GEPProject_Enemy_EnemySpawner_h_13_RPC_WRAPPERS \
 	virtual void Init_Implementation(); \
  \
+	DECLARE_FUNCTION(execEnemyDied); \
 	DECLARE_FUNCTION(execInit);
 
 
 #define GEPProject_Source_GEPProject_Enemy_EnemySpawner_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execEnemyDied); \
 	DECLARE_FUNCTION(execInit);
 
 
