@@ -26,6 +26,22 @@ void EmptyLinkFunctionForGeneratedCodeGEPProjectCharacter() {}
 	GEPPROJECT_API UClass* Z_Construct_UClass_UInitableChar_NoRegister();
 	GEPPROJECT_API UClass* Z_Construct_UClass_UPawnable_NoRegister();
 // End Cross Module References
+	DEFINE_FUNCTION(AGEPProjectCharacter::execLoseCurrency)
+	{
+		P_GET_PROPERTY(FIntProperty,Z_Param_curToLose);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->LoseCurrency(Z_Param_curToLose);
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(AGEPProjectCharacter::execGainCurrency)
+	{
+		P_GET_PROPERTY(FIntProperty,Z_Param_curToGain);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->GainCurrency(Z_Param_curToGain);
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(AGEPProjectCharacter::execTurn)
 	{
 		P_GET_PROPERTY(FFloatProperty,Z_Param_value);
@@ -294,6 +310,7 @@ void EmptyLinkFunctionForGeneratedCodeGEPProjectCharacter() {}
 		static const FNameNativePtrPair Funcs[] = {
 			{ "FirePressed", &AGEPProjectCharacter::execFirePressed },
 			{ "FireReleased", &AGEPProjectCharacter::execFireReleased },
+			{ "GainCurrency", &AGEPProjectCharacter::execGainCurrency },
 			{ "GetAsChar", &AGEPProjectCharacter::execGetAsChar },
 			{ "GetAsPawn", &AGEPProjectCharacter::execGetAsPawn },
 			{ "Init", &AGEPProjectCharacter::execInit },
@@ -308,6 +325,7 @@ void EmptyLinkFunctionForGeneratedCodeGEPProjectCharacter() {}
 			{ "Key5Pressed", &AGEPProjectCharacter::execKey5Pressed },
 			{ "LookUp", &AGEPProjectCharacter::execLookUp },
 			{ "LookUpAtRate", &AGEPProjectCharacter::execLookUpAtRate },
+			{ "LoseCurrency", &AGEPProjectCharacter::execLoseCurrency },
 			{ "MoveForward", &AGEPProjectCharacter::execMoveForward },
 			{ "MoveRight", &AGEPProjectCharacter::execMoveRight },
 			{ "Turn", &AGEPProjectCharacter::execTurn },
@@ -356,6 +374,38 @@ void EmptyLinkFunctionForGeneratedCodeGEPProjectCharacter() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AGEPProjectCharacter_FireReleased_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AGEPProjectCharacter_GainCurrency_Statics
+	{
+		struct GEPProjectCharacter_eventGainCurrency_Parms
+		{
+			int32 curToGain;
+		};
+		static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_curToGain;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UFunction_AGEPProjectCharacter_GainCurrency_Statics::NewProp_curToGain = { "curToGain", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(GEPProjectCharacter_eventGainCurrency_Parms, curToGain), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AGEPProjectCharacter_GainCurrency_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AGEPProjectCharacter_GainCurrency_Statics::NewProp_curToGain,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AGEPProjectCharacter_GainCurrency_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Player/GEPProjectCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AGEPProjectCharacter_GainCurrency_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AGEPProjectCharacter, nullptr, "GainCurrency", nullptr, nullptr, sizeof(GEPProjectCharacter_eventGainCurrency_Parms), Z_Construct_UFunction_AGEPProjectCharacter_GainCurrency_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AGEPProjectCharacter_GainCurrency_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AGEPProjectCharacter_GainCurrency_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AGEPProjectCharacter_GainCurrency_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AGEPProjectCharacter_GainCurrency()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AGEPProjectCharacter_GainCurrency_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -691,6 +741,38 @@ void EmptyLinkFunctionForGeneratedCodeGEPProjectCharacter() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_AGEPProjectCharacter_LoseCurrency_Statics
+	{
+		struct GEPProjectCharacter_eventLoseCurrency_Parms
+		{
+			int32 curToLose;
+		};
+		static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_curToLose;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UFunction_AGEPProjectCharacter_LoseCurrency_Statics::NewProp_curToLose = { "curToLose", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(GEPProjectCharacter_eventLoseCurrency_Parms, curToLose), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AGEPProjectCharacter_LoseCurrency_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AGEPProjectCharacter_LoseCurrency_Statics::NewProp_curToLose,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AGEPProjectCharacter_LoseCurrency_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Player/GEPProjectCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AGEPProjectCharacter_LoseCurrency_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AGEPProjectCharacter, nullptr, "LoseCurrency", nullptr, nullptr, sizeof(GEPProjectCharacter_eventLoseCurrency_Parms), Z_Construct_UFunction_AGEPProjectCharacter_LoseCurrency_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AGEPProjectCharacter_LoseCurrency_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AGEPProjectCharacter_LoseCurrency_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AGEPProjectCharacter_LoseCurrency_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AGEPProjectCharacter_LoseCurrency()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AGEPProjectCharacter_LoseCurrency_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_AGEPProjectCharacter_MoveForward_Statics
 	{
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_value;
@@ -867,6 +949,7 @@ void EmptyLinkFunctionForGeneratedCodeGEPProjectCharacter() {}
 	const FClassFunctionLinkInfo Z_Construct_UClass_AGEPProjectCharacter_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_AGEPProjectCharacter_FirePressed, "FirePressed" }, // 1437299718
 		{ &Z_Construct_UFunction_AGEPProjectCharacter_FireReleased, "FireReleased" }, // 998928494
+		{ &Z_Construct_UFunction_AGEPProjectCharacter_GainCurrency, "GainCurrency" }, // 2601200540
 		{ &Z_Construct_UFunction_AGEPProjectCharacter_GetAsChar, "GetAsChar" }, // 4271833556
 		{ &Z_Construct_UFunction_AGEPProjectCharacter_GetAsPawn, "GetAsPawn" }, // 3918148831
 		{ &Z_Construct_UFunction_AGEPProjectCharacter_Init, "Init" }, // 1984092060
@@ -881,6 +964,7 @@ void EmptyLinkFunctionForGeneratedCodeGEPProjectCharacter() {}
 		{ &Z_Construct_UFunction_AGEPProjectCharacter_Key5Pressed, "Key5Pressed" }, // 1654963871
 		{ &Z_Construct_UFunction_AGEPProjectCharacter_LookUp, "LookUp" }, // 1369221430
 		{ &Z_Construct_UFunction_AGEPProjectCharacter_LookUpAtRate, "LookUpAtRate" }, // 2965759498
+		{ &Z_Construct_UFunction_AGEPProjectCharacter_LoseCurrency, "LoseCurrency" }, // 362465955
 		{ &Z_Construct_UFunction_AGEPProjectCharacter_MoveForward, "MoveForward" }, // 4285191866
 		{ &Z_Construct_UFunction_AGEPProjectCharacter_MoveRight, "MoveRight" }, // 2025856939
 		{ &Z_Construct_UFunction_AGEPProjectCharacter_Turn, "Turn" }, // 1831284628
@@ -1022,7 +1106,7 @@ void EmptyLinkFunctionForGeneratedCodeGEPProjectCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AGEPProjectCharacter, 1038179503);
+	IMPLEMENT_CLASS(AGEPProjectCharacter, 3481310590);
 	template<> GEPPROJECT_API UClass* StaticClass<AGEPProjectCharacter>()
 	{
 		return AGEPProjectCharacter::StaticClass();

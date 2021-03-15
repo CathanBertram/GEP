@@ -34,6 +34,10 @@ void EmptyLinkFunctionForGeneratedCodeWeapon_Hitscan() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_hitParticle_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_hitParticle;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_muzzleFlash_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_muzzleFlash;
@@ -67,6 +71,13 @@ void EmptyLinkFunctionForGeneratedCodeWeapon_Hitscan() {}
 		{ "ModuleRelativePath", "Weapons/Weapon_Hitscan.h" },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AWeapon_Hitscan_Statics::NewProp_hitParticle_MetaData[] = {
+		{ "Category", "Weapon_Hitscan" },
+		{ "ModuleRelativePath", "Weapons/Weapon_Hitscan.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AWeapon_Hitscan_Statics::NewProp_hitParticle = { "hitParticle", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AWeapon_Hitscan, hitParticle), Z_Construct_UClass_UParticleSystem_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AWeapon_Hitscan_Statics::NewProp_hitParticle_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AWeapon_Hitscan_Statics::NewProp_hitParticle_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AWeapon_Hitscan_Statics::NewProp_muzzleFlash_MetaData[] = {
 		{ "Category", "Weapon_Hitscan" },
@@ -103,6 +114,7 @@ void EmptyLinkFunctionForGeneratedCodeWeapon_Hitscan() {}
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AWeapon_Hitscan_Statics::NewProp_range = { "range", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AWeapon_Hitscan, range), METADATA_PARAMS(Z_Construct_UClass_AWeapon_Hitscan_Statics::NewProp_range_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AWeapon_Hitscan_Statics::NewProp_range_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AWeapon_Hitscan_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWeapon_Hitscan_Statics::NewProp_hitParticle,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWeapon_Hitscan_Statics::NewProp_muzzleFlash,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWeapon_Hitscan_Statics::NewProp_shootSound,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWeapon_Hitscan_Statics::NewProp_damage,
@@ -136,7 +148,7 @@ void EmptyLinkFunctionForGeneratedCodeWeapon_Hitscan() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AWeapon_Hitscan, 1992000043);
+	IMPLEMENT_CLASS(AWeapon_Hitscan, 3367951371);
 	template<> GEPPROJECT_API UClass* StaticClass<AWeapon_Hitscan>()
 	{
 		return AWeapon_Hitscan::StaticClass();

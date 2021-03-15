@@ -59,9 +59,5 @@ void AGEPProjectGameMode::BeginPlay()
 	UGameplayStatics::RemovePlayer(UGameplayStatics::GetPlayerController(GetWorld(), 0), true);
 
 	UGameplayStatics::CreatePlayer(GetWorld());
-
-	currency = 0;
-	GetGameInstance()->GetSubsystem<UEventSystem>()->onCurrencyGain.AddDynamic(this, &AGEPProjectGameMode::GainCurrency);
-	GetGameInstance()->GetSubsystem<UEventSystem>()->onCurrencyLoss.AddDynamic(this, &AGEPProjectGameMode::LoseCurrency);
 }
 

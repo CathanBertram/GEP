@@ -124,6 +124,13 @@ private:
 	float currentHealth;
 
 	void SwitchWeapon(int i);
+
+	int currency;
+	UFUNCTION()
+    void GainCurrency(int curToGain) {currency += curToGain;}
+	UFUNCTION()
+    void LoseCurrency(int curToLose) {currency -= curToLose;}
+
 public:
 	/** Returns FirstPersonCameraComponent subobject **/
 	FORCEINLINE class UCameraComponent* GetFirstPersonCameraComponent() const { return FirstPersonCameraComponent; }

@@ -31,7 +31,7 @@ void EmptyLinkFunctionForGeneratedCodeGEPProject_init() {}
 				SingletonFuncArray,
 				UE_ARRAY_COUNT(SingletonFuncArray),
 				PKG_CompiledIn | 0x00000000,
-				0xD65E1DB0,
+				0x6D11F3C3,
 				0x61F15558,
 				METADATA_PARAMS(nullptr, 0)
 			};

@@ -64,7 +64,7 @@ void AWeapon_Hitscan::Shoot()
 			{
 				shootableCast->Execute_GetShot(hit.GetActor());
 			}
-			//hit.Actor->Destroy(false, false);			
+			UGameplayStatics::SpawnEmitterAtLocation(world, hitParticle , hit.Location);	
 		}
 	}
 	world->GetTimerManager().SetTimer(WeaponResetTimerHandle, this, &AWeapon_Hitscan::ResetShoot, shootCooldown);

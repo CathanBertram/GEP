@@ -9,6 +9,7 @@
 #include "GEPProject/Interfaces/Fireable.h"
 #include "GEPProject/Interfaces/Interactable.h"
 #include "GameFramework/Pawn.h"
+#include "GEPProject/EventSystem.h"
 #include "GEPProject/Interfaces/FireReleaseable.h"
 #include "Kismet/GameplayStatics.h"
 
@@ -51,6 +52,9 @@ APawn* AGEPProjectCharacter::GetAsPawn_Implementation()
 
 void AGEPProjectCharacter::Init_Implementation()
 {
+	currency = 0;
+	GetGameInstance()->GetSubsystem<UEventSystem>()->onCurrencyGain.AddDynamic(this, &AGEPProjectCharacter::GainCurrency);
+	GetGameInstance()->GetSubsystem<UEventSystem>()->onCurrencyLoss.AddDynamic(this, &AGEPProjectCharacter::LoseCurrency);
 	Super::BeginPlay();
 }
 
@@ -59,6 +63,7 @@ AGEPProjectCharacter* AGEPProjectCharacter::GetAsChar_Implementation()
 	return this;
 }
 
+#pragma region Input
 void AGEPProjectCharacter::JumpPressed_Implementation()
 {
 	Jump();
@@ -187,4 +192,4 @@ void AGEPProjectCharacter::OnInteract()
 		}
 	}
 }
-
+#pragma endregion 

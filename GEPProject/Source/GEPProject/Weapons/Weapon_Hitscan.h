@@ -30,6 +30,8 @@ protected:
 	USoundCue* shootSound;
 	UPROPERTY(EditAnywhere)
 	UParticleSystem* muzzleFlash;
+	UPROPERTY(EditAnywhere)
+	UParticleSystem* hitParticle;
 
 	bool canShoot = true;
 	

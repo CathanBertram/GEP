@@ -19,94 +19,8 @@ void EmptyLinkFunctionForGeneratedCodeGEPProjectGameMode() {}
 	UPackage* Z_Construct_UPackage__Script_GEPProject();
 	ENGINE_API UClass* Z_Construct_UClass_AController_NoRegister();
 // End Cross Module References
-	DEFINE_FUNCTION(AGEPProjectGameMode::execLoseCurrency)
-	{
-		P_GET_PROPERTY(FIntProperty,Z_Param_curToLose);
-		P_FINISH;
-		P_NATIVE_BEGIN;
-		P_THIS->LoseCurrency(Z_Param_curToLose);
-		P_NATIVE_END;
-	}
-	DEFINE_FUNCTION(AGEPProjectGameMode::execGainCurrency)
-	{
-		P_GET_PROPERTY(FIntProperty,Z_Param_curToGain);
-		P_FINISH;
-		P_NATIVE_BEGIN;
-		P_THIS->GainCurrency(Z_Param_curToGain);
-		P_NATIVE_END;
-	}
 	void AGEPProjectGameMode::StaticRegisterNativesAGEPProjectGameMode()
 	{
-		UClass* Class = AGEPProjectGameMode::StaticClass();
-		static const FNameNativePtrPair Funcs[] = {
-			{ "GainCurrency", &AGEPProjectGameMode::execGainCurrency },
-			{ "LoseCurrency", &AGEPProjectGameMode::execLoseCurrency },
-		};
-		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
-	}
-	struct Z_Construct_UFunction_AGEPProjectGameMode_GainCurrency_Statics
-	{
-		struct GEPProjectGameMode_eventGainCurrency_Parms
-		{
-			int32 curToGain;
-		};
-		static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_curToGain;
-		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
-#endif
-		static const UE4CodeGen_Private::FFunctionParams FuncParams;
-	};
-	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UFunction_AGEPProjectGameMode_GainCurrency_Statics::NewProp_curToGain = { "curToGain", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(GEPProjectGameMode_eventGainCurrency_Parms, curToGain), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AGEPProjectGameMode_GainCurrency_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AGEPProjectGameMode_GainCurrency_Statics::NewProp_curToGain,
-	};
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AGEPProjectGameMode_GainCurrency_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "GEPProjectGameMode.h" },
-	};
-#endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AGEPProjectGameMode_GainCurrency_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AGEPProjectGameMode, nullptr, "GainCurrency", nullptr, nullptr, sizeof(GEPProjectGameMode_eventGainCurrency_Parms), Z_Construct_UFunction_AGEPProjectGameMode_GainCurrency_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AGEPProjectGameMode_GainCurrency_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AGEPProjectGameMode_GainCurrency_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AGEPProjectGameMode_GainCurrency_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_AGEPProjectGameMode_GainCurrency()
-	{
-		static UFunction* ReturnFunction = nullptr;
-		if (!ReturnFunction)
-		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AGEPProjectGameMode_GainCurrency_Statics::FuncParams);
-		}
-		return ReturnFunction;
-	}
-	struct Z_Construct_UFunction_AGEPProjectGameMode_LoseCurrency_Statics
-	{
-		struct GEPProjectGameMode_eventLoseCurrency_Parms
-		{
-			int32 curToLose;
-		};
-		static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_curToLose;
-		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
-#endif
-		static const UE4CodeGen_Private::FFunctionParams FuncParams;
-	};
-	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UFunction_AGEPProjectGameMode_LoseCurrency_Statics::NewProp_curToLose = { "curToLose", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(GEPProjectGameMode_eventLoseCurrency_Parms, curToLose), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AGEPProjectGameMode_LoseCurrency_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AGEPProjectGameMode_LoseCurrency_Statics::NewProp_curToLose,
-	};
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AGEPProjectGameMode_LoseCurrency_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "GEPProjectGameMode.h" },
-	};
-#endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AGEPProjectGameMode_LoseCurrency_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AGEPProjectGameMode, nullptr, "LoseCurrency", nullptr, nullptr, sizeof(GEPProjectGameMode_eventLoseCurrency_Parms), Z_Construct_UFunction_AGEPProjectGameMode_LoseCurrency_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AGEPProjectGameMode_LoseCurrency_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AGEPProjectGameMode_LoseCurrency_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AGEPProjectGameMode_LoseCurrency_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_AGEPProjectGameMode_LoseCurrency()
-	{
-		static UFunction* ReturnFunction = nullptr;
-		if (!ReturnFunction)
-		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AGEPProjectGameMode_LoseCurrency_Statics::FuncParams);
-		}
-		return ReturnFunction;
 	}
 	UClass* Z_Construct_UClass_AGEPProjectGameMode_NoRegister()
 	{
@@ -115,7 +29,6 @@ void EmptyLinkFunctionForGeneratedCodeGEPProjectGameMode() {}
 	struct Z_Construct_UClass_AGEPProjectGameMode_Statics
 	{
 		static UObject* (*const DependentSingletons[])();
-		static const FClassFunctionLinkInfo FuncInfo[];
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
@@ -131,10 +44,6 @@ void EmptyLinkFunctionForGeneratedCodeGEPProjectGameMode() {}
 	UObject* (*const Z_Construct_UClass_AGEPProjectGameMode_Statics::DependentSingletons[])() = {
 		(UObject* (*)())Z_Construct_UClass_AGameModeBase,
 		(UObject* (*)())Z_Construct_UPackage__Script_GEPProject,
-	};
-	const FClassFunctionLinkInfo Z_Construct_UClass_AGEPProjectGameMode_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AGEPProjectGameMode_GainCurrency, "GainCurrency" }, // 2657827471
-		{ &Z_Construct_UFunction_AGEPProjectGameMode_LoseCurrency, "LoseCurrency" }, // 3678606881
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AGEPProjectGameMode_Statics::Class_MetaDataParams[] = {
@@ -164,11 +73,11 @@ void EmptyLinkFunctionForGeneratedCodeGEPProjectGameMode() {}
 		"Game",
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
-		FuncInfo,
+		nullptr,
 		Z_Construct_UClass_AGEPProjectGameMode_Statics::PropPointers,
 		nullptr,
 		UE_ARRAY_COUNT(DependentSingletons),
-		UE_ARRAY_COUNT(FuncInfo),
+		0,
 		UE_ARRAY_COUNT(Z_Construct_UClass_AGEPProjectGameMode_Statics::PropPointers),
 		0,
 		0x008002ADu,
@@ -183,7 +92,7 @@ void EmptyLinkFunctionForGeneratedCodeGEPProjectGameMode() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AGEPProjectGameMode, 3139146597);
+	IMPLEMENT_CLASS(AGEPProjectGameMode, 178060334);
 	template<> GEPPROJECT_API UClass* StaticClass<AGEPProjectGameMode>()
 	{
 		return AGEPProjectGameMode::StaticClass();

@@ -38,6 +38,8 @@ class APawn;
 	virtual void Init_Implementation(); \
 	virtual APawn* GetAsPawn_Implementation(); \
  \
+	DECLARE_FUNCTION(execLoseCurrency); \
+	DECLARE_FUNCTION(execGainCurrency); \
 	DECLARE_FUNCTION(execTurn); \
 	DECLARE_FUNCTION(execLookUp); \
 	DECLARE_FUNCTION(execTurnAtRate); \
@@ -62,6 +64,8 @@ class APawn;
 
 #define GEPProject_Source_GEPProject_Player_GEPProjectCharacter_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execLoseCurrency); \
+	DECLARE_FUNCTION(execGainCurrency); \
 	DECLARE_FUNCTION(execTurn); \
 	DECLARE_FUNCTION(execLookUp); \
 	DECLARE_FUNCTION(execTurnAtRate); \

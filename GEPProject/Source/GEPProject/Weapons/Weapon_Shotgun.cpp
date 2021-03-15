@@ -23,14 +23,15 @@ bool AWeapon_Shotgun::Fire_Implementation()
 			FVector start = UGameplayStatics::GetPlayerController(world, 0)->PlayerCameraManager->GetCameraLocation();
 			FVector forward = UGameplayStatics::GetPlayerController(world, 0)->PlayerCameraManager->GetActorForwardVector();
 
+			forward.X += FMath::RandRange(-spread, spread);
 			forward.Y += FMath::RandRange(-spread, spread);
 			forward.Z += FMath::RandRange(-spread, spread);
 			FVector end = (forward * range) + start;	
 		
 			FCollisionQueryParams collisionParams;
-			const FName traceTag("TraceTag");
-			world->DebugDrawTraceTag = traceTag; //Draws arrow at hit point
-			collisionParams.TraceTag = traceTag;
+			// const FName traceTag("TraceTag");
+			// world->DebugDrawTraceTag = traceTag; //Draws arrow at hit point
+			// collisionParams.TraceTag = traceTag;
 
 			if (world->LineTraceSingleByChannel(hit, start,end, ECC_Visibility, collisionParams))
 			{
@@ -39,7 +40,7 @@ bool AWeapon_Shotgun::Fire_Implementation()
 				{
 					shootableCast->Execute_GetShot(hit.GetActor());
 				}
-				//hit.Actor->Destroy(false, false);			
+				UGameplayStatics::SpawnEmitterAtLocation(world, hitParticle , hit.Location);			
 			}
 		}
 		
