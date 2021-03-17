@@ -18,14 +18,40 @@ void EmptyLinkFunctionForGeneratedCodeGEPProjectCharacter() {}
 	ENGINE_API UClass* Z_Construct_UClass_ACharacter();
 	UPackage* Z_Construct_UPackage__Script_GEPProject();
 	ENGINE_API UClass* Z_Construct_UClass_APawn_NoRegister();
-	ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
+	GEPPROJECT_API UClass* Z_Construct_UClass_UGEPSaveGame_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
+	ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UChildActorComponent_NoRegister();
 	GEPPROJECT_API UClass* Z_Construct_UClass_UInputable_NoRegister();
 	GEPPROJECT_API UClass* Z_Construct_UClass_UInitableChar_NoRegister();
 	GEPPROJECT_API UClass* Z_Construct_UClass_UPawnable_NoRegister();
 // End Cross Module References
+	DEFINE_FUNCTION(AGEPProjectCharacter::execUnlockWeapon)
+	{
+		P_GET_OBJECT(UClass,Z_Param_weaponToUnlock);
+		P_GET_PROPERTY(FIntProperty,Z_Param_cost);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->UnlockWeapon(Z_Param_weaponToUnlock,Z_Param_cost);
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(AGEPProjectCharacter::execLoad)
+	{
+		P_GET_OBJECT(UGEPSaveGame,Z_Param_saveInstance);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->Load(Z_Param_saveInstance);
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(AGEPProjectCharacter::execSave)
+	{
+		P_GET_OBJECT(UGEPSaveGame,Z_Param_saveInstance);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->Save(Z_Param_saveInstance);
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(AGEPProjectCharacter::execLoseCurrency)
 	{
 		P_GET_PROPERTY(FIntProperty,Z_Param_curToLose);
@@ -323,13 +349,16 @@ void EmptyLinkFunctionForGeneratedCodeGEPProjectCharacter() {}
 			{ "Key3Pressed", &AGEPProjectCharacter::execKey3Pressed },
 			{ "Key4Pressed", &AGEPProjectCharacter::execKey4Pressed },
 			{ "Key5Pressed", &AGEPProjectCharacter::execKey5Pressed },
+			{ "Load", &AGEPProjectCharacter::execLoad },
 			{ "LookUp", &AGEPProjectCharacter::execLookUp },
 			{ "LookUpAtRate", &AGEPProjectCharacter::execLookUpAtRate },
 			{ "LoseCurrency", &AGEPProjectCharacter::execLoseCurrency },
 			{ "MoveForward", &AGEPProjectCharacter::execMoveForward },
 			{ "MoveRight", &AGEPProjectCharacter::execMoveRight },
+			{ "Save", &AGEPProjectCharacter::execSave },
 			{ "Turn", &AGEPProjectCharacter::execTurn },
 			{ "TurnAtRate", &AGEPProjectCharacter::execTurnAtRate },
+			{ "UnlockWeapon", &AGEPProjectCharacter::execUnlockWeapon },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 	}
@@ -685,6 +714,38 @@ void EmptyLinkFunctionForGeneratedCodeGEPProjectCharacter() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_AGEPProjectCharacter_Load_Statics
+	{
+		struct GEPProjectCharacter_eventLoad_Parms
+		{
+			UGEPSaveGame* saveInstance;
+		};
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_saveInstance;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AGEPProjectCharacter_Load_Statics::NewProp_saveInstance = { "saveInstance", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(GEPProjectCharacter_eventLoad_Parms, saveInstance), Z_Construct_UClass_UGEPSaveGame_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AGEPProjectCharacter_Load_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AGEPProjectCharacter_Load_Statics::NewProp_saveInstance,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AGEPProjectCharacter_Load_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Player/GEPProjectCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AGEPProjectCharacter_Load_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AGEPProjectCharacter, nullptr, "Load", nullptr, nullptr, sizeof(GEPProjectCharacter_eventLoad_Parms), Z_Construct_UFunction_AGEPProjectCharacter_Load_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AGEPProjectCharacter_Load_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AGEPProjectCharacter_Load_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AGEPProjectCharacter_Load_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AGEPProjectCharacter_Load()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AGEPProjectCharacter_Load_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_AGEPProjectCharacter_LookUp_Statics
 	{
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_value;
@@ -829,6 +890,38 @@ void EmptyLinkFunctionForGeneratedCodeGEPProjectCharacter() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_AGEPProjectCharacter_Save_Statics
+	{
+		struct GEPProjectCharacter_eventSave_Parms
+		{
+			UGEPSaveGame* saveInstance;
+		};
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_saveInstance;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AGEPProjectCharacter_Save_Statics::NewProp_saveInstance = { "saveInstance", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(GEPProjectCharacter_eventSave_Parms, saveInstance), Z_Construct_UClass_UGEPSaveGame_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AGEPProjectCharacter_Save_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AGEPProjectCharacter_Save_Statics::NewProp_saveInstance,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AGEPProjectCharacter_Save_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Player/GEPProjectCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AGEPProjectCharacter_Save_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AGEPProjectCharacter, nullptr, "Save", nullptr, nullptr, sizeof(GEPProjectCharacter_eventSave_Parms), Z_Construct_UFunction_AGEPProjectCharacter_Save_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AGEPProjectCharacter_Save_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AGEPProjectCharacter_Save_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AGEPProjectCharacter_Save_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AGEPProjectCharacter_Save()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AGEPProjectCharacter_Save_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_AGEPProjectCharacter_Turn_Statics
 	{
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_value;
@@ -885,6 +978,42 @@ void EmptyLinkFunctionForGeneratedCodeGEPProjectCharacter() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_AGEPProjectCharacter_UnlockWeapon_Statics
+	{
+		struct GEPProjectCharacter_eventUnlockWeapon_Parms
+		{
+			TSubclassOf<AActor>  weaponToUnlock;
+			int32 cost;
+		};
+		static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_cost;
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_weaponToUnlock;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UFunction_AGEPProjectCharacter_UnlockWeapon_Statics::NewProp_cost = { "cost", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(GEPProjectCharacter_eventUnlockWeapon_Parms, cost), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AGEPProjectCharacter_UnlockWeapon_Statics::NewProp_weaponToUnlock = { "weaponToUnlock", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(GEPProjectCharacter_eventUnlockWeapon_Parms, weaponToUnlock), Z_Construct_UClass_AActor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AGEPProjectCharacter_UnlockWeapon_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AGEPProjectCharacter_UnlockWeapon_Statics::NewProp_cost,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AGEPProjectCharacter_UnlockWeapon_Statics::NewProp_weaponToUnlock,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AGEPProjectCharacter_UnlockWeapon_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Player/GEPProjectCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AGEPProjectCharacter_UnlockWeapon_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AGEPProjectCharacter, nullptr, "UnlockWeapon", nullptr, nullptr, sizeof(GEPProjectCharacter_eventUnlockWeapon_Parms), Z_Construct_UFunction_AGEPProjectCharacter_UnlockWeapon_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AGEPProjectCharacter_UnlockWeapon_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AGEPProjectCharacter_UnlockWeapon_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AGEPProjectCharacter_UnlockWeapon_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AGEPProjectCharacter_UnlockWeapon()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AGEPProjectCharacter_UnlockWeapon_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	UClass* Z_Construct_UClass_AGEPProjectCharacter_NoRegister()
 	{
 		return AGEPProjectCharacter::StaticClass();
@@ -929,10 +1058,10 @@ void EmptyLinkFunctionForGeneratedCodeGEPProjectCharacter() {}
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_FirstPersonCameraComponent;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_weaponArray_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_unlockedWeaponArray_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_weaponArray;
-		static const UE4CodeGen_Private::FClassPropertyParams NewProp_weaponArray_Inner;
+		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_unlockedWeaponArray;
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_unlockedWeaponArray_Inner;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_equippedWeapon_MetaData[];
 #endif
@@ -962,13 +1091,16 @@ void EmptyLinkFunctionForGeneratedCodeGEPProjectCharacter() {}
 		{ &Z_Construct_UFunction_AGEPProjectCharacter_Key3Pressed, "Key3Pressed" }, // 3349214231
 		{ &Z_Construct_UFunction_AGEPProjectCharacter_Key4Pressed, "Key4Pressed" }, // 382216466
 		{ &Z_Construct_UFunction_AGEPProjectCharacter_Key5Pressed, "Key5Pressed" }, // 1654963871
+		{ &Z_Construct_UFunction_AGEPProjectCharacter_Load, "Load" }, // 3964633293
 		{ &Z_Construct_UFunction_AGEPProjectCharacter_LookUp, "LookUp" }, // 1369221430
 		{ &Z_Construct_UFunction_AGEPProjectCharacter_LookUpAtRate, "LookUpAtRate" }, // 2965759498
 		{ &Z_Construct_UFunction_AGEPProjectCharacter_LoseCurrency, "LoseCurrency" }, // 362465955
 		{ &Z_Construct_UFunction_AGEPProjectCharacter_MoveForward, "MoveForward" }, // 4285191866
 		{ &Z_Construct_UFunction_AGEPProjectCharacter_MoveRight, "MoveRight" }, // 2025856939
+		{ &Z_Construct_UFunction_AGEPProjectCharacter_Save, "Save" }, // 391844029
 		{ &Z_Construct_UFunction_AGEPProjectCharacter_Turn, "Turn" }, // 1831284628
 		{ &Z_Construct_UFunction_AGEPProjectCharacter_TurnAtRate, "TurnAtRate" }, // 3157397947
+		{ &Z_Construct_UFunction_AGEPProjectCharacter_UnlockWeapon, "UnlockWeapon" }, // 2894649146
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AGEPProjectCharacter_Statics::Class_MetaDataParams[] = {
@@ -1044,14 +1176,14 @@ void EmptyLinkFunctionForGeneratedCodeGEPProjectCharacter() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AGEPProjectCharacter_Statics::NewProp_FirstPersonCameraComponent = { "FirstPersonCameraComponent", nullptr, (EPropertyFlags)0x00400000000a001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AGEPProjectCharacter, FirstPersonCameraComponent), Z_Construct_UClass_UCameraComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AGEPProjectCharacter_Statics::NewProp_FirstPersonCameraComponent_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AGEPProjectCharacter_Statics::NewProp_FirstPersonCameraComponent_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AGEPProjectCharacter_Statics::NewProp_weaponArray_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AGEPProjectCharacter_Statics::NewProp_unlockedWeaponArray_MetaData[] = {
 		{ "AllowPrivateAccess", "true" },
 		{ "Category", "GEPProjectCharacter" },
 		{ "ModuleRelativePath", "Player/GEPProjectCharacter.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AGEPProjectCharacter_Statics::NewProp_weaponArray = { "weaponArray", nullptr, (EPropertyFlags)0x0044000000000015, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AGEPProjectCharacter, weaponArray), EArrayPropertyFlags::None, METADATA_PARAMS(Z_Construct_UClass_AGEPProjectCharacter_Statics::NewProp_weaponArray_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AGEPProjectCharacter_Statics::NewProp_weaponArray_MetaData)) };
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AGEPProjectCharacter_Statics::NewProp_weaponArray_Inner = { "weaponArray", nullptr, (EPropertyFlags)0x0004000000000000, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_AActor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AGEPProjectCharacter_Statics::NewProp_unlockedWeaponArray = { "unlockedWeaponArray", nullptr, (EPropertyFlags)0x0044000000000015, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AGEPProjectCharacter, unlockedWeaponArray), EArrayPropertyFlags::None, METADATA_PARAMS(Z_Construct_UClass_AGEPProjectCharacter_Statics::NewProp_unlockedWeaponArray_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AGEPProjectCharacter_Statics::NewProp_unlockedWeaponArray_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AGEPProjectCharacter_Statics::NewProp_unlockedWeaponArray_Inner = { "unlockedWeaponArray", nullptr, (EPropertyFlags)0x0004000000000000, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_AActor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AGEPProjectCharacter_Statics::NewProp_equippedWeapon_MetaData[] = {
 		{ "AllowPrivateAccess", "true" },
@@ -1070,8 +1202,8 @@ void EmptyLinkFunctionForGeneratedCodeGEPProjectCharacter() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGEPProjectCharacter_Statics::NewProp_ControllerLookUpRate,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGEPProjectCharacter_Statics::NewProp_ControllerTurnRate,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGEPProjectCharacter_Statics::NewProp_FirstPersonCameraComponent,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGEPProjectCharacter_Statics::NewProp_weaponArray,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGEPProjectCharacter_Statics::NewProp_weaponArray_Inner,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGEPProjectCharacter_Statics::NewProp_unlockedWeaponArray,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGEPProjectCharacter_Statics::NewProp_unlockedWeaponArray_Inner,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGEPProjectCharacter_Statics::NewProp_equippedWeapon,
 	};
 		const UE4CodeGen_Private::FImplementedInterfaceParams Z_Construct_UClass_AGEPProjectCharacter_Statics::InterfaceParams[] = {
@@ -1106,7 +1238,7 @@ void EmptyLinkFunctionForGeneratedCodeGEPProjectCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AGEPProjectCharacter, 3481310590);
+	IMPLEMENT_CLASS(AGEPProjectCharacter, 2138554541);
 	template<> GEPPROJECT_API UClass* StaticClass<AGEPProjectCharacter>()
 	{
 		return AGEPProjectCharacter::StaticClass();

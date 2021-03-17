@@ -19,15 +19,7 @@ void EmptyLinkFunctionForGeneratedCodeTestBlock() {}
 	UPackage* Z_Construct_UPackage__Script_GEPProject();
 	ENGINE_API UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
 	GEPPROJECT_API UClass* Z_Construct_UClass_UShootable_NoRegister();
-	GEPPROJECT_API UClass* Z_Construct_UClass_UInteractable_NoRegister();
 // End Cross Module References
-	DEFINE_FUNCTION(ATestBlock::execOnInteract)
-	{
-		P_FINISH;
-		P_NATIVE_BEGIN;
-		P_THIS->OnInteract_Implementation();
-		P_NATIVE_END;
-	}
 	DEFINE_FUNCTION(ATestBlock::execGetShot)
 	{
 		P_FINISH;
@@ -40,17 +32,11 @@ void EmptyLinkFunctionForGeneratedCodeTestBlock() {}
 	{
 		ProcessEvent(FindFunctionChecked(NAME_ATestBlock_GetShot),NULL);
 	}
-	static FName NAME_ATestBlock_OnInteract = FName(TEXT("OnInteract"));
-	void ATestBlock::OnInteract()
-	{
-		ProcessEvent(FindFunctionChecked(NAME_ATestBlock_OnInteract),NULL);
-	}
 	void ATestBlock::StaticRegisterNativesATestBlock()
 	{
 		UClass* Class = ATestBlock::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
 			{ "GetShot", &ATestBlock::execGetShot },
-			{ "OnInteract", &ATestBlock::execOnInteract },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 	}
@@ -73,28 +59,6 @@ void EmptyLinkFunctionForGeneratedCodeTestBlock() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ATestBlock_GetShot_Statics::FuncParams);
-		}
-		return ReturnFunction;
-	}
-	struct Z_Construct_UFunction_ATestBlock_OnInteract_Statics
-	{
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
-#endif
-		static const UE4CodeGen_Private::FFunctionParams FuncParams;
-	};
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ATestBlock_OnInteract_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "TestBlock.h" },
-	};
-#endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ATestBlock_OnInteract_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ATestBlock, nullptr, "OnInteract", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ATestBlock_OnInteract_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ATestBlock_OnInteract_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_ATestBlock_OnInteract()
-	{
-		static UFunction* ReturnFunction = nullptr;
-		if (!ReturnFunction)
-		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ATestBlock_OnInteract_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -124,7 +88,6 @@ void EmptyLinkFunctionForGeneratedCodeTestBlock() {}
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_ATestBlock_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_ATestBlock_GetShot, "GetShot" }, // 1146265828
-		{ &Z_Construct_UFunction_ATestBlock_OnInteract, "OnInteract" }, // 1513090115
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ATestBlock_Statics::Class_MetaDataParams[] = {
@@ -145,7 +108,6 @@ void EmptyLinkFunctionForGeneratedCodeTestBlock() {}
 	};
 		const UE4CodeGen_Private::FImplementedInterfaceParams Z_Construct_UClass_ATestBlock_Statics::InterfaceParams[] = {
 			{ Z_Construct_UClass_UShootable_NoRegister, (int32)VTABLE_OFFSET(ATestBlock, IShootable), false },
-			{ Z_Construct_UClass_UInteractable_NoRegister, (int32)VTABLE_OFFSET(ATestBlock, IInteractable), false },
 		};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ATestBlock_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ATestBlock>::IsAbstract,
@@ -174,7 +136,7 @@ void EmptyLinkFunctionForGeneratedCodeTestBlock() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ATestBlock, 2102453247);
+	IMPLEMENT_CLASS(ATestBlock, 2395298046);
 	template<> GEPPROJECT_API UClass* StaticClass<ATestBlock>()
 	{
 		return ATestBlock::StaticClass();

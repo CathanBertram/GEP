@@ -11,6 +11,12 @@ E:\epk\UE_4.25\Engine\Source\Runtime\Engine\Classes\GameFramework/GameModeBase.h
 E:\epk\UE_4.25\Engine\Source\Runtime\Engine\Classes\Engine/ServerStatReplicator.h
 E:\epk\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ServerStatReplicator.generated.h
 E:\epk\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameModeBase.generated.h
+E:\Github\GEP\GEPProject\Source\GEPProject/EventSystem.h
+E:\Github\GEP\GEPProject\Source\GEPProject\GEPSaveGame.h
+E:\epk\UE_4.25\Engine\Source\Runtime\Engine\Classes\GameFramework/SaveGame.h
+E:\epk\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\SaveGame.generated.h
+E:\Github\GEP\GEPProject\Intermediate\Build\Win64\UE4Editor\Inc\GEPProject\GEPSaveGame.generated.h
+E:\Github\GEP\GEPProject\Intermediate\Build\Win64\UE4Editor\Inc\GEPProject\EventSystem.generated.h
 E:\epk\UE_4.25\Engine\Source\Runtime\Engine\Classes\Kismet/GameplayStatics.h
 E:\epk\UE_4.25\Engine\Source\Runtime\Engine\Classes\Kismet/KismetSystemLibrary.h
 E:\epk\UE_4.25\Engine\Source\Runtime\CoreUObject\Public\UObject/PropertyAccessUtil.h

@@ -17,15 +17,17 @@ void EmptyLinkFunctionForGeneratedCodeInteractable() {}
 	GEPPROJECT_API UClass* Z_Construct_UClass_UInteractable();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UInterface();
 	UPackage* Z_Construct_UPackage__Script_GEPProject();
+	GEPPROJECT_API UClass* Z_Construct_UClass_AGEPProjectCharacter_NoRegister();
 // End Cross Module References
 	DEFINE_FUNCTION(IInteractable::execOnInteract)
 	{
+		P_GET_OBJECT(AGEPProjectCharacter,Z_Param_character);
 		P_FINISH;
 		P_NATIVE_BEGIN;
-		P_THIS->OnInteract_Implementation();
+		P_THIS->OnInteract_Implementation(Z_Param_character);
 		P_NATIVE_END;
 	}
-	void IInteractable::OnInteract()
+	void IInteractable::OnInteract(AGEPProjectCharacter* character)
 	{
 		check(0 && "Do not directly call Event functions in Interfaces. Call Execute_OnInteract instead.");
 	}
@@ -39,17 +41,23 @@ void EmptyLinkFunctionForGeneratedCodeInteractable() {}
 	}
 	struct Z_Construct_UFunction_UInteractable_OnInteract_Statics
 	{
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_character;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UInteractable_OnInteract_Statics::NewProp_character = { "character", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(Interactable_eventOnInteract_Parms, character), Z_Construct_UClass_AGEPProjectCharacter_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UInteractable_OnInteract_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UInteractable_OnInteract_Statics::NewProp_character,
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UInteractable_OnInteract_Statics::Function_MetaDataParams[] = {
 		{ "ModuleRelativePath", "Interfaces/Interactable.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UInteractable_OnInteract_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UInteractable, nullptr, "OnInteract", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UInteractable_OnInteract_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UInteractable_OnInteract_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UInteractable_OnInteract_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UInteractable, nullptr, "OnInteract", nullptr, nullptr, sizeof(Interactable_eventOnInteract_Parms), Z_Construct_UFunction_UInteractable_OnInteract_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UInteractable_OnInteract_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UInteractable_OnInteract_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UInteractable_OnInteract_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UInteractable_OnInteract()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -78,7 +86,7 @@ void EmptyLinkFunctionForGeneratedCodeInteractable() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_GEPProject,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UInteractable_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UInteractable_OnInteract, "OnInteract" }, // 1535209596
+		{ &Z_Construct_UFunction_UInteractable_OnInteract, "OnInteract" }, // 601470526
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UInteractable_Statics::Class_MetaDataParams[] = {
@@ -112,7 +120,7 @@ void EmptyLinkFunctionForGeneratedCodeInteractable() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UInteractable, 1330532841);
+	IMPLEMENT_CLASS(UInteractable, 2774200749);
 	template<> GEPPROJECT_API UClass* StaticClass<UInteractable>()
 	{
 		return UInteractable::StaticClass();
@@ -120,18 +128,20 @@ void EmptyLinkFunctionForGeneratedCodeInteractable() {}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UInteractable(Z_Construct_UClass_UInteractable, &UInteractable::StaticClass, TEXT("/Script/GEPProject"), TEXT("UInteractable"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UInteractable);
 	static FName NAME_UInteractable_OnInteract = FName(TEXT("OnInteract"));
-	void IInteractable::Execute_OnInteract(UObject* O)
+	void IInteractable::Execute_OnInteract(UObject* O, AGEPProjectCharacter* character)
 	{
 		check(O != NULL);
 		check(O->GetClass()->ImplementsInterface(UInteractable::StaticClass()));
+		Interactable_eventOnInteract_Parms Parms;
 		UFunction* const Func = O->FindFunction(NAME_UInteractable_OnInteract);
 		if (Func)
 		{
-			O->ProcessEvent(Func, NULL);
+			Parms.character=character;
+			O->ProcessEvent(Func, &Parms);
 		}
 		else if (auto I = (IInteractable*)(O->GetNativeInterfaceAddress(UInteractable::StaticClass())))
 		{
-			I->OnInteract_Implementation();
+			I->OnInteract_Implementation(character);
 		}
 	}
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

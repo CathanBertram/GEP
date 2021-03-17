@@ -24,3 +24,10 @@ E:\epk\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\DialogueType
 E:\epk\UE_4.25\Engine\Source\Runtime\Engine\Classes\Kismet\GameplayStaticsTypes.h
 E:\epk\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameplayStaticsTypes.generated.h
 E:\epk\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameplayStatics.generated.h
+E:\epk\UE_4.25\Engine\Source\Runtime\Engine\Classes\Particles/ParticleSystemComponent.h
+E:\epk\UE_4.25\Engine\Source\Runtime\Engine\Classes\Particles/ParticleSystem.h
+E:\epk\UE_4.25\Engine\Source\Runtime\Engine\Classes\Particles/ParticlePerfStats.h
+E:\epk\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ParticleSystem.generated.h
+E:\epk\UE_4.25\Engine\Source\Runtime\Engine\Classes\Particles/Emitter.h
+E:\epk\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Emitter.generated.h
+E:\epk\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ParticleSystemComponent.generated.h

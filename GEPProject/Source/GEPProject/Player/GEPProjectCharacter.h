@@ -7,6 +7,8 @@
 #include "GEPProject/Interfaces/Inputable.h"
 #include "GEPProject/Interfaces/Pawnable.h"
 #include "GameFramework/Character.h"
+#include "GEPProject/GEPSaveGame.h"
+
 #include "GEPProjectCharacter.generated.h"
 
 UCLASS(config=Game)
@@ -18,7 +20,8 @@ class AGEPProjectCharacter : public ACharacter, public IInputable, public IInita
 	UChildActorComponent* equippedWeapon;
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
-	TArray<TSubclassOf<AActor>> weaponArray;
+	TArray<TSubclassOf<AActor>> unlockedWeaponArray;
+
 	/** First person camera */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
 	class UCameraComponent* FirstPersonCameraComponent;
@@ -29,6 +32,9 @@ public:
 	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
 	APawn* GetAsPawn();
 	virtual APawn* GetAsPawn_Implementation() override;
+
+	int GetCurrency(){return currency;}
+	
 
 public:
 #pragma region InitableChar_Interface
@@ -131,6 +137,13 @@ private:
 	UFUNCTION()
     void LoseCurrency(int curToLose) {currency -= curToLose;}
 
+	UFUNCTION()
+	void Save(UGEPSaveGame* saveInstance);
+	UFUNCTION()
+    void Load(UGEPSaveGame* saveInstance);
+
+	UFUNCTION()
+	void UnlockWeapon(TSubclassOf<AActor> weaponToUnlock, int cost);
 public:
 	/** Returns FirstPersonCameraComponent subobject **/
 	FORCEINLINE class UCameraComponent* GetFirstPersonCameraComponent() const { return FirstPersonCameraComponent; }

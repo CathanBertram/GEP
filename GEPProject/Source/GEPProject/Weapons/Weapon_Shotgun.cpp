@@ -3,8 +3,11 @@
 
 #include "Weapon_Shotgun.h"
 
+
+#include "Engine/EngineTypes.h"
 #include "GEPProject/Interfaces/Shootable.h"
 #include "Kismet/GameplayStatics.h"
+#include "Particles/ParticleSystemComponent.h"
 
 bool AWeapon_Shotgun::Fire_Implementation()
 {	if (!canShoot) return false;
@@ -16,7 +19,7 @@ bool AWeapon_Shotgun::Fire_Implementation()
 		USceneComponent* muzzle = GetGunMuzzle();
 		UGameplayStatics::PlaySound2D(world, shootSound);
 		UGameplayStatics::SpawnEmitterAtLocation(world, muzzleFlash , muzzle->GetComponentLocation());
-
+		
 		for (int i = 0; i < pelletCount; ++i)
 		{
 			FHitResult hit(ForceInit);
@@ -35,10 +38,9 @@ bool AWeapon_Shotgun::Fire_Implementation()
 
 			if (world->LineTraceSingleByChannel(hit, start,end, ECC_Visibility, collisionParams))
 			{
-				IShootable* shootableCast = Cast<IShootable>(hit.GetActor()); //cast to Interface through Actor
-				if (shootableCast)
+				if (UKismetSystemLibrary::DoesImplementInterface(hit.GetActor(), UShootable::StaticClass()))
 				{
-					shootableCast->Execute_GetShot(hit.GetActor());
+					IShootable::Execute_GetShot(hit.GetActor());
 				}
 				UGameplayStatics::SpawnEmitterAtLocation(world, hitParticle , hit.Location);			
 			}

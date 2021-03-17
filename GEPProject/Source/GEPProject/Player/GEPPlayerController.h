@@ -32,10 +32,18 @@ protected:
 	TSubclassOf<APawn> pawnToSpawn;
 	
 private:
+	UFUNCTION()
+	void SaveGame();
+	void LoadGame();
+
+	
 	void JumpPressed(); void JumpReleased();
 	void FirePressed(); void FireReleased();
 	void InteractPressed(); void InteractReleased();
 	void Key1Pressed(); void Key2Pressed(); void Key3Pressed(); void Key4Pressed(); void Key5Pressed();
+	void TestPressed();
+	void Test2Pressed();
+	
 	
 	void MoveForward(float value);
 	void MoveRight(float value);

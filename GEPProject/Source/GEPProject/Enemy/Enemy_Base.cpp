@@ -39,7 +39,6 @@ void AEnemy_Base::EndOfLifetime()
 void AEnemy_Base::Death()
 {
 	OnDeath.Broadcast();
-	GetGameInstance()->GetSubsystem<UEventSystem>()->OnEvent();
 	UGameplayStatics::PlaySoundAtLocation(GetWorld(), explosionSound, GetActorLocation());
 	UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), explosionParticles, GetActorLocation());
 	Destroy(false,false);

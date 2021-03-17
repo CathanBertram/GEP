@@ -8,6 +8,7 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class AGEPProjectCharacter;
 #ifdef GEPPROJECT_Interactable_generated_h
 #error "Interactable.generated.h already included, missing '#pragma once' in Interactable.h"
 #endif
@@ -15,18 +16,24 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 #define GEPProject_Source_GEPProject_Interfaces_Interactable_h_13_SPARSE_DATA
 #define GEPProject_Source_GEPProject_Interfaces_Interactable_h_13_RPC_WRAPPERS \
-	virtual void OnInteract_Implementation() {}; \
+	virtual void OnInteract_Implementation(AGEPProjectCharacter* character) {}; \
  \
 	DECLARE_FUNCTION(execOnInteract);
 
 
 #define GEPProject_Source_GEPProject_Interfaces_Interactable_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
-	virtual void OnInteract_Implementation() {}; \
+	virtual void OnInteract_Implementation(AGEPProjectCharacter* character) {}; \
  \
 	DECLARE_FUNCTION(execOnInteract);
 
 
-#define GEPProject_Source_GEPProject_Interfaces_Interactable_h_13_EVENT_PARMS
+#define GEPProject_Source_GEPProject_Interfaces_Interactable_h_13_EVENT_PARMS \
+	struct Interactable_eventOnInteract_Parms \
+	{ \
+		AGEPProjectCharacter* character; \
+	};
+
+
 #define GEPProject_Source_GEPProject_Interfaces_Interactable_h_13_CALLBACK_WRAPPERS
 #define GEPProject_Source_GEPProject_Interfaces_Interactable_h_13_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
@@ -84,7 +91,7 @@ protected: \
 public: \
 	typedef UInteractable UClassType; \
 	typedef IInteractable ThisClass; \
-	static void Execute_OnInteract(UObject* O); \
+	static void Execute_OnInteract(UObject* O, AGEPProjectCharacter* character); \
 	virtual UObject* _getUObject() const { check(0 && "Missing required implementation."); return nullptr; }
 
 
@@ -94,7 +101,7 @@ protected: \
 public: \
 	typedef UInteractable UClassType; \
 	typedef IInteractable ThisClass; \
-	static void Execute_OnInteract(UObject* O); \
+	static void Execute_OnInteract(UObject* O, AGEPProjectCharacter* character); \
 	virtual UObject* _getUObject() const { check(0 && "Missing required implementation."); return nullptr; }
 
 

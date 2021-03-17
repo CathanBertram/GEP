@@ -5,8 +5,10 @@
 #include "GEPProject/Interfaces/InitableChar.h"
 #include "GEPProject/Interfaces/Inputable.h"
 #include "GameFramework/GameModeBase.h"
+#include "GEPProject/EventSystem.h"
 #include "Kismet/GameplayStatics.h"
 #include "Kismet/KismetSystemLibrary.h"
+#include "GEPProject/GEPSaveGame.h"
 
 AGEPPlayerController::AGEPPlayerController() : Super()
 {
@@ -20,7 +22,7 @@ void AGEPPlayerController::Init_Implementation()
 	{
 		GetPawn()->Destroy();
 	}
-
+	GetGameInstance()->GetSubsystem<UEventSystem>()->onTrySave.AddDynamic(this, &AGEPPlayerController::SaveGame);
 	UWorld* const world =  GetWorld();
 	if (world != nullptr && pawnToSpawn)
 	{
@@ -50,6 +52,33 @@ AGEPPlayerController* AGEPPlayerController::GetAsPC_Implementation()
 	return this;
 }
 
+void AGEPPlayerController::SaveGame()
+{
+	//Create saveGameInstance
+	UGEPSaveGame* saveGameInstance = Cast<UGEPSaveGame>(UGameplayStatics::CreateSaveGameObject(UGEPSaveGame::StaticClass()));
+	//Event to save data from other classes
+	GetGameInstance()->GetSubsystem<UEventSystem>()->OnSave(saveGameInstance);
+	
+	//Push save game to slot
+	UGameplayStatics::SaveGameToSlot(saveGameInstance, TEXT("Save"), 0);
+	GEngine->AddOnScreenDebugMessage(-1,.5f,FColor::Red, "save");
+}
+
+void AGEPPlayerController::LoadGame()
+{
+	//Load save game from slot
+	if (UGameplayStatics::DoesSaveGameExist(TEXT("Save"), 0))
+	{
+		UGEPSaveGame* saveGameInstance =Cast<UGEPSaveGame>(UGameplayStatics::LoadGameFromSlot(TEXT("Save"), 0));
+		//Event to load data to other classes
+		GetGameInstance()->GetSubsystem<UEventSystem>()->OnLoad(saveGameInstance);
+	
+		GEngine->AddOnScreenDebugMessage(-1,.5f,FColor::Red, "load");
+	}
+	
+}
+
+
 void AGEPPlayerController::SetupInputComponent()
 {
 	Super::SetupInputComponent();
@@ -65,6 +94,8 @@ void AGEPPlayerController::SetupInputComponent()
 	InputComponent->BindAction("Key3", IE_Pressed, this, &AGEPPlayerController::Key3Pressed);
 	InputComponent->BindAction("Key4", IE_Pressed, this, &AGEPPlayerController::Key4Pressed);
 	InputComponent->BindAction("Key5", IE_Pressed, this, &AGEPPlayerController::Key5Pressed);
+	InputComponent->BindAction("Test", IE_Pressed, this, &AGEPPlayerController::TestPressed);
+	InputComponent->BindAction("Test2", IE_Pressed, this, &AGEPPlayerController::Test2Pressed);
 	
 	InputComponent->BindAxis("MoveForward", this, &AGEPPlayerController::MoveForward);
 	InputComponent->BindAxis("MoveRight", this, &AGEPPlayerController::MoveRight);
@@ -74,7 +105,16 @@ void AGEPPlayerController::SetupInputComponent()
 	InputComponent->BindAxis("Turn", this, &AGEPPlayerController::Turn);
 
 }
+void AGEPPlayerController::TestPressed()
+{
+	SaveGame();
+}
 
+void AGEPPlayerController::Test2Pressed()
+{
+	LoadGame();
+}
+#pragma region input
 void AGEPPlayerController::JumpPressed()
 {
 	APawn* pawn = GetPawn();
@@ -174,6 +214,7 @@ void AGEPPlayerController::Key5Pressed()
 	}
 }
 
+
 void AGEPPlayerController::MoveForward(float value)
 {
 	APawn* pawn = GetPawn();
@@ -227,4 +268,4 @@ void AGEPPlayerController::Turn(float value)
 		IInputable::Execute_Turn(pawn, value);
 	}
 }
-
+#pragma endregion 

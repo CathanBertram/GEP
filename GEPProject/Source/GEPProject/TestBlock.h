@@ -11,7 +11,7 @@
 
 
 UCLASS()
-class GEPPROJECT_API ATestBlock : public AActor, public IShootable, public IInteractable
+class GEPPROJECT_API ATestBlock : public AActor, public IShootable
 {
 	GENERATED_BODY()
 	
@@ -26,9 +26,6 @@ public:
 	void GetShot();
 	virtual void GetShot_Implementation() override;
 
-	UFUNCTION(BlueprintCallable,BlueprintNativeEvent)
-    void OnInteract();
-	virtual void OnInteract_Implementation() override;
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;

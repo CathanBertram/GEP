@@ -59,10 +59,9 @@ void AWeapon_Hitscan::Shoot()
 
 		if (world->LineTraceSingleByChannel(hit, start,end, ECC_Visibility, collisionParams))
 		{
-			IShootable* shootableCast = Cast<IShootable>(hit.GetActor()); //cast to Interface through Actor
-			if (shootableCast)
+			if (UKismetSystemLibrary::DoesImplementInterface(hit.GetActor(), UShootable::StaticClass()))
 			{
-				shootableCast->Execute_GetShot(hit.GetActor());
+				IShootable::Execute_GetShot(hit.GetActor());
 			}
 			UGameplayStatics::SpawnEmitterAtLocation(world, hitParticle , hit.Location);	
 		}

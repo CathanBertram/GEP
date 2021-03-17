@@ -8,6 +8,8 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class AActor;
+class UGEPSaveGame;
 class AGEPProjectCharacter;
 class APawn;
 #ifdef GEPPROJECT_GEPProjectCharacter_generated_h
@@ -15,8 +17,8 @@ class APawn;
 #endif
 #define GEPPROJECT_GEPProjectCharacter_generated_h
 
-#define GEPProject_Source_GEPProject_Player_GEPProjectCharacter_h_15_SPARSE_DATA
-#define GEPProject_Source_GEPProject_Player_GEPProjectCharacter_h_15_RPC_WRAPPERS \
+#define GEPProject_Source_GEPProject_Player_GEPProjectCharacter_h_17_SPARSE_DATA
+#define GEPProject_Source_GEPProject_Player_GEPProjectCharacter_h_17_RPC_WRAPPERS \
 	virtual void Turn_Implementation(float value); \
 	virtual void LookUp_Implementation(float value); \
 	virtual void TurnAtRate_Implementation(float value); \
@@ -38,6 +40,9 @@ class APawn;
 	virtual void Init_Implementation(); \
 	virtual APawn* GetAsPawn_Implementation(); \
  \
+	DECLARE_FUNCTION(execUnlockWeapon); \
+	DECLARE_FUNCTION(execLoad); \
+	DECLARE_FUNCTION(execSave); \
 	DECLARE_FUNCTION(execLoseCurrency); \
 	DECLARE_FUNCTION(execGainCurrency); \
 	DECLARE_FUNCTION(execTurn); \
@@ -62,8 +67,11 @@ class APawn;
 	DECLARE_FUNCTION(execGetAsPawn);
 
 
-#define GEPProject_Source_GEPProject_Player_GEPProjectCharacter_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+#define GEPProject_Source_GEPProject_Player_GEPProjectCharacter_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execUnlockWeapon); \
+	DECLARE_FUNCTION(execLoad); \
+	DECLARE_FUNCTION(execSave); \
 	DECLARE_FUNCTION(execLoseCurrency); \
 	DECLARE_FUNCTION(execGainCurrency); \
 	DECLARE_FUNCTION(execTurn); \
@@ -88,7 +96,7 @@ class APawn;
 	DECLARE_FUNCTION(execGetAsPawn);
 
 
-#define GEPProject_Source_GEPProject_Player_GEPProjectCharacter_h_15_EVENT_PARMS \
+#define GEPProject_Source_GEPProject_Player_GEPProjectCharacter_h_17_EVENT_PARMS \
 	struct GEPProjectCharacter_eventGetAsChar_Parms \
 	{ \
 		AGEPProjectCharacter* ReturnValue; \
@@ -135,8 +143,8 @@ class APawn;
 	};
 
 
-#define GEPProject_Source_GEPProject_Player_GEPProjectCharacter_h_15_CALLBACK_WRAPPERS
-#define GEPProject_Source_GEPProject_Player_GEPProjectCharacter_h_15_INCLASS_NO_PURE_DECLS \
+#define GEPProject_Source_GEPProject_Player_GEPProjectCharacter_h_17_CALLBACK_WRAPPERS
+#define GEPProject_Source_GEPProject_Player_GEPProjectCharacter_h_17_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAGEPProjectCharacter(); \
 	friend struct Z_Construct_UClass_AGEPProjectCharacter_Statics; \
@@ -146,7 +154,7 @@ public: \
 	virtual UObject* _getUObject() const override { return const_cast<AGEPProjectCharacter*>(this); }
 
 
-#define GEPProject_Source_GEPProject_Player_GEPProjectCharacter_h_15_INCLASS \
+#define GEPProject_Source_GEPProject_Player_GEPProjectCharacter_h_17_INCLASS \
 private: \
 	static void StaticRegisterNativesAGEPProjectCharacter(); \
 	friend struct Z_Construct_UClass_AGEPProjectCharacter_Statics; \
@@ -156,7 +164,7 @@ public: \
 	virtual UObject* _getUObject() const override { return const_cast<AGEPProjectCharacter*>(this); }
 
 
-#define GEPProject_Source_GEPProject_Player_GEPProjectCharacter_h_15_STANDARD_CONSTRUCTORS \
+#define GEPProject_Source_GEPProject_Player_GEPProjectCharacter_h_17_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AGEPProjectCharacter(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AGEPProjectCharacter) \
@@ -169,7 +177,7 @@ private: \
 public:
 
 
-#define GEPProject_Source_GEPProject_Player_GEPProjectCharacter_h_15_ENHANCED_CONSTRUCTORS \
+#define GEPProject_Source_GEPProject_Player_GEPProjectCharacter_h_17_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AGEPProjectCharacter(AGEPProjectCharacter&&); \
@@ -180,41 +188,41 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AGEPProjectCharacter); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AGEPProjectCharacter)
 
 
-#define GEPProject_Source_GEPProject_Player_GEPProjectCharacter_h_15_PRIVATE_PROPERTY_OFFSET \
+#define GEPProject_Source_GEPProject_Player_GEPProjectCharacter_h_17_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__equippedWeapon() { return STRUCT_OFFSET(AGEPProjectCharacter, equippedWeapon); } \
-	FORCEINLINE static uint32 __PPO__weaponArray() { return STRUCT_OFFSET(AGEPProjectCharacter, weaponArray); } \
+	FORCEINLINE static uint32 __PPO__unlockedWeaponArray() { return STRUCT_OFFSET(AGEPProjectCharacter, unlockedWeaponArray); } \
 	FORCEINLINE static uint32 __PPO__FirstPersonCameraComponent() { return STRUCT_OFFSET(AGEPProjectCharacter, FirstPersonCameraComponent); } \
 	FORCEINLINE static uint32 __PPO__interactRange() { return STRUCT_OFFSET(AGEPProjectCharacter, interactRange); } \
 	FORCEINLINE static uint32 __PPO__maxHealth() { return STRUCT_OFFSET(AGEPProjectCharacter, maxHealth); } \
 	FORCEINLINE static uint32 __PPO__currentHealth() { return STRUCT_OFFSET(AGEPProjectCharacter, currentHealth); }
 
 
-#define GEPProject_Source_GEPProject_Player_GEPProjectCharacter_h_12_PROLOG \
-	GEPProject_Source_GEPProject_Player_GEPProjectCharacter_h_15_EVENT_PARMS
+#define GEPProject_Source_GEPProject_Player_GEPProjectCharacter_h_14_PROLOG \
+	GEPProject_Source_GEPProject_Player_GEPProjectCharacter_h_17_EVENT_PARMS
 
 
-#define GEPProject_Source_GEPProject_Player_GEPProjectCharacter_h_15_GENERATED_BODY_LEGACY \
+#define GEPProject_Source_GEPProject_Player_GEPProjectCharacter_h_17_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	GEPProject_Source_GEPProject_Player_GEPProjectCharacter_h_15_PRIVATE_PROPERTY_OFFSET \
-	GEPProject_Source_GEPProject_Player_GEPProjectCharacter_h_15_SPARSE_DATA \
-	GEPProject_Source_GEPProject_Player_GEPProjectCharacter_h_15_RPC_WRAPPERS \
-	GEPProject_Source_GEPProject_Player_GEPProjectCharacter_h_15_CALLBACK_WRAPPERS \
-	GEPProject_Source_GEPProject_Player_GEPProjectCharacter_h_15_INCLASS \
-	GEPProject_Source_GEPProject_Player_GEPProjectCharacter_h_15_STANDARD_CONSTRUCTORS \
+	GEPProject_Source_GEPProject_Player_GEPProjectCharacter_h_17_PRIVATE_PROPERTY_OFFSET \
+	GEPProject_Source_GEPProject_Player_GEPProjectCharacter_h_17_SPARSE_DATA \
+	GEPProject_Source_GEPProject_Player_GEPProjectCharacter_h_17_RPC_WRAPPERS \
+	GEPProject_Source_GEPProject_Player_GEPProjectCharacter_h_17_CALLBACK_WRAPPERS \
+	GEPProject_Source_GEPProject_Player_GEPProjectCharacter_h_17_INCLASS \
+	GEPProject_Source_GEPProject_Player_GEPProjectCharacter_h_17_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define GEPProject_Source_GEPProject_Player_GEPProjectCharacter_h_15_GENERATED_BODY \
+#define GEPProject_Source_GEPProject_Player_GEPProjectCharacter_h_17_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	GEPProject_Source_GEPProject_Player_GEPProjectCharacter_h_15_PRIVATE_PROPERTY_OFFSET \
-	GEPProject_Source_GEPProject_Player_GEPProjectCharacter_h_15_SPARSE_DATA \
-	GEPProject_Source_GEPProject_Player_GEPProjectCharacter_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
-	GEPProject_Source_GEPProject_Player_GEPProjectCharacter_h_15_CALLBACK_WRAPPERS \
-	GEPProject_Source_GEPProject_Player_GEPProjectCharacter_h_15_INCLASS_NO_PURE_DECLS \
-	GEPProject_Source_GEPProject_Player_GEPProjectCharacter_h_15_ENHANCED_CONSTRUCTORS \
+	GEPProject_Source_GEPProject_Player_GEPProjectCharacter_h_17_PRIVATE_PROPERTY_OFFSET \
+	GEPProject_Source_GEPProject_Player_GEPProjectCharacter_h_17_SPARSE_DATA \
+	GEPProject_Source_GEPProject_Player_GEPProjectCharacter_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
+	GEPProject_Source_GEPProject_Player_GEPProjectCharacter_h_17_CALLBACK_WRAPPERS \
+	GEPProject_Source_GEPProject_Player_GEPProjectCharacter_h_17_INCLASS_NO_PURE_DECLS \
+	GEPProject_Source_GEPProject_Player_GEPProjectCharacter_h_17_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

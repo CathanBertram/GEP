@@ -15,16 +15,13 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 #define GEPProject_Source_GEPProject_TestBlock_h_16_SPARSE_DATA
 #define GEPProject_Source_GEPProject_TestBlock_h_16_RPC_WRAPPERS \
-	virtual void OnInteract_Implementation(); \
 	virtual void GetShot_Implementation(); \
  \
-	DECLARE_FUNCTION(execOnInteract); \
 	DECLARE_FUNCTION(execGetShot);
 
 
 #define GEPProject_Source_GEPProject_TestBlock_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
  \
-	DECLARE_FUNCTION(execOnInteract); \
 	DECLARE_FUNCTION(execGetShot);
 
 

@@ -50,11 +50,38 @@ APawn* AGEPProjectCharacter::GetAsPawn_Implementation()
 	return this;
 }
 
+void AGEPProjectCharacter::Save(UGEPSaveGame* saveInstance)
+{
+	saveInstance->currency = currency;
+	saveInstance->transform = GetTransform();
+	saveInstance->unlockedWeapons = unlockedWeaponArray;
+	GEngine->AddOnScreenDebugMessage(-1,.5f,FColor::Red, "saveChar" + FString::FromInt(currency));
+}
+
+void AGEPProjectCharacter::Load(UGEPSaveGame* saveInstance)
+{
+	currency = saveInstance->currency;
+	SetActorTransform(saveInstance->transform);
+	unlockedWeaponArray = saveInstance->unlockedWeapons;
+	GEngine->AddOnScreenDebugMessage(-1,.5f,FColor::Red, "loadChar" + FString::FromInt(currency));
+}
+
+void AGEPProjectCharacter::UnlockWeapon(TSubclassOf<AActor> weaponToUnlock, int cost)
+{
+	unlockedWeaponArray.Add(weaponToUnlock);
+	currency -= cost;
+	GetGameInstance()->GetSubsystem<UEventSystem>()->OnTrySave();
+}
+
 void AGEPProjectCharacter::Init_Implementation()
 {
 	currency = 0;
-	GetGameInstance()->GetSubsystem<UEventSystem>()->onCurrencyGain.AddDynamic(this, &AGEPProjectCharacter::GainCurrency);
-	GetGameInstance()->GetSubsystem<UEventSystem>()->onCurrencyLoss.AddDynamic(this, &AGEPProjectCharacter::LoseCurrency);
+	UEventSystem* eventSystemInstance = GetGameInstance()->GetSubsystem<UEventSystem>();
+	eventSystemInstance->onCurrencyGain.AddDynamic(this, &AGEPProjectCharacter::GainCurrency);
+	eventSystemInstance->onCurrencyLoss.AddDynamic(this, &AGEPProjectCharacter::LoseCurrency);
+	eventSystemInstance->onSave.AddDynamic(this, &AGEPProjectCharacter::Save);
+	eventSystemInstance->onLoad.AddDynamic(this, &AGEPProjectCharacter::Load);
+	eventSystemInstance->onUnlockWeapon.AddDynamic(this, &AGEPProjectCharacter::UnlockWeapon);
 	Super::BeginPlay();
 }
 
@@ -164,10 +191,9 @@ void AGEPProjectCharacter::Turn_Implementation(float value)
 
 void AGEPProjectCharacter::SwitchWeapon(int i)
 {
-	if (i < weaponArray.Num())
-		equippedWeapon->SetChildActorClass(weaponArray[i]);
+	if (i < unlockedWeaponArray.Num())
+		equippedWeapon->SetChildActorClass(unlockedWeaponArray[i]);
 }
-
 
 void AGEPProjectCharacter::OnInteract()
 {
@@ -183,12 +209,10 @@ void AGEPProjectCharacter::OnInteract()
 
 		if (world->LineTraceSingleByChannel(hit, start,end, ECC_Visibility, collsionParams))
 		{
-			IInteractable* interactableCast = Cast<IInteractable>(hit.GetActor()); //cast to Interface through Actor
-			if (interactableCast)
+			if (UKismetSystemLibrary::DoesImplementInterface(hit.GetActor(), UInteractable::StaticClass()))
 			{
-				interactableCast->Execute_OnInteract(hit.GetActor());
+				IInteractable::Execute_OnInteract(hit.GetActor(), this);
 			}
-			//hit.Actor->K2_DestroyActor();
 		}
 	}
 }

@@ -20,11 +20,6 @@ void ATestBlock::GetShot_Implementation()
 	GEngine->AddOnScreenDebugMessage(-1,5.f,FColor::Red, FString::Printf(TEXT("Shot")));
 }
 
-void ATestBlock::OnInteract_Implementation()
-{
-	GEngine->AddOnScreenDebugMessage(-1,5.f,FColor::Red, FString::Printf(TEXT("Interact")));
-}
-
 // Called when the game starts or when spawned
 void ATestBlock::BeginPlay()
 {

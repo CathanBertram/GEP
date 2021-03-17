@@ -43538,6 +43538,8 @@
           <e p="GEPProjectGameMode.h" t="Include" />
           <e p="GEPProjectHUD.cpp" t="Include" />
           <e p="GEPProjectHUD.h" t="Include" />
+          <e p="GEPSaveGame.cpp" t="Include" />
+          <e p="GEPSaveGame.h" t="Include" />
           <e p="Interfaces" t="Include">
             <e p="Fireable.cpp" t="Include" />
             <e p="Fireable.h" t="Include" />
@@ -43567,6 +43569,10 @@
             <e p="GEPPlayerController.h" t="Include" />
             <e p="GEPProjectCharacter.cpp" t="Include" />
             <e p="GEPProjectCharacter.h" t="Include" />
+          </e>
+          <e p="Props" t="Include">
+            <e p="PurchaseableWeaponStand.cpp" t="Include" />
+            <e p="PurchaseableWeaponStand.h" t="Include" />
           </e>
           <e p="TestBlock.cpp" t="Include" />
           <e p="TestBlock.h" t="Include" />

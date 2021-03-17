@@ -88,6 +88,51 @@
 			]
 		},
 		{
+			"File": "E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\Text3D\\Binaries\\Win64\\UE4Editor-Text3D.dll",
+			"Type": "DynamicLinkLibrary",
+			"Modules": [
+				"Text3D",
+				"FreeType2",
+				"HarfBuzz"
+			]
+		},
+		{
+			"File": "E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Binaries\\Win64\\UE4Editor-GeometricObjects.dll",
+			"Type": "DynamicLinkLibrary",
+			"Modules": [
+				"GeometricObjects"
+			]
+		},
+		{
+			"File": "E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Binaries\\Win64\\UE4Editor-GeometryAlgorithms.dll",
+			"Type": "DynamicLinkLibrary",
+			"Modules": [
+				"GeometryAlgorithms"
+			]
+		},
+		{
+			"File": "E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Binaries\\Win64\\UE4Editor-DynamicMesh.dll",
+			"Type": "DynamicLinkLibrary",
+			"Modules": [
+				"DynamicMesh"
+			]
+		},
+		{
+			"File": "E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Binaries\\Win64\\UE4Editor-MeshConversion.dll",
+			"Type": "DynamicLinkLibrary",
+			"Modules": [
+				"MeshConversion"
+			]
+		},
+		{
+			"File": "E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Binaries\\Win64\\UE4Editor-MeshSolverUtilities.dll",
+			"Type": "DynamicLinkLibrary",
+			"Modules": [
+				"MeshSolverUtilities",
+				"Eigen"
+			]
+		},
+		{
 			"File": "E:\\epk\\UE_4.25\\Engine\\Plugins\\2D\\Paper2D\\Binaries\\Win64\\UE4Editor-Paper2D.dll",
 			"Type": "DynamicLinkLibrary",
 			"Modules": [
@@ -523,42 +568,6 @@
 			"Type": "DynamicLinkLibrary",
 			"Modules": [
 				"PlanarCut"
-			]
-		},
-		{
-			"File": "E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Binaries\\Win64\\UE4Editor-GeometricObjects.dll",
-			"Type": "DynamicLinkLibrary",
-			"Modules": [
-				"GeometricObjects"
-			]
-		},
-		{
-			"File": "E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Binaries\\Win64\\UE4Editor-GeometryAlgorithms.dll",
-			"Type": "DynamicLinkLibrary",
-			"Modules": [
-				"GeometryAlgorithms"
-			]
-		},
-		{
-			"File": "E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Binaries\\Win64\\UE4Editor-DynamicMesh.dll",
-			"Type": "DynamicLinkLibrary",
-			"Modules": [
-				"DynamicMesh"
-			]
-		},
-		{
-			"File": "E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Binaries\\Win64\\UE4Editor-MeshConversion.dll",
-			"Type": "DynamicLinkLibrary",
-			"Modules": [
-				"MeshConversion"
-			]
-		},
-		{
-			"File": "E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Binaries\\Win64\\UE4Editor-MeshSolverUtilities.dll",
-			"Type": "DynamicLinkLibrary",
-			"Modules": [
-				"MeshSolverUtilities",
-				"Eigen"
 			]
 		},
 		{
@@ -3981,6 +3990,51 @@
 			]
 		},
 		{
+			"File": "E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\Text3D\\Binaries\\Win64\\UE4Editor-Text3D.dll",
+			"Type": "DynamicLinkLibrary",
+			"Modules": [
+				"Text3D",
+				"FreeType2",
+				"HarfBuzz"
+			]
+		},
+		{
+			"File": "E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Binaries\\Win64\\UE4Editor-GeometricObjects.dll",
+			"Type": "DynamicLinkLibrary",
+			"Modules": [
+				"GeometricObjects"
+			]
+		},
+		{
+			"File": "E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Binaries\\Win64\\UE4Editor-GeometryAlgorithms.dll",
+			"Type": "DynamicLinkLibrary",
+			"Modules": [
+				"GeometryAlgorithms"
+			]
+		},
+		{
+			"File": "E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Binaries\\Win64\\UE4Editor-DynamicMesh.dll",
+			"Type": "DynamicLinkLibrary",
+			"Modules": [
+				"DynamicMesh"
+			]
+		},
+		{
+			"File": "E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Binaries\\Win64\\UE4Editor-MeshConversion.dll",
+			"Type": "DynamicLinkLibrary",
+			"Modules": [
+				"MeshConversion"
+			]
+		},
+		{
+			"File": "E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Binaries\\Win64\\UE4Editor-MeshSolverUtilities.dll",
+			"Type": "DynamicLinkLibrary",
+			"Modules": [
+				"MeshSolverUtilities",
+				"Eigen"
+			]
+		},
+		{
 			"File": "E:\\epk\\UE_4.25\\Engine\\Plugins\\2D\\Paper2D\\Binaries\\Win64\\UE4Editor-Paper2D.dll",
 			"Type": "DynamicLinkLibrary",
 			"Modules": [
@@ -4416,42 +4470,6 @@
 			"Type": "DynamicLinkLibrary",
 			"Modules": [
 				"PlanarCut"
-			]
-		},
-		{
-			"File": "E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Binaries\\Win64\\UE4Editor-GeometricObjects.dll",
-			"Type": "DynamicLinkLibrary",
-			"Modules": [
-				"GeometricObjects"
-			]
-		},
-		{
-			"File": "E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Binaries\\Win64\\UE4Editor-GeometryAlgorithms.dll",
-			"Type": "DynamicLinkLibrary",
-			"Modules": [
-				"GeometryAlgorithms"
-			]
-		},
-		{
-			"File": "E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Binaries\\Win64\\UE4Editor-DynamicMesh.dll",
-			"Type": "DynamicLinkLibrary",
-			"Modules": [
-				"DynamicMesh"
-			]
-		},
-		{
-			"File": "E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Binaries\\Win64\\UE4Editor-MeshConversion.dll",
-			"Type": "DynamicLinkLibrary",
-			"Modules": [
-				"MeshConversion"
-			]
-		},
-		{
-			"File": "E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Binaries\\Win64\\UE4Editor-MeshSolverUtilities.dll",
-			"Type": "DynamicLinkLibrary",
-			"Modules": [
-				"MeshSolverUtilities",
-				"Eigen"
 			]
 		},
 		{
@@ -5389,6 +5407,321 @@
 				"bOptimizeCode": true,
 				"bUseUnity": true
 			}
+		},
+		"Text3D": 
+		{
+			"Name": "Text3D",
+			"Directory": "E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\Text3D\\Source\\Text3D",
+			"Rules": "E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\Text3D\\Source\\Text3D\\Text3D.Build.cs",
+			"PCHUsage": "UseExplicitOrSharedPCHs",
+			"PublicDependencyModules": [
+				"Core",
+				"CoreUObject",
+				"Engine"
+			],
+			"PrivateDependencyModules": [
+				"SlateCore",
+				"RenderCore",
+				"RHI",
+				"MeshDescription",
+				"StaticMeshDescription",
+				"GeometricObjects",
+				"GeometryAlgorithms",
+				"FreeType2",
+				"HarfBuzz"
+			],
+			"PublicIncludePaths": [
+				"E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\Text3D\\Source",
+				"E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\Text3D\\Source\\Text3D\\Public"
+			],
+			"LegacyPublicIncludePaths": [
+				"E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\Text3D\\Source\\Text3D"
+			],
+			"PrivateIncludePaths": [
+				"E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\Text3D\\Source\\Text3D\\Private"
+			],
+			"PublicDelayLoadDLLs": [
+				"d3d12.dll"
+			],
+			"ApiDefinitions": [
+				"TEXT3D_API="
+			],
+			"ShouldAddLegacyPublicIncludePaths": false,
+			"GeneratedCodeDirectory": "E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\Text3D\\Intermediate\\Build\\Win64\\UE4Editor\\Inc\\Text3D",
+			"ToolchainInfo": 
+			{
+				"bIsBuildingDLL": true,
+				"bOptimizeCode": true,
+				"bUseUnity": true,
+				"PrecompiledHeaderAction": "Include"
+			},
+			"SharedPCHFilePath": "E:\\epk\\UE_4.25\\Engine\\Source\\Runtime\\Engine\\Public\\EngineSharedPCH.h"
+		},
+		"FreeType2": 
+		{
+			"Name": "FreeType2",
+			"Directory": "E:\\epk\\UE_4.25\\Engine\\Source\\ThirdParty\\FreeType2",
+			"Rules": "E:\\epk\\UE_4.25\\Engine\\Source\\ThirdParty\\FreeType2\\FreeType2.Build.cs",
+			"PCHUsage": "UseExplicitOrSharedPCHs",
+			"PublicSystemIncludePaths": [
+				"E:\\epk\\UE_4.25\\Engine\\Source\\ThirdParty\\FreeType2\\FreeType2-2.10.0\\include"
+			],
+			"PublicAdditionalLibraries": [
+				"ThirdParty/FreeType2\\FreeType2-2.10.0\\lib\\Win64\\VS2015\\Release\\freetype.lib"
+			],
+			"PublicDelayLoadDLLs": [
+				"d3d12.dll"
+			],
+			"PublicDefinitions": [
+				"WITH_FREETYPE=1",
+				"WITH_FREETYPE_V210=1"
+			],
+			"ShouldAddLegacyPublicIncludePaths": false
+		},
+		"HarfBuzz": 
+		{
+			"Name": "HarfBuzz",
+			"Directory": "E:\\epk\\UE_4.25\\Engine\\Source\\ThirdParty\\HarfBuzz",
+			"Rules": "E:\\epk\\UE_4.25\\Engine\\Source\\ThirdParty\\HarfBuzz\\HarfBuzz.Build.cs",
+			"PCHUsage": "UseExplicitOrSharedPCHs",
+			"PublicSystemIncludePaths": [
+				"E:\\epk\\UE_4.25\\Engine\\Source\\ThirdParty\\HarfBuzz\\harfbuzz-2.4.0\\src"
+			],
+			"PublicAdditionalLibraries": [
+				"ThirdParty/HarfBuzz\\harfbuzz-2.4.0\\lib\\Win64\\VS2015\\Release\\harfbuzz.lib"
+			],
+			"PublicDelayLoadDLLs": [
+				"d3d12.dll"
+			],
+			"PublicDefinitions": [
+				"WITH_HARFBUZZ_V24=1",
+				"WITH_HARFBUZZ=1"
+			],
+			"ShouldAddLegacyPublicIncludePaths": false
+		},
+		"GeometricObjects": 
+		{
+			"Name": "GeometricObjects",
+			"Directory": "E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Source\\GeometricObjects",
+			"Rules": "E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Source\\GeometricObjects\\GeometricObjects.Build.cs",
+			"PCHUsage": "UseExplicitOrSharedPCHs",
+			"PublicDependencyModules": [
+				"Core"
+			],
+			"PublicIncludePaths": [
+				"E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Source",
+				"E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Source\\GeometricObjects\\Public"
+			],
+			"LegacyPublicIncludePaths": [
+				"E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Source\\GeometricObjects",
+				"E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Source\\GeometricObjects\\Public\\CompGeom",
+				"E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Source\\GeometricObjects\\Public\\Curve",
+				"E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Source\\GeometricObjects\\Public\\Distance",
+				"E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Source\\GeometricObjects\\Public\\Generators",
+				"E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Source\\GeometricObjects\\Public\\Intersection",
+				"E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Source\\GeometricObjects\\Public\\Parameterization",
+				"E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Source\\GeometricObjects\\Public\\Spatial",
+				"E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Source\\GeometricObjects\\Public\\Util"
+			],
+			"PrivateIncludePaths": [
+				"E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Source\\GeometricObjects\\Private"
+			],
+			"PublicDelayLoadDLLs": [
+				"d3d12.dll"
+			],
+			"ApiDefinitions": [
+				"GEOMETRICOBJECTS_API="
+			],
+			"ShouldAddLegacyPublicIncludePaths": false,
+			"GeneratedCodeDirectory": "E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Intermediate\\Build\\Win64\\UE4Editor\\Inc\\GeometricObjects",
+			"ToolchainInfo": 
+			{
+				"bIsBuildingDLL": true,
+				"bOptimizeCode": true,
+				"bUseUnity": true,
+				"PrecompiledHeaderAction": "Include"
+			},
+			"SharedPCHFilePath": "E:\\epk\\UE_4.25\\Engine\\Source\\Runtime\\Core\\Public\\CoreSharedPCH.h"
+		},
+		"GeometryAlgorithms": 
+		{
+			"Name": "GeometryAlgorithms",
+			"Directory": "E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Source\\GeometryAlgorithms",
+			"Rules": "E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Source\\GeometryAlgorithms\\GeometryAlgorithms.Build.cs",
+			"PCHUsage": "UseExplicitOrSharedPCHs",
+			"PublicDependencyModules": [
+				"Core",
+				"GeometricObjects"
+			],
+			"PublicIncludePaths": [
+				"E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Source",
+				"E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Source\\GeometryAlgorithms\\Public"
+			],
+			"LegacyPublicIncludePaths": [
+				"E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Source\\GeometryAlgorithms",
+				"E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Source\\GeometryAlgorithms\\Public\\Distance"
+			],
+			"PrivateIncludePaths": [
+				"E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Source\\GeometryAlgorithms\\Private"
+			],
+			"PublicDelayLoadDLLs": [
+				"d3d12.dll"
+			],
+			"ApiDefinitions": [
+				"GEOMETRYALGORITHMS_API="
+			],
+			"ShouldAddLegacyPublicIncludePaths": false,
+			"GeneratedCodeDirectory": "E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Intermediate\\Build\\Win64\\UE4Editor\\Inc\\GeometryAlgorithms",
+			"ToolchainInfo": 
+			{
+				"bIsBuildingDLL": true,
+				"bOptimizeCode": true,
+				"bUseUnity": true,
+				"PrecompiledHeaderAction": "Include"
+			},
+			"SharedPCHFilePath": "E:\\epk\\UE_4.25\\Engine\\Source\\Runtime\\Core\\Public\\CoreSharedPCH.h"
+		},
+		"DynamicMesh": 
+		{
+			"Name": "DynamicMesh",
+			"Directory": "E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Source\\DynamicMesh",
+			"Rules": "E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Source\\DynamicMesh\\DynamicMesh.Build.cs",
+			"PCHUsage": "UseExplicitOrSharedPCHs",
+			"PublicDependencyModules": [
+				"Core",
+				"GeometricObjects"
+			],
+			"PublicIncludePaths": [
+				"E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Source",
+				"E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Source\\DynamicMesh\\Public"
+			],
+			"LegacyPublicIncludePaths": [
+				"E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Source\\DynamicMesh",
+				"E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Source\\DynamicMesh\\Public\\Operations",
+				"E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Source\\DynamicMesh\\Public\\Selections"
+			],
+			"PrivateIncludePaths": [
+				"E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Source\\DynamicMesh\\Private"
+			],
+			"PublicDelayLoadDLLs": [
+				"d3d12.dll"
+			],
+			"ApiDefinitions": [
+				"DYNAMICMESH_API="
+			],
+			"ShouldAddLegacyPublicIncludePaths": false,
+			"GeneratedCodeDirectory": "E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Intermediate\\Build\\Win64\\UE4Editor\\Inc\\DynamicMesh",
+			"ToolchainInfo": 
+			{
+				"bIsBuildingDLL": true,
+				"bOptimizeCode": true,
+				"bUseUnity": true,
+				"PrecompiledHeaderAction": "Include"
+			},
+			"SharedPCHFilePath": "E:\\epk\\UE_4.25\\Engine\\Source\\Runtime\\Core\\Public\\CoreSharedPCH.h"
+		},
+		"MeshConversion": 
+		{
+			"Name": "MeshConversion",
+			"Directory": "E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Source\\MeshConversion",
+			"Rules": "E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Source\\MeshConversion\\MeshConversion.Build.cs",
+			"PCHUsage": "UseExplicitOrSharedPCHs",
+			"PublicDependencyModules": [
+				"Core",
+				"MeshDescription",
+				"StaticMeshDescription",
+				"GeometricObjects",
+				"DynamicMesh"
+			],
+			"PrivateDependencyModules": [
+				"CoreUObject"
+			],
+			"PublicIncludePaths": [
+				"E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Source",
+				"E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Source\\MeshConversion\\Public"
+			],
+			"LegacyPublicIncludePaths": [
+				"E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Source\\MeshConversion"
+			],
+			"PrivateIncludePaths": [
+				"E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Source\\MeshConversion\\Private"
+			],
+			"PublicDelayLoadDLLs": [
+				"d3d12.dll"
+			],
+			"ApiDefinitions": [
+				"MESHCONVERSION_API="
+			],
+			"ShouldAddLegacyPublicIncludePaths": false,
+			"GeneratedCodeDirectory": "E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Intermediate\\Build\\Win64\\UE4Editor\\Inc\\MeshConversion",
+			"ToolchainInfo": 
+			{
+				"bIsBuildingDLL": true,
+				"bOptimizeCode": true,
+				"bUseUnity": true,
+				"PrecompiledHeaderAction": "Include"
+			},
+			"SharedPCHFilePath": "E:\\epk\\UE_4.25\\Engine\\Source\\Runtime\\CoreUObject\\Public\\CoreUObjectSharedPCH.h"
+		},
+		"MeshSolverUtilities": 
+		{
+			"Name": "MeshSolverUtilities",
+			"Directory": "E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Source\\MeshSolverUtilities",
+			"Rules": "E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Source\\MeshSolverUtilities\\MeshSolverUtilities.Build.cs",
+			"PCHUsage": "UseExplicitOrSharedPCHs",
+			"PublicDependencyModules": [
+				"Core",
+				"Eigen"
+			],
+			"PrivateDependencyModules": [
+				"CoreUObject",
+				"GeometricObjects",
+				"DynamicMesh"
+			],
+			"PublicIncludePaths": [
+				"E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Source",
+				"E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Source\\MeshSolverUtilities\\Public"
+			],
+			"LegacyPublicIncludePaths": [
+				"E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Source\\MeshSolverUtilities"
+			],
+			"PrivateIncludePaths": [
+				"E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Source\\MeshSolverUtilities\\Private"
+			],
+			"PublicDelayLoadDLLs": [
+				"d3d12.dll"
+			],
+			"ApiDefinitions": [
+				"MESHSOLVERUTILITIES_API="
+			],
+			"ShouldAddLegacyPublicIncludePaths": false,
+			"GeneratedCodeDirectory": "E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Intermediate\\Build\\Win64\\UE4Editor\\Inc\\MeshSolverUtilities",
+			"ToolchainInfo": 
+			{
+				"bIsBuildingDLL": true,
+				"bOptimizeCode": true,
+				"bUseUnity": true,
+				"PrecompiledHeaderAction": "Include"
+			},
+			"SharedPCHFilePath": "E:\\epk\\UE_4.25\\Engine\\Source\\Runtime\\CoreUObject\\Public\\CoreUObjectSharedPCH.h"
+		},
+		"Eigen": 
+		{
+			"Name": "Eigen",
+			"Directory": "E:\\epk\\UE_4.25\\Engine\\Source\\ThirdParty\\Eigen",
+			"Rules": "E:\\epk\\UE_4.25\\Engine\\Source\\ThirdParty\\Eigen\\Eigen.Build.cs",
+			"PCHUsage": "UseExplicitOrSharedPCHs",
+			"PublicIncludePaths": [
+				"E:\\epk\\UE_4.25\\Engine\\Source\\ThirdParty\\Eigen",
+				"E:\\epk\\UE_4.25\\Engine\\Source\\ThirdParty\\Eigen\\Eigen"
+			],
+			"PublicDelayLoadDLLs": [
+				"d3d12.dll"
+			],
+			"PublicDefinitions": [
+				"EIGEN_MPL2_ONLY"
+			],
+			"ShouldAddLegacyPublicIncludePaths": false
 		},
 		"Paper2D": 
 		{
@@ -8907,24 +9240,6 @@
 				}
 			]
 		},
-		"Eigen": 
-		{
-			"Name": "Eigen",
-			"Directory": "E:\\epk\\UE_4.25\\Engine\\Source\\ThirdParty\\Eigen",
-			"Rules": "E:\\epk\\UE_4.25\\Engine\\Source\\ThirdParty\\Eigen\\Eigen.Build.cs",
-			"PCHUsage": "UseExplicitOrSharedPCHs",
-			"PublicIncludePaths": [
-				"E:\\epk\\UE_4.25\\Engine\\Source\\ThirdParty\\Eigen",
-				"E:\\epk\\UE_4.25\\Engine\\Source\\ThirdParty\\Eigen\\Eigen"
-			],
-			"PublicDelayLoadDLLs": [
-				"d3d12.dll"
-			],
-			"PublicDefinitions": [
-				"EIGEN_MPL2_ONLY"
-			],
-			"ShouldAddLegacyPublicIncludePaths": false
-		},
 		"GeometryCacheEd": 
 		{
 			"Name": "GeometryCacheEd",
@@ -9722,212 +10037,6 @@
 			],
 			"ShouldAddLegacyPublicIncludePaths": false,
 			"GeneratedCodeDirectory": "E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\PlanarCutPlugin\\Intermediate\\Build\\Win64\\UE4Editor\\Inc\\PlanarCut",
-			"ToolchainInfo": 
-			{
-				"bIsBuildingDLL": true,
-				"bOptimizeCode": true,
-				"bUseUnity": true,
-				"PrecompiledHeaderAction": "Include"
-			},
-			"SharedPCHFilePath": "E:\\epk\\UE_4.25\\Engine\\Source\\Runtime\\CoreUObject\\Public\\CoreUObjectSharedPCH.h"
-		},
-		"GeometricObjects": 
-		{
-			"Name": "GeometricObjects",
-			"Directory": "E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Source\\GeometricObjects",
-			"Rules": "E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Source\\GeometricObjects\\GeometricObjects.Build.cs",
-			"PCHUsage": "UseExplicitOrSharedPCHs",
-			"PublicDependencyModules": [
-				"Core"
-			],
-			"PublicIncludePaths": [
-				"E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Source",
-				"E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Source\\GeometricObjects\\Public"
-			],
-			"LegacyPublicIncludePaths": [
-				"E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Source\\GeometricObjects",
-				"E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Source\\GeometricObjects\\Public\\CompGeom",
-				"E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Source\\GeometricObjects\\Public\\Curve",
-				"E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Source\\GeometricObjects\\Public\\Distance",
-				"E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Source\\GeometricObjects\\Public\\Generators",
-				"E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Source\\GeometricObjects\\Public\\Intersection",
-				"E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Source\\GeometricObjects\\Public\\Parameterization",
-				"E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Source\\GeometricObjects\\Public\\Spatial",
-				"E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Source\\GeometricObjects\\Public\\Util"
-			],
-			"PrivateIncludePaths": [
-				"E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Source\\GeometricObjects\\Private"
-			],
-			"PublicDelayLoadDLLs": [
-				"d3d12.dll"
-			],
-			"ApiDefinitions": [
-				"GEOMETRICOBJECTS_API="
-			],
-			"ShouldAddLegacyPublicIncludePaths": false,
-			"GeneratedCodeDirectory": "E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Intermediate\\Build\\Win64\\UE4Editor\\Inc\\GeometricObjects",
-			"ToolchainInfo": 
-			{
-				"bIsBuildingDLL": true,
-				"bOptimizeCode": true,
-				"bUseUnity": true,
-				"PrecompiledHeaderAction": "Include"
-			},
-			"SharedPCHFilePath": "E:\\epk\\UE_4.25\\Engine\\Source\\Runtime\\Core\\Public\\CoreSharedPCH.h"
-		},
-		"GeometryAlgorithms": 
-		{
-			"Name": "GeometryAlgorithms",
-			"Directory": "E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Source\\GeometryAlgorithms",
-			"Rules": "E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Source\\GeometryAlgorithms\\GeometryAlgorithms.Build.cs",
-			"PCHUsage": "UseExplicitOrSharedPCHs",
-			"PublicDependencyModules": [
-				"Core",
-				"GeometricObjects"
-			],
-			"PublicIncludePaths": [
-				"E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Source",
-				"E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Source\\GeometryAlgorithms\\Public"
-			],
-			"LegacyPublicIncludePaths": [
-				"E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Source\\GeometryAlgorithms",
-				"E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Source\\GeometryAlgorithms\\Public\\Distance"
-			],
-			"PrivateIncludePaths": [
-				"E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Source\\GeometryAlgorithms\\Private"
-			],
-			"PublicDelayLoadDLLs": [
-				"d3d12.dll"
-			],
-			"ApiDefinitions": [
-				"GEOMETRYALGORITHMS_API="
-			],
-			"ShouldAddLegacyPublicIncludePaths": false,
-			"GeneratedCodeDirectory": "E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Intermediate\\Build\\Win64\\UE4Editor\\Inc\\GeometryAlgorithms",
-			"ToolchainInfo": 
-			{
-				"bIsBuildingDLL": true,
-				"bOptimizeCode": true,
-				"bUseUnity": true,
-				"PrecompiledHeaderAction": "Include"
-			},
-			"SharedPCHFilePath": "E:\\epk\\UE_4.25\\Engine\\Source\\Runtime\\Core\\Public\\CoreSharedPCH.h"
-		},
-		"DynamicMesh": 
-		{
-			"Name": "DynamicMesh",
-			"Directory": "E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Source\\DynamicMesh",
-			"Rules": "E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Source\\DynamicMesh\\DynamicMesh.Build.cs",
-			"PCHUsage": "UseExplicitOrSharedPCHs",
-			"PublicDependencyModules": [
-				"Core",
-				"GeometricObjects"
-			],
-			"PublicIncludePaths": [
-				"E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Source",
-				"E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Source\\DynamicMesh\\Public"
-			],
-			"LegacyPublicIncludePaths": [
-				"E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Source\\DynamicMesh",
-				"E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Source\\DynamicMesh\\Public\\Operations",
-				"E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Source\\DynamicMesh\\Public\\Selections"
-			],
-			"PrivateIncludePaths": [
-				"E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Source\\DynamicMesh\\Private"
-			],
-			"PublicDelayLoadDLLs": [
-				"d3d12.dll"
-			],
-			"ApiDefinitions": [
-				"DYNAMICMESH_API="
-			],
-			"ShouldAddLegacyPublicIncludePaths": false,
-			"GeneratedCodeDirectory": "E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Intermediate\\Build\\Win64\\UE4Editor\\Inc\\DynamicMesh",
-			"ToolchainInfo": 
-			{
-				"bIsBuildingDLL": true,
-				"bOptimizeCode": true,
-				"bUseUnity": true,
-				"PrecompiledHeaderAction": "Include"
-			},
-			"SharedPCHFilePath": "E:\\epk\\UE_4.25\\Engine\\Source\\Runtime\\Core\\Public\\CoreSharedPCH.h"
-		},
-		"MeshConversion": 
-		{
-			"Name": "MeshConversion",
-			"Directory": "E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Source\\MeshConversion",
-			"Rules": "E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Source\\MeshConversion\\MeshConversion.Build.cs",
-			"PCHUsage": "UseExplicitOrSharedPCHs",
-			"PublicDependencyModules": [
-				"Core",
-				"MeshDescription",
-				"StaticMeshDescription",
-				"GeometricObjects",
-				"DynamicMesh"
-			],
-			"PrivateDependencyModules": [
-				"CoreUObject"
-			],
-			"PublicIncludePaths": [
-				"E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Source",
-				"E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Source\\MeshConversion\\Public"
-			],
-			"LegacyPublicIncludePaths": [
-				"E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Source\\MeshConversion"
-			],
-			"PrivateIncludePaths": [
-				"E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Source\\MeshConversion\\Private"
-			],
-			"PublicDelayLoadDLLs": [
-				"d3d12.dll"
-			],
-			"ApiDefinitions": [
-				"MESHCONVERSION_API="
-			],
-			"ShouldAddLegacyPublicIncludePaths": false,
-			"GeneratedCodeDirectory": "E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Intermediate\\Build\\Win64\\UE4Editor\\Inc\\MeshConversion",
-			"ToolchainInfo": 
-			{
-				"bIsBuildingDLL": true,
-				"bOptimizeCode": true,
-				"bUseUnity": true,
-				"PrecompiledHeaderAction": "Include"
-			},
-			"SharedPCHFilePath": "E:\\epk\\UE_4.25\\Engine\\Source\\Runtime\\CoreUObject\\Public\\CoreUObjectSharedPCH.h"
-		},
-		"MeshSolverUtilities": 
-		{
-			"Name": "MeshSolverUtilities",
-			"Directory": "E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Source\\MeshSolverUtilities",
-			"Rules": "E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Source\\MeshSolverUtilities\\MeshSolverUtilities.Build.cs",
-			"PCHUsage": "UseExplicitOrSharedPCHs",
-			"PublicDependencyModules": [
-				"Core",
-				"Eigen"
-			],
-			"PrivateDependencyModules": [
-				"CoreUObject",
-				"GeometricObjects",
-				"DynamicMesh"
-			],
-			"PublicIncludePaths": [
-				"E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Source",
-				"E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Source\\MeshSolverUtilities\\Public"
-			],
-			"LegacyPublicIncludePaths": [
-				"E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Source\\MeshSolverUtilities"
-			],
-			"PrivateIncludePaths": [
-				"E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Source\\MeshSolverUtilities\\Private"
-			],
-			"PublicDelayLoadDLLs": [
-				"d3d12.dll"
-			],
-			"ApiDefinitions": [
-				"MESHSOLVERUTILITIES_API="
-			],
-			"ShouldAddLegacyPublicIncludePaths": false,
-			"GeneratedCodeDirectory": "E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\Intermediate\\Build\\Win64\\UE4Editor\\Inc\\MeshSolverUtilities",
 			"ToolchainInfo": 
 			{
 				"bIsBuildingDLL": true,
@@ -15703,7 +15812,8 @@
 				"HeadMountedDisplay"
 			],
 			"PrivateDependencyModules": [
-				"Engine"
+				"Engine",
+				"AIModule"
 			],
 			"PublicIncludePaths": [
 				"E:\\Github\\GEP\\GEPProject\\Source"
@@ -34431,6 +34541,29 @@
 	},
 	"Plugins": 
 	{
+		"Text3D": 
+		{
+			"File": "E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\Text3D\\Text3D.uplugin",
+			"Type": "Engine",
+			"Dependencies": [
+				"GeometryProcessing"
+			],
+			"Modules": [
+				"Text3D"
+			]
+		},
+		"GeometryProcessing": 
+		{
+			"File": "E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\GeometryProcessing.uplugin",
+			"Type": "Engine",
+			"Modules": [
+				"GeometricObjects",
+				"GeometryAlgorithms",
+				"DynamicMesh",
+				"MeshConversion",
+				"MeshSolverUtilities"
+			]
+		},
 		"Paper2D": 
 		{
 			"File": "E:\\epk\\UE_4.25\\Engine\\Plugins\\2D\\Paper2D\\Paper2D.uplugin",
@@ -34817,18 +34950,6 @@
 			],
 			"Modules": [
 				"PlanarCut"
-			]
-		},
-		"GeometryProcessing": 
-		{
-			"File": "E:\\epk\\UE_4.25\\Engine\\Plugins\\Experimental\\GeometryProcessing\\GeometryProcessing.uplugin",
-			"Type": "Engine",
-			"Modules": [
-				"GeometricObjects",
-				"GeometryAlgorithms",
-				"DynamicMesh",
-				"MeshConversion",
-				"MeshSolverUtilities"
 			]
 		},
 		"EditableMesh": 
