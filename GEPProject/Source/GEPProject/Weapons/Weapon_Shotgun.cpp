@@ -23,8 +23,9 @@ bool AWeapon_Shotgun::Fire_Implementation()
 		for (int i = 0; i < pelletCount; ++i)
 		{
 			FHitResult hit(ForceInit);
-			FVector start = UGameplayStatics::GetPlayerController(world, 0)->PlayerCameraManager->GetCameraLocation();
-			FVector forward = UGameplayStatics::GetPlayerController(world, 0)->PlayerCameraManager->GetActorForwardVector();
+			APlayerCameraManager* cameraManager = UGameplayStatics::GetPlayerController(world, 0)->PlayerCameraManager;
+			FVector start = cameraManager->GetCameraLocation();
+			FVector forward = cameraManager->GetActorForwardVector();
 
 			forward.X += FMath::RandRange(-spread, spread);
 			forward.Y += FMath::RandRange(-spread, spread);

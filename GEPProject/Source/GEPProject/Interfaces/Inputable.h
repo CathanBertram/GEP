@@ -45,6 +45,12 @@ public:
     void Key4Pressed();
 	UFUNCTION(BlueprintCallable,BlueprintNativeEvent)
     void Key5Pressed();
+	UFUNCTION(BlueprintCallable,BlueprintNativeEvent)
+    void Key6Pressed();
+	UFUNCTION(BlueprintCallable,BlueprintNativeEvent)
+    void Key7Pressed();
+	UFUNCTION(BlueprintCallable,BlueprintNativeEvent)
+    void Key8Pressed();
 
 	//Axis Mappings
 	UFUNCTION(BlueprintCallable,BlueprintNativeEvent)

@@ -2,6 +2,17 @@ E:\Github\GEP\GEPProject\Intermediate\Build\Win64\UE4Editor\Development\GEPProje
 E:\epk\UE_4.25\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
 E:\epk\UE_4.25\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
 E:\Github\GEP\GEPProject\Source\GEPProject/GEPProjectHUD.h
+E:\epk\UE_4.25\Engine\Source\Runtime\UMG\Public\Components/Widget.h
+E:\epk\UE_4.25\Engine\Source\Runtime\UMG\Public\Components/Visual.h
+E:\epk\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\Visual.generated.h
+E:\epk\UE_4.25\Engine\Source\Runtime\UMG\Public\Components/SlateWrapperTypes.h
+E:\epk\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\SlateWrapperTypes.generated.h
+E:\epk\UE_4.25\Engine\Source\Runtime\UMG\Public\Slate/WidgetTransform.h
+E:\epk\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\WidgetTransform.generated.h
+E:\epk\UE_4.25\Engine\Source\Runtime\UMG\Public\Blueprint/WidgetNavigation.h
+E:\epk\UE_4.25\Engine\Source\Runtime\SlateCore\Public\Types/NavigationMetaData.h
+E:\epk\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\WidgetNavigation.generated.h
+E:\epk\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\Widget.generated.h
 E:\epk\UE_4.25\Engine\Source\Runtime\Engine\Classes\GameFramework/HUD.h
 E:\epk\UE_4.25\Engine\Source\Runtime\Engine\Classes\GameFramework/HUDHitBox.h
 E:\epk\UE_4.25\Engine\Source\Runtime\Engine\Classes\GameFramework/DebugTextInfo.h

@@ -3,6 +3,8 @@
 #pragma once 
 
 #include "CoreMinimal.h"
+
+#include "Components/Widget.h"
 #include "GameFramework/HUD.h"
 #include "GEPProjectHUD.generated.h"
 

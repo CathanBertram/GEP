@@ -5,6 +5,7 @@
 #include "Engine/Texture2D.h"
 #include "TextureResource.h"
 #include "CanvasItem.h"
+#include "Blueprint/UserWidget.h"
 #include "UObject/ConstructorHelpers.h"
 
 AGEPProjectHUD::AGEPProjectHUD()
@@ -18,7 +19,6 @@ AGEPProjectHUD::AGEPProjectHUD()
 void AGEPProjectHUD::DrawHUD()
 {
 	Super::DrawHUD();
-
 	// Draw very simple crosshair
 
 	// find center of the Canvas
@@ -32,4 +32,5 @@ void AGEPProjectHUD::DrawHUD()
 	FCanvasTileItem TileItem( CrosshairDrawPosition, CrosshairTex->Resource, FLinearColor::White);
 	TileItem.BlendMode = SE_BLEND_Translucent;
 	Canvas->DrawItem( TileItem );
+
 }

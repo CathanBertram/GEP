@@ -20,9 +20,57 @@ void EmptyLinkFunctionForGeneratedCodeGEPSaveGame() {}
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FTransform();
+	GEPPROJECT_API UClass* Z_Construct_UClass_UGetGEPSaveGame_NoRegister();
 // End Cross Module References
+	DEFINE_FUNCTION(UGEPSaveGame::execGetGEPSave)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(UGEPSaveGame**)Z_Param__Result=P_THIS->GetGEPSave_Implementation();
+		P_NATIVE_END;
+	}
+	static FName NAME_UGEPSaveGame_GetGEPSave = FName(TEXT("GetGEPSave"));
+	UGEPSaveGame* UGEPSaveGame::GetGEPSave()
+	{
+		GEPSaveGame_eventGetGEPSave_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_UGEPSaveGame_GetGEPSave),&Parms);
+		return Parms.ReturnValue;
+	}
 	void UGEPSaveGame::StaticRegisterNativesUGEPSaveGame()
 	{
+		UClass* Class = UGEPSaveGame::StaticClass();
+		static const FNameNativePtrPair Funcs[] = {
+			{ "GetGEPSave", &UGEPSaveGame::execGetGEPSave },
+		};
+		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_UGEPSaveGame_GetGEPSave_Statics
+	{
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UGEPSaveGame_GetGEPSave_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(GEPSaveGame_eventGetGEPSave_Parms, ReturnValue), Z_Construct_UClass_UGEPSaveGame_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UGEPSaveGame_GetGEPSave_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UGEPSaveGame_GetGEPSave_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UGEPSaveGame_GetGEPSave_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "GEPSaveGame.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UGEPSaveGame_GetGEPSave_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UGEPSaveGame, nullptr, "GetGEPSave", nullptr, nullptr, sizeof(GEPSaveGame_eventGetGEPSave_Parms), Z_Construct_UFunction_UGEPSaveGame_GetGEPSave_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UGEPSaveGame_GetGEPSave_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UGEPSaveGame_GetGEPSave_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UGEPSaveGame_GetGEPSave_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UGEPSaveGame_GetGEPSave()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UGEPSaveGame_GetGEPSave_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	UClass* Z_Construct_UClass_UGEPSaveGame_NoRegister()
 	{
@@ -31,6 +79,7 @@ void EmptyLinkFunctionForGeneratedCodeGEPSaveGame() {}
 	struct Z_Construct_UClass_UGEPSaveGame_Statics
 	{
 		static UObject* (*const DependentSingletons[])();
+		static const FClassFunctionLinkInfo FuncInfo[];
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
@@ -48,12 +97,16 @@ void EmptyLinkFunctionForGeneratedCodeGEPSaveGame() {}
 #endif
 		static const UE4CodeGen_Private::FStructPropertyParams NewProp_transform;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+		static const UE4CodeGen_Private::FImplementedInterfaceParams InterfaceParams[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
 	};
 	UObject* (*const Z_Construct_UClass_UGEPSaveGame_Statics::DependentSingletons[])() = {
 		(UObject* (*)())Z_Construct_UClass_USaveGame,
 		(UObject* (*)())Z_Construct_UPackage__Script_GEPProject,
+	};
+	const FClassFunctionLinkInfo Z_Construct_UClass_UGEPSaveGame_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_UGEPSaveGame_GetGEPSave, "GetGEPSave" }, // 3829187640
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UGEPSaveGame_Statics::Class_MetaDataParams[] = {
@@ -90,6 +143,9 @@ void EmptyLinkFunctionForGeneratedCodeGEPSaveGame() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UGEPSaveGame_Statics::NewProp_currency,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UGEPSaveGame_Statics::NewProp_transform,
 	};
+		const UE4CodeGen_Private::FImplementedInterfaceParams Z_Construct_UClass_UGEPSaveGame_Statics::InterfaceParams[] = {
+			{ Z_Construct_UClass_UGetGEPSaveGame_NoRegister, (int32)VTABLE_OFFSET(UGEPSaveGame, IGetGEPSaveGame), false },
+		};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UGEPSaveGame_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UGEPSaveGame>::IsAbstract,
 	};
@@ -98,13 +154,13 @@ void EmptyLinkFunctionForGeneratedCodeGEPSaveGame() {}
 		nullptr,
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
-		nullptr,
+		FuncInfo,
 		Z_Construct_UClass_UGEPSaveGame_Statics::PropPointers,
-		nullptr,
+		InterfaceParams,
 		UE_ARRAY_COUNT(DependentSingletons),
-		0,
+		UE_ARRAY_COUNT(FuncInfo),
 		UE_ARRAY_COUNT(Z_Construct_UClass_UGEPSaveGame_Statics::PropPointers),
-		0,
+		UE_ARRAY_COUNT(InterfaceParams),
 		0x001000A0u,
 		METADATA_PARAMS(Z_Construct_UClass_UGEPSaveGame_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_UGEPSaveGame_Statics::Class_MetaDataParams))
 	};
@@ -117,7 +173,7 @@ void EmptyLinkFunctionForGeneratedCodeGEPSaveGame() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UGEPSaveGame, 2474329482);
+	IMPLEMENT_CLASS(UGEPSaveGame, 911552337);
 	template<> GEPPROJECT_API UClass* StaticClass<UGEPSaveGame>()
 	{
 		return UGEPSaveGame::StaticClass();

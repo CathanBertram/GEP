@@ -40,9 +40,9 @@ private:
 	void JumpPressed(); void JumpReleased();
 	void FirePressed(); void FireReleased();
 	void InteractPressed(); void InteractReleased();
-	void Key1Pressed(); void Key2Pressed(); void Key3Pressed(); void Key4Pressed(); void Key5Pressed();
-	void TestPressed();
-	void Test2Pressed();
+	void Key1Pressed(); void Key2Pressed(); void Key3Pressed(); void Key4Pressed(); void Key5Pressed(); void Key6Pressed(); void Key7Pressed(); void Key8Pressed();
+	void QuickSavePressed();
+	void QuickLoadPressed();
 	
 	
 	void MoveForward(float value);

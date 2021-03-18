@@ -41,11 +41,14 @@ void AWeapon_Hitscan::Shoot()
 	{	
 		FHitResult hit(ForceInit);
 		USceneComponent* muzzle = GetGunMuzzle();
-		FVector start = UGameplayStatics::GetPlayerController(world, 0)->PlayerCameraManager->GetCameraLocation();
-		FVector forward = UGameplayStatics::GetPlayerController(world, 0)->PlayerCameraManager->GetActorForwardVector();
-
+		APlayerCameraManager* cameraManager = UGameplayStatics::GetPlayerController(world, 0)->PlayerCameraManager;
+		FVector start = cameraManager->GetCameraLocation();
+		FVector forward = cameraManager->GetActorForwardVector();
+		//add screen shake maybe
+		
 		UGameplayStatics::PlaySound2D(world, shootSound);
 		UGameplayStatics::SpawnEmitterAtLocation(world, muzzleFlash , muzzle->GetComponentLocation());
+		
 		
 		FVector end = (forward * range) + start;
 		//FVector start = ((muzzle != nullptr) ? muzzle->GetComponentLocation() : GetActorLocation());

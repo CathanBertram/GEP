@@ -55,13 +55,21 @@ AGEPPlayerController* AGEPPlayerController::GetAsPC_Implementation()
 void AGEPPlayerController::SaveGame()
 {
 	//Create saveGameInstance
-	UGEPSaveGame* saveGameInstance = Cast<UGEPSaveGame>(UGameplayStatics::CreateSaveGameObject(UGEPSaveGame::StaticClass()));
+	USaveGame* tempSave = UGameplayStatics::CreateSaveGameObject(UGEPSaveGame::StaticClass());
 	//Event to save data from other classes
-	GetGameInstance()->GetSubsystem<UEventSystem>()->OnSave(saveGameInstance);
+	if (UKismetSystemLibrary::DoesImplementInterface(tempSave, UGetGEPSaveGame::StaticClass()))
+	{
+		UGEPSaveGame* saveGameInstance = IGetGEPSaveGame::Execute_GetGEPSave(tempSave);
+		GetGameInstance()->GetSubsystem<UEventSystem>()->OnSave(saveGameInstance);
+		UGameplayStatics::SaveGameToSlot(saveGameInstance, TEXT("Save"), 0);
+		GEngine->AddOnScreenDebugMessage(-1,.5f,FColor::Red, "saveS");
+	}
+	else
+	{
+		GEngine->AddOnScreenDebugMessage(-1,.5f,FColor::Red, "saveF");
+	}
 	
 	//Push save game to slot
-	UGameplayStatics::SaveGameToSlot(saveGameInstance, TEXT("Save"), 0);
-	GEngine->AddOnScreenDebugMessage(-1,.5f,FColor::Red, "save");
 }
 
 void AGEPPlayerController::LoadGame()
@@ -69,11 +77,13 @@ void AGEPPlayerController::LoadGame()
 	//Load save game from slot
 	if (UGameplayStatics::DoesSaveGameExist(TEXT("Save"), 0))
 	{
-		UGEPSaveGame* saveGameInstance =Cast<UGEPSaveGame>(UGameplayStatics::LoadGameFromSlot(TEXT("Save"), 0));
-		//Event to load data to other classes
-		GetGameInstance()->GetSubsystem<UEventSystem>()->OnLoad(saveGameInstance);
-	
-		GEngine->AddOnScreenDebugMessage(-1,.5f,FColor::Red, "load");
+		USaveGame* tempSave = UGameplayStatics::LoadGameFromSlot(TEXT("Save"), 0);
+		if (UKismetSystemLibrary::DoesImplementInterface(tempSave, UGetGEPSaveGame::StaticClass()))
+		{
+			UGEPSaveGame* saveGameInstance = IGetGEPSaveGame::Execute_GetGEPSave(tempSave);
+			//Event to load data to other classes
+			GetGameInstance()->GetSubsystem<UEventSystem>()->OnLoad(saveGameInstance);		
+		}		
 	}
 	
 }
@@ -94,8 +104,11 @@ void AGEPPlayerController::SetupInputComponent()
 	InputComponent->BindAction("Key3", IE_Pressed, this, &AGEPPlayerController::Key3Pressed);
 	InputComponent->BindAction("Key4", IE_Pressed, this, &AGEPPlayerController::Key4Pressed);
 	InputComponent->BindAction("Key5", IE_Pressed, this, &AGEPPlayerController::Key5Pressed);
-	InputComponent->BindAction("Test", IE_Pressed, this, &AGEPPlayerController::TestPressed);
-	InputComponent->BindAction("Test2", IE_Pressed, this, &AGEPPlayerController::Test2Pressed);
+	InputComponent->BindAction("Key6", IE_Pressed, this, &AGEPPlayerController::Key6Pressed);
+	InputComponent->BindAction("Key7", IE_Pressed, this, &AGEPPlayerController::Key7Pressed);
+	InputComponent->BindAction("Key8", IE_Pressed, this, &AGEPPlayerController::Key8Pressed);
+	InputComponent->BindAction("QuickSave", IE_Pressed, this, &AGEPPlayerController::QuickSavePressed);
+	InputComponent->BindAction("QuickLoad", IE_Pressed, this, &AGEPPlayerController::QuickLoadPressed);
 	
 	InputComponent->BindAxis("MoveForward", this, &AGEPPlayerController::MoveForward);
 	InputComponent->BindAxis("MoveRight", this, &AGEPPlayerController::MoveRight);
@@ -105,12 +118,12 @@ void AGEPPlayerController::SetupInputComponent()
 	InputComponent->BindAxis("Turn", this, &AGEPPlayerController::Turn);
 
 }
-void AGEPPlayerController::TestPressed()
+void AGEPPlayerController::QuickSavePressed()
 {
 	SaveGame();
 }
 
-void AGEPPlayerController::Test2Pressed()
+void AGEPPlayerController::QuickLoadPressed()
 {
 	LoadGame();
 }
@@ -211,6 +224,35 @@ void AGEPPlayerController::Key5Pressed()
 	if (UKismetSystemLibrary::DoesImplementInterface(pawn, UInputable::StaticClass()))
 	{
 		IInputable::Execute_Key5Pressed(pawn);
+	}
+}
+
+void AGEPPlayerController::Key6Pressed()
+{
+	APawn* pawn = GetPawn();
+	if (UKismetSystemLibrary::DoesImplementInterface(pawn, UInputable::StaticClass()))
+	{
+		IInputable::Execute_Key6Pressed(pawn);
+	}
+}
+
+
+void AGEPPlayerController::Key7Pressed()
+{
+	APawn* pawn = GetPawn();
+	if (UKismetSystemLibrary::DoesImplementInterface(pawn, UInputable::StaticClass()))
+	{
+		IInputable::Execute_Key7Pressed(pawn);
+	}
+}
+
+
+void AGEPPlayerController::Key8Pressed()
+{
+	APawn* pawn = GetPawn();
+	if (UKismetSystemLibrary::DoesImplementInterface(pawn, UInputable::StaticClass()))
+	{
+		IInputable::Execute_Key8Pressed(pawn);
 	}
 }
 

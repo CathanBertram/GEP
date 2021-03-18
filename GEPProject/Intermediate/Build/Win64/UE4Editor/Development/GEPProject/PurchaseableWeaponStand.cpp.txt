@@ -22,6 +22,8 @@ E:\epk\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Character.ge
 E:\Github\GEP\GEPProject\Source\GEPProject/GEPSaveGame.h
 E:\epk\UE_4.25\Engine\Source\Runtime\Engine\Classes\GameFramework/SaveGame.h
 E:\epk\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\SaveGame.generated.h
+E:\Github\GEP\GEPProject\Source\GEPProject\Interfaces/GetGEPSaveGame.h
+E:\Github\GEP\GEPProject\Intermediate\Build\Win64\UE4Editor\Inc\GEPProject\GetGEPSaveGame.generated.h
 E:\Github\GEP\GEPProject\Intermediate\Build\Win64\UE4Editor\Inc\GEPProject\GEPSaveGame.generated.h
 E:\Github\GEP\GEPProject\Intermediate\Build\Win64\UE4Editor\Inc\GEPProject\GEPProjectCharacter.generated.h
 E:\Github\GEP\GEPProject\Intermediate\Build\Win64\UE4Editor\Inc\GEPProject\PurchaseableWeaponStand.generated.h

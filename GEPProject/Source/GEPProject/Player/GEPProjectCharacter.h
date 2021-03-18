@@ -81,6 +81,15 @@ public:
 	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
     void Key5Pressed();
 	virtual void Key5Pressed_Implementation() override;
+	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
+    void Key6Pressed();
+	virtual void Key6Pressed_Implementation() override;
+	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
+    void Key7Pressed();
+	virtual void Key7Pressed_Implementation() override;
+	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
+    void Key8Pressed();
+	virtual void Key8Pressed_Implementation() override;
 	
 
 	void OnInteract();

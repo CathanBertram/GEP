@@ -41,13 +41,16 @@ void APurchaseableWeaponStand::OnInteract_Implementation(AGEPProjectCharacter* c
 }
 void APurchaseableWeaponStand::Unlock()
 {
-	weapon->DestroyChildActor();
-	text->DestroyComponent();	
+	if (weapon != nullptr)
+		weapon->DestroyChildActor();
+	if(text != nullptr)
+		text->DestroyComponent();	
 	unlocked = true;
 }
 
 void APurchaseableWeaponStand::BeginPlay()
 {
+	Super::BeginPlay();
 	GetGameInstance()->GetSubsystem<UEventSystem>()->onLoad.AddDynamic(this, &APurchaseableWeaponStand::Load);
 }
 

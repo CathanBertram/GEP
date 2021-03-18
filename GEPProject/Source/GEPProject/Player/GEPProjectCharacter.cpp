@@ -153,6 +153,21 @@ void AGEPProjectCharacter::Key5Pressed_Implementation()
 	SwitchWeapon(4);
 }
 
+void AGEPProjectCharacter::Key6Pressed_Implementation()
+{
+	SwitchWeapon(5);
+}
+
+void AGEPProjectCharacter::Key7Pressed_Implementation()
+{
+	SwitchWeapon(6);
+}
+
+void AGEPProjectCharacter::Key8Pressed_Implementation()
+{
+	SwitchWeapon(7);
+}
+
 void AGEPProjectCharacter::MoveForward_Implementation(float value)
 {
 	if (value != 0.0f)

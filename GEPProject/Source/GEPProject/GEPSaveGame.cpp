@@ -1,6 +1,5 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
-#include "GEPProject.h"
 #include "GEPSaveGame.h"
 
 UGEPSaveGame::UGEPSaveGame()
@@ -9,3 +8,11 @@ UGEPSaveGame::UGEPSaveGame()
 	currency = 0;
 	
 }
+
+UGEPSaveGame* UGEPSaveGame::GetGEPSave_Implementation()
+{
+	return this;
+}
+
+
+

@@ -4,17 +4,23 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/SaveGame.h"
+#include "Interfaces/GetGEPSaveGame.h"
+
 #include "GEPSaveGame.generated.h"
 
 /**
  * 
  */
 UCLASS()
-class GEPPROJECT_API UGEPSaveGame : public USaveGame
+class GEPPROJECT_API UGEPSaveGame : public USaveGame, public IGetGEPSaveGame
 {
 	GENERATED_BODY()
 public:
 	UGEPSaveGame();
+
+	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
+    UGEPSaveGame* GetGEPSave();
+	virtual UGEPSaveGame* GetGEPSave_Implementation() override;
 
 	UPROPERTY(EditAnywhere)
 	FTransform transform;
@@ -22,4 +28,5 @@ public:
 	int currency;
 	UPROPERTY(EditAnywhere)
 	TArray<TSubclassOf<AActor>> unlockedWeapons;
+
 };

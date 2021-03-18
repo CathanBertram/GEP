@@ -15813,7 +15813,8 @@
 			],
 			"PrivateDependencyModules": [
 				"Engine",
-				"AIModule"
+				"AIModule",
+				"UMG"
 			],
 			"PublicIncludePaths": [
 				"E:\\Github\\GEP\\GEPProject\\Source"
