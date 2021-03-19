@@ -54,8 +54,8 @@ E:\Github\GEP\GEPProject\Source\GEPProject\Component\HealthComponent.h
 E:\Github\GEP\GEPProject\Intermediate\Build\Win64\UE4Editor\Inc\GEPProject\HealthComponent.generated.h
 E:\Github\GEP\GEPProject\Intermediate\Build\Win64\UE4Editor\Inc\GEPProject\PlayerHealthComponent.generated.h
 E:\Github\GEP\GEPProject\Intermediate\Build\Win64\UE4Editor\Inc\GEPProject\GEPProjectCharacter.generated.h
-E:/Github/GEP/GEPProject/Intermediate/Build/Win64/UE4Editor/Inc/GEPProject/GEPProjectGameMode.gen.cpp
-E:\Github\GEP\GEPProject\Source\GEPProject/GEPProjectGameMode.h
+E:/Github/GEP/GEPProject/Intermediate/Build/Win64/UE4Editor/Inc/GEPProject/GEPProjectHUD.gen.cpp
+E:\Github\GEP\GEPProject\Source\GEPProject/GEPProjectHUD.h
 E:\epk\UE_4.25\Engine\Source\Runtime\UMG\Public\Components/Widget.h
 E:\epk\UE_4.25\Engine\Source\Runtime\UMG\Public\Components/Visual.h
 E:\epk\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\Visual.generated.h
@@ -67,15 +67,6 @@ E:\epk\UE_4.25\Engine\Source\Runtime\UMG\Public\Blueprint/WidgetNavigation.h
 E:\epk\UE_4.25\Engine\Source\Runtime\SlateCore\Public\Types/NavigationMetaData.h
 E:\epk\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\WidgetNavigation.generated.h
 E:\epk\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\Widget.generated.h
-E:\epk\UE_4.25\Engine\Source\Runtime\Engine\Classes\GameFramework/GameModeBase.h
-E:\epk\UE_4.25\Engine\Source\Runtime\Engine\Classes\Engine/ServerStatReplicator.h
-E:\epk\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ServerStatReplicator.generated.h
-E:\epk\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameModeBase.generated.h
-E:\Github\GEP\GEPProject\Source\GEPProject\Interfaces/GetGEPGamemode.h
-E:\Github\GEP\GEPProject\Intermediate\Build\Win64\UE4Editor\Inc\GEPProject\GetGEPGamemode.generated.h
-E:\Github\GEP\GEPProject\Intermediate\Build\Win64\UE4Editor\Inc\GEPProject\GEPProjectGameMode.generated.h
-E:/Github/GEP/GEPProject/Intermediate/Build/Win64/UE4Editor/Inc/GEPProject/GEPProjectHUD.gen.cpp
-E:\Github\GEP\GEPProject\Source\GEPProject/GEPProjectHUD.h
 E:\epk\UE_4.25\Engine\Source\Runtime\Engine\Classes\GameFramework/HUD.h
 E:\epk\UE_4.25\Engine\Source\Runtime\Engine\Classes\GameFramework/HUDHitBox.h
 E:\epk\UE_4.25\Engine\Source\Runtime\Engine\Classes\GameFramework/DebugTextInfo.h
@@ -87,6 +78,8 @@ E:\Github\GEP\GEPProject\Source\GEPProject/Weapons/GEPProjectProjectile.h
 E:\Github\GEP\GEPProject\Intermediate\Build\Win64\UE4Editor\Inc\GEPProject\GEPProjectProjectile.generated.h
 E:/Github/GEP/GEPProject/Intermediate/Build/Win64/UE4Editor/Inc/GEPProject/GEPSaveGame.gen.cpp
 E:/Github/GEP/GEPProject/Intermediate/Build/Win64/UE4Editor/Inc/GEPProject/GetGEPGamemode.gen.cpp
+E:\Github\GEP\GEPProject\Source\GEPProject/Interfaces/GetGEPGamemode.h
+E:\Github\GEP\GEPProject\Intermediate\Build\Win64\UE4Editor\Inc\GEPProject\GetGEPGamemode.generated.h
 E:/Github/GEP/GEPProject/Intermediate/Build/Win64/UE4Editor/Inc/GEPProject/GetGEPSaveGame.gen.cpp
 E:/Github/GEP/GEPProject/Intermediate/Build/Win64/UE4Editor/Inc/GEPProject/GrenadeProjectile.gen.cpp
 E:\Github\GEP\GEPProject\Source\GEPProject/Weapons/GrenadeProjectile.h
@@ -128,11 +121,6 @@ E:/Github/GEP/GEPProject/Intermediate/Build/Win64/UE4Editor/Inc/GEPProject/Shoot
 E:/Github/GEP/GEPProject/Intermediate/Build/Win64/UE4Editor/Inc/GEPProject/TestBlock.gen.cpp
 E:\Github\GEP\GEPProject\Source\GEPProject/TestBlock.h
 E:\Github\GEP\GEPProject\Intermediate\Build\Win64\UE4Editor\Inc\GEPProject\TestBlock.generated.h
-E:/Github/GEP/GEPProject/Intermediate/Build/Win64/UE4Editor/Inc/GEPProject/UpgradeTypes.gen.cpp
-E:\Github\GEP\GEPProject\Source\GEPProject/UpgradeTypes.h
-E:\epk\UE_4.25\Engine\Source\Runtime\Engine\Classes\Engine/UserDefinedEnum.h
-E:\epk\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\UserDefinedEnum.generated.h
-E:\Github\GEP\GEPProject\Intermediate\Build\Win64\UE4Editor\Inc\GEPProject\UpgradeTypes.generated.h
 E:/Github/GEP/GEPProject/Intermediate/Build/Win64/UE4Editor/Inc/GEPProject/Weapon_Base.gen.cpp
 E:\Github\GEP\GEPProject\Source\GEPProject/Weapons/Weapon_Base.h
 E:\Github\GEP\GEPProject\Intermediate\Build\Win64\UE4Editor\Inc\GEPProject\Weapon_Base.generated.h

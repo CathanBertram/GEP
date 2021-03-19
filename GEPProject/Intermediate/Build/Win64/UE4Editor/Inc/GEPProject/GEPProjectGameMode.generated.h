@@ -14,8 +14,8 @@ class AGEPProjectGameMode;
 #endif
 #define GEPPROJECT_GEPProjectGameMode_generated_h
 
-#define GEPProject_Source_GEPProject_GEPProjectGameMode_h_16_SPARSE_DATA
-#define GEPProject_Source_GEPProject_GEPProjectGameMode_h_16_RPC_WRAPPERS \
+#define GEPProject_Source_GEPProject_GEPProjectGameMode_h_18_SPARSE_DATA
+#define GEPProject_Source_GEPProject_GEPProjectGameMode_h_18_RPC_WRAPPERS \
 	virtual AGEPProjectGameMode* GetGEPGamemode_Implementation(); \
  \
 	DECLARE_FUNCTION(execUpdateHealthPercent); \
@@ -25,7 +25,7 @@ class AGEPProjectGameMode;
 	DECLARE_FUNCTION(execGetGEPGamemode);
 
 
-#define GEPProject_Source_GEPProject_GEPProjectGameMode_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
+#define GEPProject_Source_GEPProject_GEPProjectGameMode_h_18_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execUpdateHealthPercent); \
 	DECLARE_FUNCTION(execUpdateCurrency); \
@@ -34,7 +34,7 @@ class AGEPProjectGameMode;
 	DECLARE_FUNCTION(execGetGEPGamemode);
 
 
-#define GEPProject_Source_GEPProject_GEPProjectGameMode_h_16_EVENT_PARMS \
+#define GEPProject_Source_GEPProject_GEPProjectGameMode_h_18_EVENT_PARMS \
 	struct GEPProjectGameMode_eventGetGEPGamemode_Parms \
 	{ \
 		AGEPProjectGameMode* ReturnValue; \
@@ -47,8 +47,8 @@ class AGEPProjectGameMode;
 	};
 
 
-#define GEPProject_Source_GEPProject_GEPProjectGameMode_h_16_CALLBACK_WRAPPERS
-#define GEPProject_Source_GEPProject_GEPProjectGameMode_h_16_INCLASS_NO_PURE_DECLS \
+#define GEPProject_Source_GEPProject_GEPProjectGameMode_h_18_CALLBACK_WRAPPERS
+#define GEPProject_Source_GEPProject_GEPProjectGameMode_h_18_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAGEPProjectGameMode(); \
 	friend struct Z_Construct_UClass_AGEPProjectGameMode_Statics; \
@@ -58,7 +58,7 @@ public: \
 	virtual UObject* _getUObject() const override { return const_cast<AGEPProjectGameMode*>(this); }
 
 
-#define GEPProject_Source_GEPProject_GEPProjectGameMode_h_16_INCLASS \
+#define GEPProject_Source_GEPProject_GEPProjectGameMode_h_18_INCLASS \
 private: \
 	static void StaticRegisterNativesAGEPProjectGameMode(); \
 	friend struct Z_Construct_UClass_AGEPProjectGameMode_Statics; \
@@ -68,7 +68,7 @@ public: \
 	virtual UObject* _getUObject() const override { return const_cast<AGEPProjectGameMode*>(this); }
 
 
-#define GEPProject_Source_GEPProject_GEPProjectGameMode_h_16_STANDARD_CONSTRUCTORS \
+#define GEPProject_Source_GEPProject_GEPProjectGameMode_h_18_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AGEPProjectGameMode(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AGEPProjectGameMode) \
@@ -81,7 +81,7 @@ private: \
 public:
 
 
-#define GEPProject_Source_GEPProject_GEPProjectGameMode_h_16_ENHANCED_CONSTRUCTORS \
+#define GEPProject_Source_GEPProject_GEPProjectGameMode_h_18_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AGEPProjectGameMode(AGEPProjectGameMode&&); \
@@ -92,36 +92,37 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AGEPProjectGameMode); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AGEPProjectGameMode)
 
 
-#define GEPProject_Source_GEPProject_GEPProjectGameMode_h_16_PRIVATE_PROPERTY_OFFSET \
-	FORCEINLINE static uint32 __PPO__playerControllers() { return STRUCT_OFFSET(AGEPProjectGameMode, playerControllers); }
+#define GEPProject_Source_GEPProject_GEPProjectGameMode_h_18_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__playerControllers() { return STRUCT_OFFSET(AGEPProjectGameMode, playerControllers); } \
+	FORCEINLINE static uint32 __PPO__upgrades() { return STRUCT_OFFSET(AGEPProjectGameMode, upgrades); }
 
 
-#define GEPProject_Source_GEPProject_GEPProjectGameMode_h_13_PROLOG \
-	GEPProject_Source_GEPProject_GEPProjectGameMode_h_16_EVENT_PARMS
+#define GEPProject_Source_GEPProject_GEPProjectGameMode_h_15_PROLOG \
+	GEPProject_Source_GEPProject_GEPProjectGameMode_h_18_EVENT_PARMS
 
 
-#define GEPProject_Source_GEPProject_GEPProjectGameMode_h_16_GENERATED_BODY_LEGACY \
+#define GEPProject_Source_GEPProject_GEPProjectGameMode_h_18_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	GEPProject_Source_GEPProject_GEPProjectGameMode_h_16_PRIVATE_PROPERTY_OFFSET \
-	GEPProject_Source_GEPProject_GEPProjectGameMode_h_16_SPARSE_DATA \
-	GEPProject_Source_GEPProject_GEPProjectGameMode_h_16_RPC_WRAPPERS \
-	GEPProject_Source_GEPProject_GEPProjectGameMode_h_16_CALLBACK_WRAPPERS \
-	GEPProject_Source_GEPProject_GEPProjectGameMode_h_16_INCLASS \
-	GEPProject_Source_GEPProject_GEPProjectGameMode_h_16_STANDARD_CONSTRUCTORS \
+	GEPProject_Source_GEPProject_GEPProjectGameMode_h_18_PRIVATE_PROPERTY_OFFSET \
+	GEPProject_Source_GEPProject_GEPProjectGameMode_h_18_SPARSE_DATA \
+	GEPProject_Source_GEPProject_GEPProjectGameMode_h_18_RPC_WRAPPERS \
+	GEPProject_Source_GEPProject_GEPProjectGameMode_h_18_CALLBACK_WRAPPERS \
+	GEPProject_Source_GEPProject_GEPProjectGameMode_h_18_INCLASS \
+	GEPProject_Source_GEPProject_GEPProjectGameMode_h_18_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define GEPProject_Source_GEPProject_GEPProjectGameMode_h_16_GENERATED_BODY \
+#define GEPProject_Source_GEPProject_GEPProjectGameMode_h_18_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	GEPProject_Source_GEPProject_GEPProjectGameMode_h_16_PRIVATE_PROPERTY_OFFSET \
-	GEPProject_Source_GEPProject_GEPProjectGameMode_h_16_SPARSE_DATA \
-	GEPProject_Source_GEPProject_GEPProjectGameMode_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
-	GEPProject_Source_GEPProject_GEPProjectGameMode_h_16_CALLBACK_WRAPPERS \
-	GEPProject_Source_GEPProject_GEPProjectGameMode_h_16_INCLASS_NO_PURE_DECLS \
-	GEPProject_Source_GEPProject_GEPProjectGameMode_h_16_ENHANCED_CONSTRUCTORS \
+	GEPProject_Source_GEPProject_GEPProjectGameMode_h_18_PRIVATE_PROPERTY_OFFSET \
+	GEPProject_Source_GEPProject_GEPProjectGameMode_h_18_SPARSE_DATA \
+	GEPProject_Source_GEPProject_GEPProjectGameMode_h_18_RPC_WRAPPERS_NO_PURE_DECLS \
+	GEPProject_Source_GEPProject_GEPProjectGameMode_h_18_CALLBACK_WRAPPERS \
+	GEPProject_Source_GEPProject_GEPProjectGameMode_h_18_INCLASS_NO_PURE_DECLS \
+	GEPProject_Source_GEPProject_GEPProjectGameMode_h_18_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

@@ -3,9 +3,11 @@
 #pragma once
 
 #include "CoreMinimal.h"
+
+#include "EUpgradeTypes.h"
 #include "Engine/UserDefinedStruct.h"
 #include "Framework/Views/ITypedTableView.h"
-#include "GEPProject/UpgradeTypes.h"
+#include "GEPProject/Upgrades/EUpgradeTypes.h"
 
 #include "Upgrade.generated.h"
 
@@ -20,9 +22,14 @@ struct FUpgrade
 	UPROPERTY(EditAnywhere)
 	float valueMulti;
 	UPROPERTY(EditAnywhere)
-	TEnumAsByte<UpgradeTypes> upgradeType;
+	TEnumAsByte<EUpgradeTypes> upgradeType;
 
-	FUpgrade(float Cost, float MultiValue, TEnumAsByte<UpgradeTypes> UpgradeType)
+	FUpgrade()
+	{
+		cost = 0;
+		valueMulti = 0;
+	}
+	FUpgrade(float Cost, float MultiValue, TEnumAsByte<EUpgradeTypes> UpgradeType)
 	{
 		cost = Cost;
 		valueMulti = MultiValue;

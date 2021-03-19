@@ -43587,10 +43587,10 @@
           <e p="TestBlock.cpp" t="Include" />
           <e p="TestBlock.h" t="Include" />
           <e p="Upgrades" t="Include">
+            <e p="EUpgradeTypes.cpp" t="Include" />
+            <e p="EUpgradeTypes.h" t="Include" />
             <e p="Upgrade.cpp" t="Include" />
             <e p="Upgrade.h" t="Include" />
-            <e p="UpgradeTypes.cpp" t="Include" />
-            <e p="UpgradeTypes.h" t="Include" />
           </e>
           <e p="Weapons" t="Include">
             <e p="GEPProjectProjectile.cpp" t="Include" />

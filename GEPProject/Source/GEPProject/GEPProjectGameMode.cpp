@@ -8,6 +8,7 @@
 #include "Player/GEPPlayerController.h"
 #include "GameFramework/PlayerStart.h"
 #include "Kismet/GameplayStatics.h"
+#include "Upgrades/EUpgradeTypes.h"
 
 AGEPProjectGameMode::AGEPProjectGameMode() : Super()
 {
@@ -69,6 +70,13 @@ void AGEPProjectGameMode::BeginPlay()
 	UGameplayStatics::RemovePlayer(UGameplayStatics::GetPlayerController(GetWorld(), 0), true);
 
 	UGameplayStatics::CreatePlayer(GetWorld());
+
+	for (int i = 0; i < static_cast<int>(EUpgradeTypes::End); ++i)
+	{
+		upgrades.Add(FUpgrade(i,0,static_cast<EUpgradeTypes>(i)));
+		//GEngine->AddOnScreenDebugMessage(-1, 3.0f, FColor::Red, FString::FromInt(upgrades.Num()));
+	}
+	GEngine->AddOnScreenDebugMessage(-1, 3.0f, FColor::Red, FString::FromInt(upgrades[15].cost));
 }
 
 void AGEPProjectGameMode::UpdateCurrency(int newCur)

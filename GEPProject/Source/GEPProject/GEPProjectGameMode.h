@@ -7,6 +7,8 @@
 #include "Components/Widget.h"
 #include "GameFramework/GameModeBase.h"
 #include "Interfaces/GetGEPGamemode.h"
+#include "Upgrades/Upgrade.h"
+
 
 #include "GEPProjectGameMode.generated.h"
 
@@ -48,6 +50,9 @@ protected:
 	void UpdateCurrency(int newCur);
 	UFUNCTION()
 	void UpdateHealthPercent(float newHealthPercent);
+
+	UPROPERTY(EditAnywhere)
+	TArray<FUpgrade> upgrades;
 };
 
 
