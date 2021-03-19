@@ -27,6 +27,7 @@ static inline void FOnDeath_DelegateWrapper(const FMulticastScriptDelegate& OnDe
 	virtual void Init_Implementation(); \
 	virtual void GetShot_Implementation(); \
  \
+	DECLARE_FUNCTION(execShotDeath); \
 	DECLARE_FUNCTION(execEndOfLifetime); \
 	DECLARE_FUNCTION(execGetEnemyBase); \
 	DECLARE_FUNCTION(execInit); \
@@ -35,6 +36,7 @@ static inline void FOnDeath_DelegateWrapper(const FMulticastScriptDelegate& OnDe
 
 #define GEPProject_Source_GEPProject_Enemy_Enemy_Base_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execShotDeath); \
 	DECLARE_FUNCTION(execEndOfLifetime); \
 	DECLARE_FUNCTION(execGetEnemyBase); \
 	DECLARE_FUNCTION(execInit); \
@@ -103,7 +105,8 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AEnemy_Base); \
 	FORCEINLINE static uint32 __PPO__boxMesh() { return STRUCT_OFFSET(AEnemy_Base, boxMesh); } \
 	FORCEINLINE static uint32 __PPO__explosionSound() { return STRUCT_OFFSET(AEnemy_Base, explosionSound); } \
 	FORCEINLINE static uint32 __PPO__explosionParticles() { return STRUCT_OFFSET(AEnemy_Base, explosionParticles); } \
-	FORCEINLINE static uint32 __PPO__currencyToDrop() { return STRUCT_OFFSET(AEnemy_Base, currencyToDrop); }
+	FORCEINLINE static uint32 __PPO__currencyToDrop() { return STRUCT_OFFSET(AEnemy_Base, currencyToDrop); } \
+	FORCEINLINE static uint32 __PPO__damage() { return STRUCT_OFFSET(AEnemy_Base, damage); }
 
 
 #define GEPProject_Source_GEPProject_Enemy_Enemy_Base_h_14_PROLOG \

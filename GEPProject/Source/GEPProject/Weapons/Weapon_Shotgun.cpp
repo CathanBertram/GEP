@@ -43,11 +43,12 @@ bool AWeapon_Shotgun::Fire_Implementation()
 				{
 					IShootable::Execute_GetShot(hit.GetActor());
 				}
+				UGameplayStatics::ApplyDamage(hit.GetActor(), damage, this->GetInstigatorController(), this, TSubclassOf<UDamageType>(UDamageType::StaticClass()));
 				UGameplayStatics::SpawnEmitterAtLocation(world, hitParticle , hit.Location);			
 			}
 		}
 		
 	}
-	world->GetTimerManager().SetTimer(WeaponResetTimerHandle, this, &AWeapon_Hitscan::ResetShoot, shootCooldown);
+	world->GetTimerManager().SetTimer(WeaponResetTimerHandle, this, &AWeapon_Shotgun::ResetShoot, shootCooldown);
 	return true;
 }

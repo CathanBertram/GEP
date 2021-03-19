@@ -8,6 +8,9 @@
 #include "GEPProject/Interfaces/Pawnable.h"
 #include "GameFramework/Character.h"
 #include "GEPProject/GEPSaveGame.h"
+#include "GEPProject/Component/PlayerHealthComponent.h"
+
+
 
 #include "GEPProjectCharacter.generated.h"
 
@@ -25,6 +28,9 @@ class AGEPProjectCharacter : public ACharacter, public IInputable, public IInita
 	/** First person camera */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
 	class UCameraComponent* FirstPersonCameraComponent;
+
+	UPROPERTY(EditAnywhere)
+	class UPlayerHealthComponent* healthComponent;
 
 public:
 	AGEPProjectCharacter();
@@ -134,10 +140,8 @@ private:
 	float interactRange;
 
 	UPROPERTY(EditAnywhere, Category = "PlayerVariables")
-	float maxHealth;
-	UPROPERTY(EditAnywhere, Category = "PlayerVariables")
-	float currentHealth;
-
+	bool canBeDamaged;
+	
 	void SwitchWeapon(int i);
 
 	int currency;
@@ -145,7 +149,9 @@ private:
     void GainCurrency(int curToGain);
 	UFUNCTION()
     void LoseCurrency(int curToLose);
-
+	UFUNCTION()
+	void DamagePlayer(float damageAmount);
+	
 	UFUNCTION()
 	void Save(UGEPSaveGame* saveInstance);
 	UFUNCTION()
@@ -153,6 +159,7 @@ private:
 
 	UFUNCTION()
 	void UnlockWeapon(TSubclassOf<AActor> weaponToUnlock, int cost);
+
 public:
 	/** Returns FirstPersonCameraComponent subobject **/
 	FORCEINLINE class UCameraComponent* GetFirstPersonCameraComponent() const { return FirstPersonCameraComponent; }

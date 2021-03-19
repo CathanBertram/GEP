@@ -1,6 +1,9 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
 #include "GEPProjectCharacter.h"
+
+#include <concrt.h>
+
 #include "GEPProject/Weapons/GEPProjectProjectile.h"
 #include "Camera/CameraComponent.h"
 #include "Components/CapsuleComponent.h"
@@ -10,13 +13,11 @@
 #include "GEPProject/Interfaces/Interactable.h"
 #include "GameFramework/Pawn.h"
 #include "GEPProject/EventSystem.h"
+#include "GEPProject/Component/PlayerHealthComponent.h"
 #include "GEPProject/Interfaces/FireReleaseable.h"
 #include "Kismet/GameplayStatics.h"
 
 DEFINE_LOG_CATEGORY_STATIC(LogFPChar, Warning, All);
-
-//////////////////////////////////////////////////////////////////////////
-// AGEPProjectCharacter
 
 AGEPProjectCharacter::AGEPProjectCharacter() : Super()
 {
@@ -30,8 +31,6 @@ AGEPProjectCharacter::AGEPProjectCharacter() : Super()
 	MouseLookUpRate = 1.f;
 
 	interactRange = 300.f;
-	maxHealth = 100.f;
-	currentHealth = maxHealth;
 	
 	// Create a CameraComponent	
 	FirstPersonCameraComponent = CreateDefaultSubobject<UCameraComponent>(TEXT("FirstPersonCamera"));
@@ -42,8 +41,10 @@ AGEPProjectCharacter::AGEPProjectCharacter() : Super()
 	equippedWeapon = CreateDefaultSubobject<UChildActorComponent>(TEXT("GunSlot"));
 	equippedWeapon->SetupAttachment(FirstPersonCameraComponent);
 	equippedWeapon->CreateChildActor();
-}
 
+	healthComponent = CreateDefaultSubobject<UPlayerHealthComponent>(TEXT("HealthComponent"));
+
+}
 
 APawn* AGEPProjectCharacter::GetAsPawn_Implementation()
 {
@@ -55,6 +56,8 @@ void AGEPProjectCharacter::Save(UGEPSaveGame* saveInstance)
 	saveInstance->currency = currency;
 	saveInstance->transform = GetTransform();
 	saveInstance->unlockedWeapons = unlockedWeaponArray;
+	saveInstance->curHealth = healthComponent->GetCurHealth();
+	saveInstance->maxHealth = healthComponent->GetMaxHealth();
 }
 
 void AGEPProjectCharacter::Load(UGEPSaveGame* saveInstance)
@@ -62,7 +65,12 @@ void AGEPProjectCharacter::Load(UGEPSaveGame* saveInstance)
 	currency = saveInstance->currency;
 	SetActorTransform(saveInstance->transform);
 	unlockedWeaponArray = saveInstance->unlockedWeapons;
-	GetGameInstance()->GetSubsystem<UEventSystem>()->OnCurrencyUpdate(currency);
+	healthComponent->SetMaxHealth(saveInstance->maxHealth);
+	healthComponent->SetCurHealth(saveInstance->curHealth);
+	
+	UEventSystem* eventSystem = GetGameInstance()->GetSubsystem<UEventSystem>();
+	eventSystem->OnCurrencyUpdate(currency);
+	eventSystem->OnHealthUpdate(healthComponent->GetHealthPercent());
 }
 
 void AGEPProjectCharacter::UnlockWeapon(TSubclassOf<AActor> weaponToUnlock, int cost)
@@ -85,6 +93,15 @@ void AGEPProjectCharacter::LoseCurrency(int curToLose)
 	currency -= curToLose;
 	GetGameInstance()->GetSubsystem<UEventSystem>()->OnCurrencyUpdate(currency);
 }
+
+void AGEPProjectCharacter::DamagePlayer(float damageAmount)
+{
+	if(canBeDamaged)
+	{
+		//GetGameInstance()->GetSubsystem<UEventSystem>()->OnHealthUpdate(healthComponent->GetHealthPercent());
+	}
+}
+
 void AGEPProjectCharacter::Init_Implementation()
 {
 	currency = 0;
@@ -94,6 +111,13 @@ void AGEPProjectCharacter::Init_Implementation()
 	eventSystemInstance->onSave.AddDynamic(this, &AGEPProjectCharacter::Save);
 	eventSystemInstance->onLoad.AddDynamic(this, &AGEPProjectCharacter::Load);
 	eventSystemInstance->onUnlockWeapon.AddDynamic(this, &AGEPProjectCharacter::UnlockWeapon);
+	eventSystemInstance->onDamagePlayer.AddDynamic(this, &AGEPProjectCharacter::DamagePlayer);
+
+	healthComponent->SetEventInstance(eventSystemInstance);
+	healthComponent->Init();
+	
+
+	eventSystemInstance->OnHealthUpdate(healthComponent->GetHealthPercent());
 	Super::BeginPlay();
 }
 
@@ -215,6 +239,7 @@ void AGEPProjectCharacter::Turn_Implementation(float value)
 	if (value != 0.0f)
 		AddControllerYawInput(value * MouseTurnRate);
 }
+
 
 void AGEPProjectCharacter::SwitchWeapon(int i)
 {

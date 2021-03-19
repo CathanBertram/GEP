@@ -19,11 +19,13 @@ AWeapon_Base::AWeapon_Base()
 	gunMuzzle->SetupAttachment(gunMesh);
 
 }
-
+void AWeapon_Base::ResetShoot()
+{
+	canShoot = true;
+}
 
 bool AWeapon_Base::Fire_Implementation()
 {
-	GEngine->AddOnScreenDebugMessage(-1,5.f,FColor::Red,FString::Printf(TEXT("Firing base weapon class")));
 	return true;
 }
 

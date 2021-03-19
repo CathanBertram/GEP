@@ -5,6 +5,8 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
 #include "GEPProject/Interfaces/Fireable.h"
+#include "Sound/SoundCue.h"
+
 #include "Weapon_Base.generated.h"
 
 UCLASS(Abstract   )
@@ -22,7 +24,7 @@ public:
 
 	FORCEINLINE class USceneComponent* GetGunMuzzle() const {return gunMuzzle;}
 
-private:
+protected:
 	UPROPERTY(VisibleDefaultsOnly)
 	class USceneComponent* root;
 
@@ -32,4 +34,16 @@ private:
 	UPROPERTY(VisibleDefaultsOnly)
 	class USceneComponent* gunMuzzle;
 
+	UPROPERTY(EditAnywhere, Category = "Weapon Variables")
+	float damage;
+	UPROPERTY(EditAnywhere)
+	USoundCue* shootSound;
+	UPROPERTY(EditAnywhere)
+	UParticleSystem* muzzleFlash;
+	UPROPERTY(EditAnywhere, Category = "Weapon Variables")
+	float shootCooldown;
+	bool canShoot = true;
+
+	void ResetShoot();
+	FTimerHandle WeaponResetTimerHandle;
 };

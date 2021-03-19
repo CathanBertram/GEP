@@ -318,73 +318,21 @@
       <ForcedIncludeFiles>$(NMakeForcedIncludes);$(SolutionDir)Intermediate\Build\Win64\UE4Editor\Development\GEPProject\Definitions.GEPProject.h;$(SolutionDir)Intermediate\Build\Win64\GEPProjectEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h</ForcedIncludeFiles>
     </ClCompile>
     <ClInclude Include="..\..\Source\GEPProject\GEPSaveGame.h" />
-    <ClCompile Include="..\..\Source\GEPProject\Interfaces\GetGEPGamemode.cpp">
-      <AssemblerOutput>NoListing</AssemblerOutput>
-      <AssemblerListingLocation>E:\Github\GEP\GEPProject\Intermediate\ProjectFiles\..\Build\Unused\</AssemblerListingLocation>
-      <UndefineAllPreprocessorDefinitions>false</UndefineAllPreprocessorDefinitions>
-      <BrowseInformation>false</BrowseInformation>
-      <BrowseInformationFile>E:\Github\GEP\GEPProject\Intermediate\ProjectFiles\..\Build\Unused\</BrowseInformationFile>
-      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
-      <CompileAs>Default</CompileAs>
-      <ConformanceMode>false</ConformanceMode>
-      <DiagnosticsFormat>Column</DiagnosticsFormat>
-      <DisableLanguageExtensions>false</DisableLanguageExtensions>
-      <ErrorReporting>Prompt</ErrorReporting>
-      <ExpandAttributedSource>false</ExpandAttributedSource>
-      <ExceptionHandling>Sync</ExceptionHandling>
-      <EnableASAN>false</EnableASAN>
-      <EnableFiberSafeOptimizations>false</EnableFiberSafeOptimizations>
-      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
-      <FloatingPointModel>Precise</FloatingPointModel>
-      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
-      <ForcedIncludeFiles>;E:\Github\GEP\GEPProject\Intermediate\Build\Win64\UE4Editor\Development\GEPProject\Definitions.GEPProject.h;E:\Github\GEP\GEPProject\Intermediate\Build\Win64\GEPProjectEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h</ForcedIncludeFiles>
-      <GenerateXMLDocumentationFiles>false</GenerateXMLDocumentationFiles>
-      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
-      <IntrinsicFunctions>false</IntrinsicFunctions>
-      <IgnoreStandardIncludePath>false</IgnoreStandardIncludePath>
-      <LanguageStandard>Default</LanguageStandard>
-      <MinimalRebuild>false</MinimalRebuild>
-      <OmitDefaultLibName>false</OmitDefaultLibName>
-      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
-      <WholeProgramOptimization>false</WholeProgramOptimization>
-      <Optimization>MaxSpeed</Optimization>
-      <ObjectFileName>E:\Github\GEP\GEPProject\Intermediate\ProjectFiles\..\Build\Unused\</ObjectFileName>
-      <CallingConvention>Cdecl</CallingConvention>
-      <ProgramDataBaseFileName>E:\Github\GEP\GEPProject\Intermediate\ProjectFiles\..\Build\Unused\vc142.pdb</ProgramDataBaseFileName>
-      <PrecompiledHeader>NotUsing</PrecompiledHeader>
-      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
-      <PrecompiledHeaderOutputFile>E:\Github\GEP\GEPProject\Intermediate\ProjectFiles\..\Build\Unused\GEPProject.pch</PrecompiledHeaderOutputFile>
-      <PreprocessToFile>false</PreprocessToFile>
-      <PreprocessKeepComments>false</PreprocessKeepComments>
-      <PreprocessSuppressLineNumbers>false</PreprocessSuppressLineNumbers>
-      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
-      <RuntimeLibrary>MultiThreadedDll</RuntimeLibrary>
-      <ShowIncludes>false</ShowIncludes>
-      <SuppressStartupBanner>true</SuppressStartupBanner>
-      <BufferSecurityCheck>true</BufferSecurityCheck>
-      <SmallerTypeCheck>false</SmallerTypeCheck>
-      <SpectreMitigation>false</SpectreMitigation>
-      <StructMemberAlignment>Default</StructMemberAlignment>
-      <SupportJustMyCode>false</SupportJustMyCode>
-      <MinimalRebuildFromTracking>true</MinimalRebuildFromTracking>
-      <TreatWarningAsError>false</TreatWarningAsError>
-      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
-      <UseFullPaths>true</UseFullPaths>
-      <WarningLevel>Level1</WarningLevel>
-      <XMLDocumentationFileName>E:\Github\GEP\GEPProject\Intermediate\ProjectFiles\..\Build\Unused\</XMLDocumentationFileName>
-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
-      <AdditionalIncludeDirectories>;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PxShared\include;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PxShared\include\cudamanager;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PxShared\include\filebuf;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PxShared\include\foundation;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PxShared\include\pvd;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PxShared\include\task;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PhysX_3.4\Include;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PhysX_3.4\Include\cooking;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PhysX_3.4\Include\common;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PhysX_3.4\Include\extensions;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PhysX_3.4\Include\geometry;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\include;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\include\clothing;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\include\nvparameterized;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\include\legacy;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\include\PhysX3;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\common\include;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\common\include\autogen;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\framework\include;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\framework\include\autogen;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\shared\general\RenderDebug\public;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\shared\general\PairFilter\include;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\shared\internal\include;</AdditionalIncludeDirectories>
-      <AdditionalOptions>/std:c++14</AdditionalOptions>
-      <Link>GEPProject\Source\GEPProject\Interfaces\GetGEPGamemode.cpp</Link>
-    </ClCompile>
     <ClCompile Include="..\..\Source\GEPProject\TestBlock.cpp">
       <AdditionalIncludeDirectories>$(NMakeIncludeSearchPath);E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PxShared\include;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PxShared\include\cudamanager;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PxShared\include\filebuf;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PxShared\include\foundation;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PxShared\include\pvd;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PxShared\include\task;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PhysX_3.4\Include;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PhysX_3.4\Include\cooking;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PhysX_3.4\Include\common;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PhysX_3.4\Include\extensions;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PhysX_3.4\Include\geometry;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\include;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\include\clothing;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\include\nvparameterized;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\include\legacy;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\include\PhysX3;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\common\include;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\common\include\autogen;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\framework\include;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\framework\include\autogen;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\shared\general\RenderDebug\public;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\shared\general\PairFilter\include;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\shared\internal\include;</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>$(NMakeForcedIncludes);$(SolutionDir)Intermediate\Build\Win64\UE4Editor\Development\GEPProject\Definitions.GEPProject.h;$(SolutionDir)Intermediate\Build\Win64\GEPProjectEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h</ForcedIncludeFiles>
     </ClCompile>
-    <ClInclude Include="..\..\Source\GEPProject\Interfaces\GetGEPGamemode.h">
-      <Link>GEPProject\Source\GEPProject\Interfaces\GetGEPGamemode.h</Link>
-    </ClInclude>
     <ClInclude Include="..\..\Source\GEPProject\TestBlock.h" />
+    <ClCompile Include="..\..\Source\GEPProject\Component\HealthComponent.cpp">
+      <AdditionalIncludeDirectories>$(NMakeIncludeSearchPath);E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PxShared\include;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PxShared\include\cudamanager;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PxShared\include\filebuf;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PxShared\include\foundation;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PxShared\include\pvd;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PxShared\include\task;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PhysX_3.4\Include;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PhysX_3.4\Include\cooking;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PhysX_3.4\Include\common;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PhysX_3.4\Include\extensions;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PhysX_3.4\Include\geometry;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\include;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\include\clothing;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\include\nvparameterized;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\include\legacy;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\include\PhysX3;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\common\include;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\common\include\autogen;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\framework\include;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\framework\include\autogen;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\shared\general\RenderDebug\public;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\shared\general\PairFilter\include;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\shared\internal\include;</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(NMakeForcedIncludes);$(SolutionDir)Intermediate\Build\Win64\UE4Editor\Development\GEPProject\Definitions.GEPProject.h;$(SolutionDir)Intermediate\Build\Win64\GEPProjectEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\GEPProject\Component\HealthComponent.h" />
+    <ClCompile Include="..\..\Source\GEPProject\Component\PlayerHealthComponent.cpp">
+      <AdditionalIncludeDirectories>$(NMakeIncludeSearchPath);E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PxShared\include;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PxShared\include\cudamanager;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PxShared\include\filebuf;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PxShared\include\foundation;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PxShared\include\pvd;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PxShared\include\task;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PhysX_3.4\Include;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PhysX_3.4\Include\cooking;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PhysX_3.4\Include\common;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PhysX_3.4\Include\extensions;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PhysX_3.4\Include\geometry;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\include;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\include\clothing;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\include\nvparameterized;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\include\legacy;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\include\PhysX3;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\common\include;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\common\include\autogen;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\framework\include;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\framework\include\autogen;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\shared\general\RenderDebug\public;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\shared\general\PairFilter\include;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\shared\internal\include;</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(NMakeForcedIncludes);$(SolutionDir)Intermediate\Build\Win64\UE4Editor\Development\GEPProject\Definitions.GEPProject.h;$(SolutionDir)Intermediate\Build\Win64\GEPProjectEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\GEPProject\Component\PlayerHealthComponent.h" />
     <ClCompile Include="..\..\Source\GEPProject\Enemy\EnemySpawner.cpp">
       <AdditionalIncludeDirectories>$(NMakeIncludeSearchPath);E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PxShared\include;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PxShared\include\cudamanager;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PxShared\include\filebuf;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PxShared\include\foundation;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PxShared\include\pvd;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PxShared\include\task;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PhysX_3.4\Include;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PhysX_3.4\Include\cooking;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PhysX_3.4\Include\common;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PhysX_3.4\Include\extensions;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PhysX_3.4\Include\geometry;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\include;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\include\clothing;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\include\nvparameterized;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\include\legacy;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\include\PhysX3;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\common\include;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\common\include\autogen;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\framework\include;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\framework\include\autogen;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\shared\general\RenderDebug\public;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\shared\general\PairFilter\include;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\shared\internal\include;</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>$(NMakeForcedIncludes);$(SolutionDir)Intermediate\Build\Win64\UE4Editor\Development\GEPProject\Definitions.GEPProject.h;$(SolutionDir)Intermediate\Build\Win64\GEPProjectEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h</ForcedIncludeFiles>
@@ -405,6 +353,11 @@
       <ForcedIncludeFiles>$(NMakeForcedIncludes);$(SolutionDir)Intermediate\Build\Win64\UE4Editor\Development\GEPProject\Definitions.GEPProject.h;$(SolutionDir)Intermediate\Build\Win64\GEPProjectEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h</ForcedIncludeFiles>
     </ClCompile>
     <ClInclude Include="..\..\Source\GEPProject\Interfaces\FireReleaseable.h" />
+    <ClCompile Include="..\..\Source\GEPProject\Interfaces\GetGEPGamemode.cpp">
+      <AdditionalIncludeDirectories>$(NMakeIncludeSearchPath);E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PxShared\include;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PxShared\include\cudamanager;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PxShared\include\filebuf;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PxShared\include\foundation;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PxShared\include\pvd;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PxShared\include\task;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PhysX_3.4\Include;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PhysX_3.4\Include\cooking;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PhysX_3.4\Include\common;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PhysX_3.4\Include\extensions;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PhysX_3.4\Include\geometry;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\include;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\include\clothing;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\include\nvparameterized;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\include\legacy;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\include\PhysX3;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\common\include;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\common\include\autogen;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\framework\include;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\framework\include\autogen;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\shared\general\RenderDebug\public;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\shared\general\PairFilter\include;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\shared\internal\include;</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(NMakeForcedIncludes);$(SolutionDir)Intermediate\Build\Win64\UE4Editor\Development\GEPProject\Definitions.GEPProject.h;$(SolutionDir)Intermediate\Build\Win64\GEPProjectEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\GEPProject\Interfaces\GetGEPGamemode.h" />
     <ClCompile Include="..\..\Source\GEPProject\Interfaces\GetGEPSaveGame.cpp">
       <AdditionalIncludeDirectories>$(NMakeIncludeSearchPath);E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PxShared\include;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PxShared\include\cudamanager;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PxShared\include\filebuf;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PxShared\include\foundation;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PxShared\include\pvd;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PxShared\include\task;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PhysX_3.4\Include;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PhysX_3.4\Include\cooking;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PhysX_3.4\Include\common;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PhysX_3.4\Include\extensions;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PhysX_3.4\Include\geometry;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\include;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\include\clothing;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\include\nvparameterized;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\include\legacy;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\include\PhysX3;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\common\include;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\common\include\autogen;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\framework\include;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\framework\include\autogen;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\shared\general\RenderDebug\public;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\shared\general\PairFilter\include;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\shared\internal\include;</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>$(NMakeForcedIncludes);$(SolutionDir)Intermediate\Build\Win64\UE4Editor\Development\GEPProject\Definitions.GEPProject.h;$(SolutionDir)Intermediate\Build\Win64\GEPProjectEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h</ForcedIncludeFiles>
@@ -475,10 +428,72 @@
       <ForcedIncludeFiles>$(NMakeForcedIncludes);$(SolutionDir)Intermediate\Build\Win64\UE4Editor\Development\GEPProject\Definitions.GEPProject.h;$(SolutionDir)Intermediate\Build\Win64\GEPProjectEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h</ForcedIncludeFiles>
     </ClCompile>
     <ClInclude Include="..\..\Source\GEPProject\Weapons\GEPProjectProjectile.h" />
+    <ClCompile Include="..\..\Source\GEPProject\Weapons\GrenadeProjectile.cpp">
+      <AssemblerOutput>NoListing</AssemblerOutput>
+      <AssemblerListingLocation>E:\Github\GEP\GEPProject\Intermediate\ProjectFiles\..\Build\Unused\</AssemblerListingLocation>
+      <UndefineAllPreprocessorDefinitions>false</UndefineAllPreprocessorDefinitions>
+      <BrowseInformation>false</BrowseInformation>
+      <BrowseInformationFile>E:\Github\GEP\GEPProject\Intermediate\ProjectFiles\..\Build\Unused\</BrowseInformationFile>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <CompileAs>Default</CompileAs>
+      <ConformanceMode>false</ConformanceMode>
+      <DiagnosticsFormat>Column</DiagnosticsFormat>
+      <DisableLanguageExtensions>false</DisableLanguageExtensions>
+      <ErrorReporting>Prompt</ErrorReporting>
+      <ExpandAttributedSource>false</ExpandAttributedSource>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <EnableASAN>false</EnableASAN>
+      <EnableFiberSafeOptimizations>false</EnableFiberSafeOptimizations>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <ForcedIncludeFiles>;E:\Github\GEP\GEPProject\Intermediate\Build\Win64\UE4Editor\Development\GEPProject\Definitions.GEPProject.h;E:\Github\GEP\GEPProject\Intermediate\Build\Win64\GEPProjectEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h</ForcedIncludeFiles>
+      <GenerateXMLDocumentationFiles>false</GenerateXMLDocumentationFiles>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <IgnoreStandardIncludePath>false</IgnoreStandardIncludePath>
+      <LanguageStandard>Default</LanguageStandard>
+      <MinimalRebuild>false</MinimalRebuild>
+      <OmitDefaultLibName>false</OmitDefaultLibName>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <Optimization>MaxSpeed</Optimization>
+      <ObjectFileName>E:\Github\GEP\GEPProject\Intermediate\ProjectFiles\..\Build\Unused\</ObjectFileName>
+      <CallingConvention>Cdecl</CallingConvention>
+      <ProgramDataBaseFileName>E:\Github\GEP\GEPProject\Intermediate\ProjectFiles\..\Build\Unused\vc142.pdb</ProgramDataBaseFileName>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>E:\Github\GEP\GEPProject\Intermediate\ProjectFiles\..\Build\Unused\GEPProject.pch</PrecompiledHeaderOutputFile>
+      <PreprocessToFile>false</PreprocessToFile>
+      <PreprocessKeepComments>false</PreprocessKeepComments>
+      <PreprocessSuppressLineNumbers>false</PreprocessSuppressLineNumbers>
+      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDll</RuntimeLibrary>
+      <ShowIncludes>false</ShowIncludes>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <SmallerTypeCheck>false</SmallerTypeCheck>
+      <SpectreMitigation>false</SpectreMitigation>
+      <StructMemberAlignment>Default</StructMemberAlignment>
+      <SupportJustMyCode>false</SupportJustMyCode>
+      <MinimalRebuildFromTracking>true</MinimalRebuildFromTracking>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <UseFullPaths>true</UseFullPaths>
+      <WarningLevel>Level1</WarningLevel>
+      <XMLDocumentationFileName>E:\Github\GEP\GEPProject\Intermediate\ProjectFiles\..\Build\Unused\</XMLDocumentationFileName>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PxShared\include;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PxShared\include\cudamanager;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PxShared\include\filebuf;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PxShared\include\foundation;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PxShared\include\pvd;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PxShared\include\task;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PhysX_3.4\Include;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PhysX_3.4\Include\cooking;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PhysX_3.4\Include\common;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PhysX_3.4\Include\extensions;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PhysX_3.4\Include\geometry;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\include;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\include\clothing;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\include\nvparameterized;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\include\legacy;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\include\PhysX3;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\common\include;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\common\include\autogen;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\framework\include;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\framework\include\autogen;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\shared\general\RenderDebug\public;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\shared\general\PairFilter\include;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\shared\internal\include;</AdditionalIncludeDirectories>
+      <AdditionalOptions>/std:c++14</AdditionalOptions>
+      <Link>GEPProject\Source\GEPProject\Weapons\GrenadeProjectile.cpp</Link>
+    </ClCompile>
     <ClCompile Include="..\..\Source\GEPProject\Weapons\Weapon_Base.cpp">
       <AdditionalIncludeDirectories>$(NMakeIncludeSearchPath);E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PxShared\include;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PxShared\include\cudamanager;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PxShared\include\filebuf;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PxShared\include\foundation;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PxShared\include\pvd;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PxShared\include\task;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PhysX_3.4\Include;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PhysX_3.4\Include\cooking;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PhysX_3.4\Include\common;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PhysX_3.4\Include\extensions;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PhysX_3.4\Include\geometry;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\include;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\include\clothing;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\include\nvparameterized;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\include\legacy;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\include\PhysX3;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\common\include;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\common\include\autogen;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\framework\include;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\framework\include\autogen;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\shared\general\RenderDebug\public;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\shared\general\PairFilter\include;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\shared\internal\include;</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>$(NMakeForcedIncludes);$(SolutionDir)Intermediate\Build\Win64\UE4Editor\Development\GEPProject\Definitions.GEPProject.h;$(SolutionDir)Intermediate\Build\Win64\GEPProjectEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h</ForcedIncludeFiles>
     </ClCompile>
+    <ClInclude Include="..\..\Source\GEPProject\Weapons\GrenadeProjectile.h">
+      <Link>GEPProject\Source\GEPProject\Weapons\GrenadeProjectile.h</Link>
+    </ClInclude>
     <ClInclude Include="..\..\Source\GEPProject\Weapons\Weapon_Base.h" />
     <ClCompile Include="..\..\Source\GEPProject\Weapons\Weapon_Hitscan.cpp">
       <AdditionalIncludeDirectories>$(NMakeIncludeSearchPath);E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PxShared\include;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PxShared\include\cudamanager;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PxShared\include\filebuf;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PxShared\include\foundation;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PxShared\include\pvd;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PxShared\include\task;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PhysX_3.4\Include;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PhysX_3.4\Include\cooking;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PhysX_3.4\Include\common;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PhysX_3.4\Include\extensions;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\PhysX_3.4\Include\geometry;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\include;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\include\clothing;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\include\nvparameterized;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\include\legacy;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\include\PhysX3;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\common\include;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\common\include\autogen;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\framework\include;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\framework\include\autogen;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\shared\general\RenderDebug\public;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\shared\general\PairFilter\include;E:\epk\UE_4.25\Engine\Source\ThirdParty\PhysX3\APEX_1.4\shared\internal\include;</AdditionalIncludeDirectories>

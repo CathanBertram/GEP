@@ -60,10 +60,6 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AWeapon_Hitscan); \
 
 #define GEPProject_Source_GEPProject_Weapons_Weapon_Hitscan_h_15_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__range() { return STRUCT_OFFSET(AWeapon_Hitscan, range); } \
-	FORCEINLINE static uint32 __PPO__shootCooldown() { return STRUCT_OFFSET(AWeapon_Hitscan, shootCooldown); } \
-	FORCEINLINE static uint32 __PPO__damage() { return STRUCT_OFFSET(AWeapon_Hitscan, damage); } \
-	FORCEINLINE static uint32 __PPO__shootSound() { return STRUCT_OFFSET(AWeapon_Hitscan, shootSound); } \
-	FORCEINLINE static uint32 __PPO__muzzleFlash() { return STRUCT_OFFSET(AWeapon_Hitscan, muzzleFlash); } \
 	FORCEINLINE static uint32 __PPO__hitParticle() { return STRUCT_OFFSET(AWeapon_Hitscan, hitParticle); }
 
 

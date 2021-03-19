@@ -18,25 +18,15 @@ public:
 	virtual bool Fire_Implementation() override;
 
 	AWeapon_Hitscan();
-	void ResetShoot();
+
 protected:
 	UPROPERTY(EditAnywhere, Category = "Weapon Variables")
 	float range;
-	UPROPERTY(EditAnywhere, Category = "Weapon Variables")
-	float shootCooldown;
-	UPROPERTY(EditAnywhere, Category = "Weapon Variables")
-	float damage;
-	UPROPERTY(EditAnywhere)
-	USoundCue* shootSound;
-	UPROPERTY(EditAnywhere)
-	UParticleSystem* muzzleFlash;
-	UPROPERTY(EditAnywhere)
-	UParticleSystem* hitParticle;
 
-	bool canShoot = true;
 	
 	virtual void Shoot();
 
-	FTimerHandle WeaponResetTimerHandle;
+	UPROPERTY(EditAnywhere)
+	UParticleSystem* hitParticle;
 	
 };

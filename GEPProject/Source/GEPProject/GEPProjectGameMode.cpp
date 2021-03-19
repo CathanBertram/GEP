@@ -62,7 +62,10 @@ AGEPProjectGameMode* AGEPProjectGameMode::GetGEPGamemode_Implementation()
 
 void AGEPProjectGameMode::BeginPlay()
 {
-	GetGameInstance()->GetSubsystem<UEventSystem>()->onCurrencyUpdate.AddDynamic(this, &AGEPProjectGameMode::UpdateCurrency);
+	UEventSystem* eventSystem = GetGameInstance()->GetSubsystem<UEventSystem>();
+	eventSystem->onCurrencyUpdate.AddDynamic(this, &AGEPProjectGameMode::UpdateCurrency);
+	eventSystem->onHealthUpdate.AddDynamic(this, &AGEPProjectGameMode::UpdateHealthPercent);
+	
 	UGameplayStatics::RemovePlayer(UGameplayStatics::GetPlayerController(GetWorld(), 0), true);
 
 	UGameplayStatics::CreatePlayer(GetWorld());
@@ -71,5 +74,10 @@ void AGEPProjectGameMode::BeginPlay()
 void AGEPProjectGameMode::UpdateCurrency(int newCur)
 {
 	currency = newCur;
+}
+
+void AGEPProjectGameMode::UpdateHealthPercent(float newHealthPercent)
+{
+	healthPercent = newHealthPercent;
 }
 

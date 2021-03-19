@@ -21,6 +21,8 @@ class GEPPROJECT_API AEnemy_Base : public AActor, public IShootable, public IIni
 public:	
 	// Sets default values for this actor's properties
 	AEnemy_Base();
+	UPROPERTY(EditAnywhere)
+	class UHealthComponent* healthComponent;
 	
 	UFUNCTION(BlueprintCallable,BlueprintNativeEvent)
     void GetShot();
@@ -46,7 +48,14 @@ protected:
 
 	UPROPERTY(EditAnywhere)
 	int currencyToDrop;
-	
+
+	UPROPERTY(EditAnywhere)
+	float damage;
+
 	void Death();
+	
+	UFUNCTION()
+	void ShotDeath();
+	
 };
 

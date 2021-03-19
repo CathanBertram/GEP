@@ -32,6 +32,8 @@ public:
 
 	UFUNCTION(BlueprintCallable)
 	int GetCurrency(){return currency;}
+	UFUNCTION(BlueprintCallable)
+	float GetHealthPercent(){return healthPercent;}
 
 protected:
 	TArray<AActor*> playerStarts;
@@ -41,9 +43,11 @@ protected:
 
 	virtual void BeginPlay() override;
 	int currency;
-
+	float healthPercent;
 	UFUNCTION()
 	void UpdateCurrency(int newCur);
+	UFUNCTION()
+	void UpdateHealthPercent(float newHealthPercent);
 };
 
 

@@ -18,7 +18,7 @@ void EmptyLinkFunctionForGeneratedCodeWeapon_Projectile() {}
 	GEPPROJECT_API UClass* Z_Construct_UClass_AWeapon_Base();
 	UPackage* Z_Construct_UPackage__Script_GEPProject();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
-	GEPPROJECT_API UClass* Z_Construct_UClass_AGEPProjectProjectile_NoRegister();
+	GEPPROJECT_API UClass* Z_Construct_UClass_AGrenadeProjectile_NoRegister();
 // End Cross Module References
 	void AWeapon_Projectile::StaticRegisterNativesAWeapon_Projectile()
 	{
@@ -33,6 +33,10 @@ void EmptyLinkFunctionForGeneratedCodeWeapon_Projectile() {}
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_damageRadius_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_damageRadius;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_projectile_MetaData[];
 #endif
@@ -53,13 +57,21 @@ void EmptyLinkFunctionForGeneratedCodeWeapon_Projectile() {}
 	};
 #endif
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AWeapon_Projectile_Statics::NewProp_damageRadius_MetaData[] = {
+		{ "Category", "Weapon_Projectile" },
+		{ "ModuleRelativePath", "Weapons/Weapon_Projectile.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AWeapon_Projectile_Statics::NewProp_damageRadius = { "damageRadius", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AWeapon_Projectile, damageRadius), METADATA_PARAMS(Z_Construct_UClass_AWeapon_Projectile_Statics::NewProp_damageRadius_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AWeapon_Projectile_Statics::NewProp_damageRadius_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AWeapon_Projectile_Statics::NewProp_projectile_MetaData[] = {
 		{ "Category", "Projectile" },
 		{ "ModuleRelativePath", "Weapons/Weapon_Projectile.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AWeapon_Projectile_Statics::NewProp_projectile = { "projectile", nullptr, (EPropertyFlags)0x0044000000000001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AWeapon_Projectile, projectile), Z_Construct_UClass_AGEPProjectProjectile_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AWeapon_Projectile_Statics::NewProp_projectile_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AWeapon_Projectile_Statics::NewProp_projectile_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AWeapon_Projectile_Statics::NewProp_projectile = { "projectile", nullptr, (EPropertyFlags)0x0044000000000001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AWeapon_Projectile, projectile), Z_Construct_UClass_AGrenadeProjectile_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AWeapon_Projectile_Statics::NewProp_projectile_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AWeapon_Projectile_Statics::NewProp_projectile_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AWeapon_Projectile_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWeapon_Projectile_Statics::NewProp_damageRadius,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWeapon_Projectile_Statics::NewProp_projectile,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AWeapon_Projectile_Statics::StaticCppClassTypeInfo = {
@@ -89,7 +101,7 @@ void EmptyLinkFunctionForGeneratedCodeWeapon_Projectile() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AWeapon_Projectile, 4216230501);
+	IMPLEMENT_CLASS(AWeapon_Projectile, 3144212233);
 	template<> GEPPROJECT_API UClass* StaticClass<AWeapon_Projectile>()
 	{
 		return AWeapon_Projectile::StaticClass();

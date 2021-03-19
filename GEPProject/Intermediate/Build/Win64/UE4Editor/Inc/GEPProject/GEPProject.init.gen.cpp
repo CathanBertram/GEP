@@ -11,36 +11,42 @@
 #endif
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeGEPProject_init() {}
-	GEPPROJECT_API UFunction* Z_Construct_UDelegateFunction_GEPProject_OnDeath__DelegateSignature();
+	GEPPROJECT_API UFunction* Z_Construct_UDelegateFunction_GEPProject_Death__DelegateSignature();
 	GEPPROJECT_API UFunction* Z_Construct_UDelegateFunction_GEPProject_OnTrySave__DelegateSignature();
 	GEPPROJECT_API UFunction* Z_Construct_UDelegateFunction_GEPProject_OnCurrencyGain__DelegateSignature();
 	GEPPROJECT_API UFunction* Z_Construct_UDelegateFunction_GEPProject_OnCurrencyLoss__DelegateSignature();
 	GEPPROJECT_API UFunction* Z_Construct_UDelegateFunction_GEPProject_OnCurrencyUpdate__DelegateSignature();
 	GEPPROJECT_API UFunction* Z_Construct_UDelegateFunction_GEPProject_OnSave__DelegateSignature();
 	GEPPROJECT_API UFunction* Z_Construct_UDelegateFunction_GEPProject_OnLoad__DelegateSignature();
+	GEPPROJECT_API UFunction* Z_Construct_UDelegateFunction_GEPProject_OnDamagePlayer__DelegateSignature();
+	GEPPROJECT_API UFunction* Z_Construct_UDelegateFunction_GEPProject_OnHealthUpdate__DelegateSignature();
 	GEPPROJECT_API UFunction* Z_Construct_UDelegateFunction_GEPProject_OnUnlockWeapon__DelegateSignature();
+	GEPPROJECT_API UFunction* Z_Construct_UDelegateFunction_GEPProject_OnDeath__DelegateSignature();
 	UPackage* Z_Construct_UPackage__Script_GEPProject()
 	{
 		static UPackage* ReturnPackage = nullptr;
 		if (!ReturnPackage)
 		{
 			static UObject* (*const SingletonFuncArray[])() = {
-				(UObject* (*)())Z_Construct_UDelegateFunction_GEPProject_OnDeath__DelegateSignature,
+				(UObject* (*)())Z_Construct_UDelegateFunction_GEPProject_Death__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_GEPProject_OnTrySave__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_GEPProject_OnCurrencyGain__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_GEPProject_OnCurrencyLoss__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_GEPProject_OnCurrencyUpdate__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_GEPProject_OnSave__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_GEPProject_OnLoad__DelegateSignature,
+				(UObject* (*)())Z_Construct_UDelegateFunction_GEPProject_OnDamagePlayer__DelegateSignature,
+				(UObject* (*)())Z_Construct_UDelegateFunction_GEPProject_OnHealthUpdate__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_GEPProject_OnUnlockWeapon__DelegateSignature,
+				(UObject* (*)())Z_Construct_UDelegateFunction_GEPProject_OnDeath__DelegateSignature,
 			};
 			static const UE4CodeGen_Private::FPackageParams PackageParams = {
 				"/Script/GEPProject",
 				SingletonFuncArray,
 				UE_ARRAY_COUNT(SingletonFuncArray),
 				PKG_CompiledIn | 0x00000000,
-				0x4BC8D8FF,
-				0xE5A0819C,
+				0x38D6AED7,
+				0xC0A1568D,
 				METADATA_PARAMS(nullptr, 0)
 			};
 			UE4CodeGen_Private::ConstructUPackage(ReturnPackage, PackageParams);

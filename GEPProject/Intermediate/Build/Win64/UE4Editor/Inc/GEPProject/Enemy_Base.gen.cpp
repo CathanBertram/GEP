@@ -20,6 +20,7 @@ void EmptyLinkFunctionForGeneratedCodeEnemy_Base() {}
 	ENGINE_API UClass* Z_Construct_UClass_AActor();
 	ENGINE_API UClass* Z_Construct_UClass_UParticleSystem_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_USoundCue_NoRegister();
+	GEPPROJECT_API UClass* Z_Construct_UClass_UHealthComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
 	GEPPROJECT_API UClass* Z_Construct_UClass_UShootable_NoRegister();
 	GEPPROJECT_API UClass* Z_Construct_UClass_UInitableEnemy_NoRegister();
@@ -45,6 +46,13 @@ void EmptyLinkFunctionForGeneratedCodeEnemy_Base() {}
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UDelegateFunction_GEPProject_OnDeath__DelegateSignature_Statics::FuncParams);
 		}
 		return ReturnFunction;
+	}
+	DEFINE_FUNCTION(AEnemy_Base::execShotDeath)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->ShotDeath();
+		P_NATIVE_END;
 	}
 	DEFINE_FUNCTION(AEnemy_Base::execEndOfLifetime)
 	{
@@ -99,6 +107,7 @@ void EmptyLinkFunctionForGeneratedCodeEnemy_Base() {}
 			{ "GetEnemyBase", &AEnemy_Base::execGetEnemyBase },
 			{ "GetShot", &AEnemy_Base::execGetShot },
 			{ "Init", &AEnemy_Base::execInit },
+			{ "ShotDeath", &AEnemy_Base::execShotDeath },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 	}
@@ -197,6 +206,28 @@ void EmptyLinkFunctionForGeneratedCodeEnemy_Base() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_AEnemy_Base_ShotDeath_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AEnemy_Base_ShotDeath_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Enemy/Enemy_Base.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AEnemy_Base_ShotDeath_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AEnemy_Base, nullptr, "ShotDeath", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AEnemy_Base_ShotDeath_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AEnemy_Base_ShotDeath_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AEnemy_Base_ShotDeath()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AEnemy_Base_ShotDeath_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	UClass* Z_Construct_UClass_AEnemy_Base_NoRegister()
 	{
 		return AEnemy_Base::StaticClass();
@@ -209,6 +240,10 @@ void EmptyLinkFunctionForGeneratedCodeEnemy_Base() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_damage_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_damage;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_currencyToDrop_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_currencyToDrop;
@@ -220,6 +255,10 @@ void EmptyLinkFunctionForGeneratedCodeEnemy_Base() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_explosionSound_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_explosionSound;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_healthComponent_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_healthComponent;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_boxMesh_MetaData[];
 #endif
@@ -238,6 +277,7 @@ void EmptyLinkFunctionForGeneratedCodeEnemy_Base() {}
 		{ &Z_Construct_UFunction_AEnemy_Base_GetEnemyBase, "GetEnemyBase" }, // 3826034000
 		{ &Z_Construct_UFunction_AEnemy_Base_GetShot, "GetShot" }, // 2137493694
 		{ &Z_Construct_UFunction_AEnemy_Base_Init, "Init" }, // 945405902
+		{ &Z_Construct_UFunction_AEnemy_Base_ShotDeath, "ShotDeath" }, // 3416196071
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AEnemy_Base_Statics::Class_MetaDataParams[] = {
@@ -245,6 +285,13 @@ void EmptyLinkFunctionForGeneratedCodeEnemy_Base() {}
 		{ "ModuleRelativePath", "Enemy/Enemy_Base.h" },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AEnemy_Base_Statics::NewProp_damage_MetaData[] = {
+		{ "Category", "Enemy_Base" },
+		{ "ModuleRelativePath", "Enemy/Enemy_Base.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AEnemy_Base_Statics::NewProp_damage = { "damage", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AEnemy_Base, damage), METADATA_PARAMS(Z_Construct_UClass_AEnemy_Base_Statics::NewProp_damage_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AEnemy_Base_Statics::NewProp_damage_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AEnemy_Base_Statics::NewProp_currencyToDrop_MetaData[] = {
 		{ "Category", "Enemy_Base" },
@@ -267,6 +314,14 @@ void EmptyLinkFunctionForGeneratedCodeEnemy_Base() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AEnemy_Base_Statics::NewProp_explosionSound = { "explosionSound", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AEnemy_Base, explosionSound), Z_Construct_UClass_USoundCue_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AEnemy_Base_Statics::NewProp_explosionSound_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AEnemy_Base_Statics::NewProp_explosionSound_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AEnemy_Base_Statics::NewProp_healthComponent_MetaData[] = {
+		{ "Category", "Enemy_Base" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Enemy/Enemy_Base.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AEnemy_Base_Statics::NewProp_healthComponent = { "healthComponent", nullptr, (EPropertyFlags)0x0010000000080009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AEnemy_Base, healthComponent), Z_Construct_UClass_UHealthComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AEnemy_Base_Statics::NewProp_healthComponent_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AEnemy_Base_Statics::NewProp_healthComponent_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AEnemy_Base_Statics::NewProp_boxMesh_MetaData[] = {
 		{ "Category", "Enemy_Base" },
 		{ "EditInline", "true" },
@@ -275,9 +330,11 @@ void EmptyLinkFunctionForGeneratedCodeEnemy_Base() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AEnemy_Base_Statics::NewProp_boxMesh = { "boxMesh", nullptr, (EPropertyFlags)0x0040000000080009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AEnemy_Base, boxMesh), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AEnemy_Base_Statics::NewProp_boxMesh_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AEnemy_Base_Statics::NewProp_boxMesh_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AEnemy_Base_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemy_Base_Statics::NewProp_damage,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemy_Base_Statics::NewProp_currencyToDrop,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemy_Base_Statics::NewProp_explosionParticles,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemy_Base_Statics::NewProp_explosionSound,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemy_Base_Statics::NewProp_healthComponent,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemy_Base_Statics::NewProp_boxMesh,
 	};
 		const UE4CodeGen_Private::FImplementedInterfaceParams Z_Construct_UClass_AEnemy_Base_Statics::InterfaceParams[] = {
@@ -311,7 +368,7 @@ void EmptyLinkFunctionForGeneratedCodeEnemy_Base() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AEnemy_Base, 831891500);
+	IMPLEMENT_CLASS(AEnemy_Base, 3672717308);
 	template<> GEPPROJECT_API UClass* StaticClass<AEnemy_Base>()
 	{
 		return AEnemy_Base::StaticClass();

@@ -26,11 +26,6 @@ bool AWeapon_Hitscan::Fire_Implementation()
 }
 
 
-void AWeapon_Hitscan::ResetShoot()
-{
-	canShoot = true;
-}
-
 void AWeapon_Hitscan::Shoot()
 {
 	if (!canShoot) return;
@@ -66,6 +61,8 @@ void AWeapon_Hitscan::Shoot()
 			{
 				IShootable::Execute_GetShot(hit.GetActor());
 			}
+			//Use this to damage enemies
+			UGameplayStatics::ApplyDamage(hit.GetActor(), damage, this->GetInstigatorController(), this, TSubclassOf<UDamageType>(UDamageType::StaticClass()));
 			UGameplayStatics::SpawnEmitterAtLocation(world, hitParticle , hit.Location);	
 		}
 	}

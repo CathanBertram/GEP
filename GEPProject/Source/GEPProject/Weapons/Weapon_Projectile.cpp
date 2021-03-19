@@ -6,10 +6,13 @@
 #include "Engine/World.h"
 #include "Components/ArrowComponent.h"
 #include "GEPProject/Interfaces/Pawnable.h"
+#include "Kismet/GameplayStatics.h"
 
 bool AWeapon_Projectile::Fire_Implementation()
 {
-	GEngine->AddOnScreenDebugMessage(-1,5.f,FColor::Red, FString::Printf(TEXT("Firing proj weapon")));
+	if (!canShoot) return false;
+
+	canShoot = false;
 	UWorld* const world = GetWorld();
 	if (world != nullptr && projectile != nullptr)
 	{
@@ -17,14 +20,19 @@ bool AWeapon_Projectile::Fire_Implementation()
 		FVector spawnLocation = ((muzzle != nullptr) ? muzzle->GetComponentLocation() : GetActorLocation());
 		FRotator spawnRotation = ((muzzle != nullptr) ? muzzle->GetComponentRotation() : GetActorRotation());
 
+		UGameplayStatics::PlaySound2D(world, shootSound);
+		UGameplayStatics::SpawnEmitterAtLocation(world, muzzleFlash , muzzle->GetComponentLocation());
+		
 		FActorSpawnParameters actorSpawnParams;
-		actorSpawnParams.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AdjustIfPossibleButDontSpawnIfColliding;
+		actorSpawnParams.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AdjustIfPossibleButAlwaysSpawn;
 		AActor* parentActor = GetParentActor();
 		actorSpawnParams.Owner = parentActor;
 		actorSpawnParams.Instigator = Cast<IPawnable>(parentActor)->Execute_GetAsPawn(parentActor);
-
-		world->SpawnActor<AGEPProjectProjectile>(projectile, spawnLocation, spawnRotation, actorSpawnParams);
+		AGrenadeProjectile* grenadeProjectile =	world->SpawnActor<AGrenadeProjectile>(projectile, spawnLocation, spawnRotation, actorSpawnParams);
+		grenadeProjectile->Init(damage, damageRadius);
 	}
+
+	world->GetTimerManager().SetTimer(WeaponResetTimerHandle, this, &AWeapon_Projectile::ResetShoot, shootCooldown);
 	return true;
 }
 

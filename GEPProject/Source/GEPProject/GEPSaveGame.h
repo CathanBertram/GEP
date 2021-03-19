@@ -28,5 +28,9 @@ public:
 	int currency;
 	UPROPERTY(EditAnywhere)
 	TArray<TSubclassOf<AActor>> unlockedWeapons;
+	UPROPERTY(EditAnywhere)
+	float curHealth;
+	UPROPERTY(EditAnywhere)
+	float maxHealth;
 
 };

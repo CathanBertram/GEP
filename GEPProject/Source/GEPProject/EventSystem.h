@@ -4,6 +4,8 @@
 
 #include "CoreMinimal.h"
 
+
+#include "EventSystem.h"
 #include "GEPSaveGame.h"
 #include "Subsystems/GameInstanceSubsystem.h"
 #include "EventSystem.generated.h"
@@ -15,6 +17,8 @@ DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnCurrencyLoss, int, curToLose);
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnCurrencyUpdate, int, newCur);
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnSave, UGEPSaveGame*, saveInstance);
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnLoad, UGEPSaveGame*, saveInstance);
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnDamagePlayer, float, damageAmount);
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnHealthUpdate, float, healthPercent);
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FOnUnlockWeapon, TSubclassOf<AActor>, weaponToUnlock, int, cost);
 UCLASS()
 class GEPPROJECT_API UEventSystem : public UGameInstanceSubsystem
@@ -30,6 +34,9 @@ public:
 	FOnCurrencyLoss onCurrencyLoss;
 	void OnCurrencyLoss(int curToLose) {onCurrencyLoss.Broadcast(curToLose);}
 
+	FOnDamagePlayer onDamagePlayer;
+	void OnDamagePlayer(float damageAmount) {onDamagePlayer.Broadcast(damageAmount);}
+	
 	FOnCurrencyUpdate onCurrencyUpdate;
 	void OnCurrencyUpdate(int newCur) {onCurrencyUpdate.Broadcast(newCur);}
 
@@ -39,6 +46,8 @@ public:
 	FOnLoad onLoad;
 	void OnLoad(UGEPSaveGame* saveInstance) {onLoad.Broadcast(saveInstance);}
 
+	FOnHealthUpdate onHealthUpdate;
+	void OnHealthUpdate(float healthPercent) {onHealthUpdate.Broadcast(healthPercent);}
 	FOnUnlockWeapon onUnlockWeapon;
 	void OnUnlockWeapon(TSubclassOf<AActor> weaponToUnlock, int cost) {onUnlockWeapon.Broadcast(weaponToUnlock, cost);}
 };

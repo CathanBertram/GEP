@@ -18,14 +18,18 @@ class AGEPProjectGameMode;
 #define GEPProject_Source_GEPProject_GEPProjectGameMode_h_16_RPC_WRAPPERS \
 	virtual AGEPProjectGameMode* GetGEPGamemode_Implementation(); \
  \
+	DECLARE_FUNCTION(execUpdateHealthPercent); \
 	DECLARE_FUNCTION(execUpdateCurrency); \
+	DECLARE_FUNCTION(execGetHealthPercent); \
 	DECLARE_FUNCTION(execGetCurrency); \
 	DECLARE_FUNCTION(execGetGEPGamemode);
 
 
 #define GEPProject_Source_GEPProject_GEPProjectGameMode_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execUpdateHealthPercent); \
 	DECLARE_FUNCTION(execUpdateCurrency); \
+	DECLARE_FUNCTION(execGetHealthPercent); \
 	DECLARE_FUNCTION(execGetCurrency); \
 	DECLARE_FUNCTION(execGetGEPGamemode);
 
