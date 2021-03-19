@@ -20,6 +20,7 @@ void EmptyLinkFunctionForGeneratedCodePurchaseableWeaponStand() {}
 	GEPPROJECT_API UClass* Z_Construct_UClass_UGEPSaveGame_NoRegister();
 	GEPPROJECT_API UClass* Z_Construct_UClass_AGEPProjectCharacter_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UBoxComponent_NoRegister();
+	ENGINE_API UClass* Z_Construct_UClass_USpotLightComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UTextRenderComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_USceneComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UChildActorComponent_NoRegister();
@@ -28,6 +29,14 @@ void EmptyLinkFunctionForGeneratedCodePurchaseableWeaponStand() {}
 	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 	GEPPROJECT_API UClass* Z_Construct_UClass_UInteractable_NoRegister();
 // End Cross Module References
+	DEFINE_FUNCTION(APurchaseableWeaponStand::execCurrencyUpdate)
+	{
+		P_GET_PROPERTY(FIntProperty,Z_Param_newCur);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->CurrencyUpdate(Z_Param_newCur);
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(APurchaseableWeaponStand::execLoad)
 	{
 		P_GET_OBJECT(UGEPSaveGame,Z_Param_saveInstance);
@@ -55,10 +64,43 @@ void EmptyLinkFunctionForGeneratedCodePurchaseableWeaponStand() {}
 	{
 		UClass* Class = APurchaseableWeaponStand::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
+			{ "CurrencyUpdate", &APurchaseableWeaponStand::execCurrencyUpdate },
 			{ "Load", &APurchaseableWeaponStand::execLoad },
 			{ "OnInteract", &APurchaseableWeaponStand::execOnInteract },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_APurchaseableWeaponStand_CurrencyUpdate_Statics
+	{
+		struct PurchaseableWeaponStand_eventCurrencyUpdate_Parms
+		{
+			int32 newCur;
+		};
+		static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_newCur;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UFunction_APurchaseableWeaponStand_CurrencyUpdate_Statics::NewProp_newCur = { "newCur", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(PurchaseableWeaponStand_eventCurrencyUpdate_Parms, newCur), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_APurchaseableWeaponStand_CurrencyUpdate_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_APurchaseableWeaponStand_CurrencyUpdate_Statics::NewProp_newCur,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_APurchaseableWeaponStand_CurrencyUpdate_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Props/PurchaseableWeaponStand.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_APurchaseableWeaponStand_CurrencyUpdate_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_APurchaseableWeaponStand, nullptr, "CurrencyUpdate", nullptr, nullptr, sizeof(PurchaseableWeaponStand_eventCurrencyUpdate_Parms), Z_Construct_UFunction_APurchaseableWeaponStand_CurrencyUpdate_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_APurchaseableWeaponStand_CurrencyUpdate_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_APurchaseableWeaponStand_CurrencyUpdate_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_APurchaseableWeaponStand_CurrencyUpdate_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_APurchaseableWeaponStand_CurrencyUpdate()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_APurchaseableWeaponStand_CurrencyUpdate_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	struct Z_Construct_UFunction_APurchaseableWeaponStand_Load_Statics
 	{
@@ -145,6 +187,10 @@ void EmptyLinkFunctionForGeneratedCodePurchaseableWeaponStand() {}
 #endif
 		static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_cost;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_spotLight_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_spotLight;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_text_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_text;
@@ -178,6 +224,7 @@ void EmptyLinkFunctionForGeneratedCodePurchaseableWeaponStand() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_GEPProject,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_APurchaseableWeaponStand_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_APurchaseableWeaponStand_CurrencyUpdate, "CurrencyUpdate" }, // 2844648895
 		{ &Z_Construct_UFunction_APurchaseableWeaponStand_Load, "Load" }, // 1896741917
 		{ &Z_Construct_UFunction_APurchaseableWeaponStand_OnInteract, "OnInteract" }, // 1551293607
 	};
@@ -213,6 +260,14 @@ void EmptyLinkFunctionForGeneratedCodePurchaseableWeaponStand() {}
 	};
 #endif
 	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UClass_APurchaseableWeaponStand_Statics::NewProp_cost = { "cost", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APurchaseableWeaponStand, cost), METADATA_PARAMS(Z_Construct_UClass_APurchaseableWeaponStand_Statics::NewProp_cost_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APurchaseableWeaponStand_Statics::NewProp_cost_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APurchaseableWeaponStand_Statics::NewProp_spotLight_MetaData[] = {
+		{ "Category", "PurchaseableWeaponStand" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Props/PurchaseableWeaponStand.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_APurchaseableWeaponStand_Statics::NewProp_spotLight = { "spotLight", nullptr, (EPropertyFlags)0x002008000008000d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APurchaseableWeaponStand, spotLight), Z_Construct_UClass_USpotLightComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_APurchaseableWeaponStand_Statics::NewProp_spotLight_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APurchaseableWeaponStand_Statics::NewProp_spotLight_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APurchaseableWeaponStand_Statics::NewProp_text_MetaData[] = {
 		{ "Category", "PurchaseableWeaponStand" },
@@ -264,6 +319,7 @@ void EmptyLinkFunctionForGeneratedCodePurchaseableWeaponStand() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APurchaseableWeaponStand_Statics::NewProp_unlocked,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APurchaseableWeaponStand_Statics::NewProp_boxComp,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APurchaseableWeaponStand_Statics::NewProp_cost,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APurchaseableWeaponStand_Statics::NewProp_spotLight,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APurchaseableWeaponStand_Statics::NewProp_text,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APurchaseableWeaponStand_Statics::NewProp_textSocket,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APurchaseableWeaponStand_Statics::NewProp_weapon,
@@ -301,7 +357,7 @@ void EmptyLinkFunctionForGeneratedCodePurchaseableWeaponStand() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(APurchaseableWeaponStand, 1499474034);
+	IMPLEMENT_CLASS(APurchaseableWeaponStand, 3308325267);
 	template<> GEPPROJECT_API UClass* StaticClass<APurchaseableWeaponStand>()
 	{
 		return APurchaseableWeaponStand::StaticClass();

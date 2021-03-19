@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 
 #include "Components/BoxComponent.h"
+#include "Components/SpotLightComponent.h"
 #include "Components/TextRenderComponent.h"
 #include "GameFramework/Actor.h"
 #include "GEPProject/Interfaces/Interactable.h"
@@ -42,7 +43,8 @@ protected:
 	USceneComponent* textSocket;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	UTextRenderComponent* text;
-	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	USpotLightComponent* spotLight;
 	UPROPERTY(EditAnywhere)
 	int cost;
 	
@@ -53,6 +55,7 @@ protected:
 
 	UFUNCTION()
 	void Load(UGEPSaveGame* saveInstance);
-
+	UFUNCTION()
+	void CurrencyUpdate(int newCur);
 	void Unlock();
 };

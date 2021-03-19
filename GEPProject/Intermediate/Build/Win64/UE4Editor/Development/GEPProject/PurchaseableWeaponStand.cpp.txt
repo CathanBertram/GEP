@@ -4,6 +4,16 @@ E:\epk\UE_4.25\Engine\Source\Runtime\Engine\Classes\Components/BoxComponent.h
 E:\epk\UE_4.25\Engine\Source\Runtime\Engine\Classes\Components/ShapeComponent.h
 E:\epk\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ShapeComponent.generated.h
 E:\epk\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\BoxComponent.generated.h
+E:\epk\UE_4.25\Engine\Source\Runtime\Engine\Classes\Components/SpotLightComponent.h
+E:\epk\UE_4.25\Engine\Source\Runtime\Engine\Classes\Components/PointLightComponent.h
+E:\epk\UE_4.25\Engine\Source\Runtime\Engine\Classes\Components/LocalLightComponent.h
+E:\epk\UE_4.25\Engine\Source\Runtime\Engine\Classes\Components/LightComponent.h
+E:\epk\UE_4.25\Engine\Source\Runtime\Engine\Classes\Components/LightComponentBase.h
+E:\epk\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\LightComponentBase.generated.h
+E:\epk\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\LightComponent.generated.h
+E:\epk\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\LocalLightComponent.generated.h
+E:\epk\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\PointLightComponent.generated.h
+E:\epk\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\SpotLightComponent.generated.h
 E:\epk\UE_4.25\Engine\Source\Runtime\Engine\Classes\Components/TextRenderComponent.h
 E:\epk\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\TextRenderComponent.generated.h
 E:\Github\GEP\GEPProject\Source\GEPProject/Interfaces/Interactable.h

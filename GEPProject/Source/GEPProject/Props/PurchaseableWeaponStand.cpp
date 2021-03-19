@@ -26,13 +26,20 @@ APurchaseableWeaponStand::APurchaseableWeaponStand()
 	
 	boxComp = CreateDefaultSubobject<UBoxComponent>(TEXT("BoxComp"));
 	boxComp->SetupAttachment(weaponStand);
+
+	spotLight = CreateDefaultSubobject<USpotLightComponent>(TEXT("SpotLight"));
+	spotLight->SetLightColor(FColor::Red);
+	spotLight->Intensity = 40000;
+	spotLight->OuterConeAngle = 20;
+	spotLight->SetupAttachment(weaponStand);
+		
 }
 
 void APurchaseableWeaponStand::OnInteract_Implementation(AGEPProjectCharacter* character)
 {
 	if (unlocked) return;
 
-	if (character->GetCurrency() > cost)
+	if (character->GetCurrency() >= cost)
 	{
 		GetGameInstance()->GetSubsystem<UEventSystem>()->OnUnlockWeapon(weaponToUnlock, cost);
 		Unlock();
@@ -44,14 +51,19 @@ void APurchaseableWeaponStand::Unlock()
 	if (weapon != nullptr)
 		weapon->DestroyChildActor();
 	if(text != nullptr)
-		text->DestroyComponent();	
+		text->DestroyComponent();
+	if (spotLight!= nullptr)
+		spotLight->DestroyComponent();
+	
 	unlocked = true;
 }
 
 void APurchaseableWeaponStand::BeginPlay()
 {
 	Super::BeginPlay();
-	GetGameInstance()->GetSubsystem<UEventSystem>()->onLoad.AddDynamic(this, &APurchaseableWeaponStand::Load);
+	UEventSystem* eventSystem = GetGameInstance()->GetSubsystem<UEventSystem>();
+	eventSystem->onLoad.AddDynamic(this, &APurchaseableWeaponStand::Load);
+	eventSystem->onCurrencyUpdate.AddDynamic(this, &APurchaseableWeaponStand::CurrencyUpdate);
 }
 
 
@@ -65,6 +77,16 @@ void APurchaseableWeaponStand::Load(UGEPSaveGame* saveInstance)
 			Unlock();
 		}
 	}
+}
+
+void APurchaseableWeaponStand::CurrencyUpdate(int newCur)
+{
+	if (spotLight == nullptr) return;
+
+	if(newCur >= cost)
+		spotLight->SetLightColor(FColor::Cyan);
+	else
+		spotLight->SetLightColor(FColor::Red);
 }
 
 
