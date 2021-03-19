@@ -15,7 +15,7 @@ class UGEPSaveGame;
 #endif
 #define GEPPROJECT_EventSystem_generated_h
 
-#define GEPProject_Source_GEPProject_EventSystem_h_17_DELEGATE \
+#define GEPProject_Source_GEPProject_EventSystem_h_18_DELEGATE \
 struct _Script_GEPProject_eventOnUnlockWeapon_Parms \
 { \
 	TSubclassOf<AActor>  weaponToUnlock; \
@@ -30,7 +30,7 @@ static inline void FOnUnlockWeapon_DelegateWrapper(const FMulticastScriptDelegat
 }
 
 
-#define GEPProject_Source_GEPProject_EventSystem_h_16_DELEGATE \
+#define GEPProject_Source_GEPProject_EventSystem_h_17_DELEGATE \
 struct _Script_GEPProject_eventOnLoad_Parms \
 { \
 	UGEPSaveGame* saveInstance; \
@@ -43,7 +43,7 @@ static inline void FOnLoad_DelegateWrapper(const FMulticastScriptDelegate& OnLoa
 }
 
 
-#define GEPProject_Source_GEPProject_EventSystem_h_15_DELEGATE \
+#define GEPProject_Source_GEPProject_EventSystem_h_16_DELEGATE \
 struct _Script_GEPProject_eventOnSave_Parms \
 { \
 	UGEPSaveGame* saveInstance; \
@@ -53,6 +53,19 @@ static inline void FOnSave_DelegateWrapper(const FMulticastScriptDelegate& OnSav
 	_Script_GEPProject_eventOnSave_Parms Parms; \
 	Parms.saveInstance=saveInstance; \
 	OnSave.ProcessMulticastDelegate<UObject>(&Parms); \
+}
+
+
+#define GEPProject_Source_GEPProject_EventSystem_h_15_DELEGATE \
+struct _Script_GEPProject_eventOnCurrencyUpdate_Parms \
+{ \
+	int32 newCur; \
+}; \
+static inline void FOnCurrencyUpdate_DelegateWrapper(const FMulticastScriptDelegate& OnCurrencyUpdate, int32 newCur) \
+{ \
+	_Script_GEPProject_eventOnCurrencyUpdate_Parms Parms; \
+	Parms.newCur=newCur; \
+	OnCurrencyUpdate.ProcessMulticastDelegate<UObject>(&Parms); \
 }
 
 
@@ -89,10 +102,10 @@ static inline void FOnTrySave_DelegateWrapper(const FMulticastScriptDelegate& On
 }
 
 
-#define GEPProject_Source_GEPProject_EventSystem_h_21_SPARSE_DATA
-#define GEPProject_Source_GEPProject_EventSystem_h_21_RPC_WRAPPERS
-#define GEPProject_Source_GEPProject_EventSystem_h_21_RPC_WRAPPERS_NO_PURE_DECLS
-#define GEPProject_Source_GEPProject_EventSystem_h_21_INCLASS_NO_PURE_DECLS \
+#define GEPProject_Source_GEPProject_EventSystem_h_22_SPARSE_DATA
+#define GEPProject_Source_GEPProject_EventSystem_h_22_RPC_WRAPPERS
+#define GEPProject_Source_GEPProject_EventSystem_h_22_RPC_WRAPPERS_NO_PURE_DECLS
+#define GEPProject_Source_GEPProject_EventSystem_h_22_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUEventSystem(); \
 	friend struct Z_Construct_UClass_UEventSystem_Statics; \
@@ -101,7 +114,7 @@ public: \
 	DECLARE_SERIALIZER(UEventSystem)
 
 
-#define GEPProject_Source_GEPProject_EventSystem_h_21_INCLASS \
+#define GEPProject_Source_GEPProject_EventSystem_h_22_INCLASS \
 private: \
 	static void StaticRegisterNativesUEventSystem(); \
 	friend struct Z_Construct_UClass_UEventSystem_Statics; \
@@ -110,7 +123,7 @@ public: \
 	DECLARE_SERIALIZER(UEventSystem)
 
 
-#define GEPProject_Source_GEPProject_EventSystem_h_21_STANDARD_CONSTRUCTORS \
+#define GEPProject_Source_GEPProject_EventSystem_h_22_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UEventSystem(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UEventSystem) \
@@ -123,7 +136,7 @@ private: \
 public:
 
 
-#define GEPProject_Source_GEPProject_EventSystem_h_21_ENHANCED_CONSTRUCTORS \
+#define GEPProject_Source_GEPProject_EventSystem_h_22_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UEventSystem() { }; \
 private: \
@@ -136,28 +149,28 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UEventSystem); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UEventSystem)
 
 
-#define GEPProject_Source_GEPProject_EventSystem_h_21_PRIVATE_PROPERTY_OFFSET
-#define GEPProject_Source_GEPProject_EventSystem_h_18_PROLOG
-#define GEPProject_Source_GEPProject_EventSystem_h_21_GENERATED_BODY_LEGACY \
+#define GEPProject_Source_GEPProject_EventSystem_h_22_PRIVATE_PROPERTY_OFFSET
+#define GEPProject_Source_GEPProject_EventSystem_h_19_PROLOG
+#define GEPProject_Source_GEPProject_EventSystem_h_22_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	GEPProject_Source_GEPProject_EventSystem_h_21_PRIVATE_PROPERTY_OFFSET \
-	GEPProject_Source_GEPProject_EventSystem_h_21_SPARSE_DATA \
-	GEPProject_Source_GEPProject_EventSystem_h_21_RPC_WRAPPERS \
-	GEPProject_Source_GEPProject_EventSystem_h_21_INCLASS \
-	GEPProject_Source_GEPProject_EventSystem_h_21_STANDARD_CONSTRUCTORS \
+	GEPProject_Source_GEPProject_EventSystem_h_22_PRIVATE_PROPERTY_OFFSET \
+	GEPProject_Source_GEPProject_EventSystem_h_22_SPARSE_DATA \
+	GEPProject_Source_GEPProject_EventSystem_h_22_RPC_WRAPPERS \
+	GEPProject_Source_GEPProject_EventSystem_h_22_INCLASS \
+	GEPProject_Source_GEPProject_EventSystem_h_22_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define GEPProject_Source_GEPProject_EventSystem_h_21_GENERATED_BODY \
+#define GEPProject_Source_GEPProject_EventSystem_h_22_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	GEPProject_Source_GEPProject_EventSystem_h_21_PRIVATE_PROPERTY_OFFSET \
-	GEPProject_Source_GEPProject_EventSystem_h_21_SPARSE_DATA \
-	GEPProject_Source_GEPProject_EventSystem_h_21_RPC_WRAPPERS_NO_PURE_DECLS \
-	GEPProject_Source_GEPProject_EventSystem_h_21_INCLASS_NO_PURE_DECLS \
-	GEPProject_Source_GEPProject_EventSystem_h_21_ENHANCED_CONSTRUCTORS \
+	GEPProject_Source_GEPProject_EventSystem_h_22_PRIVATE_PROPERTY_OFFSET \
+	GEPProject_Source_GEPProject_EventSystem_h_22_SPARSE_DATA \
+	GEPProject_Source_GEPProject_EventSystem_h_22_RPC_WRAPPERS_NO_PURE_DECLS \
+	GEPProject_Source_GEPProject_EventSystem_h_22_INCLASS_NO_PURE_DECLS \
+	GEPProject_Source_GEPProject_EventSystem_h_22_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

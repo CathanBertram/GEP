@@ -3,6 +3,7 @@
 #include "GEPProjectGameMode.h"
 
 #include "EventSystem.h"
+#include "Blueprint/UserWidget.h"
 #include "Interfaces/InitablePC.h"
 #include "Player/GEPPlayerController.h"
 #include "GameFramework/PlayerStart.h"
@@ -54,10 +55,21 @@ void AGEPProjectGameMode::Logout(AController* Exiting)
 	Super::Logout(Exiting);
 }
 
+AGEPProjectGameMode* AGEPProjectGameMode::GetGEPGamemode_Implementation()
+{
+	return this;
+}
+
 void AGEPProjectGameMode::BeginPlay()
 {
+	GetGameInstance()->GetSubsystem<UEventSystem>()->onCurrencyUpdate.AddDynamic(this, &AGEPProjectGameMode::UpdateCurrency);
 	UGameplayStatics::RemovePlayer(UGameplayStatics::GetPlayerController(GetWorld(), 0), true);
 
 	UGameplayStatics::CreatePlayer(GetWorld());
+}
+
+void AGEPProjectGameMode::UpdateCurrency(int newCur)
+{
+	currency = newCur;
 }
 

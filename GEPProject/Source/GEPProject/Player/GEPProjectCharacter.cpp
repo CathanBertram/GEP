@@ -55,7 +55,6 @@ void AGEPProjectCharacter::Save(UGEPSaveGame* saveInstance)
 	saveInstance->currency = currency;
 	saveInstance->transform = GetTransform();
 	saveInstance->unlockedWeapons = unlockedWeaponArray;
-	GEngine->AddOnScreenDebugMessage(-1,.5f,FColor::Red, "saveChar" + FString::FromInt(currency));
 }
 
 void AGEPProjectCharacter::Load(UGEPSaveGame* saveInstance)
@@ -63,16 +62,29 @@ void AGEPProjectCharacter::Load(UGEPSaveGame* saveInstance)
 	currency = saveInstance->currency;
 	SetActorTransform(saveInstance->transform);
 	unlockedWeaponArray = saveInstance->unlockedWeapons;
-	GEngine->AddOnScreenDebugMessage(-1,.5f,FColor::Red, "loadChar" + FString::FromInt(currency));
+	GetGameInstance()->GetSubsystem<UEventSystem>()->OnCurrencyUpdate(currency);
 }
 
 void AGEPProjectCharacter::UnlockWeapon(TSubclassOf<AActor> weaponToUnlock, int cost)
 {
 	unlockedWeaponArray.Add(weaponToUnlock);
 	currency -= cost;
-	GetGameInstance()->GetSubsystem<UEventSystem>()->OnTrySave();
+	UEventSystem* eventSystem = GetGameInstance()->GetSubsystem<UEventSystem>();
+	eventSystem->OnTrySave();
+	eventSystem->OnCurrencyUpdate(currency);
 }
 
+void AGEPProjectCharacter::GainCurrency(int curToGain)
+{
+	currency += curToGain;
+	GetGameInstance()->GetSubsystem<UEventSystem>()->OnCurrencyUpdate(currency);
+}
+
+void AGEPProjectCharacter::LoseCurrency(int curToLose)
+{
+	currency -= curToLose;
+	GetGameInstance()->GetSubsystem<UEventSystem>()->OnCurrencyUpdate(currency);
+}
 void AGEPProjectCharacter::Init_Implementation()
 {
 	currency = 0;
@@ -209,6 +221,7 @@ void AGEPProjectCharacter::SwitchWeapon(int i)
 	if (i < unlockedWeaponArray.Num())
 		equippedWeapon->SetChildActorClass(unlockedWeaponArray[i]);
 }
+
 
 void AGEPProjectCharacter::OnInteract()
 {

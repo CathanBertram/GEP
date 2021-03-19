@@ -142,9 +142,9 @@ private:
 
 	int currency;
 	UFUNCTION()
-    void GainCurrency(int curToGain) {currency += curToGain;}
+    void GainCurrency(int curToGain);
 	UFUNCTION()
-    void LoseCurrency(int curToLose) {currency -= curToLose;}
+    void LoseCurrency(int curToLose);
 
 	UFUNCTION()
 	void Save(UGEPSaveGame* saveInstance);
