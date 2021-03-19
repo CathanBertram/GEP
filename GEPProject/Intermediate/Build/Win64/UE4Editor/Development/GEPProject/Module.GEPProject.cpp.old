@@ -21,6 +21,5 @@
 #include "E:/Github/GEP/GEPProject/Source/GEPProject/Props/PurchaseableWeaponStand.cpp"
 #include "E:/Github/GEP/GEPProject/Source/GEPProject/TestBlock.cpp"
 #include "E:/Github/GEP/GEPProject/Source/GEPProject/Weapons/GEPProjectProjectile.cpp"
-#include "E:/Github/GEP/GEPProject/Source/GEPProject/Weapons/Weapon_Base.cpp"
 #include "E:/Github/GEP/GEPProject/Source/GEPProject/Weapons/Weapon_Hitscan_Auto.cpp"
 #include "E:/Github/GEP/GEPProject/Source/GEPProject/Weapons/Weapon_Hitscan_Charge.cpp"

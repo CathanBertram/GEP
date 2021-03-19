@@ -5,7 +5,6 @@
 #include "CoreMinimal.h"
 
 
-#include "EventSystem.h"
 #include "GEPSaveGame.h"
 #include "Subsystems/GameInstanceSubsystem.h"
 #include "EventSystem.generated.h"
@@ -50,4 +49,6 @@ public:
 	void OnHealthUpdate(float healthPercent) {onHealthUpdate.Broadcast(healthPercent);}
 	FOnUnlockWeapon onUnlockWeapon;
 	void OnUnlockWeapon(TSubclassOf<AActor> weaponToUnlock, int cost) {onUnlockWeapon.Broadcast(weaponToUnlock, cost);}
+
+	
 };
