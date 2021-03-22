@@ -109,6 +109,8 @@ void AGEPPlayerController::SetupInputComponent()
 	InputComponent->BindAction("Key8", IE_Pressed, this, &AGEPPlayerController::Key8Pressed);
 	InputComponent->BindAction("QuickSave", IE_Pressed, this, &AGEPPlayerController::QuickSavePressed);
 	InputComponent->BindAction("QuickLoad", IE_Pressed, this, &AGEPPlayerController::QuickLoadPressed);
+	InputComponent->BindAction("NextWeapon", IE_Pressed, this, &AGEPPlayerController::NextWeaponPressed);
+	InputComponent->BindAction("PrevWeapon", IE_Pressed, this, &AGEPPlayerController::PrevWeaponPressed);
 	
 	InputComponent->BindAxis("MoveForward", this, &AGEPPlayerController::MoveForward);
 	InputComponent->BindAxis("MoveRight", this, &AGEPPlayerController::MoveRight);
@@ -127,6 +129,8 @@ void AGEPPlayerController::QuickLoadPressed()
 {
 	LoadGame();
 }
+
+
 #pragma region input
 void AGEPPlayerController::JumpPressed()
 {
@@ -256,6 +260,23 @@ void AGEPPlayerController::Key8Pressed()
 	}
 }
 
+void AGEPPlayerController::NextWeaponPressed()
+{
+	APawn* pawn = GetPawn();
+	if (UKismetSystemLibrary::DoesImplementInterface(pawn, UInputable::StaticClass()))
+	{
+		IInputable::Execute_NextWeaponPressed(pawn);
+	}
+}
+
+void AGEPPlayerController::PrevWeaponPressed()
+{
+	APawn* pawn = GetPawn();
+	if (UKismetSystemLibrary::DoesImplementInterface(pawn, UInputable::StaticClass()))
+	{
+		IInputable::Execute_PrevWeaponPressed(pawn);
+	}
+}
 
 void AGEPPlayerController::MoveForward(float value)
 {

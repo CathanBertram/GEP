@@ -21,6 +21,8 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	virtual void LookUpAtRate_Implementation(float value) {}; \
 	virtual void MoveRight_Implementation(float value) {}; \
 	virtual void MoveForward_Implementation(float value) {}; \
+	virtual void PrevWeaponPressed_Implementation() {}; \
+	virtual void NextWeaponPressed_Implementation() {}; \
 	virtual void Key8Pressed_Implementation() {}; \
 	virtual void Key7Pressed_Implementation() {}; \
 	virtual void Key6Pressed_Implementation() {}; \
@@ -42,6 +44,8 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	DECLARE_FUNCTION(execLookUpAtRate); \
 	DECLARE_FUNCTION(execMoveRight); \
 	DECLARE_FUNCTION(execMoveForward); \
+	DECLARE_FUNCTION(execPrevWeaponPressed); \
+	DECLARE_FUNCTION(execNextWeaponPressed); \
 	DECLARE_FUNCTION(execKey8Pressed); \
 	DECLARE_FUNCTION(execKey7Pressed); \
 	DECLARE_FUNCTION(execKey6Pressed); \
@@ -65,6 +69,8 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	virtual void LookUpAtRate_Implementation(float value) {}; \
 	virtual void MoveRight_Implementation(float value) {}; \
 	virtual void MoveForward_Implementation(float value) {}; \
+	virtual void PrevWeaponPressed_Implementation() {}; \
+	virtual void NextWeaponPressed_Implementation() {}; \
 	virtual void Key8Pressed_Implementation() {}; \
 	virtual void Key7Pressed_Implementation() {}; \
 	virtual void Key6Pressed_Implementation() {}; \
@@ -86,6 +92,8 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	DECLARE_FUNCTION(execLookUpAtRate); \
 	DECLARE_FUNCTION(execMoveRight); \
 	DECLARE_FUNCTION(execMoveForward); \
+	DECLARE_FUNCTION(execPrevWeaponPressed); \
+	DECLARE_FUNCTION(execNextWeaponPressed); \
 	DECLARE_FUNCTION(execKey8Pressed); \
 	DECLARE_FUNCTION(execKey7Pressed); \
 	DECLARE_FUNCTION(execKey6Pressed); \
@@ -204,6 +212,8 @@ public: \
 	static void Execute_LookUpAtRate(UObject* O, float value); \
 	static void Execute_MoveForward(UObject* O, float value); \
 	static void Execute_MoveRight(UObject* O, float value); \
+	static void Execute_NextWeaponPressed(UObject* O); \
+	static void Execute_PrevWeaponPressed(UObject* O); \
 	static void Execute_Turn(UObject* O, float value); \
 	static void Execute_TurnAtRate(UObject* O, float value); \
 	virtual UObject* _getUObject() const { check(0 && "Missing required implementation."); return nullptr; }
@@ -233,6 +243,8 @@ public: \
 	static void Execute_LookUpAtRate(UObject* O, float value); \
 	static void Execute_MoveForward(UObject* O, float value); \
 	static void Execute_MoveRight(UObject* O, float value); \
+	static void Execute_NextWeaponPressed(UObject* O); \
+	static void Execute_PrevWeaponPressed(UObject* O); \
 	static void Execute_Turn(UObject* O, float value); \
 	static void Execute_TurnAtRate(UObject* O, float value); \
 	virtual UObject* _getUObject() const { check(0 && "Missing required implementation."); return nullptr; }

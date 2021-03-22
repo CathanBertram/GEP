@@ -204,6 +204,16 @@ void AGEPProjectCharacter::Key8Pressed_Implementation()
 	SwitchWeapon(7);
 }
 
+void AGEPProjectCharacter::NextWeaponPressed_Implementation()
+{
+	SwitchWeapon(curWeapon + 1);
+}
+
+void AGEPProjectCharacter::PrevWeaponPressed_Implementation()
+{
+	SwitchWeapon(curWeapon - 1);
+}
+
 void AGEPProjectCharacter::MoveForward_Implementation(float value)
 {
 	if (value != 0.0f)
@@ -243,9 +253,13 @@ void AGEPProjectCharacter::Turn_Implementation(float value)
 
 void AGEPProjectCharacter::SwitchWeapon(int i)
 {
-	if (i < unlockedWeaponArray.Num())
+	if (i < unlockedWeaponArray.Num() && i >= 0)
+	{
+		curWeapon = i;
 		equippedWeapon->SetChildActorClass(unlockedWeaponArray[i]);
+	}
 }
+
 
 
 void AGEPProjectCharacter::OnInteract()

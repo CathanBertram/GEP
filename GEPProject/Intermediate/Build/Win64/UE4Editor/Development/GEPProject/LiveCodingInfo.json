@@ -23,10 +23,9 @@
 			"Interactable.cpp.obj",
 			"Pawnable.cpp.obj",
 			"Shootable.cpp.obj",
-			"GEPPlayerController.cpp.obj",
-			"GEPProjectCharacter.cpp.obj",
 			"PurchaseableWeaponStand.cpp.obj",
 			"TestBlock.cpp.obj",
+			"EUpgradeTypes.cpp.obj",
 			"Upgrade.cpp.obj",
 			"GEPProjectProjectile.cpp.obj",
 			"GrenadeProjectile.cpp.obj",
@@ -37,7 +36,9 @@
 			"Weapon_Projectile.cpp.obj",
 			"Weapon_Shotgun.cpp.obj",
 			"GEPProjectGameMode.cpp.obj",
-			"EUpgradeTypes.cpp.obj"
+			"GEPPlayerController.cpp.obj",
+			"GEPProjectCharacter.cpp.obj",
+			"UpgradeSystem.cpp.obj"
 		],
 		"Module.GEPProject.gen.cpp.obj": [
 			"Enemy_Base.gen.cpp.obj",
@@ -46,7 +47,6 @@
 			"Fireable.gen.cpp.obj",
 			"FireReleaseable.gen.cpp.obj",
 			"GEPPlayerController.gen.cpp.obj",
-			"GEPProjectCharacter.gen.cpp.obj",
 			"GEPProjectHUD.gen.cpp.obj",
 			"GEPProjectProjectile.gen.cpp.obj",
 			"GEPSaveGame.gen.cpp.obj",
@@ -59,7 +59,6 @@
 			"InitableEnemy.gen.cpp.obj",
 			"InitableEnemySpawner.gen.cpp.obj",
 			"InitablePC.gen.cpp.obj",
-			"Inputable.gen.cpp.obj",
 			"Interactable.gen.cpp.obj",
 			"Pawnable.gen.cpp.obj",
 			"PlayerHealthComponent.gen.cpp.obj",
@@ -74,8 +73,11 @@
 			"Weapon_Shotgun.gen.cpp.obj",
 			"EUpgradeTypes.gen.cpp.obj",
 			"GEPProject.init.gen.cpp.obj",
+			"GEPProjectCharacter.gen.cpp.obj",
 			"GEPProjectGameMode.gen.cpp.obj",
-			"Upgrade.gen.cpp.obj"
+			"Inputable.gen.cpp.obj",
+			"Upgrade.gen.cpp.obj",
+			"UpgradeSystem.gen.cpp.obj"
 		]
 	}
 }

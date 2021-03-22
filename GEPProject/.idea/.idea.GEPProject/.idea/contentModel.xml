@@ -43591,6 +43591,8 @@
             <e p="EUpgradeTypes.h" t="Include" />
             <e p="Upgrade.cpp" t="Include" />
             <e p="Upgrade.h" t="Include" />
+            <e p="UpgradeSystem.cpp" t="Include" />
+            <e p="UpgradeSystem.h" t="Include" />
           </e>
           <e p="Weapons" t="Include">
             <e p="GEPProjectProjectile.cpp" t="Include" />

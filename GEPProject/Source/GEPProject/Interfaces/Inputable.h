@@ -51,6 +51,10 @@ public:
     void Key7Pressed();
 	UFUNCTION(BlueprintCallable,BlueprintNativeEvent)
     void Key8Pressed();
+	UFUNCTION(BlueprintCallable,BlueprintNativeEvent)
+    void NextWeaponPressed();
+	UFUNCTION(BlueprintCallable,BlueprintNativeEvent)
+    void PrevWeaponPressed();
 
 	//Axis Mappings
 	UFUNCTION(BlueprintCallable,BlueprintNativeEvent)

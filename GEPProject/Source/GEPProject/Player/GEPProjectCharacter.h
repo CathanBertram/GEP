@@ -96,7 +96,12 @@ public:
 	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
     void Key8Pressed();
 	virtual void Key8Pressed_Implementation() override;
-	
+	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
+    void NextWeaponPressed();
+	virtual void NextWeaponPressed_Implementation() override;
+	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
+    void PrevWeaponPressed();
+	virtual void PrevWeaponPressed_Implementation() override;
 
 	void OnInteract();
 	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
@@ -143,7 +148,7 @@ private:
 	bool canBeDamaged;
 	
 	void SwitchWeapon(int i);
-
+	int curWeapon;
 	int currency;
 	UFUNCTION()
     void GainCurrency(int curToGain);

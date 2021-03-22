@@ -7,7 +7,7 @@
 #include "Components/Widget.h"
 #include "GameFramework/GameModeBase.h"
 #include "Interfaces/GetGEPGamemode.h"
-#include "Upgrades/Upgrade.h"
+#include "Upgrades/UpgradeSystem.h"
 
 
 #include "GEPProjectGameMode.generated.h"
@@ -52,7 +52,7 @@ protected:
 	void UpdateHealthPercent(float newHealthPercent);
 
 	UPROPERTY(EditAnywhere)
-	TArray<FUpgrade> upgrades;
+	UUpgradeSystem* upgradeSystem;
 };
 
 

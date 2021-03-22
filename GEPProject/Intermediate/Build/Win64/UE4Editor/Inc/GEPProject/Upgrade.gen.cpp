@@ -15,6 +15,7 @@ void EmptyLinkFunctionForGeneratedCodeUpgrade() {}
 // Cross Module References
 	GEPPROJECT_API UScriptStruct* Z_Construct_UScriptStruct_FUpgrade();
 	UPackage* Z_Construct_UPackage__Script_GEPProject();
+	GEPPROJECT_API UEnum* Z_Construct_UEnum_GEPProject_EUpgradeValueTypes();
 	GEPPROJECT_API UEnum* Z_Construct_UEnum_GEPProject_EUpgradeTypes();
 // End Cross Module References
 class UScriptStruct* FUpgrade::StaticStruct()
@@ -46,6 +47,11 @@ static struct FScriptStruct_GEPProject_StaticRegisterNativesFUpgrade
 #endif
 		static void* NewStructOps();
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_upgradeValueType_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FEnumPropertyParams NewProp_upgradeValueType;
+		static const UE4CodeGen_Private::FBytePropertyParams NewProp_upgradeValueType_Underlying;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_upgradeType_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FEnumPropertyParams NewProp_upgradeType;
@@ -58,6 +64,10 @@ static struct FScriptStruct_GEPProject_StaticRegisterNativesFUpgrade
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_cost_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_cost;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_maxLevel_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_maxLevel;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_level_MetaData[];
 #endif
@@ -74,6 +84,14 @@ static struct FScriptStruct_GEPProject_StaticRegisterNativesFUpgrade
 	{
 		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FUpgrade>();
 	}
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FUpgrade_Statics::NewProp_upgradeValueType_MetaData[] = {
+		{ "Category", "Upgrade" },
+		{ "ModuleRelativePath", "Upgrades/Upgrade.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UScriptStruct_FUpgrade_Statics::NewProp_upgradeValueType = { "upgradeValueType", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FUpgrade, upgradeValueType), Z_Construct_UEnum_GEPProject_EUpgradeValueTypes, METADATA_PARAMS(Z_Construct_UScriptStruct_FUpgrade_Statics::NewProp_upgradeValueType_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FUpgrade_Statics::NewProp_upgradeValueType_MetaData)) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UScriptStruct_FUpgrade_Statics::NewProp_upgradeValueType_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FUpgrade_Statics::NewProp_upgradeType_MetaData[] = {
 		{ "Category", "Upgrade" },
@@ -97,6 +115,13 @@ static struct FScriptStruct_GEPProject_StaticRegisterNativesFUpgrade
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FUpgrade_Statics::NewProp_cost = { "cost", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FUpgrade, cost), METADATA_PARAMS(Z_Construct_UScriptStruct_FUpgrade_Statics::NewProp_cost_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FUpgrade_Statics::NewProp_cost_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FUpgrade_Statics::NewProp_maxLevel_MetaData[] = {
+		{ "Category", "Upgrade" },
+		{ "ModuleRelativePath", "Upgrades/Upgrade.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UScriptStruct_FUpgrade_Statics::NewProp_maxLevel = { "maxLevel", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FUpgrade, maxLevel), METADATA_PARAMS(Z_Construct_UScriptStruct_FUpgrade_Statics::NewProp_maxLevel_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FUpgrade_Statics::NewProp_maxLevel_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FUpgrade_Statics::NewProp_level_MetaData[] = {
 		{ "Category", "Upgrade" },
 		{ "ModuleRelativePath", "Upgrades/Upgrade.h" },
@@ -104,10 +129,13 @@ static struct FScriptStruct_GEPProject_StaticRegisterNativesFUpgrade
 #endif
 	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UScriptStruct_FUpgrade_Statics::NewProp_level = { "level", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FUpgrade, level), METADATA_PARAMS(Z_Construct_UScriptStruct_FUpgrade_Statics::NewProp_level_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FUpgrade_Statics::NewProp_level_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FUpgrade_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FUpgrade_Statics::NewProp_upgradeValueType,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FUpgrade_Statics::NewProp_upgradeValueType_Underlying,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FUpgrade_Statics::NewProp_upgradeType,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FUpgrade_Statics::NewProp_upgradeType_Underlying,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FUpgrade_Statics::NewProp_valueMulti,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FUpgrade_Statics::NewProp_cost,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FUpgrade_Statics::NewProp_maxLevel,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FUpgrade_Statics::NewProp_level,
 	};
 	const UE4CodeGen_Private::FStructParams Z_Construct_UScriptStruct_FUpgrade_Statics::ReturnStructParams = {
@@ -138,7 +166,7 @@ static struct FScriptStruct_GEPProject_StaticRegisterNativesFUpgrade
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FUpgrade_Hash() { return 3785431795U; }
+	uint32 Get_Z_Construct_UScriptStruct_FUpgrade_Hash() { return 384032241U; }
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 #ifdef _MSC_VER
 #pragma warning (pop)

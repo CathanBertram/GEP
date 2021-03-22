@@ -17,7 +17,8 @@ E:\epk\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ServerStatRe
 E:\epk\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameModeBase.generated.h
 E:\Github\GEP\GEPProject\Source\GEPProject\Interfaces/GetGEPGamemode.h
 E:\Github\GEP\GEPProject\Intermediate\Build\Win64\UE4Editor\Inc\GEPProject\GetGEPGamemode.generated.h
-E:\Github\GEP\GEPProject\Source\GEPProject\Upgrades/Upgrade.h
+E:\Github\GEP\GEPProject\Source\GEPProject\Upgrades/UpgradeSystem.h
+E:\Github\GEP\GEPProject\Source\GEPProject\Upgrades\Upgrade.h
 E:\Github\GEP\GEPProject\Source\GEPProject\Upgrades\EUpgradeTypes.h
 E:\epk\UE_4.25\Engine\Source\Runtime\Engine\Classes\Engine/UserDefinedEnum.h
 E:\epk\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\UserDefinedEnum.generated.h
@@ -25,6 +26,7 @@ E:\Github\GEP\GEPProject\Intermediate\Build\Win64\UE4Editor\Inc\GEPProject\EUpgr
 E:\epk\UE_4.25\Engine\Source\Runtime\Engine\Classes\Engine/UserDefinedStruct.h
 E:\epk\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\UserDefinedStruct.generated.h
 E:\Github\GEP\GEPProject\Intermediate\Build\Win64\UE4Editor\Inc\GEPProject\Upgrade.generated.h
+E:\Github\GEP\GEPProject\Intermediate\Build\Win64\UE4Editor\Inc\GEPProject\UpgradeSystem.generated.h
 E:\Github\GEP\GEPProject\Intermediate\Build\Win64\UE4Editor\Inc\GEPProject\GEPProjectGameMode.generated.h
 E:\Github\GEP\GEPProject\Source\GEPProject\EventSystem.h
 E:\Github\GEP\GEPProject\Source\GEPProject\GEPSaveGame.h

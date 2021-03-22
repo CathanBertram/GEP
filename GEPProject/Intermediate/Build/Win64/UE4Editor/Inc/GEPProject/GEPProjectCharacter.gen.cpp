@@ -125,6 +125,20 @@ void EmptyLinkFunctionForGeneratedCodeGEPProjectCharacter() {}
 		P_THIS->MoveForward_Implementation(Z_Param_value);
 		P_NATIVE_END;
 	}
+	DEFINE_FUNCTION(AGEPProjectCharacter::execPrevWeaponPressed)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->PrevWeaponPressed_Implementation();
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(AGEPProjectCharacter::execNextWeaponPressed)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->NextWeaponPressed_Implementation();
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(AGEPProjectCharacter::execKey8Pressed)
 	{
 		P_FINISH;
@@ -361,6 +375,16 @@ void EmptyLinkFunctionForGeneratedCodeGEPProjectCharacter() {}
 		Parms.value=value;
 		ProcessEvent(FindFunctionChecked(NAME_AGEPProjectCharacter_MoveRight),&Parms);
 	}
+	static FName NAME_AGEPProjectCharacter_NextWeaponPressed = FName(TEXT("NextWeaponPressed"));
+	void AGEPProjectCharacter::NextWeaponPressed()
+	{
+		ProcessEvent(FindFunctionChecked(NAME_AGEPProjectCharacter_NextWeaponPressed),NULL);
+	}
+	static FName NAME_AGEPProjectCharacter_PrevWeaponPressed = FName(TEXT("PrevWeaponPressed"));
+	void AGEPProjectCharacter::PrevWeaponPressed()
+	{
+		ProcessEvent(FindFunctionChecked(NAME_AGEPProjectCharacter_PrevWeaponPressed),NULL);
+	}
 	static FName NAME_AGEPProjectCharacter_Turn = FName(TEXT("Turn"));
 	void AGEPProjectCharacter::Turn(float value)
 	{
@@ -404,6 +428,8 @@ void EmptyLinkFunctionForGeneratedCodeGEPProjectCharacter() {}
 			{ "LoseCurrency", &AGEPProjectCharacter::execLoseCurrency },
 			{ "MoveForward", &AGEPProjectCharacter::execMoveForward },
 			{ "MoveRight", &AGEPProjectCharacter::execMoveRight },
+			{ "NextWeaponPressed", &AGEPProjectCharacter::execNextWeaponPressed },
+			{ "PrevWeaponPressed", &AGEPProjectCharacter::execPrevWeaponPressed },
 			{ "Save", &AGEPProjectCharacter::execSave },
 			{ "Turn", &AGEPProjectCharacter::execTurn },
 			{ "TurnAtRate", &AGEPProjectCharacter::execTurnAtRate },
@@ -1037,6 +1063,50 @@ void EmptyLinkFunctionForGeneratedCodeGEPProjectCharacter() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_AGEPProjectCharacter_NextWeaponPressed_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AGEPProjectCharacter_NextWeaponPressed_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Player/GEPProjectCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AGEPProjectCharacter_NextWeaponPressed_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AGEPProjectCharacter, nullptr, "NextWeaponPressed", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AGEPProjectCharacter_NextWeaponPressed_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AGEPProjectCharacter_NextWeaponPressed_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AGEPProjectCharacter_NextWeaponPressed()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AGEPProjectCharacter_NextWeaponPressed_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AGEPProjectCharacter_PrevWeaponPressed_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AGEPProjectCharacter_PrevWeaponPressed_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Player/GEPProjectCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AGEPProjectCharacter_PrevWeaponPressed_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AGEPProjectCharacter, nullptr, "PrevWeaponPressed", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AGEPProjectCharacter_PrevWeaponPressed_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AGEPProjectCharacter_PrevWeaponPressed_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AGEPProjectCharacter_PrevWeaponPressed()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AGEPProjectCharacter_PrevWeaponPressed_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_AGEPProjectCharacter_Save_Statics
 	{
 		struct GEPProjectCharacter_eventSave_Parms
@@ -1249,6 +1319,8 @@ void EmptyLinkFunctionForGeneratedCodeGEPProjectCharacter() {}
 		{ &Z_Construct_UFunction_AGEPProjectCharacter_LoseCurrency, "LoseCurrency" }, // 362465955
 		{ &Z_Construct_UFunction_AGEPProjectCharacter_MoveForward, "MoveForward" }, // 4285191866
 		{ &Z_Construct_UFunction_AGEPProjectCharacter_MoveRight, "MoveRight" }, // 2025856939
+		{ &Z_Construct_UFunction_AGEPProjectCharacter_NextWeaponPressed, "NextWeaponPressed" }, // 1536957091
+		{ &Z_Construct_UFunction_AGEPProjectCharacter_PrevWeaponPressed, "PrevWeaponPressed" }, // 4183989051
 		{ &Z_Construct_UFunction_AGEPProjectCharacter_Save, "Save" }, // 391844029
 		{ &Z_Construct_UFunction_AGEPProjectCharacter_Turn, "Turn" }, // 1831284628
 		{ &Z_Construct_UFunction_AGEPProjectCharacter_TurnAtRate, "TurnAtRate" }, // 3157397947
@@ -1395,7 +1467,7 @@ void EmptyLinkFunctionForGeneratedCodeGEPProjectCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AGEPProjectCharacter, 2393879467);
+	IMPLEMENT_CLASS(AGEPProjectCharacter, 669814972);
 	template<> GEPPROJECT_API UClass* StaticClass<AGEPProjectCharacter>()
 	{
 		return AGEPProjectCharacter::StaticClass();

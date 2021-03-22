@@ -43,7 +43,7 @@ private:
 	void Key1Pressed(); void Key2Pressed(); void Key3Pressed(); void Key4Pressed(); void Key5Pressed(); void Key6Pressed(); void Key7Pressed(); void Key8Pressed();
 	void QuickSavePressed();
 	void QuickLoadPressed();
-	
+	void NextWeaponPressed(); void PrevWeaponPressed();
 	
 	void MoveForward(float value);
 	void MoveRight(float value);

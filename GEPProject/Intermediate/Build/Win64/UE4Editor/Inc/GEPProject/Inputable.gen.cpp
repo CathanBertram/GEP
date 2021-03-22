@@ -66,6 +66,20 @@ void EmptyLinkFunctionForGeneratedCodeInputable() {}
 		P_THIS->MoveForward_Implementation(Z_Param_value);
 		P_NATIVE_END;
 	}
+	DEFINE_FUNCTION(IInputable::execPrevWeaponPressed)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->PrevWeaponPressed_Implementation();
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(IInputable::execNextWeaponPressed)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->NextWeaponPressed_Implementation();
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(IInputable::execKey8Pressed)
 	{
 		P_FINISH;
@@ -236,6 +250,14 @@ void EmptyLinkFunctionForGeneratedCodeInputable() {}
 	{
 		check(0 && "Do not directly call Event functions in Interfaces. Call Execute_MoveRight instead.");
 	}
+	void IInputable::NextWeaponPressed()
+	{
+		check(0 && "Do not directly call Event functions in Interfaces. Call Execute_NextWeaponPressed instead.");
+	}
+	void IInputable::PrevWeaponPressed()
+	{
+		check(0 && "Do not directly call Event functions in Interfaces. Call Execute_PrevWeaponPressed instead.");
+	}
 	void IInputable::Turn(float value)
 	{
 		check(0 && "Do not directly call Event functions in Interfaces. Call Execute_Turn instead.");
@@ -266,6 +288,8 @@ void EmptyLinkFunctionForGeneratedCodeInputable() {}
 			{ "LookUpAtRate", &IInputable::execLookUpAtRate },
 			{ "MoveForward", &IInputable::execMoveForward },
 			{ "MoveRight", &IInputable::execMoveRight },
+			{ "NextWeaponPressed", &IInputable::execNextWeaponPressed },
+			{ "PrevWeaponPressed", &IInputable::execPrevWeaponPressed },
 			{ "Turn", &IInputable::execTurn },
 			{ "TurnAtRate", &IInputable::execTurnAtRate },
 		};
@@ -695,6 +719,50 @@ void EmptyLinkFunctionForGeneratedCodeInputable() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_UInputable_NextWeaponPressed_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UInputable_NextWeaponPressed_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Interfaces/Inputable.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UInputable_NextWeaponPressed_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UInputable, nullptr, "NextWeaponPressed", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UInputable_NextWeaponPressed_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UInputable_NextWeaponPressed_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UInputable_NextWeaponPressed()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UInputable_NextWeaponPressed_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UInputable_PrevWeaponPressed_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UInputable_PrevWeaponPressed_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Interfaces/Inputable.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UInputable_PrevWeaponPressed_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UInputable, nullptr, "PrevWeaponPressed", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UInputable_PrevWeaponPressed_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UInputable_PrevWeaponPressed_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UInputable_PrevWeaponPressed()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UInputable_PrevWeaponPressed_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_UInputable_Turn_Statics
 	{
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_value;
@@ -788,6 +856,8 @@ void EmptyLinkFunctionForGeneratedCodeInputable() {}
 		{ &Z_Construct_UFunction_UInputable_LookUpAtRate, "LookUpAtRate" }, // 2458505921
 		{ &Z_Construct_UFunction_UInputable_MoveForward, "MoveForward" }, // 1291555142
 		{ &Z_Construct_UFunction_UInputable_MoveRight, "MoveRight" }, // 1426520829
+		{ &Z_Construct_UFunction_UInputable_NextWeaponPressed, "NextWeaponPressed" }, // 94642588
+		{ &Z_Construct_UFunction_UInputable_PrevWeaponPressed, "PrevWeaponPressed" }, // 2450796571
 		{ &Z_Construct_UFunction_UInputable_Turn, "Turn" }, // 3853534625
 		{ &Z_Construct_UFunction_UInputable_TurnAtRate, "TurnAtRate" }, // 2078171963
 	};
@@ -823,7 +893,7 @@ void EmptyLinkFunctionForGeneratedCodeInputable() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UInputable, 2941457390);
+	IMPLEMENT_CLASS(UInputable, 2206059129);
 	template<> GEPPROJECT_API UClass* StaticClass<UInputable>()
 	{
 		return UInputable::StaticClass();
@@ -1106,6 +1176,36 @@ void EmptyLinkFunctionForGeneratedCodeInputable() {}
 		else if (auto I = (IInputable*)(O->GetNativeInterfaceAddress(UInputable::StaticClass())))
 		{
 			I->MoveRight_Implementation(value);
+		}
+	}
+	static FName NAME_UInputable_NextWeaponPressed = FName(TEXT("NextWeaponPressed"));
+	void IInputable::Execute_NextWeaponPressed(UObject* O)
+	{
+		check(O != NULL);
+		check(O->GetClass()->ImplementsInterface(UInputable::StaticClass()));
+		UFunction* const Func = O->FindFunction(NAME_UInputable_NextWeaponPressed);
+		if (Func)
+		{
+			O->ProcessEvent(Func, NULL);
+		}
+		else if (auto I = (IInputable*)(O->GetNativeInterfaceAddress(UInputable::StaticClass())))
+		{
+			I->NextWeaponPressed_Implementation();
+		}
+	}
+	static FName NAME_UInputable_PrevWeaponPressed = FName(TEXT("PrevWeaponPressed"));
+	void IInputable::Execute_PrevWeaponPressed(UObject* O)
+	{
+		check(O != NULL);
+		check(O->GetClass()->ImplementsInterface(UInputable::StaticClass()));
+		UFunction* const Func = O->FindFunction(NAME_UInputable_PrevWeaponPressed);
+		if (Func)
+		{
+			O->ProcessEvent(Func, NULL);
+		}
+		else if (auto I = (IInputable*)(O->GetNativeInterfaceAddress(UInputable::StaticClass())))
+		{
+			I->PrevWeaponPressed_Implementation();
 		}
 	}
 	static FName NAME_UInputable_Turn = FName(TEXT("Turn"));

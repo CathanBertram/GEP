@@ -94,7 +94,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AGEPProjectGameMode); \
 
 #define GEPProject_Source_GEPProject_GEPProjectGameMode_h_18_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__playerControllers() { return STRUCT_OFFSET(AGEPProjectGameMode, playerControllers); } \
-	FORCEINLINE static uint32 __PPO__upgrades() { return STRUCT_OFFSET(AGEPProjectGameMode, upgrades); }
+	FORCEINLINE static uint32 __PPO__upgradeSystem() { return STRUCT_OFFSET(AGEPProjectGameMode, upgradeSystem); }
 
 
 #define GEPProject_Source_GEPProject_GEPProjectGameMode_h_15_PROLOG \

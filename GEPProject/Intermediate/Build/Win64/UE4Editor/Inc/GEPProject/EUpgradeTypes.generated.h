@@ -17,6 +17,13 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define CURRENT_FILE_ID GEPProject_Source_GEPProject_Upgrades_EUpgradeTypes_h
 
 
+#define FOREACH_ENUM_EUPGRADEVALUETYPES(op) \
+	op(EUpgradeValueTypes::Add) \
+	op(EUpgradeValueTypes::Multiply) 
+
+enum class EUpgradeValueTypes : uint8;
+template<> GEPPROJECT_API UEnum* StaticEnum<EUpgradeValueTypes>();
+
 #define FOREACH_ENUM_EUPGRADETYPES(op) \
 	op(EUpgradeTypes::Player_RegenAmount) \
 	op(EUpgradeTypes::Player_RegenTick) \
@@ -50,6 +57,10 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	op(EUpgradeTypes::Weapon_GrenadeLauncher_Damage) \
 	op(EUpgradeTypes::Weapon_GrenadeLauncher_Firerate) \
 	op(EUpgradeTypes::Weapon_GrenadeLauncher_ExplosionRadius) \
+	op(EUpgradeTypes::Drone_AttackDamage) \
+	op(EUpgradeTypes::Drone_AttackCooldown) \
+	op(EUpgradeTypes::Drone_MovementSpeed) \
+	op(EUpgradeTypes::Drone_Amount) \
 	op(EUpgradeTypes::End) 
 
 enum class EUpgradeTypes : uint8;

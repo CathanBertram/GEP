@@ -25,6 +25,8 @@ class APawn;
 	virtual void LookUpAtRate_Implementation(float value); \
 	virtual void MoveRight_Implementation(float value); \
 	virtual void MoveForward_Implementation(float value); \
+	virtual void PrevWeaponPressed_Implementation(); \
+	virtual void NextWeaponPressed_Implementation(); \
 	virtual void Key8Pressed_Implementation(); \
 	virtual void Key7Pressed_Implementation(); \
 	virtual void Key6Pressed_Implementation(); \
@@ -55,6 +57,8 @@ class APawn;
 	DECLARE_FUNCTION(execLookUpAtRate); \
 	DECLARE_FUNCTION(execMoveRight); \
 	DECLARE_FUNCTION(execMoveForward); \
+	DECLARE_FUNCTION(execPrevWeaponPressed); \
+	DECLARE_FUNCTION(execNextWeaponPressed); \
 	DECLARE_FUNCTION(execKey8Pressed); \
 	DECLARE_FUNCTION(execKey7Pressed); \
 	DECLARE_FUNCTION(execKey6Pressed); \
@@ -88,6 +92,8 @@ class APawn;
 	DECLARE_FUNCTION(execLookUpAtRate); \
 	DECLARE_FUNCTION(execMoveRight); \
 	DECLARE_FUNCTION(execMoveForward); \
+	DECLARE_FUNCTION(execPrevWeaponPressed); \
+	DECLARE_FUNCTION(execNextWeaponPressed); \
 	DECLARE_FUNCTION(execKey8Pressed); \
 	DECLARE_FUNCTION(execKey7Pressed); \
 	DECLARE_FUNCTION(execKey6Pressed); \
