@@ -18,52 +18,46 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 
 #define FOREACH_ENUM_EUPGRADEVALUETYPES(op) \
-	op(EUpgradeValueTypes::Add) \
-	op(EUpgradeValueTypes::Multiply) 
-
-enum class EUpgradeValueTypes : uint8;
-template<> GEPPROJECT_API UEnum* StaticEnum<EUpgradeValueTypes>();
-
+	op(Add) \
+	op(Multiply) 
 #define FOREACH_ENUM_EUPGRADETYPES(op) \
-	op(EUpgradeTypes::Player_RegenAmount) \
-	op(EUpgradeTypes::Player_RegenTick) \
-	op(EUpgradeTypes::Player_CurrencyDropped) \
-	op(EUpgradeTypes::Player_DoubleCurrencyChance) \
-	op(EUpgradeTypes::Player_PassiveCurrencyGain) \
-	op(EUpgradeTypes::Player_PassiveCurrencyTick) \
-	op(EUpgradeTypes::Enemy_SpawnRate) \
-	op(EUpgradeTypes::Enemy_SpawnAmount) \
-	op(EUpgradeTypes::Enemy_MaxAliveEnemies) \
-	op(EUpgradeTypes::Enemy_AdditionalEnemyLevel) \
-	op(EUpgradeTypes::Enemy_EpicEnemySpawnAttemptRate) \
-	op(EUpgradeTypes::Enemy_EpicEnemySpawnChance) \
-	op(EUpgradeTypes::Weapon_Pistol_Damage) \
-	op(EUpgradeTypes::Weapon_Pistol_Firerate) \
-	op(EUpgradeTypes::Weapon_Revolver_Damage) \
-	op(EUpgradeTypes::Weapon_Revolver_Firerate) \
-	op(EUpgradeTypes::Weapon_Revolver_ChargeTime) \
-	op(EUpgradeTypes::Weapon_Shotgun_Damage) \
-	op(EUpgradeTypes::Weapon_Shotgun_Firerate) \
-	op(EUpgradeTypes::Weapon_Shotgun_PelletCount) \
-	op(EUpgradeTypes::Weapon_Shotgun_Spread) \
-	op(EUpgradeTypes::Weapon_SMG_Damage) \
-	op(EUpgradeTypes::Weapon_SMG_Firerate) \
-	op(EUpgradeTypes::Weapon_Rifle_Damage) \
-	op(EUpgradeTypes::Weapon_Rifle_Firerate) \
-	op(EUpgradeTypes::Weapon_AutoRifle_Damage) \
-	op(EUpgradeTypes::Weapon_AutoRifle_Firerate) \
-	op(EUpgradeTypes::Weapon_RayGun_Damage) \
-	op(EUpgradeTypes::Weapon_RayGun_Firerate) \
-	op(EUpgradeTypes::Weapon_GrenadeLauncher_Damage) \
-	op(EUpgradeTypes::Weapon_GrenadeLauncher_Firerate) \
-	op(EUpgradeTypes::Weapon_GrenadeLauncher_ExplosionRadius) \
-	op(EUpgradeTypes::Drone_AttackDamage) \
-	op(EUpgradeTypes::Drone_AttackCooldown) \
-	op(EUpgradeTypes::Drone_MovementSpeed) \
-	op(EUpgradeTypes::Drone_Amount) \
-	op(EUpgradeTypes::End) 
-
-enum class EUpgradeTypes : uint8;
-template<> GEPPROJECT_API UEnum* StaticEnum<EUpgradeTypes>();
-
+	op(Player_RegenAmount) \
+	op(Player_RegenTick) \
+	op(Player_CurrencyDropped) \
+	op(Player_DoubleCurrencyChance) \
+	op(Player_PassiveCurrencyGain) \
+	op(Player_PassiveCurrencyTick) \
+	op(Player_PassiveEnergyRegen) \
+	op(Player_PassiveEnergyTick) \
+	op(Enemy_SpawnRate) \
+	op(Enemy_SpawnAmount) \
+	op(Enemy_MaxAliveEnemies) \
+	op(Enemy_AdditionalEnemyLevel) \
+	op(Enemy_EpicEnemySpawnAttemptRate) \
+	op(Enemy_EpicEnemySpawnChance) \
+	op(Weapon_Pistol_Damage) \
+	op(Weapon_Pistol_Firerate) \
+	op(Weapon_Revolver_Damage) \
+	op(Weapon_Revolver_Firerate) \
+	op(Weapon_Revolver_ChargeTime) \
+	op(Weapon_Shotgun_Damage) \
+	op(Weapon_Shotgun_Firerate) \
+	op(Weapon_Shotgun_PelletCount) \
+	op(Weapon_Shotgun_Spread) \
+	op(Weapon_SMG_Damage) \
+	op(Weapon_SMG_Firerate) \
+	op(Weapon_Rifle_Damage) \
+	op(Weapon_Rifle_Firerate) \
+	op(Weapon_AutoRifle_Damage) \
+	op(Weapon_AutoRifle_Firerate) \
+	op(Weapon_RayGun_Damage) \
+	op(Weapon_RayGun_Firerate) \
+	op(Weapon_GrenadeLauncher_Damage) \
+	op(Weapon_GrenadeLauncher_Firerate) \
+	op(Weapon_GrenadeLauncher_ExplosionRadius) \
+	op(Drone_AttackDamage) \
+	op(Drone_AttackCooldown) \
+	op(Drone_MovementSpeed) \
+	op(Drone_Amount) \
+	op(End) 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

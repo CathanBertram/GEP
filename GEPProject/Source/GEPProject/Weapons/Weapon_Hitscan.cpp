@@ -19,17 +19,18 @@ AWeapon_Hitscan::AWeapon_Hitscan() : AWeapon_Base()
 	damage = 10.f;
 }
 
-bool AWeapon_Hitscan::Fire_Implementation()
+bool AWeapon_Hitscan::Fire_Implementation(float curEnergy)
 {
-	Shoot();
+	Shoot(curEnergy);
 	return true;
 }
 
 
-void AWeapon_Hitscan::Shoot()
+void AWeapon_Hitscan::Shoot(float curEnergy)
 {
 	if (!canShoot) return;
-
+	if (curEnergy < energyCost) return;
+	
 	canShoot = false;
 	UWorld* const world = GetWorld();
 	if (world != nullptr)
@@ -66,6 +67,7 @@ void AWeapon_Hitscan::Shoot()
 			UGameplayStatics::SpawnEmitterAtLocation(world, hitParticle , hit.Location);	
 		}
 	}
+	onShoot.Broadcast(energyCost);
 	world->GetTimerManager().SetTimer(WeaponResetTimerHandle, this, &AWeapon_Hitscan::ResetShoot, shootCooldown);
 }
 

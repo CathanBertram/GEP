@@ -32,5 +32,9 @@ public:
 	float curHealth;
 	UPROPERTY(EditAnywhere)
 	float maxHealth;
+	UPROPERTY(EditAnywhere)
+	float curEnergy;
+	UPROPERTY(EditAnywhere)
+	float maxEnergy;
 
 };

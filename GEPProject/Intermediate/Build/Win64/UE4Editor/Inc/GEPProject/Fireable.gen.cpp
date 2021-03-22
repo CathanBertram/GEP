@@ -20,12 +20,13 @@ void EmptyLinkFunctionForGeneratedCodeFireable() {}
 // End Cross Module References
 	DEFINE_FUNCTION(IFireable::execFire)
 	{
+		P_GET_PROPERTY(FFloatProperty,Z_Param_energyCost);
 		P_FINISH;
 		P_NATIVE_BEGIN;
-		*(bool*)Z_Param__Result=P_THIS->Fire_Implementation();
+		*(bool*)Z_Param__Result=P_THIS->Fire_Implementation(Z_Param_energyCost);
 		P_NATIVE_END;
 	}
-	bool IFireable::Fire()
+	bool IFireable::Fire(float energyCost)
 	{
 		check(0 && "Do not directly call Event functions in Interfaces. Call Execute_Fire instead.");
 		Fireable_eventFire_Parms Parms;
@@ -43,6 +44,7 @@ void EmptyLinkFunctionForGeneratedCodeFireable() {}
 	{
 		static void NewProp_ReturnValue_SetBit(void* Obj);
 		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_energyCost;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
@@ -54,8 +56,10 @@ void EmptyLinkFunctionForGeneratedCodeFireable() {}
 		((Fireable_eventFire_Parms*)Obj)->ReturnValue = 1;
 	}
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UFireable_Fire_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(Fireable_eventFire_Parms), &Z_Construct_UFunction_UFireable_Fire_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFireable_Fire_Statics::NewProp_energyCost = { "energyCost", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(Fireable_eventFire_Parms, energyCost), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFireable_Fire_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFireable_Fire_Statics::NewProp_ReturnValue,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFireable_Fire_Statics::NewProp_energyCost,
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFireable_Fire_Statics::Function_MetaDataParams[] = {
@@ -91,7 +95,7 @@ void EmptyLinkFunctionForGeneratedCodeFireable() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_GEPProject,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFireable_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFireable_Fire, "Fire" }, // 3517042390
+		{ &Z_Construct_UFunction_UFireable_Fire, "Fire" }, // 2283157785
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFireable_Statics::Class_MetaDataParams[] = {
@@ -125,7 +129,7 @@ void EmptyLinkFunctionForGeneratedCodeFireable() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFireable, 1405520126);
+	IMPLEMENT_CLASS(UFireable, 350678085);
 	template<> GEPPROJECT_API UClass* StaticClass<UFireable>()
 	{
 		return UFireable::StaticClass();
@@ -133,7 +137,7 @@ void EmptyLinkFunctionForGeneratedCodeFireable() {}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFireable(Z_Construct_UClass_UFireable, &UFireable::StaticClass, TEXT("/Script/GEPProject"), TEXT("UFireable"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFireable);
 	static FName NAME_UFireable_Fire = FName(TEXT("Fire"));
-	bool IFireable::Execute_Fire(UObject* O)
+	bool IFireable::Execute_Fire(UObject* O, float energyCost)
 	{
 		check(O != NULL);
 		check(O->GetClass()->ImplementsInterface(UFireable::StaticClass()));
@@ -141,11 +145,12 @@ void EmptyLinkFunctionForGeneratedCodeFireable() {}
 		UFunction* const Func = O->FindFunction(NAME_UFireable_Fire);
 		if (Func)
 		{
+			Parms.energyCost=energyCost;
 			O->ProcessEvent(Func, &Parms);
 		}
 		else if (auto I = (IFireable*)(O->GetNativeInterfaceAddress(UFireable::StaticClass())))
 		{
-			Parms.ReturnValue = I->Fire_Implementation();
+			Parms.ReturnValue = I->Fire_Implementation(energyCost);
 		}
 		return Parms.ReturnValue;
 	}

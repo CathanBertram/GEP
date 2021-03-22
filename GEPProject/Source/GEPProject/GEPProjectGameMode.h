@@ -36,6 +36,8 @@ public:
 	int GetCurrency(){return currency;}
 	UFUNCTION(BlueprintCallable)
 	float GetHealthPercent(){return healthPercent;}
+	UFUNCTION(BlueprintCallable)
+    float GetEnergyPercent(){return energyPercent;}
 
 protected:
 	TArray<AActor*> playerStarts;
@@ -46,10 +48,13 @@ protected:
 	virtual void BeginPlay() override;
 	int currency;
 	float healthPercent;
+	float energyPercent;
 	UFUNCTION()
 	void UpdateCurrency(int newCur);
 	UFUNCTION()
 	void UpdateHealthPercent(float newHealthPercent);
+	UFUNCTION()
+    void UpdateEnergyPercent(float newEnergyPercent);
 
 	UPROPERTY(EditAnywhere)
 	UUpgradeSystem* upgradeSystem;

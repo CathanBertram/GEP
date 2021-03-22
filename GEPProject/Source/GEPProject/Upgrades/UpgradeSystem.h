@@ -19,7 +19,7 @@ public:
 	// Sets default values for this component's properties
 	UUpgradeSystem();
 
-	float GetUpgradeValue(EUpgradeTypes upgradeType);
+	float GetUpgradeValue(TEnumAsByte<EUpgradeTypes> upgradeType);
 protected:
 	// Called when the game starts
 	virtual void BeginPlay() override;

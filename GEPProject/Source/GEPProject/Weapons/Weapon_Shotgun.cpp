@@ -9,9 +9,10 @@
 #include "Kismet/GameplayStatics.h"
 #include "Particles/ParticleSystemComponent.h"
 
-bool AWeapon_Shotgun::Fire_Implementation()
+bool AWeapon_Shotgun::Fire_Implementation(float curEnergy)
 {	if (!canShoot) return false;
-
+	if (curEnergy < energyCost) return false;
+	
 	canShoot = false;
 	UWorld* const world = GetWorld();
 	if (world != nullptr)
@@ -47,7 +48,7 @@ bool AWeapon_Shotgun::Fire_Implementation()
 				UGameplayStatics::SpawnEmitterAtLocation(world, hitParticle , hit.Location);			
 			}
 		}
-		
+		onShoot.Broadcast(energyCost);
 	}
 	world->GetTimerManager().SetTimer(WeaponResetTimerHandle, this, &AWeapon_Shotgun::ResetShoot, shootCooldown);
 	return true;

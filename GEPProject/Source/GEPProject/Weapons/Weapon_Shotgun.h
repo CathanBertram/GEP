@@ -14,7 +14,7 @@ class GEPPROJECT_API AWeapon_Shotgun : public AWeapon_Hitscan
 {
 	GENERATED_BODY()
 public:
-	virtual bool Fire_Implementation() override;
+	virtual bool Fire_Implementation(float curEnergy) override;
 
 protected:
 	UPROPERTY(EditAnywhere, Category = "Weapon Variables")

@@ -5,12 +5,15 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
 #include "GEPProject/Interfaces/Fireable.h"
+#include "GEPProject/Interfaces/GetWeaponBase.h"
 #include "Sound/SoundCue.h"
 
 #include "Weapon_Base.generated.h"
 
-UCLASS(Abstract   )
-class GEPPROJECT_API AWeapon_Base : public AActor, public IFireable
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnShoot, float, shootCost);
+
+UCLASS(Abstract)
+class GEPPROJECT_API AWeapon_Base : public AActor, public IFireable, public IGetWeaponBase
 {
 	GENERATED_BODY()
 	
@@ -19,10 +22,16 @@ public:
 	AWeapon_Base();
 
 	UFUNCTION(BlueprintCallable,BlueprintNativeEvent)
-	bool Fire();
-	virtual bool Fire_Implementation() override;
+	bool Fire(float curEnergy);
+	virtual bool Fire_Implementation(float curEnergy) override;
 
+	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
+	AWeapon_Base* GetWeaponBase();
+	virtual AWeapon_Base* GetWeaponBase_Implementation()  override;
+	
 	FORCEINLINE class USceneComponent* GetGunMuzzle() const {return gunMuzzle;}
+
+	FOnShoot onShoot;
 
 protected:
 	UPROPERTY(VisibleDefaultsOnly)
@@ -43,7 +52,8 @@ protected:
 	UPROPERTY(EditAnywhere, Category = "Weapon Variables")
 	float shootCooldown;
 	bool canShoot = true;
-
+	UPROPERTY(EditAnywhere, Category = "Weapon Variables")
+	float energyCost;
 	void ResetShoot();
 	FTimerHandle WeaponResetTimerHandle;
 };

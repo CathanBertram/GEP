@@ -24,9 +24,14 @@ void AWeapon_Base::ResetShoot()
 	canShoot = true;
 }
 
-bool AWeapon_Base::Fire_Implementation()
+bool AWeapon_Base::Fire_Implementation(float curEnergy)
 {
 	return true;
+}
+
+AWeapon_Base* AWeapon_Base::GetWeaponBase_Implementation()
+{
+	return this;
 }
 
 

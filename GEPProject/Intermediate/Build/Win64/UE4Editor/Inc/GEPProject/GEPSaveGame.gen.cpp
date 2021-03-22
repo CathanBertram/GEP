@@ -84,6 +84,14 @@ void EmptyLinkFunctionForGeneratedCodeGEPSaveGame() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_maxEnergy_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_maxEnergy;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_curEnergy_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_curEnergy;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_maxHealth_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_maxHealth;
@@ -124,6 +132,20 @@ void EmptyLinkFunctionForGeneratedCodeGEPSaveGame() {}
 	};
 #endif
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UGEPSaveGame_Statics::NewProp_maxEnergy_MetaData[] = {
+		{ "Category", "GEPSaveGame" },
+		{ "ModuleRelativePath", "GEPSaveGame.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UGEPSaveGame_Statics::NewProp_maxEnergy = { "maxEnergy", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UGEPSaveGame, maxEnergy), METADATA_PARAMS(Z_Construct_UClass_UGEPSaveGame_Statics::NewProp_maxEnergy_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UGEPSaveGame_Statics::NewProp_maxEnergy_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UGEPSaveGame_Statics::NewProp_curEnergy_MetaData[] = {
+		{ "Category", "GEPSaveGame" },
+		{ "ModuleRelativePath", "GEPSaveGame.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UGEPSaveGame_Statics::NewProp_curEnergy = { "curEnergy", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UGEPSaveGame, curEnergy), METADATA_PARAMS(Z_Construct_UClass_UGEPSaveGame_Statics::NewProp_curEnergy_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UGEPSaveGame_Statics::NewProp_curEnergy_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UGEPSaveGame_Statics::NewProp_maxHealth_MetaData[] = {
 		{ "Category", "GEPSaveGame" },
 		{ "ModuleRelativePath", "GEPSaveGame.h" },
@@ -160,6 +182,8 @@ void EmptyLinkFunctionForGeneratedCodeGEPSaveGame() {}
 #endif
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UGEPSaveGame_Statics::NewProp_transform = { "transform", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UGEPSaveGame, transform), Z_Construct_UScriptStruct_FTransform, METADATA_PARAMS(Z_Construct_UClass_UGEPSaveGame_Statics::NewProp_transform_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UGEPSaveGame_Statics::NewProp_transform_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UGEPSaveGame_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UGEPSaveGame_Statics::NewProp_maxEnergy,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UGEPSaveGame_Statics::NewProp_curEnergy,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UGEPSaveGame_Statics::NewProp_maxHealth,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UGEPSaveGame_Statics::NewProp_curHealth,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UGEPSaveGame_Statics::NewProp_unlockedWeapons,
@@ -197,7 +221,7 @@ void EmptyLinkFunctionForGeneratedCodeGEPSaveGame() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UGEPSaveGame, 2989105431);
+	IMPLEMENT_CLASS(UGEPSaveGame, 3482501717);
 	template<> GEPPROJECT_API UClass* StaticClass<UGEPSaveGame>()
 	{
 		return UGEPSaveGame::StaticClass();

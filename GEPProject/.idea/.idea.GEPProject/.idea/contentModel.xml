@@ -43526,6 +43526,8 @@
           <e p="Component" t="Include">
             <e p="HealthComponent.cpp" t="Include" />
             <e p="HealthComponent.h" t="Include" />
+            <e p="PlayerEnergyComponent.cpp" t="Include" />
+            <e p="PlayerEnergyComponent.h" t="Include" />
             <e p="PlayerHealthComponent.cpp" t="Include" />
             <e p="PlayerHealthComponent.h" t="Include" />
           </e>
@@ -43555,6 +43557,8 @@
             <e p="GetGEPGamemode.h" t="Include" />
             <e p="GetGEPSaveGame.cpp" t="Include" />
             <e p="GetGEPSaveGame.h" t="Include" />
+            <e p="GetWeaponBase.cpp" t="Include" />
+            <e p="GetWeaponBase.h" t="Include" />
             <e p="Initable.cpp" t="Include" />
             <e p="Initable.h" t="Include" />
             <e p="InitableChar.cpp" t="Include" />

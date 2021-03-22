@@ -8,10 +8,10 @@
 #include "GEPProject/Interfaces/Pawnable.h"
 #include "Kismet/GameplayStatics.h"
 
-bool AWeapon_Projectile::Fire_Implementation()
+bool AWeapon_Projectile::Fire_Implementation(float curEnergy)
 {
 	if (!canShoot) return false;
-
+	if (curEnergy < energyCost) return false;
 	canShoot = false;
 	UWorld* const world = GetWorld();
 	if (world != nullptr && projectile != nullptr)
@@ -31,7 +31,7 @@ bool AWeapon_Projectile::Fire_Implementation()
 		AGrenadeProjectile* grenadeProjectile =	world->SpawnActor<AGrenadeProjectile>(projectile, spawnLocation, spawnRotation, actorSpawnParams);
 		grenadeProjectile->Init(damage, damageRadius);
 	}
-
+	onShoot.Broadcast(energyCost);
 	world->GetTimerManager().SetTimer(WeaponResetTimerHandle, this, &AWeapon_Projectile::ResetShoot, shootCooldown);
 	return true;
 }

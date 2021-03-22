@@ -15,7 +15,7 @@ class UGEPSaveGame;
 #endif
 #define GEPPROJECT_EventSystem_generated_h
 
-#define GEPProject_Source_GEPProject_EventSystem_h_21_DELEGATE \
+#define GEPProject_Source_GEPProject_EventSystem_h_22_DELEGATE \
 struct _Script_GEPProject_eventOnUnlockWeapon_Parms \
 { \
 	TSubclassOf<AActor>  weaponToUnlock; \
@@ -27,6 +27,19 @@ static inline void FOnUnlockWeapon_DelegateWrapper(const FMulticastScriptDelegat
 	Parms.weaponToUnlock=weaponToUnlock; \
 	Parms.cost=cost; \
 	OnUnlockWeapon.ProcessMulticastDelegate<UObject>(&Parms); \
+}
+
+
+#define GEPProject_Source_GEPProject_EventSystem_h_21_DELEGATE \
+struct _Script_GEPProject_eventOnEnergyUpdate_Parms \
+{ \
+	float energyPercent; \
+}; \
+static inline void FOnEnergyUpdate_DelegateWrapper(const FMulticastScriptDelegate& OnEnergyUpdate, float energyPercent) \
+{ \
+	_Script_GEPProject_eventOnEnergyUpdate_Parms Parms; \
+	Parms.energyPercent=energyPercent; \
+	OnEnergyUpdate.ProcessMulticastDelegate<UObject>(&Parms); \
 }
 
 
@@ -128,10 +141,10 @@ static inline void FOnTrySave_DelegateWrapper(const FMulticastScriptDelegate& On
 }
 
 
-#define GEPProject_Source_GEPProject_EventSystem_h_25_SPARSE_DATA
-#define GEPProject_Source_GEPProject_EventSystem_h_25_RPC_WRAPPERS
-#define GEPProject_Source_GEPProject_EventSystem_h_25_RPC_WRAPPERS_NO_PURE_DECLS
-#define GEPProject_Source_GEPProject_EventSystem_h_25_INCLASS_NO_PURE_DECLS \
+#define GEPProject_Source_GEPProject_EventSystem_h_26_SPARSE_DATA
+#define GEPProject_Source_GEPProject_EventSystem_h_26_RPC_WRAPPERS
+#define GEPProject_Source_GEPProject_EventSystem_h_26_RPC_WRAPPERS_NO_PURE_DECLS
+#define GEPProject_Source_GEPProject_EventSystem_h_26_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUEventSystem(); \
 	friend struct Z_Construct_UClass_UEventSystem_Statics; \
@@ -140,7 +153,7 @@ public: \
 	DECLARE_SERIALIZER(UEventSystem)
 
 
-#define GEPProject_Source_GEPProject_EventSystem_h_25_INCLASS \
+#define GEPProject_Source_GEPProject_EventSystem_h_26_INCLASS \
 private: \
 	static void StaticRegisterNativesUEventSystem(); \
 	friend struct Z_Construct_UClass_UEventSystem_Statics; \
@@ -149,7 +162,7 @@ public: \
 	DECLARE_SERIALIZER(UEventSystem)
 
 
-#define GEPProject_Source_GEPProject_EventSystem_h_25_STANDARD_CONSTRUCTORS \
+#define GEPProject_Source_GEPProject_EventSystem_h_26_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UEventSystem(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UEventSystem) \
@@ -162,7 +175,7 @@ private: \
 public:
 
 
-#define GEPProject_Source_GEPProject_EventSystem_h_25_ENHANCED_CONSTRUCTORS \
+#define GEPProject_Source_GEPProject_EventSystem_h_26_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UEventSystem() { }; \
 private: \
@@ -175,28 +188,28 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UEventSystem); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UEventSystem)
 
 
-#define GEPProject_Source_GEPProject_EventSystem_h_25_PRIVATE_PROPERTY_OFFSET
-#define GEPProject_Source_GEPProject_EventSystem_h_22_PROLOG
-#define GEPProject_Source_GEPProject_EventSystem_h_25_GENERATED_BODY_LEGACY \
+#define GEPProject_Source_GEPProject_EventSystem_h_26_PRIVATE_PROPERTY_OFFSET
+#define GEPProject_Source_GEPProject_EventSystem_h_23_PROLOG
+#define GEPProject_Source_GEPProject_EventSystem_h_26_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	GEPProject_Source_GEPProject_EventSystem_h_25_PRIVATE_PROPERTY_OFFSET \
-	GEPProject_Source_GEPProject_EventSystem_h_25_SPARSE_DATA \
-	GEPProject_Source_GEPProject_EventSystem_h_25_RPC_WRAPPERS \
-	GEPProject_Source_GEPProject_EventSystem_h_25_INCLASS \
-	GEPProject_Source_GEPProject_EventSystem_h_25_STANDARD_CONSTRUCTORS \
+	GEPProject_Source_GEPProject_EventSystem_h_26_PRIVATE_PROPERTY_OFFSET \
+	GEPProject_Source_GEPProject_EventSystem_h_26_SPARSE_DATA \
+	GEPProject_Source_GEPProject_EventSystem_h_26_RPC_WRAPPERS \
+	GEPProject_Source_GEPProject_EventSystem_h_26_INCLASS \
+	GEPProject_Source_GEPProject_EventSystem_h_26_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define GEPProject_Source_GEPProject_EventSystem_h_25_GENERATED_BODY \
+#define GEPProject_Source_GEPProject_EventSystem_h_26_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	GEPProject_Source_GEPProject_EventSystem_h_25_PRIVATE_PROPERTY_OFFSET \
-	GEPProject_Source_GEPProject_EventSystem_h_25_SPARSE_DATA \
-	GEPProject_Source_GEPProject_EventSystem_h_25_RPC_WRAPPERS_NO_PURE_DECLS \
-	GEPProject_Source_GEPProject_EventSystem_h_25_INCLASS_NO_PURE_DECLS \
-	GEPProject_Source_GEPProject_EventSystem_h_25_ENHANCED_CONSTRUCTORS \
+	GEPProject_Source_GEPProject_EventSystem_h_26_PRIVATE_PROPERTY_OFFSET \
+	GEPProject_Source_GEPProject_EventSystem_h_26_SPARSE_DATA \
+	GEPProject_Source_GEPProject_EventSystem_h_26_RPC_WRAPPERS_NO_PURE_DECLS \
+	GEPProject_Source_GEPProject_EventSystem_h_26_INCLASS_NO_PURE_DECLS \
+	GEPProject_Source_GEPProject_EventSystem_h_26_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

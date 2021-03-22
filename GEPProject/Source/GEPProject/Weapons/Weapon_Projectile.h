@@ -21,7 +21,7 @@ class GEPPROJECT_API AWeapon_Projectile : public AWeapon_Base
 	TSubclassOf<AGrenadeProjectile> projectile;
 
 public:
-	virtual bool Fire_Implementation() override;
+	virtual bool Fire_Implementation(float curEnergy) override;
 	
 protected:
 	UPROPERTY(EditAnywhere)

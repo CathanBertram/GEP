@@ -31,6 +31,8 @@ class AGEPProjectCharacter : public ACharacter, public IInputable, public IInita
 
 	UPROPERTY(EditAnywhere)
 	class UPlayerHealthComponent* healthComponent;
+	UPROPERTY(EditAnywhere)
+	class UPlayerEnergyComponent* energyComponent;
 
 public:
 	AGEPProjectCharacter();
@@ -40,9 +42,10 @@ public:
 	virtual APawn* GetAsPawn_Implementation() override;
 
 	int GetCurrency(){return currency;}
-	
 
-public:
+	UFUNCTION()
+	void UseEnergy(float energyToUse);
+	
 #pragma region InitableChar_Interface
 	UFUNCTION(BlueprintCallable,BlueprintNativeEvent)
 	void Init();

@@ -49,13 +49,11 @@ static struct FScriptStruct_GEPProject_StaticRegisterNativesFUpgrade
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_upgradeValueType_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FEnumPropertyParams NewProp_upgradeValueType;
-		static const UE4CodeGen_Private::FBytePropertyParams NewProp_upgradeValueType_Underlying;
+		static const UE4CodeGen_Private::FBytePropertyParams NewProp_upgradeValueType;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_upgradeType_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FEnumPropertyParams NewProp_upgradeType;
-		static const UE4CodeGen_Private::FBytePropertyParams NewProp_upgradeType_Underlying;
+		static const UE4CodeGen_Private::FBytePropertyParams NewProp_upgradeType;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_valueMulti_MetaData[];
 #endif
@@ -90,16 +88,14 @@ static struct FScriptStruct_GEPProject_StaticRegisterNativesFUpgrade
 		{ "ModuleRelativePath", "Upgrades/Upgrade.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UScriptStruct_FUpgrade_Statics::NewProp_upgradeValueType = { "upgradeValueType", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FUpgrade, upgradeValueType), Z_Construct_UEnum_GEPProject_EUpgradeValueTypes, METADATA_PARAMS(Z_Construct_UScriptStruct_FUpgrade_Statics::NewProp_upgradeValueType_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FUpgrade_Statics::NewProp_upgradeValueType_MetaData)) };
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UScriptStruct_FUpgrade_Statics::NewProp_upgradeValueType_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UScriptStruct_FUpgrade_Statics::NewProp_upgradeValueType = { "upgradeValueType", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FUpgrade, upgradeValueType), Z_Construct_UEnum_GEPProject_EUpgradeValueTypes, METADATA_PARAMS(Z_Construct_UScriptStruct_FUpgrade_Statics::NewProp_upgradeValueType_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FUpgrade_Statics::NewProp_upgradeValueType_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FUpgrade_Statics::NewProp_upgradeType_MetaData[] = {
 		{ "Category", "Upgrade" },
 		{ "ModuleRelativePath", "Upgrades/Upgrade.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UScriptStruct_FUpgrade_Statics::NewProp_upgradeType = { "upgradeType", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FUpgrade, upgradeType), Z_Construct_UEnum_GEPProject_EUpgradeTypes, METADATA_PARAMS(Z_Construct_UScriptStruct_FUpgrade_Statics::NewProp_upgradeType_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FUpgrade_Statics::NewProp_upgradeType_MetaData)) };
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UScriptStruct_FUpgrade_Statics::NewProp_upgradeType_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UScriptStruct_FUpgrade_Statics::NewProp_upgradeType = { "upgradeType", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FUpgrade, upgradeType), Z_Construct_UEnum_GEPProject_EUpgradeTypes, METADATA_PARAMS(Z_Construct_UScriptStruct_FUpgrade_Statics::NewProp_upgradeType_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FUpgrade_Statics::NewProp_upgradeType_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FUpgrade_Statics::NewProp_valueMulti_MetaData[] = {
 		{ "Category", "Upgrade" },
@@ -130,9 +126,7 @@ static struct FScriptStruct_GEPProject_StaticRegisterNativesFUpgrade
 	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UScriptStruct_FUpgrade_Statics::NewProp_level = { "level", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FUpgrade, level), METADATA_PARAMS(Z_Construct_UScriptStruct_FUpgrade_Statics::NewProp_level_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FUpgrade_Statics::NewProp_level_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FUpgrade_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FUpgrade_Statics::NewProp_upgradeValueType,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FUpgrade_Statics::NewProp_upgradeValueType_Underlying,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FUpgrade_Statics::NewProp_upgradeType,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FUpgrade_Statics::NewProp_upgradeType_Underlying,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FUpgrade_Statics::NewProp_valueMulti,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FUpgrade_Statics::NewProp_cost,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FUpgrade_Statics::NewProp_maxLevel,
@@ -166,7 +160,7 @@ static struct FScriptStruct_GEPProject_StaticRegisterNativesFUpgrade
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FUpgrade_Hash() { return 384032241U; }
+	uint32 Get_Z_Construct_UScriptStruct_FUpgrade_Hash() { return 1117795583U; }
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 #ifdef _MSC_VER
 #pragma warning (pop)

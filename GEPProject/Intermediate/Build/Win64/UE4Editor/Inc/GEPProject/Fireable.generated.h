@@ -15,13 +15,13 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 #define GEPProject_Source_GEPProject_Interfaces_Fireable_h_13_SPARSE_DATA
 #define GEPProject_Source_GEPProject_Interfaces_Fireable_h_13_RPC_WRAPPERS \
-	virtual bool Fire_Implementation() { return false; }; \
+	virtual bool Fire_Implementation(float energyCost) { return false; }; \
  \
 	DECLARE_FUNCTION(execFire);
 
 
 #define GEPProject_Source_GEPProject_Interfaces_Fireable_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
-	virtual bool Fire_Implementation() { return false; }; \
+	virtual bool Fire_Implementation(float energyCost) { return false; }; \
  \
 	DECLARE_FUNCTION(execFire);
 
@@ -29,6 +29,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define GEPProject_Source_GEPProject_Interfaces_Fireable_h_13_EVENT_PARMS \
 	struct Fireable_eventFire_Parms \
 	{ \
+		float energyCost; \
 		bool ReturnValue; \
  \
 		/** Constructor, initializes return property only **/ \
@@ -96,7 +97,7 @@ protected: \
 public: \
 	typedef UFireable UClassType; \
 	typedef IFireable ThisClass; \
-	static bool Execute_Fire(UObject* O); \
+	static bool Execute_Fire(UObject* O, float energyCost); \
 	virtual UObject* _getUObject() const { check(0 && "Missing required implementation."); return nullptr; }
 
 
@@ -106,7 +107,7 @@ protected: \
 public: \
 	typedef UFireable UClassType; \
 	typedef IFireable ThisClass; \
-	static bool Execute_Fire(UObject* O); \
+	static bool Execute_Fire(UObject* O, float energyCost); \
 	virtual UObject* _getUObject() const { check(0 && "Missing required implementation."); return nullptr; }
 
 

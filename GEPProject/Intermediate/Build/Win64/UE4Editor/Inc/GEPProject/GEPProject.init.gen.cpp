@@ -20,7 +20,9 @@ void EmptyLinkFunctionForGeneratedCodeGEPProject_init() {}
 	GEPPROJECT_API UFunction* Z_Construct_UDelegateFunction_GEPProject_OnLoad__DelegateSignature();
 	GEPPROJECT_API UFunction* Z_Construct_UDelegateFunction_GEPProject_OnDamagePlayer__DelegateSignature();
 	GEPPROJECT_API UFunction* Z_Construct_UDelegateFunction_GEPProject_OnHealthUpdate__DelegateSignature();
+	GEPPROJECT_API UFunction* Z_Construct_UDelegateFunction_GEPProject_OnEnergyUpdate__DelegateSignature();
 	GEPPROJECT_API UFunction* Z_Construct_UDelegateFunction_GEPProject_OnUnlockWeapon__DelegateSignature();
+	GEPPROJECT_API UFunction* Z_Construct_UDelegateFunction_GEPProject_OnShoot__DelegateSignature();
 	GEPPROJECT_API UFunction* Z_Construct_UDelegateFunction_GEPProject_OnDeath__DelegateSignature();
 	UPackage* Z_Construct_UPackage__Script_GEPProject()
 	{
@@ -37,7 +39,9 @@ void EmptyLinkFunctionForGeneratedCodeGEPProject_init() {}
 				(UObject* (*)())Z_Construct_UDelegateFunction_GEPProject_OnLoad__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_GEPProject_OnDamagePlayer__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_GEPProject_OnHealthUpdate__DelegateSignature,
+				(UObject* (*)())Z_Construct_UDelegateFunction_GEPProject_OnEnergyUpdate__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_GEPProject_OnUnlockWeapon__DelegateSignature,
+				(UObject* (*)())Z_Construct_UDelegateFunction_GEPProject_OnShoot__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_GEPProject_OnDeath__DelegateSignature,
 			};
 			static const UE4CodeGen_Private::FPackageParams PackageParams = {
@@ -45,8 +49,8 @@ void EmptyLinkFunctionForGeneratedCodeGEPProject_init() {}
 				SingletonFuncArray,
 				UE_ARRAY_COUNT(SingletonFuncArray),
 				PKG_CompiledIn | 0x00000000,
-				0x516DBEA6,
-				0x0AA5C480,
+				0xC5F5128D,
+				0xACF0BAE4,
 				METADATA_PARAMS(nullptr, 0)
 			};
 			UE4CodeGen_Private::ConstructUPackage(ReturnPackage, PackageParams);

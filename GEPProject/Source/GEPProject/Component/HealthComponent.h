@@ -36,4 +36,5 @@ public:
 	FDeath onDeath;
 	
 	void SetCurHealth(float health) {currentHealth = health;}
+	void SetBaseHealth(float health) {baseHealth = health;}
 };

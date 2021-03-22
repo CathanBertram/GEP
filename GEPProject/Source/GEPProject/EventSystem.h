@@ -18,6 +18,7 @@ DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnSave, UGEPSaveGame*, saveInstance
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnLoad, UGEPSaveGame*, saveInstance);
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnDamagePlayer, float, damageAmount);
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnHealthUpdate, float, healthPercent);
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnEnergyUpdate, float, energyPercent);
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FOnUnlockWeapon, TSubclassOf<AActor>, weaponToUnlock, int, cost);
 UCLASS()
 class GEPPROJECT_API UEventSystem : public UGameInstanceSubsystem
@@ -47,6 +48,10 @@ public:
 
 	FOnHealthUpdate onHealthUpdate;
 	void OnHealthUpdate(float healthPercent) {onHealthUpdate.Broadcast(healthPercent);}
+	
+	FOnEnergyUpdate onEnergyUpdate;
+	void OnEnergyUpdate(float energyPercent) {onEnergyUpdate.Broadcast(energyPercent);}
+	
 	FOnUnlockWeapon onUnlockWeapon;
 	void OnUnlockWeapon(TSubclassOf<AActor> weaponToUnlock, int cost) {onUnlockWeapon.Broadcast(weaponToUnlock, cost);}
 

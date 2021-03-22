@@ -5,15 +5,16 @@
 
 #include "EUpgradeTypes.h"
 
+
 UUpgradeSystem::UUpgradeSystem()
 {
+	//Create upgrades and add them to array
 	for (int i = 0; i < static_cast<int>(EUpgradeTypes::End); ++i)
 	{
-		upgrades.Add(FUpgrade(0,0, static_cast<EUpgradeTypes>(i)));
-		GEngine->AddOnScreenDebugMessage(-1, 10.f, FColor::Red, FString::FromInt(static_cast<int>(upgrades[i].upgradeType)));
+		upgrades.Add(FUpgrade(0,0, static_cast<TEnumAsByte<EUpgradeTypes>>(i)));
 	}
 }
-float UUpgradeSystem::GetUpgradeValue(EUpgradeTypes upgradeType)
+float UUpgradeSystem::GetUpgradeValue(TEnumAsByte<EUpgradeTypes> upgradeType)
 {
 	for (FUpgrade upgrade : upgrades)
 	{

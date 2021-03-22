@@ -75,6 +75,7 @@ class APawn;
 	DECLARE_FUNCTION(execJumpPressed); \
 	DECLARE_FUNCTION(execGetAsChar); \
 	DECLARE_FUNCTION(execInit); \
+	DECLARE_FUNCTION(execUseEnergy); \
 	DECLARE_FUNCTION(execGetAsPawn);
 
 
@@ -110,6 +111,7 @@ class APawn;
 	DECLARE_FUNCTION(execJumpPressed); \
 	DECLARE_FUNCTION(execGetAsChar); \
 	DECLARE_FUNCTION(execInit); \
+	DECLARE_FUNCTION(execUseEnergy); \
 	DECLARE_FUNCTION(execGetAsPawn);
 
 
@@ -210,6 +212,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AGEPProjectCharacter); \
 	FORCEINLINE static uint32 __PPO__unlockedWeaponArray() { return STRUCT_OFFSET(AGEPProjectCharacter, unlockedWeaponArray); } \
 	FORCEINLINE static uint32 __PPO__FirstPersonCameraComponent() { return STRUCT_OFFSET(AGEPProjectCharacter, FirstPersonCameraComponent); } \
 	FORCEINLINE static uint32 __PPO__healthComponent() { return STRUCT_OFFSET(AGEPProjectCharacter, healthComponent); } \
+	FORCEINLINE static uint32 __PPO__energyComponent() { return STRUCT_OFFSET(AGEPProjectCharacter, energyComponent); } \
 	FORCEINLINE static uint32 __PPO__interactRange() { return STRUCT_OFFSET(AGEPProjectCharacter, interactRange); } \
 	FORCEINLINE static uint32 __PPO__canBeDamaged() { return STRUCT_OFFSET(AGEPProjectCharacter, canBeDamaged); }
 

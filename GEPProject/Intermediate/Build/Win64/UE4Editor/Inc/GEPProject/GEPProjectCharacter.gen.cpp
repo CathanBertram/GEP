@@ -21,6 +21,7 @@ void EmptyLinkFunctionForGeneratedCodeGEPProjectCharacter() {}
 	GEPPROJECT_API UClass* Z_Construct_UClass_UGEPSaveGame_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
+	GEPPROJECT_API UClass* Z_Construct_UClass_UPlayerEnergyComponent_NoRegister();
 	GEPPROJECT_API UClass* Z_Construct_UClass_UPlayerHealthComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UChildActorComponent_NoRegister();
@@ -251,6 +252,14 @@ void EmptyLinkFunctionForGeneratedCodeGEPProjectCharacter() {}
 		P_THIS->Init_Implementation();
 		P_NATIVE_END;
 	}
+	DEFINE_FUNCTION(AGEPProjectCharacter::execUseEnergy)
+	{
+		P_GET_PROPERTY(FFloatProperty,Z_Param_energyToUse);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->UseEnergy(Z_Param_energyToUse);
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(AGEPProjectCharacter::execGetAsPawn)
 	{
 		P_FINISH;
@@ -434,6 +443,7 @@ void EmptyLinkFunctionForGeneratedCodeGEPProjectCharacter() {}
 			{ "Turn", &AGEPProjectCharacter::execTurn },
 			{ "TurnAtRate", &AGEPProjectCharacter::execTurnAtRate },
 			{ "UnlockWeapon", &AGEPProjectCharacter::execUnlockWeapon },
+			{ "UseEnergy", &AGEPProjectCharacter::execUseEnergy },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 	}
@@ -1231,6 +1241,38 @@ void EmptyLinkFunctionForGeneratedCodeGEPProjectCharacter() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_AGEPProjectCharacter_UseEnergy_Statics
+	{
+		struct GEPProjectCharacter_eventUseEnergy_Parms
+		{
+			float energyToUse;
+		};
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_energyToUse;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AGEPProjectCharacter_UseEnergy_Statics::NewProp_energyToUse = { "energyToUse", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(GEPProjectCharacter_eventUseEnergy_Parms, energyToUse), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AGEPProjectCharacter_UseEnergy_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AGEPProjectCharacter_UseEnergy_Statics::NewProp_energyToUse,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AGEPProjectCharacter_UseEnergy_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Player/GEPProjectCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AGEPProjectCharacter_UseEnergy_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AGEPProjectCharacter, nullptr, "UseEnergy", nullptr, nullptr, sizeof(GEPProjectCharacter_eventUseEnergy_Parms), Z_Construct_UFunction_AGEPProjectCharacter_UseEnergy_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AGEPProjectCharacter_UseEnergy_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AGEPProjectCharacter_UseEnergy_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AGEPProjectCharacter_UseEnergy_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AGEPProjectCharacter_UseEnergy()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AGEPProjectCharacter_UseEnergy_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	UClass* Z_Construct_UClass_AGEPProjectCharacter_NoRegister()
 	{
 		return AGEPProjectCharacter::StaticClass();
@@ -1267,6 +1309,10 @@ void EmptyLinkFunctionForGeneratedCodeGEPProjectCharacter() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ControllerTurnRate_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_ControllerTurnRate;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_energyComponent_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_energyComponent;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_healthComponent_MetaData[];
 #endif
@@ -1325,6 +1371,7 @@ void EmptyLinkFunctionForGeneratedCodeGEPProjectCharacter() {}
 		{ &Z_Construct_UFunction_AGEPProjectCharacter_Turn, "Turn" }, // 1831284628
 		{ &Z_Construct_UFunction_AGEPProjectCharacter_TurnAtRate, "TurnAtRate" }, // 3157397947
 		{ &Z_Construct_UFunction_AGEPProjectCharacter_UnlockWeapon, "UnlockWeapon" }, // 2894649146
+		{ &Z_Construct_UFunction_AGEPProjectCharacter_UseEnergy, "UseEnergy" }, // 2925409253
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AGEPProjectCharacter_Statics::Class_MetaDataParams[] = {
@@ -1386,6 +1433,14 @@ void EmptyLinkFunctionForGeneratedCodeGEPProjectCharacter() {}
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AGEPProjectCharacter_Statics::NewProp_ControllerTurnRate = { "ControllerTurnRate", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AGEPProjectCharacter, ControllerTurnRate), METADATA_PARAMS(Z_Construct_UClass_AGEPProjectCharacter_Statics::NewProp_ControllerTurnRate_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AGEPProjectCharacter_Statics::NewProp_ControllerTurnRate_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AGEPProjectCharacter_Statics::NewProp_energyComponent_MetaData[] = {
+		{ "Category", "GEPProjectCharacter" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Player/GEPProjectCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AGEPProjectCharacter_Statics::NewProp_energyComponent = { "energyComponent", nullptr, (EPropertyFlags)0x0040000000080009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AGEPProjectCharacter, energyComponent), Z_Construct_UClass_UPlayerEnergyComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AGEPProjectCharacter_Statics::NewProp_energyComponent_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AGEPProjectCharacter_Statics::NewProp_energyComponent_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AGEPProjectCharacter_Statics::NewProp_healthComponent_MetaData[] = {
 		{ "Category", "GEPProjectCharacter" },
 		{ "EditInline", "true" },
@@ -1429,6 +1484,7 @@ void EmptyLinkFunctionForGeneratedCodeGEPProjectCharacter() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGEPProjectCharacter_Statics::NewProp_MouseTurnRate,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGEPProjectCharacter_Statics::NewProp_ControllerLookUpRate,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGEPProjectCharacter_Statics::NewProp_ControllerTurnRate,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGEPProjectCharacter_Statics::NewProp_energyComponent,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGEPProjectCharacter_Statics::NewProp_healthComponent,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGEPProjectCharacter_Statics::NewProp_FirstPersonCameraComponent,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGEPProjectCharacter_Statics::NewProp_unlockedWeaponArray,
@@ -1467,7 +1523,7 @@ void EmptyLinkFunctionForGeneratedCodeGEPProjectCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AGEPProjectCharacter, 669814972);
+	IMPLEMENT_CLASS(AGEPProjectCharacter, 1078617421);
 	template<> GEPPROJECT_API UClass* StaticClass<AGEPProjectCharacter>()
 	{
 		return AGEPProjectCharacter::StaticClass();

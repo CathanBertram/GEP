@@ -7,7 +7,7 @@
 #include "EUpgradeTypes.generated.h"
 
 UENUM()
-enum class EUpgradeTypes : uint8
+enum EUpgradeTypes
 {
 	Player_RegenAmount								UMETA(DisplayName = "PlayerRegenAmount"),
 	Player_RegenTick								UMETA(DisplayName = "PlayerRegenTick"),
@@ -15,6 +15,8 @@ enum class EUpgradeTypes : uint8
 	Player_DoubleCurrencyChance						UMETA(DisplayName = "DoubleCurrencyChance"),
 	Player_PassiveCurrencyGain						UMETA(DisplayName = "PassiveCurrencyGain"),
 	Player_PassiveCurrencyTick						UMETA(DisplayName = "PassiveCurrencyTick"),
+	Player_PassiveEnergyRegen						UMETA(DisplayName = "PassiveEnergyRegen"),
+	Player_PassiveEnergyTick						UMETA(DisplayName = "PassiveEnergyTick"),
 	Enemy_SpawnRate									UMETA(DisplayName = "EnemySpawnRate"),
 	Enemy_SpawnAmount								UMETA(DisplayName = "EnemySpawnAmount"),
 	Enemy_MaxAliveEnemies							UMETA(DisplayName = "MaxAliveEnemies"),
@@ -49,7 +51,7 @@ enum class EUpgradeTypes : uint8
 };
 
 UENUM()
-enum class EUpgradeValueTypes : uint8
+enum EUpgradeValueTypes
 {
 	Add,
 	Multiply

@@ -24,9 +24,9 @@ struct FUpgrade
 	UPROPERTY(EditAnywhere)
 	float valueMulti;
 	UPROPERTY(EditAnywhere)
-	EUpgradeTypes upgradeType;
+	TEnumAsByte<EUpgradeTypes> upgradeType;
 	UPROPERTY(EditAnywhere)
-	EUpgradeValueTypes upgradeValueType;
+	TEnumAsByte<EUpgradeValueTypes> upgradeValueType;
 	
 	FUpgrade()
 	{
@@ -36,7 +36,7 @@ struct FUpgrade
 		valueMulti = 0;
 		upgradeValueType = EUpgradeValueTypes::Multiply;
 	}
-	FUpgrade(float Cost, float MultiValue, EUpgradeTypes UpgradeType)
+	FUpgrade(float Cost, float MultiValue, TEnumAsByte<EUpgradeTypes> UpgradeType)
 	{
 		level = 1;
 		maxLevel = 50;
