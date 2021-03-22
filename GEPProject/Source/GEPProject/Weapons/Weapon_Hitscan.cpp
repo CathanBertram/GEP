@@ -19,14 +19,14 @@ AWeapon_Hitscan::AWeapon_Hitscan() : AWeapon_Base()
 	damage = 10.f;
 }
 
-bool AWeapon_Hitscan::Fire_Implementation(float curEnergy)
+bool AWeapon_Hitscan::Fire_Implementation()
 {
-	Shoot(curEnergy);
+	Shoot();
 	return true;
 }
 
 
-void AWeapon_Hitscan::Shoot(float curEnergy)
+void AWeapon_Hitscan::Shoot()
 {
 	if (!canShoot) return;
 	if (curEnergy < energyCost) return;

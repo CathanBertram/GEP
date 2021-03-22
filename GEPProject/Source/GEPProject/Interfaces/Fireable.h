@@ -23,5 +23,5 @@ class GEPPROJECT_API IFireable
 	// Add interface functions to this class. This is the class that will be inherited to implement this interface.
 public:
 	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
-	bool Fire(float energyCost);
+	bool Fire();
 };

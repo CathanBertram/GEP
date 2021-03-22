@@ -10,6 +10,7 @@
 
 #include "PlayerEnergyComponent.generated.h"
 
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnCompEnergyUpdate, float, newCur);
 
 UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
 class GEPPROJECT_API UPlayerEnergyComponent : public UActorComponent
@@ -26,6 +27,7 @@ public:
 	virtual void Init();
 	void UseEnergy(float energyToUse);
 	void SetEventInstance(UEventSystem* instance) {eventInstance = instance;}
+	FOnCompEnergyUpdate onCompEnergyUpdate;
 
 protected:
 	protected:
@@ -42,6 +44,8 @@ protected:
 	UPROPERTY(EditAnywhere)
 	float energyRegenResetTime;
 
+	UPROPERTY(EditAnywhere)
+	bool canConsume = true;
 
 	void Regen();
 	UEventSystem* eventInstance;

@@ -15,24 +15,18 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 #define GEPProject_Source_GEPProject_Interfaces_FireReleaseable_h_13_SPARSE_DATA
 #define GEPProject_Source_GEPProject_Interfaces_FireReleaseable_h_13_RPC_WRAPPERS \
-	virtual void FireReleased_Implementation(float curEnergy) {}; \
+	virtual void FireReleased_Implementation() {}; \
  \
 	DECLARE_FUNCTION(execFireReleased);
 
 
 #define GEPProject_Source_GEPProject_Interfaces_FireReleaseable_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
-	virtual void FireReleased_Implementation(float curEnergy) {}; \
+	virtual void FireReleased_Implementation() {}; \
  \
 	DECLARE_FUNCTION(execFireReleased);
 
 
-#define GEPProject_Source_GEPProject_Interfaces_FireReleaseable_h_13_EVENT_PARMS \
-	struct FireReleaseable_eventFireReleased_Parms \
-	{ \
-		float curEnergy; \
-	};
-
-
+#define GEPProject_Source_GEPProject_Interfaces_FireReleaseable_h_13_EVENT_PARMS
 #define GEPProject_Source_GEPProject_Interfaces_FireReleaseable_h_13_CALLBACK_WRAPPERS
 #define GEPProject_Source_GEPProject_Interfaces_FireReleaseable_h_13_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
@@ -90,7 +84,7 @@ protected: \
 public: \
 	typedef UFireReleaseable UClassType; \
 	typedef IFireReleaseable ThisClass; \
-	static void Execute_FireReleased(UObject* O, float curEnergy); \
+	static void Execute_FireReleased(UObject* O); \
 	virtual UObject* _getUObject() const { check(0 && "Missing required implementation."); return nullptr; }
 
 
@@ -100,7 +94,7 @@ protected: \
 public: \
 	typedef UFireReleaseable UClassType; \
 	typedef IFireReleaseable ThisClass; \
-	static void Execute_FireReleased(UObject* O, float curEnergy); \
+	static void Execute_FireReleased(UObject* O); \
 	virtual UObject* _getUObject() const { check(0 && "Missing required implementation."); return nullptr; }
 
 

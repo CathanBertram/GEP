@@ -16,11 +16,11 @@ class GEPPROJECT_API AWeapon_Hitscan_Charge : public AWeapon_Hitscan, public IFi
 {
 	GENERATED_BODY()
 public:
-	virtual bool Fire_Implementation(float energyCost) override;
+	virtual bool Fire_Implementation() override;
 
 	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
-    void FireReleased(float curEnergy);
-	virtual void FireReleased_Implementation(float curEnergy) override;
+    void FireReleased();
+	virtual void FireReleased_Implementation() override;
 
 protected:
 	UPROPERTY(EditAnywhere, Category = "Weapon Variables")

@@ -17,14 +17,14 @@ class GEPPROJECT_API AWeapon_Hitscan_Auto : public AWeapon_Hitscan, public IFire
 {
 	GENERATED_BODY()
 public:
-	virtual bool Fire_Implementation(float curEnergy) override;
+	virtual bool Fire_Implementation( ) override;
 
 	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
-	void FireReleased(float curEnergy);
-	virtual void FireReleased_Implementation(float curEnergy) override;
+	void FireReleased( );
+	virtual void FireReleased_Implementation( ) override;
 
 protected:
 	bool shooting;
-	virtual void Shoot(float curEnergy) override;
+	virtual void Shoot( ) override;
 	FTimerHandle WeaponShootTimerHandle;
 };

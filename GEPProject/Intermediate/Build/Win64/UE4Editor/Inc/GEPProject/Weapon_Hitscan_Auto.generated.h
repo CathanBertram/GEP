@@ -15,7 +15,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 #define GEPProject_Source_GEPProject_Weapons_Weapon_Hitscan_Auto_h_18_SPARSE_DATA
 #define GEPProject_Source_GEPProject_Weapons_Weapon_Hitscan_Auto_h_18_RPC_WRAPPERS \
-	virtual void FireReleased_Implementation(float curEnergy); \
+	virtual void FireReleased_Implementation(); \
  \
 	DECLARE_FUNCTION(execFireReleased);
 
@@ -25,13 +25,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	DECLARE_FUNCTION(execFireReleased);
 
 
-#define GEPProject_Source_GEPProject_Weapons_Weapon_Hitscan_Auto_h_18_EVENT_PARMS \
-	struct Weapon_Hitscan_Auto_eventFireReleased_Parms \
-	{ \
-		float curEnergy; \
-	};
-
-
+#define GEPProject_Source_GEPProject_Weapons_Weapon_Hitscan_Auto_h_18_EVENT_PARMS
 #define GEPProject_Source_GEPProject_Weapons_Weapon_Hitscan_Auto_h_18_CALLBACK_WRAPPERS
 #define GEPProject_Source_GEPProject_Weapons_Weapon_Hitscan_Auto_h_18_INCLASS_NO_PURE_DECLS \
 private: \

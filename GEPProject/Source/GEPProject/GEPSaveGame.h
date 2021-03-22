@@ -21,7 +21,7 @@ public:
 	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
     UGEPSaveGame* GetGEPSave();
 	virtual UGEPSaveGame* GetGEPSave_Implementation() override;
-
+	
 	UPROPERTY(EditAnywhere)
 	FTransform transform;
 	UPROPERTY(EditAnywhere)

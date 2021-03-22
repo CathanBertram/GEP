@@ -15,7 +15,7 @@ class GEPPROJECT_API AWeapon_Hitscan : public AWeapon_Base
 	GENERATED_BODY()
 	
 public:
-	virtual bool Fire_Implementation(float curEnergy) override;
+	virtual bool Fire_Implementation() override;
 
 	AWeapon_Hitscan();
 
@@ -24,7 +24,7 @@ protected:
 	float range;
 
 	
-	virtual void Shoot(float curEnergy);
+	virtual void Shoot();
 
 	UPROPERTY(EditAnywhere)
 	UParticleSystem* hitParticle;

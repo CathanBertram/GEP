@@ -62,12 +62,8 @@ void AGEPPlayerController::SaveGame()
 		UGEPSaveGame* saveGameInstance = IGetGEPSaveGame::Execute_GetGEPSave(tempSave);
 		GetGameInstance()->GetSubsystem<UEventSystem>()->OnSave(saveGameInstance);
 		UGameplayStatics::SaveGameToSlot(saveGameInstance, TEXT("Save"), 0);
-		GEngine->AddOnScreenDebugMessage(-1,.5f,FColor::Red, "saveS");
 	}
-	else
-	{
-		GEngine->AddOnScreenDebugMessage(-1,.5f,FColor::Red, "saveF");
-	}
+
 	
 	//Push save game to slot
 }

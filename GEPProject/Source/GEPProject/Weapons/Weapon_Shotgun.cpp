@@ -9,7 +9,7 @@
 #include "Kismet/GameplayStatics.h"
 #include "Particles/ParticleSystemComponent.h"
 
-bool AWeapon_Shotgun::Fire_Implementation(float curEnergy)
+bool AWeapon_Shotgun::Fire_Implementation()
 {	if (!canShoot) return false;
 	if (curEnergy < energyCost) return false;
 	

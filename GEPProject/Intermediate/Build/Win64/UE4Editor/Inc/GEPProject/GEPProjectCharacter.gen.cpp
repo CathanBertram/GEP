@@ -13,10 +13,11 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeGEPProjectCharacter() {}
 // Cross Module References
+	GEPPROJECT_API UFunction* Z_Construct_UDelegateFunction_GEPProject_OnLocalEnergyUpdate__DelegateSignature();
+	UPackage* Z_Construct_UPackage__Script_GEPProject();
 	GEPPROJECT_API UClass* Z_Construct_UClass_AGEPProjectCharacter_NoRegister();
 	GEPPROJECT_API UClass* Z_Construct_UClass_AGEPProjectCharacter();
 	ENGINE_API UClass* Z_Construct_UClass_ACharacter();
-	UPackage* Z_Construct_UPackage__Script_GEPProject();
 	ENGINE_API UClass* Z_Construct_UClass_APawn_NoRegister();
 	GEPPROJECT_API UClass* Z_Construct_UClass_UGEPSaveGame_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
@@ -29,6 +30,46 @@ void EmptyLinkFunctionForGeneratedCodeGEPProjectCharacter() {}
 	GEPPROJECT_API UClass* Z_Construct_UClass_UInitableChar_NoRegister();
 	GEPPROJECT_API UClass* Z_Construct_UClass_UPawnable_NoRegister();
 // End Cross Module References
+	struct Z_Construct_UDelegateFunction_GEPProject_OnLocalEnergyUpdate__DelegateSignature_Statics
+	{
+		struct _Script_GEPProject_eventOnLocalEnergyUpdate_Parms
+		{
+			float newEnergy;
+		};
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_newEnergy;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UDelegateFunction_GEPProject_OnLocalEnergyUpdate__DelegateSignature_Statics::NewProp_newEnergy = { "newEnergy", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(_Script_GEPProject_eventOnLocalEnergyUpdate_Parms, newEnergy), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_GEPProject_OnLocalEnergyUpdate__DelegateSignature_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_GEPProject_OnLocalEnergyUpdate__DelegateSignature_Statics::NewProp_newEnergy,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_GEPProject_OnLocalEnergyUpdate__DelegateSignature_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Player/GEPProjectCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_GEPProject_OnLocalEnergyUpdate__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_GEPProject, nullptr, "OnLocalEnergyUpdate__DelegateSignature", nullptr, nullptr, sizeof(_Script_GEPProject_eventOnLocalEnergyUpdate_Parms), Z_Construct_UDelegateFunction_GEPProject_OnLocalEnergyUpdate__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_GEPProject_OnLocalEnergyUpdate__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_GEPProject_OnLocalEnergyUpdate__DelegateSignature_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_GEPProject_OnLocalEnergyUpdate__DelegateSignature_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UDelegateFunction_GEPProject_OnLocalEnergyUpdate__DelegateSignature()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UDelegateFunction_GEPProject_OnLocalEnergyUpdate__DelegateSignature_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	DEFINE_FUNCTION(AGEPProjectCharacter::execUpdateEnergy)
+	{
+		P_GET_PROPERTY(FFloatProperty,Z_Param_newEnergy);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->UpdateEnergy(Z_Param_newEnergy);
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(AGEPProjectCharacter::execUnlockWeapon)
 	{
 		P_GET_OBJECT(UClass,Z_Param_weaponToUnlock);
@@ -443,6 +484,7 @@ void EmptyLinkFunctionForGeneratedCodeGEPProjectCharacter() {}
 			{ "Turn", &AGEPProjectCharacter::execTurn },
 			{ "TurnAtRate", &AGEPProjectCharacter::execTurnAtRate },
 			{ "UnlockWeapon", &AGEPProjectCharacter::execUnlockWeapon },
+			{ "UpdateEnergy", &AGEPProjectCharacter::execUpdateEnergy },
 			{ "UseEnergy", &AGEPProjectCharacter::execUseEnergy },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
@@ -1241,6 +1283,38 @@ void EmptyLinkFunctionForGeneratedCodeGEPProjectCharacter() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_AGEPProjectCharacter_UpdateEnergy_Statics
+	{
+		struct GEPProjectCharacter_eventUpdateEnergy_Parms
+		{
+			float newEnergy;
+		};
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_newEnergy;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AGEPProjectCharacter_UpdateEnergy_Statics::NewProp_newEnergy = { "newEnergy", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(GEPProjectCharacter_eventUpdateEnergy_Parms, newEnergy), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AGEPProjectCharacter_UpdateEnergy_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AGEPProjectCharacter_UpdateEnergy_Statics::NewProp_newEnergy,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AGEPProjectCharacter_UpdateEnergy_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Player/GEPProjectCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AGEPProjectCharacter_UpdateEnergy_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AGEPProjectCharacter, nullptr, "UpdateEnergy", nullptr, nullptr, sizeof(GEPProjectCharacter_eventUpdateEnergy_Parms), Z_Construct_UFunction_AGEPProjectCharacter_UpdateEnergy_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AGEPProjectCharacter_UpdateEnergy_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AGEPProjectCharacter_UpdateEnergy_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AGEPProjectCharacter_UpdateEnergy_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AGEPProjectCharacter_UpdateEnergy()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AGEPProjectCharacter_UpdateEnergy_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_AGEPProjectCharacter_UseEnergy_Statics
 	{
 		struct GEPProjectCharacter_eventUseEnergy_Parms
@@ -1371,6 +1445,7 @@ void EmptyLinkFunctionForGeneratedCodeGEPProjectCharacter() {}
 		{ &Z_Construct_UFunction_AGEPProjectCharacter_Turn, "Turn" }, // 1831284628
 		{ &Z_Construct_UFunction_AGEPProjectCharacter_TurnAtRate, "TurnAtRate" }, // 3157397947
 		{ &Z_Construct_UFunction_AGEPProjectCharacter_UnlockWeapon, "UnlockWeapon" }, // 2894649146
+		{ &Z_Construct_UFunction_AGEPProjectCharacter_UpdateEnergy, "UpdateEnergy" }, // 2650445027
 		{ &Z_Construct_UFunction_AGEPProjectCharacter_UseEnergy, "UseEnergy" }, // 2925409253
 	};
 #if WITH_METADATA
@@ -1523,7 +1598,7 @@ void EmptyLinkFunctionForGeneratedCodeGEPProjectCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AGEPProjectCharacter, 1078617421);
+	IMPLEMENT_CLASS(AGEPProjectCharacter, 962084174);
 	template<> GEPPROJECT_API UClass* StaticClass<AGEPProjectCharacter>()
 	{
 		return AGEPProjectCharacter::StaticClass();

@@ -43,8 +43,13 @@ AGEPProjectCharacter::AGEPProjectCharacter() : Super()
 	equippedWeapon->CreateChildActor();
 
 	healthComponent = CreateDefaultSubobject<UPlayerHealthComponent>(TEXT("HealthComponent"));
+	healthComponent->SetBaseHealth(100);
+	healthComponent->SetCurHealth(100);
+	healthComponent->SetMaxHealth(100);
 	energyComponent = CreateDefaultSubobject<UPlayerEnergyComponent>(TEXT("EnergyComponent"));
-	
+	energyComponent->SetBaseEnergy(300);
+	energyComponent->SetCurEnergy(300);
+	energyComponent->SetMaxEnergy(300);
 }
 
 APawn* AGEPProjectCharacter::GetAsPawn_Implementation()
@@ -55,6 +60,7 @@ APawn* AGEPProjectCharacter::GetAsPawn_Implementation()
 void AGEPProjectCharacter::UseEnergy(float energyToUse)
 {
 	energyComponent->UseEnergy(energyToUse);
+	onLocalEnergyUpdate.Broadcast(energyComponent->GetCurEnergy());
 }
 
 void AGEPProjectCharacter::Save(UGEPSaveGame* saveInstance)
@@ -93,6 +99,11 @@ void AGEPProjectCharacter::UnlockWeapon(TSubclassOf<AActor> weaponToUnlock, int 
 	eventSystem->OnCurrencyUpdate(currency);
 }
 
+void AGEPProjectCharacter::UpdateEnergy(float newEnergy)
+{
+	onLocalEnergyUpdate.Broadcast(newEnergy);
+}
+
 void AGEPProjectCharacter::GainCurrency(int curToGain)
 {
 	currency += curToGain;
@@ -125,22 +136,18 @@ void AGEPProjectCharacter::Init_Implementation()
 	eventSystemInstance->onDamagePlayer.AddDynamic(this, &AGEPProjectCharacter::DamagePlayer);
 
 	healthComponent->SetEventInstance(eventSystemInstance);
-	healthComponent->SetBaseHealth(100);
-	healthComponent->SetCurHealth(100);
-	healthComponent->SetMaxHealth(100);
 	healthComponent->Init();
 	
 	energyComponent->SetEventInstance(eventSystemInstance);
-	energyComponent->SetBaseEnergy(300);
-	energyComponent->SetCurEnergy(300);
-	energyComponent->SetMaxEnergy(300);
 	energyComponent->Init();
+	energyComponent->onCompEnergyUpdate.AddDynamic(this, &AGEPProjectCharacter::UpdateEnergy);
 
 	AActor* child = equippedWeapon->GetChildActor();
 	if (UKismetSystemLibrary::DoesImplementInterface(child, UGetWeaponBase::StaticClass()))
 	{
 		AWeapon_Base* tempWeaponBase = IGetWeaponBase::Execute_GetWeaponBase(child);
 		tempWeaponBase->onShoot.AddDynamic(this, &AGEPProjectCharacter::UseEnergy);
+		onLocalEnergyUpdate.AddDynamic(tempWeaponBase, &AWeapon_Base::UpdateCurEnergy);
 	}
 	
 	eventSystemInstance->OnHealthUpdate(healthComponent->GetHealthPercent());
@@ -169,7 +176,7 @@ void AGEPProjectCharacter::FirePressed_Implementation()
 	AActor* child = equippedWeapon->GetChildActor();
 	if (child->GetClass()->ImplementsInterface(UFireable::StaticClass()))
 	{
-		IFireable::Execute_Fire(child, energyComponent->GetCurEnergy());
+		IFireable::Execute_Fire(child);
 	}
 }
 
@@ -178,7 +185,7 @@ void AGEPProjectCharacter::FireReleased_Implementation()
 	AActor* child = equippedWeapon->GetChildActor();
 	if (child->GetClass()->ImplementsInterface(UFireReleaseable::StaticClass()))
 	{
-		IFireReleaseable::Execute_FireReleased(child, energyComponent->GetCurEnergy());
+		IFireReleaseable::Execute_FireReleased(child);
 	}
 }
 
@@ -289,6 +296,7 @@ void AGEPProjectCharacter::SwitchWeapon(int i)
 		{
 			AWeapon_Base* tempWeaponBase = IGetWeaponBase::Execute_GetWeaponBase(child);
 			tempWeaponBase->onShoot.RemoveDynamic(this, &AGEPProjectCharacter::UseEnergy);
+			onLocalEnergyUpdate.RemoveDynamic(tempWeaponBase, &AWeapon_Base::UpdateCurEnergy);
 		}
 		
 		curWeapon = i;
@@ -299,6 +307,7 @@ void AGEPProjectCharacter::SwitchWeapon(int i)
 		{
 			AWeapon_Base* tempWeaponBase = IGetWeaponBase::Execute_GetWeaponBase(child);
 			tempWeaponBase->onShoot.AddDynamic(this, &AGEPProjectCharacter::UseEnergy);
+			onLocalEnergyUpdate.AddDynamic(tempWeaponBase, &AWeapon_Base::UpdateCurEnergy);
 		}
 	}
 }

@@ -30,14 +30,16 @@ static inline void FOnShoot_DelegateWrapper(const FMulticastScriptDelegate& OnSh
 #define GEPProject_Source_GEPProject_Weapons_Weapon_Base_h_18_SPARSE_DATA
 #define GEPProject_Source_GEPProject_Weapons_Weapon_Base_h_18_RPC_WRAPPERS \
 	virtual AWeapon_Base* GetWeaponBase_Implementation(); \
-	virtual bool Fire_Implementation(float curEnergy); \
+	virtual bool Fire_Implementation(); \
  \
+	DECLARE_FUNCTION(execUpdateCurEnergy); \
 	DECLARE_FUNCTION(execGetWeaponBase); \
 	DECLARE_FUNCTION(execFire);
 
 
 #define GEPProject_Source_GEPProject_Weapons_Weapon_Base_h_18_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execUpdateCurEnergy); \
 	DECLARE_FUNCTION(execGetWeaponBase); \
 	DECLARE_FUNCTION(execFire);
 
@@ -45,7 +47,6 @@ static inline void FOnShoot_DelegateWrapper(const FMulticastScriptDelegate& OnSh
 #define GEPProject_Source_GEPProject_Weapons_Weapon_Base_h_18_EVENT_PARMS \
 	struct Weapon_Base_eventFire_Parms \
 	{ \
-		float curEnergy; \
 		bool ReturnValue; \
  \
 		/** Constructor, initializes return property only **/ \

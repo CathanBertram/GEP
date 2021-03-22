@@ -8,7 +8,7 @@
 #include "GEPProject/Interfaces/Pawnable.h"
 #include "Kismet/GameplayStatics.h"
 
-bool AWeapon_Projectile::Fire_Implementation(float curEnergy)
+bool AWeapon_Projectile::Fire_Implementation()
 {
 	if (!canShoot) return false;
 	if (curEnergy < energyCost) return false;

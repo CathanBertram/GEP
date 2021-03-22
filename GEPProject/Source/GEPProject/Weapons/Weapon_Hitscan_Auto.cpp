@@ -3,25 +3,23 @@
 
 #include "Weapon_Hitscan_Auto.h"
 
-bool AWeapon_Hitscan_Auto::Fire_Implementation(float curEnergy)
+bool AWeapon_Hitscan_Auto::Fire_Implementation( )
 {
 	shooting = true;
-	Shoot(curEnergy);
+	Shoot();
 	return true;
 }
 
-void AWeapon_Hitscan_Auto::FireReleased_Implementation(float curEnergy)
+void AWeapon_Hitscan_Auto::FireReleased_Implementation()
 {
 	shooting = false;
 }
 
-void AWeapon_Hitscan_Auto::Shoot(float curEnergy)
+void AWeapon_Hitscan_Auto::Shoot()
 {
 	if (shooting)
 	{
-		Super::Shoot(curEnergy);
-		curEnergy -= energyCost;
-		FTimerDelegate shootDelegate = FTimerDelegate::CreateUObject(this, &AWeapon_Hitscan_Auto::Shoot, curEnergy);
-		GetWorld()->GetTimerManager().SetTimer(WeaponShootTimerHandle, shootDelegate, shootCooldown, false);
+		Super::Shoot();
+		GetWorld()->GetTimerManager().SetTimer(WeaponShootTimerHandle, this, &AWeapon_Hitscan_Auto::Shoot, shootCooldown);
 	}
 }

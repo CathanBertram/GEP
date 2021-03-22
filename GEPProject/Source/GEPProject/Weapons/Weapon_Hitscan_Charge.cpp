@@ -5,7 +5,7 @@
 
 #include "Kismet/GameplayStatics.h"
 
-bool AWeapon_Hitscan_Charge::Fire_Implementation(float curEnergy)
+bool AWeapon_Hitscan_Charge::Fire_Implementation()
 {
 	if (curEnergy < energyCost) return false;
 	if(canShoot)
@@ -16,11 +16,11 @@ bool AWeapon_Hitscan_Charge::Fire_Implementation(float curEnergy)
 	return true;
 }
 
-void AWeapon_Hitscan_Charge::FireReleased_Implementation(float curEnergy)
+void AWeapon_Hitscan_Charge::FireReleased_Implementation()
 {
 	if (charged)
 	{
-		Super::Shoot(curEnergy);
+		Super::Shoot();
 	}
 	GetWorld()->GetTimerManager().ClearTimer(ChargeTimerHandle);
 	charged = false;

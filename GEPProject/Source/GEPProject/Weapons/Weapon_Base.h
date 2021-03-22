@@ -22,8 +22,8 @@ public:
 	AWeapon_Base();
 
 	UFUNCTION(BlueprintCallable,BlueprintNativeEvent)
-	bool Fire(float curEnergy);
-	virtual bool Fire_Implementation(float curEnergy) override;
+	bool Fire();
+	virtual bool Fire_Implementation() override;
 
 	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
 	AWeapon_Base* GetWeaponBase();
@@ -31,6 +31,9 @@ public:
 	
 	FORCEINLINE class USceneComponent* GetGunMuzzle() const {return gunMuzzle;}
 
+	UFUNCTION()
+    void UpdateCurEnergy(float newEnergy) {curEnergy = newEnergy;}
+	
 	FOnShoot onShoot;
 
 protected:
@@ -54,6 +57,9 @@ protected:
 	bool canShoot = true;
 	UPROPERTY(EditAnywhere, Category = "Weapon Variables")
 	float energyCost;
+
+	
+	float curEnergy;
 	void ResetShoot();
 	FTimerHandle WeaponResetTimerHandle;
 };

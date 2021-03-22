@@ -13,11 +13,44 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodePlayerEnergyComponent() {}
 // Cross Module References
+	GEPPROJECT_API UFunction* Z_Construct_UDelegateFunction_GEPProject_OnCompEnergyUpdate__DelegateSignature();
+	UPackage* Z_Construct_UPackage__Script_GEPProject();
 	GEPPROJECT_API UClass* Z_Construct_UClass_UPlayerEnergyComponent_NoRegister();
 	GEPPROJECT_API UClass* Z_Construct_UClass_UPlayerEnergyComponent();
 	ENGINE_API UClass* Z_Construct_UClass_UActorComponent();
-	UPackage* Z_Construct_UPackage__Script_GEPProject();
 // End Cross Module References
+	struct Z_Construct_UDelegateFunction_GEPProject_OnCompEnergyUpdate__DelegateSignature_Statics
+	{
+		struct _Script_GEPProject_eventOnCompEnergyUpdate_Parms
+		{
+			float newCur;
+		};
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_newCur;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UDelegateFunction_GEPProject_OnCompEnergyUpdate__DelegateSignature_Statics::NewProp_newCur = { "newCur", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(_Script_GEPProject_eventOnCompEnergyUpdate_Parms, newCur), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_GEPProject_OnCompEnergyUpdate__DelegateSignature_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_GEPProject_OnCompEnergyUpdate__DelegateSignature_Statics::NewProp_newCur,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_GEPProject_OnCompEnergyUpdate__DelegateSignature_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Component/PlayerEnergyComponent.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_GEPProject_OnCompEnergyUpdate__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_GEPProject, nullptr, "OnCompEnergyUpdate__DelegateSignature", nullptr, nullptr, sizeof(_Script_GEPProject_eventOnCompEnergyUpdate_Parms), Z_Construct_UDelegateFunction_GEPProject_OnCompEnergyUpdate__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_GEPProject_OnCompEnergyUpdate__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_GEPProject_OnCompEnergyUpdate__DelegateSignature_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_GEPProject_OnCompEnergyUpdate__DelegateSignature_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UDelegateFunction_GEPProject_OnCompEnergyUpdate__DelegateSignature()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UDelegateFunction_GEPProject_OnCompEnergyUpdate__DelegateSignature_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	void UPlayerEnergyComponent::StaticRegisterNativesUPlayerEnergyComponent()
 	{
 	}
@@ -31,6 +64,11 @@ void EmptyLinkFunctionForGeneratedCodePlayerEnergyComponent() {}
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_canConsume_MetaData[];
+#endif
+		static void NewProp_canConsume_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_canConsume;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_energyRegenResetTime_MetaData[];
 #endif
@@ -71,6 +109,17 @@ void EmptyLinkFunctionForGeneratedCodePlayerEnergyComponent() {}
 		{ "ModuleRelativePath", "Component/PlayerEnergyComponent.h" },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UPlayerEnergyComponent_Statics::NewProp_canConsume_MetaData[] = {
+		{ "Category", "PlayerEnergyComponent" },
+		{ "ModuleRelativePath", "Component/PlayerEnergyComponent.h" },
+	};
+#endif
+	void Z_Construct_UClass_UPlayerEnergyComponent_Statics::NewProp_canConsume_SetBit(void* Obj)
+	{
+		((UPlayerEnergyComponent*)Obj)->canConsume = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UPlayerEnergyComponent_Statics::NewProp_canConsume = { "canConsume", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UPlayerEnergyComponent), &Z_Construct_UClass_UPlayerEnergyComponent_Statics::NewProp_canConsume_SetBit, METADATA_PARAMS(Z_Construct_UClass_UPlayerEnergyComponent_Statics::NewProp_canConsume_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UPlayerEnergyComponent_Statics::NewProp_canConsume_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UPlayerEnergyComponent_Statics::NewProp_energyRegenResetTime_MetaData[] = {
 		{ "Category", "PlayerEnergyComponent" },
@@ -114,6 +163,7 @@ void EmptyLinkFunctionForGeneratedCodePlayerEnergyComponent() {}
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UPlayerEnergyComponent_Statics::NewProp_maxEnergy = { "maxEnergy", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UPlayerEnergyComponent, maxEnergy), METADATA_PARAMS(Z_Construct_UClass_UPlayerEnergyComponent_Statics::NewProp_maxEnergy_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UPlayerEnergyComponent_Statics::NewProp_maxEnergy_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UPlayerEnergyComponent_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlayerEnergyComponent_Statics::NewProp_canConsume,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlayerEnergyComponent_Statics::NewProp_energyRegenResetTime,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlayerEnergyComponent_Statics::NewProp_energyRegenAmount,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlayerEnergyComponent_Statics::NewProp_energyRegenCooldown,
@@ -148,7 +198,7 @@ void EmptyLinkFunctionForGeneratedCodePlayerEnergyComponent() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UPlayerEnergyComponent, 478608393);
+	IMPLEMENT_CLASS(UPlayerEnergyComponent, 632306373);
 	template<> GEPPROJECT_API UClass* StaticClass<UPlayerEnergyComponent>()
 	{
 		return UPlayerEnergyComponent::StaticClass();

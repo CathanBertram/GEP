@@ -13,7 +13,7 @@
 
 
 #include "GEPProjectCharacter.generated.h"
-
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnLocalEnergyUpdate, float, newEnergy);
 UCLASS(config=Game)
 class AGEPProjectCharacter : public ACharacter, public IInputable, public IInitableChar, public IPawnable
 {
@@ -167,6 +167,10 @@ private:
 
 	UFUNCTION()
 	void UnlockWeapon(TSubclassOf<AActor> weaponToUnlock, int cost);
+
+	UFUNCTION()
+	void UpdateEnergy(float newEnergy);
+	FOnLocalEnergyUpdate onLocalEnergyUpdate;
 
 public:
 	/** Returns FirstPersonCameraComponent subobject **/

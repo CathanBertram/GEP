@@ -17,6 +17,19 @@ class APawn;
 #endif
 #define GEPPROJECT_GEPProjectCharacter_generated_h
 
+#define GEPProject_Source_GEPProject_Player_GEPProjectCharacter_h_16_DELEGATE \
+struct _Script_GEPProject_eventOnLocalEnergyUpdate_Parms \
+{ \
+	float newEnergy; \
+}; \
+static inline void FOnLocalEnergyUpdate_DelegateWrapper(const FMulticastScriptDelegate& OnLocalEnergyUpdate, float newEnergy) \
+{ \
+	_Script_GEPProject_eventOnLocalEnergyUpdate_Parms Parms; \
+	Parms.newEnergy=newEnergy; \
+	OnLocalEnergyUpdate.ProcessMulticastDelegate<UObject>(&Parms); \
+}
+
+
 #define GEPProject_Source_GEPProject_Player_GEPProjectCharacter_h_20_SPARSE_DATA
 #define GEPProject_Source_GEPProject_Player_GEPProjectCharacter_h_20_RPC_WRAPPERS \
 	virtual void Turn_Implementation(float value); \
@@ -45,6 +58,7 @@ class APawn;
 	virtual void Init_Implementation(); \
 	virtual APawn* GetAsPawn_Implementation(); \
  \
+	DECLARE_FUNCTION(execUpdateEnergy); \
 	DECLARE_FUNCTION(execUnlockWeapon); \
 	DECLARE_FUNCTION(execLoad); \
 	DECLARE_FUNCTION(execSave); \
@@ -81,6 +95,7 @@ class APawn;
 
 #define GEPProject_Source_GEPProject_Player_GEPProjectCharacter_h_20_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execUpdateEnergy); \
 	DECLARE_FUNCTION(execUnlockWeapon); \
 	DECLARE_FUNCTION(execLoad); \
 	DECLARE_FUNCTION(execSave); \

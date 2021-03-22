@@ -20,13 +20,12 @@ void EmptyLinkFunctionForGeneratedCodeFireReleaseable() {}
 // End Cross Module References
 	DEFINE_FUNCTION(IFireReleaseable::execFireReleased)
 	{
-		P_GET_PROPERTY(FFloatProperty,Z_Param_curEnergy);
 		P_FINISH;
 		P_NATIVE_BEGIN;
-		P_THIS->FireReleased_Implementation(Z_Param_curEnergy);
+		P_THIS->FireReleased_Implementation();
 		P_NATIVE_END;
 	}
-	void IFireReleaseable::FireReleased(float curEnergy)
+	void IFireReleaseable::FireReleased()
 	{
 		check(0 && "Do not directly call Event functions in Interfaces. Call Execute_FireReleased instead.");
 	}
@@ -40,23 +39,17 @@ void EmptyLinkFunctionForGeneratedCodeFireReleaseable() {}
 	}
 	struct Z_Construct_UFunction_UFireReleaseable_FireReleased_Statics
 	{
-		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_curEnergy;
-		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
-	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UFireReleaseable_FireReleased_Statics::NewProp_curEnergy = { "curEnergy", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FireReleaseable_eventFireReleased_Parms, curEnergy), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UFireReleaseable_FireReleased_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UFireReleaseable_FireReleased_Statics::NewProp_curEnergy,
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UFireReleaseable_FireReleased_Statics::Function_MetaDataParams[] = {
 		{ "ModuleRelativePath", "Interfaces/FireReleaseable.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFireReleaseable_FireReleased_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFireReleaseable, nullptr, "FireReleased", nullptr, nullptr, sizeof(FireReleaseable_eventFireReleased_Parms), Z_Construct_UFunction_UFireReleaseable_FireReleased_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UFireReleaseable_FireReleased_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFireReleaseable_FireReleased_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UFireReleaseable_FireReleased_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UFireReleaseable_FireReleased_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UFireReleaseable, nullptr, "FireReleased", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UFireReleaseable_FireReleased_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UFireReleaseable_FireReleased_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UFireReleaseable_FireReleased()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -85,7 +78,7 @@ void EmptyLinkFunctionForGeneratedCodeFireReleaseable() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_GEPProject,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UFireReleaseable_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UFireReleaseable_FireReleased, "FireReleased" }, // 340685100
+		{ &Z_Construct_UFunction_UFireReleaseable_FireReleased, "FireReleased" }, // 3234575924
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFireReleaseable_Statics::Class_MetaDataParams[] = {
@@ -119,7 +112,7 @@ void EmptyLinkFunctionForGeneratedCodeFireReleaseable() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFireReleaseable, 3786826223);
+	IMPLEMENT_CLASS(UFireReleaseable, 3791559779);
 	template<> GEPPROJECT_API UClass* StaticClass<UFireReleaseable>()
 	{
 		return UFireReleaseable::StaticClass();
@@ -127,20 +120,18 @@ void EmptyLinkFunctionForGeneratedCodeFireReleaseable() {}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFireReleaseable(Z_Construct_UClass_UFireReleaseable, &UFireReleaseable::StaticClass, TEXT("/Script/GEPProject"), TEXT("UFireReleaseable"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFireReleaseable);
 	static FName NAME_UFireReleaseable_FireReleased = FName(TEXT("FireReleased"));
-	void IFireReleaseable::Execute_FireReleased(UObject* O, float curEnergy)
+	void IFireReleaseable::Execute_FireReleased(UObject* O)
 	{
 		check(O != NULL);
 		check(O->GetClass()->ImplementsInterface(UFireReleaseable::StaticClass()));
-		FireReleaseable_eventFireReleased_Parms Parms;
 		UFunction* const Func = O->FindFunction(NAME_UFireReleaseable_FireReleased);
 		if (Func)
 		{
-			Parms.curEnergy=curEnergy;
-			O->ProcessEvent(Func, &Parms);
+			O->ProcessEvent(Func, NULL);
 		}
 		else if (auto I = (IFireReleaseable*)(O->GetNativeInterfaceAddress(UFireReleaseable::StaticClass())))
 		{
-			I->FireReleased_Implementation(curEnergy);
+			I->FireReleased_Implementation();
 		}
 	}
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
