@@ -43587,14 +43587,16 @@
           <e p="Props" t="Include">
             <e p="PurchaseableWeaponStand.cpp" t="Include" />
             <e p="PurchaseableWeaponStand.h" t="Include" />
+            <e p="UpgradeStand.cpp" t="Include" />
+            <e p="UpgradeStand.h" t="Include" />
           </e>
           <e p="TestBlock.cpp" t="Include" />
           <e p="TestBlock.h" t="Include" />
           <e p="Upgrades" t="Include">
             <e p="EUpgradeTypes.cpp" t="Include" />
             <e p="EUpgradeTypes.h" t="Include" />
-            <e p="Upgrade.cpp" t="Include" />
-            <e p="Upgrade.h" t="Include" />
+            <e p="FUpgrade.cpp" t="Include" />
+            <e p="FUpgrade.h" t="Include" />
             <e p="UpgradeSystem.cpp" t="Include" />
             <e p="UpgradeSystem.h" t="Include" />
           </e>

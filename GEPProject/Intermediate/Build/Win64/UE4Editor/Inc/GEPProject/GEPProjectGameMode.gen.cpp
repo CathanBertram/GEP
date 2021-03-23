@@ -17,6 +17,7 @@ void EmptyLinkFunctionForGeneratedCodeGEPProjectGameMode() {}
 	GEPPROJECT_API UClass* Z_Construct_UClass_AGEPProjectGameMode();
 	ENGINE_API UClass* Z_Construct_UClass_AGameModeBase();
 	UPackage* Z_Construct_UPackage__Script_GEPProject();
+	GEPPROJECT_API UEnum* Z_Construct_UEnum_GEPProject_EUpgradeTypes();
 	GEPPROJECT_API UClass* Z_Construct_UClass_UUpgradeSystem_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_AController_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
@@ -45,6 +46,14 @@ void EmptyLinkFunctionForGeneratedCodeGEPProjectGameMode() {}
 		P_FINISH;
 		P_NATIVE_BEGIN;
 		P_THIS->UpdateCurrency(Z_Param_newCur);
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(AGEPProjectGameMode::execGetUpgradeCost)
+	{
+		P_GET_PROPERTY(FByteProperty,Z_Param_upgradeType);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(float*)Z_Param__Result=P_THIS->GetUpgradeCost(EUpgradeTypes(Z_Param_upgradeType));
 		P_NATIVE_END;
 	}
 	DEFINE_FUNCTION(AGEPProjectGameMode::execGetEnergyPercent)
@@ -90,6 +99,7 @@ void EmptyLinkFunctionForGeneratedCodeGEPProjectGameMode() {}
 			{ "GetEnergyPercent", &AGEPProjectGameMode::execGetEnergyPercent },
 			{ "GetGEPGamemode", &AGEPProjectGameMode::execGetGEPGamemode },
 			{ "GetHealthPercent", &AGEPProjectGameMode::execGetHealthPercent },
+			{ "GetUpgradeCost", &AGEPProjectGameMode::execGetUpgradeCost },
 			{ "UpdateCurrency", &AGEPProjectGameMode::execUpdateCurrency },
 			{ "UpdateEnergyPercent", &AGEPProjectGameMode::execUpdateEnergyPercent },
 			{ "UpdateHealthPercent", &AGEPProjectGameMode::execUpdateHealthPercent },
@@ -217,6 +227,42 @@ void EmptyLinkFunctionForGeneratedCodeGEPProjectGameMode() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AGEPProjectGameMode_GetHealthPercent_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AGEPProjectGameMode_GetUpgradeCost_Statics
+	{
+		struct GEPProjectGameMode_eventGetUpgradeCost_Parms
+		{
+			TEnumAsByte<EUpgradeTypes> upgradeType;
+			float ReturnValue;
+		};
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FBytePropertyParams NewProp_upgradeType;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AGEPProjectGameMode_GetUpgradeCost_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(GEPProjectGameMode_eventGetUpgradeCost_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_AGEPProjectGameMode_GetUpgradeCost_Statics::NewProp_upgradeType = { "upgradeType", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(GEPProjectGameMode_eventGetUpgradeCost_Parms, upgradeType), Z_Construct_UEnum_GEPProject_EUpgradeTypes, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AGEPProjectGameMode_GetUpgradeCost_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AGEPProjectGameMode_GetUpgradeCost_Statics::NewProp_ReturnValue,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AGEPProjectGameMode_GetUpgradeCost_Statics::NewProp_upgradeType,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AGEPProjectGameMode_GetUpgradeCost_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "GEPProjectGameMode.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AGEPProjectGameMode_GetUpgradeCost_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AGEPProjectGameMode, nullptr, "GetUpgradeCost", nullptr, nullptr, sizeof(GEPProjectGameMode_eventGetUpgradeCost_Parms), Z_Construct_UFunction_AGEPProjectGameMode_GetUpgradeCost_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AGEPProjectGameMode_GetUpgradeCost_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AGEPProjectGameMode_GetUpgradeCost_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AGEPProjectGameMode_GetUpgradeCost_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AGEPProjectGameMode_GetUpgradeCost()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AGEPProjectGameMode_GetUpgradeCost_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -354,6 +400,7 @@ void EmptyLinkFunctionForGeneratedCodeGEPProjectGameMode() {}
 		{ &Z_Construct_UFunction_AGEPProjectGameMode_GetEnergyPercent, "GetEnergyPercent" }, // 549832497
 		{ &Z_Construct_UFunction_AGEPProjectGameMode_GetGEPGamemode, "GetGEPGamemode" }, // 1206584923
 		{ &Z_Construct_UFunction_AGEPProjectGameMode_GetHealthPercent, "GetHealthPercent" }, // 2967859332
+		{ &Z_Construct_UFunction_AGEPProjectGameMode_GetUpgradeCost, "GetUpgradeCost" }, // 3734256529
 		{ &Z_Construct_UFunction_AGEPProjectGameMode_UpdateCurrency, "UpdateCurrency" }, // 1854567896
 		{ &Z_Construct_UFunction_AGEPProjectGameMode_UpdateEnergyPercent, "UpdateEnergyPercent" }, // 1261758318
 		{ &Z_Construct_UFunction_AGEPProjectGameMode_UpdateHealthPercent, "UpdateHealthPercent" }, // 2967461078
@@ -425,7 +472,7 @@ void EmptyLinkFunctionForGeneratedCodeGEPProjectGameMode() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AGEPProjectGameMode, 701371511);
+	IMPLEMENT_CLASS(AGEPProjectGameMode, 1341475276);
 	template<> GEPPROJECT_API UClass* StaticClass<AGEPProjectGameMode>()
 	{
 		return AGEPProjectGameMode::StaticClass();

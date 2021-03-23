@@ -38,6 +38,8 @@ public:
 	float GetHealthPercent(){return healthPercent;}
 	UFUNCTION(BlueprintCallable)
     float GetEnergyPercent(){return energyPercent;}
+	UFUNCTION(BlueprintCallable)
+	float GetUpgradeCost(TEnumAsByte<EUpgradeTypes> upgradeType);
 
 protected:
 	TArray<AActor*> playerStarts;

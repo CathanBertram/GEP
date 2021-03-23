@@ -14,8 +14,10 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeEventSystem() {}
 // Cross Module References
-	GEPPROJECT_API UFunction* Z_Construct_UDelegateFunction_GEPProject_OnUnlockWeapon__DelegateSignature();
+	GEPPROJECT_API UFunction* Z_Construct_UDelegateFunction_GEPProject_OnUpgradeAttempt__DelegateSignature();
 	UPackage* Z_Construct_UPackage__Script_GEPProject();
+	GEPPROJECT_API UEnum* Z_Construct_UEnum_GEPProject_EUpgradeTypes();
+	GEPPROJECT_API UFunction* Z_Construct_UDelegateFunction_GEPProject_OnUnlockWeapon__DelegateSignature();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 	GEPPROJECT_API UFunction* Z_Construct_UDelegateFunction_GEPProject_OnEnergyUpdate__DelegateSignature();
@@ -32,6 +34,42 @@ void EmptyLinkFunctionForGeneratedCodeEventSystem() {}
 	GEPPROJECT_API UClass* Z_Construct_UClass_UEventSystem();
 	ENGINE_API UClass* Z_Construct_UClass_UGameInstanceSubsystem();
 // End Cross Module References
+	struct Z_Construct_UDelegateFunction_GEPProject_OnUpgradeAttempt__DelegateSignature_Statics
+	{
+		struct _Script_GEPProject_eventOnUpgradeAttempt_Parms
+		{
+			TEnumAsByte<EUpgradeTypes> upgradeType;
+			int32 currency;
+		};
+		static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_currency;
+		static const UE4CodeGen_Private::FBytePropertyParams NewProp_upgradeType;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UDelegateFunction_GEPProject_OnUpgradeAttempt__DelegateSignature_Statics::NewProp_currency = { "currency", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(_Script_GEPProject_eventOnUpgradeAttempt_Parms, currency), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UDelegateFunction_GEPProject_OnUpgradeAttempt__DelegateSignature_Statics::NewProp_upgradeType = { "upgradeType", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(_Script_GEPProject_eventOnUpgradeAttempt_Parms, upgradeType), Z_Construct_UEnum_GEPProject_EUpgradeTypes, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_GEPProject_OnUpgradeAttempt__DelegateSignature_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_GEPProject_OnUpgradeAttempt__DelegateSignature_Statics::NewProp_currency,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_GEPProject_OnUpgradeAttempt__DelegateSignature_Statics::NewProp_upgradeType,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_GEPProject_OnUpgradeAttempt__DelegateSignature_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "EventSystem.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_GEPProject_OnUpgradeAttempt__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_GEPProject, nullptr, "OnUpgradeAttempt__DelegateSignature", nullptr, nullptr, sizeof(_Script_GEPProject_eventOnUpgradeAttempt_Parms), Z_Construct_UDelegateFunction_GEPProject_OnUpgradeAttempt__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_GEPProject_OnUpgradeAttempt__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_GEPProject_OnUpgradeAttempt__DelegateSignature_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_GEPProject_OnUpgradeAttempt__DelegateSignature_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UDelegateFunction_GEPProject_OnUpgradeAttempt__DelegateSignature()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UDelegateFunction_GEPProject_OnUpgradeAttempt__DelegateSignature_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UDelegateFunction_GEPProject_OnUnlockWeapon__DelegateSignature_Statics
 	{
 		struct _Script_GEPProject_eventOnUnlockWeapon_Parms
@@ -346,8 +384,58 @@ void EmptyLinkFunctionForGeneratedCodeEventSystem() {}
 		}
 		return ReturnFunction;
 	}
+	DEFINE_FUNCTION(UEventSystem::execOnUpgradeAttempt)
+	{
+		P_GET_PROPERTY(FByteProperty,Z_Param_upgradeType);
+		P_GET_PROPERTY(FIntProperty,Z_Param_currency);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->OnUpgradeAttempt(EUpgradeTypes(Z_Param_upgradeType),Z_Param_currency);
+		P_NATIVE_END;
+	}
 	void UEventSystem::StaticRegisterNativesUEventSystem()
 	{
+		UClass* Class = UEventSystem::StaticClass();
+		static const FNameNativePtrPair Funcs[] = {
+			{ "OnUpgradeAttempt", &UEventSystem::execOnUpgradeAttempt },
+		};
+		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_UEventSystem_OnUpgradeAttempt_Statics
+	{
+		struct EventSystem_eventOnUpgradeAttempt_Parms
+		{
+			TEnumAsByte<EUpgradeTypes> upgradeType;
+			int32 currency;
+		};
+		static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_currency;
+		static const UE4CodeGen_Private::FBytePropertyParams NewProp_upgradeType;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UFunction_UEventSystem_OnUpgradeAttempt_Statics::NewProp_currency = { "currency", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(EventSystem_eventOnUpgradeAttempt_Parms, currency), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UEventSystem_OnUpgradeAttempt_Statics::NewProp_upgradeType = { "upgradeType", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(EventSystem_eventOnUpgradeAttempt_Parms, upgradeType), Z_Construct_UEnum_GEPProject_EUpgradeTypes, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UEventSystem_OnUpgradeAttempt_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UEventSystem_OnUpgradeAttempt_Statics::NewProp_currency,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UEventSystem_OnUpgradeAttempt_Statics::NewProp_upgradeType,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UEventSystem_OnUpgradeAttempt_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "EventSystem.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UEventSystem_OnUpgradeAttempt_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UEventSystem, nullptr, "OnUpgradeAttempt", nullptr, nullptr, sizeof(EventSystem_eventOnUpgradeAttempt_Parms), Z_Construct_UFunction_UEventSystem_OnUpgradeAttempt_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UEventSystem_OnUpgradeAttempt_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UEventSystem_OnUpgradeAttempt_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UEventSystem_OnUpgradeAttempt_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UEventSystem_OnUpgradeAttempt()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UEventSystem_OnUpgradeAttempt_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	UClass* Z_Construct_UClass_UEventSystem_NoRegister()
 	{
@@ -356,6 +444,7 @@ void EmptyLinkFunctionForGeneratedCodeEventSystem() {}
 	struct Z_Construct_UClass_UEventSystem_Statics
 	{
 		static UObject* (*const DependentSingletons[])();
+		static const FClassFunctionLinkInfo FuncInfo[];
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
@@ -365,6 +454,9 @@ void EmptyLinkFunctionForGeneratedCodeEventSystem() {}
 	UObject* (*const Z_Construct_UClass_UEventSystem_Statics::DependentSingletons[])() = {
 		(UObject* (*)())Z_Construct_UClass_UGameInstanceSubsystem,
 		(UObject* (*)())Z_Construct_UPackage__Script_GEPProject,
+	};
+	const FClassFunctionLinkInfo Z_Construct_UClass_UEventSystem_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_UEventSystem_OnUpgradeAttempt, "OnUpgradeAttempt" }, // 1984809054
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UEventSystem_Statics::Class_MetaDataParams[] = {
@@ -380,11 +472,11 @@ void EmptyLinkFunctionForGeneratedCodeEventSystem() {}
 		nullptr,
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
-		nullptr,
+		FuncInfo,
 		nullptr,
 		nullptr,
 		UE_ARRAY_COUNT(DependentSingletons),
-		0,
+		UE_ARRAY_COUNT(FuncInfo),
 		0,
 		0,
 		0x001000A0u,
@@ -399,7 +491,7 @@ void EmptyLinkFunctionForGeneratedCodeEventSystem() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UEventSystem, 119540120);
+	IMPLEMENT_CLASS(UEventSystem, 3308426655);
 	template<> GEPPROJECT_API UClass* StaticClass<UEventSystem>()
 	{
 		return UEventSystem::StaticClass();

@@ -5,8 +5,10 @@
 #include "CoreMinimal.h"
 
 
-#include "Upgrade.h"
+#include "FUpgrade.h"
 #include "Components/SceneComponent.h"
+#include "GEPProject/EventSystem.h"
+
 #include "UpgradeSystem.generated.h"
 
 
@@ -20,15 +22,14 @@ public:
 	UUpgradeSystem();
 
 	float GetUpgradeValue(TEnumAsByte<EUpgradeTypes> upgradeType);
+	void Init(UEventSystem* eventSystem);
+	float GetUpgradeCost(TEnumAsByte<EUpgradeTypes> upgradeType);
 protected:
-	// Called when the game starts
-	virtual void BeginPlay() override;
+
 	UPROPERTY(EditAnywhere)
 	TArray<FUpgrade> upgrades;
-
-public:	
-
-
-		
+	UEventSystem* eventInstance;
+	UFUNCTION()
+	void Upgrade(TEnumAsByte<EUpgradeTypes> upgradeType, int currency);	
 };
 

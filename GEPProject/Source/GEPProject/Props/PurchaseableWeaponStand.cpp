@@ -11,7 +11,9 @@
 APurchaseableWeaponStand::APurchaseableWeaponStand()
 {
 	weaponStand = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("WeaponStand"));
-
+	weaponStand->SetRenderCustomDepth(true);
+	weaponStand->CustomDepthStencilValue = 2;
+	
 	weaponSocket = CreateDefaultSubobject<USceneComponent>(TEXT("WeaponSocket"));
 	weaponSocket->SetupAttachment(weaponStand);
 	

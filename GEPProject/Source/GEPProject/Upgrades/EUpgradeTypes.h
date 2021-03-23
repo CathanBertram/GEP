@@ -6,7 +6,7 @@
 #include "Engine/UserDefinedEnum.h"
 #include "EUpgradeTypes.generated.h"
 
-UENUM()
+UENUM(BlueprintType)
 enum EUpgradeTypes
 {
 	Player_RegenAmount								UMETA(DisplayName = "PlayerRegenAmount"),

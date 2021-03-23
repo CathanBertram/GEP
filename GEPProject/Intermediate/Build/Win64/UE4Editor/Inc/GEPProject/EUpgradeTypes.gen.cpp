@@ -83,7 +83,7 @@ void EmptyLinkFunctionForGeneratedCodeEUpgradeTypes() {}
 		return EUpgradeTypes_StaticEnum();
 	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EUpgradeTypes(EUpgradeTypes_StaticEnum, TEXT("/Script/GEPProject"), TEXT("EUpgradeTypes"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_GEPProject_EUpgradeTypes_Hash() { return 1196791237U; }
+	uint32 Get_Z_Construct_UEnum_GEPProject_EUpgradeTypes_Hash() { return 4291064606U; }
 	UEnum* Z_Construct_UEnum_GEPProject_EUpgradeTypes()
 	{
 #if WITH_HOT_RELOAD
@@ -137,6 +137,7 @@ void EmptyLinkFunctionForGeneratedCodeEUpgradeTypes() {}
 			};
 #if WITH_METADATA
 			const UE4CodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
+				{ "BlueprintType", "true" },
 				{ "Drone_Amount.DisplayName", "DroneAmount" },
 				{ "Drone_Amount.Name", "Drone_Amount" },
 				{ "Drone_AttackCooldown.DisplayName", "DroneAttackCooldown" },

@@ -15809,7 +15809,10 @@
 				"CoreUObject",
 				"Engine",
 				"InputCore",
-				"HeadMountedDisplay"
+				"HeadMountedDisplay",
+				"UMG",
+				"Slate",
+				"SlateCore"
 			],
 			"PrivateDependencyModules": [
 				"Engine",

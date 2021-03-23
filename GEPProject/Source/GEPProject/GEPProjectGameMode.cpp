@@ -60,13 +60,19 @@ AGEPProjectGameMode* AGEPProjectGameMode::GetGEPGamemode_Implementation()
 	return this;
 }
 
+float AGEPProjectGameMode::GetUpgradeCost(TEnumAsByte<EUpgradeTypes> upgradeType)
+{
+	return upgradeSystem->GetUpgradeCost(upgradeType);
+}
+
 void AGEPProjectGameMode::BeginPlay()
 {
 	UEventSystem* eventSystem = GetGameInstance()->GetSubsystem<UEventSystem>();
 	eventSystem->onCurrencyUpdate.AddDynamic(this, &AGEPProjectGameMode::UpdateCurrency);
 	eventSystem->onHealthUpdate.AddDynamic(this, &AGEPProjectGameMode::UpdateHealthPercent);
 	eventSystem->onEnergyUpdate.AddDynamic(this, &AGEPProjectGameMode::UpdateEnergyPercent);
-	
+
+	upgradeSystem->Init(eventSystem);
 	UGameplayStatics::RemovePlayer(UGameplayStatics::GetPlayerController(GetWorld(), 0), true);
 
 	UGameplayStatics::CreatePlayer(GetWorld());

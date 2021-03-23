@@ -13,10 +13,18 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define GEPPROJECT_UpgradeSystem_generated_h
 
-#define GEPProject_Source_GEPProject_Upgrades_UpgradeSystem_h_16_SPARSE_DATA
-#define GEPProject_Source_GEPProject_Upgrades_UpgradeSystem_h_16_RPC_WRAPPERS
-#define GEPProject_Source_GEPProject_Upgrades_UpgradeSystem_h_16_RPC_WRAPPERS_NO_PURE_DECLS
-#define GEPProject_Source_GEPProject_Upgrades_UpgradeSystem_h_16_INCLASS_NO_PURE_DECLS \
+#define GEPProject_Source_GEPProject_Upgrades_UpgradeSystem_h_18_SPARSE_DATA
+#define GEPProject_Source_GEPProject_Upgrades_UpgradeSystem_h_18_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execUpgrade);
+
+
+#define GEPProject_Source_GEPProject_Upgrades_UpgradeSystem_h_18_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execUpgrade);
+
+
+#define GEPProject_Source_GEPProject_Upgrades_UpgradeSystem_h_18_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUUpgradeSystem(); \
 	friend struct Z_Construct_UClass_UUpgradeSystem_Statics; \
@@ -25,7 +33,7 @@ public: \
 	DECLARE_SERIALIZER(UUpgradeSystem)
 
 
-#define GEPProject_Source_GEPProject_Upgrades_UpgradeSystem_h_16_INCLASS \
+#define GEPProject_Source_GEPProject_Upgrades_UpgradeSystem_h_18_INCLASS \
 private: \
 	static void StaticRegisterNativesUUpgradeSystem(); \
 	friend struct Z_Construct_UClass_UUpgradeSystem_Statics; \
@@ -34,7 +42,7 @@ public: \
 	DECLARE_SERIALIZER(UUpgradeSystem)
 
 
-#define GEPProject_Source_GEPProject_Upgrades_UpgradeSystem_h_16_STANDARD_CONSTRUCTORS \
+#define GEPProject_Source_GEPProject_Upgrades_UpgradeSystem_h_18_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UUpgradeSystem(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UUpgradeSystem) \
@@ -47,7 +55,7 @@ private: \
 public:
 
 
-#define GEPProject_Source_GEPProject_Upgrades_UpgradeSystem_h_16_ENHANCED_CONSTRUCTORS \
+#define GEPProject_Source_GEPProject_Upgrades_UpgradeSystem_h_18_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API UUpgradeSystem(UUpgradeSystem&&); \
@@ -58,31 +66,31 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UUpgradeSystem); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UUpgradeSystem)
 
 
-#define GEPProject_Source_GEPProject_Upgrades_UpgradeSystem_h_16_PRIVATE_PROPERTY_OFFSET \
+#define GEPProject_Source_GEPProject_Upgrades_UpgradeSystem_h_18_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__upgrades() { return STRUCT_OFFSET(UUpgradeSystem, upgrades); }
 
 
-#define GEPProject_Source_GEPProject_Upgrades_UpgradeSystem_h_13_PROLOG
-#define GEPProject_Source_GEPProject_Upgrades_UpgradeSystem_h_16_GENERATED_BODY_LEGACY \
+#define GEPProject_Source_GEPProject_Upgrades_UpgradeSystem_h_15_PROLOG
+#define GEPProject_Source_GEPProject_Upgrades_UpgradeSystem_h_18_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	GEPProject_Source_GEPProject_Upgrades_UpgradeSystem_h_16_PRIVATE_PROPERTY_OFFSET \
-	GEPProject_Source_GEPProject_Upgrades_UpgradeSystem_h_16_SPARSE_DATA \
-	GEPProject_Source_GEPProject_Upgrades_UpgradeSystem_h_16_RPC_WRAPPERS \
-	GEPProject_Source_GEPProject_Upgrades_UpgradeSystem_h_16_INCLASS \
-	GEPProject_Source_GEPProject_Upgrades_UpgradeSystem_h_16_STANDARD_CONSTRUCTORS \
+	GEPProject_Source_GEPProject_Upgrades_UpgradeSystem_h_18_PRIVATE_PROPERTY_OFFSET \
+	GEPProject_Source_GEPProject_Upgrades_UpgradeSystem_h_18_SPARSE_DATA \
+	GEPProject_Source_GEPProject_Upgrades_UpgradeSystem_h_18_RPC_WRAPPERS \
+	GEPProject_Source_GEPProject_Upgrades_UpgradeSystem_h_18_INCLASS \
+	GEPProject_Source_GEPProject_Upgrades_UpgradeSystem_h_18_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define GEPProject_Source_GEPProject_Upgrades_UpgradeSystem_h_16_GENERATED_BODY \
+#define GEPProject_Source_GEPProject_Upgrades_UpgradeSystem_h_18_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	GEPProject_Source_GEPProject_Upgrades_UpgradeSystem_h_16_PRIVATE_PROPERTY_OFFSET \
-	GEPProject_Source_GEPProject_Upgrades_UpgradeSystem_h_16_SPARSE_DATA \
-	GEPProject_Source_GEPProject_Upgrades_UpgradeSystem_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
-	GEPProject_Source_GEPProject_Upgrades_UpgradeSystem_h_16_INCLASS_NO_PURE_DECLS \
-	GEPProject_Source_GEPProject_Upgrades_UpgradeSystem_h_16_ENHANCED_CONSTRUCTORS \
+	GEPProject_Source_GEPProject_Upgrades_UpgradeSystem_h_18_PRIVATE_PROPERTY_OFFSET \
+	GEPProject_Source_GEPProject_Upgrades_UpgradeSystem_h_18_SPARSE_DATA \
+	GEPProject_Source_GEPProject_Upgrades_UpgradeSystem_h_18_RPC_WRAPPERS_NO_PURE_DECLS \
+	GEPProject_Source_GEPProject_Upgrades_UpgradeSystem_h_18_INCLASS_NO_PURE_DECLS \
+	GEPProject_Source_GEPProject_Upgrades_UpgradeSystem_h_18_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

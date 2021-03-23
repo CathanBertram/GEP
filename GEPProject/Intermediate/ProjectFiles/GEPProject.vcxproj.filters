@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\GEPProject.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{A3C4C39F-7434-4AB8-B0C3-39340316DB20}</UniqueIdentifier>
+      <UniqueIdentifier>{17C99FD5-892E-420F-9F4E-6B5872B97D8F}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\GEPProject.Target.cs">
       <Filter>Source</Filter>
@@ -13,7 +13,7 @@
     </None>
     <None Include="..\..\GEPProject.sln.DotSettings.user" />
     <Filter Include="Config">
-      <UniqueIdentifier>{FBDC69D1-C61C-4D17-8E84-E507C7898D97}</UniqueIdentifier>
+      <UniqueIdentifier>{A5ED0D3B-7274-4598-AAE0-5DF7F3872085}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -31,7 +31,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\GEPProject">
-      <UniqueIdentifier>{F09D42A6-1839-4FA8-A547-E004003345CC}</UniqueIdentifier>
+      <UniqueIdentifier>{528E5FD9-A257-4AF5-A798-F00426BE3FED}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\GEPProject\EventSystem.cpp">
       <Filter>Source\GEPProject</Filter>
@@ -73,7 +73,7 @@
       <Filter>Source\GEPProject</Filter>
     </ClInclude>
     <Filter Include="Source\GEPProject\Component">
-      <UniqueIdentifier>{5C19476F-14DD-4F2E-957B-6F26F0A296C8}</UniqueIdentifier>
+      <UniqueIdentifier>{782093E3-5747-43C7-AC55-F6E1C55351B2}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\GEPProject\Component\HealthComponent.cpp">
       <Filter>Source\GEPProject\Component</Filter>
@@ -94,7 +94,7 @@
       <Filter>Source\GEPProject\Component</Filter>
     </ClInclude>
     <Filter Include="Source\GEPProject\Enemy">
-      <UniqueIdentifier>{0BD83C4B-3E2F-43B1-AB02-37F6BF7B7C5E}</UniqueIdentifier>
+      <UniqueIdentifier>{80FDE7A2-5E3F-4F59-9774-C17569C53C69}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\GEPProject\Enemy\EnemySpawner.cpp">
       <Filter>Source\GEPProject\Enemy</Filter>
@@ -109,18 +109,12 @@
       <Filter>Source\GEPProject\Enemy</Filter>
     </ClInclude>
     <Filter Include="Source\GEPProject\Interfaces">
-      <UniqueIdentifier>{AE91DD49-E82B-4B74-80CA-BB89559B7372}</UniqueIdentifier>
+      <UniqueIdentifier>{C2108E12-84C5-4DDB-8995-CA336AE1BFD9}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\GEPProject\Interfaces\Fireable.cpp">
       <Filter>Source\GEPProject\Interfaces</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\GEPProject\Interfaces\Fireable.h">
-      <Filter>Source\GEPProject\Interfaces</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Source\GEPProject\Interfaces\FireHoldable.cpp">
-      <Filter>Source\GEPProject\Interfaces</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\GEPProject\Interfaces\FireHoldable.h">
       <Filter>Source\GEPProject\Interfaces</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\GEPProject\Interfaces\FireReleaseable.cpp">
@@ -202,7 +196,7 @@
       <Filter>Source\GEPProject\Interfaces</Filter>
     </ClInclude>
     <Filter Include="Source\GEPProject\Player">
-      <UniqueIdentifier>{415DA848-BB43-44F4-AA1F-99E201C55D87}</UniqueIdentifier>
+      <UniqueIdentifier>{722648A8-35FF-48B2-963D-5212C494F8C3}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\GEPProject\Player\GEPPlayerController.cpp">
       <Filter>Source\GEPProject\Player</Filter>
@@ -217,7 +211,7 @@
       <Filter>Source\GEPProject\Player</Filter>
     </ClInclude>
     <Filter Include="Source\GEPProject\Props">
-      <UniqueIdentifier>{DDD2E0A8-C68D-49B0-A9B5-B8E3D9EBB126}</UniqueIdentifier>
+      <UniqueIdentifier>{6010EBEF-469D-43CB-A6FC-B8E901CBC3DD}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\GEPProject\Props\PurchaseableWeaponStand.cpp">
       <Filter>Source\GEPProject\Props</Filter>
@@ -225,8 +219,14 @@
     <ClInclude Include="..\..\Source\GEPProject\Props\PurchaseableWeaponStand.h">
       <Filter>Source\GEPProject\Props</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\GEPProject\Props\UpgradeStand.cpp">
+      <Filter>Source\GEPProject\Props</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\GEPProject\Props\UpgradeStand.h">
+      <Filter>Source\GEPProject\Props</Filter>
+    </ClInclude>
     <Filter Include="Source\GEPProject\Upgrades">
-      <UniqueIdentifier>{865406CC-F582-479C-8026-A1D6F515878E}</UniqueIdentifier>
+      <UniqueIdentifier>{2170016F-B146-4F78-A0C8-B98FD15ADA1E}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\GEPProject\Upgrades\EUpgradeTypes.cpp">
       <Filter>Source\GEPProject\Upgrades</Filter>
@@ -240,6 +240,12 @@
     <ClInclude Include="..\..\Source\GEPProject\Upgrades\Upgrade.h">
       <Filter>Source\GEPProject\Upgrades</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\GEPProject\Upgrades\UpgradeClass.cpp">
+      <Filter>Source\GEPProject\Upgrades</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\GEPProject\Upgrades\UpgradeClass.h">
+      <Filter>Source\GEPProject\Upgrades</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\GEPProject\Upgrades\UpgradeSystem.cpp">
       <Filter>Source\GEPProject\Upgrades</Filter>
     </ClCompile>
@@ -247,7 +253,7 @@
       <Filter>Source\GEPProject\Upgrades</Filter>
     </ClInclude>
     <Filter Include="Source\GEPProject\Weapons">
-      <UniqueIdentifier>{87D31438-0523-45AE-B8F9-98AE150CACD4}</UniqueIdentifier>
+      <UniqueIdentifier>{3C331560-AC1D-4755-8C48-815913C1E3D1}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\GEPProject\Weapons\GEPProjectProjectile.cpp">
       <Filter>Source\GEPProject\Weapons</Filter>

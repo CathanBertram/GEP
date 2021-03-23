@@ -7,6 +7,8 @@
 
 #include "GEPSaveGame.h"
 #include "Subsystems/GameInstanceSubsystem.h"
+#include "Upgrades/EUpgradeTypes.h"
+
 #include "EventSystem.generated.h"
 
 DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnTrySave);
@@ -20,6 +22,7 @@ DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnDamagePlayer, float, damageAmount
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnHealthUpdate, float, healthPercent);
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnEnergyUpdate, float, energyPercent);
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FOnUnlockWeapon, TSubclassOf<AActor>, weaponToUnlock, int, cost);
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FOnUpgradeAttempt, TEnumAsByte<EUpgradeTypes>, upgradeType, int, currency);
 UCLASS()
 class GEPPROJECT_API UEventSystem : public UGameInstanceSubsystem
 {
@@ -55,5 +58,7 @@ public:
 	FOnUnlockWeapon onUnlockWeapon;
 	void OnUnlockWeapon(TSubclassOf<AActor> weaponToUnlock, int cost) {onUnlockWeapon.Broadcast(weaponToUnlock, cost);}
 
-	
+	FOnUpgradeAttempt onUpgradeAttempt;
+	UFUNCTION(BlueprintCallable)
+	void OnUpgradeAttempt(TEnumAsByte<EUpgradeTypes> upgradeType, int currency) {onUpgradeAttempt.Broadcast(upgradeType, currency);}
 };

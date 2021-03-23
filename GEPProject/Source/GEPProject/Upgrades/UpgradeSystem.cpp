@@ -14,6 +14,7 @@ UUpgradeSystem::UUpgradeSystem()
 		upgrades.Add(FUpgrade(0,0, static_cast<TEnumAsByte<EUpgradeTypes>>(i)));
 	}
 }
+
 float UUpgradeSystem::GetUpgradeValue(TEnumAsByte<EUpgradeTypes> upgradeType)
 {
 	for (FUpgrade upgrade : upgrades)
@@ -26,8 +27,38 @@ float UUpgradeSystem::GetUpgradeValue(TEnumAsByte<EUpgradeTypes> upgradeType)
 	return 1;
 }
 
-void UUpgradeSystem::BeginPlay()
-{
+void UUpgradeSystem::Init(UEventSystem* eventSystem)
+{	
+	eventInstance = eventSystem;
+	eventSystem->onUpgradeAttempt.AddDynamic(this, &UUpgradeSystem::Upgrade);
+}
 
+float UUpgradeSystem::GetUpgradeCost(TEnumAsByte<EUpgradeTypes> upgradeType)
+{
+	for (FUpgrade upgrade : upgrades)
+	{
+		if (upgrade.upgradeType == upgradeType)
+		{
+			return upgrade.cost;
+		}
+	}
+	return 0;
+}
+
+void UUpgradeSystem::Upgrade(TEnumAsByte<EUpgradeTypes> upgradeType, int currency)
+{
+	for (int i = 0; i < upgrades.Num(); ++i)
+	{
+		if (upgrades[i].upgradeType == upgradeType)
+		{
+			if (currency >= upgrades[i].cost)
+			{
+				upgrades[i].level++;
+				eventInstance->OnCurrencyLoss(upgrades[i].cost);
+				GEngine->AddOnScreenDebugMessage(-1,.5f,FColor::Red,FString::FromInt(static_cast<int>(upgrades[i].upgradeType)));
+				GEngine->AddOnScreenDebugMessage(-1,.5f,FColor::Red,FString::FromInt(upgrades[i].level));
+			}	
+		}
+	}
 }
 

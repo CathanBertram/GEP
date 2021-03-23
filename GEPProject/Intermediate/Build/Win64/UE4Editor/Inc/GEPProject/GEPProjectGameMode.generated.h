@@ -21,6 +21,7 @@ class AGEPProjectGameMode;
 	DECLARE_FUNCTION(execUpdateEnergyPercent); \
 	DECLARE_FUNCTION(execUpdateHealthPercent); \
 	DECLARE_FUNCTION(execUpdateCurrency); \
+	DECLARE_FUNCTION(execGetUpgradeCost); \
 	DECLARE_FUNCTION(execGetEnergyPercent); \
 	DECLARE_FUNCTION(execGetHealthPercent); \
 	DECLARE_FUNCTION(execGetCurrency); \
@@ -32,6 +33,7 @@ class AGEPProjectGameMode;
 	DECLARE_FUNCTION(execUpdateEnergyPercent); \
 	DECLARE_FUNCTION(execUpdateHealthPercent); \
 	DECLARE_FUNCTION(execUpdateCurrency); \
+	DECLARE_FUNCTION(execGetUpgradeCost); \
 	DECLARE_FUNCTION(execGetEnergyPercent); \
 	DECLARE_FUNCTION(execGetHealthPercent); \
 	DECLARE_FUNCTION(execGetCurrency); \
