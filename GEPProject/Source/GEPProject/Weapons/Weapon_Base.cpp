@@ -13,6 +13,8 @@ AWeapon_Base::AWeapon_Base()
 	RootComponent = root;
 
 	gunMesh = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("Gun"));
+	gunMesh->SetRenderCustomDepth(true);
+	gunMesh->CustomDepthStencilValue = 2;
 	gunMesh->SetupAttachment(root);
 
 	gunMuzzle = CreateDefaultSubobject<USceneComponent>(TEXT("GunMuzzle"));
