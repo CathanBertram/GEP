@@ -12,7 +12,20 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeGEPProject_init() {}
 	GEPPROJECT_API UFunction* Z_Construct_UDelegateFunction_GEPProject_Death__DelegateSignature();
-	GEPPROJECT_API UFunction* Z_Construct_UDelegateFunction_GEPProject_OnTrySave__DelegateSignature();
+	GEPPROJECT_API UFunction* Z_Construct_UDelegateFunction_GEPProject_OnDeath__DelegateSignature();
+	GEPPROJECT_API UFunction* Z_Construct_UDelegateFunction_GEPProject_OnStartSave__DelegateSignature();
+	GEPPROJECT_API UFunction* Z_Construct_UDelegateFunction_GEPProject_OnStartLoad__DelegateSignature();
+	GEPPROJECT_API UFunction* Z_Construct_UDelegateFunction_GEPProject_OnDirtyPlayer__DelegateSignature();
+	GEPPROJECT_API UFunction* Z_Construct_UDelegateFunction_GEPProject_OnDirtyEnemy__DelegateSignature();
+	GEPPROJECT_API UFunction* Z_Construct_UDelegateFunction_GEPProject_OnDirtyDrone__DelegateSignature();
+	GEPPROJECT_API UFunction* Z_Construct_UDelegateFunction_GEPProject_OnDirtyPistol__DelegateSignature();
+	GEPPROJECT_API UFunction* Z_Construct_UDelegateFunction_GEPProject_OnDirtyRevolver__DelegateSignature();
+	GEPPROJECT_API UFunction* Z_Construct_UDelegateFunction_GEPProject_OnDirtyShotgun__DelegateSignature();
+	GEPPROJECT_API UFunction* Z_Construct_UDelegateFunction_GEPProject_OnDirtySMG__DelegateSignature();
+	GEPPROJECT_API UFunction* Z_Construct_UDelegateFunction_GEPProject_OnDirtyRifle__DelegateSignature();
+	GEPPROJECT_API UFunction* Z_Construct_UDelegateFunction_GEPProject_OnDirtyAutoRifle__DelegateSignature();
+	GEPPROJECT_API UFunction* Z_Construct_UDelegateFunction_GEPProject_OnDirtyRaygun__DelegateSignature();
+	GEPPROJECT_API UFunction* Z_Construct_UDelegateFunction_GEPProject_OnDirtyGrenadeLauncher__DelegateSignature();
 	GEPPROJECT_API UFunction* Z_Construct_UDelegateFunction_GEPProject_OnCurrencyGain__DelegateSignature();
 	GEPPROJECT_API UFunction* Z_Construct_UDelegateFunction_GEPProject_OnCurrencyLoss__DelegateSignature();
 	GEPPROJECT_API UFunction* Z_Construct_UDelegateFunction_GEPProject_OnCurrencyUpdate__DelegateSignature();
@@ -25,7 +38,6 @@ void EmptyLinkFunctionForGeneratedCodeGEPProject_init() {}
 	GEPPROJECT_API UFunction* Z_Construct_UDelegateFunction_GEPProject_OnUpgradeAttempt__DelegateSignature();
 	GEPPROJECT_API UFunction* Z_Construct_UDelegateFunction_GEPProject_OnShoot__DelegateSignature();
 	GEPPROJECT_API UFunction* Z_Construct_UDelegateFunction_GEPProject_OnCompEnergyUpdate__DelegateSignature();
-	GEPPROJECT_API UFunction* Z_Construct_UDelegateFunction_GEPProject_OnDeath__DelegateSignature();
 	GEPPROJECT_API UFunction* Z_Construct_UDelegateFunction_GEPProject_OnLocalEnergyUpdate__DelegateSignature();
 	UPackage* Z_Construct_UPackage__Script_GEPProject()
 	{
@@ -34,7 +46,20 @@ void EmptyLinkFunctionForGeneratedCodeGEPProject_init() {}
 		{
 			static UObject* (*const SingletonFuncArray[])() = {
 				(UObject* (*)())Z_Construct_UDelegateFunction_GEPProject_Death__DelegateSignature,
-				(UObject* (*)())Z_Construct_UDelegateFunction_GEPProject_OnTrySave__DelegateSignature,
+				(UObject* (*)())Z_Construct_UDelegateFunction_GEPProject_OnDeath__DelegateSignature,
+				(UObject* (*)())Z_Construct_UDelegateFunction_GEPProject_OnStartSave__DelegateSignature,
+				(UObject* (*)())Z_Construct_UDelegateFunction_GEPProject_OnStartLoad__DelegateSignature,
+				(UObject* (*)())Z_Construct_UDelegateFunction_GEPProject_OnDirtyPlayer__DelegateSignature,
+				(UObject* (*)())Z_Construct_UDelegateFunction_GEPProject_OnDirtyEnemy__DelegateSignature,
+				(UObject* (*)())Z_Construct_UDelegateFunction_GEPProject_OnDirtyDrone__DelegateSignature,
+				(UObject* (*)())Z_Construct_UDelegateFunction_GEPProject_OnDirtyPistol__DelegateSignature,
+				(UObject* (*)())Z_Construct_UDelegateFunction_GEPProject_OnDirtyRevolver__DelegateSignature,
+				(UObject* (*)())Z_Construct_UDelegateFunction_GEPProject_OnDirtyShotgun__DelegateSignature,
+				(UObject* (*)())Z_Construct_UDelegateFunction_GEPProject_OnDirtySMG__DelegateSignature,
+				(UObject* (*)())Z_Construct_UDelegateFunction_GEPProject_OnDirtyRifle__DelegateSignature,
+				(UObject* (*)())Z_Construct_UDelegateFunction_GEPProject_OnDirtyAutoRifle__DelegateSignature,
+				(UObject* (*)())Z_Construct_UDelegateFunction_GEPProject_OnDirtyRaygun__DelegateSignature,
+				(UObject* (*)())Z_Construct_UDelegateFunction_GEPProject_OnDirtyGrenadeLauncher__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_GEPProject_OnCurrencyGain__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_GEPProject_OnCurrencyLoss__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_GEPProject_OnCurrencyUpdate__DelegateSignature,
@@ -47,7 +72,6 @@ void EmptyLinkFunctionForGeneratedCodeGEPProject_init() {}
 				(UObject* (*)())Z_Construct_UDelegateFunction_GEPProject_OnUpgradeAttempt__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_GEPProject_OnShoot__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_GEPProject_OnCompEnergyUpdate__DelegateSignature,
-				(UObject* (*)())Z_Construct_UDelegateFunction_GEPProject_OnDeath__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_GEPProject_OnLocalEnergyUpdate__DelegateSignature,
 			};
 			static const UE4CodeGen_Private::FPackageParams PackageParams = {
@@ -55,8 +79,8 @@ void EmptyLinkFunctionForGeneratedCodeGEPProject_init() {}
 				SingletonFuncArray,
 				UE_ARRAY_COUNT(SingletonFuncArray),
 				PKG_CompiledIn | 0x00000000,
-				0x4EDB55AF,
-				0x04105552,
+				0xCF3ECF61,
+				0x5AA403F8,
 				METADATA_PARAMS(nullptr, 0)
 			};
 			UE4CodeGen_Private::ConstructUPackage(ReturnPackage, PackageParams);

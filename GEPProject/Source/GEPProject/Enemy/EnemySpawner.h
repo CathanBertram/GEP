@@ -5,6 +5,8 @@
 #include "CoreMinimal.h"
 #include "GEPProject/Interfaces/Initable.h"
 #include "GameFramework/Actor.h"
+#include "GEPProject/GEPSaveGame.h"
+#include "Enemy_Base.h"
 #include "EnemySpawner.generated.h"
 
 UCLASS()
@@ -38,5 +40,4 @@ protected:
 	void EnemyDied();
 	FTimerHandle EnemySpawnTimerHandle;
 
-	
 };

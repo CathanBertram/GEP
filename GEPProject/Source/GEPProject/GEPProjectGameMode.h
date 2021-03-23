@@ -58,6 +58,11 @@ protected:
 	UFUNCTION()
     void UpdateEnergyPercent(float newEnergyPercent);
 
+	UFUNCTION()
+	void SaveGame();
+	UFUNCTION()
+	void LoadGame();
+
 	UPROPERTY(EditAnywhere)
 	UUpgradeSystem* upgradeSystem;
 };

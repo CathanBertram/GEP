@@ -5,7 +5,6 @@
 #include "Engine/Texture2D.h"
 #include "TextureResource.h"
 #include "CanvasItem.h"
-#include "Blueprint/UserWidget.h"
 #include "UObject/ConstructorHelpers.h"
 
 AGEPProjectHUD::AGEPProjectHUD()

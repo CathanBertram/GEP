@@ -11,7 +11,19 @@
 
 #include "EventSystem.generated.h"
 
-DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnTrySave);
+DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnStartSave);
+DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnStartLoad);
+DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnDirtyPlayer);
+DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnDirtyEnemy);
+DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnDirtyDrone);
+DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnDirtyPistol);
+DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnDirtyRevolver);
+DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnDirtyShotgun);
+DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnDirtySMG);
+DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnDirtyRifle);
+DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnDirtyAutoRifle);
+DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnDirtyRaygun);
+DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnDirtyGrenadeLauncher);
 
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnCurrencyGain, int, curToGain);
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnCurrencyLoss, int, curToLose);
@@ -28,9 +40,10 @@ class GEPPROJECT_API UEventSystem : public UGameInstanceSubsystem
 {
 	GENERATED_BODY()
 public:
-	FOnTrySave onTrySave;
-	void OnTrySave() {onTrySave.Broadcast();}
-
+	FOnStartSave onStartSave;
+	void OnStartSave() {onStartSave.Broadcast();}
+	FOnStartLoad onStartLoad;
+	void OnStartLoad() {onStartLoad.Broadcast();}
 	FOnCurrencyGain onCurrencyGain;
 	void OnCurrencyGain(int curToGain) {onCurrencyGain.Broadcast(curToGain);}
 
@@ -61,4 +74,29 @@ public:
 	FOnUpgradeAttempt onUpgradeAttempt;
 	UFUNCTION(BlueprintCallable)
 	void OnUpgradeAttempt(TEnumAsByte<EUpgradeTypes> upgradeType, int currency) {onUpgradeAttempt.Broadcast(upgradeType, currency);}
+
+#pragma region upgradeEvents
+	FOnDirtyPlayer onDirtyPlayer;
+	void OnDirtyPlayer() {onDirtyPlayer.Broadcast();}
+	FOnDirtyEnemy onDirtyEnemy;
+	void OnDirtyEnemy() {onDirtyEnemy.Broadcast();}
+	FOnDirtyDrone onDirtyDrone;
+	void OnDirtyDrone() {onDirtyDrone.Broadcast();}
+	FOnDirtyPistol onDirtyPistol;
+	void OnDirtyPistol() {onDirtyPistol.Broadcast();}
+	FOnDirtyRevolver onDirtyRevolver;
+	void OnDirtyRevolver() {onDirtyRevolver.Broadcast();}
+	FOnDirtyShotgun onDirtyShotgun;
+	void OnDirtyShotgun() {onDirtyShotgun.Broadcast();}
+	FOnDirtySMG onDirtySMG;
+	void OnDirtySMG() {onDirtySMG.Broadcast();}
+	FOnDirtyRifle onDirtyRifle;
+	void OnDirtyRifle() {onDirtyRifle.Broadcast();}
+	FOnDirtyAutoRifle onDirtyAutoRifle;
+	void OnDirtyAutoRifle() {onDirtyAutoRifle.Broadcast();}
+	FOnDirtyRaygun onDirtyRaygun;
+	void OnDirtyRaygun() {onDirtyRaygun.Broadcast();}
+	FOnDirtyGrenadeLauncher onDirtyGrenadeLauncher;
+	void OnDirtyGrenadeLauncher() {onDirtyGrenadeLauncher.Broadcast();}
+#pragma endregion 
 };

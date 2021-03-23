@@ -21,6 +21,10 @@ float UUpgradeSystem::GetUpgradeValue(TEnumAsByte<EUpgradeTypes> upgradeType)
 	{
 		if (upgrade.upgradeType == upgradeType)
 		{
+			if (upgrade.upgradeValueType == EUpgradeValueTypes::Add)
+				return upgrade.valueMulti * upgrade.level;
+			else if(upgrade.upgradeValueType == EUpgradeValueTypes::Multiply)
+				return FMath::Pow(upgrade.valueMulti, upgrade.level);
 			return upgrade.valueMulti;
 		}
 	}

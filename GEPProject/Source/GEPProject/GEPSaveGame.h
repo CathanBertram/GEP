@@ -5,6 +5,8 @@
 #include "CoreMinimal.h"
 #include "GameFramework/SaveGame.h"
 #include "Interfaces/GetGEPSaveGame.h"
+#include "Upgrades/FUpgrade.h"
+#include "Enemy/Enemy_Base.h"
 
 #include "GEPSaveGame.generated.h"
 
@@ -36,5 +38,8 @@ public:
 	float curEnergy;
 	UPROPERTY(EditAnywhere)
 	float maxEnergy;
-
+	UPROPERTY(EditAnywhere)
+	TArray<FUpgrade> upgrades;
+	UPROPERTY(EditAnywhere)
+	TArray<AEnemy_Base*> curEnemies;
 };

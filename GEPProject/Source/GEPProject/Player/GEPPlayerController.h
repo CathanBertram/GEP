@@ -32,10 +32,6 @@ protected:
 	TSubclassOf<APawn> pawnToSpawn;
 	
 private:
-	UFUNCTION()
-	void SaveGame();
-	void LoadGame();
-
 	
 	void JumpPressed(); void JumpReleased();
 	void FirePressed(); void FireReleased();

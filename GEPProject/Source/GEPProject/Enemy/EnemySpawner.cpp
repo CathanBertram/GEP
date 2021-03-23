@@ -3,6 +3,7 @@
 
 #include "Enemy_Base.h"
 #include "Components/BoxComponent.h"
+#include "GEPProject/EventSystem.h"
 #include "GEPProject/Interfaces/InitableEnemy.h"
 #include "Kismet/KismetMathLibrary.h"
 #include "Kismet/KismetSystemLibrary.h"
@@ -54,6 +55,7 @@ void AEnemySpawner::SpawnEnemy()
 				
 				IInitableEnemy::Execute_Init(tempActor);
 			}
+			
 			curEnemyCount++;
 		}
 	}	
@@ -64,4 +66,3 @@ void AEnemySpawner::EnemyDied()
 {
 	curEnemyCount--;
 }
-

@@ -19,14 +19,12 @@ class AGEPPlayerController;
 	virtual AGEPPlayerController* GetAsPC_Implementation(); \
 	virtual void Init_Implementation(); \
  \
-	DECLARE_FUNCTION(execSaveGame); \
 	DECLARE_FUNCTION(execGetAsPC); \
 	DECLARE_FUNCTION(execInit);
 
 
 #define GEPProject_Source_GEPProject_Player_GEPPlayerController_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
  \
-	DECLARE_FUNCTION(execSaveGame); \
 	DECLARE_FUNCTION(execGetAsPC); \
 	DECLARE_FUNCTION(execInit);
 

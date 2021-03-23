@@ -31,6 +31,7 @@ bool AWeapon_Projectile::Fire_Implementation()
 		AGrenadeProjectile* grenadeProjectile =	world->SpawnActor<AGrenadeProjectile>(projectile, spawnLocation, spawnRotation, actorSpawnParams);
 		grenadeProjectile->Init(damage, damageRadius);
 	}
+	
 	onShoot.Broadcast(energyCost);
 	world->GetTimerManager().SetTimer(WeaponResetTimerHandle, this, &AWeapon_Projectile::ResetShoot, shootCooldown);
 	return true;

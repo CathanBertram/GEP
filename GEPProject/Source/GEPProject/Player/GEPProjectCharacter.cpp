@@ -95,7 +95,7 @@ void AGEPProjectCharacter::UnlockWeapon(TSubclassOf<AActor> weaponToUnlock, int 
 	unlockedWeaponArray.Add(weaponToUnlock);
 	currency -= cost;
 	UEventSystem* eventSystem = GetGameInstance()->GetSubsystem<UEventSystem>();
-	eventSystem->OnTrySave();
+	eventSystem->OnStartSave();
 	eventSystem->OnCurrencyUpdate(currency);
 }
 

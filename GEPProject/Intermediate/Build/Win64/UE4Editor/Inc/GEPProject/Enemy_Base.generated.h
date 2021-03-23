@@ -15,9 +15,15 @@ class AEnemy_Base;
 #define GEPPROJECT_Enemy_Base_generated_h
 
 #define GEPProject_Source_GEPProject_Enemy_Enemy_Base_h_12_DELEGATE \
-static inline void FOnDeath_DelegateWrapper(const FMulticastScriptDelegate& OnDeath) \
+struct _Script_GEPProject_eventOnDeath_Parms \
 { \
-	OnDeath.ProcessMulticastDelegate<UObject>(NULL); \
+	AEnemy_Base* enemy; \
+}; \
+static inline void FOnDeath_DelegateWrapper(const FMulticastScriptDelegate& OnDeath, AEnemy_Base* enemy) \
+{ \
+	_Script_GEPProject_eventOnDeath_Parms Parms; \
+	Parms.enemy=enemy; \
+	OnDeath.ProcessMulticastDelegate<UObject>(&Parms); \
 }
 
 

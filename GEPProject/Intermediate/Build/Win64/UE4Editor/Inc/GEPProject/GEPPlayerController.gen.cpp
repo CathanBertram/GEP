@@ -21,13 +21,6 @@ void EmptyLinkFunctionForGeneratedCodeGEPPlayerController() {}
 	ENGINE_API UClass* Z_Construct_UClass_APawn_NoRegister();
 	GEPPROJECT_API UClass* Z_Construct_UClass_UInitablePC_NoRegister();
 // End Cross Module References
-	DEFINE_FUNCTION(AGEPPlayerController::execSaveGame)
-	{
-		P_FINISH;
-		P_NATIVE_BEGIN;
-		P_THIS->SaveGame();
-		P_NATIVE_END;
-	}
 	DEFINE_FUNCTION(AGEPPlayerController::execGetAsPC)
 	{
 		P_FINISH;
@@ -60,7 +53,6 @@ void EmptyLinkFunctionForGeneratedCodeGEPPlayerController() {}
 		static const FNameNativePtrPair Funcs[] = {
 			{ "GetAsPC", &AGEPPlayerController::execGetAsPC },
 			{ "Init", &AGEPPlayerController::execInit },
-			{ "SaveGame", &AGEPPlayerController::execSaveGame },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 	}
@@ -114,28 +106,6 @@ void EmptyLinkFunctionForGeneratedCodeGEPPlayerController() {}
 		}
 		return ReturnFunction;
 	}
-	struct Z_Construct_UFunction_AGEPPlayerController_SaveGame_Statics
-	{
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
-#endif
-		static const UE4CodeGen_Private::FFunctionParams FuncParams;
-	};
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AGEPPlayerController_SaveGame_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Player/GEPPlayerController.h" },
-	};
-#endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AGEPPlayerController_SaveGame_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AGEPPlayerController, nullptr, "SaveGame", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AGEPPlayerController_SaveGame_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AGEPPlayerController_SaveGame_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_AGEPPlayerController_SaveGame()
-	{
-		static UFunction* ReturnFunction = nullptr;
-		if (!ReturnFunction)
-		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AGEPPlayerController_SaveGame_Statics::FuncParams);
-		}
-		return ReturnFunction;
-	}
 	UClass* Z_Construct_UClass_AGEPPlayerController_NoRegister()
 	{
 		return AGEPPlayerController::StaticClass();
@@ -163,7 +133,6 @@ void EmptyLinkFunctionForGeneratedCodeGEPPlayerController() {}
 	const FClassFunctionLinkInfo Z_Construct_UClass_AGEPPlayerController_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_AGEPPlayerController_GetAsPC, "GetAsPC" }, // 2774112060
 		{ &Z_Construct_UFunction_AGEPPlayerController_Init, "Init" }, // 1555184307
-		{ &Z_Construct_UFunction_AGEPPlayerController_SaveGame, "SaveGame" }, // 1692531799
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AGEPPlayerController_Statics::Class_MetaDataParams[] = {
@@ -213,7 +182,7 @@ void EmptyLinkFunctionForGeneratedCodeGEPPlayerController() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AGEPPlayerController, 1838076668);
+	IMPLEMENT_CLASS(AGEPPlayerController, 591841571);
 	template<> GEPPROJECT_API UClass* StaticClass<AGEPPlayerController>()
 	{
 		return AGEPPlayerController::StaticClass();

@@ -43605,18 +43605,32 @@
             <e p="GEPProjectProjectile.h" t="Include" />
             <e p="GrenadeProjectile.cpp" t="Include" />
             <e p="GrenadeProjectile.h" t="Include" />
+            <e p="Weapon_AutoRifle.cpp" t="Include" />
+            <e p="Weapon_AutoRifle.h" t="Include" />
             <e p="Weapon_Base.cpp" t="Include" />
             <e p="Weapon_Base.h" t="Include" />
+            <e p="Weapon_ChargeRevolver.cpp" t="Include" />
+            <e p="Weapon_ChargeRevolver.h" t="Include" />
+            <e p="Weapon_GrenadeLauncher.cpp" t="Include" />
+            <e p="Weapon_GrenadeLauncher.h" t="Include" />
             <e p="Weapon_Hitscan.cpp" t="Include" />
             <e p="Weapon_Hitscan.h" t="Include" />
             <e p="Weapon_Hitscan_Auto.cpp" t="Include" />
             <e p="Weapon_Hitscan_Auto.h" t="Include" />
             <e p="Weapon_Hitscan_Charge.cpp" t="Include" />
             <e p="Weapon_Hitscan_Charge.h" t="Include" />
+            <e p="Weapon_Pistol.cpp" t="Include" />
+            <e p="Weapon_Pistol.h" t="Include" />
             <e p="Weapon_Projectile.cpp" t="Include" />
             <e p="Weapon_Projectile.h" t="Include" />
+            <e p="Weapon_Raygun.cpp" t="Include" />
+            <e p="Weapon_Raygun.h" t="Include" />
+            <e p="Weapon_Rifle.cpp" t="Include" />
+            <e p="Weapon_Rifle.h" t="Include" />
             <e p="Weapon_Shotgun.cpp" t="Include" />
             <e p="Weapon_Shotgun.h" t="Include" />
+            <e p="Weapon_SMG.cpp" t="Include" />
+            <e p="Weapon_SMG.h" t="Include" />
           </e>
         </e>
         <e p="GEPProject.Target.cs" t="Include" />

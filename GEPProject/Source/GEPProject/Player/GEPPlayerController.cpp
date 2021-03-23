@@ -22,7 +22,6 @@ void AGEPPlayerController::Init_Implementation()
 	{
 		GetPawn()->Destroy();
 	}
-	GetGameInstance()->GetSubsystem<UEventSystem>()->onTrySave.AddDynamic(this, &AGEPPlayerController::SaveGame);
 	UWorld* const world =  GetWorld();
 	if (world != nullptr && pawnToSpawn)
 	{
@@ -51,39 +50,6 @@ AGEPPlayerController* AGEPPlayerController::GetAsPC_Implementation()
 {
 	return this;
 }
-
-void AGEPPlayerController::SaveGame()
-{
-	//Create saveGameInstance
-	USaveGame* tempSave = UGameplayStatics::CreateSaveGameObject(UGEPSaveGame::StaticClass());
-	//Event to save data from other classes
-	if (UKismetSystemLibrary::DoesImplementInterface(tempSave, UGetGEPSaveGame::StaticClass()))
-	{
-		UGEPSaveGame* saveGameInstance = IGetGEPSaveGame::Execute_GetGEPSave(tempSave);
-		GetGameInstance()->GetSubsystem<UEventSystem>()->OnSave(saveGameInstance);
-		UGameplayStatics::SaveGameToSlot(saveGameInstance, TEXT("Save"), 0);
-	}
-
-	
-	//Push save game to slot
-}
-
-void AGEPPlayerController::LoadGame()
-{
-	//Load save game from slot
-	if (UGameplayStatics::DoesSaveGameExist(TEXT("Save"), 0))
-	{
-		USaveGame* tempSave = UGameplayStatics::LoadGameFromSlot(TEXT("Save"), 0);
-		if (UKismetSystemLibrary::DoesImplementInterface(tempSave, UGetGEPSaveGame::StaticClass()))
-		{
-			UGEPSaveGame* saveGameInstance = IGetGEPSaveGame::Execute_GetGEPSave(tempSave);
-			//Event to load data to other classes
-			GetGameInstance()->GetSubsystem<UEventSystem>()->OnLoad(saveGameInstance);		
-		}		
-	}
-	
-}
-
 
 void AGEPPlayerController::SetupInputComponent()
 {
@@ -118,12 +84,12 @@ void AGEPPlayerController::SetupInputComponent()
 }
 void AGEPPlayerController::QuickSavePressed()
 {
-	SaveGame();
+	UGameplayStatics::GetGameInstance(GetWorld())->GetSubsystem<UEventSystem>()->OnStartSave();
 }
 
 void AGEPPlayerController::QuickLoadPressed()
 {
-	LoadGame();
+	UGameplayStatics::GetGameInstance(GetWorld())->GetSubsystem<UEventSystem>()->OnStartLoad();
 }
 
 

@@ -24,6 +24,20 @@ void EmptyLinkFunctionForGeneratedCodeGEPProjectGameMode() {}
 	UMG_API UClass* Z_Construct_UClass_UUserWidget_NoRegister();
 	GEPPROJECT_API UClass* Z_Construct_UClass_UGetGEPGamemode_NoRegister();
 // End Cross Module References
+	DEFINE_FUNCTION(AGEPProjectGameMode::execLoadGame)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->LoadGame();
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(AGEPProjectGameMode::execSaveGame)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->SaveGame();
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(AGEPProjectGameMode::execUpdateEnergyPercent)
 	{
 		P_GET_PROPERTY(FFloatProperty,Z_Param_newEnergyPercent);
@@ -100,6 +114,8 @@ void EmptyLinkFunctionForGeneratedCodeGEPProjectGameMode() {}
 			{ "GetGEPGamemode", &AGEPProjectGameMode::execGetGEPGamemode },
 			{ "GetHealthPercent", &AGEPProjectGameMode::execGetHealthPercent },
 			{ "GetUpgradeCost", &AGEPProjectGameMode::execGetUpgradeCost },
+			{ "LoadGame", &AGEPProjectGameMode::execLoadGame },
+			{ "SaveGame", &AGEPProjectGameMode::execSaveGame },
 			{ "UpdateCurrency", &AGEPProjectGameMode::execUpdateCurrency },
 			{ "UpdateEnergyPercent", &AGEPProjectGameMode::execUpdateEnergyPercent },
 			{ "UpdateHealthPercent", &AGEPProjectGameMode::execUpdateHealthPercent },
@@ -266,6 +282,50 @@ void EmptyLinkFunctionForGeneratedCodeGEPProjectGameMode() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_AGEPProjectGameMode_LoadGame_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AGEPProjectGameMode_LoadGame_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "GEPProjectGameMode.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AGEPProjectGameMode_LoadGame_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AGEPProjectGameMode, nullptr, "LoadGame", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AGEPProjectGameMode_LoadGame_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AGEPProjectGameMode_LoadGame_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AGEPProjectGameMode_LoadGame()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AGEPProjectGameMode_LoadGame_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AGEPProjectGameMode_SaveGame_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AGEPProjectGameMode_SaveGame_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "GEPProjectGameMode.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AGEPProjectGameMode_SaveGame_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AGEPProjectGameMode, nullptr, "SaveGame", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AGEPProjectGameMode_SaveGame_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AGEPProjectGameMode_SaveGame_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AGEPProjectGameMode_SaveGame()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AGEPProjectGameMode_SaveGame_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_AGEPProjectGameMode_UpdateCurrency_Statics
 	{
 		struct GEPProjectGameMode_eventUpdateCurrency_Parms
@@ -401,6 +461,8 @@ void EmptyLinkFunctionForGeneratedCodeGEPProjectGameMode() {}
 		{ &Z_Construct_UFunction_AGEPProjectGameMode_GetGEPGamemode, "GetGEPGamemode" }, // 1206584923
 		{ &Z_Construct_UFunction_AGEPProjectGameMode_GetHealthPercent, "GetHealthPercent" }, // 2967859332
 		{ &Z_Construct_UFunction_AGEPProjectGameMode_GetUpgradeCost, "GetUpgradeCost" }, // 3734256529
+		{ &Z_Construct_UFunction_AGEPProjectGameMode_LoadGame, "LoadGame" }, // 2795752774
+		{ &Z_Construct_UFunction_AGEPProjectGameMode_SaveGame, "SaveGame" }, // 2254868684
 		{ &Z_Construct_UFunction_AGEPProjectGameMode_UpdateCurrency, "UpdateCurrency" }, // 1854567896
 		{ &Z_Construct_UFunction_AGEPProjectGameMode_UpdateEnergyPercent, "UpdateEnergyPercent" }, // 1261758318
 		{ &Z_Construct_UFunction_AGEPProjectGameMode_UpdateHealthPercent, "UpdateHealthPercent" }, // 2967461078
@@ -472,7 +534,7 @@ void EmptyLinkFunctionForGeneratedCodeGEPProjectGameMode() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AGEPProjectGameMode, 1341475276);
+	IMPLEMENT_CLASS(AGEPProjectGameMode, 3476683440);
 	template<> GEPPROJECT_API UClass* StaticClass<AGEPProjectGameMode>()
 	{
 		return AGEPProjectGameMode::StaticClass();
