@@ -7,14 +7,18 @@
 #include "Components/CapsuleComponent.h"
 #include "GameFramework/InputSettings.h"
 #include "Components/ChildActorComponent.h"
+#include "GameFramework/GameModeBase.h"
 #include "GEPProject/Interfaces/Fireable.h"
 #include "GEPProject/Interfaces/Interactable.h"
 #include "GameFramework/Pawn.h"
 #include "GEPProject/EventSystem.h"
+#include "GEPProject/GEPProjectGameMode.h"
 #include "GEPProject/Component/PlayerEnergyComponent.h"
 #include "GEPProject/Component/PlayerHealthComponent.h"
 #include "GEPProject/Interfaces/FireReleaseable.h"
+#include "GEPProject/Interfaces/GetGEPGamemode.h"
 #include "GEPProject/Interfaces/GetWeaponBase.h"
+#include "GEPProject/Upgrades/UpgradeSystem.h"
 #include "Kismet/GameplayStatics.h"
 
 DEFINE_LOG_CATEGORY_STATIC(LogFPChar, Warning, All);
@@ -104,6 +108,18 @@ void AGEPProjectCharacter::UpdateEnergy(float newEnergy)
 	onLocalEnergyUpdate.Broadcast(newEnergy);
 }
 
+void AGEPProjectCharacter::GetUpdatedMultipliers()
+{
+	UWorld* world = GetWorld();
+	AGameModeBase* tempGamemode = UGameplayStatics::GetGameMode(world);
+	
+	if (tempGamemode->GetClass()->ImplementsInterface(UGetGEPGamemode::StaticClass()))
+	{
+		UUpgradeSystem* upgradeSystem = IGetGEPGamemode::Execute_GetGEPGamemode(tempGamemode)->GetUpgradeSystem();
+		
+	}
+}
+
 void AGEPProjectCharacter::GainCurrency(int curToGain)
 {
 	currency += curToGain;
@@ -134,6 +150,7 @@ void AGEPProjectCharacter::Init_Implementation()
 	eventSystemInstance->onLoad.AddDynamic(this, &AGEPProjectCharacter::Load);
 	eventSystemInstance->onUnlockWeapon.AddDynamic(this, &AGEPProjectCharacter::UnlockWeapon);
 	eventSystemInstance->onDamagePlayer.AddDynamic(this, &AGEPProjectCharacter::DamagePlayer);
+	eventSystemInstance->onDirtyPlayer.AddDynamic(this, &AGEPProjectCharacter::GetUpdatedMultipliers);
 
 	healthComponent->SetEventInstance(eventSystemInstance);
 	healthComponent->Init();

@@ -61,7 +61,9 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UPlayerHealthComponent); \
 
 
 #define GEPProject_Source_GEPProject_Component_PlayerHealthComponent_h_17_PRIVATE_PROPERTY_OFFSET \
-	FORCEINLINE static uint32 __PPO__maxHealth() { return STRUCT_OFFSET(UPlayerHealthComponent, maxHealth); }
+	FORCEINLINE static uint32 __PPO__maxHealth() { return STRUCT_OFFSET(UPlayerHealthComponent, maxHealth); } \
+	FORCEINLINE static uint32 __PPO__baseHealthRegenCooldown() { return STRUCT_OFFSET(UPlayerHealthComponent, baseHealthRegenCooldown); } \
+	FORCEINLINE static uint32 __PPO__baseHealthRegenAmount() { return STRUCT_OFFSET(UPlayerHealthComponent, baseHealthRegenAmount); }
 
 
 #define GEPProject_Source_GEPProject_Component_PlayerHealthComponent_h_14_PROLOG

@@ -58,6 +58,7 @@ static inline void FOnLocalEnergyUpdate_DelegateWrapper(const FMulticastScriptDe
 	virtual void Init_Implementation(); \
 	virtual APawn* GetAsPawn_Implementation(); \
  \
+	DECLARE_FUNCTION(execGetUpdatedMultipliers); \
 	DECLARE_FUNCTION(execUpdateEnergy); \
 	DECLARE_FUNCTION(execUnlockWeapon); \
 	DECLARE_FUNCTION(execLoad); \
@@ -95,6 +96,7 @@ static inline void FOnLocalEnergyUpdate_DelegateWrapper(const FMulticastScriptDe
 
 #define GEPProject_Source_GEPProject_Player_GEPProjectCharacter_h_20_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execGetUpdatedMultipliers); \
 	DECLARE_FUNCTION(execUpdateEnergy); \
 	DECLARE_FUNCTION(execUnlockWeapon); \
 	DECLARE_FUNCTION(execLoad); \

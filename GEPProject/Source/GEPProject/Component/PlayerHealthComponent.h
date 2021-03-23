@@ -30,6 +30,16 @@ protected:
 
 	UEventSystem* eventInstance;
 
+	void Regen();
+	UPROPERTY(EditAnywhere)
+	float baseHealthRegenCooldown;
+	float healthRegenCooldown;
+	UPROPERTY(EditAnywhere)
+	float baseHealthRegenAmount;
+	float healthRegenAmount;
+	
 	virtual void TakeDamage(AActor* DamagedActor, float Damage, const UDamageType* DamageType,
     AController* InstigatedBy, AActor* DamageCauser) override;
+
+	FTimerHandle RegenTimerHandle;
 };

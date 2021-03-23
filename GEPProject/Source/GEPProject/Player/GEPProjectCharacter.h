@@ -172,6 +172,9 @@ private:
 	void UpdateEnergy(float newEnergy);
 	FOnLocalEnergyUpdate onLocalEnergyUpdate;
 
+	UFUNCTION()
+	void GetUpdatedMultipliers();
+
 public:
 	/** Returns FirstPersonCameraComponent subobject **/
 	FORCEINLINE class UCameraComponent* GetFirstPersonCameraComponent() const { return FirstPersonCameraComponent; }

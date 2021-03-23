@@ -41,6 +41,8 @@ public:
 	UFUNCTION(BlueprintCallable)
 	float GetUpgradeCost(TEnumAsByte<EUpgradeTypes> upgradeType);
 
+	UUpgradeSystem* GetUpgradeSystem(){return upgradeSystem;}
+
 protected:
 	TArray<AActor*> playerStarts;
 

@@ -24,7 +24,6 @@
 #include "E:/Github/GEP/GEPProject/Source/GEPProject/TestBlock.cpp"
 #include "E:/Github/GEP/GEPProject/Source/GEPProject/Upgrades/EUpgradeTypes.cpp"
 #include "E:/Github/GEP/GEPProject/Source/GEPProject/Upgrades/FUpgrade.cpp"
-#include "E:/Github/GEP/GEPProject/Source/GEPProject/Upgrades/UpgradeSystem.cpp"
 #include "E:/Github/GEP/GEPProject/Source/GEPProject/Weapons/GEPProjectProjectile.cpp"
 #include "E:/Github/GEP/GEPProject/Source/GEPProject/Weapons/GrenadeProjectile.cpp"
 #include "E:/Github/GEP/GEPProject/Source/GEPProject/Weapons/Weapon_Base.cpp"

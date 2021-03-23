@@ -62,6 +62,13 @@ void EmptyLinkFunctionForGeneratedCodeGEPProjectCharacter() {}
 		}
 		return ReturnFunction;
 	}
+	DEFINE_FUNCTION(AGEPProjectCharacter::execGetUpdatedMultipliers)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->GetUpdatedMultipliers();
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(AGEPProjectCharacter::execUpdateEnergy)
 	{
 		P_GET_PROPERTY(FFloatProperty,Z_Param_newEnergy);
@@ -459,6 +466,7 @@ void EmptyLinkFunctionForGeneratedCodeGEPProjectCharacter() {}
 			{ "GainCurrency", &AGEPProjectCharacter::execGainCurrency },
 			{ "GetAsChar", &AGEPProjectCharacter::execGetAsChar },
 			{ "GetAsPawn", &AGEPProjectCharacter::execGetAsPawn },
+			{ "GetUpdatedMultipliers", &AGEPProjectCharacter::execGetUpdatedMultipliers },
 			{ "Init", &AGEPProjectCharacter::execInit },
 			{ "InteractPressed", &AGEPProjectCharacter::execInteractPressed },
 			{ "InteractReleased", &AGEPProjectCharacter::execInteractReleased },
@@ -650,6 +658,28 @@ void EmptyLinkFunctionForGeneratedCodeGEPProjectCharacter() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AGEPProjectCharacter_GetAsPawn_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AGEPProjectCharacter_GetUpdatedMultipliers_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AGEPProjectCharacter_GetUpdatedMultipliers_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Player/GEPProjectCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AGEPProjectCharacter_GetUpdatedMultipliers_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AGEPProjectCharacter, nullptr, "GetUpdatedMultipliers", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AGEPProjectCharacter_GetUpdatedMultipliers_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AGEPProjectCharacter_GetUpdatedMultipliers_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AGEPProjectCharacter_GetUpdatedMultipliers()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AGEPProjectCharacter_GetUpdatedMultipliers_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -1420,6 +1450,7 @@ void EmptyLinkFunctionForGeneratedCodeGEPProjectCharacter() {}
 		{ &Z_Construct_UFunction_AGEPProjectCharacter_GainCurrency, "GainCurrency" }, // 2601200540
 		{ &Z_Construct_UFunction_AGEPProjectCharacter_GetAsChar, "GetAsChar" }, // 4271833556
 		{ &Z_Construct_UFunction_AGEPProjectCharacter_GetAsPawn, "GetAsPawn" }, // 3918148831
+		{ &Z_Construct_UFunction_AGEPProjectCharacter_GetUpdatedMultipliers, "GetUpdatedMultipliers" }, // 819646900
 		{ &Z_Construct_UFunction_AGEPProjectCharacter_Init, "Init" }, // 1984092060
 		{ &Z_Construct_UFunction_AGEPProjectCharacter_InteractPressed, "InteractPressed" }, // 3168914344
 		{ &Z_Construct_UFunction_AGEPProjectCharacter_InteractReleased, "InteractReleased" }, // 641448505
@@ -1598,7 +1629,7 @@ void EmptyLinkFunctionForGeneratedCodeGEPProjectCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AGEPProjectCharacter, 962084174);
+	IMPLEMENT_CLASS(AGEPProjectCharacter, 756159778);
 	template<> GEPPROJECT_API UClass* StaticClass<AGEPProjectCharacter>()
 	{
 		return AGEPProjectCharacter::StaticClass();

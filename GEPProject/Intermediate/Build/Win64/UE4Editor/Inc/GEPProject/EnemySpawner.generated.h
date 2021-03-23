@@ -8,7 +8,6 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-class AEnemy_Base;
 #ifdef GEPPROJECT_EnemySpawner_generated_h
 #error "EnemySpawner.generated.h already included, missing '#pragma once' in EnemySpawner.h"
 #endif
