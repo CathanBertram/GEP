@@ -34,7 +34,10 @@ void AGrenadeProjectile::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor,
 {
 	UGameplayStatics::ApplyRadialDamage(GetWorld(), damage, GetActorLocation(), damageRadius,TSubclassOf<UDamageType>(UDamageType::StaticClass()),
 		TArray<AActor*>(), GetOwner(), GetInstigator()->GetController(), true);
-	
+
+	// UGameplayStatics::ApplyRadialDamageWithFalloff(GetWorld(), damage, 1.0f, GetActorLocation(), damageRadius / 5,
+	// 	damageRadius,2.0f, TSubclassOf<UDamageType>(UDamageType::StaticClass()),TArray<AActor*>(),GetOwner(),
+	// 	GetInstigator()->GetController());
 	UGameplayStatics::PlaySoundAtLocation(GetWorld(), explosionSound, GetActorLocation());
 	UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), explosionParticles, GetActorLocation());
 	Destroy();
