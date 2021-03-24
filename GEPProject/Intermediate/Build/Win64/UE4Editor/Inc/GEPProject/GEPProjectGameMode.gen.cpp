@@ -62,6 +62,13 @@ void EmptyLinkFunctionForGeneratedCodeGEPProjectGameMode() {}
 		P_THIS->UpdateCurrency(Z_Param_newCur);
 		P_NATIVE_END;
 	}
+	DEFINE_FUNCTION(AGEPProjectGameMode::execUpdateDirties)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->UpdateDirties();
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(AGEPProjectGameMode::execGetUpgradeCost)
 	{
 		P_GET_PROPERTY(FByteProperty,Z_Param_upgradeType);
@@ -117,6 +124,7 @@ void EmptyLinkFunctionForGeneratedCodeGEPProjectGameMode() {}
 			{ "LoadGame", &AGEPProjectGameMode::execLoadGame },
 			{ "SaveGame", &AGEPProjectGameMode::execSaveGame },
 			{ "UpdateCurrency", &AGEPProjectGameMode::execUpdateCurrency },
+			{ "UpdateDirties", &AGEPProjectGameMode::execUpdateDirties },
 			{ "UpdateEnergyPercent", &AGEPProjectGameMode::execUpdateEnergyPercent },
 			{ "UpdateHealthPercent", &AGEPProjectGameMode::execUpdateHealthPercent },
 		};
@@ -358,6 +366,28 @@ void EmptyLinkFunctionForGeneratedCodeGEPProjectGameMode() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_AGEPProjectGameMode_UpdateDirties_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AGEPProjectGameMode_UpdateDirties_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "GEPProjectGameMode.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AGEPProjectGameMode_UpdateDirties_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AGEPProjectGameMode, nullptr, "UpdateDirties", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AGEPProjectGameMode_UpdateDirties_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AGEPProjectGameMode_UpdateDirties_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AGEPProjectGameMode_UpdateDirties()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AGEPProjectGameMode_UpdateDirties_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_AGEPProjectGameMode_UpdateEnergyPercent_Statics
 	{
 		struct GEPProjectGameMode_eventUpdateEnergyPercent_Parms
@@ -464,6 +494,7 @@ void EmptyLinkFunctionForGeneratedCodeGEPProjectGameMode() {}
 		{ &Z_Construct_UFunction_AGEPProjectGameMode_LoadGame, "LoadGame" }, // 2795752774
 		{ &Z_Construct_UFunction_AGEPProjectGameMode_SaveGame, "SaveGame" }, // 2254868684
 		{ &Z_Construct_UFunction_AGEPProjectGameMode_UpdateCurrency, "UpdateCurrency" }, // 1854567896
+		{ &Z_Construct_UFunction_AGEPProjectGameMode_UpdateDirties, "UpdateDirties" }, // 3615257423
 		{ &Z_Construct_UFunction_AGEPProjectGameMode_UpdateEnergyPercent, "UpdateEnergyPercent" }, // 1261758318
 		{ &Z_Construct_UFunction_AGEPProjectGameMode_UpdateHealthPercent, "UpdateHealthPercent" }, // 2967461078
 	};
@@ -534,7 +565,7 @@ void EmptyLinkFunctionForGeneratedCodeGEPProjectGameMode() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AGEPProjectGameMode, 3476683440);
+	IMPLEMENT_CLASS(AGEPProjectGameMode, 2105881090);
 	template<> GEPPROJECT_API UClass* StaticClass<AGEPProjectGameMode>()
 	{
 		return AGEPProjectGameMode::StaticClass();

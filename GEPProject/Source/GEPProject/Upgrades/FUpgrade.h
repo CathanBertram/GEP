@@ -18,7 +18,7 @@ struct FUpgrade
 	
 	FUpgrade()
 	{
-		level = 1;
+		level = 0;
 		maxLevel = 50;
 		cost = 0;
 		valueMulti = 0;
@@ -27,7 +27,7 @@ struct FUpgrade
 
 	FUpgrade(float Cost, float MultiValue, TEnumAsByte<EUpgradeTypes> UpgradeType)
 	{
-		level = 1;
+		level = 0;
 		maxLevel = 50;
 		cost = Cost;
 		valueMulti = MultiValue;

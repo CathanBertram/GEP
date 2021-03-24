@@ -13,5 +13,7 @@ UCLASS()
 class GEPPROJECT_API AWeapon_GrenadeLauncher : public AWeapon_Projectile
 {
 	GENERATED_BODY()
-	
+	UFUNCTION()
+	void GetUpdatedDirties() ;
+	virtual void BeginPlay() override;
 };

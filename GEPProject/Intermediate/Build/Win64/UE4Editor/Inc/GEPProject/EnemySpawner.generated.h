@@ -18,12 +18,14 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	virtual void Init_Implementation(); \
  \
 	DECLARE_FUNCTION(execEnemyDied); \
+	DECLARE_FUNCTION(execGetUpdatedMultipliers); \
 	DECLARE_FUNCTION(execInit);
 
 
 #define GEPProject_Source_GEPProject_Enemy_EnemySpawner_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execEnemyDied); \
+	DECLARE_FUNCTION(execGetUpdatedMultipliers); \
 	DECLARE_FUNCTION(execInit);
 
 
@@ -75,7 +77,12 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AEnemySpawner); \
 
 #define GEPProject_Source_GEPProject_Enemy_EnemySpawner_h_15_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__enemyList() { return STRUCT_OFFSET(AEnemySpawner, enemyList); } \
-	FORCEINLINE static uint32 __PPO__maxEnemyCount() { return STRUCT_OFFSET(AEnemySpawner, maxEnemyCount); }
+	FORCEINLINE static uint32 __PPO__maxEnemyCount() { return STRUCT_OFFSET(AEnemySpawner, maxEnemyCount); } \
+	FORCEINLINE static uint32 __PPO__baseMaxEnemyCount() { return STRUCT_OFFSET(AEnemySpawner, baseMaxEnemyCount); } \
+	FORCEINLINE static uint32 __PPO__enemySpawnRate() { return STRUCT_OFFSET(AEnemySpawner, enemySpawnRate); } \
+	FORCEINLINE static uint32 __PPO__baseEnemySpawnRate() { return STRUCT_OFFSET(AEnemySpawner, baseEnemySpawnRate); } \
+	FORCEINLINE static uint32 __PPO__enemySpawnAmount() { return STRUCT_OFFSET(AEnemySpawner, enemySpawnAmount); } \
+	FORCEINLINE static uint32 __PPO__baseEnemySpawnAmount() { return STRUCT_OFFSET(AEnemySpawner, baseEnemySpawnAmount); }
 
 
 #define GEPProject_Source_GEPProject_Enemy_EnemySpawner_h_12_PROLOG \

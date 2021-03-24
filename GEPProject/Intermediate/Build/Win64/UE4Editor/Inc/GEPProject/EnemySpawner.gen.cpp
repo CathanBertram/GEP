@@ -29,6 +29,13 @@ void EmptyLinkFunctionForGeneratedCodeEnemySpawner() {}
 		P_THIS->EnemyDied();
 		P_NATIVE_END;
 	}
+	DEFINE_FUNCTION(AEnemySpawner::execGetUpdatedMultipliers)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->GetUpdatedMultipliers();
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(AEnemySpawner::execInit)
 	{
 		P_FINISH;
@@ -46,6 +53,7 @@ void EmptyLinkFunctionForGeneratedCodeEnemySpawner() {}
 		UClass* Class = AEnemySpawner::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
 			{ "EnemyDied", &AEnemySpawner::execEnemyDied },
+			{ "GetUpdatedMultipliers", &AEnemySpawner::execGetUpdatedMultipliers },
 			{ "Init", &AEnemySpawner::execInit },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
@@ -69,6 +77,28 @@ void EmptyLinkFunctionForGeneratedCodeEnemySpawner() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AEnemySpawner_EnemyDied_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AEnemySpawner_GetUpdatedMultipliers_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AEnemySpawner_GetUpdatedMultipliers_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Enemy/EnemySpawner.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AEnemySpawner_GetUpdatedMultipliers_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AEnemySpawner, nullptr, "GetUpdatedMultipliers", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AEnemySpawner_GetUpdatedMultipliers_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AEnemySpawner_GetUpdatedMultipliers_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AEnemySpawner_GetUpdatedMultipliers()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AEnemySpawner_GetUpdatedMultipliers_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -106,6 +136,26 @@ void EmptyLinkFunctionForGeneratedCodeEnemySpawner() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_baseEnemySpawnAmount_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_baseEnemySpawnAmount;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_enemySpawnAmount_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_enemySpawnAmount;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_baseEnemySpawnRate_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_baseEnemySpawnRate;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_enemySpawnRate_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_enemySpawnRate;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_baseMaxEnemyCount_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_baseMaxEnemyCount;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_maxEnemyCount_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_maxEnemyCount;
@@ -129,6 +179,7 @@ void EmptyLinkFunctionForGeneratedCodeEnemySpawner() {}
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AEnemySpawner_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_AEnemySpawner_EnemyDied, "EnemyDied" }, // 962483173
+		{ &Z_Construct_UFunction_AEnemySpawner_GetUpdatedMultipliers, "GetUpdatedMultipliers" }, // 2228832181
 		{ &Z_Construct_UFunction_AEnemySpawner_Init, "Init" }, // 4063685979
 	};
 #if WITH_METADATA
@@ -137,6 +188,41 @@ void EmptyLinkFunctionForGeneratedCodeEnemySpawner() {}
 		{ "ModuleRelativePath", "Enemy/EnemySpawner.h" },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AEnemySpawner_Statics::NewProp_baseEnemySpawnAmount_MetaData[] = {
+		{ "Category", "EnemySpawner" },
+		{ "ModuleRelativePath", "Enemy/EnemySpawner.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AEnemySpawner_Statics::NewProp_baseEnemySpawnAmount = { "baseEnemySpawnAmount", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AEnemySpawner, baseEnemySpawnAmount), METADATA_PARAMS(Z_Construct_UClass_AEnemySpawner_Statics::NewProp_baseEnemySpawnAmount_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AEnemySpawner_Statics::NewProp_baseEnemySpawnAmount_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AEnemySpawner_Statics::NewProp_enemySpawnAmount_MetaData[] = {
+		{ "Category", "EnemySpawner" },
+		{ "ModuleRelativePath", "Enemy/EnemySpawner.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AEnemySpawner_Statics::NewProp_enemySpawnAmount = { "enemySpawnAmount", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AEnemySpawner, enemySpawnAmount), METADATA_PARAMS(Z_Construct_UClass_AEnemySpawner_Statics::NewProp_enemySpawnAmount_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AEnemySpawner_Statics::NewProp_enemySpawnAmount_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AEnemySpawner_Statics::NewProp_baseEnemySpawnRate_MetaData[] = {
+		{ "Category", "EnemySpawner" },
+		{ "ModuleRelativePath", "Enemy/EnemySpawner.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AEnemySpawner_Statics::NewProp_baseEnemySpawnRate = { "baseEnemySpawnRate", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AEnemySpawner, baseEnemySpawnRate), METADATA_PARAMS(Z_Construct_UClass_AEnemySpawner_Statics::NewProp_baseEnemySpawnRate_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AEnemySpawner_Statics::NewProp_baseEnemySpawnRate_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AEnemySpawner_Statics::NewProp_enemySpawnRate_MetaData[] = {
+		{ "Category", "EnemySpawner" },
+		{ "ModuleRelativePath", "Enemy/EnemySpawner.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AEnemySpawner_Statics::NewProp_enemySpawnRate = { "enemySpawnRate", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AEnemySpawner, enemySpawnRate), METADATA_PARAMS(Z_Construct_UClass_AEnemySpawner_Statics::NewProp_enemySpawnRate_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AEnemySpawner_Statics::NewProp_enemySpawnRate_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AEnemySpawner_Statics::NewProp_baseMaxEnemyCount_MetaData[] = {
+		{ "Category", "EnemySpawner" },
+		{ "ModuleRelativePath", "Enemy/EnemySpawner.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UClass_AEnemySpawner_Statics::NewProp_baseMaxEnemyCount = { "baseMaxEnemyCount", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AEnemySpawner, baseMaxEnemyCount), METADATA_PARAMS(Z_Construct_UClass_AEnemySpawner_Statics::NewProp_baseMaxEnemyCount_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AEnemySpawner_Statics::NewProp_baseMaxEnemyCount_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AEnemySpawner_Statics::NewProp_maxEnemyCount_MetaData[] = {
 		{ "Category", "EnemySpawner" },
@@ -161,6 +247,11 @@ void EmptyLinkFunctionForGeneratedCodeEnemySpawner() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AEnemySpawner_Statics::NewProp_boundingBox = { "boundingBox", nullptr, (EPropertyFlags)0x0010000000080009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AEnemySpawner, boundingBox), Z_Construct_UClass_UBoxComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AEnemySpawner_Statics::NewProp_boundingBox_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AEnemySpawner_Statics::NewProp_boundingBox_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AEnemySpawner_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemySpawner_Statics::NewProp_baseEnemySpawnAmount,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemySpawner_Statics::NewProp_enemySpawnAmount,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemySpawner_Statics::NewProp_baseEnemySpawnRate,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemySpawner_Statics::NewProp_enemySpawnRate,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemySpawner_Statics::NewProp_baseMaxEnemyCount,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemySpawner_Statics::NewProp_maxEnemyCount,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemySpawner_Statics::NewProp_enemyList,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemySpawner_Statics::NewProp_enemyList_Inner,
@@ -196,7 +287,7 @@ void EmptyLinkFunctionForGeneratedCodeEnemySpawner() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AEnemySpawner, 211614526);
+	IMPLEMENT_CLASS(AEnemySpawner, 774296762);
 	template<> GEPPROJECT_API UClass* StaticClass<AEnemySpawner>()
 	{
 		return AEnemySpawner::StaticClass();

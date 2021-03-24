@@ -25,6 +25,8 @@ public:
 protected:
 	UPROPERTY(EditAnywhere, Category = "Weapon Variables")
 	float chargeTime;
+	UPROPERTY(EditAnywhere, Category = "Weapon Variables")
+	float baseChargeTime;
 	UPROPERTY(EditAnywhere)
 	USoundCue* chargeSound;
 	

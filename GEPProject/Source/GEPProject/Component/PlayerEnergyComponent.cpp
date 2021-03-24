@@ -8,15 +8,19 @@ void UPlayerEnergyComponent::Init()
 {
 	currentEnergy = baseEnergy;
 	maxEnergy = baseEnergy;
+	energyRegenAmount = baseEnergyRegenAmount;
+	energyRegenCooldown = baseEnergyRegenCooldown;
 	Regen();
 }
 
 void UPlayerEnergyComponent::UseEnergy(float energyToUse)
 {
 	if(!canConsume) return;
-	
 	currentEnergy -= energyToUse;
 	eventInstance->OnEnergyUpdate(GetEnergyPercent());
+
+	if(constantRegen) return;
+	
 	GetWorld()->GetTimerManager().ClearTimer(EnergyRegenCooldownHandle);
 	GetWorld()->GetTimerManager().SetTimer(EnergyRegenCooldownHandle, this, &UPlayerEnergyComponent::Regen, energyRegenResetTime);
 }

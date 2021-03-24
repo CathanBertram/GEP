@@ -13,6 +13,7 @@
 
 DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnStartSave);
 DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnStartLoad);
+
 DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnDirtyPlayer);
 DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnDirtyEnemy);
 DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnDirtyDrone);
@@ -33,6 +34,7 @@ DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnLoad, UGEPSaveGame*, saveInstance
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnDamagePlayer, float, damageAmount);
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnHealthUpdate, float, healthPercent);
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnEnergyUpdate, float, energyPercent);
+
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FOnUnlockWeapon, TSubclassOf<AActor>, weaponToUnlock, int, cost);
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FOnUpgradeAttempt, TEnumAsByte<EUpgradeTypes>, upgradeType, int, currency);
 UCLASS()

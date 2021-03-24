@@ -231,7 +231,8 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AGEPProjectCharacter); \
 	FORCEINLINE static uint32 __PPO__healthComponent() { return STRUCT_OFFSET(AGEPProjectCharacter, healthComponent); } \
 	FORCEINLINE static uint32 __PPO__energyComponent() { return STRUCT_OFFSET(AGEPProjectCharacter, energyComponent); } \
 	FORCEINLINE static uint32 __PPO__interactRange() { return STRUCT_OFFSET(AGEPProjectCharacter, interactRange); } \
-	FORCEINLINE static uint32 __PPO__canBeDamaged() { return STRUCT_OFFSET(AGEPProjectCharacter, canBeDamaged); }
+	FORCEINLINE static uint32 __PPO__canBeDamaged() { return STRUCT_OFFSET(AGEPProjectCharacter, canBeDamaged); } \
+	FORCEINLINE static uint32 __PPO__currency() { return STRUCT_OFFSET(AGEPProjectCharacter, currency); }
 
 
 #define GEPProject_Source_GEPProject_Player_GEPProjectCharacter_h_17_PROLOG \

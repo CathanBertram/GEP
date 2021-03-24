@@ -8,6 +8,10 @@
 #include "GEPProject/Interfaces/Shootable.h"
 #include "Kismet/GameplayStatics.h"
 #include "Particles/ParticleSystemComponent.h"
+#include "GameFramework/GameModeBase.h"
+#include "GEPProject/GEPProjectGameMode.h"
+#include "GEPProject/Interfaces/GetGEPGamemode.h"
+#include "GEPProject/Upgrades/UpgradeSystem.h"
 
 bool AWeapon_Shotgun::Fire_Implementation()
 {	if (!canShoot) return false;
@@ -20,7 +24,7 @@ bool AWeapon_Shotgun::Fire_Implementation()
 		USceneComponent* muzzle = GetGunMuzzle();
 		UGameplayStatics::PlaySound2D(world, shootSound);
 		UGameplayStatics::SpawnEmitterAtLocation(world, muzzleFlash , muzzle->GetComponentLocation());
-		
+		GEngine->AddOnScreenDebugMessage(-1,.5f,FColor::Red,FString::FromInt(pelletCount));
 		for (int i = 0; i < pelletCount; ++i)
 		{
 			FHitResult hit(ForceInit);
@@ -52,4 +56,25 @@ bool AWeapon_Shotgun::Fire_Implementation()
 	}
 	world->GetTimerManager().SetTimer(WeaponResetTimerHandle, this, &AWeapon_Shotgun::ResetShoot, shootCooldown);
 	return true;
+}
+
+void AWeapon_Shotgun::GetUpdatedDirties()
+{
+	UWorld* world = GetWorld();
+	AGameModeBase* tempGamemode = UGameplayStatics::GetGameMode(world);
+	
+	if (tempGamemode->GetClass()->ImplementsInterface(UGetGEPGamemode::StaticClass()))
+	{
+		UUpgradeSystem* upgradeSystem = IGetGEPGamemode::Execute_GetGEPGamemode(tempGamemode)->GetUpgradeSystem();
+		damage = baseDamage * upgradeSystem->GetUpgradeValue(Weapon_Shotgun_Damage);
+		shootCooldown = baseShootCooldown * upgradeSystem->GetUpgradeValue(Weapon_Shotgun_Firerate);
+		spread = baseSpread * upgradeSystem->GetUpgradeValue(Weapon_Shotgun_Spread);
+		pelletCount = basePelletCount + upgradeSystem->GetUpgradeValue(Weapon_Shotgun_PelletCount);
+		//Need To Do Currency Stuff
+	}
+}
+void AWeapon_Shotgun::BeginPlay()
+{
+	GetGameInstance()->GetSubsystem<UEventSystem>()->onDirtyShotgun.AddDynamic(this, &AWeapon_Shotgun::GetUpdatedDirties);
+	Super::BeginPlay();
 }

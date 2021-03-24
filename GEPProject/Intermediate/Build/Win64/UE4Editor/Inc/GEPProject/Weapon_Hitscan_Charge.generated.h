@@ -75,6 +75,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AWeapon_Hitscan_Charge); \
 
 #define GEPProject_Source_GEPProject_Weapons_Weapon_Hitscan_Charge_h_17_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__chargeTime() { return STRUCT_OFFSET(AWeapon_Hitscan_Charge, chargeTime); } \
+	FORCEINLINE static uint32 __PPO__baseChargeTime() { return STRUCT_OFFSET(AWeapon_Hitscan_Charge, baseChargeTime); } \
 	FORCEINLINE static uint32 __PPO__chargeSound() { return STRUCT_OFFSET(AWeapon_Hitscan_Charge, chargeSound); }
 
 

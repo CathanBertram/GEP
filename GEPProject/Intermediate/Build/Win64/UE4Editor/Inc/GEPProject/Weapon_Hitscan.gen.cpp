@@ -99,7 +99,7 @@ void EmptyLinkFunctionForGeneratedCodeWeapon_Hitscan() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AWeapon_Hitscan, 347351196);
+	IMPLEMENT_CLASS(AWeapon_Hitscan, 2055928908);
 	template<> GEPPROJECT_API UClass* StaticClass<AWeapon_Hitscan>()
 	{
 		return AWeapon_Hitscan::StaticClass();

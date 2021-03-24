@@ -1389,6 +1389,10 @@ void EmptyLinkFunctionForGeneratedCodeGEPProjectCharacter() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_currency_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_currency;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_canBeDamaged_MetaData[];
 #endif
 		static void NewProp_canBeDamaged_SetBit(void* Obj);
@@ -1487,6 +1491,13 @@ void EmptyLinkFunctionForGeneratedCodeGEPProjectCharacter() {}
 	};
 #endif
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AGEPProjectCharacter_Statics::NewProp_currency_MetaData[] = {
+		{ "Category", "GEPProjectCharacter" },
+		{ "ModuleRelativePath", "Player/GEPProjectCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UClass_AGEPProjectCharacter_Statics::NewProp_currency = { "currency", nullptr, (EPropertyFlags)0x0040000000000001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AGEPProjectCharacter, currency), METADATA_PARAMS(Z_Construct_UClass_AGEPProjectCharacter_Statics::NewProp_currency_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AGEPProjectCharacter_Statics::NewProp_currency_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AGEPProjectCharacter_Statics::NewProp_canBeDamaged_MetaData[] = {
 		{ "Category", "PlayerVariables" },
 		{ "ModuleRelativePath", "Player/GEPProjectCharacter.h" },
@@ -1584,6 +1595,7 @@ void EmptyLinkFunctionForGeneratedCodeGEPProjectCharacter() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AGEPProjectCharacter_Statics::NewProp_equippedWeapon = { "equippedWeapon", nullptr, (EPropertyFlags)0x004000000008001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AGEPProjectCharacter, equippedWeapon), Z_Construct_UClass_UChildActorComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AGEPProjectCharacter_Statics::NewProp_equippedWeapon_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AGEPProjectCharacter_Statics::NewProp_equippedWeapon_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AGEPProjectCharacter_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGEPProjectCharacter_Statics::NewProp_currency,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGEPProjectCharacter_Statics::NewProp_canBeDamaged,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGEPProjectCharacter_Statics::NewProp_interactRange,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGEPProjectCharacter_Statics::NewProp_MouseLookUpRate,
@@ -1629,7 +1641,7 @@ void EmptyLinkFunctionForGeneratedCodeGEPProjectCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AGEPProjectCharacter, 756159778);
+	IMPLEMENT_CLASS(AGEPProjectCharacter, 2820576928);
 	template<> GEPPROJECT_API UClass* StaticClass<AGEPProjectCharacter>()
 	{
 		return AGEPProjectCharacter::StaticClass();

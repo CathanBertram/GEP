@@ -152,6 +152,7 @@ private:
 	
 	void SwitchWeapon(int i);
 	int curWeapon;
+	UPROPERTY(EditAnywhere)
 	int currency;
 	UFUNCTION()
     void GainCurrency(int curToGain);

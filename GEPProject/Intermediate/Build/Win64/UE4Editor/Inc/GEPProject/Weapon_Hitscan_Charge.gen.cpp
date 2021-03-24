@@ -78,6 +78,10 @@ void EmptyLinkFunctionForGeneratedCodeWeapon_Hitscan_Charge() {}
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_chargeSound;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_baseChargeTime_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_baseChargeTime;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_chargeTime_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_chargeTime;
@@ -108,6 +112,13 @@ void EmptyLinkFunctionForGeneratedCodeWeapon_Hitscan_Charge() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AWeapon_Hitscan_Charge_Statics::NewProp_chargeSound = { "chargeSound", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AWeapon_Hitscan_Charge, chargeSound), Z_Construct_UClass_USoundCue_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AWeapon_Hitscan_Charge_Statics::NewProp_chargeSound_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AWeapon_Hitscan_Charge_Statics::NewProp_chargeSound_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AWeapon_Hitscan_Charge_Statics::NewProp_baseChargeTime_MetaData[] = {
+		{ "Category", "Weapon Variables" },
+		{ "ModuleRelativePath", "Weapons/Weapon_Hitscan_Charge.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AWeapon_Hitscan_Charge_Statics::NewProp_baseChargeTime = { "baseChargeTime", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AWeapon_Hitscan_Charge, baseChargeTime), METADATA_PARAMS(Z_Construct_UClass_AWeapon_Hitscan_Charge_Statics::NewProp_baseChargeTime_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AWeapon_Hitscan_Charge_Statics::NewProp_baseChargeTime_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AWeapon_Hitscan_Charge_Statics::NewProp_chargeTime_MetaData[] = {
 		{ "Category", "Weapon Variables" },
 		{ "ModuleRelativePath", "Weapons/Weapon_Hitscan_Charge.h" },
@@ -116,6 +127,7 @@ void EmptyLinkFunctionForGeneratedCodeWeapon_Hitscan_Charge() {}
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AWeapon_Hitscan_Charge_Statics::NewProp_chargeTime = { "chargeTime", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AWeapon_Hitscan_Charge, chargeTime), METADATA_PARAMS(Z_Construct_UClass_AWeapon_Hitscan_Charge_Statics::NewProp_chargeTime_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AWeapon_Hitscan_Charge_Statics::NewProp_chargeTime_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AWeapon_Hitscan_Charge_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWeapon_Hitscan_Charge_Statics::NewProp_chargeSound,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWeapon_Hitscan_Charge_Statics::NewProp_baseChargeTime,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWeapon_Hitscan_Charge_Statics::NewProp_chargeTime,
 	};
 		const UE4CodeGen_Private::FImplementedInterfaceParams Z_Construct_UClass_AWeapon_Hitscan_Charge_Statics::InterfaceParams[] = {
@@ -148,7 +160,7 @@ void EmptyLinkFunctionForGeneratedCodeWeapon_Hitscan_Charge() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AWeapon_Hitscan_Charge, 1416514797);
+	IMPLEMENT_CLASS(AWeapon_Hitscan_Charge, 2871971621);
 	template<> GEPPROJECT_API UClass* StaticClass<AWeapon_Hitscan_Charge>()
 	{
 		return AWeapon_Hitscan_Charge::StaticClass();

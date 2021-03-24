@@ -86,6 +86,16 @@ void EmptyLinkFunctionForGeneratedCodeGEPSaveGame() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_constantEnergyRegen_MetaData[];
+#endif
+		static void NewProp_constantEnergyRegen_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_constantEnergyRegen;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_canBeDamaged_MetaData[];
+#endif
+		static void NewProp_canBeDamaged_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_canBeDamaged;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_curEnemies_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_curEnemies;
@@ -143,6 +153,28 @@ void EmptyLinkFunctionForGeneratedCodeGEPSaveGame() {}
 		{ "ModuleRelativePath", "GEPSaveGame.h" },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UGEPSaveGame_Statics::NewProp_constantEnergyRegen_MetaData[] = {
+		{ "Category", "GEPSaveGame" },
+		{ "ModuleRelativePath", "GEPSaveGame.h" },
+	};
+#endif
+	void Z_Construct_UClass_UGEPSaveGame_Statics::NewProp_constantEnergyRegen_SetBit(void* Obj)
+	{
+		((UGEPSaveGame*)Obj)->constantEnergyRegen = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UGEPSaveGame_Statics::NewProp_constantEnergyRegen = { "constantEnergyRegen", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UGEPSaveGame), &Z_Construct_UClass_UGEPSaveGame_Statics::NewProp_constantEnergyRegen_SetBit, METADATA_PARAMS(Z_Construct_UClass_UGEPSaveGame_Statics::NewProp_constantEnergyRegen_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UGEPSaveGame_Statics::NewProp_constantEnergyRegen_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UGEPSaveGame_Statics::NewProp_canBeDamaged_MetaData[] = {
+		{ "Category", "GEPSaveGame" },
+		{ "ModuleRelativePath", "GEPSaveGame.h" },
+	};
+#endif
+	void Z_Construct_UClass_UGEPSaveGame_Statics::NewProp_canBeDamaged_SetBit(void* Obj)
+	{
+		((UGEPSaveGame*)Obj)->canBeDamaged = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UGEPSaveGame_Statics::NewProp_canBeDamaged = { "canBeDamaged", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UGEPSaveGame), &Z_Construct_UClass_UGEPSaveGame_Statics::NewProp_canBeDamaged_SetBit, METADATA_PARAMS(Z_Construct_UClass_UGEPSaveGame_Statics::NewProp_canBeDamaged_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UGEPSaveGame_Statics::NewProp_canBeDamaged_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UGEPSaveGame_Statics::NewProp_curEnemies_MetaData[] = {
 		{ "Category", "GEPSaveGame" },
@@ -210,6 +242,8 @@ void EmptyLinkFunctionForGeneratedCodeGEPSaveGame() {}
 #endif
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UGEPSaveGame_Statics::NewProp_transform = { "transform", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UGEPSaveGame, transform), Z_Construct_UScriptStruct_FTransform, METADATA_PARAMS(Z_Construct_UClass_UGEPSaveGame_Statics::NewProp_transform_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UGEPSaveGame_Statics::NewProp_transform_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UGEPSaveGame_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UGEPSaveGame_Statics::NewProp_constantEnergyRegen,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UGEPSaveGame_Statics::NewProp_canBeDamaged,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UGEPSaveGame_Statics::NewProp_curEnemies,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UGEPSaveGame_Statics::NewProp_curEnemies_Inner,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UGEPSaveGame_Statics::NewProp_upgrades,
@@ -253,7 +287,7 @@ void EmptyLinkFunctionForGeneratedCodeGEPSaveGame() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UGEPSaveGame, 2831637979);
+	IMPLEMENT_CLASS(UGEPSaveGame, 605779372);
 	template<> GEPPROJECT_API UClass* StaticClass<UGEPSaveGame>()
 	{
 		return UGEPSaveGame::StaticClass();

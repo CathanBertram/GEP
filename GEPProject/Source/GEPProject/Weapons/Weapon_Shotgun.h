@@ -21,5 +21,11 @@ protected:
 	int pelletCount;
 	UPROPERTY(EditAnywhere, Category = "Weapon Variables")
 	float spread;
-	
+	UPROPERTY(EditAnywhere, Category = "Weapon Variables")
+	int basePelletCount;
+	UPROPERTY(EditAnywhere, Category = "Weapon Variables")
+	float baseSpread;
+	UFUNCTION()
+void GetUpdatedDirties() ;
+	virtual void BeginPlay() override;
 };

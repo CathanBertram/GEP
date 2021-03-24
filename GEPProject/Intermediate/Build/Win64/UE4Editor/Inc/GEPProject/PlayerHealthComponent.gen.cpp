@@ -32,6 +32,10 @@ void EmptyLinkFunctionForGeneratedCodePlayerHealthComponent() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_regenCooldownReset_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_regenCooldownReset;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_baseHealthRegenAmount_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_baseHealthRegenAmount;
@@ -59,6 +63,13 @@ void EmptyLinkFunctionForGeneratedCodePlayerHealthComponent() {}
 	};
 #endif
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UPlayerHealthComponent_Statics::NewProp_regenCooldownReset_MetaData[] = {
+		{ "Category", "PlayerHealthComponent" },
+		{ "ModuleRelativePath", "Component/PlayerHealthComponent.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UPlayerHealthComponent_Statics::NewProp_regenCooldownReset = { "regenCooldownReset", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UPlayerHealthComponent, regenCooldownReset), METADATA_PARAMS(Z_Construct_UClass_UPlayerHealthComponent_Statics::NewProp_regenCooldownReset_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UPlayerHealthComponent_Statics::NewProp_regenCooldownReset_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UPlayerHealthComponent_Statics::NewProp_baseHealthRegenAmount_MetaData[] = {
 		{ "Category", "PlayerHealthComponent" },
 		{ "ModuleRelativePath", "Component/PlayerHealthComponent.h" },
@@ -80,6 +91,7 @@ void EmptyLinkFunctionForGeneratedCodePlayerHealthComponent() {}
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UPlayerHealthComponent_Statics::NewProp_maxHealth = { "maxHealth", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UPlayerHealthComponent, maxHealth), METADATA_PARAMS(Z_Construct_UClass_UPlayerHealthComponent_Statics::NewProp_maxHealth_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UPlayerHealthComponent_Statics::NewProp_maxHealth_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UPlayerHealthComponent_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlayerHealthComponent_Statics::NewProp_regenCooldownReset,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlayerHealthComponent_Statics::NewProp_baseHealthRegenAmount,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlayerHealthComponent_Statics::NewProp_baseHealthRegenCooldown,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlayerHealthComponent_Statics::NewProp_maxHealth,
@@ -111,7 +123,7 @@ void EmptyLinkFunctionForGeneratedCodePlayerHealthComponent() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UPlayerHealthComponent, 3671587797);
+	IMPLEMENT_CLASS(UPlayerHealthComponent, 796196544);
 	template<> GEPPROJECT_API UClass* StaticClass<UPlayerHealthComponent>()
 	{
 		return UPlayerHealthComponent::StaticClass();

@@ -65,6 +65,11 @@ float AGEPProjectGameMode::GetUpgradeCost(TEnumAsByte<EUpgradeTypes> upgradeType
 	return upgradeSystem->GetUpgradeCost(upgradeType);
 }
 
+void AGEPProjectGameMode::UpdateDirties()
+{
+	upgradeSystem->UpdateDirties();
+}
+
 void AGEPProjectGameMode::BeginPlay()
 {
 	UEventSystem* eventSystem = GetGameInstance()->GetSubsystem<UEventSystem>();
@@ -122,8 +127,8 @@ void AGEPProjectGameMode::LoadGame()
 			UGEPSaveGame* saveGameInstance = IGetGEPSaveGame::Execute_GetGEPSave(tempSave);
 			//Load data for this class
 			upgradeSystem->SetUpgradeArray(saveGameInstance->upgrades);
-			
-			GetGameInstance()->GetSubsystem<UEventSystem>()->OnLoad(saveGameInstance);		
+			upgradeSystem->ForceUpdateDirties();
+			GetGameInstance()->GetSubsystem<UEventSystem>()->OnLoad(saveGameInstance);	
 		}		
 	}
 }

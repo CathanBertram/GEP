@@ -23,7 +23,9 @@ public:
 	virtual void Init() override;
 
 	void SetEventInstance(UEventSystem* instance) {eventInstance = instance;}
-	
+	void UpdateHealthRegenAmount(float multi){healthRegenAmount = baseHealthRegenAmount * multi;}
+	void UpdateHealthRegenCooldown(float multi){healthRegenCooldown = baseHealthRegenCooldown * multi;}
+	bool canBeDamaged = true;
 protected:
 	UPROPERTY(EditAnywhere)
 	float maxHealth;
@@ -37,7 +39,8 @@ protected:
 	UPROPERTY(EditAnywhere)
 	float baseHealthRegenAmount;
 	float healthRegenAmount;
-	
+	UPROPERTY(EditAnywhere)
+	float regenCooldownReset;
 	virtual void TakeDamage(AActor* DamagedActor, float Damage, const UDamageType* DamageType,
     AController* InstigatedBy, AActor* DamageCauser) override;
 

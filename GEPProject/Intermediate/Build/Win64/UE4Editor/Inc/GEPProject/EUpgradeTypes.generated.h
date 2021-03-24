@@ -59,5 +59,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	op(Drone_AttackCooldown) \
 	op(Drone_MovementSpeed) \
 	op(Drone_Amount) \
+	op(Player_ConstantEnergyRegen) \
+	op(Player_Invincible) \
 	op(End) 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

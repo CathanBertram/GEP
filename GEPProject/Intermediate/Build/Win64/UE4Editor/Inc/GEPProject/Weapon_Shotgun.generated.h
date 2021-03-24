@@ -14,8 +14,16 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define GEPPROJECT_Weapon_Shotgun_generated_h
 
 #define GEPProject_Source_GEPProject_Weapons_Weapon_Shotgun_h_15_SPARSE_DATA
-#define GEPProject_Source_GEPProject_Weapons_Weapon_Shotgun_h_15_RPC_WRAPPERS
-#define GEPProject_Source_GEPProject_Weapons_Weapon_Shotgun_h_15_RPC_WRAPPERS_NO_PURE_DECLS
+#define GEPProject_Source_GEPProject_Weapons_Weapon_Shotgun_h_15_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execGetUpdatedDirties);
+
+
+#define GEPProject_Source_GEPProject_Weapons_Weapon_Shotgun_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execGetUpdatedDirties);
+
+
 #define GEPProject_Source_GEPProject_Weapons_Weapon_Shotgun_h_15_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAWeapon_Shotgun(); \
@@ -62,7 +70,9 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AWeapon_Shotgun); \
 
 #define GEPProject_Source_GEPProject_Weapons_Weapon_Shotgun_h_15_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__pelletCount() { return STRUCT_OFFSET(AWeapon_Shotgun, pelletCount); } \
-	FORCEINLINE static uint32 __PPO__spread() { return STRUCT_OFFSET(AWeapon_Shotgun, spread); }
+	FORCEINLINE static uint32 __PPO__spread() { return STRUCT_OFFSET(AWeapon_Shotgun, spread); } \
+	FORCEINLINE static uint32 __PPO__basePelletCount() { return STRUCT_OFFSET(AWeapon_Shotgun, basePelletCount); } \
+	FORCEINLINE static uint32 __PPO__baseSpread() { return STRUCT_OFFSET(AWeapon_Shotgun, baseSpread); }
 
 
 #define GEPProject_Source_GEPProject_Weapons_Weapon_Shotgun_h_12_PROLOG

@@ -3,8 +3,14 @@
 
 #include "Enemy_Base.h"
 #include "Components/BoxComponent.h"
+#include "GameFramework/GameModeBase.h"
 #include "GEPProject/EventSystem.h"
+#include "GEPProject/GEPProjectGameMode.h"
+#include "GEPProject/Interfaces/GetGEPGamemode.h"
 #include "GEPProject/Interfaces/InitableEnemy.h"
+#include "GEPProject/Upgrades/EUpgradeTypes.h"
+#include "GEPProject/Upgrades/UpgradeSystem.h"
+#include "Kismet/GameplayStatics.h"
 #include "Kismet/KismetMathLibrary.h"
 #include "Kismet/KismetSystemLibrary.h"
 
@@ -25,7 +31,23 @@ void AEnemySpawner::Init_Implementation()
 {
 	//Do init things
 	curEnemyCount = 0;
+	GetGameInstance()->GetSubsystem<UEventSystem>()->onDirtyEnemy.AddDynamic(this, &AEnemySpawner::GetUpdatedMultipliers);
 	GetWorld()->GetTimerManager().SetTimer(EnemySpawnTimerHandle, this, &AEnemySpawner::SpawnEnemy, 1.f);
+}
+
+void AEnemySpawner::GetUpdatedMultipliers()
+{
+	UWorld* world = GetWorld();
+	AGameModeBase* tempGamemode = UGameplayStatics::GetGameMode(world);
+	
+	if (tempGamemode->GetClass()->ImplementsInterface(UGetGEPGamemode::StaticClass()))
+	{
+		UUpgradeSystem* upgradeSystem = IGetGEPGamemode::Execute_GetGEPGamemode(tempGamemode)->GetUpgradeSystem();
+		maxEnemyCount = baseMaxEnemyCount + upgradeSystem->GetUpgradeValue(EUpgradeTypes::Enemy_MaxAliveEnemies);
+		enemySpawnAmount = baseEnemySpawnAmount + upgradeSystem->GetUpgradeValue(Enemy_SpawnAmount);
+		enemySpawnRate = baseEnemySpawnRate * upgradeSystem->GetUpgradeValue(Enemy_SpawnRate);
+		GEngine->AddOnScreenDebugMessage(-1,.5f,FColor::Red, FString::FromInt(maxEnemyCount));
+	}
 }
 
 void AEnemySpawner::SpawnEnemy()
@@ -37,29 +59,32 @@ void AEnemySpawner::SpawnEnemy()
 		TSubclassOf<AActor> enemyToSpawn = enemyList[i];
 		if (world != nullptr && enemyToSpawn)
 		{
-			FVector origin = boundingBox->GetComponentLocation();
-			FVector extents = boundingBox->GetScaledBoxExtent();
-		
-			FVector spawnPosition = UKismetMathLibrary::RandomPointInBoundingBox(origin, extents);
-			FRotator spawnRotation = FRotator::ZeroRotator;
-			FActorSpawnParameters actorSpawnParams;
-			actorSpawnParams.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AdjustIfPossibleButAlwaysSpawn;
-		
-			AActor* tempActor = world->SpawnActor<AActor>(enemyToSpawn, spawnPosition, spawnRotation, actorSpawnParams);
-			if (UKismetSystemLibrary::DoesImplementInterface(tempActor, UInitableEnemy::StaticClass()))
+			for (int j = 0; j < enemySpawnAmount; ++j)
 			{
-				AEnemy_Base* tempEnemy = IInitableEnemy::Execute_GetEnemyBase(tempActor);
+				FVector origin = boundingBox->GetComponentLocation();
+				FVector extents = boundingBox->GetScaledBoxExtent();
+		
+				FVector spawnPosition = UKismetMathLibrary::RandomPointInBoundingBox(origin, extents);
+				FRotator spawnRotation = FRotator::ZeroRotator;
+				FActorSpawnParameters actorSpawnParams;
+				actorSpawnParams.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AdjustIfPossibleButAlwaysSpawn;
+		
+				AActor* tempActor = world->SpawnActor<AActor>(enemyToSpawn, spawnPosition, spawnRotation, actorSpawnParams);
+				if (UKismetSystemLibrary::DoesImplementInterface(tempActor, UInitableEnemy::StaticClass()))
+				{
+					AEnemy_Base* tempEnemy = IInitableEnemy::Execute_GetEnemyBase(tempActor);
 			
-				//Bind events
-				tempEnemy->OnDeath.AddDynamic(this, &AEnemySpawner::EnemyDied);
+					//Bind events
+					tempEnemy->OnDeath.AddDynamic(this, &AEnemySpawner::EnemyDied);
 				
-				IInitableEnemy::Execute_Init(tempActor);
-			}
+					IInitableEnemy::Execute_Init(tempActor);
+				}
 			
-			curEnemyCount++;
+				curEnemyCount++;
+			}
 		}
 	}	
-	world->GetTimerManager().SetTimer(EnemySpawnTimerHandle, this, &AEnemySpawner::SpawnEnemy, .3f);
+	world->GetTimerManager().SetTimer(EnemySpawnTimerHandle, this, &AEnemySpawner::SpawnEnemy, enemySpawnRate);
 }
 
 void AEnemySpawner::EnemyDied()

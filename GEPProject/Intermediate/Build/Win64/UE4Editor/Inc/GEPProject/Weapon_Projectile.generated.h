@@ -62,7 +62,8 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AWeapon_Projectile); \
 
 #define GEPProject_Source_GEPProject_Weapons_Weapon_Projectile_h_18_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__projectile() { return STRUCT_OFFSET(AWeapon_Projectile, projectile); } \
-	FORCEINLINE static uint32 __PPO__damageRadius() { return STRUCT_OFFSET(AWeapon_Projectile, damageRadius); }
+	FORCEINLINE static uint32 __PPO__damageRadius() { return STRUCT_OFFSET(AWeapon_Projectile, damageRadius); } \
+	FORCEINLINE static uint32 __PPO__baseDamageRadius() { return STRUCT_OFFSET(AWeapon_Projectile, baseDamageRadius); }
 
 
 #define GEPProject_Source_GEPProject_Weapons_Weapon_Projectile_h_15_PROLOG

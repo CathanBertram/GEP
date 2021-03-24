@@ -18,8 +18,42 @@ void EmptyLinkFunctionForGeneratedCodeWeapon_GrenadeLauncher() {}
 	GEPPROJECT_API UClass* Z_Construct_UClass_AWeapon_Projectile();
 	UPackage* Z_Construct_UPackage__Script_GEPProject();
 // End Cross Module References
+	DEFINE_FUNCTION(AWeapon_GrenadeLauncher::execGetUpdatedDirties)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->GetUpdatedDirties();
+		P_NATIVE_END;
+	}
 	void AWeapon_GrenadeLauncher::StaticRegisterNativesAWeapon_GrenadeLauncher()
 	{
+		UClass* Class = AWeapon_GrenadeLauncher::StaticClass();
+		static const FNameNativePtrPair Funcs[] = {
+			{ "GetUpdatedDirties", &AWeapon_GrenadeLauncher::execGetUpdatedDirties },
+		};
+		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_AWeapon_GrenadeLauncher_GetUpdatedDirties_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AWeapon_GrenadeLauncher_GetUpdatedDirties_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Weapons/Weapon_GrenadeLauncher.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AWeapon_GrenadeLauncher_GetUpdatedDirties_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AWeapon_GrenadeLauncher, nullptr, "GetUpdatedDirties", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AWeapon_GrenadeLauncher_GetUpdatedDirties_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AWeapon_GrenadeLauncher_GetUpdatedDirties_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AWeapon_GrenadeLauncher_GetUpdatedDirties()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AWeapon_GrenadeLauncher_GetUpdatedDirties_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	UClass* Z_Construct_UClass_AWeapon_GrenadeLauncher_NoRegister()
 	{
@@ -28,6 +62,7 @@ void EmptyLinkFunctionForGeneratedCodeWeapon_GrenadeLauncher() {}
 	struct Z_Construct_UClass_AWeapon_GrenadeLauncher_Statics
 	{
 		static UObject* (*const DependentSingletons[])();
+		static const FClassFunctionLinkInfo FuncInfo[];
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
@@ -37,6 +72,9 @@ void EmptyLinkFunctionForGeneratedCodeWeapon_GrenadeLauncher() {}
 	UObject* (*const Z_Construct_UClass_AWeapon_GrenadeLauncher_Statics::DependentSingletons[])() = {
 		(UObject* (*)())Z_Construct_UClass_AWeapon_Projectile,
 		(UObject* (*)())Z_Construct_UPackage__Script_GEPProject,
+	};
+	const FClassFunctionLinkInfo Z_Construct_UClass_AWeapon_GrenadeLauncher_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_AWeapon_GrenadeLauncher_GetUpdatedDirties, "GetUpdatedDirties" }, // 3999189048
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AWeapon_GrenadeLauncher_Statics::Class_MetaDataParams[] = {
@@ -53,11 +91,11 @@ void EmptyLinkFunctionForGeneratedCodeWeapon_GrenadeLauncher() {}
 		"Engine",
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
-		nullptr,
+		FuncInfo,
 		nullptr,
 		nullptr,
 		UE_ARRAY_COUNT(DependentSingletons),
-		0,
+		UE_ARRAY_COUNT(FuncInfo),
 		0,
 		0,
 		0x009000A4u,
@@ -72,7 +110,7 @@ void EmptyLinkFunctionForGeneratedCodeWeapon_GrenadeLauncher() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AWeapon_GrenadeLauncher, 1474004301);
+	IMPLEMENT_CLASS(AWeapon_GrenadeLauncher, 2984869449);
 	template<> GEPPROJECT_API UClass* StaticClass<AWeapon_GrenadeLauncher>()
 	{
 		return AWeapon_GrenadeLauncher::StaticClass();

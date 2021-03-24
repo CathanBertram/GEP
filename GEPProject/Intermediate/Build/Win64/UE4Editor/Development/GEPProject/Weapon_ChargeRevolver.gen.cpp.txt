@@ -7,6 +7,10 @@ E:\Github\GEP\GEPProject\Source\GEPProject/Interfaces/FireReleaseable.h
 E:\Github\GEP\GEPProject\Intermediate\Build\Win64\UE4Editor\Inc\GEPProject\FireReleaseable.generated.h
 E:\Github\GEP\GEPProject\Source\GEPProject\Weapons\Weapon_Hitscan.h
 E:\Github\GEP\GEPProject\Source\GEPProject\Weapons\Weapon_Base.h
+E:\Github\GEP\GEPProject\Source\GEPProject\Weapons\EWeaponTypes.h
+E:\epk\UE_4.25\Engine\Source\Runtime\Engine\Classes\Engine/UserDefinedEnum.h
+E:\epk\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\UserDefinedEnum.generated.h
+E:\Github\GEP\GEPProject\Intermediate\Build\Win64\UE4Editor\Inc\GEPProject\EWeaponTypes.generated.h
 E:\Github\GEP\GEPProject\Source\GEPProject/Interfaces/Fireable.h
 E:\Github\GEP\GEPProject\Intermediate\Build\Win64\UE4Editor\Inc\GEPProject\Fireable.generated.h
 E:\Github\GEP\GEPProject\Source\GEPProject/Interfaces/GetWeaponBase.h

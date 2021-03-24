@@ -33,8 +33,20 @@ protected:
 	
 	UPROPERTY(EditAnywhere)
 	int maxEnemyCount;
+	UPROPERTY(EditAnywhere)
+	int baseMaxEnemyCount;
+	UPROPERTY(EditAnywhere)
+	float enemySpawnRate;
+	UPROPERTY(EditAnywhere)
+	float baseEnemySpawnRate;
+	UPROPERTY(EditAnywhere)
+	float enemySpawnAmount;
+	UPROPERTY(EditAnywhere)
+	float baseEnemySpawnAmount;
 	int curEnemyCount;
-	
+
+	UFUNCTION()
+	void GetUpdatedMultipliers();	
 	void SpawnEnemy();
 	UFUNCTION()
 	void EnemyDied();

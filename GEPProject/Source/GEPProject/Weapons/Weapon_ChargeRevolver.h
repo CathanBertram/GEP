@@ -13,5 +13,8 @@ UCLASS()
 class GEPPROJECT_API AWeapon_ChargeRevolver : public AWeapon_Hitscan_Charge
 {
 	GENERATED_BODY()
-	
+
+	UFUNCTION()
+void GetUpdatedDirties() ;
+	virtual void BeginPlay() override;
 };

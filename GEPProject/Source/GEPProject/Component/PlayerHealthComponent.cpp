@@ -15,7 +15,7 @@ void UPlayerHealthComponent::Init()
 	maxHealth = baseHealth;
 	healthRegenCooldown = baseHealthRegenCooldown;
 	healthRegenAmount = baseHealthRegenAmount;
-	
+	canBeDamaged = true;
 	Regen();
 }
 
@@ -32,6 +32,12 @@ void UPlayerHealthComponent::Regen()
 void UPlayerHealthComponent::TakeDamage(AActor* DamagedActor, float Damage, const UDamageType* DamageType,
                                         AController* InstigatedBy, AActor* DamageCauser)
 {
-	Super::TakeDamage(DamagedActor, Damage, DamageType, InstigatedBy, DamageCauser);
+	if(canBeDamaged)
+	{
+		Super::TakeDamage(DamagedActor, Damage, DamageType, InstigatedBy, DamageCauser);
+		GetWorld()->GetTimerManager().ClearTimer(RegenTimerHandle);
+		GetWorld()->GetTimerManager().SetTimer(RegenTimerHandle, this, &UPlayerHealthComponent::Regen, regenCooldownReset);
+	}
+
 	eventInstance->OnHealthUpdate(GetHealthPercent());
 }

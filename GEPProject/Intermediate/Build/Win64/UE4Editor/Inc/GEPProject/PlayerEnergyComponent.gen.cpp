@@ -70,6 +70,14 @@ void EmptyLinkFunctionForGeneratedCodePlayerEnergyComponent() {}
 		static void NewProp_canConsume_SetBit(void* Obj);
 		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_canConsume;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_baseEnergyRegenAmount_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_baseEnergyRegenAmount;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_baseEnergyRegenCooldown_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_baseEnergyRegenCooldown;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_energyRegenResetTime_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_energyRegenResetTime;
@@ -121,6 +129,20 @@ void EmptyLinkFunctionForGeneratedCodePlayerEnergyComponent() {}
 	}
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UPlayerEnergyComponent_Statics::NewProp_canConsume = { "canConsume", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UPlayerEnergyComponent), &Z_Construct_UClass_UPlayerEnergyComponent_Statics::NewProp_canConsume_SetBit, METADATA_PARAMS(Z_Construct_UClass_UPlayerEnergyComponent_Statics::NewProp_canConsume_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UPlayerEnergyComponent_Statics::NewProp_canConsume_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UPlayerEnergyComponent_Statics::NewProp_baseEnergyRegenAmount_MetaData[] = {
+		{ "Category", "PlayerEnergyComponent" },
+		{ "ModuleRelativePath", "Component/PlayerEnergyComponent.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UPlayerEnergyComponent_Statics::NewProp_baseEnergyRegenAmount = { "baseEnergyRegenAmount", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UPlayerEnergyComponent, baseEnergyRegenAmount), METADATA_PARAMS(Z_Construct_UClass_UPlayerEnergyComponent_Statics::NewProp_baseEnergyRegenAmount_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UPlayerEnergyComponent_Statics::NewProp_baseEnergyRegenAmount_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UPlayerEnergyComponent_Statics::NewProp_baseEnergyRegenCooldown_MetaData[] = {
+		{ "Category", "PlayerEnergyComponent" },
+		{ "ModuleRelativePath", "Component/PlayerEnergyComponent.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UPlayerEnergyComponent_Statics::NewProp_baseEnergyRegenCooldown = { "baseEnergyRegenCooldown", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UPlayerEnergyComponent, baseEnergyRegenCooldown), METADATA_PARAMS(Z_Construct_UClass_UPlayerEnergyComponent_Statics::NewProp_baseEnergyRegenCooldown_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UPlayerEnergyComponent_Statics::NewProp_baseEnergyRegenCooldown_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UPlayerEnergyComponent_Statics::NewProp_energyRegenResetTime_MetaData[] = {
 		{ "Category", "PlayerEnergyComponent" },
 		{ "ModuleRelativePath", "Component/PlayerEnergyComponent.h" },
@@ -164,6 +186,8 @@ void EmptyLinkFunctionForGeneratedCodePlayerEnergyComponent() {}
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UPlayerEnergyComponent_Statics::NewProp_maxEnergy = { "maxEnergy", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UPlayerEnergyComponent, maxEnergy), METADATA_PARAMS(Z_Construct_UClass_UPlayerEnergyComponent_Statics::NewProp_maxEnergy_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UPlayerEnergyComponent_Statics::NewProp_maxEnergy_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UPlayerEnergyComponent_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlayerEnergyComponent_Statics::NewProp_canConsume,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlayerEnergyComponent_Statics::NewProp_baseEnergyRegenAmount,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlayerEnergyComponent_Statics::NewProp_baseEnergyRegenCooldown,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlayerEnergyComponent_Statics::NewProp_energyRegenResetTime,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlayerEnergyComponent_Statics::NewProp_energyRegenAmount,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlayerEnergyComponent_Statics::NewProp_energyRegenCooldown,
@@ -198,7 +222,7 @@ void EmptyLinkFunctionForGeneratedCodePlayerEnergyComponent() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UPlayerEnergyComponent, 632306373);
+	IMPLEMENT_CLASS(UPlayerEnergyComponent, 1056434620);
 	template<> GEPPROJECT_API UClass* StaticClass<UPlayerEnergyComponent>()
 	{
 		return UPlayerEnergyComponent::StaticClass();

@@ -13,5 +13,9 @@ UCLASS()
 class GEPPROJECT_API AWeapon_AutoRifle : public AWeapon_Hitscan_Auto
 {
 	GENERATED_BODY()
-	
+
+	UFUNCTION()
+    void GetUpdatedDirties() ;
+
+	virtual void BeginPlay() override;
 };

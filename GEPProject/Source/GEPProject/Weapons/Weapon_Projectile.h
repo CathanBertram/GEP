@@ -26,5 +26,6 @@ public:
 protected:
 	UPROPERTY(EditAnywhere)
 	float damageRadius;
-
+	UPROPERTY(EditAnywhere)
+	float baseDamageRadius;
 };

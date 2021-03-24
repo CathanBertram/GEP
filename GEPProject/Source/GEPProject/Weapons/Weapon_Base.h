@@ -3,6 +3,8 @@
 #pragma once
 
 #include "CoreMinimal.h"
+
+#include "EWeaponTypes.h"
 #include "GameFramework/Actor.h"
 #include "GEPProject/Interfaces/Fireable.h"
 #include "GEPProject/Interfaces/GetWeaponBase.h"
@@ -35,7 +37,9 @@ public:
     void UpdateCurEnergy(float newEnergy) {curEnergy = newEnergy;}
 	
 	FOnShoot onShoot;
-
+	
+	UPROPERTY(EditAnywhere)
+	TEnumAsByte<EWeaponTypes> weaponType;
 protected:
 	UPROPERTY(VisibleDefaultsOnly)
 	class USceneComponent* root;
@@ -48,12 +52,16 @@ protected:
 
 	UPROPERTY(EditAnywhere, Category = "Weapon Variables")
 	float damage;
+	UPROPERTY(EditAnywhere, Category = "Weapon Variables")
+	float baseDamage;
 	UPROPERTY(EditAnywhere)
 	USoundCue* shootSound;
 	UPROPERTY(EditAnywhere)
 	UParticleSystem* muzzleFlash;
 	UPROPERTY(EditAnywhere, Category = "Weapon Variables")
 	float shootCooldown;
+	UPROPERTY(EditAnywhere, Category = "Weapon Variables")
+	float baseShootCooldown;
 	bool canShoot = true;
 	UPROPERTY(EditAnywhere, Category = "Weapon Variables")
 	float energyCost;

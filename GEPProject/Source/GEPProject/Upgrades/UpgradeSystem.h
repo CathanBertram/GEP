@@ -26,12 +26,30 @@ public:
 	float GetUpgradeCost(TEnumAsByte<EUpgradeTypes> upgradeType);
 	void SetUpgradeArray(TArray<FUpgrade> newUpgrades) {upgrades = newUpgrades;}
 	TArray<FUpgrade> GetUpgradeArray() {return upgrades;}
+
+	void UpdateDirties();
+	void ForceUpdateDirties();
 protected:
 
 	UPROPERTY(EditAnywhere)
 	TArray<FUpgrade> upgrades;
 	UEventSystem* eventInstance;
 	UFUNCTION()
-	void Upgrade(TEnumAsByte<EUpgradeTypes> upgradeType, int currency);	
+	void Upgrade(TEnumAsByte<EUpgradeTypes> upgradeType, int currency);
+	void SetDirty(EUpgradeTypes upgradeType);
+	
+	bool playerDirty;
+	bool enemyDirty;
+	bool droneDirty;
+	bool pistolDirty;
+	bool revolverDirty;
+	bool shotgunDirty;
+	bool smgDirty;
+	bool rifleDirty;
+	bool autoRifleDirty;
+	bool rayGunDirty;
+	bool grenadeLauncherDirty;
 };
+
+
 

@@ -56,93 +56,8 @@ AGEPProjectCharacter::AGEPProjectCharacter() : Super()
 	energyComponent->SetMaxEnergy(300);
 }
 
-APawn* AGEPProjectCharacter::GetAsPawn_Implementation()
-{
-	return this;
-}
-
-void AGEPProjectCharacter::UseEnergy(float energyToUse)
-{
-	energyComponent->UseEnergy(energyToUse);
-	onLocalEnergyUpdate.Broadcast(energyComponent->GetCurEnergy());
-}
-
-void AGEPProjectCharacter::Save(UGEPSaveGame* saveInstance)
-{
-	saveInstance->currency = currency;
-	saveInstance->transform = GetTransform();
-	saveInstance->unlockedWeapons = unlockedWeaponArray;
-	saveInstance->curHealth = healthComponent->GetCurHealth();
-	saveInstance->maxHealth = healthComponent->GetMaxHealth();
-	saveInstance->curEnergy = energyComponent->GetCurEnergy();
-	saveInstance->maxEnergy = energyComponent->GetMaxEnergy();
-}
-
-void AGEPProjectCharacter::Load(UGEPSaveGame* saveInstance)
-{
-	currency = saveInstance->currency;
-	SetActorTransform(saveInstance->transform);
-	unlockedWeaponArray = saveInstance->unlockedWeapons;
-	healthComponent->SetMaxHealth(saveInstance->maxHealth);
-	healthComponent->SetCurHealth(saveInstance->curHealth);
-	energyComponent->SetMaxEnergy(saveInstance->maxEnergy);
-	energyComponent->SetCurEnergy(saveInstance->curEnergy);
-	
-	UEventSystem* eventSystem = GetGameInstance()->GetSubsystem<UEventSystem>();
-	eventSystem->OnCurrencyUpdate(currency);
-	eventSystem->OnHealthUpdate(healthComponent->GetHealthPercent());
-	eventSystem->OnEnergyUpdate(energyComponent->GetEnergyPercent());
-}
-
-void AGEPProjectCharacter::UnlockWeapon(TSubclassOf<AActor> weaponToUnlock, int cost)
-{
-	unlockedWeaponArray.Add(weaponToUnlock);
-	currency -= cost;
-	UEventSystem* eventSystem = GetGameInstance()->GetSubsystem<UEventSystem>();
-	eventSystem->OnStartSave();
-	eventSystem->OnCurrencyUpdate(currency);
-}
-
-void AGEPProjectCharacter::UpdateEnergy(float newEnergy)
-{
-	onLocalEnergyUpdate.Broadcast(newEnergy);
-}
-
-void AGEPProjectCharacter::GetUpdatedMultipliers()
-{
-	UWorld* world = GetWorld();
-	AGameModeBase* tempGamemode = UGameplayStatics::GetGameMode(world);
-	
-	if (tempGamemode->GetClass()->ImplementsInterface(UGetGEPGamemode::StaticClass()))
-	{
-		UUpgradeSystem* upgradeSystem = IGetGEPGamemode::Execute_GetGEPGamemode(tempGamemode)->GetUpgradeSystem();
-		
-	}
-}
-
-void AGEPProjectCharacter::GainCurrency(int curToGain)
-{
-	currency += curToGain;
-	GetGameInstance()->GetSubsystem<UEventSystem>()->OnCurrencyUpdate(currency);
-}
-
-void AGEPProjectCharacter::LoseCurrency(int curToLose)
-{
-	currency -= curToLose;
-	GetGameInstance()->GetSubsystem<UEventSystem>()->OnCurrencyUpdate(currency);
-}
-
-void AGEPProjectCharacter::DamagePlayer(float damageAmount)
-{
-	if(canBeDamaged)
-	{
-		//GetGameInstance()->GetSubsystem<UEventSystem>()->OnHealthUpdate(healthComponent->GetHealthPercent());
-	}
-}
-
 void AGEPProjectCharacter::Init_Implementation()
 {
-	currency = 0;
 	UEventSystem* eventSystemInstance = GetGameInstance()->GetSubsystem<UEventSystem>();
 	eventSystemInstance->onCurrencyGain.AddDynamic(this, &AGEPProjectCharacter::GainCurrency);
 	eventSystemInstance->onCurrencyLoss.AddDynamic(this, &AGEPProjectCharacter::LoseCurrency);
@@ -172,6 +87,106 @@ void AGEPProjectCharacter::Init_Implementation()
 	Super::BeginPlay();
 }
 
+APawn* AGEPProjectCharacter::GetAsPawn_Implementation()
+{
+	return this;
+}
+
+void AGEPProjectCharacter::UseEnergy(float energyToUse)
+{
+	energyComponent->UseEnergy(energyToUse);
+	onLocalEnergyUpdate.Broadcast(energyComponent->GetCurEnergy());
+}
+
+void AGEPProjectCharacter::Save(UGEPSaveGame* saveInstance)
+{
+	saveInstance->currency = currency;
+	saveInstance->transform = GetTransform();
+	saveInstance->unlockedWeapons = unlockedWeaponArray;
+	saveInstance->curHealth = healthComponent->GetCurHealth();
+	saveInstance->maxHealth = healthComponent->GetMaxHealth();
+	saveInstance->curEnergy = energyComponent->GetCurEnergy();
+	saveInstance->maxEnergy = energyComponent->GetMaxEnergy();
+	saveInstance->canBeDamaged = healthComponent->canBeDamaged;
+	saveInstance->constantEnergyRegen = energyComponent->constantRegen;
+}
+
+void AGEPProjectCharacter::Load(UGEPSaveGame* saveInstance)
+{
+	currency = saveInstance->currency;
+	SetActorTransform(saveInstance->transform);
+	unlockedWeaponArray = saveInstance->unlockedWeapons;
+	healthComponent->SetMaxHealth(saveInstance->maxHealth);
+	healthComponent->SetCurHealth(saveInstance->curHealth);
+	energyComponent->SetMaxEnergy(saveInstance->maxEnergy);
+	energyComponent->SetCurEnergy(saveInstance->curEnergy);
+	healthComponent->canBeDamaged = saveInstance->canBeDamaged;
+	energyComponent->constantRegen = saveInstance->constantEnergyRegen;
+
+	
+	UEventSystem* eventSystem = GetGameInstance()->GetSubsystem<UEventSystem>();
+	eventSystem->OnCurrencyUpdate(currency);
+	eventSystem->OnHealthUpdate(healthComponent->GetHealthPercent());
+	eventSystem->OnEnergyUpdate(energyComponent->GetEnergyPercent());
+}
+
+void AGEPProjectCharacter::UnlockWeapon(TSubclassOf<AActor> weaponToUnlock, int cost)
+{
+	unlockedWeaponArray.Add(weaponToUnlock);
+
+	currency -= cost;
+	UEventSystem* eventSystem = GetGameInstance()->GetSubsystem<UEventSystem>();
+	eventSystem->OnStartSave();
+	eventSystem->OnCurrencyUpdate(currency);
+}
+
+void AGEPProjectCharacter::UpdateEnergy(float newEnergy)
+{
+	onLocalEnergyUpdate.Broadcast(newEnergy);
+}
+
+void AGEPProjectCharacter::GetUpdatedMultipliers()
+{
+	UWorld* world = GetWorld();
+	AGameModeBase* tempGamemode = UGameplayStatics::GetGameMode(world);
+	
+	if (tempGamemode->GetClass()->ImplementsInterface(UGetGEPGamemode::StaticClass()))
+	{
+		UUpgradeSystem* upgradeSystem = IGetGEPGamemode::Execute_GetGEPGamemode(tempGamemode)->GetUpgradeSystem();
+		healthComponent->UpdateHealthRegenAmount(upgradeSystem->GetUpgradeValue(EUpgradeTypes::Player_RegenAmount));
+		healthComponent->UpdateHealthRegenCooldown(upgradeSystem->GetUpgradeValue(EUpgradeTypes::Player_RegenTick));
+		if (upgradeSystem->GetUpgradeValue(Player_Invincible) > 0)
+			healthComponent->canBeDamaged = false;
+		
+		energyComponent->UpdateEnergyRegenAmount(upgradeSystem->GetUpgradeValue(EUpgradeTypes::Player_PassiveEnergyRegen));
+		energyComponent->UpdateEnergyRegenCooldown(upgradeSystem->GetUpgradeValue(EUpgradeTypes::Player_PassiveEnergyTick));
+		if (upgradeSystem->GetUpgradeValue(Player_ConstantEnergyRegen) > 0)
+			energyComponent->constantRegen = true;
+		//Need To Do Currency Stuff
+	}
+}
+
+void AGEPProjectCharacter::GainCurrency(int curToGain)
+{
+	currency += curToGain;
+	GetGameInstance()->GetSubsystem<UEventSystem>()->OnCurrencyUpdate(currency);
+}
+
+void AGEPProjectCharacter::LoseCurrency(int curToLose)
+{
+	currency -= curToLose;
+	GetGameInstance()->GetSubsystem<UEventSystem>()->OnCurrencyUpdate(currency);
+}
+
+void AGEPProjectCharacter::DamagePlayer(float damageAmount)
+{
+	if(canBeDamaged)
+	{
+		//GetGameInstance()->GetSubsystem<UEventSystem>()->OnHealthUpdate(healthComponent->GetHealthPercent());
+	}
+}
+
+
 AGEPProjectCharacter* AGEPProjectCharacter::GetAsChar_Implementation()
 {
 	return this;
@@ -182,6 +197,7 @@ void AGEPProjectCharacter::JumpPressed_Implementation()
 {
 	Jump();
 }
+
 
 void AGEPProjectCharacter::JumpReleased_Implementation()
 {
@@ -325,6 +341,21 @@ void AGEPProjectCharacter::SwitchWeapon(int i)
 			AWeapon_Base* tempWeaponBase = IGetWeaponBase::Execute_GetWeaponBase(child);
 			tempWeaponBase->onShoot.AddDynamic(this, &AGEPProjectCharacter::UseEnergy);
 			onLocalEnergyUpdate.AddDynamic(tempWeaponBase, &AWeapon_Base::UpdateCurEnergy);
+
+			UEventSystem* eventSystem = GetGameInstance()->GetSubsystem<UEventSystem>();
+			EWeaponTypes type = tempWeaponBase->weaponType;
+			switch (type)
+			{
+			case Pistol: eventSystem->OnDirtyPistol(); break;
+			case Revolver: eventSystem->OnDirtyRevolver();break;
+			case Shotgun:eventSystem->OnDirtyShotgun(); break;
+			case SMG: eventSystem->OnDirtySMG();break;
+			case Rifle: eventSystem->OnDirtyRifle();break;
+			case AutoRifle: eventSystem->OnDirtyAutoRifle();break;
+			case RayGun: eventSystem->OnDirtyRaygun();break;
+			case GrenadeLauncher: eventSystem->OnDirtyGrenadeLauncher();break;
+			default: ;
+			}
 		}
 	}
 }

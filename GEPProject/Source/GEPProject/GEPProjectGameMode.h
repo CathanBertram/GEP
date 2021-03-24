@@ -40,7 +40,8 @@ public:
     float GetEnergyPercent(){return energyPercent;}
 	UFUNCTION(BlueprintCallable)
 	float GetUpgradeCost(TEnumAsByte<EUpgradeTypes> upgradeType);
-
+	UFUNCTION(BlueprintCallable)
+	void UpdateDirties();
 	UUpgradeSystem* GetUpgradeSystem(){return upgradeSystem;}
 
 protected:

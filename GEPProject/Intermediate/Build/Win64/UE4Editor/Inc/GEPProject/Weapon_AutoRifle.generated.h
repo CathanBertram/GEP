@@ -14,8 +14,16 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define GEPPROJECT_Weapon_AutoRifle_generated_h
 
 #define GEPProject_Source_GEPProject_Weapons_Weapon_AutoRifle_h_15_SPARSE_DATA
-#define GEPProject_Source_GEPProject_Weapons_Weapon_AutoRifle_h_15_RPC_WRAPPERS
-#define GEPProject_Source_GEPProject_Weapons_Weapon_AutoRifle_h_15_RPC_WRAPPERS_NO_PURE_DECLS
+#define GEPProject_Source_GEPProject_Weapons_Weapon_AutoRifle_h_15_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execGetUpdatedDirties);
+
+
+#define GEPProject_Source_GEPProject_Weapons_Weapon_AutoRifle_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execGetUpdatedDirties);
+
+
 #define GEPProject_Source_GEPProject_Weapons_Weapon_AutoRifle_h_15_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAWeapon_AutoRifle(); \

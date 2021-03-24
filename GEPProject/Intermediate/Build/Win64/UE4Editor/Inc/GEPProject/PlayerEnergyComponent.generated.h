@@ -80,6 +80,8 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UPlayerEnergyComponent); \
 	FORCEINLINE static uint32 __PPO__energyRegenCooldown() { return STRUCT_OFFSET(UPlayerEnergyComponent, energyRegenCooldown); } \
 	FORCEINLINE static uint32 __PPO__energyRegenAmount() { return STRUCT_OFFSET(UPlayerEnergyComponent, energyRegenAmount); } \
 	FORCEINLINE static uint32 __PPO__energyRegenResetTime() { return STRUCT_OFFSET(UPlayerEnergyComponent, energyRegenResetTime); } \
+	FORCEINLINE static uint32 __PPO__baseEnergyRegenCooldown() { return STRUCT_OFFSET(UPlayerEnergyComponent, baseEnergyRegenCooldown); } \
+	FORCEINLINE static uint32 __PPO__baseEnergyRegenAmount() { return STRUCT_OFFSET(UPlayerEnergyComponent, baseEnergyRegenAmount); } \
 	FORCEINLINE static uint32 __PPO__canConsume() { return STRUCT_OFFSET(UPlayerEnergyComponent, canConsume); }
 
 

@@ -28,7 +28,9 @@ public:
 	void UseEnergy(float energyToUse);
 	void SetEventInstance(UEventSystem* instance) {eventInstance = instance;}
 	FOnCompEnergyUpdate onCompEnergyUpdate;
-
+	void UpdateEnergyRegenAmount(float multi){energyRegenAmount = baseEnergyRegenAmount * multi;}
+	void UpdateEnergyRegenCooldown(float multi){energyRegenCooldown = baseEnergyRegenCooldown * multi;}
+	bool constantRegen = false;
 protected:
 	protected:
 	UPROPERTY(EditAnywhere)
@@ -43,7 +45,11 @@ protected:
 	float energyRegenAmount;
 	UPROPERTY(EditAnywhere)
 	float energyRegenResetTime;
-
+	UPROPERTY(EditAnywhere)
+	float baseEnergyRegenCooldown;
+	UPROPERTY(EditAnywhere)
+	float baseEnergyRegenAmount;
+	
 	UPROPERTY(EditAnywhere)
 	bool canConsume = true;
 
