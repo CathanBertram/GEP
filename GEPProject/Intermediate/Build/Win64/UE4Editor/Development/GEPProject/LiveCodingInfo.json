@@ -27,7 +27,6 @@
 			"Pawnable.cpp.obj",
 			"Shootable.cpp.obj",
 			"GEPPlayerController.cpp.obj",
-			"GEPProjectCharacter.cpp.obj",
 			"PurchaseableWeaponStand.cpp.obj",
 			"UpgradeStand.cpp.obj",
 			"TestBlock.cpp.obj",
@@ -36,6 +35,7 @@
 			"UpgradeSystem.cpp.obj",
 			"EWeaponTypes.cpp.obj",
 			"GEPProjectProjectile.cpp.obj",
+			"GrenadeProjectile.cpp.obj",
 			"Weapon_AutoRifle.cpp.obj",
 			"Weapon_Base.cpp.obj",
 			"Weapon_ChargeRevolver.cpp.obj",
@@ -47,9 +47,9 @@
 			"Weapon_Projectile.cpp.obj",
 			"Weapon_Raygun.cpp.obj",
 			"Weapon_Rifle.cpp.obj",
-			"Weapon_Shotgun.cpp.obj",
 			"Weapon_SMG.cpp.obj",
-			"GrenadeProjectile.cpp.obj"
+			"GEPProjectCharacter.cpp.obj",
+			"Weapon_Shotgun.cpp.obj"
 		],
 		"Module.GEPProject.gen.cpp.obj": [
 			"Enemy_Base.gen.cpp.obj",

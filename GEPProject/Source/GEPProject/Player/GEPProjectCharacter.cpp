@@ -54,6 +54,7 @@ AGEPProjectCharacter::AGEPProjectCharacter() : Super()
 	energyComponent->SetBaseEnergy(300);
 	energyComponent->SetCurEnergy(300);
 	energyComponent->SetMaxEnergy(300);
+
 }
 
 void AGEPProjectCharacter::Init_Implementation()
@@ -108,7 +109,7 @@ void AGEPProjectCharacter::Save(UGEPSaveGame* saveInstance)
 	saveInstance->curEnergy = energyComponent->GetCurEnergy();
 	saveInstance->maxEnergy = energyComponent->GetMaxEnergy();
 	saveInstance->canBeDamaged = healthComponent->canBeDamaged;
-	saveInstance->constantEnergyRegen = energyComponent->constantRegen;
+	saveInstance->constantEnergyRegen = energyComponent->constantRegen;	
 }
 
 void AGEPProjectCharacter::Load(UGEPSaveGame* saveInstance)

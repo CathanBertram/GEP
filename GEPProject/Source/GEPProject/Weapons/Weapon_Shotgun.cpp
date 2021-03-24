@@ -24,7 +24,7 @@ bool AWeapon_Shotgun::Fire_Implementation()
 		USceneComponent* muzzle = GetGunMuzzle();
 		UGameplayStatics::PlaySound2D(world, shootSound);
 		UGameplayStatics::SpawnEmitterAtLocation(world, muzzleFlash , muzzle->GetComponentLocation());
-		GEngine->AddOnScreenDebugMessage(-1,.5f,FColor::Red,FString::FromInt(pelletCount));
+
 		for (int i = 0; i < pelletCount; ++i)
 		{
 			FHitResult hit(ForceInit);
