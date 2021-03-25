@@ -65,7 +65,6 @@ void AGEPProjectCharacter::Init_Implementation()
 	eventSystemInstance->onSave.AddDynamic(this, &AGEPProjectCharacter::Save);
 	eventSystemInstance->onLoad.AddDynamic(this, &AGEPProjectCharacter::Load);
 	eventSystemInstance->onUnlockWeapon.AddDynamic(this, &AGEPProjectCharacter::UnlockWeapon);
-	eventSystemInstance->onDamagePlayer.AddDynamic(this, &AGEPProjectCharacter::DamagePlayer);
 	eventSystemInstance->onDirtyPlayer.AddDynamic(this, &AGEPProjectCharacter::GetUpdatedMultipliers);
 
 	healthComponent->SetEventInstance(eventSystemInstance);
@@ -178,15 +177,6 @@ void AGEPProjectCharacter::LoseCurrency(int curToLose)
 	currency -= curToLose;
 	GetGameInstance()->GetSubsystem<UEventSystem>()->OnCurrencyUpdate(currency);
 }
-
-void AGEPProjectCharacter::DamagePlayer(float damageAmount)
-{
-	if(canBeDamaged)
-	{
-		//GetGameInstance()->GetSubsystem<UEventSystem>()->OnHealthUpdate(healthComponent->GetHealthPercent());
-	}
-}
-
 
 AGEPProjectCharacter* AGEPProjectCharacter::GetAsChar_Implementation()
 {

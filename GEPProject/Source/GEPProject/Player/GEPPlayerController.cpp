@@ -17,7 +17,6 @@ AGEPPlayerController::AGEPPlayerController() : Super()
 
 void AGEPPlayerController::Init_Implementation()
 {
-	
 	if (GetPawn() != nullptr)
 	{
 		GetPawn()->Destroy();
@@ -84,12 +83,12 @@ void AGEPPlayerController::SetupInputComponent()
 }
 void AGEPPlayerController::QuickSavePressed()
 {
-	UGameplayStatics::GetGameInstance(GetWorld())->GetSubsystem<UEventSystem>()->OnStartSave();
+	GetGameInstance()->GetSubsystem<UEventSystem>()->OnStartSave();
 }
 
 void AGEPPlayerController::QuickLoadPressed()
 {
-	UGameplayStatics::GetGameInstance(GetWorld())->GetSubsystem<UEventSystem>()->OnStartLoad();
+	GetGameInstance()->GetSubsystem<UEventSystem>()->OnStartLoad();
 }
 
 

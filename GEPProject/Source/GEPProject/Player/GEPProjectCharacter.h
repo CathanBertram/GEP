@@ -146,9 +146,6 @@ public:
 private:
 	UPROPERTY(EditAnywhere, Category = "PlayerVariables")
 	float interactRange;
-
-	UPROPERTY(EditAnywhere, Category = "PlayerVariables")
-	bool canBeDamaged;
 	
 	void SwitchWeapon(int i);
 	int curWeapon;
@@ -158,8 +155,6 @@ private:
     void GainCurrency(int curToGain);
 	UFUNCTION()
     void LoseCurrency(int curToLose);
-	UFUNCTION()
-	void DamagePlayer(float damageAmount);
 	
 	UFUNCTION()
 	void Save(UGEPSaveGame* saveInstance);
