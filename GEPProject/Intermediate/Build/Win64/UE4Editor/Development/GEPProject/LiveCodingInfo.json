@@ -61,6 +61,8 @@
 			"FireReleaseable.gen.cpp.obj",
 			"FUpgrade.gen.cpp.obj",
 			"GEPPlayerController.gen.cpp.obj",
+			"GEPProject.init.gen.cpp.obj",
+			"GEPProjectCharacter.gen.cpp.obj",
 			"GEPProjectGameMode.gen.cpp.obj",
 			"GEPProjectHUD.gen.cpp.obj",
 			"GEPProjectProjectile.gen.cpp.obj",
@@ -97,9 +99,7 @@
 			"Weapon_Raygun.gen.cpp.obj",
 			"Weapon_Rifle.gen.cpp.obj",
 			"Weapon_Shotgun.gen.cpp.obj",
-			"Weapon_SMG.gen.cpp.obj",
-			"GEPProject.init.gen.cpp.obj",
-			"GEPProjectCharacter.gen.cpp.obj"
+			"Weapon_SMG.gen.cpp.obj"
 		]
 	}
 }

@@ -45,7 +45,6 @@ void AWeapon_Hitscan::Shoot()
 		UGameplayStatics::PlaySound2D(world, shootSound);
 		UGameplayStatics::SpawnEmitterAtLocation(world, muzzleFlash , muzzle->GetComponentLocation());
 		
-		
 		FVector end = (forward * range) + start;
 		//FVector start = ((muzzle != nullptr) ? muzzle->GetComponentLocation() : GetActorLocation());
 		//FVector end = (((muzzle != nullptr) ? muzzle->GetForwardVector() : GetActorForwardVector()) * 100000);
