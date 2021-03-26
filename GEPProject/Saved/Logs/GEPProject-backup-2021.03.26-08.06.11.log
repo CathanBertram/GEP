@@ -1,0 +1,1111 @@
+﻿Log file open, 03/26/21 07:59:53
+LogInit: Display: Running engine for game: GEPProject
+LogPlatformFile: Not using cached read wrapper
+LogTaskGraph: Started task graph with 5 named threads and 47 total threads with 3 sets of task threads.
+LogStats: Stats thread started at 0.246117
+LogD3D11RHI: Loaded GFSDK_Aftermath_Lib.x64.dll
+LogICUInternationalization: ICU TimeZone Detection - Raw Offset: +0:00, Platform Override: ''
+LogPluginManager: Mounting plugin Paper2D
+LogPluginManager: Mounting plugin AISupport
+LogPluginManager: Mounting plugin LightPropagationVolume
+LogPluginManager: Mounting plugin CameraShakePreviewer
+LogPluginManager: Mounting plugin ActorLayerUtilities
+LogPluginManager: Mounting plugin AnimationSharing
+LogPluginManager: Mounting plugin CLionSourceCodeAccess
+LogPluginManager: Mounting plugin CodeLiteSourceCodeAccess
+LogPluginManager: Mounting plugin GitSourceControl
+LogPluginManager: Mounting plugin KDevelopSourceCodeAccess
+LogPluginManager: Mounting plugin NullSourceCodeAccess
+LogPluginManager: Mounting plugin PerforceSourceControl
+LogPluginManager: Mounting plugin PlasticSourceControl
+LogPluginManager: Mounting plugin RiderLink
+LogPluginManager: Mounting plugin RiderSourceCodeAccess
+LogPluginManager: Mounting plugin SubversionSourceControl
+LogPluginManager: Mounting plugin UObjectPlugin
+LogPluginManager: Mounting plugin VisualStudioCodeSourceCodeAccess
+LogPluginManager: Mounting plugin VisualStudioSourceCodeAccess
+LogPluginManager: Mounting plugin XCodeSourceCodeAccess
+LogPluginManager: Mounting plugin AssetManagerEditor
+LogPluginManager: Mounting plugin CryptoKeys
+LogPluginManager: Mounting plugin CurveEditorTools
+LogPluginManager: Mounting plugin DataValidation
+LogPluginManager: Mounting plugin EditorScriptingUtilities
+LogPluginManager: Mounting plugin FacialAnimation
+LogPluginManager: Mounting plugin GameplayTagsEditor
+LogPluginManager: Mounting plugin GeometryMode
+LogPluginManager: Mounting plugin MacGraphicsSwitching
+LogPluginManager: Mounting plugin MaterialAnalyzer
+LogPluginManager: Mounting plugin MobileLauncherProfileWizard
+LogPluginManager: Mounting plugin PluginBrowser
+LogPluginManager: Mounting plugin SpeedTreeImporter
+LogPluginManager: Mounting plugin DatasmithContent
+LogPluginManager: Mounting plugin VariantManagerContent
+LogPluginManager: Mounting plugin AlembicImporter
+LogPluginManager: Mounting plugin AutomationUtils
+LogPluginManager: Mounting plugin BackChannel
+LogPluginManager: Mounting plugin ChaosCloth
+LogPluginManager: Mounting plugin ChaosClothEditor
+LogPluginManager: Mounting plugin ChaosEditor
+LogPluginManager: Mounting plugin ChaosNiagara
+LogPluginManager: Mounting plugin ChaosSolverPlugin
+LogPluginManager: Mounting plugin CharacterAI
+LogPluginManager: Mounting plugin GeometryCache
+LogPluginManager: Mounting plugin GeometryCollectionPlugin
+LogPluginManager: Mounting plugin GeometryProcessing
+LogPluginManager: Mounting plugin PlanarCut
+LogPluginManager: Mounting plugin PlatformCrypto
+LogPluginManager: Mounting plugin ProxyLODPlugin
+LogPluginManager: Mounting plugin SkeletalReduction
+LogPluginManager: Mounting plugin Text3D
+LogPluginManager: Mounting plugin Niagara
+LogPluginManager: Mounting plugin MagicLeap
+LogPluginManager: Mounting plugin MagicLeapLightEstimation
+LogPluginManager: Mounting plugin MagicLeapMedia
+LogPluginManager: Mounting plugin MagicLeapPassableWorld
+LogPluginManager: Mounting plugin MLSDK
+LogPluginManager: Mounting plugin AndroidMedia
+LogPluginManager: Mounting plugin AvfMedia
+LogPluginManager: Mounting plugin ImgMedia
+LogPluginManager: Mounting plugin MediaCompositing
+LogPluginManager: Mounting plugin MediaPlayerEditor
+LogPluginManager: Mounting plugin WebMMedia
+LogPluginManager: Mounting plugin WmfMedia
+LogPluginManager: Mounting plugin MeshPainting
+LogPluginManager: Mounting plugin TcpMessaging
+LogPluginManager: Mounting plugin UdpMessaging
+LogPluginManager: Mounting plugin ActorSequence
+LogPluginManager: Mounting plugin LevelSequenceEditor
+LogPluginManager: Mounting plugin MatineeToLevelSequence
+LogPluginManager: Mounting plugin MovieRenderPipeline
+LogPluginManager: Mounting plugin TemplateSequence
+LogPluginManager: Mounting plugin NetcodeUnitTest
+LogPluginManager: Mounting plugin NUTUnrealEngine4
+LogPluginManager: Mounting plugin OnlineSubsystemGooglePlay
+LogPluginManager: Mounting plugin OnlineSubsystemIOS
+LogPluginManager: Mounting plugin OnlineSubsystem
+LogPluginManager: Mounting plugin OnlineSubsystemNull
+LogPluginManager: Mounting plugin OnlineSubsystemUtils
+LogPluginManager: Mounting plugin LauncherChunkInstaller
+LogPluginManager: Mounting plugin AndroidDeviceProfileSelector
+LogPluginManager: Mounting plugin AndroidMoviePlayer
+LogPluginManager: Mounting plugin AndroidPermission
+LogPluginManager: Mounting plugin AppleImageUtils
+LogPluginManager: Mounting plugin AppleMoviePlayer
+LogPluginManager: Mounting plugin ArchVisCharacter
+LogPluginManager: Mounting plugin AssetTags
+LogPluginManager: Mounting plugin AudioCapture
+LogPluginManager: Mounting plugin CableComponent
+LogPluginManager: Mounting plugin CustomMeshComponent
+LogPluginManager: Mounting plugin EditableMesh
+LogPluginManager: Mounting plugin ExampleDeviceProfileSelector
+LogPluginManager: Mounting plugin GoogleCloudMessaging
+LogPluginManager: Mounting plugin GooglePAD
+LogPluginManager: Mounting plugin IOSDeviceProfileSelector
+LogPluginManager: Mounting plugin LinuxDeviceProfileSelector
+LogPluginManager: Mounting plugin LocationServicesBPLibrary
+LogPluginManager: Mounting plugin MobilePatchingUtils
+LogPluginManager: Mounting plugin OculusVR
+LogPluginManager: Mounting plugin PhysXVehicles
+LogPluginManager: Mounting plugin PostSplashScreen
+LogPluginManager: Mounting plugin ProceduralMeshComponent
+LogPluginManager: Mounting plugin RuntimePhysXCooking
+LogPluginManager: Mounting plugin SignificanceManager
+LogPluginManager: Mounting plugin SoundFields
+LogPluginManager: Mounting plugin SteamVR
+LogPluginManager: Mounting plugin Synthesis
+LogPluginManager: Mounting plugin WebMMoviePlayer
+LogPluginManager: Mounting plugin WindowsMoviePlayer
+LogPluginManager: Mounting plugin ScreenshotTools
+LogInit: Using libcurl 7.55.1-DEV
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.1.1
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - MaxHostConnections = 16  - Libcurl will limit the number of connections to a host
+LogInit:  - LocalHostAddr = Default
+LogInit:  - BufferSize = 65536
+LogOnline: OSS: Creating online subsystem instance for: NULL
+LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for module [NULL]
+LogInit: Build: ++UE4+Release-4.25-CL-14469661
+LogInit: Engine Version: 4.25.4-14469661+++UE4+Release-4.25
+LogInit: Compatible Engine Version: 4.25.0-13144385+++UE4+Release-4.25
+LogInit: Net CL: 13144385
+LogInit: OS: Windows 10 (Release 2004) (), CPU: AMD Ryzen 7 2700X Eight-Core Processor         , GPU: NVIDIA GeForce RTX 2060
+LogInit: Compiled (64-bit): Oct 11 2020 08:10:49
+LogInit: Compiled with Visual C++: 19.24.28315.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.25
+LogInit: Command Line:  -skipcompile
+LogInit: Base Directory: E:/epk/UE_4.25/Engine/Binaries/Win64/
+LogInit: Allocator: TBB
+LogInit: Installed Engine Build: 1
+LogDevObjectVersion: Number of dev versions registered: 26
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 10
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 4
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 38
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 37
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 2
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 4
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 43
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 12
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 3
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 3
+LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 17
+LogDevObjectVersion:   Dev-Anim (AF43A65D-7FD3-4947-9873-3E8ED9C1BB05): 7
+LogDevObjectVersion:   Dev-ReflectionCapture (6B266CEC-1EC7-4B8F-A30B-E4D90942FC07): 1
+LogDevObjectVersion:   Dev-Automation (0DF73D61-A23F-47EA-B727-89E90C41499A): 1
+LogDevObjectVersion:   FortniteMain (601D1886-AC64-4F84-AA16-D3DE0DEAC7D6): 31
+LogDevObjectVersion:   Dev-Enterprise (9DFFBCD6-494F-0158-E221-12823C92A888): 10
+LogDevObjectVersion:   Dev-Niagara (F2AED0AC-9AFE-416F-8664-AA7FFA26D6FC): 1
+LogDevObjectVersion:   Dev-Destruction (174F1F0B-B4C6-45A5-B13F-2EE8D0FB917D): 10
+LogDevObjectVersion:   Dev-Physics-Ext (35F94A83-E258-406C-A318-09F59610247C): 37
+LogDevObjectVersion:   Dev-PhysicsMaterial-Chaos (B68FC16E-8B1B-42E2-B453-215C058844FE): 1
+LogDevObjectVersion:   Dev-CineCamera (B2E18506-4273-CFC2-A54E-F4BB758BBA07): 1
+LogInit: Presizing for max 25165824 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [E:/Github/GEP/GEPProject/Saved/Config/Windows/Engine.ini]
+LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+LogInit: Object subsystem initialized
+LogConfig: Setting CVar [[con.DebugEarlyDefault:1]]
+LogConfig: Setting CVar [[r.setres:1280x720]]
+[2021.03.26-07.59.54:010][  0]LogConfig: Setting CVar [[r.VSync:0]]
+[2021.03.26-07.59.54:010][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
+[2021.03.26-07.59.54:010][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [E:/Github/GEP/GEPProject/Saved/Config/Windows/Engine.ini]
+[2021.03.26-07.59.54:010][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
+[2021.03.26-07.59.54:010][  0]LogConfig: Setting CVar [[r.CustomDepth:3]]
+[2021.03.26-07.59.54:010][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [E:/Github/GEP/GEPProject/Saved/Config/Windows/Engine.ini]
+[2021.03.26-07.59.54:010][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [E:/Github/GEP/GEPProject/Saved/Config/Windows/Engine.ini]
+[2021.03.26-07.59.54:010][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+[2021.03.26-07.59.54:010][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+[2021.03.26-07.59.54:010][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+[2021.03.26-07.59.54:010][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+[2021.03.26-07.59.54:010][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+[2021.03.26-07.59.54:010][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+[2021.03.26-07.59.54:010][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+[2021.03.26-07.59.54:010][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+[2021.03.26-07.59.54:010][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+[2021.03.26-07.59.54:010][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+[2021.03.26-07.59.54:010][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+[2021.03.26-07.59.54:010][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+[2021.03.26-07.59.54:010][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+[2021.03.26-07.59.54:010][  0]LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+[2021.03.26-07.59.54:010][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [E:/Github/GEP/GEPProject/Saved/Config/Windows/Engine.ini]
+[2021.03.26-07.59.54:010][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
+[2021.03.26-07.59.54:010][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
+[2021.03.26-07.59.54:010][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
+[2021.03.26-07.59.54:010][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
+[2021.03.26-07.59.54:010][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
+[2021.03.26-07.59.54:010][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
+[2021.03.26-07.59.54:010][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:25165824]]
+[2021.03.26-07.59.54:010][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
+[2021.03.26-07.59.54:010][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
+[2021.03.26-07.59.54:010][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
+[2021.03.26-07.59.54:010][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
+[2021.03.26-07.59.54:010][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
+[2021.03.26-07.59.54:010][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
+[2021.03.26-07.59.54:010][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [E:/Github/GEP/GEPProject/Saved/Config/Windows/Engine.ini]
+[2021.03.26-07.59.54:010][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [E:/Github/GEP/GEPProject/Saved/Config/Windows/Engine.ini]
+[2021.03.26-07.59.54:019][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [E:/Github/GEP/GEPProject/Saved/Config/Windows/Scalability.ini]
+[2021.03.26-07.59.54:019][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2021.03.26-07.59.54:019][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2021.03.26-07.59.54:019][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [E:/Github/GEP/GEPProject/Saved/Config/Windows/Scalability.ini]
+[2021.03.26-07.59.54:019][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2021.03.26-07.59.54:019][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [E:/Github/GEP/GEPProject/Saved/Config/Windows/Scalability.ini]
+[2021.03.26-07.59.54:019][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2021.03.26-07.59.54:019][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2021.03.26-07.59.54:019][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2021.03.26-07.59.54:019][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2021.03.26-07.59.54:019][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2021.03.26-07.59.54:019][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2021.03.26-07.59.54:019][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2021.03.26-07.59.54:019][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2021.03.26-07.59.54:019][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2021.03.26-07.59.54:019][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2021.03.26-07.59.54:019][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2021.03.26-07.59.54:019][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2021.03.26-07.59.54:019][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2021.03.26-07.59.54:019][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2021.03.26-07.59.54:019][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2021.03.26-07.59.54:019][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2021.03.26-07.59.54:019][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2021.03.26-07.59.54:019][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2021.03.26-07.59.54:019][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [E:/Github/GEP/GEPProject/Saved/Config/Windows/Scalability.ini]
+[2021.03.26-07.59.54:019][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2021.03.26-07.59.54:019][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2021.03.26-07.59.54:019][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2021.03.26-07.59.54:019][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2021.03.26-07.59.54:019][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2021.03.26-07.59.54:019][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2021.03.26-07.59.54:019][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2021.03.26-07.59.54:019][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2021.03.26-07.59.54:019][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2021.03.26-07.59.54:019][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2021.03.26-07.59.54:019][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2021.03.26-07.59.54:019][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2021.03.26-07.59.54:019][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2021.03.26-07.59.54:019][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2021.03.26-07.59.54:019][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2021.03.26-07.59.54:019][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2021.03.26-07.59.54:020][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2021.03.26-07.59.54:020][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2021.03.26-07.59.54:020][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2021.03.26-07.59.54:020][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2021.03.26-07.59.54:020][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2021.03.26-07.59.54:020][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2021.03.26-07.59.54:020][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2021.03.26-07.59.54:020][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2021.03.26-07.59.54:020][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2021.03.26-07.59.54:020][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2021.03.26-07.59.54:020][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2021.03.26-07.59.54:020][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2021.03.26-07.59.54:020][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2021.03.26-07.59.54:020][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2021.03.26-07.59.54:020][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [E:/Github/GEP/GEPProject/Saved/Config/Windows/Scalability.ini]
+[2021.03.26-07.59.54:020][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2021.03.26-07.59.54:020][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2021.03.26-07.59.54:020][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2021.03.26-07.59.54:020][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2021.03.26-07.59.54:020][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2021.03.26-07.59.54:020][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2021.03.26-07.59.54:020][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2021.03.26-07.59.54:020][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2021.03.26-07.59.54:020][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2021.03.26-07.59.54:020][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [E:/Github/GEP/GEPProject/Saved/Config/Windows/Scalability.ini]
+[2021.03.26-07.59.54:020][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2021.03.26-07.59.54:020][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2021.03.26-07.59.54:020][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2021.03.26-07.59.54:020][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2021.03.26-07.59.54:020][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2021.03.26-07.59.54:020][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2021.03.26-07.59.54:020][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2021.03.26-07.59.54:020][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2021.03.26-07.59.54:020][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2021.03.26-07.59.54:020][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2021.03.26-07.59.54:020][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2021.03.26-07.59.54:020][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2021.03.26-07.59.54:020][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2021.03.26-07.59.54:020][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2021.03.26-07.59.54:020][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2021.03.26-07.59.54:020][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2021.03.26-07.59.54:020][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
+[2021.03.26-07.59.54:020][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2021.03.26-07.59.54:020][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2021.03.26-07.59.54:020][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2021.03.26-07.59.54:020][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
+[2021.03.26-07.59.54:020][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2021.03.26-07.59.54:020][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
+[2021.03.26-07.59.54:020][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2021.03.26-07.59.54:020][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2021.03.26-07.59.54:020][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2021.03.26-07.59.54:020][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [E:/Github/GEP/GEPProject/Saved/Config/Windows/Scalability.ini]
+[2021.03.26-07.59.54:020][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2021.03.26-07.59.54:020][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2021.03.26-07.59.54:020][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [E:/Github/GEP/GEPProject/Saved/Config/Windows/Scalability.ini]
+[2021.03.26-07.59.54:020][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
+[2021.03.26-07.59.54:020][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
+[2021.03.26-07.59.54:020][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
+[2021.03.26-07.59.54:020][  0]LogConfig: Setting CVar [[r.HairStrands.DeepShadow.SuperSampling:0]]
+[2021.03.26-07.59.54:020][  0]LogConfig: Setting CVar [[r.HairStrands.VisibilityPPLL:0]]
+[2021.03.26-07.59.54:020][  0]LogConfig: Setting CVar [[r.HairStrands.RasterizationScale:0.5]]
+[2021.03.26-07.59.54:020][  0]LogConfig: Setting CVar [[r.HairStrands.VelocityRasterizationScale:1]]
+[2021.03.26-07.59.54:020][  0]LogInit: Selected Device Profile: [Windows]
+[2021.03.26-07.59.54:020][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2021.03.26-07.59.54:020][  0]LogHAL: Display: Platform has ~ 16 GB [17123741696 / 17179869184 / 16], which maps to Larger [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2021.03.26-07.59.54:020][  0]LogInit: Going up to parent DeviceProfile []
+[2021.03.26-07.59.54:020][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [E:/Github/GEP/GEPProject/Saved/Config/Windows/Scalability.ini]
+[2021.03.26-07.59.54:020][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2021.03.26-07.59.54:020][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2021.03.26-07.59.54:020][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [E:/Github/GEP/GEPProject/Saved/Config/Windows/Scalability.ini]
+[2021.03.26-07.59.54:020][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2021.03.26-07.59.54:020][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [E:/Github/GEP/GEPProject/Saved/Config/Windows/Scalability.ini]
+[2021.03.26-07.59.54:021][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2021.03.26-07.59.54:021][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2021.03.26-07.59.54:021][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2021.03.26-07.59.54:021][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2021.03.26-07.59.54:021][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2021.03.26-07.59.54:021][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2021.03.26-07.59.54:021][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2021.03.26-07.59.54:021][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2021.03.26-07.59.54:021][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2021.03.26-07.59.54:021][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2021.03.26-07.59.54:021][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2021.03.26-07.59.54:021][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2021.03.26-07.59.54:021][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2021.03.26-07.59.54:021][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2021.03.26-07.59.54:021][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2021.03.26-07.59.54:021][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2021.03.26-07.59.54:021][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2021.03.26-07.59.54:021][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2021.03.26-07.59.54:021][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [E:/Github/GEP/GEPProject/Saved/Config/Windows/Scalability.ini]
+[2021.03.26-07.59.54:021][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2021.03.26-07.59.54:021][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2021.03.26-07.59.54:021][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2021.03.26-07.59.54:021][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2021.03.26-07.59.54:021][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2021.03.26-07.59.54:021][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2021.03.26-07.59.54:021][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2021.03.26-07.59.54:021][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2021.03.26-07.59.54:021][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2021.03.26-07.59.54:021][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2021.03.26-07.59.54:021][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2021.03.26-07.59.54:021][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2021.03.26-07.59.54:021][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2021.03.26-07.59.54:021][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2021.03.26-07.59.54:021][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2021.03.26-07.59.54:021][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2021.03.26-07.59.54:021][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2021.03.26-07.59.54:021][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2021.03.26-07.59.54:021][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2021.03.26-07.59.54:021][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2021.03.26-07.59.54:021][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2021.03.26-07.59.54:021][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2021.03.26-07.59.54:021][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2021.03.26-07.59.54:021][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2021.03.26-07.59.54:021][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2021.03.26-07.59.54:021][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2021.03.26-07.59.54:021][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2021.03.26-07.59.54:021][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2021.03.26-07.59.54:021][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2021.03.26-07.59.54:021][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2021.03.26-07.59.54:021][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [E:/Github/GEP/GEPProject/Saved/Config/Windows/Scalability.ini]
+[2021.03.26-07.59.54:021][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2021.03.26-07.59.54:021][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2021.03.26-07.59.54:021][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2021.03.26-07.59.54:021][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2021.03.26-07.59.54:021][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2021.03.26-07.59.54:021][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2021.03.26-07.59.54:021][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2021.03.26-07.59.54:021][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2021.03.26-07.59.54:021][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2021.03.26-07.59.54:021][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [E:/Github/GEP/GEPProject/Saved/Config/Windows/Scalability.ini]
+[2021.03.26-07.59.54:021][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2021.03.26-07.59.54:021][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2021.03.26-07.59.54:021][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2021.03.26-07.59.54:021][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2021.03.26-07.59.54:021][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2021.03.26-07.59.54:021][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2021.03.26-07.59.54:021][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2021.03.26-07.59.54:021][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2021.03.26-07.59.54:021][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2021.03.26-07.59.54:021][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2021.03.26-07.59.54:021][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2021.03.26-07.59.54:021][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2021.03.26-07.59.54:021][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2021.03.26-07.59.54:021][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2021.03.26-07.59.54:021][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2021.03.26-07.59.54:021][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2021.03.26-07.59.54:021][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
+[2021.03.26-07.59.54:021][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2021.03.26-07.59.54:021][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2021.03.26-07.59.54:021][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2021.03.26-07.59.54:021][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
+[2021.03.26-07.59.54:021][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2021.03.26-07.59.54:021][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
+[2021.03.26-07.59.54:022][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2021.03.26-07.59.54:022][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2021.03.26-07.59.54:022][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2021.03.26-07.59.54:022][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [E:/Github/GEP/GEPProject/Saved/Config/Windows/Scalability.ini]
+[2021.03.26-07.59.54:022][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2021.03.26-07.59.54:022][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2021.03.26-07.59.54:022][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [E:/Github/GEP/GEPProject/Saved/Config/Windows/Scalability.ini]
+[2021.03.26-07.59.54:022][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
+[2021.03.26-07.59.54:022][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
+[2021.03.26-07.59.54:022][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
+[2021.03.26-07.59.54:022][  0]LogConfig: Setting CVar [[r.HairStrands.DeepShadow.SuperSampling:0]]
+[2021.03.26-07.59.54:022][  0]LogConfig: Setting CVar [[r.HairStrands.VisibilityPPLL:0]]
+[2021.03.26-07.59.54:022][  0]LogConfig: Setting CVar [[r.HairStrands.RasterizationScale:0.5]]
+[2021.03.26-07.59.54:022][  0]LogConfig: Setting CVar [[r.HairStrands.VelocityRasterizationScale:1]]
+[2021.03.26-07.59.54:022][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
+[2021.03.26-07.59.54:028][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
+[2021.03.26-07.59.54:028][  0]LogConfig: Setting CVar [[p.chaos.AllowCreatePhysxBodies:1]]
+[2021.03.26-07.59.54:028][  0]LogConfig: Setting CVar [[fx.SkipVectorVMBackendOptimizations:1]]
+[2021.03.26-07.59.54:028][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [E:/Github/GEP/GEPProject/Saved/Config/Windows/Engine.ini]
+[2021.03.26-07.59.54:028][  0]LogInit: Computer: DESKTOP-8MPSU4G
+[2021.03.26-07.59.54:028][  0]LogInit: User: cathan
+[2021.03.26-07.59.54:028][  0]LogInit: CPU Page size=4096, Cores=8
+[2021.03.26-07.59.54:028][  0]LogInit: High frequency timer resolution =10.000000 MHz
+[2021.03.26-07.59.54:029][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
+[2021.03.26-07.59.54:029][  0]LogMemory: Platform Memory Stats for Windows
+[2021.03.26-07.59.54:029][  0]LogMemory: Process Physical Memory: 118.66 MB used, 118.67 MB peak
+[2021.03.26-07.59.54:029][  0]LogMemory: Process Virtual Memory: 103.00 MB used, 103.00 MB peak
+[2021.03.26-07.59.54:029][  0]LogMemory: Physical Memory: 9751.73 MB used,  6578.74 MB free, 16330.47 MB total
+[2021.03.26-07.59.54:029][  0]LogMemory: Virtual Memory: 5191.79 MB used,  134212536.00 MB free, 134217728.00 MB total
+[2021.03.26-07.59.54:035][  0]LogWindows: WindowsPlatformFeatures enabled
+[2021.03.26-07.59.54:091][  0]LogInit: Physics initialised using underlying interface: PhysX
+[2021.03.26-07.59.54:092][  0]LogInit: Using OS detected language (en-GB).
+[2021.03.26-07.59.54:092][  0]LogInit: Using OS detected locale (en-GB).
+[2021.03.26-07.59.54:113][  0]LogTextLocalizationManager: No specific localization for 'en-GB' exists, so the 'en' localization will be used.
+[2021.03.26-07.59.54:428][  0]LogInit: Setting process to per monitor DPI aware
+[2021.03.26-07.59.54:488][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2021.03.26-07.59.54:488][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2021.03.26-07.59.58:105][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2021.03.26-07.59.58:105][  0]LogD3D11RHI: D3D11 min allowed feature level: 11_0
+[2021.03.26-07.59.58:105][  0]LogD3D11RHI: D3D11 max allowed feature level: 11_0
+[2021.03.26-07.59.58:105][  0]LogD3D11RHI: D3D11 adapters:
+[2021.03.26-07.59.58:223][  0]LogD3D11RHI:    0. 'NVIDIA GeForce RTX 2060' (Feature Level 11_0)
+[2021.03.26-07.59.58:223][  0]LogD3D11RHI:       5980/0/8165 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:3, VendorId:0x10de
+[2021.03.26-07.59.58:227][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2021.03.26-07.59.58:227][  0]LogD3D11RHI:       0/0/8165 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2021.03.26-07.59.58:227][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2021.03.26-07.59.58:236][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2021.03.26-07.59.58:236][  0]LogD3D11RHI:     GPU DeviceId: 0x1f08 (for the marketing name, search the web for "GPU Device Id")
+[2021.03.26-07.59.58:236][  0]LogWindows: EnumDisplayDevices:
+[2021.03.26-07.59.58:236][  0]LogWindows:    0. 'NVIDIA GeForce RTX 2060' (P:1 D:1)
+[2021.03.26-07.59.58:236][  0]LogWindows:    1. 'NVIDIA GeForce RTX 2060' (P:0 D:1)
+[2021.03.26-07.59.58:237][  0]LogWindows:    2. 'NVIDIA GeForce RTX 2060' (P:0 D:1)
+[2021.03.26-07.59.58:237][  0]LogWindows:    3. 'NVIDIA GeForce RTX 2060' (P:0 D:0)
+[2021.03.26-07.59.58:237][  0]LogWindows: DebugString: FoundDriverCount:4 
+[2021.03.26-07.59.58:237][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce RTX 2060
+[2021.03.26-07.59.58:237][  0]LogD3D11RHI:   Driver Version: 460.79 (internal:27.21.14.6079, unified:460.79)
+[2021.03.26-07.59.58:237][  0]LogD3D11RHI:      Driver Date: 12-3-2020
+[2021.03.26-07.59.58:237][  0]LogRHI: Texture pool is 4186 MB (70% of 5980 MB)
+[2021.03.26-07.59.58:330][  0]LogD3D11RHI: RHI has support for 64 bit atomics
+[2021.03.26-07.59.58:330][  0]LogD3D11RHI: Async texture creation enabled
+[2021.03.26-07.59.58:330][  0]LogD3D11RHI: Array index from any shader is supported
+[2021.03.26-07.59.58:368][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2021.03.26-07.59.58:652][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AllDesktop'
+[2021.03.26-07.59.58:675][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android'
+[2021.03.26-07.59.58:675][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTC'
+[2021.03.26-07.59.58:675][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXT'
+[2021.03.26-07.59.58:675][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2'
+[2021.03.26-07.59.58:675][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AndroidClient'
+[2021.03.26-07.59.58:675][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTCClient'
+[2021.03.26-07.59.58:675][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXTClient'
+[2021.03.26-07.59.58:675][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2Client'
+[2021.03.26-07.59.58:675][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_Multi'
+[2021.03.26-07.59.58:675][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_MultiClient'
+[2021.03.26-07.59.58:712][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOSClient'
+[2021.03.26-07.59.58:712][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOS'
+[2021.03.26-07.59.58:733][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Linux'
+[2021.03.26-07.59.58:744][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxNoEditor'
+[2021.03.26-07.59.58:754][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxClient'
+[2021.03.26-07.59.58:764][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxServer'
+[2021.03.26-07.59.58:774][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64NoEditor'
+[2021.03.26-07.59.58:784][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Client'
+[2021.03.26-07.59.58:794][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Server'
+[2021.03.26-07.59.58:827][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Lumin'
+[2021.03.26-07.59.58:827][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LuminClient'
+[2021.03.26-07.59.58:844][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOSClient'
+[2021.03.26-07.59.58:844][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOS'
+[2021.03.26-07.59.58:855][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsNoEditor'
+[2021.03.26-07.59.58:865][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Windows'
+[2021.03.26-07.59.58:875][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsClient'
+[2021.03.26-07.59.58:886][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsServer'
+[2021.03.26-07.59.58:886][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2021.03.26-07.59.58:896][  0]LogAudioDebug: Display: Lib vorbis DLL was dynamically loaded.
+[2021.03.26-07.59.58:967][  0]LogShaderCompilers: Guid format shader working directory is 10 characters bigger than the processId version (../../../../../Github/GEP/GEPProject/Intermediate/Shaders/WorkingDirectory/18340/).
+[2021.03.26-07.59.58:967][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/cathan/AppData/Local/Temp/UnrealShaderWorkingDir/9227479545700BB606FFCC9F5F32DFCD/'.
+[2021.03.26-07.59.58:967][  0]LogXGEController: Cleaning working directory: C:/Users/cathan/AppData/Local/Temp/UnrealXGEWorkingDir/
+[2021.03.26-07.59.58:968][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
+[2021.03.26-07.59.58:968][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
+[2021.03.26-07.59.58:968][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2021.03.26-08.00.02:907][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2021.03.26-08.00.03:104][  0]LogDerivedDataCache: Loaded boot cache 0.20s 76MB C:/Users/cathan/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc.
+[2021.03.26-08.00.03:104][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/cathan/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc
+[2021.03.26-08.00.03:104][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../Github/GEP/GEPProject/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2021.03.26-08.00.03:104][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2021.03.26-08.00.03:104][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../Github/GEP/GEPProject/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2021.03.26-08.00.03:104][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2021.03.26-08.00.03:126][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2021.03.26-08.00.03:126][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  EnterprisePak pak cache file ../../../Enterprise/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2021.03.26-08.00.03:126][  0]LogDerivedDataCache: Unable to find inner node EnterprisePak for hierarchical cache Hierarchy.
+[2021.03.26-08.00.03:127][  0]LogDerivedDataCache: Using Local data cache path C:/Users/cathan/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2021.03.26-08.00.03:127][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
+[2021.03.26-08.00.03:127][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
+[2021.03.26-08.00.03:175][  0]LogSlate: Using FreeType 2.10.0
+[2021.03.26-08.00.03:176][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2021.03.26-08.00.03:261][  0]LogAssetRegistry: FAssetRegistry took 0.0025 seconds to start up
+[2021.03.26-08.00.03:502][  0]LogInit: Selected Device Profile: [Windows]
+[2021.03.26-08.00.03:712][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2021.03.26-08.00.03:712][  0]LogMeshReduction: Using SimplygonMeshReduction for automatic skeletal mesh reduction
+[2021.03.26-08.00.03:712][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
+[2021.03.26-08.00.03:712][  0]LogMeshReduction: No distributed automatic mesh merging module available
+[2021.03.26-08.00.03:712][  0]LogMeshMerging: No distributed automatic mesh merging module available
+[2021.03.26-08.00.03:768][  0]LogNetVersion: GEPProject 1.0.0, NetCL: 13144385, EngineNetVer: 14, GameNetVer: 0 (Checksum: 386946200)
+[2021.03.26-08.00.07:762][  0]LogAISub: UAISubsystem::UAISubsystem AISubsystem (000001B656A66980), frame # 0
+[2021.03.26-08.00.07:762][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001B6568F2840), frame # 0
+[2021.03.26-08.00.07:764][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001B65693DC00), frame # 0
+[2021.03.26-08.00.07:850][  0]LogPackageLocalizationCache: Processed 19 localized package path(s) for 1 prioritized culture(s) in 0.065381 seconds
+[2021.03.26-08.00.07:856][  0]LogUObjectArray: 15917 objects as part of root set at end of initial load.
+[2021.03.26-08.00.07:856][  0]LogUObjectAllocator: 3965568 out of 0 bytes used by permanent object pool.
+[2021.03.26-08.00.07:856][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2021.03.26-08.00.08:699][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2021.03.26-08.00.08:703][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2021.03.26-08.00.08:854][  0]SourceControl: Source control is disabled
+[2021.03.26-08.00.08:854][  0]SourceControl: Source control is disabled
+[2021.03.26-08.00.08:858][  0]SourceControl: Source control is disabled
+[2021.03.26-08.00.08:862][  0]SourceControl: Source control is disabled
+[2021.03.26-08.00.08:874][  0]SourceControl: Source control is disabled
+[2021.03.26-08.00.09:245][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2021.03.26-08.00.09:268][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2021.03.26-08.00.09:268][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2021.03.26-08.00.09:351][  0]LogOcInput: OculusInput pre-init called
+[2021.03.26-08.00.09:362][  0]LogWindows: Failed to load 'OVRPlugin.dll' (GetLastError=126)
+[2021.03.26-08.00.09:362][  0]LogWindows: File 'OVRPlugin.dll' does not exist
+[2021.03.26-08.00.09:460][  0]LogClass: Warning: FUpgrade::upgradeType is not initialized properly
+[2021.03.26-08.00.09:461][  0]LogClass: Display: 1 Uninitialized script stuct members found
+[2021.03.26-08.00.09:461][  0]LogAutomationTest: Warning: FUpgrade::upgradeType is not initialized properly
+[2021.03.26-08.00.09:462][  0]LogEngine: Initializing Engine...
+[2021.03.26-08.00.09:463][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2021.03.26-08.00.09:463][  0]LogMagicLeap: Warning: VR disabled because ZI is not enabled.  To enable, in the editor, Edit -> Project Settings -> Plugins -> Magic Leap Plugin -> Enable Zero Iteration
+[2021.03.26-08.00.09:464][  0]LogStats: UGameplayTagsManager::InitializeManager -  0.000 s
+[2021.03.26-08.00.09:793][  0]LogInit: Initializing FReadOnlyCVARCache
+[2021.03.26-08.00.09:800][  0]LogAIModule: Creating AISystem for world Untitled
+[2021.03.26-08.00.09:800][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001B65A94BC00), frame # 0
+[2021.03.26-08.00.09:801][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001B65A96F240), frame # 0
+[2021.03.26-08.00.09:805][  0]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.03.26-08.00.09:805][  0]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.03.26-08.00.09:805][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.03.26-08.00.09:805][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.03.26-08.00.09:805][  0]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.03.26-08.00.09:805][  0]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.03.26-08.00.09:805][  0]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.03.26-08.00.09:805][  0]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.03.26-08.00.09:805][  0]LogAudio: Display: Using built-in audio occlusion.
+[2021.03.26-08.00.09:805][  0]LogAudioMixer: Display: Initializing audio mixer.
+[2021.03.26-08.00.09:824][  0]LogAudioMixer: Display: 0: FrontLeft
+[2021.03.26-08.00.09:824][  0]LogAudioMixer: Display: 1: FrontRight
+[2021.03.26-08.00.09:860][  0]LogAudioMixer: Display: Using Audio Device Speakers (6- Focusrite Usb Audio)
+[2021.03.26-08.00.09:860][  0]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.03.26-08.00.09:887][  0]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.03.26-08.00.09:887][  0]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.03.26-08.00.09:888][  0]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.03.26-08.00.09:889][  0]LogInit: FAudioDevice initialized.
+[2021.03.26-08.00.09:889][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2021.03.26-08.00.09:973][  0]LogDerivedDataCache: Saved boot cache 0.08s 76MB C:/Users/cathan/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc.
+[2021.03.26-08.00.09:980][  0]LogInit: Texture streaming: Enabled
+[2021.03.26-08.00.09:999][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2021.03.26-08.00.10:000][  0]LogEngineSessionManager: EngineSessionManager sent abnormal shutdown report. Type=Crashed, SessionId={02812F85-43DC-AE0A-B812-6AA27C1CDF12}
+[2021.03.26-08.00.10:000][  0]LogEditorSessionSummary: Verbose: Initializing EditorSessionSummaryWriter for editor session tracking
+[2021.03.26-08.00.10:001][  0]LogEditorSessionSummary: EditorSessionSummaryWriter initialized
+[2021.03.26-08.00.10:091][  0]LogInit: Transaction tracking system initialized
+[2021.03.26-08.00.10:116][  0]BlueprintLog: New page: Editor Load
+[2021.03.26-08.00.10:192][  0]LocalizationService: Localization service is disabled
+[2021.03.26-08.00.10:684][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2021.03.26-08.00.10:684][  0]LogCook: Display: Mobile HDR setting 1
+[2021.03.26-08.00.11:047][  0]LogFileCache: Scanning file cache for directory 'E:/Github/GEP/GEPProject/Content/' took 0.01s
+[2021.03.26-08.00.11:227][  0]SourceControl: Source control is disabled
+[2021.03.26-08.00.11:327][  0]LogSlate: Took 0.000281 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2021.03.26-08.00.14:509][  0]LogSlate: Window 'Restore Packages' being destroyed
+[2021.03.26-08.00.14:510][  0]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
+[2021.03.26-08.00.14:533][  0]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
+[2021.03.26-08.00.15:589][  0]LogSlate: Window 'Unable to Check Out From Source Control!' being destroyed
+[2021.03.26-08.00.15:590][  0]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
+[2021.03.26-08.00.15:597][  0]Message dialog closed, result: Ok, title: Unable to Check Out From Source Control!, text: The following assets could not be successfully checked out from source control:
+/Game/GameLevel
+[2021.03.26-08.00.15:616][  0]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
+[2021.03.26-08.00.15:617][  0]LogUnrealEdMisc: Loading editor; pre map load, took 26.507
+[2021.03.26-08.00.15:618][  0]Cmd: MAP LOAD FILE="../../../../../Github/GEP/GEPProject/Content/GameLevel.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2021.03.26-08.00.15:619][  0]LightingResults: New page: Lighting Build
+[2021.03.26-08.00.15:620][  0]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2021.03.26-08.00.15:620][  0]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.03.26-08.00.15:620][  0]MapCheck: New page: Map Check
+[2021.03.26-08.00.15:620][  0]LightingResults: New page: Lighting Build
+[2021.03.26-08.00.15:634][  0]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001B65A94BC00), frame # 0
+[2021.03.26-08.00.15:634][  0]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001B65A96F240), frame # 0
+[2021.03.26-08.00.15:635][  0]LogUObjectHash: Compacting FUObjectHashTables data took   0.92ms
+[2021.03.26-08.00.15:718][  0]LogBlueprint: Error: [Compiler BTT_LocationAbovePlayer] In use pin  Move to Location  no longer exists on node  Get . Please refresh node or break links to remove pin.
+[2021.03.26-08.00.17:507][  0]LogAIModule: Creating AISystem for world GameLevel
+[2021.03.26-08.00.17:508][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001B650381200), frame # 0
+[2021.03.26-08.00.17:508][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001B6502F02C0), frame # 0
+[2021.03.26-08.00.17:526][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2021.03.26-08.00.17:548][  0]LogUObjectHash: Compacting FUObjectHashTables data took   1.43ms
+[2021.03.26-08.00.17:550][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2021.03.26-08.00.17:550][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.143ms to complete.
+[2021.03.26-08.00.17:550][  0]LogFileHelpers: Loading map 'GameLevel' took 1.932
+[2021.03.26-08.00.17:558][  0]LogUnrealEdMisc: Total Editor Startup Time, took 28.449
+[2021.03.26-08.00.17:664][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.03.26-08.00.17:675][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.03.26-08.00.17:684][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.03.26-08.00.17:693][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.03.26-08.00.17:700][  0]LogCollectionManager: Loaded 0 collections in 0.001039 seconds
+[2021.03.26-08.00.17:718][  0]LogFileCache: Scanning file cache for directory 'E:/Github/GEP/GEPProject/Saved/Collections/' took 0.00s
+[2021.03.26-08.00.17:718][  0]LogFileCache: Scanning file cache for directory 'E:/Github/GEP/GEPProject/Content/Developers/cathan/Collections/' took 0.00s
+[2021.03.26-08.00.17:718][  0]LogFileCache: Scanning file cache for directory 'E:/Github/GEP/GEPProject/Content/Collections/' took 0.00s
+[2021.03.26-08.00.17:718][  0]LogContentBrowser: Native class hierarchy populated in 0.0117 seconds. Added 3475 classes and 834 folders.
+[2021.03.26-08.00.17:721][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0005 seconds. Added 0 classes and 0 folders.
+[2021.03.26-08.00.18:415][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0008 seconds. Added 0 classes and 0 folders.
+[2021.03.26-08.00.18:446][  0]LogSlate: Took 0.000263 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2021.03.26-08.00.18:456][  0]LogSlate: Took 0.008026 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2021.03.26-08.00.18:535][  0]LogRenderer: Reallocating scene render targets to support 1208x572 Format 10 NumSamples 1 (Frame:1).
+[2021.03.26-08.00.18:614][  0]LogSlate: Took 0.008476 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2021.03.26-08.00.18:658][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0007 seconds. Added 0 classes and 0 folders.
+[2021.03.26-08.00.18:658][  0]LogLoad: (Engine Initialization) Total time: 29.55 seconds
+[2021.03.26-08.00.18:658][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2021.03.26-08.00.18:721][  0]LogActor: Warning: BP_TestBlock_C /Engine/Transient.World_0:PersistentLevel.BP_TestBlock_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2021.03.26-08.00.18:745][  0]LogAssetRegistry: Asset discovery search completed in 15.4850 seconds
+[2021.03.26-08.00.18:749][  0]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000003 seconds (updated 0 objects)
+[2021.03.26-08.00.18:750][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2021.03.26-08.00.19:709][ 96]LogSlate: Took 0.000318 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2021.03.26-08.00.23:615][494]LogEditorViewport: Clicking on Actor (LMB): BP_FlyingAI_C (BP_FlyingAI)
+[2021.03.26-08.00.29:158][ 94]LogAssetEditorSubsystem: Opening Asset editor for BehaviorTree /Game/AI/BT_FlyingAI.BT_FlyingAI
+[2021.03.26-08.00.29:325][ 94]LogSlate: Took 0.007144 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2021.03.26-08.00.41:614][383]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/AI/BT_FlyingAI" FILE="../../../../../Github/GEP/GEPProject/Content/AI/BT_FlyingAI.uasset" SILENT=true
+[2021.03.26-08.00.41:652][383]LogSavePackage: Moving '../../../../../Github/GEP/GEPProject/Saved/BT_FlyingAI31129FB04016674DC0384B94B9B6F3FE.tmp' to '../../../../../Github/GEP/GEPProject/Content/AI/BT_FlyingAI.uasset'
+[2021.03.26-08.00.41:682][383]AssetCheck: New page: Asset Save: BT_FlyingAI
+[2021.03.26-08.00.41:682][383]LogContentValidation: Display: Validating BehaviorTree /Game/AI/BT_FlyingAI.BT_FlyingAI
+[2021.03.26-08.00.50:026][281]LogSlate: Window 'AIBB' being destroyed
+[2021.03.26-08.00.53:015][613]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/AI/BP_FlyingAI.BP_FlyingAI
+[2021.03.26-08.00.53:573][613]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0008 seconds. Added 125 classes and 0 folders.
+[2021.03.26-08.00.54:616][614]LogSlate: Took 0.000326 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2021.03.26-08.01.17:190][596]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/AI/BP_BaseAIC.BP_BaseAIC
+[2021.03.26-08.01.25:711][268]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/AI/BP_FlyingAI" FILE="../../../../../Github/GEP/GEPProject/Content/AI/BP_FlyingAI.uasset" SILENT=true
+[2021.03.26-08.01.25:752][268]LogSavePackage: Moving '../../../../../Github/GEP/GEPProject/Saved/BP_FlyingAI563262AA4CB10D22F844D886EA56C8DC.tmp' to '../../../../../Github/GEP/GEPProject/Content/AI/BP_FlyingAI.uasset'
+[2021.03.26-08.01.25:775][268]AssetCheck: New page: Asset Save: BP_FlyingAI
+[2021.03.26-08.01.25:775][268]LogContentValidation: Display: Validating Blueprint /Game/AI/BP_FlyingAI.BP_FlyingAI
+[2021.03.26-08.01.34:090][900]LogTemp: Repeating last play command: Selected Viewport
+[2021.03.26-08.01.34:116][900]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.03.26-08.01.34:116][900]BlueprintLog: Warning: Blueprint failed to compile:  BTT_LocationAbovePlayer
+[2021.03.26-08.01.34:116][900]LogCustomDialog: Dialog displayed:
+[2021.03.26-08.01.36:568][900]LogSlate: Window 'Blueprint Compilation Errors' being destroyed
+[2021.03.26-08.01.36:633][900]LogSlate: Took 0.010264 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/DroidSansMono.ttf' (77K)
+[2021.03.26-08.01.38:837][ 60]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/AI/BTT_LocationAbovePlayer.BTT_LocationAbovePlayer
+[2021.03.26-08.02.02:365][ 75]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/AI/BTT_FindValidFlyingLocation.BTT_FindValidFlyingLocation
+[2021.03.26-08.02.13:211][  3]BlueprintLog: New page: Compile BTT_LocationAbovePlayer
+[2021.03.26-08.02.13:214][  3]LogBlueprint: Error: [Compiler BTT_LocationAbovePlayer] The current value of the ' Key ' pin is invalid: 'Key' in action 'Set Blackboard Value as Vector' must have an input wired into it ("by ref" params expect a valid input to operate on).
+[2021.03.26-08.02.13:255][  3]LogUObjectHash: Compacting FUObjectHashTables data took   2.70ms
+[2021.03.26-08.03.08:205][629]LogSlate: Took 0.005674 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensedItalic.ttf' (160K)
+[2021.03.26-08.03.24:953][ 56]BlueprintLog: New page: Compile BTT_LocationAbovePlayer
+[2021.03.26-08.03.24:995][ 56]LogUObjectHash: Compacting FUObjectHashTables data took   2.57ms
+[2021.03.26-08.03.25:580][101]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/AI/BTT_LocationAbovePlayer" FILE="../../../../../Github/GEP/GEPProject/Content/AI/BTT_LocationAbovePlayer.uasset" SILENT=true
+[2021.03.26-08.03.25:621][101]LogSavePackage: Moving '../../../../../Github/GEP/GEPProject/Saved/BTT_LocationAbovePlayer258F5092414F94C0C7DEAD94F0AC82DE.tmp' to '../../../../../Github/GEP/GEPProject/Content/AI/BTT_LocationAbovePlayer.uasset'
+[2021.03.26-08.03.25:635][101]AssetCheck: New page: Asset Save: BTT_LocationAbovePlayer
+[2021.03.26-08.03.25:635][101]LogContentValidation: Display: Validating Blueprint /Game/AI/BTT_LocationAbovePlayer.BTT_LocationAbovePlayer
+[2021.03.26-08.03.27:563][244]LogTemp: Repeating last play command: Selected Viewport
+[2021.03.26-08.03.27:590][244]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.03.26-08.03.27:590][244]PIE: New page: PIE session: GameLevel (26 Mar 2021, 08:03:27)
+[2021.03.26-08.03.27:591][244]LogOnline: OSS: Creating online subsystem instance for: NULL
+[2021.03.26-08.03.27:592][244]LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for module [NULL]
+[2021.03.26-08.03.27:592][244]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_GameLevel
+[2021.03.26-08.03.27:602][244]LogPlayLevel: PIE: StaticDuplicateObject took: (0.010163s)
+[2021.03.26-08.03.27:603][244]LogAIModule: Creating AISystem for world GameLevel
+[2021.03.26-08.03.27:603][244]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001B6A717D400), frame # 16244
+[2021.03.26-08.03.27:603][244]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001B6A73165C0), frame # 16244
+[2021.03.26-08.03.27:603][244]LogPlayLevel: PIE: World Init took: (0.001056s)
+[2021.03.26-08.03.27:603][244]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/GameLevel.GameLevel to /Game/UEDPIE_0_GameLevel.GameLevel (0.011369s)
+[2021.03.26-08.03.27:628][244]LogUObjectHash: Compacting FUObjectHashTables data took   2.29ms
+[2021.03.26-08.03.27:629][244]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.03.26-08.03.27:629][244]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.03.26-08.03.27:629][244]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.03.26-08.03.27:629][244]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.03.26-08.03.27:629][244]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.03.26-08.03.27:629][244]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.03.26-08.03.27:629][244]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.03.26-08.03.27:629][244]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.03.26-08.03.27:630][244]LogAudio: Display: Using built-in audio occlusion.
+[2021.03.26-08.03.27:630][244]LogAudioMixer: Display: Initializing audio mixer.
+[2021.03.26-08.03.27:640][244]LogAudioMixer: Display: 0: FrontLeft
+[2021.03.26-08.03.27:640][244]LogAudioMixer: Display: 1: FrontRight
+[2021.03.26-08.03.27:658][244]LogAudioMixer: Display: Using Audio Device Speakers (6- Focusrite Usb Audio)
+[2021.03.26-08.03.27:658][244]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.03.26-08.03.27:658][244]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.03.26-08.03.27:658][244]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.03.26-08.03.27:659][244]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.03.26-08.03.27:672][244]LogInit: FAudioDevice initialized.
+[2021.03.26-08.03.27:740][244]LogLoad: Game class is 'BP_GEPGamemode_C'
+[2021.03.26-08.03.27:740][244]LogActor: Warning: BP_GEPGamemode_C /Game/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.BP_GEPGamemode_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2021.03.26-08.03.27:743][244]LogWorld: Bringing World /Game/UEDPIE_0_GameLevel.GameLevel up for play (max tick rate 0) at 2021.03.26-08.03.27
+[2021.03.26-08.03.27:744][244]LogWorld: Bringing up level for play took: 0.002661
+[2021.03.26-08.03.27:744][244]LogOnline: OSS: Creating online subsystem instance for: :Context_9
+[2021.03.26-08.03.27:747][244]LogOutputDevice: Warning: 
+
+Script Stack (2 frames):
+GEPProjectCharacter.Init
+GEPPlayerController.Init
+
+[2021.03.26-08.03.28:342][244]LogStats: FPlatformStackWalk::StackWalkAndDump -  0.595 s
+[2021.03.26-08.03.28:342][244]LogOutputDevice: Error: === Handled ensure: ===
+[2021.03.26-08.03.28:342][244]LogOutputDevice: Error: 
+[2021.03.26-08.03.28:342][244]LogOutputDevice: Error: Ensure condition failed: ActorHasBegunPlay == EActorBeginPlayState::BeginningPlay [File:D:/Build/++UE4/Sync/Engine/Source/Runtime/Engine/Private/Actor.cpp] [Line: 3421]
+[2021.03.26-08.03.28:342][244]LogOutputDevice: Error: BeginPlay was called on actor /Game/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.BP_PlayerCharacter_C_0 which was in state 0
+[2021.03.26-08.03.28:342][244]LogOutputDevice: Error: Stack: 
+[2021.03.26-08.03.28:342][244]LogOutputDevice: Error: [Callstack] 0x00007ffd77cec730 UE4Editor-Engine.dll!UnknownFunction []
+[2021.03.26-08.03.28:342][244]LogOutputDevice: Error: [Callstack] 0x00007ffd76474aa1 UE4Editor-Engine.dll!UnknownFunction []
+[2021.03.26-08.03.28:342][244]LogOutputDevice: Error: [Callstack] 0x00007ffd7b8a0b34 UE4Editor-CoreUObject.dll!UnknownFunction []
+[2021.03.26-08.03.28:342][244]LogOutputDevice: Error: [Callstack] 0x00007ffd7bb14753 UE4Editor-CoreUObject.dll!UnknownFunction []
+[2021.03.26-08.03.28:342][244]LogOutputDevice: Error: [Callstack] 0x00007ffd764aafe5 UE4Editor-Engine.dll!UnknownFunction []
+[2021.03.26-08.03.28:342][244]LogOutputDevice: Error: [Callstack] 0x00007ffd5d4a4eed UE4Editor-GEPProject.dll!AGEPPlayerController::Init_Implementation() [E:\Github\GEP\GEPProject\Source\GEPProject\Player\GEPPlayerController.cpp:44]
+[2021.03.26-08.03.28:342][244]LogOutputDevice: Error: [Callstack] 0x00007ffd7b8a0b34 UE4Editor-CoreUObject.dll!UnknownFunction []
+[2021.03.26-08.03.28:342][244]LogOutputDevice: Error: [Callstack] 0x00007ffd7bb14753 UE4Editor-CoreUObject.dll!UnknownFunction []
+[2021.03.26-08.03.28:342][244]LogOutputDevice: Error: [Callstack] 0x00007ffd764aafe5 UE4Editor-Engine.dll!UnknownFunction []
+[2021.03.26-08.03.28:342][244]LogOutputDevice: Error: [Callstack] 0x00007ffd5d4a7e3b UE4Editor-GEPProject.dll!AGEPProjectGameMode::PostLogin() [E:\Github\GEP\GEPProject\Source\GEPProject\GEPProjectGameMode.cpp:43]
+[2021.03.26-08.03.28:342][244]LogOutputDevice: Error: [Callstack] 0x00007ffd76d35099 UE4Editor-Engine.dll!UnknownFunction []
+[2021.03.26-08.03.28:342][244]LogOutputDevice: Error: [Callstack] 0x00007ffd76d84f9d UE4Editor-Engine.dll!UnknownFunction []
+[2021.03.26-08.03.28:342][244]LogOutputDevice: Error: [Callstack] 0x00007ffd76b843b9 UE4Editor-Engine.dll!UnknownFunction []
+[2021.03.26-08.03.28:342][244]LogOutputDevice: Error: [Callstack] 0x00007ffd7386595c UE4Editor-UnrealEd.dll!UnknownFunction []
+[2021.03.26-08.03.28:342][244]LogOutputDevice: Error: [Callstack] 0x00007ffd7388682c UE4Editor-UnrealEd.dll!UnknownFunction []
+[2021.03.26-08.03.28:342][244]LogOutputDevice: Error: [Callstack] 0x00007ffd73866899 UE4Editor-UnrealEd.dll!UnknownFunction []
+[2021.03.26-08.03.28:342][244]LogOutputDevice: Error: [Callstack] 0x00007ffd738a23da UE4Editor-UnrealEd.dll!UnknownFunction []
+[2021.03.26-08.03.28:342][244]LogOutputDevice: Error: [Callstack] 0x00007ffd738a569d UE4Editor-UnrealEd.dll!UnknownFunction []
+[2021.03.26-08.03.28:342][244]LogOutputDevice: Error: [Callstack] 0x00007ffd738a5078 UE4Editor-UnrealEd.dll!UnknownFunction []
+[2021.03.26-08.03.28:342][244]LogOutputDevice: Error: [Callstack] 0x00007ffd7332a854 UE4Editor-UnrealEd.dll!UnknownFunction []
+[2021.03.26-08.03.28:342][244]LogOutputDevice: Error: [Callstack] 0x00007ffd73c037e6 UE4Editor-UnrealEd.dll!UnknownFunction []
+[2021.03.26-08.03.28:342][244]LogOutputDevice: Error: [Callstack] 0x00007ff76c207800 UE4Editor.exe!UnknownFunction []
+[2021.03.26-08.03.28:343][244]LogOutputDevice: Error: [Callstack] 0x00007ff76c21ba7c UE4Editor.exe!UnknownFunction []
+[2021.03.26-08.03.28:343][244]LogOutputDevice: Error: [Callstack] 0x00007ff76c21bb5a UE4Editor.exe!UnknownFunction []
+[2021.03.26-08.03.28:343][244]LogOutputDevice: Error: [Callstack] 0x00007ff76c22e31d UE4Editor.exe!UnknownFunction []
+[2021.03.26-08.03.28:343][244]LogOutputDevice: Error: [Callstack] 0x00007ff76c23145a UE4Editor.exe!UnknownFunction []
+[2021.03.26-08.03.28:343][244]LogOutputDevice: Error: [Callstack] 0x00007ffe30446fd4 KERNEL32.DLL!UnknownFunction []
+[2021.03.26-08.03.28:343][244]LogOutputDevice: Error: [Callstack] 0x00007ffe3145cec1 ntdll.dll!UnknownFunction []
+[2021.03.26-08.03.28:343][244]LogOutputDevice: Error: 
+[2021.03.26-08.03.28:350][244]LogStats:                SubmitErrorReport -  0.000 s
+[2021.03.26-08.03.30:504][244]LogStats:                    SendNewReport -  2.154 s
+[2021.03.26-08.03.30:504][244]LogStats:             FDebug::EnsureFailed -  2.757 s
+[2021.03.26-08.03.30:515][244]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0007 seconds. Added 20 classes and 0 folders.
+[2021.03.26-08.03.30:521][244]PIE: Server logged in
+[2021.03.26-08.03.30:522][244]PIE: Play in editor total start time 2.933 seconds.
+[2021.03.26-08.03.30:565][244]LogTemp: Resetting audio stream to device id 
+[2021.03.26-08.03.30:587][244]LogAudioMixer: Display: 0: FrontLeft
+[2021.03.26-08.03.30:587][244]LogAudioMixer: Display: 1: FrontRight
+[2021.03.26-08.03.31:264][256]LogActor: Warning: BP_DefaultEnemy_C /Game/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.BP_DefaultEnemy_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2021.03.26-08.03.32:239][329]LogParticles: Warning: GameplayStatics::SpawnEmitterAtLocation spawned potentially immortal particle system! /Game/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.WorldSettings_1.ParticleSystemComponent_0 (/Game/Particles/P_MuzzleFlash.P_MuzzleFlash) may stay in world despite never spawning particles after burst spawning is over.
+[2021.03.26-08.03.32:239][329]LogParticles: Warning: GameplayStatics::SpawnEmitterAtLocation spawned potentially immortal particle system! /Game/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.WorldSettings_1.ParticleSystemComponent_1 (/Game/Particles/P_HitParticle.P_HitParticle) may stay in world despite never spawning particles after burst spawning is over.
+[2021.03.26-08.03.32:270][331]LogActor: Warning: BP_DefaultEnemyLvl2_C /Game/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.BP_DefaultEnemyLvl2_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2021.03.26-08.03.33:276][407]LogActor: Warning: BP_DefaultEnemy_C /Game/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.BP_DefaultEnemy_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2021.03.26-08.03.34:285][487]LogActor: Warning: BP_DefaultEnemy_C /Game/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.BP_DefaultEnemy_C_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2021.03.26-08.03.35:291][564]LogActor: Warning: BP_DefaultEnemy_C /Game/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.BP_DefaultEnemy_C_3 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2021.03.26-08.03.36:305][638]LogActor: Warning: BP_DefaultEnemyLv3_C /Game/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.BP_DefaultEnemyLv3_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2021.03.26-08.03.37:307][713]LogActor: Warning: BP_DefaultEnemyLv3_C /Game/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.BP_DefaultEnemyLv3_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2021.03.26-08.03.38:312][789]LogActor: Warning: BP_DefaultEnemy_C /Game/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.BP_DefaultEnemy_C_4 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2021.03.26-08.03.39:325][867]LogActor: Warning: BP_DefaultEnemyLv3_C /Game/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.BP_DefaultEnemyLv3_C_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2021.03.26-08.03.40:330][947]LogActor: Warning: BP_DefaultEnemy_C /Game/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.BP_DefaultEnemy_C_5 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2021.03.26-08.03.41:331][ 24]LogActor: Warning: BP_DefaultEnemy_C /Game/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.BP_DefaultEnemy_C_6 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2021.03.26-08.03.41:636][ 46]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.03.26-08.03.41:636][ 46]LogWorld: BeginTearingDown for /Game/UEDPIE_0_GameLevel
+[2021.03.26-08.03.41:637][ 46]LogWorld: UWorld::CleanupWorld for GameLevel, bSessionEnded=true, bCleanupResources=true
+[2021.03.26-08.03.41:638][ 46]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.03.26-08.03.41:647][ 46]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.03.26-08.03.41:651][ 46]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.03.26-08.03.41:691][ 46]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.03.26-08.03.41:696][ 46]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001B6A73165C0), frame # 17046
+[2021.03.26-08.03.41:696][ 46]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001B6A717D400), frame # 17046
+[2021.03.26-08.03.41:717][ 46]LogUObjectHash: Compacting FUObjectHashTables data took   3.55ms
+[2021.03.26-08.03.41:768][ 47]LogPlayLevel: Display: Destroying online subsystem :Context_9
+[2021.03.26-08.03.46:373][428]LogSlate: Window 'Message Log' being destroyed
+[2021.03.26-08.04.22:929][ 56]BlueprintLog: New page: Compile BTT_LocationAbovePlayer
+[2021.03.26-08.04.22:986][ 56]LogUObjectHash: Compacting FUObjectHashTables data took   3.63ms
+[2021.03.26-08.04.23:548][110]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/AI/BTT_LocationAbovePlayer" FILE="../../../../../Github/GEP/GEPProject/Content/AI/BTT_LocationAbovePlayer.uasset" SILENT=true
+[2021.03.26-08.04.23:580][110]LogSavePackage: Moving '../../../../../Github/GEP/GEPProject/Saved/BTT_LocationAbovePlayer50042D284C8B653AB4612491117C0710.tmp' to '../../../../../Github/GEP/GEPProject/Content/AI/BTT_LocationAbovePlayer.uasset'
+[2021.03.26-08.04.23:595][110]AssetCheck: New page: Asset Save: BTT_LocationAbovePlayer
+[2021.03.26-08.04.23:595][110]LogContentValidation: Display: Validating Blueprint /Game/AI/BTT_LocationAbovePlayer.BTT_LocationAbovePlayer
+[2021.03.26-08.04.32:572][ 70]BlueprintLog: New page: Compile BTT_LocationAbovePlayer
+[2021.03.26-08.04.32:621][ 70]LogUObjectHash: Compacting FUObjectHashTables data took   3.39ms
+[2021.03.26-08.04.32:891][ 94]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/AI/BTT_LocationAbovePlayer" FILE="../../../../../Github/GEP/GEPProject/Content/AI/BTT_LocationAbovePlayer.uasset" SILENT=true
+[2021.03.26-08.04.32:922][ 94]LogSavePackage: Moving '../../../../../Github/GEP/GEPProject/Saved/BTT_LocationAbovePlayerE96CBFBA49C05833413171A0725B87B3.tmp' to '../../../../../Github/GEP/GEPProject/Content/AI/BTT_LocationAbovePlayer.uasset'
+[2021.03.26-08.04.32:942][ 94]AssetCheck: New page: Asset Save: BTT_LocationAbovePlayer
+[2021.03.26-08.04.32:942][ 94]LogContentValidation: Display: Validating Blueprint /Game/AI/BTT_LocationAbovePlayer.BTT_LocationAbovePlayer
+[2021.03.26-08.04.35:005][321]LogTemp: Repeating last play command: Selected Viewport
+[2021.03.26-08.04.35:032][321]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.03.26-08.04.35:032][321]PIE: New page: PIE session: GameLevel (26 Mar 2021, 08:04:35)
+[2021.03.26-08.04.35:065][321]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_GameLevel
+[2021.03.26-08.04.35:077][321]LogPlayLevel: PIE: StaticDuplicateObject took: (0.011804s)
+[2021.03.26-08.04.35:077][321]LogAIModule: Creating AISystem for world GameLevel
+[2021.03.26-08.04.35:078][321]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001B60E5F5C00), frame # 22321
+[2021.03.26-08.04.35:078][321]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001B697F5BEC0), frame # 22321
+[2021.03.26-08.04.35:078][321]LogPlayLevel: PIE: World Init took: (0.001116s)
+[2021.03.26-08.04.35:078][321]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/GameLevel.GameLevel to /Game/UEDPIE_0_GameLevel.GameLevel (0.013090s)
+[2021.03.26-08.04.35:110][321]LogUObjectHash: Compacting FUObjectHashTables data took   4.14ms
+[2021.03.26-08.04.35:112][321]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.03.26-08.04.35:112][321]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.03.26-08.04.35:112][321]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.03.26-08.04.35:112][321]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.03.26-08.04.35:112][321]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.03.26-08.04.35:112][321]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.03.26-08.04.35:112][321]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.03.26-08.04.35:112][321]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.03.26-08.04.35:113][321]LogAudio: Display: Using built-in audio occlusion.
+[2021.03.26-08.04.35:113][321]LogAudioMixer: Display: Initializing audio mixer.
+[2021.03.26-08.04.35:121][321]LogAudioMixer: Display: 0: FrontLeft
+[2021.03.26-08.04.35:121][321]LogAudioMixer: Display: 1: FrontRight
+[2021.03.26-08.04.35:138][321]LogAudioMixer: Display: Using Audio Device Speakers (6- Focusrite Usb Audio)
+[2021.03.26-08.04.35:139][321]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.03.26-08.04.35:139][321]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.03.26-08.04.35:139][321]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.03.26-08.04.35:139][321]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.03.26-08.04.35:151][321]LogInit: FAudioDevice initialized.
+[2021.03.26-08.04.35:159][321]LogLoad: Game class is 'BP_GEPGamemode_C'
+[2021.03.26-08.04.35:159][321]LogActor: Warning: BP_GEPGamemode_C /Game/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.BP_GEPGamemode_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2021.03.26-08.04.35:162][321]LogWorld: Bringing World /Game/UEDPIE_0_GameLevel.GameLevel up for play (max tick rate 0) at 2021.03.26-08.04.35
+[2021.03.26-08.04.35:162][321]LogWorld: Bringing up level for play took: 0.002742
+[2021.03.26-08.04.35:163][321]LogOnline: OSS: Creating online subsystem instance for: :Context_10
+[2021.03.26-08.04.35:170][321]PIE: Server logged in
+[2021.03.26-08.04.35:171][321]PIE: Play in editor total start time 0.14 seconds.
+[2021.03.26-08.04.35:412][348]LogParticles: Warning: GameplayStatics::SpawnEmitterAtLocation spawned potentially immortal particle system! /Game/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.WorldSettings_1.ParticleSystemComponent_0 (/Game/Particles/P_MuzzleFlash.P_MuzzleFlash) may stay in world despite never spawning particles after burst spawning is over.
+[2021.03.26-08.04.35:412][348]LogParticles: Warning: GameplayStatics::SpawnEmitterAtLocation spawned potentially immortal particle system! /Game/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.WorldSettings_1.ParticleSystemComponent_1 (/Game/Particles/P_HitParticle.P_HitParticle) may stay in world despite never spawning particles after burst spawning is over.
+[2021.03.26-08.04.36:012][420]LogActor: Warning: BP_DefaultEnemyLv3_C /Game/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.BP_DefaultEnemyLv3_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2021.03.26-08.04.37:013][540]LogActor: Warning: BP_DefaultEnemyLv3_C /Game/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.BP_DefaultEnemyLv3_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2021.03.26-08.04.38:013][660]LogActor: Warning: BP_DefaultEnemyLv3_C /Game/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.BP_DefaultEnemyLv3_C_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2021.03.26-08.04.39:012][780]LogActor: Warning: BP_DefaultEnemyLv3_C /Game/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.BP_DefaultEnemyLv3_C_3 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2021.03.26-08.04.40:013][900]LogActor: Warning: BP_DefaultEnemyLvl2_C /Game/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.BP_DefaultEnemyLvl2_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2021.03.26-08.04.41:014][ 20]LogActor: Warning: BP_DefaultEnemy_C /Game/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.BP_DefaultEnemy_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2021.03.26-08.04.41:199][ 42]LogCharacterMovement: BP_PlayerCharacter_C_1 is stuck and failed to move! Velocity: X=5.93 Y=16.00 Z=0.00 Location: X=1458.17 Y=403.80 Z=196.68 Normal: X=-0.07 Y=-0.22 Z=-0.97 PenetrationDepth:6.721 Actor:BP_FlyingAI_2 Component:StaticMesh BoneName:None (0 other events since notify)
+[2021.03.26-08.04.42:021][139]LogActor: Warning: BP_DefaultEnemy_C /Game/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.BP_DefaultEnemy_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2021.03.26-08.04.43:021][254]LogActor: Warning: BP_DefaultEnemyLvl2_C /Game/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.BP_DefaultEnemyLvl2_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2021.03.26-08.04.44:021][374]LogActor: Warning: BP_DefaultEnemy_C /Game/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.BP_DefaultEnemy_C_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2021.03.26-08.04.45:022][494]LogActor: Warning: BP_DefaultEnemyLvl2_C /Game/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.BP_DefaultEnemyLvl2_C_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2021.03.26-08.04.46:022][604]LogActor: Warning: BP_DefaultEnemy_C /Game/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.BP_DefaultEnemy_C_3 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2021.03.26-08.04.47:022][722]LogActor: Warning: BP_DefaultEnemyLv3_C /Game/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.BP_DefaultEnemyLv3_C_4 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2021.03.26-08.04.48:024][842]LogActor: Warning: BP_DefaultEnemyLv3_C /Game/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.BP_DefaultEnemyLv3_C_5 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2021.03.26-08.04.49:023][962]LogActor: Warning: BP_DefaultEnemy_C /Game/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.BP_DefaultEnemy_C_4 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2021.03.26-08.04.50:027][ 81]LogActor: Warning: BP_DefaultEnemyLvl2_C /Game/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.BP_DefaultEnemyLvl2_C_3 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2021.03.26-08.04.51:028][201]LogActor: Warning: BP_DefaultEnemyLv3_C /Game/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.BP_DefaultEnemyLv3_C_6 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2021.03.26-08.04.52:028][321]LogActor: Warning: BP_DefaultEnemyLvl2_C /Game/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.BP_DefaultEnemyLvl2_C_4 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2021.03.26-08.04.53:028][441]LogActor: Warning: BP_DefaultEnemyLv3_C /Game/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.BP_DefaultEnemyLv3_C_7 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2021.03.26-08.04.54:028][561]LogActor: Warning: BP_DefaultEnemyLvl2_C /Game/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.BP_DefaultEnemyLvl2_C_5 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2021.03.26-08.04.55:028][681]LogActor: Warning: BP_DefaultEnemyLv3_C /Game/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.BP_DefaultEnemyLv3_C_8 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2021.03.26-08.04.55:695][761]LogParticles: Warning: GameplayStatics::SpawnEmitterAtLocation spawned potentially immortal particle system! /Game/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.WorldSettings_1.ParticleSystemComponent_17 (/Game/Particles/P_MuzzleFlash.P_MuzzleFlash) may stay in world despite never spawning particles after burst spawning is over.
+[2021.03.26-08.04.55:697][761]LogParticles: Warning: GameplayStatics::SpawnEmitterAtLocation spawned potentially immortal particle system! /Game/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.WorldSettings_1.ParticleSystemComponent_19 (/Game/Particles/P_HitParticle.P_HitParticle) may stay in world despite never spawning particles after burst spawning is over.
+[2021.03.26-08.04.56:037][801]LogActor: Warning: BP_DefaultEnemy_C /Game/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.BP_DefaultEnemy_C_5 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2021.03.26-08.04.56:287][831]LogParticles: Warning: GameplayStatics::SpawnEmitterAtLocation spawned potentially immortal particle system! /Game/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.WorldSettings_1.ParticleSystemComponent_21 (/Game/Particles/P_MuzzleFlash.P_MuzzleFlash) may stay in world despite never spawning particles after burst spawning is over.
+[2021.03.26-08.04.56:288][831]LogParticles: Warning: GameplayStatics::SpawnEmitterAtLocation spawned potentially immortal particle system! /Game/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.WorldSettings_1.ParticleSystemComponent_23 (/Game/Particles/P_HitParticle.P_HitParticle) may stay in world despite never spawning particles after burst spawning is over.
+[2021.03.26-08.04.56:729][884]LogParticles: Warning: GameplayStatics::SpawnEmitterAtLocation spawned potentially immortal particle system! /Game/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.WorldSettings_1.ParticleSystemComponent_24 (/Game/Particles/P_MuzzleFlash.P_MuzzleFlash) may stay in world despite never spawning particles after burst spawning is over.
+[2021.03.26-08.04.56:730][884]LogParticles: Warning: GameplayStatics::SpawnEmitterAtLocation spawned potentially immortal particle system! /Game/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.WorldSettings_1.ParticleSystemComponent_26 (/Game/Particles/P_HitParticle.P_HitParticle) may stay in world despite never spawning particles after burst spawning is over.
+[2021.03.26-08.04.57:041][921]LogActor: Warning: BP_DefaultEnemyLv3_C /Game/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.BP_DefaultEnemyLv3_C_9 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2021.03.26-08.04.57:704][995]LogCharacterMovement: BP_PlayerCharacter_C_1 is stuck and failed to move! Velocity: X=-159.94 Y=63.20 Z=0.00 Location: X=-1224.36 Y=1977.43 Z=196.43 Normal: X=0.45 Y=-0.35 Z=-0.82 PenetrationDepth:6.325 Actor:BP_FlyingAI_2 Component:StaticMesh BoneName:None (1 other events since notify)
+[2021.03.26-08.04.58:048][ 36]LogActor: Warning: BP_DefaultEnemyLv3_C /Game/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.BP_DefaultEnemyLv3_C_10 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2021.03.26-08.04.58:549][ 96]LogParticles: Warning: GameplayStatics::SpawnEmitterAtLocation spawned potentially immortal particle system! /Game/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.WorldSettings_1.ParticleSystemComponent_28 (/Game/Particles/P_MuzzleFlash.P_MuzzleFlash) may stay in world despite never spawning particles after burst spawning is over.
+[2021.03.26-08.04.58:549][ 96]LogParticles: Warning: GameplayStatics::SpawnEmitterAtLocation spawned potentially immortal particle system! /Game/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.WorldSettings_1.ParticleSystemComponent_29 (/Game/Particles/P_HitParticle.P_HitParticle) may stay in world despite never spawning particles after burst spawning is over.
+[2021.03.26-08.04.59:052][156]LogActor: Warning: BP_DefaultEnemy_C /Game/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.BP_DefaultEnemy_C_6 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2021.03.26-08.04.59:125][160]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.03.26-08.04.59:125][160]LogWorld: BeginTearingDown for /Game/UEDPIE_0_GameLevel
+[2021.03.26-08.04.59:125][160]LogWorld: UWorld::CleanupWorld for GameLevel, bSessionEnded=true, bCleanupResources=true
+[2021.03.26-08.04.59:127][160]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.03.26-08.04.59:135][160]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.03.26-08.04.59:140][160]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.03.26-08.04.59:181][160]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.03.26-08.04.59:183][160]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001B697F5BEC0), frame # 25160
+[2021.03.26-08.04.59:183][160]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001B60E5F5C00), frame # 25160
+[2021.03.26-08.04.59:186][160]LogUObjectHash: Compacting FUObjectHashTables data took   2.82ms
+[2021.03.26-08.04.59:238][161]LogPlayLevel: Display: Destroying online subsystem :Context_10
+[2021.03.26-08.05.00:813][327]Cmd: DELETE
+[2021.03.26-08.05.00:813][327]Cmd: ACTOR DELETE
+[2021.03.26-08.05.00:818][327]LogEditorActor: Deleted Actor: BP_PatrollingAI_C
+[2021.03.26-08.05.00:848][327]LogUObjectHash: Compacting FUObjectHashTables data took   2.58ms
+[2021.03.26-08.05.00:850][327]LogEditorActor: Deleted 1 Actors (0.037 secs)
+[2021.03.26-08.05.16:734][813]BlueprintLog: New page: Compile BP_FlyingAI
+[2021.03.26-08.05.16:846][813]LogUObjectHash: Compacting FUObjectHashTables data took   2.88ms
+[2021.03.26-08.05.17:471][856]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/AI/BP_FlyingAI" FILE="../../../../../Github/GEP/GEPProject/Content/AI/BP_FlyingAI.uasset" SILENT=true
+[2021.03.26-08.05.17:504][856]LogSavePackage: Moving '../../../../../Github/GEP/GEPProject/Saved/BP_FlyingAI2F6889DF40795DD8C83074B8AD034182.tmp' to '../../../../../Github/GEP/GEPProject/Content/AI/BP_FlyingAI.uasset'
+[2021.03.26-08.05.17:527][856]AssetCheck: New page: Asset Save: BP_FlyingAI
+[2021.03.26-08.05.17:527][856]LogContentValidation: Display: Validating Blueprint /Game/AI/BP_FlyingAI.BP_FlyingAI
+[2021.03.26-08.05.19:085][987]LogTemp: Repeating last play command: Selected Viewport
+[2021.03.26-08.05.19:112][987]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.03.26-08.05.19:112][987]PIE: New page: PIE session: GameLevel (26 Mar 2021, 08:05:19)
+[2021.03.26-08.05.19:112][987]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_GameLevel
+[2021.03.26-08.05.19:121][987]LogPlayLevel: PIE: StaticDuplicateObject took: (0.009468s)
+[2021.03.26-08.05.19:122][987]LogAIModule: Creating AISystem for world GameLevel
+[2021.03.26-08.05.19:122][987]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001B64C776200), frame # 26987
+[2021.03.26-08.05.19:122][987]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001B697D72200), frame # 26987
+[2021.03.26-08.05.19:122][987]LogPlayLevel: PIE: World Init took: (0.001242s)
+[2021.03.26-08.05.19:123][987]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/GameLevel.GameLevel to /Game/UEDPIE_0_GameLevel.GameLevel (0.010862s)
+[2021.03.26-08.05.19:152][987]LogUObjectHash: Compacting FUObjectHashTables data took   3.49ms
+[2021.03.26-08.05.19:154][987]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.03.26-08.05.19:154][987]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.03.26-08.05.19:154][987]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.03.26-08.05.19:154][987]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.03.26-08.05.19:154][987]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.03.26-08.05.19:155][987]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.03.26-08.05.19:155][987]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.03.26-08.05.19:155][987]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.03.26-08.05.19:155][987]LogAudio: Display: Using built-in audio occlusion.
+[2021.03.26-08.05.19:155][987]LogAudioMixer: Display: Initializing audio mixer.
+[2021.03.26-08.05.19:165][987]LogAudioMixer: Display: 0: FrontLeft
+[2021.03.26-08.05.19:165][987]LogAudioMixer: Display: 1: FrontRight
+[2021.03.26-08.05.19:184][987]LogAudioMixer: Display: Using Audio Device Speakers (6- Focusrite Usb Audio)
+[2021.03.26-08.05.19:184][987]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.03.26-08.05.19:184][987]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.03.26-08.05.19:184][987]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.03.26-08.05.19:185][987]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.03.26-08.05.19:198][987]LogInit: FAudioDevice initialized.
+[2021.03.26-08.05.19:211][987]LogLoad: Game class is 'BP_GEPGamemode_C'
+[2021.03.26-08.05.19:211][987]LogActor: Warning: BP_GEPGamemode_C /Game/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.BP_GEPGamemode_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2021.03.26-08.05.19:213][987]LogWorld: Bringing World /Game/UEDPIE_0_GameLevel.GameLevel up for play (max tick rate 0) at 2021.03.26-08.05.19
+[2021.03.26-08.05.19:214][987]LogWorld: Bringing up level for play took: 0.002387
+[2021.03.26-08.05.19:214][987]LogOnline: OSS: Creating online subsystem instance for: :Context_11
+[2021.03.26-08.05.19:221][987]PIE: Server logged in
+[2021.03.26-08.05.19:222][987]PIE: Play in editor total start time 0.111 seconds.
+[2021.03.26-08.05.19:478][ 13]LogParticles: Warning: GameplayStatics::SpawnEmitterAtLocation spawned potentially immortal particle system! /Game/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.WorldSettings_1.ParticleSystemComponent_0 (/Game/Particles/P_MuzzleFlash.P_MuzzleFlash) may stay in world despite never spawning particles after burst spawning is over.
+[2021.03.26-08.05.19:478][ 13]LogParticles: Warning: GameplayStatics::SpawnEmitterAtLocation spawned potentially immortal particle system! /Game/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.WorldSettings_1.ParticleSystemComponent_1 (/Game/Particles/P_HitParticle.P_HitParticle) may stay in world despite never spawning particles after burst spawning is over.
+[2021.03.26-08.05.20:090][ 82]LogActor: Warning: BP_DefaultEnemy_C /Game/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.BP_DefaultEnemy_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2021.03.26-08.05.21:098][198]LogActor: Warning: BP_DefaultEnemyLvl2_C /Game/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.BP_DefaultEnemyLvl2_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2021.03.26-08.05.22:105][312]LogActor: Warning: BP_DefaultEnemy_C /Game/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.BP_DefaultEnemy_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2021.03.26-08.05.23:110][426]LogActor: Warning: BP_DefaultEnemy_C /Game/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.BP_DefaultEnemy_C_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2021.03.26-08.05.24:110][543]LogActor: Warning: BP_DefaultEnemy_C /Game/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.BP_DefaultEnemy_C_3 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2021.03.26-08.05.24:449][582]LogParticles: Warning: GameplayStatics::SpawnEmitterAtLocation spawned potentially immortal particle system! /Game/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.WorldSettings_1.ParticleSystemComponent_2 (/Game/Particles/P_MuzzleFlash.P_MuzzleFlash) may stay in world despite never spawning particles after burst spawning is over.
+[2021.03.26-08.05.24:449][582]LogParticles: Warning: GameplayStatics::SpawnEmitterAtLocation spawned potentially immortal particle system! /Game/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.WorldSettings_1.ParticleSystemComponent_3 (/Game/Particles/P_HitParticle.P_HitParticle) may stay in world despite never spawning particles after burst spawning is over.
+[2021.03.26-08.05.25:118][656]LogActor: Warning: BP_DefaultEnemy_C /Game/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.BP_DefaultEnemy_C_4 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2021.03.26-08.05.26:121][755]LogActor: Warning: BP_DefaultEnemyLv3_C /Game/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.BP_DefaultEnemyLv3_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2021.03.26-08.05.27:127][859]LogActor: Warning: BP_DefaultEnemyLv3_C /Game/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.BP_DefaultEnemyLv3_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2021.03.26-08.05.28:138][966]LogActor: Warning: BP_DefaultEnemyLv3_C /Game/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.BP_DefaultEnemyLv3_C_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2021.03.26-08.05.29:140][ 74]LogActor: Warning: BP_DefaultEnemy_C /Game/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.BP_DefaultEnemy_C_5 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2021.03.26-08.05.30:141][187]LogActor: Warning: BP_DefaultEnemyLv3_C /Game/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.BP_DefaultEnemyLv3_C_3 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2021.03.26-08.05.31:143][291]LogActor: Warning: BP_DefaultEnemy_C /Game/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.BP_DefaultEnemy_C_6 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2021.03.26-08.05.32:143][396]LogActor: Warning: BP_DefaultEnemyLv3_C /Game/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.BP_DefaultEnemyLv3_C_4 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2021.03.26-08.05.33:149][511]LogActor: Warning: BP_DefaultEnemy_C /Game/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.BP_DefaultEnemy_C_7 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2021.03.26-08.05.34:157][626]LogActor: Warning: BP_DefaultEnemyLv3_C /Game/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.BP_DefaultEnemyLv3_C_5 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2021.03.26-08.05.35:164][739]LogActor: Warning: BP_DefaultEnemyLv3_C /Game/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.BP_DefaultEnemyLv3_C_6 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2021.03.26-08.05.36:169][843]LogActor: Warning: BP_DefaultEnemyLvl2_C /Game/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.BP_DefaultEnemyLvl2_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2021.03.26-08.05.37:174][959]LogActor: Warning: BP_DefaultEnemy_C /Game/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.BP_DefaultEnemy_C_8 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2021.03.26-08.05.38:179][ 71]LogActor: Warning: BP_DefaultEnemyLvl2_C /Game/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.BP_DefaultEnemyLvl2_C_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2021.03.26-08.05.39:179][184]LogActor: Warning: BP_DefaultEnemyLvl2_C /Game/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.BP_DefaultEnemyLvl2_C_3 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2021.03.26-08.05.40:186][300]LogActor: Warning: BP_DefaultEnemyLvl2_C /Game/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.BP_DefaultEnemyLvl2_C_4 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2021.03.26-08.05.41:188][415]LogActor: Warning: BP_DefaultEnemyLv3_C /Game/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.BP_DefaultEnemyLv3_C_7 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2021.03.26-08.05.42:191][520]LogActor: Warning: BP_DefaultEnemyLvl2_C /Game/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.BP_DefaultEnemyLvl2_C_5 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2021.03.26-08.05.43:193][635]LogActor: Warning: BP_DefaultEnemyLv3_C /Game/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.BP_DefaultEnemyLv3_C_8 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2021.03.26-08.05.44:195][753]LogActor: Warning: BP_DefaultEnemyLvl2_C /Game/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.BP_DefaultEnemyLvl2_C_6 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2021.03.26-08.05.45:202][872]LogActor: Warning: BP_DefaultEnemyLv3_C /Game/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.BP_DefaultEnemyLv3_C_9 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2021.03.26-08.05.46:206][991]LogActor: Warning: BP_DefaultEnemy_C /Game/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.BP_DefaultEnemy_C_9 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2021.03.26-08.05.47:214][110]LogActor: Warning: BP_DefaultEnemyLvl2_C /Game/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.BP_DefaultEnemyLvl2_C_7 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2021.03.26-08.05.48:219][228]LogActor: Warning: BP_DefaultEnemyLvl2_C /Game/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.BP_DefaultEnemyLvl2_C_8 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2021.03.26-08.05.49:222][346]LogActor: Warning: BP_DefaultEnemyLv3_C /Game/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.BP_DefaultEnemyLv3_C_10 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2021.03.26-08.05.50:225][465]LogActor: Warning: BP_DefaultEnemyLvl2_C /Game/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.BP_DefaultEnemyLvl2_C_9 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2021.03.26-08.05.51:226][584]LogActor: Warning: BP_DefaultEnemyLv3_C /Game/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.BP_DefaultEnemyLv3_C_11 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2021.03.26-08.05.52:228][702]LogActor: Warning: BP_DefaultEnemy_C /Game/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.BP_DefaultEnemy_C_10 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2021.03.26-08.05.53:231][821]LogActor: Warning: BP_DefaultEnemy_C /Game/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.BP_DefaultEnemy_C_11 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2021.03.26-08.05.54:234][940]LogActor: Warning: BP_DefaultEnemy_C /Game/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.BP_DefaultEnemy_C_12 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2021.03.26-08.05.55:239][ 57]LogActor: Warning: BP_DefaultEnemyLv3_C /Game/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.BP_DefaultEnemyLv3_C_12 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2021.03.26-08.05.55:356][ 66]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.03.26-08.05.55:356][ 66]LogWorld: BeginTearingDown for /Game/UEDPIE_0_GameLevel
+[2021.03.26-08.05.55:356][ 66]LogWorld: UWorld::CleanupWorld for GameLevel, bSessionEnded=true, bCleanupResources=true
+[2021.03.26-08.05.55:357][ 66]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.03.26-08.05.55:366][ 66]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.03.26-08.05.55:369][ 66]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.03.26-08.05.55:395][ 66]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.03.26-08.05.55:411][ 66]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001B697D72200), frame # 31066
+[2021.03.26-08.05.55:411][ 66]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001B64C776200), frame # 31066
+[2021.03.26-08.05.55:414][ 66]LogUObjectHash: Compacting FUObjectHashTables data took   2.72ms
+[2021.03.26-08.05.55:464][ 67]LogPlayLevel: Display: Destroying online subsystem :Context_11
+[2021.03.26-08.06.05:013][201]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/GameLevel" FILE="../../../../../Github/GEP/GEPProject/Content/GameLevel.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2021.03.26-08.06.05:041][201]LogUObjectHash: Compacting FUObjectHashTables data took   2.36ms
+[2021.03.26-08.06.05:100][201]LogSavePackage: Moving '../../../../../Github/GEP/GEPProject/Saved/GameLevel92BB7F454EF2C01A76F2CEBC82BD4DBD.tmp' to '../../../../../Github/GEP/GEPProject/Content/GameLevel.umap'
+[2021.03.26-08.06.05:158][201]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/GameLevel_BuiltData" FILE="../../../../../Github/GEP/GEPProject/Content/GameLevel_BuiltData.uasset" SILENT=true
+[2021.03.26-08.06.05:311][201]LogSavePackage: Moving '../../../../../Github/GEP/GEPProject/Saved/GameLevel_BuiltData89D87FC841FF99D366910498267C2859.tmp' to '../../../../../Github/GEP/GEPProject/Content/GameLevel_BuiltData.uasset'
+[2021.03.26-08.06.05:327][201]AssetCheck: New page: Asset Save: multiple assets
+[2021.03.26-08.06.05:327][201]LogContentValidation: Display: Validating World /Game/GameLevel.GameLevel
+[2021.03.26-08.06.05:328][201]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/GameLevel_BuiltData.GameLevel_BuiltData
+[2021.03.26-08.06.08:497][570]LogUObjectHash: Compacting FUObjectHashTables data took   2.82ms
+[2021.03.26-08.06.08:554][570]LogWorld: UWorld::CleanupWorld for World_4, bSessionEnded=true, bCleanupResources=true
+[2021.03.26-08.06.08:554][570]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.03.26-08.06.08:595][570]LogActorComponent: UnregisterComponent: (/Engine/Transient.EditorFloorComp) Not registered. Aborting.
+[2021.03.26-08.06.08:595][570]LogWorld: UWorld::CleanupWorld for World_5, bSessionEnded=true, bCleanupResources=true
+[2021.03.26-08.06.08:595][570]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.03.26-08.06.08:635][570]LogWorld: UWorld::CleanupWorld for World_6, bSessionEnded=true, bCleanupResources=true
+[2021.03.26-08.06.08:635][570]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.03.26-08.06.08:666][570]LogSlate: Window 'BTT_FindValidFlyingLocation' being destroyed
+[2021.03.26-08.06.08:674][570]LogWorld: UWorld::CleanupWorld for World_7, bSessionEnded=true, bCleanupResources=true
+[2021.03.26-08.06.08:675][570]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.03.26-08.06.08:814][570]LogSlate: Window 'GEPProject - Unreal Editor' being destroyed
+[2021.03.26-08.06.08:815][570]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
+[2021.03.26-08.06.08:943][571]Cmd: QUIT_EDITOR
+[2021.03.26-08.06.08:943][571]LogCore: Engine exit requested (reason: UUnrealEdEngine::CloseEditor())
+[2021.03.26-08.06.08:953][571]LogCore: Engine exit requested (reason: EngineExit() was called; note: exit was already requested)
+[2021.03.26-08.06.09:831][571]LogExit: Preparing to exit.
+[2021.03.26-08.06.10:691][571]LogWorld: UWorld::CleanupWorld for World_0, bSessionEnded=true, bCleanupResources=true
+[2021.03.26-08.06.10:694][571]LogWorld: UWorld::CleanupWorld for World_2, bSessionEnded=true, bCleanupResources=true
+[2021.03.26-08.06.10:697][571]LogWorld: UWorld::CleanupWorld for World_3, bSessionEnded=true, bCleanupResources=true
+[2021.03.26-08.06.10:700][571]LogWorld: UWorld::CleanupWorld for World_1, bSessionEnded=true, bCleanupResources=true
+[2021.03.26-08.06.10:754][571]LogDemo: Cleaned up 0 splitscreen connections with owner deletion
+[2021.03.26-08.06.10:766][571]LogWorld: UWorld::CleanupWorld for None, bSessionEnded=true, bCleanupResources=true
+[2021.03.26-08.06.10:767][571]LogExit: Editor shut down
+[2021.03.26-08.06.10:767][571]LogExit: Transaction tracking system shut down
+[2021.03.26-08.06.11:043][571]LogAISub: UAISubsystem::~UAISubsystem AISubsystem (000001B656A66980), frame # 32571
+[2021.03.26-08.06.11:043][571]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001B6568F2840), frame # 32571
+[2021.03.26-08.06.11:044][571]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001B65693DC00), frame # 32571
+[2021.03.26-08.06.11:101][571]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001B650381200), frame # 32571
+[2021.03.26-08.06.11:101][571]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001B6502F02C0), frame # 32571
+[2021.03.26-08.06.11:192][571]LogExit: Object subsystem successfully closed.
+[2021.03.26-08.06.11:227][571]LogShaderCompilers: Display: Shaders left to compile 0
+[2021.03.26-08.06.11:282][571]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (810)
+[2021.03.26-08.06.11:282][571]LogModuleManager: Shutting down and abandoning module Voice (808)
+[2021.03.26-08.06.11:282][571]LogModuleManager: Shutting down and abandoning module BlueprintGraph (806)
+[2021.03.26-08.06.11:282][571]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (804)
+[2021.03.26-08.06.11:282][571]LogModuleManager: Shutting down and abandoning module AddContentDialog (802)
+[2021.03.26-08.06.11:283][571]LogModuleManager: Shutting down and abandoning module WidgetCarousel (801)
+[2021.03.26-08.06.11:283][571]LogModuleManager: Shutting down and abandoning module EditorWidgets (798)
+[2021.03.26-08.06.11:283][571]LogModuleManager: Shutting down and abandoning module CollectionManager (796)
+[2021.03.26-08.06.11:284][571]LogModuleManager: Shutting down and abandoning module SceneOutliner (794)
+[2021.03.26-08.06.11:284][571]LogModuleManager: Shutting down and abandoning module StatsViewer (792)
+[2021.03.26-08.06.11:285][571]LogModuleManager: Shutting down and abandoning module VirtualTexturingEditor (790)
+[2021.03.26-08.06.11:285][571]LogModuleManager: Shutting down and abandoning module FoliageEdit (788)
+[2021.03.26-08.06.11:286][571]LogModuleManager: Shutting down and abandoning module LandscapeEditor (786)
+[2021.03.26-08.06.11:288][571]LogModuleManager: Shutting down and abandoning module MeshPaintMode (784)
+[2021.03.26-08.06.11:288][571]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (782)
+[2021.03.26-08.06.11:288][571]LogModuleManager: Shutting down and abandoning module ActorPickerMode (780)
+[2021.03.26-08.06.11:288][571]LogModuleManager: Shutting down and abandoning module PIEPreviewDeviceProfileSelector (778)
+[2021.03.26-08.06.11:289][571]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (776)
+[2021.03.26-08.06.11:289][571]LogModuleManager: Shutting down and abandoning module AutomationWorker (774)
+[2021.03.26-08.06.11:289][571]LogModuleManager: Shutting down and abandoning module SteamVREditor (772)
+[2021.03.26-08.06.11:289][571]LogModuleManager: Shutting down and abandoning module OculusMR (770)
+[2021.03.26-08.06.11:289][571]LogModuleManager: Shutting down and abandoning module GooglePADEditor (768)
+[2021.03.26-08.06.11:289][571]LogModuleManager: Shutting down and abandoning module AudioCaptureEditor (766)
+[2021.03.26-08.06.11:289][571]LogModuleManager: Shutting down and abandoning module TemplateSequenceEditor (764)
+[2021.03.26-08.06.11:291][571]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (762)
+[2021.03.26-08.06.11:291][571]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (760)
+[2021.03.26-08.06.11:292][571]LogModuleManager: Shutting down and abandoning module ActorSequenceEditor (758)
+[2021.03.26-08.06.11:292][571]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (756)
+[2021.03.26-08.06.11:292][571]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (754)
+[2021.03.26-08.06.11:292][571]LogModuleManager: Shutting down and abandoning module WebMMediaFactory (752)
+[2021.03.26-08.06.11:292][571]LogModuleManager: Shutting down and abandoning module WebMMediaEditor (750)
+[2021.03.26-08.06.11:292][571]LogModuleManager: Shutting down and abandoning module WebMMedia (748)
+[2021.03.26-08.06.11:293][571]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (746)
+[2021.03.26-08.06.11:294][571]LogModuleManager: Shutting down and abandoning module MediaCompositingEditor (744)
+[2021.03.26-08.06.11:294][571]LogModuleManager: Shutting down and abandoning module SequenceRecorder (743)
+[2021.03.26-08.06.11:294][571]LogModuleManager: Shutting down and abandoning module OpenExrWrapper (740)
+[2021.03.26-08.06.11:295][571]LogModuleManager: Shutting down and abandoning module ImgMediaFactory (738)
+[2021.03.26-08.06.11:295][571]LogModuleManager: Shutting down and abandoning module ImgMediaEditor (736)
+[2021.03.26-08.06.11:295][571]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (734)
+[2021.03.26-08.06.11:295][571]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (732)
+[2021.03.26-08.06.11:295][571]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (730)
+[2021.03.26-08.06.11:295][571]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (728)
+[2021.03.26-08.06.11:295][571]LogModuleManager: Shutting down and abandoning module MagicLeapMediaCodecFactory (726)
+[2021.03.26-08.06.11:295][571]LogModuleManager: Shutting down and abandoning module MagicLeapMediaFactory (724)
+[2021.03.26-08.06.11:295][571]LogModuleManager: Shutting down and abandoning module MagicLeapMediaEditor (722)
+[2021.03.26-08.06.11:295][571]LogModuleManager: Shutting down and abandoning module PlanarCut (720)
+[2021.03.26-08.06.11:296][571]LogModuleManager: Shutting down and abandoning module CharacterAI (718)
+[2021.03.26-08.06.11:296][571]LogModuleManager: Shutting down and abandoning module TextureAlignMode (716)
+[2021.03.26-08.06.11:296][571]LogModuleManager: Shutting down and abandoning module BspMode (714)
+[2021.03.26-08.06.11:296][571]LogModuleManager: Shutting down and abandoning module PlacementMode (713)
+[2021.03.26-08.06.11:296][571]LogModuleManager: Shutting down and abandoning module GeometryMode (710)
+[2021.03.26-08.06.11:296][571]LogModuleManager: Shutting down and abandoning module CameraShakePreviewer (708)
+[2021.03.26-08.06.11:297][571]LogModuleManager: Shutting down and abandoning module SmartSnapping (706)
+[2021.03.26-08.06.11:297][571]LogModuleManager: Shutting down and abandoning module SessionServices (704)
+[2021.03.26-08.06.11:297][571]LogModuleManager: Shutting down and abandoning module MeshPaint (702)
+[2021.03.26-08.06.11:298][571]LogModuleManager: Shutting down and abandoning module ViewportSnapping (700)
+[2021.03.26-08.06.11:298][571]LogModuleManager: Shutting down and abandoning module ViewportInteraction (698)
+[2021.03.26-08.06.11:298][571]LogModuleManager: Shutting down and abandoning module ClothPainter (696)
+[2021.03.26-08.06.11:299][571]LogModuleManager: Shutting down and abandoning module SkeletalMeshEditor (695)
+[2021.03.26-08.06.11:300][571]LogModuleManager: Shutting down and abandoning module LogVisualizer (692)
+[2021.03.26-08.06.11:302][571]LogModuleManager: Shutting down and abandoning module IntroTutorials (690)
+[2021.03.26-08.06.11:302][571]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (689)
+[2021.03.26-08.06.11:302][571]LogModuleManager: Shutting down and abandoning module LuminPlatformEditor (686)
+[2021.03.26-08.06.11:302][571]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (684)
+[2021.03.26-08.06.11:303][571]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (682)
+[2021.03.26-08.06.11:303][571]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (681)

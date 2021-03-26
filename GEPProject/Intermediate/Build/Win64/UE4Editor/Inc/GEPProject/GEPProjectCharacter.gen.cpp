@@ -102,14 +102,6 @@ void EmptyLinkFunctionForGeneratedCodeGEPProjectCharacter() {}
 		P_THIS->Save(Z_Param_saveInstance);
 		P_NATIVE_END;
 	}
-	DEFINE_FUNCTION(AGEPProjectCharacter::execDamagePlayer)
-	{
-		P_GET_PROPERTY(FFloatProperty,Z_Param_damageAmount);
-		P_FINISH;
-		P_NATIVE_BEGIN;
-		P_THIS->DamagePlayer(Z_Param_damageAmount);
-		P_NATIVE_END;
-	}
 	DEFINE_FUNCTION(AGEPProjectCharacter::execLoseCurrency)
 	{
 		P_GET_PROPERTY(FIntProperty,Z_Param_curToLose);
@@ -460,7 +452,6 @@ void EmptyLinkFunctionForGeneratedCodeGEPProjectCharacter() {}
 	{
 		UClass* Class = AGEPProjectCharacter::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
-			{ "DamagePlayer", &AGEPProjectCharacter::execDamagePlayer },
 			{ "FirePressed", &AGEPProjectCharacter::execFirePressed },
 			{ "FireReleased", &AGEPProjectCharacter::execFireReleased },
 			{ "GainCurrency", &AGEPProjectCharacter::execGainCurrency },
@@ -496,38 +487,6 @@ void EmptyLinkFunctionForGeneratedCodeGEPProjectCharacter() {}
 			{ "UseEnergy", &AGEPProjectCharacter::execUseEnergy },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
-	}
-	struct Z_Construct_UFunction_AGEPProjectCharacter_DamagePlayer_Statics
-	{
-		struct GEPProjectCharacter_eventDamagePlayer_Parms
-		{
-			float damageAmount;
-		};
-		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_damageAmount;
-		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
-#endif
-		static const UE4CodeGen_Private::FFunctionParams FuncParams;
-	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AGEPProjectCharacter_DamagePlayer_Statics::NewProp_damageAmount = { "damageAmount", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(GEPProjectCharacter_eventDamagePlayer_Parms, damageAmount), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AGEPProjectCharacter_DamagePlayer_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AGEPProjectCharacter_DamagePlayer_Statics::NewProp_damageAmount,
-	};
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AGEPProjectCharacter_DamagePlayer_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Player/GEPProjectCharacter.h" },
-	};
-#endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AGEPProjectCharacter_DamagePlayer_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AGEPProjectCharacter, nullptr, "DamagePlayer", nullptr, nullptr, sizeof(GEPProjectCharacter_eventDamagePlayer_Parms), Z_Construct_UFunction_AGEPProjectCharacter_DamagePlayer_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AGEPProjectCharacter_DamagePlayer_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AGEPProjectCharacter_DamagePlayer_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AGEPProjectCharacter_DamagePlayer_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_AGEPProjectCharacter_DamagePlayer()
-	{
-		static UFunction* ReturnFunction = nullptr;
-		if (!ReturnFunction)
-		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AGEPProjectCharacter_DamagePlayer_Statics::FuncParams);
-		}
-		return ReturnFunction;
 	}
 	struct Z_Construct_UFunction_AGEPProjectCharacter_FirePressed_Statics
 	{
@@ -1393,11 +1352,6 @@ void EmptyLinkFunctionForGeneratedCodeGEPProjectCharacter() {}
 #endif
 		static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_currency;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_canBeDamaged_MetaData[];
-#endif
-		static void NewProp_canBeDamaged_SetBit(void* Obj);
-		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_canBeDamaged;
-#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_interactRange_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_interactRange;
@@ -1448,7 +1402,6 @@ void EmptyLinkFunctionForGeneratedCodeGEPProjectCharacter() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_GEPProject,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AGEPProjectCharacter_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AGEPProjectCharacter_DamagePlayer, "DamagePlayer" }, // 2136736278
 		{ &Z_Construct_UFunction_AGEPProjectCharacter_FirePressed, "FirePressed" }, // 1437299718
 		{ &Z_Construct_UFunction_AGEPProjectCharacter_FireReleased, "FireReleased" }, // 998928494
 		{ &Z_Construct_UFunction_AGEPProjectCharacter_GainCurrency, "GainCurrency" }, // 2601200540
@@ -1497,17 +1450,6 @@ void EmptyLinkFunctionForGeneratedCodeGEPProjectCharacter() {}
 	};
 #endif
 	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UClass_AGEPProjectCharacter_Statics::NewProp_currency = { "currency", nullptr, (EPropertyFlags)0x0040000000000001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AGEPProjectCharacter, currency), METADATA_PARAMS(Z_Construct_UClass_AGEPProjectCharacter_Statics::NewProp_currency_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AGEPProjectCharacter_Statics::NewProp_currency_MetaData)) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AGEPProjectCharacter_Statics::NewProp_canBeDamaged_MetaData[] = {
-		{ "Category", "PlayerVariables" },
-		{ "ModuleRelativePath", "Player/GEPProjectCharacter.h" },
-	};
-#endif
-	void Z_Construct_UClass_AGEPProjectCharacter_Statics::NewProp_canBeDamaged_SetBit(void* Obj)
-	{
-		((AGEPProjectCharacter*)Obj)->canBeDamaged = 1;
-	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AGEPProjectCharacter_Statics::NewProp_canBeDamaged = { "canBeDamaged", nullptr, (EPropertyFlags)0x0040000000000001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AGEPProjectCharacter), &Z_Construct_UClass_AGEPProjectCharacter_Statics::NewProp_canBeDamaged_SetBit, METADATA_PARAMS(Z_Construct_UClass_AGEPProjectCharacter_Statics::NewProp_canBeDamaged_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AGEPProjectCharacter_Statics::NewProp_canBeDamaged_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AGEPProjectCharacter_Statics::NewProp_interactRange_MetaData[] = {
 		{ "Category", "PlayerVariables" },
@@ -1596,7 +1538,6 @@ void EmptyLinkFunctionForGeneratedCodeGEPProjectCharacter() {}
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AGEPProjectCharacter_Statics::NewProp_equippedWeapon = { "equippedWeapon", nullptr, (EPropertyFlags)0x004000000008001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AGEPProjectCharacter, equippedWeapon), Z_Construct_UClass_UChildActorComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AGEPProjectCharacter_Statics::NewProp_equippedWeapon_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AGEPProjectCharacter_Statics::NewProp_equippedWeapon_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AGEPProjectCharacter_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGEPProjectCharacter_Statics::NewProp_currency,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGEPProjectCharacter_Statics::NewProp_canBeDamaged,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGEPProjectCharacter_Statics::NewProp_interactRange,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGEPProjectCharacter_Statics::NewProp_MouseLookUpRate,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGEPProjectCharacter_Statics::NewProp_MouseTurnRate,
@@ -1641,7 +1582,7 @@ void EmptyLinkFunctionForGeneratedCodeGEPProjectCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AGEPProjectCharacter, 2820576928);
+	IMPLEMENT_CLASS(AGEPProjectCharacter, 825088463);
 	template<> GEPPROJECT_API UClass* StaticClass<AGEPProjectCharacter>()
 	{
 		return AGEPProjectCharacter::StaticClass();

@@ -24,7 +24,6 @@
 #include "E:/Github/GEP/GEPProject/Source/GEPProject/Interfaces/Pawnable.cpp"
 #include "E:/Github/GEP/GEPProject/Source/GEPProject/Interfaces/Shootable.cpp"
 #include "E:/Github/GEP/GEPProject/Source/GEPProject/Player/GEPPlayerController.cpp"
-#include "E:/Github/GEP/GEPProject/Source/GEPProject/Player/GEPProjectCharacter.cpp"
 #include "E:/Github/GEP/GEPProject/Source/GEPProject/Props/PurchaseableWeaponStand.cpp"
 #include "E:/Github/GEP/GEPProject/Source/GEPProject/Props/UpgradeStand.cpp"
 #include "E:/Github/GEP/GEPProject/Source/GEPProject/TestBlock.cpp"
@@ -45,5 +44,4 @@
 #include "E:/Github/GEP/GEPProject/Source/GEPProject/Weapons/Weapon_Projectile.cpp"
 #include "E:/Github/GEP/GEPProject/Source/GEPProject/Weapons/Weapon_Raygun.cpp"
 #include "E:/Github/GEP/GEPProject/Source/GEPProject/Weapons/Weapon_Rifle.cpp"
-#include "E:/Github/GEP/GEPProject/Source/GEPProject/Weapons/Weapon_Shotgun.cpp"
 #include "E:/Github/GEP/GEPProject/Source/GEPProject/Weapons/Weapon_SMG.cpp"

@@ -63,7 +63,6 @@ static inline void FOnLocalEnergyUpdate_DelegateWrapper(const FMulticastScriptDe
 	DECLARE_FUNCTION(execUnlockWeapon); \
 	DECLARE_FUNCTION(execLoad); \
 	DECLARE_FUNCTION(execSave); \
-	DECLARE_FUNCTION(execDamagePlayer); \
 	DECLARE_FUNCTION(execLoseCurrency); \
 	DECLARE_FUNCTION(execGainCurrency); \
 	DECLARE_FUNCTION(execTurn); \
@@ -101,7 +100,6 @@ static inline void FOnLocalEnergyUpdate_DelegateWrapper(const FMulticastScriptDe
 	DECLARE_FUNCTION(execUnlockWeapon); \
 	DECLARE_FUNCTION(execLoad); \
 	DECLARE_FUNCTION(execSave); \
-	DECLARE_FUNCTION(execDamagePlayer); \
 	DECLARE_FUNCTION(execLoseCurrency); \
 	DECLARE_FUNCTION(execGainCurrency); \
 	DECLARE_FUNCTION(execTurn); \
@@ -231,7 +229,6 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AGEPProjectCharacter); \
 	FORCEINLINE static uint32 __PPO__healthComponent() { return STRUCT_OFFSET(AGEPProjectCharacter, healthComponent); } \
 	FORCEINLINE static uint32 __PPO__energyComponent() { return STRUCT_OFFSET(AGEPProjectCharacter, energyComponent); } \
 	FORCEINLINE static uint32 __PPO__interactRange() { return STRUCT_OFFSET(AGEPProjectCharacter, interactRange); } \
-	FORCEINLINE static uint32 __PPO__canBeDamaged() { return STRUCT_OFFSET(AGEPProjectCharacter, canBeDamaged); } \
 	FORCEINLINE static uint32 __PPO__currency() { return STRUCT_OFFSET(AGEPProjectCharacter, currency); }
 
 
