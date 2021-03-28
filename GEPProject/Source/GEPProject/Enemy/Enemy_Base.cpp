@@ -40,9 +40,10 @@ void AEnemy_Base::EndOfLifetime()
 	//Take life from player
 	AActor* player = UGameplayStatics::GetPlayerController(GetWorld(), 0)->GetCharacter();
 	UGameplayStatics::ApplyDamage(player, damage, this->GetInstigatorController(), this, TSubclassOf<UDamageType>(UDamageType::StaticClass()));
-	//GetGameInstance()->GetSubsystem<UEventSystem>()->OnDamagePlayer(damage);
 	Death();	
 }
+
+
 
 void AEnemy_Base::Death()
 {

@@ -73,7 +73,7 @@ void AGEPProjectCharacter::Init_Implementation()
 	energyComponent->SetEventInstance(eventSystemInstance);
 	energyComponent->Init();
 	energyComponent->onCompEnergyUpdate.AddDynamic(this, &AGEPProjectCharacter::UpdateEnergy);
-
+	
 	AActor* child = equippedWeapon->GetChildActor();
 	if (UKismetSystemLibrary::DoesImplementInterface(child, UGetWeaponBase::StaticClass()))
 	{
@@ -84,6 +84,8 @@ void AGEPProjectCharacter::Init_Implementation()
 	
 	eventSystemInstance->OnHealthUpdate(healthComponent->GetHealthPercent());
 	eventSystemInstance->OnEnergyUpdate(energyComponent->GetEnergyPercent());
+
+	GEngine->AddOnScreenDebugMessage(-1,3.0f,FColor::Red, "hi");
 	Super::BeginPlay();
 }
 
@@ -166,7 +168,7 @@ void AGEPProjectCharacter::GetUpdatedMultipliers()
 	}
 }
 
-void AGEPProjectCharacter::GainCurrency(int curToGain)
+void AGEPProjectCharacter::GainCurrency(int curToGain) 
 {
 	currency += curToGain;
 	GetGameInstance()->GetSubsystem<UEventSystem>()->OnCurrencyUpdate(currency);

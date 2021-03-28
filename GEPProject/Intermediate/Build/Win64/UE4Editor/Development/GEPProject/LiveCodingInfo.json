@@ -5,7 +5,6 @@
 			"HealthComponent.cpp.obj",
 			"PlayerEnergyComponent.cpp.obj",
 			"PlayerHealthComponent.cpp.obj",
-			"Enemy_Base.cpp.obj",
 			"EnemySpawner.cpp.obj",
 			"EventSystem.cpp.obj",
 			"GEPProject.cpp.obj",
@@ -27,7 +26,6 @@
 			"Pawnable.cpp.obj",
 			"Shootable.cpp.obj",
 			"GEPPlayerController.cpp.obj",
-			"GEPProjectCharacter.cpp.obj",
 			"PurchaseableWeaponStand.cpp.obj",
 			"UpgradeStand.cpp.obj",
 			"TestBlock.cpp.obj",
@@ -49,7 +47,9 @@
 			"Weapon_Raygun.cpp.obj",
 			"Weapon_Rifle.cpp.obj",
 			"Weapon_Shotgun.cpp.obj",
-			"Weapon_SMG.cpp.obj"
+			"Weapon_SMG.cpp.obj",
+			"Enemy_Base.cpp.obj",
+			"GEPProjectCharacter.cpp.obj"
 		],
 		"Module.GEPProject.gen.cpp.obj": [
 			"Enemy_Base.gen.cpp.obj",

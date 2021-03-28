@@ -11,24 +11,18 @@
     <list default="true" id="37f4dc96-c088-407b-80a2-d8740801dcca" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GEPProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GEPProject/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-GEPProject.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-GEPProject.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/AI/AIBB.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/AI/AIBB.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/AI/AIFunctionLibrary.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/AI/AIFunctionLibrary.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/AI/BP_AIMoveToParameters.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/AI/BP_AIMoveToParameters.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/AI/BP_BaseAIC.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/AI/BP_BaseAIC.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/AI/BP_FlyingAI.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/AI/BP_FlyingAI.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/AI/BTT_AddForceToLocation.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/AI/BTT_AddForceToLocation.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/AI/BTT_LocationAbovePlayer.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/AI/BTT_LocationAbovePlayer.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/AI/BTT_SetBBKey.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/AI/BTT_SetBBKey.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/AI/BT_FlyingAI.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/AI/BT_FlyingAI.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/AI/KeyTypes.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/AI/KeyTypes.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Enemies/BP_DefaultEnemy.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Enemies/BP_DefaultEnemy.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/GameLevel.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameLevel.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/UI/BP_MainUI.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/UI/BP_MainUI.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/Build/SourceFileCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/SourceFileCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/GEPProjectEditor/ActionHistory.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/GEPProjectEditor/ActionHistory.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/GEPProjectEditor/Development/DependencyCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/GEPProjectEditor/Development/DependencyCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/GEPProjectEditor/Development/Makefile.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/GEPProjectEditor/Development/Makefile.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/GEPProjectEditor/Development/Metadata-HotReload.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/GEPProjectEditor/Development/Metadata-HotReload.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/LiveCodingInfo.json" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/LiveCodingInfo.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/Module.GEPProject.gen.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/Module.GEPProject.gen.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/Module.GEPProject.gen.cpp.old" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/Module.GEPProject.gen.cpp.old" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/Module.GEPProject.gen.cpp.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/Module.GEPProject.gen.cpp.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/Module.GEPProject.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/Module.GEPProject.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/Module.GEPProject.cpp.old" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/Module.GEPProject.cpp.old" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/Module.GEPProject.cpp.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/Module.GEPProject.cpp.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/UE4Editor-GEPProject.dll.response" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/UE4Editor-GEPProject.dll.response" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/UE4Editor-GEPProject.dll.response.old" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/UE4Editor-GEPProject.dll.response.old" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/UE4Editor-GEPProject.exp" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/UE4Editor-GEPProject.exp" afterDir="false" />
@@ -37,175 +31,63 @@
       <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Inc/GEPProject/Timestamp" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Inc/GEPProject/Timestamp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Intermediate/CachedAssetRegistry.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/CachedAssetRegistry.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Saved/AutoScreenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/Saved/AutoScreenshot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Autosaves/Game/AI/BT_FlyingAI_Auto6.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Saved/Autosaves/Game/AI/BT_FlyingAI_Auto6.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Autosaves/Game/GameLevel_Auto1.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Saved/Autosaves/Game/GameLevel_Auto1.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Autosaves/Game/GameLevel_Auto2.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Saved/Autosaves/Game/GameLevel_Auto2.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Autosaves/Game/GameLevel_Auto3.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Saved/Autosaves/Game/GameLevel_Auto3.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Autosaves/Game/GameLevel_Auto4.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Saved/Autosaves/Game/GameLevel_Auto4.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Autosaves/Game/GameLevel_Auto5.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Saved/Autosaves/Game/GameLevel_Auto5.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Autosaves/Game/GameLevel_Auto7.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Saved/Autosaves/Game/GameLevel_Auto7.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Saved/Autosaves/Game/UI/BP_MainUI_Auto1.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Saved/Autosaves/Game/UI/BP_MainUI_Auto1.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Saved/Autosaves/PackageRestoreData.json" beforeDir="false" afterPath="$PROJECT_DIR$/Saved/Autosaves/PackageRestoreData.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_AutoRifleStand_2021-03-18-11-54-18.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_DefaultEnemyLvl2_2021-03-18-12-05-51.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_DefaultEnemy_2021-03-17-16-15-01.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_EnemySpawner_2021-03-13-17-29-23.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_EnemySpawner_2021-03-13-17-34-43.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_EnemySpawner_2021-03-15-02-35-06.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_EnemySpawner_2021-03-15-02-56-14.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_GEPGamemode_2021-03-13-17-17-49.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_GEPPlayerController_2021-03-15-15-52-46.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_MainUI_2021-03-17-19-32-21.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_PurchaseableWeaponStand_2021-03-17-11-54-34.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_PurchaseableWeaponStand_2021-03-17-12-37-06.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_PurchaseableWeaponStand_2021-03-17-12-45-56.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_PurchaseableWeaponStand_2021-03-17-12-51-21.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_PurchaseableWeaponStand_2021-03-17-12-57-25.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_PurchaseableWeaponStand_2021-03-17-13-03-53.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_PurchaseableWeaponStand_2021-03-17-13-17-34.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_PurchaseableWeaponStand_2021-03-17-13-24-45.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_PurchaseableWeaponStand_2021-03-17-13-30-04.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_PurchaseableWeaponStand_2021-03-17-13-52-47.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_PurchaseableWeaponStand_2021-03-17-13-59-49.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_PurchaseableWeaponStand_2021-03-17-14-05-01.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_PurchaseableWeaponStand_2021-03-17-18-54-09.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_RayGunStand_2021-03-18-11-55-46.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_RevolverStand_2021-03-17-12-16-29.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_RevolverStand_2021-03-17-12-22-09.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_RevolverStand_2021-03-17-12-33-18.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_RevolverStand_2021-03-17-13-02-50.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_RevolverStand_2021-03-17-13-08-20.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_RevolverStand_2021-03-17-13-17-53.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_RifleStand_2021-03-17-13-11-31.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_RifleStand_2021-03-17-13-17-53.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_ShotgunStand_2021-03-17-13-17-53.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_SmgStand_2021-03-17-13-13-56.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_Weapon_AutoRifle_2021-03-18-11-51-07.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_Weapon_AutoRifle_2021-03-18-12-14-19.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_Weapon_Base_2021-03-13-21-42-35.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_Weapon_ChargeRevolver_2021-03-14-18-57-47.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_Weapon_ChargeRevolver_2021-03-14-19-04-26.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_Weapon_ChargeRevolver_2021-03-15-10-12-24.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_Weapon_ChargeRevolver_2021-03-18-12-14-38.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_Weapon_Hitscan_2021-03-13-21-17-40.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_Weapon_Hitscan_2021-03-13-21-26-38.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_Weapon_Hitscan_2021-03-13-21-36-20.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_Weapon_Hitscan_2021-03-15-10-12-13.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_Weapon_Pistol_2021-03-13-21-39-53.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_Weapon_Pistol_2021-03-13-22-32-54.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_Weapon_Pistol_2021-03-15-10-12-33.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_Weapon_Pistol_2021-03-18-12-15-07.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_Weapon_RayGun_2021-03-18-12-12-05.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_Weapon_Revolver_2021-03-13-21-26-27.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_Weapon_Revolver_2021-03-13-21-42-14.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_Weapon_Revolver_2021-03-13-21-56-26.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_Weapon_Revolver_2021-03-13-22-32-46.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_Weapon_Revolver_2021-03-18-12-15-41.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_Weapon_Rifle_2021-03-13-21-41-55.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_Weapon_Rifle_2021-03-13-22-29-53.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_Weapon_Rifle_2021-03-15-10-12-44.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_Weapon_Rifle_2021-03-18-12-15-54.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_Weapon_SMG_2021-03-14-18-47-08.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_Weapon_SMG_2021-03-15-10-11-53.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_Weapon_SMG_2021-03-18-12-16-24.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_Weapon_Shotgun_2021-03-14-19-19-41.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_Weapon_Shotgun_2021-03-15-10-12-51.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_Weapon_Shotgun_2021-03-18-12-16-08.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/BaseMaterial_2021-03-13-22-09-11.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/BaseMaterial_2021-03-13-22-33-38.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/ChargeSound_2021-03-14-19-02-48.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/CubeMaterialOverride_2021-03-13-22-09-11.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/CubeMaterialOverride_2021-03-13-22-33-38.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/FirstPersonCharacter_2021-03-13-21-20-39.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/FirstPersonCharacter_2021-03-13-21-31-38.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/FirstPersonCharacter_2021-03-13-21-36-45.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/FirstPersonCharacter_2021-03-13-21-55-14.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/FirstPersonCharacter_2021-03-13-22-33-38.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/FirstPersonCharacter_2021-03-14-18-47-21.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/FirstPersonCharacter_2021-03-14-19-04-44.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/FirstPersonCharacter_2021-03-14-19-20-18.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/FirstPersonCharacter_2021-03-15-10-16-03.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/FirstPersonCharacter_2021-03-15-10-37-58.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/FirstPersonCharacter_2021-03-17-11-32-15.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/GameLevel_2021-03-13-17-17-07.umap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/GameLevel_2021-03-13-17-26-26.umap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/GameLevel_2021-03-13-17-42-15.umap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/GameLevel_2021-03-13-17-58-13.umap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/GameLevel_2021-03-13-20-10-55.umap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/GameLevel_2021-03-13-21-43-07.umap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/GameLevel_2021-03-13-22-25-10.umap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/GameLevel_2021-03-13-22-33-32.umap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/GameLevel_2021-03-14-18-49-55.umap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/GameLevel_2021-03-14-18-54-58.umap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/GameLevel_2021-03-14-19-04-14.umap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/GameLevel_2021-03-14-19-22-32.umap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/GameLevel_2021-03-15-02-35-25.umap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/GameLevel_2021-03-15-02-57-13.umap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/GameLevel_2021-03-15-10-04-54.umap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/GameLevel_2021-03-15-10-16-03.umap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/GameLevel_2021-03-15-15-41-43.umap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/GameLevel_2021-03-17-11-25-22.umap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/GameLevel_2021-03-17-11-38-10.umap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/GameLevel_2021-03-17-11-52-29.umap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/GameLevel_2021-03-17-12-17-10.umap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/GameLevel_2021-03-17-12-23-22.umap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/GameLevel_2021-03-17-12-39-14.umap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/GameLevel_2021-03-17-12-59-23.umap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/GameLevel_2021-03-17-13-15-20.umap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/GameLevel_2021-03-17-13-30-04.umap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/GameLevel_2021-03-17-13-41-59.umap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/GameLevel_2021-03-17-13-59-02.umap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/GameLevel_2021-03-17-14-08-17.umap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/GameLevel_2021-03-17-19-11-18.umap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/GameLevel_2021-03-17-19-34-35.umap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/GameLevel_2021-03-18-11-56-11.umap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/GameLevel_2021-03-18-12-16-27.umap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/GameLevel_BuiltData_2021-03-13-17-17-08.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/GameLevel_BuiltData_2021-03-13-17-26-26.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/GameLevel_BuiltData_2021-03-13-17-58-13.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/GameLevel_BuiltData_2021-03-13-20-10-55.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/GameLevel_BuiltData_2021-03-13-21-44-57.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/GameLevel_BuiltData_2021-03-13-22-25-10.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/GameLevel_BuiltData_2021-03-13-22-33-32.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/GameLevel_BuiltData_2021-03-14-18-54-58.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/GameLevel_BuiltData_2021-03-14-19-04-14.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/GameLevel_BuiltData_2021-03-14-19-22-32.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/GameLevel_BuiltData_2021-03-15-02-35-25.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/GameLevel_BuiltData_2021-03-15-02-58-28.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/GameLevel_BuiltData_2021-03-15-10-04-54.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/GameLevel_BuiltData_2021-03-15-10-17-00.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/GameLevel_BuiltData_2021-03-15-15-41-43.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/GameLevel_BuiltData_2021-03-17-11-28-05.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/GameLevel_BuiltData_2021-03-17-11-52-29.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/GameLevel_BuiltData_2021-03-17-12-17-10.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/GameLevel_BuiltData_2021-03-17-12-23-23.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/GameLevel_BuiltData_2021-03-17-13-00-54.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/GameLevel_BuiltData_2021-03-17-13-15-20.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/GameLevel_BuiltData_2021-03-17-13-31-59.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/GameLevel_BuiltData_2021-03-17-14-08-17.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/GameLevel_BuiltData_2021-03-17-19-11-28.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/GameLevel_BuiltData_2021-03-18-11-56-11.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/GameLevel_BuiltData_2021-03-18-12-16-27.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/IngameUI_2021-03-17-19-36-55.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/P_HitParticle_2021-03-15-10-11-10.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/P_HitParticle_2021-03-15-10-16-30.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/P_MuzzleFlash_2021-03-13-22-31-53.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/P_MuzzleFlash_2021-03-15-10-11-19.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/P_MuzzleFlash_2021-03-15-10-16-23.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/P_MuzzleFlash_2021-03-17-08-53-44.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/P_MuzzleFlash_2021-03-18-12-11-48.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/SM_Wep_Pistol_01_Skeleton_2021-03-17-19-11-18.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/lambert1_2021-03-15-09-50-09.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/lambert1_2021-03-15-09-55-14.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Config/CrashReportClient/UE4CC-Windows-0EC4DC804CDE636755C592A4A8136BEF/CrashReportClient.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_AutoRifleStand_2021-03-18-12-25-16.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_GEPGamemode_2021-03-19-01-49-22.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_GEPGamemode_2021-03-19-02-01-16.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_GEPGamemode_2021-03-19-02-07-23.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_MainUI_2021-03-19-01-53-08.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_MainUI_2021-03-19-02-01-58.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_MainUI_2021-03-19-02-17-09.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_MainUI_2021-03-19-02-27-46.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_MainUI_2021-03-19-02-35-37.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_MainUI_2021-03-19-02-45-30.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_MainUI_2021-03-19-02-50-32.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_MainUI_2021-03-19-02-55-39.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_MainUI_2021-03-19-07-48-31.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_PurchaseableWeaponStand_2021-03-19-08-12-15.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_PurchaseableWeaponStand_2021-03-19-08-18-10.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_PurchaseableWeaponStand_2021-03-19-08-28-04.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_RayGunStand_2021-03-18-12-25-16.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_RayGunStand_2021-03-19-08-38-27.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_RevolverStand_2021-03-18-12-25-16.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_RifleStand_2021-03-18-12-25-17.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_RifleStand_2021-03-19-08-38-27.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_ShotgunStand_2021-03-18-12-25-17.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_ShotgunStand_2021-03-19-08-14-17.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_ShotgunStand_2021-03-19-08-38-27.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_SmgStand_2021-03-18-12-25-17.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_SmgStand_2021-03-19-08-38-27.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_Weapon_Pistol_2021-03-19-08-08-14.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Saved/Backup/FirstPersonCharacter_2021-03-18-12-25-16.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Saved/Backup/GameLevel_2021-03-18-12-25-11.umap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Saved/Backup/GameLevel_2021-03-19-01-51-49.umap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Saved/Backup/GameLevel_2021-03-19-02-01-20.umap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Saved/Backup/GameLevel_2021-03-19-02-07-31.umap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Saved/Backup/GameLevel_2021-03-19-02-50-46.umap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Saved/Backup/GameLevel_2021-03-19-08-02-10.umap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Saved/Backup/GameLevel_2021-03-19-08-09-48.umap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Saved/Backup/GameLevel_2021-03-19-08-28-27.umap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Saved/Backup/GameLevel_BuiltData_2021-03-18-12-25-11.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Saved/Backup/GameLevel_BuiltData_2021-03-19-02-50-46.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Saved/Backup/GameLevel_BuiltData_2021-03-19-08-02-10.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Saved/Backup/GameLevel_BuiltData_2021-03-19-08-09-48.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Saved/Backup/GameLevel_BuiltData_2021-03-19-08-28-27.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Saved/Backup/lambert1_2021-03-19-08-06-12.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Saved/Config/CrashReportClient/UE4CC-Windows-12B27C3C487B7626FEBDE2BE8BC5B995/CrashReportClient.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Saved/Config/CrashReportClient/UE4CC-Windows-1A92E91D406BB4EAD05396823016B9BD/CrashReportClient.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Saved/Config/CrashReportClient/UE4CC-Windows-677AC5E1460323A47F98BF9F6D50A552/CrashReportClient.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Saved/Config/CrashReportClient/UE4CC-Windows-6F96692243A76762E51EA683AA70E200/CrashReportClient.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Saved/Config/CrashReportClient/UE4CC-Windows-9AB538804A7FE28607A500922D600FB2/CrashReportClient.ini" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Saved/Config/Windows/EditorPerProjectUserSettings.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Saved/Config/Windows/EditorPerProjectUserSettings.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Config/Windows/Engine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Saved/Config/Windows/Engine.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Config/WorldState/1743361974.json" beforeDir="false" afterPath="$PROJECT_DIR$/Saved/Config/WorldState/1743361974.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Logs/GEPProject-backup-2021.03.24-06.05.44.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Logs/GEPProject-backup-2021.03.24-06.59.32.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Logs/GEPProject-backup-2021.03.24-07.07.09.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Saved/Logs/GEPProject-backup-2021.03.23-22.28.04.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Saved/Logs/GEPProject-backup-2021.03.23-22.30.47.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Saved/Logs/GEPProject-backup-2021.03.24-10.42.29.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Saved/Logs/GEPProject-backup-2021.03.24-21.25.59.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Saved/Logs/GEPProject.log" beforeDir="false" afterPath="$PROJECT_DIR$/Saved/Logs/GEPProject.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/SaveGames/Save.sav" beforeDir="false" afterPath="$PROJECT_DIR$/Saved/SaveGames/Save.sav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/GEPProject/Weapons/Weapon_Hitscan.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/GEPProject/Weapons/Weapon_Hitscan.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/GEPProject/Enemy/Enemy_Base.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/GEPProject/Enemy/Enemy_Base.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/GEPProject/Player/GEPProjectCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/GEPProject/Player/GEPProjectCharacter.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -226,6 +108,7 @@
     <setting file="file://$PROJECT_DIR$/../../../epk/UE_4.25/Engine/Source/Runtime/Engine/Classes/Kismet/GameplayStatics.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../epk/UE_4.25/Engine/Source/Runtime/Engine/Classes/GameFramework/PlayerController.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../epk/UE_4.25/Engine/Source/Runtime/Engine/Private/GameModeBase.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../epk/UE_4.25/Engine/Source/Runtime/Engine/Classes/Components/ActorComponent.h" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../epk/UE_4.25/Engine/Source/Runtime/AIModule/Classes/Perception/AISense_Damage.h" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../epk/UE_4.25/Engine/Source/Runtime/Engine/Classes/Engine/World.h" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../epk/UE_4.25/Engine/Source/Runtime/Core/Public/Math/Box.h" root0="FORCE_HIGHLIGHTING" />
@@ -252,6 +135,7 @@
     <setting file="file://$PROJECT_DIR$/../../../epk/UE_4.25/Engine/Source/Runtime/Engine/Private/GameplayStatics.cpp" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../epk/UE_4.25/Engine/Source/Runtime/Engine/Classes/GameFramework/Character.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../epk/UE_4.25/Engine/Source/Runtime/Engine/Classes/Engine/Engine.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../epk/UE_4.25/Engine/Source/Runtime/Engine/Private/KismetSystemLibrary.cpp" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../epk/UE_4.25/Engine/Source/Runtime/Engine/Private/PrimitiveComponentPhysics.cpp" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../epk/UE_4.25/Engine/Source/Runtime/Core/Public/UObject/ScriptDelegates.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../epk/UE_4.25/Engine/Source/Runtime/Engine/Classes/Engine/EngineBaseTypes.h" root0="SKIP_HIGHLIGHTING" />
@@ -267,7 +151,6 @@
       <option value="$PROJECT_DIR$/Source/GEPProject/Props/UpgradeStand.cpp" />
       <option value="$PROJECT_DIR$/Source/GEPProject/GEPProjectHUD.cpp" />
       <option value="$PROJECT_DIR$/Source/GEPProject/Enemy/Enemy_Base.h" />
-      <option value="$PROJECT_DIR$/Source/GEPProject/Enemy/Enemy_Base.cpp" />
       <option value="$PROJECT_DIR$/Source/GEPProject/Upgrades/FUpgrade.h" />
       <option value="$PROJECT_DIR$/Source/GEPProject/GEPProjectGameMode.h" />
       <option value="$PROJECT_DIR$/Source/GEPProject/EventSystem.h" />
@@ -308,8 +191,9 @@
       <option value="$PROJECT_DIR$/Source/GEPProject/Player/GEPPlayerController.h" />
       <option value="$PROJECT_DIR$/Source/GEPProject/Player/GEPPlayerController.cpp" />
       <option value="$PROJECT_DIR$/Source/GEPProject/Player/GEPProjectCharacter.h" />
-      <option value="$PROJECT_DIR$/Source/GEPProject/Player/GEPProjectCharacter.cpp" />
       <option value="$PROJECT_DIR$/Source/GEPProject/Weapons/Weapon_Hitscan.cpp" />
+      <option value="$PROJECT_DIR$/Source/GEPProject/Enemy/Enemy_Base.cpp" />
+      <option value="$PROJECT_DIR$/Source/GEPProject/Player/GEPProjectCharacter.cpp" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1otT4i5qLtCQz1jfo8j4ib5DORs" />
@@ -617,6 +501,8 @@
       <workItem from="1616733421201" duration="1024000" />
       <workItem from="1616752632858" duration="1943000" />
       <workItem from="1616770174665" duration="1672000" />
+      <workItem from="1616870837217" duration="1225000" />
+      <workItem from="1616876709655" duration="5807000" />
     </task>
     <servers />
   </component>
