@@ -3,11 +3,8 @@
 
 #include "Weapon_Hitscan.h"
 
-#include "K2Node_GetSubsystem.h"
 #include "GEPProject/Interfaces/Shootable.h"
 #include "Engine/World.h"
-#include "Engine/Engine.h"
-#include "Components/ArrowComponent.h"
 #include "Camera/PlayerCameraManager.h"
 #include "Kismet/GameplayStatics.h"
 

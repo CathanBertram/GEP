@@ -1,0 +1,1422 @@
+﻿Log file open, 03/29/21 02:48:58
+LogInit: Display: Running engine for game: GEPProject
+LogPlatformFile: Not using cached read wrapper
+LogTaskGraph: Started task graph with 5 named threads and 47 total threads with 3 sets of task threads.
+LogStats: Stats thread started at 0.208279
+LogD3D11RHI: Loaded GFSDK_Aftermath_Lib.x64.dll
+LogICUInternationalization: ICU TimeZone Detection - Raw Offset: +0:00, Platform Override: ''
+LogPluginManager: Mounting plugin Paper2D
+LogPluginManager: Mounting plugin AISupport
+LogPluginManager: Mounting plugin LightPropagationVolume
+LogPluginManager: Mounting plugin CameraShakePreviewer
+LogPluginManager: Mounting plugin ActorLayerUtilities
+LogPluginManager: Mounting plugin AnimationSharing
+LogPluginManager: Mounting plugin CLionSourceCodeAccess
+LogPluginManager: Mounting plugin CodeLiteSourceCodeAccess
+LogPluginManager: Mounting plugin GitSourceControl
+LogPluginManager: Mounting plugin KDevelopSourceCodeAccess
+LogPluginManager: Mounting plugin NullSourceCodeAccess
+LogPluginManager: Mounting plugin PerforceSourceControl
+LogPluginManager: Mounting plugin PlasticSourceControl
+LogPluginManager: Mounting plugin RiderLink
+LogPluginManager: Mounting plugin RiderSourceCodeAccess
+LogPluginManager: Mounting plugin SubversionSourceControl
+LogPluginManager: Mounting plugin UObjectPlugin
+LogPluginManager: Mounting plugin VisualStudioCodeSourceCodeAccess
+LogPluginManager: Mounting plugin VisualStudioSourceCodeAccess
+LogPluginManager: Mounting plugin XCodeSourceCodeAccess
+LogPluginManager: Mounting plugin AssetManagerEditor
+LogPluginManager: Mounting plugin CryptoKeys
+LogPluginManager: Mounting plugin CurveEditorTools
+LogPluginManager: Mounting plugin DataValidation
+LogPluginManager: Mounting plugin EditorScriptingUtilities
+LogPluginManager: Mounting plugin FacialAnimation
+LogPluginManager: Mounting plugin GameplayTagsEditor
+LogPluginManager: Mounting plugin GeometryMode
+LogPluginManager: Mounting plugin MacGraphicsSwitching
+LogPluginManager: Mounting plugin MaterialAnalyzer
+LogPluginManager: Mounting plugin MobileLauncherProfileWizard
+LogPluginManager: Mounting plugin PluginBrowser
+LogPluginManager: Mounting plugin SpeedTreeImporter
+LogPluginManager: Mounting plugin DatasmithContent
+LogPluginManager: Mounting plugin VariantManagerContent
+LogPluginManager: Mounting plugin AlembicImporter
+LogPluginManager: Mounting plugin AutomationUtils
+LogPluginManager: Mounting plugin BackChannel
+LogPluginManager: Mounting plugin ChaosCloth
+LogPluginManager: Mounting plugin ChaosClothEditor
+LogPluginManager: Mounting plugin ChaosEditor
+LogPluginManager: Mounting plugin ChaosNiagara
+LogPluginManager: Mounting plugin ChaosSolverPlugin
+LogPluginManager: Mounting plugin CharacterAI
+LogPluginManager: Mounting plugin GeometryCache
+LogPluginManager: Mounting plugin GeometryCollectionPlugin
+LogPluginManager: Mounting plugin GeometryProcessing
+LogPluginManager: Mounting plugin PlanarCut
+LogPluginManager: Mounting plugin PlatformCrypto
+LogPluginManager: Mounting plugin ProxyLODPlugin
+LogPluginManager: Mounting plugin SkeletalReduction
+LogPluginManager: Mounting plugin Text3D
+LogPluginManager: Mounting plugin Niagara
+LogPluginManager: Mounting plugin MagicLeap
+LogPluginManager: Mounting plugin MagicLeapLightEstimation
+LogPluginManager: Mounting plugin MagicLeapMedia
+LogPluginManager: Mounting plugin MagicLeapPassableWorld
+LogPluginManager: Mounting plugin MLSDK
+LogPluginManager: Mounting plugin AndroidMedia
+LogPluginManager: Mounting plugin AvfMedia
+LogPluginManager: Mounting plugin ImgMedia
+LogPluginManager: Mounting plugin MediaCompositing
+LogPluginManager: Mounting plugin MediaPlayerEditor
+LogPluginManager: Mounting plugin WebMMedia
+LogPluginManager: Mounting plugin WmfMedia
+LogPluginManager: Mounting plugin MeshPainting
+LogPluginManager: Mounting plugin TcpMessaging
+LogPluginManager: Mounting plugin UdpMessaging
+LogPluginManager: Mounting plugin ActorSequence
+LogPluginManager: Mounting plugin LevelSequenceEditor
+LogPluginManager: Mounting plugin MatineeToLevelSequence
+LogPluginManager: Mounting plugin MovieRenderPipeline
+LogPluginManager: Mounting plugin TemplateSequence
+LogPluginManager: Mounting plugin NetcodeUnitTest
+LogPluginManager: Mounting plugin NUTUnrealEngine4
+LogPluginManager: Mounting plugin OnlineSubsystemGooglePlay
+LogPluginManager: Mounting plugin OnlineSubsystemIOS
+LogPluginManager: Mounting plugin OnlineSubsystem
+LogPluginManager: Mounting plugin OnlineSubsystemNull
+LogPluginManager: Mounting plugin OnlineSubsystemUtils
+LogPluginManager: Mounting plugin LauncherChunkInstaller
+LogPluginManager: Mounting plugin AndroidDeviceProfileSelector
+LogPluginManager: Mounting plugin AndroidMoviePlayer
+LogPluginManager: Mounting plugin AndroidPermission
+LogPluginManager: Mounting plugin AppleImageUtils
+LogPluginManager: Mounting plugin AppleMoviePlayer
+LogPluginManager: Mounting plugin ArchVisCharacter
+LogPluginManager: Mounting plugin AssetTags
+LogPluginManager: Mounting plugin AudioCapture
+LogPluginManager: Mounting plugin CableComponent
+LogPluginManager: Mounting plugin CustomMeshComponent
+LogPluginManager: Mounting plugin EditableMesh
+LogPluginManager: Mounting plugin ExampleDeviceProfileSelector
+LogPluginManager: Mounting plugin GoogleCloudMessaging
+LogPluginManager: Mounting plugin GooglePAD
+LogPluginManager: Mounting plugin IOSDeviceProfileSelector
+LogPluginManager: Mounting plugin LinuxDeviceProfileSelector
+LogPluginManager: Mounting plugin LocationServicesBPLibrary
+LogPluginManager: Mounting plugin MobilePatchingUtils
+LogPluginManager: Mounting plugin OculusVR
+LogPluginManager: Mounting plugin PhysXVehicles
+LogPluginManager: Mounting plugin PostSplashScreen
+LogPluginManager: Mounting plugin ProceduralMeshComponent
+LogPluginManager: Mounting plugin RuntimePhysXCooking
+LogPluginManager: Mounting plugin SignificanceManager
+LogPluginManager: Mounting plugin SoundFields
+LogPluginManager: Mounting plugin SteamVR
+LogPluginManager: Mounting plugin Synthesis
+LogPluginManager: Mounting plugin WebMMoviePlayer
+LogPluginManager: Mounting plugin WindowsMoviePlayer
+LogPluginManager: Mounting plugin ScreenshotTools
+LogInit: Using libcurl 7.55.1-DEV
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.1.1
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - MaxHostConnections = 16  - Libcurl will limit the number of connections to a host
+LogInit:  - LocalHostAddr = Default
+LogInit:  - BufferSize = 65536
+LogOnline: OSS: Creating online subsystem instance for: NULL
+LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for module [NULL]
+LogInit: Build: ++UE4+Release-4.25-CL-14469661
+LogInit: Engine Version: 4.25.4-14469661+++UE4+Release-4.25
+LogInit: Compatible Engine Version: 4.25.0-13144385+++UE4+Release-4.25
+LogInit: Net CL: 13144385
+LogInit: OS: Windows 10 (Release 2004) (), CPU: AMD Ryzen 7 2700X Eight-Core Processor         , GPU: NVIDIA GeForce RTX 2060
+LogInit: Compiled (64-bit): Oct 11 2020 08:10:49
+LogInit: Compiled with Visual C++: 19.24.28315.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.25
+LogInit: Command Line:  -skipcompile
+LogInit: Base Directory: E:/epk/UE_4.25/Engine/Binaries/Win64/
+LogInit: Allocator: TBB
+LogInit: Installed Engine Build: 1
+LogDevObjectVersion: Number of dev versions registered: 26
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 10
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 4
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 38
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 37
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 2
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 4
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 43
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 12
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 3
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 3
+LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 17
+LogDevObjectVersion:   Dev-Anim (AF43A65D-7FD3-4947-9873-3E8ED9C1BB05): 7
+LogDevObjectVersion:   Dev-ReflectionCapture (6B266CEC-1EC7-4B8F-A30B-E4D90942FC07): 1
+LogDevObjectVersion:   Dev-Automation (0DF73D61-A23F-47EA-B727-89E90C41499A): 1
+LogDevObjectVersion:   FortniteMain (601D1886-AC64-4F84-AA16-D3DE0DEAC7D6): 31
+LogDevObjectVersion:   Dev-Enterprise (9DFFBCD6-494F-0158-E221-12823C92A888): 10
+LogDevObjectVersion:   Dev-Niagara (F2AED0AC-9AFE-416F-8664-AA7FFA26D6FC): 1
+LogDevObjectVersion:   Dev-Destruction (174F1F0B-B4C6-45A5-B13F-2EE8D0FB917D): 10
+LogDevObjectVersion:   Dev-Physics-Ext (35F94A83-E258-406C-A318-09F59610247C): 37
+LogDevObjectVersion:   Dev-PhysicsMaterial-Chaos (B68FC16E-8B1B-42E2-B453-215C058844FE): 1
+LogDevObjectVersion:   Dev-CineCamera (B2E18506-4273-CFC2-A54E-F4BB758BBA07): 1
+LogInit: Presizing for max 25165824 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [E:/Github/GEP/GEPProject/Saved/Config/Windows/Engine.ini]
+LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+LogInit: Object subsystem initialized
+LogConfig: Setting CVar [[con.DebugEarlyDefault:1]]
+LogConfig: Setting CVar [[r.setres:1280x720]]
+[2021.03.29-01.48.59:206][  0]LogConfig: Setting CVar [[r.VSync:0]]
+[2021.03.29-01.48.59:206][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
+[2021.03.29-01.48.59:206][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [E:/Github/GEP/GEPProject/Saved/Config/Windows/Engine.ini]
+[2021.03.29-01.48.59:206][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
+[2021.03.29-01.48.59:206][  0]LogConfig: Setting CVar [[r.CustomDepth:3]]
+[2021.03.29-01.48.59:206][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [E:/Github/GEP/GEPProject/Saved/Config/Windows/Engine.ini]
+[2021.03.29-01.48.59:206][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [E:/Github/GEP/GEPProject/Saved/Config/Windows/Engine.ini]
+[2021.03.29-01.48.59:206][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+[2021.03.29-01.48.59:206][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+[2021.03.29-01.48.59:206][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+[2021.03.29-01.48.59:206][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+[2021.03.29-01.48.59:206][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+[2021.03.29-01.48.59:206][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+[2021.03.29-01.48.59:206][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+[2021.03.29-01.48.59:206][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+[2021.03.29-01.48.59:206][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+[2021.03.29-01.48.59:206][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+[2021.03.29-01.48.59:206][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+[2021.03.29-01.48.59:206][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+[2021.03.29-01.48.59:206][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+[2021.03.29-01.48.59:206][  0]LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+[2021.03.29-01.48.59:206][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [E:/Github/GEP/GEPProject/Saved/Config/Windows/Engine.ini]
+[2021.03.29-01.48.59:206][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
+[2021.03.29-01.48.59:206][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
+[2021.03.29-01.48.59:206][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
+[2021.03.29-01.48.59:206][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
+[2021.03.29-01.48.59:206][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
+[2021.03.29-01.48.59:206][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
+[2021.03.29-01.48.59:206][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:25165824]]
+[2021.03.29-01.48.59:206][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
+[2021.03.29-01.48.59:206][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
+[2021.03.29-01.48.59:206][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
+[2021.03.29-01.48.59:206][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
+[2021.03.29-01.48.59:206][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
+[2021.03.29-01.48.59:206][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
+[2021.03.29-01.48.59:206][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [E:/Github/GEP/GEPProject/Saved/Config/Windows/Engine.ini]
+[2021.03.29-01.48.59:206][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [E:/Github/GEP/GEPProject/Saved/Config/Windows/Engine.ini]
+[2021.03.29-01.48.59:214][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [E:/Github/GEP/GEPProject/Saved/Config/Windows/Scalability.ini]
+[2021.03.29-01.48.59:214][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2021.03.29-01.48.59:214][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2021.03.29-01.48.59:214][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [E:/Github/GEP/GEPProject/Saved/Config/Windows/Scalability.ini]
+[2021.03.29-01.48.59:214][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2021.03.29-01.48.59:214][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [E:/Github/GEP/GEPProject/Saved/Config/Windows/Scalability.ini]
+[2021.03.29-01.48.59:214][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2021.03.29-01.48.59:214][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2021.03.29-01.48.59:214][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2021.03.29-01.48.59:214][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2021.03.29-01.48.59:214][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2021.03.29-01.48.59:214][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2021.03.29-01.48.59:214][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2021.03.29-01.48.59:215][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2021.03.29-01.48.59:215][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2021.03.29-01.48.59:215][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2021.03.29-01.48.59:215][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2021.03.29-01.48.59:215][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2021.03.29-01.48.59:215][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2021.03.29-01.48.59:215][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2021.03.29-01.48.59:215][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2021.03.29-01.48.59:215][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2021.03.29-01.48.59:215][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2021.03.29-01.48.59:215][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2021.03.29-01.48.59:215][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [E:/Github/GEP/GEPProject/Saved/Config/Windows/Scalability.ini]
+[2021.03.29-01.48.59:215][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2021.03.29-01.48.59:215][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2021.03.29-01.48.59:215][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2021.03.29-01.48.59:215][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2021.03.29-01.48.59:215][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2021.03.29-01.48.59:215][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2021.03.29-01.48.59:215][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2021.03.29-01.48.59:215][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2021.03.29-01.48.59:215][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2021.03.29-01.48.59:215][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2021.03.29-01.48.59:215][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2021.03.29-01.48.59:215][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2021.03.29-01.48.59:215][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2021.03.29-01.48.59:215][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2021.03.29-01.48.59:215][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2021.03.29-01.48.59:215][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2021.03.29-01.48.59:215][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2021.03.29-01.48.59:215][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2021.03.29-01.48.59:215][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2021.03.29-01.48.59:215][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2021.03.29-01.48.59:215][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2021.03.29-01.48.59:215][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2021.03.29-01.48.59:215][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2021.03.29-01.48.59:215][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2021.03.29-01.48.59:215][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2021.03.29-01.48.59:215][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2021.03.29-01.48.59:215][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2021.03.29-01.48.59:215][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2021.03.29-01.48.59:215][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2021.03.29-01.48.59:215][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2021.03.29-01.48.59:215][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [E:/Github/GEP/GEPProject/Saved/Config/Windows/Scalability.ini]
+[2021.03.29-01.48.59:215][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2021.03.29-01.48.59:215][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2021.03.29-01.48.59:215][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2021.03.29-01.48.59:215][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2021.03.29-01.48.59:215][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2021.03.29-01.48.59:215][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2021.03.29-01.48.59:215][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2021.03.29-01.48.59:215][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2021.03.29-01.48.59:215][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2021.03.29-01.48.59:215][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [E:/Github/GEP/GEPProject/Saved/Config/Windows/Scalability.ini]
+[2021.03.29-01.48.59:215][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2021.03.29-01.48.59:215][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2021.03.29-01.48.59:215][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2021.03.29-01.48.59:215][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2021.03.29-01.48.59:215][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2021.03.29-01.48.59:215][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2021.03.29-01.48.59:215][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2021.03.29-01.48.59:215][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2021.03.29-01.48.59:215][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2021.03.29-01.48.59:215][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2021.03.29-01.48.59:215][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2021.03.29-01.48.59:215][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2021.03.29-01.48.59:215][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2021.03.29-01.48.59:215][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2021.03.29-01.48.59:215][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2021.03.29-01.48.59:215][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2021.03.29-01.48.59:215][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
+[2021.03.29-01.48.59:215][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2021.03.29-01.48.59:215][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2021.03.29-01.48.59:215][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2021.03.29-01.48.59:215][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
+[2021.03.29-01.48.59:215][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2021.03.29-01.48.59:215][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
+[2021.03.29-01.48.59:215][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2021.03.29-01.48.59:215][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2021.03.29-01.48.59:215][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2021.03.29-01.48.59:215][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [E:/Github/GEP/GEPProject/Saved/Config/Windows/Scalability.ini]
+[2021.03.29-01.48.59:215][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2021.03.29-01.48.59:215][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2021.03.29-01.48.59:215][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [E:/Github/GEP/GEPProject/Saved/Config/Windows/Scalability.ini]
+[2021.03.29-01.48.59:216][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
+[2021.03.29-01.48.59:216][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
+[2021.03.29-01.48.59:216][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
+[2021.03.29-01.48.59:216][  0]LogConfig: Setting CVar [[r.HairStrands.DeepShadow.SuperSampling:0]]
+[2021.03.29-01.48.59:216][  0]LogConfig: Setting CVar [[r.HairStrands.VisibilityPPLL:0]]
+[2021.03.29-01.48.59:216][  0]LogConfig: Setting CVar [[r.HairStrands.RasterizationScale:0.5]]
+[2021.03.29-01.48.59:216][  0]LogConfig: Setting CVar [[r.HairStrands.VelocityRasterizationScale:1]]
+[2021.03.29-01.48.59:216][  0]LogInit: Selected Device Profile: [Windows]
+[2021.03.29-01.48.59:216][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2021.03.29-01.48.59:216][  0]LogHAL: Display: Platform has ~ 16 GB [17123741696 / 17179869184 / 16], which maps to Larger [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2021.03.29-01.48.59:216][  0]LogInit: Going up to parent DeviceProfile []
+[2021.03.29-01.48.59:216][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [E:/Github/GEP/GEPProject/Saved/Config/Windows/Scalability.ini]
+[2021.03.29-01.48.59:216][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2021.03.29-01.48.59:216][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2021.03.29-01.48.59:216][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [E:/Github/GEP/GEPProject/Saved/Config/Windows/Scalability.ini]
+[2021.03.29-01.48.59:216][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2021.03.29-01.48.59:216][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [E:/Github/GEP/GEPProject/Saved/Config/Windows/Scalability.ini]
+[2021.03.29-01.48.59:216][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2021.03.29-01.48.59:216][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2021.03.29-01.48.59:216][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2021.03.29-01.48.59:216][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2021.03.29-01.48.59:216][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2021.03.29-01.48.59:216][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2021.03.29-01.48.59:216][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2021.03.29-01.48.59:216][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2021.03.29-01.48.59:216][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2021.03.29-01.48.59:216][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2021.03.29-01.48.59:216][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2021.03.29-01.48.59:216][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2021.03.29-01.48.59:216][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2021.03.29-01.48.59:216][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2021.03.29-01.48.59:216][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2021.03.29-01.48.59:216][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2021.03.29-01.48.59:216][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2021.03.29-01.48.59:216][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2021.03.29-01.48.59:216][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [E:/Github/GEP/GEPProject/Saved/Config/Windows/Scalability.ini]
+[2021.03.29-01.48.59:216][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2021.03.29-01.48.59:216][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2021.03.29-01.48.59:216][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2021.03.29-01.48.59:216][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2021.03.29-01.48.59:216][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2021.03.29-01.48.59:216][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2021.03.29-01.48.59:216][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2021.03.29-01.48.59:216][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2021.03.29-01.48.59:216][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2021.03.29-01.48.59:216][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2021.03.29-01.48.59:216][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2021.03.29-01.48.59:216][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2021.03.29-01.48.59:216][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2021.03.29-01.48.59:216][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2021.03.29-01.48.59:216][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2021.03.29-01.48.59:216][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2021.03.29-01.48.59:216][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2021.03.29-01.48.59:216][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2021.03.29-01.48.59:216][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2021.03.29-01.48.59:216][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2021.03.29-01.48.59:216][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2021.03.29-01.48.59:216][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2021.03.29-01.48.59:216][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2021.03.29-01.48.59:216][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2021.03.29-01.48.59:217][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2021.03.29-01.48.59:217][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2021.03.29-01.48.59:217][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2021.03.29-01.48.59:217][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2021.03.29-01.48.59:217][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2021.03.29-01.48.59:217][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2021.03.29-01.48.59:217][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [E:/Github/GEP/GEPProject/Saved/Config/Windows/Scalability.ini]
+[2021.03.29-01.48.59:217][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2021.03.29-01.48.59:217][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2021.03.29-01.48.59:217][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2021.03.29-01.48.59:217][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2021.03.29-01.48.59:217][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2021.03.29-01.48.59:217][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2021.03.29-01.48.59:217][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2021.03.29-01.48.59:217][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2021.03.29-01.48.59:217][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2021.03.29-01.48.59:217][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [E:/Github/GEP/GEPProject/Saved/Config/Windows/Scalability.ini]
+[2021.03.29-01.48.59:217][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2021.03.29-01.48.59:217][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2021.03.29-01.48.59:217][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2021.03.29-01.48.59:217][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2021.03.29-01.48.59:217][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2021.03.29-01.48.59:217][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2021.03.29-01.48.59:217][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2021.03.29-01.48.59:217][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2021.03.29-01.48.59:217][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2021.03.29-01.48.59:217][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2021.03.29-01.48.59:217][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2021.03.29-01.48.59:217][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2021.03.29-01.48.59:217][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2021.03.29-01.48.59:217][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2021.03.29-01.48.59:217][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2021.03.29-01.48.59:217][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2021.03.29-01.48.59:217][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
+[2021.03.29-01.48.59:217][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2021.03.29-01.48.59:217][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2021.03.29-01.48.59:217][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2021.03.29-01.48.59:217][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
+[2021.03.29-01.48.59:217][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2021.03.29-01.48.59:217][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
+[2021.03.29-01.48.59:217][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2021.03.29-01.48.59:217][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2021.03.29-01.48.59:217][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2021.03.29-01.48.59:217][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [E:/Github/GEP/GEPProject/Saved/Config/Windows/Scalability.ini]
+[2021.03.29-01.48.59:217][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2021.03.29-01.48.59:217][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2021.03.29-01.48.59:217][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [E:/Github/GEP/GEPProject/Saved/Config/Windows/Scalability.ini]
+[2021.03.29-01.48.59:217][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
+[2021.03.29-01.48.59:217][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
+[2021.03.29-01.48.59:217][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
+[2021.03.29-01.48.59:217][  0]LogConfig: Setting CVar [[r.HairStrands.DeepShadow.SuperSampling:0]]
+[2021.03.29-01.48.59:217][  0]LogConfig: Setting CVar [[r.HairStrands.VisibilityPPLL:0]]
+[2021.03.29-01.48.59:217][  0]LogConfig: Setting CVar [[r.HairStrands.RasterizationScale:0.5]]
+[2021.03.29-01.48.59:217][  0]LogConfig: Setting CVar [[r.HairStrands.VelocityRasterizationScale:1]]
+[2021.03.29-01.48.59:217][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
+[2021.03.29-01.48.59:218][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
+[2021.03.29-01.48.59:218][  0]LogConfig: Setting CVar [[p.chaos.AllowCreatePhysxBodies:1]]
+[2021.03.29-01.48.59:218][  0]LogConfig: Setting CVar [[fx.SkipVectorVMBackendOptimizations:1]]
+[2021.03.29-01.48.59:218][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [E:/Github/GEP/GEPProject/Saved/Config/Windows/Engine.ini]
+[2021.03.29-01.48.59:218][  0]LogInit: Computer: DESKTOP-8MPSU4G
+[2021.03.29-01.48.59:218][  0]LogInit: User: cathan
+[2021.03.29-01.48.59:218][  0]LogInit: CPU Page size=4096, Cores=8
+[2021.03.29-01.48.59:218][  0]LogInit: High frequency timer resolution =10.000000 MHz
+[2021.03.29-01.48.59:218][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
+[2021.03.29-01.48.59:218][  0]LogMemory: Platform Memory Stats for Windows
+[2021.03.29-01.48.59:218][  0]LogMemory: Process Physical Memory: 118.66 MB used, 118.67 MB peak
+[2021.03.29-01.48.59:218][  0]LogMemory: Process Virtual Memory: 102.92 MB used, 102.92 MB peak
+[2021.03.29-01.48.59:218][  0]LogMemory: Physical Memory: 12137.62 MB used,  4192.86 MB free, 16330.47 MB total
+[2021.03.29-01.48.59:218][  0]LogMemory: Virtual Memory: 5191.79 MB used,  134212536.00 MB free, 134217728.00 MB total
+[2021.03.29-01.48.59:225][  0]LogWindows: WindowsPlatformFeatures enabled
+[2021.03.29-01.48.59:283][  0]LogInit: Physics initialised using underlying interface: PhysX
+[2021.03.29-01.48.59:285][  0]LogInit: Using OS detected language (en-GB).
+[2021.03.29-01.48.59:285][  0]LogInit: Using OS detected locale (en-GB).
+[2021.03.29-01.48.59:287][  0]LogTextLocalizationManager: No specific localization for 'en-GB' exists, so the 'en' localization will be used.
+[2021.03.29-01.48.59:470][  0]LogInit: Setting process to per monitor DPI aware
+[2021.03.29-01.48.59:515][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2021.03.29-01.48.59:515][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2021.03.29-01.48.59:738][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2021.03.29-01.48.59:738][  0]LogD3D11RHI: D3D11 min allowed feature level: 11_0
+[2021.03.29-01.48.59:738][  0]LogD3D11RHI: D3D11 max allowed feature level: 11_0
+[2021.03.29-01.48.59:738][  0]LogD3D11RHI: D3D11 adapters:
+[2021.03.29-01.48.59:878][  0]LogD3D11RHI:    0. 'NVIDIA GeForce RTX 2060' (Feature Level 11_0)
+[2021.03.29-01.48.59:878][  0]LogD3D11RHI:       5980/0/8165 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:3, VendorId:0x10de
+[2021.03.29-01.48.59:882][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2021.03.29-01.48.59:882][  0]LogD3D11RHI:       0/0/8165 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2021.03.29-01.48.59:882][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2021.03.29-01.48.59:891][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2021.03.29-01.48.59:891][  0]LogD3D11RHI:     GPU DeviceId: 0x1f08 (for the marketing name, search the web for "GPU Device Id")
+[2021.03.29-01.48.59:891][  0]LogWindows: EnumDisplayDevices:
+[2021.03.29-01.48.59:891][  0]LogWindows:    0. 'NVIDIA GeForce RTX 2060' (P:1 D:1)
+[2021.03.29-01.48.59:892][  0]LogWindows:    1. 'NVIDIA GeForce RTX 2060' (P:0 D:1)
+[2021.03.29-01.48.59:892][  0]LogWindows:    2. 'NVIDIA GeForce RTX 2060' (P:0 D:1)
+[2021.03.29-01.48.59:892][  0]LogWindows:    3. 'NVIDIA GeForce RTX 2060' (P:0 D:0)
+[2021.03.29-01.48.59:892][  0]LogWindows: DebugString: FoundDriverCount:4 
+[2021.03.29-01.48.59:892][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce RTX 2060
+[2021.03.29-01.48.59:892][  0]LogD3D11RHI:   Driver Version: 460.79 (internal:27.21.14.6079, unified:460.79)
+[2021.03.29-01.48.59:892][  0]LogD3D11RHI:      Driver Date: 12-3-2020
+[2021.03.29-01.48.59:892][  0]LogRHI: Texture pool is 4186 MB (70% of 5980 MB)
+[2021.03.29-01.48.59:991][  0]LogD3D11RHI: RHI has support for 64 bit atomics
+[2021.03.29-01.48.59:991][  0]LogD3D11RHI: Async texture creation enabled
+[2021.03.29-01.48.59:991][  0]LogD3D11RHI: Array index from any shader is supported
+[2021.03.29-01.49.00:025][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2021.03.29-01.49.00:298][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AllDesktop'
+[2021.03.29-01.49.00:320][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android'
+[2021.03.29-01.49.00:320][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTC'
+[2021.03.29-01.49.00:320][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXT'
+[2021.03.29-01.49.00:320][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2'
+[2021.03.29-01.49.00:320][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AndroidClient'
+[2021.03.29-01.49.00:320][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTCClient'
+[2021.03.29-01.49.00:320][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXTClient'
+[2021.03.29-01.49.00:320][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2Client'
+[2021.03.29-01.49.00:320][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_Multi'
+[2021.03.29-01.49.00:320][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_MultiClient'
+[2021.03.29-01.49.00:346][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOSClient'
+[2021.03.29-01.49.00:346][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOS'
+[2021.03.29-01.49.00:357][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Linux'
+[2021.03.29-01.49.00:367][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxNoEditor'
+[2021.03.29-01.49.00:377][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxClient'
+[2021.03.29-01.49.00:387][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxServer'
+[2021.03.29-01.49.00:397][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64NoEditor'
+[2021.03.29-01.49.00:408][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Client'
+[2021.03.29-01.49.00:418][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Server'
+[2021.03.29-01.49.00:447][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Lumin'
+[2021.03.29-01.49.00:447][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LuminClient'
+[2021.03.29-01.49.00:466][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOSClient'
+[2021.03.29-01.49.00:466][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOS'
+[2021.03.29-01.49.00:476][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsNoEditor'
+[2021.03.29-01.49.00:487][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Windows'
+[2021.03.29-01.49.00:498][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsClient'
+[2021.03.29-01.49.00:508][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsServer'
+[2021.03.29-01.49.00:508][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2021.03.29-01.49.00:518][  0]LogAudioDebug: Display: Lib vorbis DLL was dynamically loaded.
+[2021.03.29-01.49.00:584][  0]LogShaderCompilers: Guid format shader working directory is 10 characters bigger than the processId version (../../../../../Github/GEP/GEPProject/Intermediate/Shaders/WorkingDirectory/16908/).
+[2021.03.29-01.49.00:585][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/cathan/AppData/Local/Temp/UnrealShaderWorkingDir/194825F04C271C76174E0A90C0452249/'.
+[2021.03.29-01.49.00:585][  0]LogXGEController: Cleaning working directory: C:/Users/cathan/AppData/Local/Temp/UnrealXGEWorkingDir/
+[2021.03.29-01.49.00:585][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
+[2021.03.29-01.49.00:585][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
+[2021.03.29-01.49.00:585][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2021.03.29-01.49.01:349][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2021.03.29-01.49.01:350][  0]LogDerivedDataCache: Loaded boot cache 0.00s 1MB C:/Users/cathan/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc.
+[2021.03.29-01.49.01:350][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/cathan/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc
+[2021.03.29-01.49.01:350][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../Github/GEP/GEPProject/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2021.03.29-01.49.01:350][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2021.03.29-01.49.01:350][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../Github/GEP/GEPProject/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2021.03.29-01.49.01:350][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2021.03.29-01.49.01:360][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2021.03.29-01.49.01:360][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  EnterprisePak pak cache file ../../../Enterprise/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2021.03.29-01.49.01:360][  0]LogDerivedDataCache: Unable to find inner node EnterprisePak for hierarchical cache Hierarchy.
+[2021.03.29-01.49.01:362][  0]LogDerivedDataCache: Using Local data cache path C:/Users/cathan/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2021.03.29-01.49.01:362][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
+[2021.03.29-01.49.01:362][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
+[2021.03.29-01.49.01:415][  0]LogSlate: Using FreeType 2.10.0
+[2021.03.29-01.49.01:417][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2021.03.29-01.49.01:443][  0]LogAssetRegistry: FAssetRegistry took 0.0027 seconds to start up
+[2021.03.29-01.49.01:688][  0]LogInit: Selected Device Profile: [Windows]
+[2021.03.29-01.49.01:815][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2021.03.29-01.49.01:815][  0]LogMeshReduction: Using SimplygonMeshReduction for automatic skeletal mesh reduction
+[2021.03.29-01.49.01:815][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
+[2021.03.29-01.49.01:815][  0]LogMeshReduction: No distributed automatic mesh merging module available
+[2021.03.29-01.49.01:816][  0]LogMeshMerging: No distributed automatic mesh merging module available
+[2021.03.29-01.49.01:843][  0]LogNetVersion: GEPProject 1.0.0, NetCL: 13144385, EngineNetVer: 14, GameNetVer: 0 (Checksum: 386946200)
+[2021.03.29-01.49.02:412][  0]LogAISub: UAISubsystem::UAISubsystem AISubsystem (000002396F454380), frame # 0
+[2021.03.29-01.49.02:412][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000002396F3D82C0), frame # 0
+[2021.03.29-01.49.02:413][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000002396F3F5C00), frame # 0
+[2021.03.29-01.49.02:476][  0]LogPackageLocalizationCache: Processed 19 localized package path(s) for 1 prioritized culture(s) in 0.053961 seconds
+[2021.03.29-01.49.02:481][  0]LogUObjectArray: 15917 objects as part of root set at end of initial load.
+[2021.03.29-01.49.02:481][  0]LogUObjectAllocator: 3965568 out of 0 bytes used by permanent object pool.
+[2021.03.29-01.49.02:481][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2021.03.29-01.49.02:910][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2021.03.29-01.49.02:914][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2021.03.29-01.49.03:014][  0]SourceControl: Source control is disabled
+[2021.03.29-01.49.03:014][  0]SourceControl: Source control is disabled
+[2021.03.29-01.49.03:018][  0]SourceControl: Source control is disabled
+[2021.03.29-01.49.03:022][  0]SourceControl: Source control is disabled
+[2021.03.29-01.49.03:035][  0]SourceControl: Source control is disabled
+[2021.03.29-01.49.03:332][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2021.03.29-01.49.03:357][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2021.03.29-01.49.03:357][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2021.03.29-01.49.03:412][  0]LogOcInput: OculusInput pre-init called
+[2021.03.29-01.49.03:424][  0]LogWindows: Failed to load 'OVRPlugin.dll' (GetLastError=126)
+[2021.03.29-01.49.03:424][  0]LogWindows: File 'OVRPlugin.dll' does not exist
+[2021.03.29-01.49.03:497][  0]LogClass: Warning: FUpgrade::upgradeType is not initialized properly
+[2021.03.29-01.49.03:497][  0]LogClass: Display: 1 Uninitialized script stuct members found
+[2021.03.29-01.49.03:498][  0]LogAutomationTest: Warning: FUpgrade::upgradeType is not initialized properly
+[2021.03.29-01.49.03:499][  0]LogEngine: Initializing Engine...
+[2021.03.29-01.49.03:500][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2021.03.29-01.49.03:500][  0]LogMagicLeap: Warning: VR disabled because ZI is not enabled.  To enable, in the editor, Edit -> Project Settings -> Plugins -> Magic Leap Plugin -> Enable Zero Iteration
+[2021.03.29-01.49.03:501][  0]LogStats: UGameplayTagsManager::InitializeManager -  0.000 s
+[2021.03.29-01.49.03:796][  0]LogInit: Initializing FReadOnlyCVARCache
+[2021.03.29-01.49.03:804][  0]LogAIModule: Creating AISystem for world Untitled
+[2021.03.29-01.49.03:804][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (0000023979C0BC00), frame # 0
+[2021.03.29-01.49.03:804][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (0000023979C7CCC0), frame # 0
+[2021.03.29-01.49.03:811][  0]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.03.29-01.49.03:811][  0]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.03.29-01.49.03:811][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.03.29-01.49.03:811][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.03.29-01.49.03:811][  0]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.03.29-01.49.03:811][  0]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.03.29-01.49.03:811][  0]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.03.29-01.49.03:811][  0]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.03.29-01.49.03:811][  0]LogAudio: Display: Using built-in audio occlusion.
+[2021.03.29-01.49.03:811][  0]LogAudioMixer: Display: Initializing audio mixer.
+[2021.03.29-01.49.03:833][  0]LogAudioMixer: Display: 0: FrontLeft
+[2021.03.29-01.49.03:833][  0]LogAudioMixer: Display: 1: FrontRight
+[2021.03.29-01.49.03:881][  0]LogAudioMixer: Display: Using Audio Device Headphones (High Definition Audio Device)
+[2021.03.29-01.49.03:881][  0]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.03.29-01.49.03:884][  0]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.03.29-01.49.03:884][  0]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.03.29-01.49.03:885][  0]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.03.29-01.49.03:886][  0]LogInit: FAudioDevice initialized.
+[2021.03.29-01.49.03:887][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2021.03.29-01.49.03:968][  0]LogDerivedDataCache: Saved boot cache 0.08s 76MB C:/Users/cathan/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc.
+[2021.03.29-01.49.03:974][  0]LogInit: Texture streaming: Enabled
+[2021.03.29-01.49.03:997][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2021.03.29-01.49.03:998][  0]LogEngineSessionManager: EngineSessionManager sent abnormal shutdown report. Type=AbnormalShutdown, SessionId={DE598714-41C7-0877-A409-E68BC26205FF}
+[2021.03.29-01.49.03:998][  0]LogEditorSessionSummary: Verbose: Initializing EditorSessionSummaryWriter for editor session tracking
+[2021.03.29-01.49.04:000][  0]LogEditorSessionSummary: EditorSessionSummaryWriter initialized
+[2021.03.29-01.49.04:083][  0]LogInit: Transaction tracking system initialized
+[2021.03.29-01.49.04:127][  0]BlueprintLog: New page: Editor Load
+[2021.03.29-01.49.04:307][  0]LocalizationService: Localization service is disabled
+[2021.03.29-01.49.04:504][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2021.03.29-01.49.04:504][  0]LogCook: Display: Mobile HDR setting 1
+[2021.03.29-01.49.04:512][  0]LogFileCache: Scanning file cache for directory 'E:/Github/GEP/GEPProject/Content/' took 0.00s
+[2021.03.29-01.49.04:864][  0]SourceControl: Source control is disabled
+[2021.03.29-01.49.04:864][  0]LogUnrealEdMisc: Loading editor; pre map load, took 7.900
+[2021.03.29-01.49.04:864][  0]Cmd: MAP LOAD FILE="../../../../../Github/GEP/GEPProject/Content/GameLevel.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2021.03.29-01.49.04:864][  0]LightingResults: New page: Lighting Build
+[2021.03.29-01.49.04:866][  0]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2021.03.29-01.49.04:866][  0]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.03.29-01.49.04:866][  0]MapCheck: New page: Map Check
+[2021.03.29-01.49.04:866][  0]LightingResults: New page: Lighting Build
+[2021.03.29-01.49.04:880][  0]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (0000023979C0BC00), frame # 0
+[2021.03.29-01.49.04:880][  0]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (0000023979C7CCC0), frame # 0
+[2021.03.29-01.49.04:881][  0]LogUObjectHash: Compacting FUObjectHashTables data took   0.70ms
+[2021.03.29-01.49.05:358][  0]LogAIModule: Creating AISystem for world GameLevel
+[2021.03.29-01.49.05:358][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (0000023904936400), frame # 0
+[2021.03.29-01.49.05:358][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (00000239049E5A80), frame # 0
+[2021.03.29-01.49.05:367][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2021.03.29-01.49.05:391][  0]LogUObjectHash: Compacting FUObjectHashTables data took   1.21ms
+[2021.03.29-01.49.05:392][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2021.03.29-01.49.05:392][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.195ms to complete.
+[2021.03.29-01.49.05:392][  0]LogFileHelpers: Loading map 'GameLevel' took 0.528
+[2021.03.29-01.49.05:399][  0]LogUnrealEdMisc: Total Editor Startup Time, took 8.434
+[2021.03.29-01.49.05:534][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.03.29-01.49.05:541][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.03.29-01.49.05:548][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.03.29-01.49.05:555][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.03.29-01.49.05:561][  0]LogCollectionManager: Loaded 0 collections in 0.001017 seconds
+[2021.03.29-01.49.05:579][  0]LogFileCache: Scanning file cache for directory 'E:/Github/GEP/GEPProject/Saved/Collections/' took 0.00s
+[2021.03.29-01.49.05:579][  0]LogFileCache: Scanning file cache for directory 'E:/Github/GEP/GEPProject/Content/Developers/cathan/Collections/' took 0.00s
+[2021.03.29-01.49.05:579][  0]LogFileCache: Scanning file cache for directory 'E:/Github/GEP/GEPProject/Content/Collections/' took 0.00s
+[2021.03.29-01.49.05:579][  0]LogContentBrowser: Native class hierarchy populated in 0.0107 seconds. Added 3475 classes and 834 folders.
+[2021.03.29-01.49.05:584][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0005 seconds. Added 0 classes and 0 folders.
+[2021.03.29-01.49.05:723][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0006 seconds. Added 0 classes and 0 folders.
+[2021.03.29-01.49.05:746][  0]LogSlate: Took 0.001041 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2021.03.29-01.49.05:751][  0]LogSlate: Took 0.000913 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2021.03.29-01.49.05:754][  0]LogSlate: Took 0.001120 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2021.03.29-01.49.05:829][  0]LogRenderer: Reallocating scene render targets to support 1208x572 Format 10 NumSamples 1 (Frame:1).
+[2021.03.29-01.49.05:891][  0]LogSlate: Took 0.000224 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2021.03.29-01.49.05:933][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0006 seconds. Added 0 classes and 0 folders.
+[2021.03.29-01.49.05:933][  0]LogLoad: (Engine Initialization) Total time: 8.97 seconds
+[2021.03.29-01.49.05:933][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2021.03.29-01.49.05:978][  0]LogActor: Warning: BP_TestBlock_C /Engine/Transient.World_0:PersistentLevel.BP_TestBlock_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2021.03.29-01.49.06:001][  0]LogAssetRegistry: Asset discovery search completed in 4.5586 seconds
+[2021.03.29-01.49.06:005][  0]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000002 seconds (updated 0 objects)
+[2021.03.29-01.49.06:006][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2021.03.29-01.49.13:037][320]LogLinker: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/BP_Weapon_Projectile.uasset' failed to load '/Game/FirstPerson/FPWeapon/Mesh/SK_FPGun': Can't find file.
+[2021.03.29-01.49.13:037][320]LogLinker: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/BP_Weapon_Projectile.uasset' failed to load '/Game/FirstPerson/FPWeapon/Mesh/SK_FPGun': Can't find file.
+[2021.03.29-01.49.13:037][320]LogLinker: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/BP_Weapon_Projectile.uasset' failed to load '/Game/FirstPerson/FPWeapon/Mesh/SK_FPGun': Can't find file.
+[2021.03.29-01.49.13:037][320]LogLinker: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/BP_Weapon_Projectile.uasset' failed to load '/Game/FirstPerson/FPWeapon/Mesh/SK_FPGun': Can't find file.
+[2021.03.29-01.49.13:038][320]LogLinker: Warning: Failed to load '/Game/FirstPerson/FPWeapon/Mesh/SK_FPGun': Can't find file.
+[2021.03.29-01.49.13:038][320]LogLinker: Warning: Failed to load '/Game/FirstPerson/FPWeapon/Mesh/SK_FPGun': Can't find file.
+[2021.03.29-01.49.13:038][320]LogLinker: Warning: Failed to load '/Game/FirstPerson/FPWeapon/Mesh/SK_FPGun': Can't find file.
+[2021.03.29-01.49.13:038][320]LogLinker: Warning: Failed to load '/Game/FirstPerson/FPWeapon/Mesh/SK_FPGun': Can't find file.
+[2021.03.29-01.49.13:038][320]LogLinker: Error: Failed import: class 'ArrowComponent' name 'GunMuzzle' outer 'Default__BP_Weapon_Projectile_C'. There is another object (of 'SceneComponent' class) at the path.
+[2021.03.29-01.49.13:038][320]LogLinker: Error: Failed import: class 'ArrowComponent' name 'GunMuzzle' outer 'Default__BP_Weapon_Projectile_C'. There is another object (of 'SceneComponent' class) at the path.
+[2021.03.29-01.49.13:038][320]LogLinker: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/BP_Weapon_Projectile.uasset' failed to load '/Game/FirstPerson/FPWeapon/Mesh/SK_FPGun': Can't find file.
+[2021.03.29-01.49.13:039][320]LoadErrors: Failed to load /Game/FirstPerson/FPWeapon/Mesh/SK_FPGun.SK_FPGun Referenced by Default__BP_Weapon_Projectile_C
+[2021.03.29-01.49.13:039][320]LogLinker: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/BP_Weapon_Projectile.uasset' failed to load '/Game/FirstPerson/FPWeapon/Mesh/SK_FPGun': Can't find file.
+[2021.03.29-01.49.13:040][320]LogLinker: Error: Failed import: class 'ArrowComponent' name 'GunMuzzle' outer 'Default__BP_Weapon_Projectile_C'. There is another object (of 'SceneComponent' class) at the path.
+[2021.03.29-01.49.13:045][320]LogSlate: Took 0.000236 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2021.03.29-01.49.13:061][320]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/BP_Weapon_Projectile.BP_Weapon_Projectile
+[2021.03.29-01.49.13:268][320]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0009 seconds. Added 125 classes and 0 folders.
+[2021.03.29-01.49.15:554][469]LogSlate: Window 'BP_Weapon_Projectile' being destroyed
+[2021.03.29-01.49.15:561][469]LogWorld: UWorld::CleanupWorld for World_1, bSessionEnded=true, bCleanupResources=true
+[2021.03.29-01.49.15:562][469]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.03.29-01.49.15:635][469]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/BP_Weapon_Projectile.BP_Weapon_Projectile
+[2021.03.29-01.49.16:052][469]LogSlate: Took 0.000248 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2021.03.29-01.49.20:255][873]LogSlate: Window 'BP_Weapon_Projectile' being destroyed
+[2021.03.29-01.49.20:261][873]LogSlate: Window 'BP_Weapon_Projectile' being destroyed
+[2021.03.29-01.49.20:270][873]LogWorld: UWorld::CleanupWorld for World_2, bSessionEnded=true, bCleanupResources=true
+[2021.03.29-01.49.20:270][873]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.03.29-01.49.23:397][227]LogUObjectHash: Compacting FUObjectHashTables data took   3.13ms
+[2021.03.29-01.49.24:261][227]LogSlate: Window 'Delete Assets' being destroyed
+[2021.03.29-01.49.24:359][227]LogUObjectHash: Compacting FUObjectHashTables data took   2.50ms
+[2021.03.29-01.49.24:386][227]LogUObjectHash: Compacting FUObjectHashTables data took   1.91ms
+[2021.03.29-01.49.24:403][227]LogUObjectHash: Compacting FUObjectHashTables data took   0.53ms
+[2021.03.29-01.49.30:374][809]LogUObjectHash: Compacting FUObjectHashTables data took   1.40ms
+[2021.03.29-01.49.32:529][809]LogMainFrame: Selected target: GEPProject
+[2021.03.29-01.49.32:532][809]LogLauncherProfile: Unable to use promoted target - receipt ../../../../../Github/GEP/GEPProject/Binaries/Win64/GEPProject.target is not for a promoted target
+[2021.03.29-01.49.32:944][809]UATHelper: Packaging (Windows (64-bit)): Running AutomationTool...
+[2021.03.29-01.49.32:944][809]UATHelper: Packaging (Windows (64-bit)): Parsing command line: -ScriptsForProject=E:/Github/GEP/GEPProject/GEPProject.uproject BuildCookRun -nocompileeditor -installed -nop4 -project=E:/Github/GEP/GEPProject/GEPProject.uproject -cook -stage -archive -archivedirectory=E:/UE4PACKAGE -package -ue4exe=E:\epk\UE_4.25\Engine\Binaries\Win64\UE4Editor-Cmd.exe -pak -prereqs -nodebuginfo -targetplatform=Win64 -build -target=GEPProject -clientconfig=Development -utf8output
+[2021.03.29-01.49.33:286][842]UATHelper: Packaging (Windows (64-bit)): Setting up ProjectParams for E:\Github\GEP\GEPProject\GEPProject.uproject
+[2021.03.29-01.49.33:595][879]UATHelper: Packaging (Windows (64-bit)): ********** BUILD COMMAND STARTED **********
+[2021.03.29-01.49.33:611][881]UATHelper: Packaging (Windows (64-bit)): Running: E:\epk\UE_4.25\Engine\Binaries\DotNET\UnrealBuildTool.exe GEPProject Win64 Development -Project=E:\Github\GEP\GEPProject\GEPProject.uproject  E:\Github\GEP\GEPProject\GEPProject.uproject -NoUBTMakefiles  -remoteini="E:\Github\GEP\GEPProject" -skipdeploy -Manifest=E:\Github\GEP\GEPProject\Intermediate\Build\Manifest.xml -NoHotReload -log="C:\Users\cathan\AppData\Roaming\Unreal Engine\AutomationTool\Logs\E+epk+UE_4.25\UBT-GEPProject-Win64-Development.txt"
+[2021.03.29-01.49.34:000][921]UATHelper: Packaging (Windows (64-bit)):   Using 'git status' to determine working set for adaptive non-unity build (E:\Github\GEP).
+[2021.03.29-01.49.35:010][ 42]UATHelper: Packaging (Windows (64-bit)):   Writing manifest to E:\Github\GEP\GEPProject\Intermediate\Build\Manifest.xml
+[2021.03.29-01.49.35:101][ 53]UATHelper: Packaging (Windows (64-bit)):   Target is up to date
+[2021.03.29-01.49.35:109][ 54]UATHelper: Packaging (Windows (64-bit)):   Total execution time: 1.45 seconds
+[2021.03.29-01.49.35:142][ 58]UATHelper: Packaging (Windows (64-bit)): Took 1.5288122s to run UnrealBuildTool.exe, ExitCode=0
+[2021.03.29-01.49.35:160][ 60]UATHelper: Packaging (Windows (64-bit)): ********** BUILD COMMAND COMPLETED **********
+[2021.03.29-01.49.35:160][ 60]UATHelper: Packaging (Windows (64-bit)): ********** COOK COMMAND STARTED **********
+[2021.03.29-01.49.35:169][ 61]UATHelper: Packaging (Windows (64-bit)): Running UE4Editor Cook for project E:\Github\GEP\GEPProject\GEPProject.uproject
+[2021.03.29-01.49.35:169][ 61]UATHelper: Packaging (Windows (64-bit)): Commandlet log file is E:\epk\UE_4.25\Engine\Programs\AutomationTool\Saved\Cook-2021.03.29-02.49.35.txt
+[2021.03.29-01.49.35:169][ 61]UATHelper: Packaging (Windows (64-bit)): Running: E:\epk\UE_4.25\Engine\Binaries\Win64\UE4Editor-Cmd.exe E:\Github\GEP\GEPProject\GEPProject.uproject -run=Cook  -TargetPlatform=WindowsNoEditor -fileopenlog -unversioned -abslog=E:\epk\UE_4.25\Engine\Programs\AutomationTool\Saved\Cook-2021.03.29-02.49.35.txt -stdout -CrashForUAT -unattended -NoLogTimes  -UTF8Output
+[2021.03.29-01.49.35:577][110]UATHelper: Packaging (Windows (64-bit)):   LogInit: Display: Running engine for game: GEPProject
+[2021.03.29-01.49.37:752][371]UATHelper: Packaging (Windows (64-bit)):   LogHAL: Display: Platform has ~ 16 GB [17123741696 / 17179869184 / 16], which maps to Larger [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2021.03.29-01.49.38:018][403]UATHelper: Packaging (Windows (64-bit)):   LogTargetPlatformManager: Display: Loaded TargetPlatform 'AllDesktop'
+[2021.03.29-01.49.38:043][406]UATHelper: Packaging (Windows (64-bit)):   LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android'
+[2021.03.29-01.49.38:043][406]UATHelper: Packaging (Windows (64-bit)):   LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTC'
+[2021.03.29-01.49.38:043][406]UATHelper: Packaging (Windows (64-bit)):   LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXT'
+[2021.03.29-01.49.38:043][406]UATHelper: Packaging (Windows (64-bit)):   LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2'
+[2021.03.29-01.49.38:043][406]UATHelper: Packaging (Windows (64-bit)):   LogTargetPlatformManager: Display: Loaded TargetPlatform 'AndroidClient'
+[2021.03.29-01.49.38:043][406]UATHelper: Packaging (Windows (64-bit)):   LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTCClient'
+[2021.03.29-01.49.38:043][406]UATHelper: Packaging (Windows (64-bit)):   LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXTClient'
+[2021.03.29-01.49.38:043][406]UATHelper: Packaging (Windows (64-bit)):   LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2Client'
+[2021.03.29-01.49.38:043][406]UATHelper: Packaging (Windows (64-bit)):   LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_Multi'
+[2021.03.29-01.49.38:043][406]UATHelper: Packaging (Windows (64-bit)):   LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_MultiClient'
+[2021.03.29-01.49.38:076][410]UATHelper: Packaging (Windows (64-bit)):   LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOSClient'
+[2021.03.29-01.49.38:076][410]UATHelper: Packaging (Windows (64-bit)):   LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOS'
+[2021.03.29-01.49.38:085][411]UATHelper: Packaging (Windows (64-bit)):   LogTargetPlatformManager: Display: Loaded TargetPlatform 'Linux'
+[2021.03.29-01.49.38:093][412]UATHelper: Packaging (Windows (64-bit)):   LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxNoEditor'
+[2021.03.29-01.49.38:111][414]UATHelper: Packaging (Windows (64-bit)):   LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxClient'
+[2021.03.29-01.49.38:120][415]UATHelper: Packaging (Windows (64-bit)):   LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxServer'
+[2021.03.29-01.49.38:135][417]UATHelper: Packaging (Windows (64-bit)):   LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64NoEditor'
+[2021.03.29-01.49.38:143][418]UATHelper: Packaging (Windows (64-bit)):   LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Client'
+[2021.03.29-01.49.38:151][419]UATHelper: Packaging (Windows (64-bit)):   LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Server'
+[2021.03.29-01.49.38:185][423]UATHelper: Packaging (Windows (64-bit)):   LogTargetPlatformManager: Display: Loaded TargetPlatform 'Lumin'
+[2021.03.29-01.49.38:185][423]UATHelper: Packaging (Windows (64-bit)):   LogTargetPlatformManager: Display: Loaded TargetPlatform 'LuminClient'
+[2021.03.29-01.49.38:201][425]UATHelper: Packaging (Windows (64-bit)):   LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOSClient'
+[2021.03.29-01.49.38:201][425]UATHelper: Packaging (Windows (64-bit)):   LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOS'
+[2021.03.29-01.49.38:218][427]UATHelper: Packaging (Windows (64-bit)):   LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsNoEditor'
+[2021.03.29-01.49.38:227][428]UATHelper: Packaging (Windows (64-bit)):   LogTargetPlatformManager: Display: Loaded TargetPlatform 'Windows'
+[2021.03.29-01.49.38:236][429]UATHelper: Packaging (Windows (64-bit)):   LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsClient'
+[2021.03.29-01.49.38:252][431]UATHelper: Packaging (Windows (64-bit)):   LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsServer'
+[2021.03.29-01.49.38:252][431]UATHelper: Packaging (Windows (64-bit)):   LogTargetPlatformManager: Display: Building Assets For WindowsNoEditor
+[2021.03.29-01.49.38:260][432]UATHelper: Packaging (Windows (64-bit)):   LogAudioDebug: Display: Lib vorbis DLL was dynamically loaded.
+[2021.03.29-01.49.38:851][503]UATHelper: Packaging (Windows (64-bit)):   LogShaderCompilers: Display: Using Local Shader Compiler.
+[2021.03.29-01.49.39:410][570]UATHelper: Packaging (Windows (64-bit)):   LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2021.03.29-01.49.39:462][576]UATHelper: Packaging (Windows (64-bit)):   LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/cathan/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc
+[2021.03.29-01.49.39:478][578]UATHelper: Packaging (Windows (64-bit)):   LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2021.03.29-01.49.40:898][747]UATHelper: Packaging (Windows (64-bit)):   LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2021.03.29-01.49.40:898][747]UATHelper: Packaging (Windows (64-bit)):   LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2021.03.29-01.49.41:451][813]UATHelper: Packaging (Windows (64-bit)):   LogClass: Warning: FUpgrade::upgradeType is not initialized properly
+[2021.03.29-01.49.41:451][813]UATHelper: Packaging (Windows (64-bit)):   LogClass: Display: 1 Uninitialized script stuct members found
+[2021.03.29-01.49.41:451][813]UATHelper: Packaging (Windows (64-bit)):   LogAutomationTest: Warning: FUpgrade::upgradeType is not initialized properly
+[2021.03.29-01.49.41:451][813]PackagingResults: Warning: FUpgrade::upgradeType is not initialized properly
+[2021.03.29-01.49.41:451][813]PackagingResults: Warning: FUpgrade::upgradeType is not initialized properly
+[2021.03.29-01.49.41:460][814]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2021.03.29-01.49.41:460][814]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Mobile HDR setting 1
+[2021.03.29-01.49.41:460][814]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Creating asset registry
+[2021.03.29-01.49.41:661][838]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Discovering localized assets for cultures: en
+[2021.03.29-01.49.41:694][842]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Clearing all cooked content for platform WindowsNoEditor
+[2021.03.29-01.49.41:753][849]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Sandbox cleanup took 0.089 seconds for platforms WindowsNoEditor
+[2021.03.29-01.49.43:719][ 83]UATHelper: Packaging (Windows (64-bit)):   CookResults: Warning: Unable to find package for cooking /Game/BP_GEPCharacter
+[2021.03.29-01.49.43:719][ 83]UATHelper: Packaging (Windows (64-bit)):   LogCook: Warning: Unable to find package for cooking /Game/BP_GEPCharacter
+[2021.03.29-01.49.43:719][ 83]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 0 Packages Remain 370 Total 370
+[2021.03.29-01.49.43:719][ 83]PackagingResults: Warning: Unable to find package for cooking /Game/BP_GEPCharacter
+[2021.03.29-01.49.43:719][ 83]PackagingResults: Warning: Unable to find package for cooking /Game/BP_GEPCharacter
+[2021.03.29-01.49.43:997][116]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 50 Packages Remain 369 Total 419
+[2021.03.29-01.49.44:158][135]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 100 Packages Remain 368 Total 468
+[2021.03.29-01.49.44:384][162]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 150 Packages Remain 366 Total 516
+[2021.03.29-01.49.44:584][186]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 178 Packages Remain 365 Total 543
+[2021.03.29-01.49.44:584][186]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 179 Packages Remain 364 Total 543
+[2021.03.29-01.49.44:597][187]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 185 Packages Remain 209 Total 394
+[2021.03.29-01.49.44:607][188]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 192 Packages Remain 208 Total 400
+[2021.03.29-01.49.44:615][189]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 198 Packages Remain 207 Total 405
+[2021.03.29-01.49.44:789][210]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 202 Packages Remain 205 Total 407
+[2021.03.29-01.49.44:798][211]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 204 Packages Remain 204 Total 408
+[2021.03.29-01.49.44:821][214]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 208 Packages Remain 203 Total 411
+[2021.03.29-01.49.44:847][217]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 214 Packages Remain 201 Total 415
+[2021.03.29-01.49.44:872][220]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 221 Packages Remain 198 Total 419
+[2021.03.29-01.49.44:880][221]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 222 Packages Remain 197 Total 419
+[2021.03.29-01.49.44:890][222]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 223 Packages Remain 196 Total 419
+[2021.03.29-01.49.44:890][222]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/Weapons/BP_Weapon_Hitscan.uasset' failed to load '/Game/FirstPerson/FPWeapon/Materials/M_FPGun': Can't find file.
+[2021.03.29-01.49.44:890][222]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/Weapons/BP_Weapon_Hitscan.uasset' failed to load '/Game/FirstPerson/FPWeapon/Materials/M_FPGun': Can't find file.
+[2021.03.29-01.49.44:890][222]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/Weapons/BP_Weapon_Hitscan.uasset' failed to load '/Game/FirstPerson/FPWeapon/Materials/M_FPGun': Can't find file.
+[2021.03.29-01.49.44:890][222]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/Weapons/BP_Weapon_Hitscan.uasset' failed to load '/Game/FirstPerson/FPWeapon/Materials/M_FPGun': Can't find file.
+[2021.03.29-01.49.44:890][222]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/Weapons/BP_Weapon_Hitscan.uasset' failed to load '/Game/FirstPerson/FPWeapon/Mesh/SK_FPGun': Can't find file.
+[2021.03.29-01.49.44:890][222]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/Weapons/BP_Weapon_Hitscan.uasset' failed to load '/Game/FirstPerson/FPWeapon/Mesh/SK_FPGun': Can't find file.
+[2021.03.29-01.49.44:890][222]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/Weapons/BP_Weapon_Hitscan.uasset' failed to load '/Game/FirstPerson/FPWeapon/Mesh/SK_FPGun': Can't find file.
+[2021.03.29-01.49.44:890][222]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/Weapons/BP_Weapon_Hitscan.uasset' failed to load '/Game/FirstPerson/FPWeapon/Mesh/SK_FPGun': Can't find file.
+[2021.03.29-01.49.44:890][222]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: Failed to load '/Game/FirstPerson/FPWeapon/Materials/M_FPGun': Can't find file.
+[2021.03.29-01.49.44:890][222]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: Failed to load '/Game/FirstPerson/FPWeapon/Materials/M_FPGun': Can't find file.
+[2021.03.29-01.49.44:890][222]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: Failed to load '/Game/FirstPerson/FPWeapon/Materials/M_FPGun': Can't find file.
+[2021.03.29-01.49.44:890][222]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: Failed to load '/Game/FirstPerson/FPWeapon/Materials/M_FPGun': Can't find file.
+[2021.03.29-01.49.44:890][222]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: Failed to load '/Game/FirstPerson/FPWeapon/Mesh/SK_FPGun': Can't find file.
+[2021.03.29-01.49.44:890][222]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/Weapons/BP_Weapon_Hitscan.uasset' failed to load '/Game/FirstPerson/FPWeapon/Materials/M_FPGun': Can't find file.
+[2021.03.29-01.49.44:890][222]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/Weapons/BP_Weapon_Hitscan.uasset' failed to load '/Game/FirstPerson/FPWeapon/Materials/M_FPGun': Can't find file.
+[2021.03.29-01.49.44:890][222]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/Weapons/BP_Weapon_Hitscan.uasset' failed to load '/Game/FirstPerson/FPWeapon/Materials/M_FPGun': Can't find file.
+[2021.03.29-01.49.44:890][222]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/Weapons/BP_Weapon_Hitscan.uasset' failed to load '/Game/FirstPerson/FPWeapon/Materials/M_FPGun': Can't find file.
+[2021.03.29-01.49.44:891][222]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/Weapons/BP_Weapon_Hitscan.uasset' failed to load '/Game/FirstPerson/FPWeapon/Mesh/SK_FPGun': Can't find file.
+[2021.03.29-01.49.44:891][222]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/Weapons/BP_Weapon_Hitscan.uasset' failed to load '/Game/FirstPerson/FPWeapon/Mesh/SK_FPGun': Can't find file.
+[2021.03.29-01.49.44:891][222]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: Failed to load '/Game/FirstPerson/FPWeapon/Mesh/SK_FPGun': Can't find file.
+[2021.03.29-01.49.44:891][222]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/Weapons/BP_Weapon_Hitscan.uasset' failed to load '/Game/FirstPerson/FPWeapon/Mesh/SK_FPGun': Can't find file.
+[2021.03.29-01.49.44:891][222]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/Weapons/BP_Weapon_Hitscan.uasset' failed to load '/Game/FirstPerson/FPWeapon/Mesh/SK_FPGun': Can't find file.
+[2021.03.29-01.49.44:891][222]PackagingResults: Warning: Failed to load '/Game/FirstPerson/FPWeapon/Materials/M_FPGun': Can't find file.
+[2021.03.29-01.49.44:891][222]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: Failed to load '/Game/FirstPerson/FPWeapon/Mesh/SK_FPGun': Can't find file.
+[2021.03.29-01.49.44:891][222]PackagingResults: Warning: Failed to load '/Game/FirstPerson/FPWeapon/Materials/M_FPGun': Can't find file.
+[2021.03.29-01.49.44:891][222]PackagingResults: Warning: Failed to load '/Game/FirstPerson/FPWeapon/Materials/M_FPGun': Can't find file.
+[2021.03.29-01.49.44:891][222]PackagingResults: Warning: Failed to load '/Game/FirstPerson/FPWeapon/Materials/M_FPGun': Can't find file.
+[2021.03.29-01.49.44:891][222]PackagingResults: Warning: Failed to load '/Game/FirstPerson/FPWeapon/Mesh/SK_FPGun': Can't find file.
+[2021.03.29-01.49.44:891][222]PackagingResults: Warning: Failed to load '/Game/FirstPerson/FPWeapon/Mesh/SK_FPGun': Can't find file.
+[2021.03.29-01.49.44:891][222]PackagingResults: Warning: Failed to load '/Game/FirstPerson/FPWeapon/Mesh/SK_FPGun': Can't find file.
+[2021.03.29-01.49.44:891][222]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: Failed to load '/Game/FirstPerson/FPWeapon/Mesh/SK_FPGun': Can't find file.
+[2021.03.29-01.49.44:892][222]PackagingResults: Warning: Failed to load '/Game/FirstPerson/FPWeapon/Mesh/SK_FPGun': Can't find file.
+[2021.03.29-01.49.44:897][223]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/Weapons/BP_Weapon_Hitscan.uasset' failed to load '/Game/FirstPerson/FPWeapon/Mesh/SK_FPGun': Can't find file.
+[2021.03.29-01.49.44:897][223]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/Weapons/BP_Weapon_Hitscan.uasset' failed to load '/Game/FirstPerson/FPWeapon/Mesh/SK_FPGun': Can't find file.
+[2021.03.29-01.49.44:897][223]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/Weapons/BP_Weapon_Hitscan.uasset' failed to load '/Game/FirstPerson/FPWeapon/Materials/M_FPGun': Can't find file.
+[2021.03.29-01.49.44:897][223]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/Weapons/BP_Weapon_Hitscan.uasset' failed to load '/Game/FirstPerson/FPWeapon/Materials/M_FPGun': Can't find file.
+[2021.03.29-01.49.44:897][223]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 224 Packages Remain 195 Total 419
+[2021.03.29-01.49.44:897][223]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/Weapons/BP_Weapon_Hitscan.uasset' failed to load '/Game/FirstPerson/FPWeapon/Mesh/SK_FPGun': Can't find file.
+[2021.03.29-01.49.44:897][223]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/Weapons/BP_Weapon_Hitscan.uasset' failed to load '/Game/FirstPerson/FPWeapon/Mesh/SK_FPGun': Can't find file.
+[2021.03.29-01.49.44:897][223]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/Weapons/BP_Weapon_Hitscan.uasset' failed to load '/Game/FirstPerson/FPWeapon/Materials/M_FPGun': Can't find file.
+[2021.03.29-01.49.44:897][223]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/Weapons/BP_Weapon_Hitscan.uasset' failed to load '/Game/FirstPerson/FPWeapon/Materials/M_FPGun': Can't find file.
+[2021.03.29-01.49.44:914][225]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 227 Packages Remain 193 Total 420
+[2021.03.29-01.49.44:939][228]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 233 Packages Remain 191 Total 424
+[2021.03.29-01.49.44:974][232]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 235 Packages Remain 190 Total 425
+[2021.03.29-01.49.44:974][232]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 235 Packages Remain 186 Total 421
+[2021.03.29-01.49.44:974][232]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 235 Packages Remain 185 Total 420
+[2021.03.29-01.49.44:974][232]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_WideCapsule.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.44:974][232]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_WideCapsule.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.44:975][232]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_WideCapsule.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.44:975][232]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_WideCapsule.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.44:975][232]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_WideCapsule.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.44:976][232]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_WideCapsule.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.44:982][233]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_WideCapsule.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.44:982][233]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_WideCapsule.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.44:982][233]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_WideCapsule.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.44:982][233]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_WideCapsule.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.44:982][233]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_WideCapsule.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.44:982][233]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_WideCapsule.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:065][243]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 256 Packages Remain 183 Total 439
+[2021.03.29-01.49.45:065][243]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Wedge_A.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:065][243]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Wedge_A.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:065][243]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Wedge_A.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:065][243]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Wedge_A.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:065][243]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Wedge_A.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:065][243]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Wedge_A.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:067][243]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Wedge_A.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:067][243]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Wedge_A.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:067][243]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Wedge_A.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:067][243]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Wedge_A.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:075][244]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Wedge_A.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:075][244]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 257 Packages Remain 182 Total 439
+[2021.03.29-01.49.45:075][244]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Tube.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:075][244]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Tube.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:075][244]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Tube.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:075][244]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Tube.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:075][244]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Tube.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:075][244]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Wedge_A.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:075][244]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Tube.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:075][244]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Tube.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:075][244]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Tube.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:075][244]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Tube.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:075][244]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Tube.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:076][244]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Tube.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:076][244]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Tube.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:082][245]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 258 Packages Remain 181 Total 439
+[2021.03.29-01.49.45:082][245]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_TriPyramid.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:082][245]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_TriPyramid.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:082][245]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_TriPyramid.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:082][245]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_TriPyramid.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:082][245]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_TriPyramid.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:082][245]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_TriPyramid.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:082][245]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_TriPyramid.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:082][245]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_TriPyramid.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:084][245]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_TriPyramid.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:084][245]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_TriPyramid.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:084][245]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_TriPyramid.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:084][245]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_TriPyramid.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:091][246]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 259 Packages Remain 180 Total 439
+[2021.03.29-01.49.45:091][246]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Trim_90_Out.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:091][246]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Trim_90_Out.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:091][246]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Trim_90_Out.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:091][246]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Trim_90_Out.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:091][246]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Trim_90_Out.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:091][246]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Trim_90_Out.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:091][246]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Trim_90_Out.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:091][246]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Trim_90_Out.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:091][246]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Trim_90_Out.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:091][246]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Trim_90_Out.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:091][246]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Trim_90_Out.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:091][246]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Trim_90_Out.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:099][247]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 260 Packages Remain 179 Total 439
+[2021.03.29-01.49.45:099][247]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Trim_90_In.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:099][247]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Trim_90_In.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:099][247]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Trim_90_In.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:099][247]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Trim_90_In.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:099][247]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Trim_90_In.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:099][247]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Trim_90_In.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:099][247]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Trim_90_In.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:099][247]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Trim_90_In.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:099][247]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Trim_90_In.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:099][247]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Trim_90_In.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:099][247]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Trim_90_In.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:099][247]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 261 Packages Remain 178 Total 439
+[2021.03.29-01.49.45:099][247]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Trim_90_In.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:107][248]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Trim.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:107][248]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Trim.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:107][248]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Trim.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:107][248]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Trim.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:107][248]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Trim.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:107][248]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Trim.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:107][248]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 262 Packages Remain 177 Total 439
+[2021.03.29-01.49.45:107][248]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Trim.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:107][248]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Trim.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:107][248]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Trim.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:107][248]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Trim.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:107][248]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Trim.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:107][248]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Trim.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:109][248]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Torus.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:109][248]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Torus.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:109][248]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Torus.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:109][248]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Torus.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:116][249]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Torus.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:116][249]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Torus.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:116][249]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Torus.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:116][249]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Torus.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:116][249]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Torus.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:116][249]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Torus.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:116][249]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Torus.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:116][249]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Torus.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:123][250]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 263 Packages Remain 176 Total 439
+[2021.03.29-01.49.45:123][250]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 264 Packages Remain 175 Total 439
+[2021.03.29-01.49.45:123][250]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 265 Packages Remain 174 Total 439
+[2021.03.29-01.49.45:126][250]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Plane.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:126][250]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Plane.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:126][250]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Plane.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:126][250]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Plane.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:132][251]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Plane.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:132][251]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Plane.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:132][251]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Plane.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:132][251]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Plane.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:132][251]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 266 Packages Remain 173 Total 439
+[2021.03.29-01.49.45:132][251]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Plane.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:132][251]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Plane.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:132][251]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Plane.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:132][251]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Plane.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:133][251]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Pipe_90.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:134][251]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Pipe_90.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:134][251]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Pipe_90.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:134][251]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Pipe_90.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:140][252]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Pipe_90.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:141][252]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Pipe_90.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:141][252]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Pipe_90.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:141][252]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Pipe_90.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:141][252]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Pipe_90.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:141][252]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 267 Packages Remain 172 Total 439
+[2021.03.29-01.49.45:141][252]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Pipe_90.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:141][252]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Pipe_90.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:141][252]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Pipe_90.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:142][252]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Pipe_180.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:142][252]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Pipe_180.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:148][253]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Pipe_180.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:149][253]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Pipe_180.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:149][253]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Pipe_180.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:149][253]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Pipe_180.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:149][253]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Pipe_180.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:149][253]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Pipe_180.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:149][253]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Pipe_180.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:149][253]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Pipe_180.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:149][253]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Pipe_180.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:149][253]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Pipe_180.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:156][254]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 268 Packages Remain 171 Total 439
+[2021.03.29-01.49.45:156][254]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Pipe.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:156][254]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Pipe.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:156][254]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Pipe.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:156][254]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Pipe.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:156][254]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Pipe.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:156][254]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Pipe.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:156][254]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 269 Packages Remain 170 Total 439
+[2021.03.29-01.49.45:156][254]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Pipe.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:156][254]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Pipe.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:156][254]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Pipe.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:156][254]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Pipe.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:156][254]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Pipe.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:156][254]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Pipe.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:159][254]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_NarrowCapsule.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:159][254]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_NarrowCapsule.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:159][254]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_NarrowCapsule.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:159][254]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_NarrowCapsule.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:159][254]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_NarrowCapsule.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:159][254]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_NarrowCapsule.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:159][254]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_NarrowCapsule.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:159][254]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_NarrowCapsule.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:165][255]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_NarrowCapsule.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:165][255]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_NarrowCapsule.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:165][255]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 270 Packages Remain 169 Total 439
+[2021.03.29-01.49.45:165][255]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Cylinder.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:165][255]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_NarrowCapsule.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:165][255]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_NarrowCapsule.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:165][255]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Cylinder.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:165][255]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Cylinder.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:167][255]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Cylinder.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:167][255]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Cylinder.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:167][255]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Cylinder.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:167][255]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Cylinder.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:167][255]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Cylinder.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:167][255]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Cylinder.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:167][255]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Cylinder.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:168][255]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Cylinder.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:168][255]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Cylinder.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:174][256]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 271 Packages Remain 168 Total 439
+[2021.03.29-01.49.45:174][256]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 272 Packages Remain 167 Total 439
+[2021.03.29-01.49.45:176][256]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Cone.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:176][256]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Cone.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:182][257]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Cone.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:182][257]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Cone.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:182][257]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Cone.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:182][257]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Cone.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:182][257]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Cone.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:182][257]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 273 Packages Remain 162 Total 435
+[2021.03.29-01.49.45:182][257]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Cone.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:183][257]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Cone.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:183][257]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Cone.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:183][257]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Cone.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:183][257]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Cone.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:198][259]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 274 Packages Remain 160 Total 434
+[2021.03.29-01.49.45:206][260]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 275 Packages Remain 158 Total 433
+[2021.03.29-01.49.45:222][262]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 276 Packages Remain 156 Total 432
+[2021.03.29-01.49.45:231][263]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 276 Packages Remain 155 Total 431
+[2021.03.29-01.49.45:239][264]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 279 Packages Remain 153 Total 432
+[2021.03.29-01.49.45:248][265]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 280 Packages Remain 152 Total 432
+[2021.03.29-01.49.45:248][265]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 281 Packages Remain 151 Total 432
+[2021.03.29-01.49.45:264][267]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 283 Packages Remain 149 Total 432
+[2021.03.29-01.49.45:265][267]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 284 Packages Remain 148 Total 432
+[2021.03.29-01.49.45:265][267]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 285 Packages Remain 149 Total 434
+[2021.03.29-01.49.45:274][268]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 286 Packages Remain 148 Total 434
+[2021.03.29-01.49.45:274][268]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 288 Packages Remain 146 Total 434
+[2021.03.29-01.49.45:282][269]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 290 Packages Remain 144 Total 434
+[2021.03.29-01.49.45:282][269]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 292 Packages Remain 142 Total 434
+[2021.03.29-01.49.45:292][270]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 294 Packages Remain 138 Total 432
+[2021.03.29-01.49.45:315][273]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 298 Packages Remain 137 Total 435
+[2021.03.29-01.49.45:324][274]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 301 Packages Remain 134 Total 435
+[2021.03.29-01.49.45:333][275]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 303 Packages Remain 133 Total 436
+[2021.03.29-01.49.45:374][280]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 307 Packages Remain 132 Total 439
+[2021.03.29-01.49.45:382][281]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 308 Packages Remain 131 Total 439
+[2021.03.29-01.49.45:416][285]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 313 Packages Remain 130 Total 443
+[2021.03.29-01.49.45:425][286]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 314 Packages Remain 129 Total 443
+[2021.03.29-01.49.45:440][288]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 315 Packages Remain 127 Total 442
+[2021.03.29-01.49.45:449][289]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 316 Packages Remain 126 Total 442
+[2021.03.29-01.49.45:466][291]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 317 Packages Remain 98 Total 415
+[2021.03.29-01.49.45:466][291]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 318 Packages Remain 97 Total 415
+[2021.03.29-01.49.45:475][292]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 319 Packages Remain 96 Total 415
+[2021.03.29-01.49.45:475][292]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 320 Packages Remain 95 Total 415
+[2021.03.29-01.49.45:483][293]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 321 Packages Remain 94 Total 415
+[2021.03.29-01.49.45:483][293]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 322 Packages Remain 91 Total 413
+[2021.03.29-01.49.45:491][294]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 323 Packages Remain 90 Total 413
+[2021.03.29-01.49.45:500][295]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 324 Packages Remain 87 Total 411
+[2021.03.29-01.49.45:517][297]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 325 Packages Remain 86 Total 411
+[2021.03.29-01.49.45:524][298]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 326 Packages Remain 85 Total 411
+[2021.03.29-01.49.45:531][299]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 327 Packages Remain 84 Total 411
+[2021.03.29-01.49.45:540][300]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 328 Packages Remain 83 Total 411
+[2021.03.29-01.49.45:540][300]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 329 Packages Remain 82 Total 411
+[2021.03.29-01.49.45:549][301]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 330 Packages Remain 81 Total 411
+[2021.03.29-01.49.45:557][302]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 331 Packages Remain 80 Total 411
+[2021.03.29-01.49.45:565][303]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 332 Packages Remain 79 Total 411
+[2021.03.29-01.49.45:574][304]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 333 Packages Remain 78 Total 411
+[2021.03.29-01.49.45:574][304]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 334 Packages Remain 77 Total 411
+[2021.03.29-01.49.45:574][304]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 335 Packages Remain 76 Total 411
+[2021.03.29-01.49.45:582][305]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 336 Packages Remain 75 Total 411
+[2021.03.29-01.49.45:582][305]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 337 Packages Remain 74 Total 411
+[2021.03.29-01.49.45:591][306]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 338 Packages Remain 73 Total 411
+[2021.03.29-01.49.45:599][307]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 340 Packages Remain 72 Total 412
+[2021.03.29-01.49.45:616][309]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 342 Packages Remain 71 Total 413
+[2021.03.29-01.49.45:640][312]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 345 Packages Remain 62 Total 407
+[2021.03.29-01.49.45:952][349]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 372 Packages Remain 60 Total 432
+[2021.03.29-01.49.45:952][349]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Wedge_B.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:952][349]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Wedge_B.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:952][349]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Wedge_B.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:952][349]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Wedge_B.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:952][349]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Wedge_B.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:952][349]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Wedge_B.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:952][349]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Wedge_B.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:952][349]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Wedge_B.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:952][349]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Wedge_B.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:952][349]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Wedge_B.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:952][349]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Wedge_B.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:952][349]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Wedge_B.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.45:961][350]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 374 Packages Remain 59 Total 433
+[2021.03.29-01.49.45:962][350]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/Weapons/BP_Weapon_Base.uasset' failed to load '/Game/FirstPerson/FPWeapon/Mesh/SK_FPGun': Can't find file.
+[2021.03.29-01.49.45:962][350]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/Weapons/BP_Weapon_Base.uasset' failed to load '/Game/FirstPerson/FPWeapon/Mesh/SK_FPGun': Can't find file.
+[2021.03.29-01.49.45:962][350]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/Weapons/BP_Weapon_Base.uasset' failed to load '/Game/FirstPerson/FPWeapon/Mesh/SK_FPGun': Can't find file.
+[2021.03.29-01.49.45:962][350]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/Weapons/BP_Weapon_Base.uasset' failed to load '/Game/FirstPerson/FPWeapon/Mesh/SK_FPGun': Can't find file.
+[2021.03.29-01.49.45:962][350]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: Failed to load '/Game/FirstPerson/FPWeapon/Mesh/SK_FPGun': Can't find file.
+[2021.03.29-01.49.45:962][350]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/Weapons/BP_Weapon_Base.uasset' failed to load '/Game/FirstPerson/FPWeapon/Mesh/SK_FPGun': Can't find file.
+[2021.03.29-01.49.45:962][350]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/Weapons/BP_Weapon_Base.uasset' failed to load '/Game/FirstPerson/FPWeapon/Mesh/SK_FPGun': Can't find file.
+[2021.03.29-01.49.45:962][350]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/Weapons/BP_Weapon_Base.uasset' failed to load '/Game/FirstPerson/FPWeapon/Mesh/SK_FPGun': Can't find file.
+[2021.03.29-01.49.45:962][350]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/Weapons/BP_Weapon_Base.uasset' failed to load '/Game/FirstPerson/FPWeapon/Mesh/SK_FPGun': Can't find file.
+[2021.03.29-01.49.45:962][350]PackagingResults: Warning: Failed to load '/Game/FirstPerson/FPWeapon/Mesh/SK_FPGun': Can't find file.
+[2021.03.29-01.49.45:962][350]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: Failed to load '/Game/FirstPerson/FPWeapon/Mesh/SK_FPGun': Can't find file.
+[2021.03.29-01.49.45:963][350]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: Failed to load '/Game/FirstPerson/FPWeapon/Mesh/SK_FPGun': Can't find file.
+[2021.03.29-01.49.45:963][350]PackagingResults: Warning: Failed to load '/Game/FirstPerson/FPWeapon/Mesh/SK_FPGun': Can't find file.
+[2021.03.29-01.49.45:963][350]PackagingResults: Warning: Failed to load '/Game/FirstPerson/FPWeapon/Mesh/SK_FPGun': Can't find file.
+[2021.03.29-01.49.45:968][351]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: Failed to load '/Game/FirstPerson/FPWeapon/Mesh/SK_FPGun': Can't find file.
+[2021.03.29-01.49.45:968][351]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/Weapons/BP_Weapon_Base.uasset' failed to load '/Game/FirstPerson/FPWeapon/Mesh/SK_FPGun': Can't find file.
+[2021.03.29-01.49.45:968][351]UATHelper: Packaging (Windows (64-bit)):   LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/Weapons/BP_Weapon_Base.uasset' failed to load '/Game/FirstPerson/FPWeapon/Mesh/SK_FPGun': Can't find file.
+[2021.03.29-01.49.45:968][351]PackagingResults: Warning: Failed to load '/Game/FirstPerson/FPWeapon/Mesh/SK_FPGun': Can't find file.
+[2021.03.29-01.49.45:968][351]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/Weapons/BP_Weapon_Base.uasset' failed to load '/Game/FirstPerson/FPWeapon/Mesh/SK_FPGun': Can't find file.
+[2021.03.29-01.49.45:969][351]PackagingResults: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/Weapons/BP_Weapon_Base.uasset' failed to load '/Game/FirstPerson/FPWeapon/Mesh/SK_FPGun': Can't find file.
+[2021.03.29-01.49.45:969][351]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 376 Packages Remain 56 Total 432
+[2021.03.29-01.49.45:992][354]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 379 Packages Remain 51 Total 430
+[2021.03.29-01.49.46:009][356]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 380 Packages Remain 45 Total 425
+[2021.03.29-01.49.46:018][357]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 381 Packages Remain 44 Total 425
+[2021.03.29-01.49.46:026][358]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 382 Packages Remain 43 Total 425
+[2021.03.29-01.49.46:034][359]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 383 Packages Remain 42 Total 425
+[2021.03.29-01.49.46:050][361]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 384 Packages Remain 41 Total 425
+[2021.03.29-01.49.46:060][362]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 385 Packages Remain 32 Total 417
+[2021.03.29-01.49.46:060][362]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 386 Packages Remain 5 Total 391
+[2021.03.29-01.49.46:060][362]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cooked packages 387 Packages Remain 0 Total 387
+[2021.03.29-01.49.46:060][362]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Finishing up...
+[2021.03.29-01.49.46:067][363]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Saving BulkData manifest(s)...
+[2021.03.29-01.49.46:075][364]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Done saving BulkData manifest(s)
+[2021.03.29-01.49.46:075][364]UATHelper: Packaging (Windows (64-bit)):   LogBlueprintCodeGen: Display: Nativization Summary - AnimBP:
+[2021.03.29-01.49.46:075][364]UATHelper: Packaging (Windows (64-bit)):   LogBlueprintCodeGen: Display: Name, Children, Non-empty Functions (Empty Functions), Variables, FunctionUsage, VariableUsage
+[2021.03.29-01.49.46:075][364]UATHelper: Packaging (Windows (64-bit)):   LogBlueprintCodeGen: Display: Nativization Summary - Shared Variables From Graph: 0
+[2021.03.29-01.49.46:109][368]UATHelper: Packaging (Windows (64-bit)):   LogShaderLibrary: Display:
+[2021.03.29-01.49.46:109][368]UATHelper: Packaging (Windows (64-bit)):   LogShaderLibrary: Display: Shader Code Stats: PCD3D_SM5
+[2021.03.29-01.49.46:109][368]UATHelper: Packaging (Windows (64-bit)):   LogShaderLibrary: Display: =================
+[2021.03.29-01.49.46:109][368]UATHelper: Packaging (Windows (64-bit)):   LogShaderLibrary: Display: Unique Shaders: 3583, Total Shaders: 12701
+[2021.03.29-01.49.46:109][368]UATHelper: Packaging (Windows (64-bit)):   LogShaderLibrary: Display: Unique Shaders Size: 7.74mb, Total Shader Size: 7.74mb
+[2021.03.29-01.49.46:109][368]UATHelper: Packaging (Windows (64-bit)):   LogShaderLibrary: Display: =================
+[2021.03.29-01.49.46:184][377]UATHelper: Packaging (Windows (64-bit)):   LogAssetRegistryGenerator: Display: Saving asset registry.
+[2021.03.29-01.49.46:217][381]UATHelper: Packaging (Windows (64-bit)):   LogAssetRegistryGenerator: Display: Generated asset registry num assets 382, size is 170.34kb
+[2021.03.29-01.49.46:217][381]UATHelper: Packaging (Windows (64-bit)):   LogAssetRegistryGenerator: Display: Done saving asset registry.
+[2021.03.29-01.49.46:226][382]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Cook by the book total time in tick 2.330470s total time 4.769216
+[2021.03.29-01.49.46:226][382]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Peak Used virtual 539MB Peak Used physical 593MB
+[2021.03.29-01.49.46:226][382]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Hierarchy Timer Information:
+[2021.03.29-01.49.46:226][382]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display:   Root: 0.000s (0)
+[2021.03.29-01.49.46:226][382]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display:     StartCookByTheBookTime: 2.267s (1)
+[2021.03.29-01.49.46:226][382]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display:       CleanSandbox: 0.089s (1)
+[2021.03.29-01.49.46:226][382]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display:         ProcessingAccessedStrings: 0.006s (1)
+[2021.03.29-01.49.46:226][382]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display:       CollectFilesToCook: 0.326s (1)
+[2021.03.29-01.49.46:226][382]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display:         CookModificationDelegate: 0.000s (1)
+[2021.03.29-01.49.46:226][382]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display:         GeneratePackageNames: 0.002s (1)
+[2021.03.29-01.49.46:226][382]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display:       GenerateLongPackageName: 0.001s (1)
+[2021.03.29-01.49.46:226][382]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display:     TickCookOnTheSide: 2.314s (123)
+[2021.03.29-01.49.46:226][382]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display:       LoadPackage: 0.881s (119)
+[2021.03.29-01.49.46:226][382]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display:       CallBeginCacheForCookedPlatformData: 0.049s (123)
+[2021.03.29-01.49.46:226][382]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display:       PostLoadPackageFixup: 0.000s (123)
+[2021.03.29-01.49.46:226][382]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display:       SavingPackages: 1.379s (97)
+[2021.03.29-01.49.46:226][382]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display:         PrecachePlatformDataForNextPackage: 0.004s (302)
+[2021.03.29-01.49.46:226][382]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display:         PrecachePlatformDataForNextNextPackage: 0.190s (272)
+[2021.03.29-01.49.46:226][382]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display:         SaveCookedPackage: 1.168s (387)
+[2021.03.29-01.49.46:226][382]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display:           LoadPackage: 0.001s (387)
+[2021.03.29-01.49.46:226][382]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display:           GEditorSavePackage: 1.157s (387)
+[2021.03.29-01.49.46:226][382]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display:             ConvertingBlueprints: 0.003s (387)
+[2021.03.29-01.49.46:226][382]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display:             VerifyCanCookPackage: 0.002s (382)
+[2021.03.29-01.49.46:226][382]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display:         ClearAllCachedCookedPlatformData: 0.005s (387)
+[2021.03.29-01.49.46:226][382]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display:         EnqueueUnsavedPackages: 0.000s (6)
+[2021.03.29-01.49.46:226][382]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display:     FinalizePackageStore: 0.008s (1)
+[2021.03.29-01.49.46:226][382]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display:     GeneratingBlueprintAssets: 0.001s (1)
+[2021.03.29-01.49.46:226][382]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display:     SavingCurrentIniSettings: 0.057s (1)
+[2021.03.29-01.49.46:226][382]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display:       ProcessingAccessedStrings: 0.006s (1)
+[2021.03.29-01.49.46:227][382]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display:     SavingAssetRegistry: 0.056s (1)
+[2021.03.29-01.49.46:227][382]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display:       BuildChunkManifest: 0.011s (1)
+[2021.03.29-01.49.46:227][382]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display:       SaveManifests: 0.003s (1)
+[2021.03.29-01.49.46:227][382]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display:       SaveRealAssetRegistry: 0.030s (1)
+[2021.03.29-01.49.46:227][382]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display:       WriteCookerOpenOrder: 0.011s (1)
+[2021.03.29-01.49.46:227][382]UATHelper: Packaging (Windows (64-bit)):   LogCook: Display: Done!
+[2021.03.29-01.49.46:234][383]UATHelper: Packaging (Windows (64-bit)):   LogSavePackage: Display: Took 0.006491s to verify the EDL loading graph.
+[2021.03.29-01.49.46:250][385]UATHelper: Packaging (Windows (64-bit)):   LogCookCommandlet: Display: Misc Cook Stats
+[2021.03.29-01.49.46:250][385]UATHelper: Packaging (Windows (64-bit)):   LogCookCommandlet: Display: ===============
+[2021.03.29-01.49.46:251][385]UATHelper: Packaging (Windows (64-bit)):   LogCookCommandlet: Display: NiagaraShader.Misc
+[2021.03.29-01.49.46:260][386]UATHelper: Packaging (Windows (64-bit)):   LogCookCommandlet: Display:     ShadersCompiled=0
+[2021.03.29-01.49.46:260][386]UATHelper: Packaging (Windows (64-bit)):   LogCookCommandlet: Display: ShaderCompiler
+[2021.03.29-01.49.46:260][386]UATHelper: Packaging (Windows (64-bit)):   LogCookCommandlet: Display:     BlockingTimeSec=0.000000
+[2021.03.29-01.49.46:260][386]UATHelper: Packaging (Windows (64-bit)):   LogCookCommandlet: Display:     AsyncCompileTimeSec=0.000000
+[2021.03.29-01.49.46:260][386]UATHelper: Packaging (Windows (64-bit)):   LogCookCommandlet: Display:     GlobalBeginCompileShaderTimeSec=0.000000
+[2021.03.29-01.49.46:260][386]UATHelper: Packaging (Windows (64-bit)):   LogCookCommandlet: Display:     GlobalBeginCompileShaderCalls=0
+[2021.03.29-01.49.46:260][386]UATHelper: Packaging (Windows (64-bit)):   LogCookCommandlet: Display:     ProcessAsyncResultsTimeSec=0.000159
+[2021.03.29-01.49.46:260][386]UATHelper: Packaging (Windows (64-bit)):   LogCookCommandlet: Display: GlobalShader.Misc
+[2021.03.29-01.49.46:260][386]UATHelper: Packaging (Windows (64-bit)):   LogCookCommandlet: Display:     ShadersCompiled=0
+[2021.03.29-01.49.46:260][386]UATHelper: Packaging (Windows (64-bit)):   LogCookCommandlet: Display: MeshMaterial.Misc
+[2021.03.29-01.49.46:260][386]UATHelper: Packaging (Windows (64-bit)):   LogCookCommandlet: Display:     ShadersCompiled=0
+[2021.03.29-01.49.46:260][386]UATHelper: Packaging (Windows (64-bit)):   LogCookCommandlet: Display: MaterialShader.Misc
+[2021.03.29-01.49.46:260][386]UATHelper: Packaging (Windows (64-bit)):   LogCookCommandlet: Display:     ShadersCompiled=0
+[2021.03.29-01.49.46:261][386]UATHelper: Packaging (Windows (64-bit)):   LogCookCommandlet: Display: Package.Load
+[2021.03.29-01.49.46:261][386]UATHelper: Packaging (Windows (64-bit)):   LogCookCommandlet: Display:     NumPackagesLoaded=265
+[2021.03.29-01.49.46:261][386]UATHelper: Packaging (Windows (64-bit)):   LogCookCommandlet: Display:     LoadPackageTimeSec=1.296037
+[2021.03.29-01.49.46:261][386]UATHelper: Packaging (Windows (64-bit)):   LogCookCommandlet: Display: Package.Save
+[2021.03.29-01.49.46:261][386]UATHelper: Packaging (Windows (64-bit)):   LogCookCommandlet: Display:     NumPackagesSaved=387
+[2021.03.29-01.49.46:261][386]UATHelper: Packaging (Windows (64-bit)):   LogCookCommandlet: Display:     SavePackageTimeSec=1.136859
+[2021.03.29-01.49.46:261][386]UATHelper: Packaging (Windows (64-bit)):   LogCookCommandlet: Display:     TagPackageExportsPresaveTimeSec=0.366473
+[2021.03.29-01.49.46:261][386]UATHelper: Packaging (Windows (64-bit)):   LogCookCommandlet: Display:     TagPackageExportsTimeSec=0.111300
+[2021.03.29-01.49.46:261][386]UATHelper: Packaging (Windows (64-bit)):   LogCookCommandlet: Display:     FullyLoadLoadersTimeSec=0.000230
+[2021.03.29-01.49.46:261][386]UATHelper: Packaging (Windows (64-bit)):   LogCookCommandlet: Display:     ResetLoadersTimeSec=0.001775
+[2021.03.29-01.49.46:261][386]UATHelper: Packaging (Windows (64-bit)):   LogCookCommandlet: Display:     TagPackageExportsGetObjectsWithOuter=0.002720
+[2021.03.29-01.49.46:261][386]UATHelper: Packaging (Windows (64-bit)):   LogCookCommandlet: Display:     TagPackageExportsGetObjectsWithMarks=0.000497
+[2021.03.29-01.49.46:261][386]UATHelper: Packaging (Windows (64-bit)):   LogCookCommandlet: Display:     SerializeImportsTimeSec=0.000000
+[2021.03.29-01.49.46:261][386]UATHelper: Packaging (Windows (64-bit)):   LogCookCommandlet: Display:     SortExportsSeekfreeInnerTimeSec=0.243531
+[2021.03.29-01.49.46:261][386]UATHelper: Packaging (Windows (64-bit)):   LogCookCommandlet: Display:     SerializeExportsTimeSec=0.145488
+[2021.03.29-01.49.46:261][386]UATHelper: Packaging (Windows (64-bit)):   LogCookCommandlet: Display:     SerializeBulkDataTimeSec=0.020504
+[2021.03.29-01.49.46:261][386]UATHelper: Packaging (Windows (64-bit)):   LogCookCommandlet: Display:     AsyncWriteTimeSec=0.000000
+[2021.03.29-01.49.46:261][386]UATHelper: Packaging (Windows (64-bit)):   LogCookCommandlet: Display:     MBWritten=97.907079
+[2021.03.29-01.49.46:261][386]UATHelper: Packaging (Windows (64-bit)):   LogCookCommandlet: Display: Package.DifferentPackagesSizeMBPerAsset
+[2021.03.29-01.49.46:261][386]UATHelper: Packaging (Windows (64-bit)):   LogCookCommandlet: Display: Package.NumberOfDifferencesInPackagesPerAsset
+[2021.03.29-01.49.46:261][386]UATHelper: Packaging (Windows (64-bit)):   LogCookCommandlet: Display: Package.PackageDifferencesSizeMBPerAsset
+[2021.03.29-01.49.46:261][386]UATHelper: Packaging (Windows (64-bit)):   LogCookCommandlet: Display: Package.DiffTotal
+[2021.03.29-01.49.46:261][386]UATHelper: Packaging (Windows (64-bit)):   LogCookCommandlet: Display:     NumberOfDifferentPackages=0
+[2021.03.29-01.49.46:261][386]UATHelper: Packaging (Windows (64-bit)):   LogCookCommandlet: Display:     DifferentPackagesSizeMB=0.000000
+[2021.03.29-01.49.46:261][386]UATHelper: Packaging (Windows (64-bit)):   LogCookCommandlet: Display:     NumberOfDifferencesInPackages=0
+[2021.03.29-01.49.46:261][386]UATHelper: Packaging (Windows (64-bit)):   LogCookCommandlet: Display:     PackageDifferencesSizeMB=0.000000
+[2021.03.29-01.49.46:261][386]UATHelper: Packaging (Windows (64-bit)):   LogCookCommandlet: Display: UnversionedProperties
+[2021.03.29-01.49.46:261][386]UATHelper: Packaging (Windows (64-bit)):   LogCookCommandlet: Display:     SavedStructs=0
+[2021.03.29-01.49.46:261][386]UATHelper: Packaging (Windows (64-bit)):   LogCookCommandlet: Display:     SavedMB=0
+[2021.03.29-01.49.46:261][386]UATHelper: Packaging (Windows (64-bit)):   LogCookCommandlet: Display:     EquivalentTaggedMB=0
+[2021.03.29-01.49.46:261][386]UATHelper: Packaging (Windows (64-bit)):   LogCookCommandlet: Display:     CompressionRatio=-nan(ind)
+[2021.03.29-01.49.46:261][386]UATHelper: Packaging (Windows (64-bit)):   LogCookCommandlet: Display:     BitfieldWasteKB=0
+[2021.03.29-01.49.46:261][386]UATHelper: Packaging (Windows (64-bit)):   LogCookCommandlet: Display:
+[2021.03.29-01.49.46:261][386]UATHelper: Packaging (Windows (64-bit)):   LogCookCommandlet: Display: Cook Profile
+[2021.03.29-01.49.46:261][386]UATHelper: Packaging (Windows (64-bit)):   LogCookCommandlet: Display: ============
+[2021.03.29-01.49.46:261][386]UATHelper: Packaging (Windows (64-bit)):   LogCookCommandlet: Display:  0.CookWallTimeSec=10.839208
+[2021.03.29-01.49.46:261][386]UATHelper: Packaging (Windows (64-bit)):   LogCookCommandlet: Display:  0. 0.StartupWallTimeSec=6.040866
+[2021.03.29-01.49.46:261][386]UATHelper: Packaging (Windows (64-bit)):   LogCookCommandlet: Display:  0. 1.CookByTheBookTimeSec=4.782360
+[2021.03.29-01.49.46:261][386]UATHelper: Packaging (Windows (64-bit)):   LogCookCommandlet: Display:  0. 1. 0.StartCookByTheBookTimeSec=2.266719
+[2021.03.29-01.49.46:261][386]UATHelper: Packaging (Windows (64-bit)):   LogCookCommandlet: Display:  0. 1. 0. 0.GameCookModificationDelegateTimeSec=0.000010
+[2021.03.29-01.49.46:261][386]UATHelper: Packaging (Windows (64-bit)):   LogCookCommandlet: Display:  0. 1. 1.TickCookOnTheSideTimeSec=2.499238
+[2021.03.29-01.49.46:262][386]UATHelper: Packaging (Windows (64-bit)):   LogCookCommandlet: Display:  0. 1. 1. 0.TickCookOnTheSideLoadPackagesTimeSec=0.884550
+[2021.03.29-01.49.46:262][386]UATHelper: Packaging (Windows (64-bit)):   LogCookCommandlet: Display:  0. 1. 1. 1.TickCookOnTheSideSaveCookedPackageTimeSec=1.168447
+[2021.03.29-01.49.46:262][386]UATHelper: Packaging (Windows (64-bit)):   LogCookCommandlet: Display:  0. 1. 1. 1. 0.TickCookOnTheSideResolveRedirectorsTimeSec=0.000000
+[2021.03.29-01.49.46:262][386]UATHelper: Packaging (Windows (64-bit)):   LogCookCommandlet: Display:  0. 1. 1. 2.TickCookOnTheSideBeginPackageCacheForCookedPlatformDataTimeSec=0.241910
+[2021.03.29-01.49.46:262][386]UATHelper: Packaging (Windows (64-bit)):   LogCookCommandlet: Display:  0. 1. 1. 3.TickCookOnTheSideFinishPackageCacheForCookedPlatformDataTimeSec=0.007850
+[2021.03.29-01.49.46:262][386]UATHelper: Packaging (Windows (64-bit)):   LogCookCommandlet: Display:  0. 1. 2.TickLoopGCTimeSec=0.000000
+[2021.03.29-01.49.46:262][386]UATHelper: Packaging (Windows (64-bit)):   LogCookCommandlet: Display:  0. 1. 3.TickLoopRecompileShaderRequestsTimeSec=0.000040
+[2021.03.29-01.49.46:262][386]UATHelper: Packaging (Windows (64-bit)):   LogCookCommandlet: Display:  0. 1. 4.TickLoopShaderProcessAsyncResultsTimeSec=0.000016
+[2021.03.29-01.49.46:262][386]UATHelper: Packaging (Windows (64-bit)):   LogCookCommandlet: Display:  0. 1. 5.TickLoopProcessDeferredCommandsTimeSec=0.000030
+[2021.03.29-01.49.46:262][386]UATHelper: Packaging (Windows (64-bit)):   LogCookCommandlet: Display:  0. 1. 6.TickLoopTickCommandletStatsTimeSec=0.000006
+[2021.03.29-01.49.46:262][386]UATHelper: Packaging (Windows (64-bit)):   LogCookCommandlet: Display:
+[2021.03.29-01.49.46:262][386]UATHelper: Packaging (Windows (64-bit)):   LogCookCommandlet: Display: DDC Summary Stats
+[2021.03.29-01.49.46:262][386]UATHelper: Packaging (Windows (64-bit)):   LogCookCommandlet: Display: =================
+[2021.03.29-01.49.46:262][386]UATHelper: Packaging (Windows (64-bit)):   LogCookCommandlet: Display: TotalGetHits    =       792
+[2021.03.29-01.49.46:262][386]UATHelper: Packaging (Windows (64-bit)):   LogCookCommandlet: Display: TotalGets       =       792
+[2021.03.29-01.49.46:262][386]UATHelper: Packaging (Windows (64-bit)):   LogCookCommandlet: Display: TotalGetHitPct  =  1.000000
+[2021.03.29-01.49.46:262][386]UATHelper: Packaging (Windows (64-bit)):   LogCookCommandlet: Display: LocalGetHitPct  =  0.496212
+[2021.03.29-01.49.46:262][386]UATHelper: Packaging (Windows (64-bit)):   LogCookCommandlet: Display: SharedGetHitPct =  0.000000
+[2021.03.29-01.49.46:262][386]UATHelper: Packaging (Windows (64-bit)):   LogCookCommandlet: Display: OtherGetHitPct  =  0.503788
+[2021.03.29-01.49.46:262][386]UATHelper: Packaging (Windows (64-bit)):   LogCookCommandlet: Display: GetMissPct      =  0.000000
+[2021.03.29-01.49.46:262][386]UATHelper: Packaging (Windows (64-bit)):   LogCookCommandlet: Display: TotalPutHits    =         0
+[2021.03.29-01.49.46:262][386]UATHelper: Packaging (Windows (64-bit)):   LogCookCommandlet: Display: TotalPuts       =         0
+[2021.03.29-01.49.46:262][386]UATHelper: Packaging (Windows (64-bit)):   LogCookCommandlet: Display: TotalPutHitPct  =  0.000000
+[2021.03.29-01.49.46:262][386]UATHelper: Packaging (Windows (64-bit)):   LogCookCommandlet: Display: PutMissPct      =  0.000000
+[2021.03.29-01.49.46:262][386]UATHelper: Packaging (Windows (64-bit)):   LogCookCommandlet: Display:
+[2021.03.29-01.49.46:262][386]UATHelper: Packaging (Windows (64-bit)):   LogCookCommandlet: Display: DDC Resource Stats
+[2021.03.29-01.49.46:262][386]UATHelper: Packaging (Windows (64-bit)):   LogCookCommandlet: Display: =======================================================================================================
+[2021.03.29-01.49.46:262][386]UATHelper: Packaging (Windows (64-bit)):   LogCookCommandlet: Display: Asset Type                          Total Time (Sec)  GameThread Time (Sec)  Assets Built  MB Processed
+[2021.03.29-01.49.46:262][386]UATHelper: Packaging (Windows (64-bit)):   LogCookCommandlet: Display: ----------------------------------  ----------------  ---------------------  ------------  ------------
+[2021.03.29-01.49.46:262][386]UATHelper: Packaging (Windows (64-bit)):   LogCookCommandlet: Display: MaterialShader                                  0.20                   0.20             0          5.71
+[2021.03.29-01.49.46:262][386]UATHelper: Packaging (Windows (64-bit)):   LogCookCommandlet: Display: Texture (Inline)                                0.12                   0.12             0         38.43
+[2021.03.29-01.49.46:262][386]UATHelper: Packaging (Windows (64-bit)):   LogCookCommandlet: Display: Texture (Streaming)                             0.08                   0.00             0         40.74
+[2021.03.29-01.49.46:262][386]UATHelper: Packaging (Windows (64-bit)):   LogCookCommandlet: Display: StaticMesh                                      0.05                   0.05             0          3.04
+[2021.03.29-01.49.46:262][386]UATHelper: Packaging (Windows (64-bit)):   LogCookCommandlet: Display: PhysX (BodySetup)                               0.02                   0.02             0          1.90
+[2021.03.29-01.49.46:262][386]UATHelper: Packaging (Windows (64-bit)):   LogCookCommandlet: Display: GlobalShader                                    0.02                   0.02             0          6.32
+[2021.03.29-01.49.46:262][386]UATHelper: Packaging (Windows (64-bit)):   LogCookCommandlet: Display: SkeletalMesh                                    0.01                   0.01             0          1.74
+[2021.03.29-01.49.46:262][386]UATHelper: Packaging (Windows (64-bit)):   LogCookCommandlet: Display: NavCollision                                    0.00                   0.00             0          0.11
+[2021.03.29-01.49.46:262][386]UATHelper: Packaging (Windows (64-bit)):   LogCookCommandlet: Display: SoundWave                                       0.00                   0.00             0          2.69
+[2021.03.29-01.49.46:263][386]UATHelper: Packaging (Windows (64-bit)):   LogCookCommandlet: Display: DistanceField                                   0.00                   0.00             0          0.00
+[2021.03.29-01.49.46:263][386]UATHelper: Packaging (Windows (64-bit)):   LogInit: Display:
+[2021.03.29-01.49.46:263][386]UATHelper: Packaging (Windows (64-bit)):   LogInit: Display: Warning/Error Summary (Unique only)
+[2021.03.29-01.49.46:263][386]UATHelper: Packaging (Windows (64-bit)):   LogInit: Display: -----------------------------------
+[2021.03.29-01.49.46:263][386]UATHelper: Packaging (Windows (64-bit)):   LogInit: Display: LogClass: Warning: FUpgrade::upgradeType is not initialized properly
+[2021.03.29-01.49.46:263][386]UATHelper: Packaging (Windows (64-bit)):   LogInit: Display: LogAutomationTest: Warning: FUpgrade::upgradeType is not initialized properly
+[2021.03.29-01.49.46:263][386]UATHelper: Packaging (Windows (64-bit)):   LogInit: Display: CookResults: Warning: Unable to find package for cooking /Game/BP_GEPCharacter
+[2021.03.29-01.49.46:263][386]UATHelper: Packaging (Windows (64-bit)):   LogInit: Display: LogCook: Warning: Unable to find package for cooking /Game/BP_GEPCharacter
+[2021.03.29-01.49.46:263][386]UATHelper: Packaging (Windows (64-bit)):   LogInit: Display: LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/Weapons/BP_Weapon_Hitscan.uasset' failed to load '/Game/FirstPerson/FPWeapon/Materials/M_FPGun': Can't find file.
+[2021.03.29-01.49.46:263][386]UATHelper: Packaging (Windows (64-bit)):   LogInit: Display: LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/Weapons/BP_Weapon_Hitscan.uasset' failed to load '/Game/FirstPerson/FPWeapon/Mesh/SK_FPGun': Can't find file.
+[2021.03.29-01.49.46:263][386]UATHelper: Packaging (Windows (64-bit)):   LogInit: Display: LogUObjectGlobals: Warning: Failed to load '/Game/FirstPerson/FPWeapon/Materials/M_FPGun': Can't find file.
+[2021.03.29-01.49.46:263][386]UATHelper: Packaging (Windows (64-bit)):   LogInit: Display: LogUObjectGlobals: Warning: Failed to load '/Game/FirstPerson/FPWeapon/Mesh/SK_FPGun': Can't find file.
+[2021.03.29-01.49.46:263][386]UATHelper: Packaging (Windows (64-bit)):   LogInit: Display: LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_WideCapsule.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.46:263][386]UATHelper: Packaging (Windows (64-bit)):   LogInit: Display: LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Wedge_A.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.46:263][386]UATHelper: Packaging (Windows (64-bit)):   LogInit: Display: LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Tube.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.46:263][386]UATHelper: Packaging (Windows (64-bit)):   LogInit: Display: LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_TriPyramid.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.46:271][387]UATHelper: Packaging (Windows (64-bit)):   LogInit: Display: LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Trim_90_Out.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.46:271][387]UATHelper: Packaging (Windows (64-bit)):   LogInit: Display: LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Trim_90_In.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.46:271][387]UATHelper: Packaging (Windows (64-bit)):   LogInit: Display: LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Trim.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.46:271][387]UATHelper: Packaging (Windows (64-bit)):   LogInit: Display: LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Torus.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.46:271][387]UATHelper: Packaging (Windows (64-bit)):   LogInit: Display: LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Plane.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.46:271][387]UATHelper: Packaging (Windows (64-bit)):   LogInit: Display: LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Pipe_90.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.46:271][387]UATHelper: Packaging (Windows (64-bit)):   LogInit: Display: LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Pipe_180.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.46:271][387]UATHelper: Packaging (Windows (64-bit)):   LogInit: Display: LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Pipe.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.46:271][387]UATHelper: Packaging (Windows (64-bit)):   LogInit: Display: LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_NarrowCapsule.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.46:271][387]UATHelper: Packaging (Windows (64-bit)):   LogInit: Display: LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Cylinder.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.46:271][387]UATHelper: Packaging (Windows (64-bit)):   LogInit: Display: LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Cone.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.46:271][387]UATHelper: Packaging (Windows (64-bit)):   LogInit: Display: LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/StarterContent/Shapes/Shape_Wedge_B.uasset' failed to load '/Game/StarterContent/Materials/M_Basic_Wall': Can't find file.
+[2021.03.29-01.49.46:271][387]UATHelper: Packaging (Windows (64-bit)):   LogInit: Display: LogUObjectGlobals: Warning: While loading '../../../../../Github/GEP/GEPProject/Content/Weapons/BP_Weapon_Base.uasset' failed to load '/Game/FirstPerson/FPWeapon/Mesh/SK_FPGun': Can't find file.
+[2021.03.29-01.49.46:271][387]UATHelper: Packaging (Windows (64-bit)):   LogInit: Display:
+[2021.03.29-01.49.46:271][387]UATHelper: Packaging (Windows (64-bit)):   LogInit: Display: Success - 0 error(s), 130 warning(s)
+[2021.03.29-01.49.46:271][387]UATHelper: Packaging (Windows (64-bit)):   LogInit: Display:
+[2021.03.29-01.49.46:271][387]UATHelper: Packaging (Windows (64-bit)):   
+[2021.03.29-01.49.46:271][387]UATHelper: Packaging (Windows (64-bit)):   Execution of commandlet took:  4.82 seconds
+[2021.03.29-01.49.46:818][453]UATHelper: Packaging (Windows (64-bit)):   LogContentStreaming: Display: There are 1 unreleased StreamingManagers
+[2021.03.29-01.49.48:160][614]UATHelper: Packaging (Windows (64-bit)): Took 12.9916487s to run UE4Editor-Cmd.exe, ExitCode=0
+[2021.03.29-01.49.48:169][615]UATHelper: Packaging (Windows (64-bit)): ********** COOK COMMAND COMPLETED **********
+[2021.03.29-01.49.48:169][615]UATHelper: Packaging (Windows (64-bit)): ********** STAGE COMMAND STARTED **********
+[2021.03.29-01.49.48:226][622]UATHelper: Packaging (Windows (64-bit)): Creating Staging Manifest...
+[2021.03.29-01.49.48:985][713]UATHelper: Packaging (Windows (64-bit)): Excluding config file E:\epk\UE_4.25\Engine\Config\BaseEditor.ini
+[2021.03.29-01.49.48:985][713]UATHelper: Packaging (Windows (64-bit)): Excluding config file E:\epk\UE_4.25\Engine\Config\BaseEditorKeyBindings.ini
+[2021.03.29-01.49.48:985][713]UATHelper: Packaging (Windows (64-bit)): Excluding config file E:\epk\UE_4.25\Engine\Config\BaseEditorPerProjectUserSettings.ini
+[2021.03.29-01.49.48:985][713]UATHelper: Packaging (Windows (64-bit)): Excluding config file E:\epk\UE_4.25\Engine\Config\BaseEditorSettings.ini
+[2021.03.29-01.49.48:985][713]UATHelper: Packaging (Windows (64-bit)): Excluding config file E:\epk\UE_4.25\Engine\Config\BaseLightmass.ini
+[2021.03.29-01.49.48:985][713]UATHelper: Packaging (Windows (64-bit)): Excluding config file E:\epk\UE_4.25\Engine\Config\BasePakFileRules.ini
+[2021.03.29-01.49.48:985][713]UATHelper: Packaging (Windows (64-bit)): Excluding config file E:\epk\UE_4.25\Engine\Config\Localization\Category.ini
+[2021.03.29-01.49.48:985][713]UATHelper: Packaging (Windows (64-bit)): Excluding config file E:\epk\UE_4.25\Engine\Config\Localization\Editor.ini
+[2021.03.29-01.49.48:985][713]UATHelper: Packaging (Windows (64-bit)): Excluding config file E:\epk\UE_4.25\Engine\Config\Localization\EditorTutorials.ini
+[2021.03.29-01.49.48:985][713]UATHelper: Packaging (Windows (64-bit)): Excluding config file E:\epk\UE_4.25\Engine\Config\Localization\Engine.ini
+[2021.03.29-01.49.48:985][713]UATHelper: Packaging (Windows (64-bit)): Excluding config file E:\epk\UE_4.25\Engine\Config\Localization\Keywords.ini
+[2021.03.29-01.49.48:985][713]UATHelper: Packaging (Windows (64-bit)): Excluding config file E:\epk\UE_4.25\Engine\Config\Localization\PortableObjectExport.ini
+[2021.03.29-01.49.48:985][713]UATHelper: Packaging (Windows (64-bit)): Excluding config file E:\epk\UE_4.25\Engine\Config\Localization\PortableObjectImport.ini
+[2021.03.29-01.49.48:985][713]UATHelper: Packaging (Windows (64-bit)): Excluding config file E:\epk\UE_4.25\Engine\Config\Localization\PropertyNames.ini
+[2021.03.29-01.49.48:985][713]UATHelper: Packaging (Windows (64-bit)): Excluding config file E:\epk\UE_4.25\Engine\Config\Localization\RepairData.ini
+[2021.03.29-01.49.48:985][713]UATHelper: Packaging (Windows (64-bit)): Excluding config file E:\epk\UE_4.25\Engine\Config\Localization\ToolTips.ini
+[2021.03.29-01.49.48:985][713]UATHelper: Packaging (Windows (64-bit)): Excluding config file E:\epk\UE_4.25\Engine\Config\Localization\WordCount.ini
+[2021.03.29-01.49.48:985][713]UATHelper: Packaging (Windows (64-bit)): Excluding config file E:\Github\GEP\GEPProject\Config\DefaultEditor.ini
+[2021.03.29-01.49.48:985][713]UATHelper: Packaging (Windows (64-bit)): Excluding config file E:\Github\GEP\GEPProject\Config\DefaultEditorPerProjectUserSettings.ini
+[2021.03.29-01.49.49:101][727]UATHelper: Packaging (Windows (64-bit)): Cleaning Stage Directory: E:\Github\GEP\GEPProject\Saved\StagedBuilds\WindowsNoEditor
+[2021.03.29-01.49.49:101][727]UATHelper: Packaging (Windows (64-bit)): Creating pak using staging manifest.
+[2021.03.29-01.49.49:510][776]UATHelper: Packaging (Windows (64-bit)): Executing 1 UnrealPak command...
+[2021.03.29-01.49.54:826][414]UATHelper: Packaging (Windows (64-bit)): Waiting for child processes to complete (1/1)
+[2021.03.29-01.49.54:826][414]UATHelper: Packaging (Windows (64-bit)): Output from: E:\Github\GEP\GEPProject\GEPProject.uproject E:\Github\GEP\GEPProject\Saved\StagedBuilds\WindowsNoEditor\GEPProject\Content\Paks\GEPProject-WindowsNoEditor.pak -create="C:\Users\cathan\AppData\Roaming\Unreal Engine\AutomationTool\Logs\E+epk+UE_4.25\PakList_GEPProject-WindowsNoEditor.txt" -cryptokeys=E:\Github\GEP\GEPProject\Saved\Cooked\WindowsNoEditor\GEPProject\Metadata\Crypto.json -order=E:\Github\GEP\GEPProject\Build\WindowsNoEditor\FileOpenOrder\CookerOpenOrder.log -patchpaddingalign=2048 -platform=Windows -compressionformats=  -multiprocess -abslog="C:\Users\cathan\AppData\Roaming\Unreal Engine\AutomationTool\Logs\E+epk+UE_4.25\UnrealPak-GEPProject-WindowsNoEditor-2021.03.29-02.49.49.txt"
+[2021.03.29-01.49.54:826][414]UATHelper: Packaging (Windows (64-bit)):   LogPakFile: Display: Parsing crypto keys from a crypto key cache file
+[2021.03.29-01.49.54:826][414]UATHelper: Packaging (Windows (64-bit)):   LogCompression: Display: FCompression::GetCompressionFormat - Unable to find a module or plugin for compression format -multiprocess
+[2021.03.29-01.49.54:826][414]UATHelper: Packaging (Windows (64-bit)):   LogPakFile: Display: Loading response file C:\Users\cathan\AppData\Roaming\Unreal Engine\AutomationTool\Logs\E+epk+UE_4.25\PakList_GEPProject-WindowsNoEditor.txt
+[2021.03.29-01.49.54:826][414]UATHelper: Packaging (Windows (64-bit)):   LogPakFile: Display: Added 1875 entries to add to pak file.
+[2021.03.29-01.49.54:826][414]UATHelper: Packaging (Windows (64-bit)):   LogPakFile: Display: Loading pak order file E:\Github\GEP\GEPProject\Build\WindowsNoEditor\FileOpenOrder\CookerOpenOrder.log...
+[2021.03.29-01.49.54:826][414]UATHelper: Packaging (Windows (64-bit)):   LogPakFile: Display: Finished loading pak order file E:\Github\GEP\GEPProject\Build\WindowsNoEditor\FileOpenOrder\CookerOpenOrder.log.
+[2021.03.29-01.49.54:826][414]UATHelper: Packaging (Windows (64-bit)):   LogPakFile: Display: Collecting files to add to pak file...
+[2021.03.29-01.49.54:826][414]UATHelper: Packaging (Windows (64-bit)):   LogPakFile: Display: Collected 1875 files in 0.01s.
+[2021.03.29-01.49.54:826][414]UATHelper: Packaging (Windows (64-bit)):   LogPakFile: Display: Creating pak E:\Github\GEP\GEPProject\Saved\StagedBuilds\WindowsNoEditor\GEPProject\Content\Paks\GEPProject-WindowsNoEditor.pak.
+[2021.03.29-01.49.54:826][414]UATHelper: Packaging (Windows (64-bit)):   LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2021.03.29-01.49.54:826][414]UATHelper: Packaging (Windows (64-bit)):   LogPakFile: Display: DISABLING pak file index freezing (all must be true: HasPlatformInfo? true - TargetIs64Bit? true - NoRuntimeUnloading? true - Unencrypted? true, 'Windows' != 'Windows')
+[2021.03.29-01.49.54:826][414]UATHelper: Packaging (Windows (64-bit)):   LogPakFile: Display: Added 1875 files, 125495118 bytes total, time 3.27s.
+[2021.03.29-01.49.54:826][414]UATHelper: Packaging (Windows (64-bit)):   LogPakFile: Display: Encryption - DISABLED
+[2021.03.29-01.49.54:826][414]UATHelper: Packaging (Windows (64-bit)):   LogPakFile: Display: Unreal pak executed in 3.326147 seconds
+[2021.03.29-01.49.54:826][414]UATHelper: Packaging (Windows (64-bit)): UnrealPak terminated with exit code 0
+[2021.03.29-01.49.54:843][416]UATHelper: Packaging (Windows (64-bit)): Copying NonUFSFiles to staging directory: E:\Github\GEP\GEPProject\Saved\StagedBuilds\WindowsNoEditor
+[2021.03.29-01.49.56:393][602]UATHelper: Packaging (Windows (64-bit)): ********** STAGE COMMAND COMPLETED **********
+[2021.03.29-01.49.56:393][602]UATHelper: Packaging (Windows (64-bit)): ********** PACKAGE COMMAND STARTED **********
+[2021.03.29-01.49.56:393][602]UATHelper: Packaging (Windows (64-bit)): ********** PACKAGE COMMAND COMPLETED **********
+[2021.03.29-01.49.56:393][602]UATHelper: Packaging (Windows (64-bit)): ********** ARCHIVE COMMAND STARTED **********
+[2021.03.29-01.49.56:393][602]UATHelper: Packaging (Windows (64-bit)): Archiving to E:/UE4PACKAGE
+[2021.03.29-01.49.57:685][757]UATHelper: Packaging (Windows (64-bit)): ********** ARCHIVE COMMAND COMPLETED **********
+[2021.03.29-01.49.57:686][757]UATHelper: Packaging (Windows (64-bit)): BUILD SUCCESSFUL
+[2021.03.29-01.49.57:686][757]UATHelper: Packaging (Windows (64-bit)): AutomationTool exiting with ExitCode=0 (Success)
+[2021.03.29-01.53.46:516][813]LogTemp: Repeating last play command: Selected Viewport
+[2021.03.29-01.53.46:549][813]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.03.29-01.53.46:550][813]PIE: New page: PIE session: GameLevel (29 Mar 2021, 03:53:46)
+[2021.03.29-01.53.46:552][813]LogOnline: OSS: Creating online subsystem instance for: NULL
+[2021.03.29-01.53.46:553][813]LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for module [NULL]
+[2021.03.29-01.53.46:555][813]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_GameLevel
+[2021.03.29-01.53.46:569][813]LogPlayLevel: PIE: StaticDuplicateObject took: (0.014116s)
+[2021.03.29-01.53.46:571][813]LogAIModule: Creating AISystem for world GameLevel
+[2021.03.29-01.53.46:571][813]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (0000023923DB4600), frame # 5813
+[2021.03.29-01.53.46:571][813]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (0000023923EE4400), frame # 5813
+[2021.03.29-01.53.46:571][813]LogPlayLevel: PIE: World Init took: (0.001409s)
+[2021.03.29-01.53.46:571][813]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/GameLevel.GameLevel to /Game/UEDPIE_0_GameLevel.GameLevel (0.016325s)
+[2021.03.29-01.53.46:644][813]LogUObjectHash: Compacting FUObjectHashTables data took   5.38ms
+[2021.03.29-01.53.46:648][813]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.03.29-01.53.46:648][813]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.03.29-01.53.46:648][813]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.03.29-01.53.46:648][813]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.03.29-01.53.46:648][813]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.03.29-01.53.46:648][813]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.03.29-01.53.46:648][813]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.03.29-01.53.46:648][813]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.03.29-01.53.46:649][813]LogAudio: Display: Using built-in audio occlusion.
+[2021.03.29-01.53.46:649][813]LogAudioMixer: Display: Initializing audio mixer.
+[2021.03.29-01.53.46:661][813]LogAudioMixer: Display: 0: FrontLeft
+[2021.03.29-01.53.46:661][813]LogAudioMixer: Display: 1: FrontRight
+[2021.03.29-01.53.46:686][813]LogAudioMixer: Display: Using Audio Device Headphones (High Definition Audio Device)
+[2021.03.29-01.53.46:687][813]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.03.29-01.53.46:687][813]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.03.29-01.53.46:687][813]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.03.29-01.53.46:687][813]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.03.29-01.53.46:701][813]LogInit: FAudioDevice initialized.
+[2021.03.29-01.53.46:727][813]LogLoad: Game class is 'BP_GEPGamemode_C'
+[2021.03.29-01.53.46:727][813]LogActor: Warning: BP_GEPGamemode_C /Game/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.BP_GEPGamemode_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2021.03.29-01.53.46:740][813]LogWorld: Bringing World /Game/UEDPIE_0_GameLevel.GameLevel up for play (max tick rate 0) at 2021.03.29-02.53.46
+[2021.03.29-01.53.46:755][813]LogWorld: Bringing up level for play took: 0.019079
+[2021.03.29-01.53.46:756][813]LogOnline: OSS: Creating online subsystem instance for: :Context_4
+[2021.03.29-01.53.46:765][813]LogOutputDevice: Warning: 
+
+Script Stack (2 frames):
+GEPProjectCharacter.Init
+GEPPlayerController.Init
+
+[2021.03.29-01.53.47:510][813]LogStats: FPlatformStackWalk::StackWalkAndDump -  0.745 s
+[2021.03.29-01.53.47:511][813]LogOutputDevice: Error: === Handled ensure: ===
+[2021.03.29-01.53.47:511][813]LogOutputDevice: Error: 
+[2021.03.29-01.53.47:511][813]LogOutputDevice: Error: Ensure condition failed: ActorHasBegunPlay == EActorBeginPlayState::BeginningPlay [File:D:/Build/++UE4/Sync/Engine/Source/Runtime/Engine/Private/Actor.cpp] [Line: 3421]
+[2021.03.29-01.53.47:511][813]LogOutputDevice: Error: BeginPlay was called on actor /Game/UEDPIE_0_GameLevel.GameLevel:PersistentLevel.BP_PlayerCharacter_C_0 which was in state 0
+[2021.03.29-01.53.47:511][813]LogOutputDevice: Error: Stack: 
+[2021.03.29-01.53.47:511][813]LogOutputDevice: Error: [Callstack] 0x00007fff955ac730 UE4Editor-Engine.dll!UnknownFunction []
+[2021.03.29-01.53.47:511][813]LogOutputDevice: Error: [Callstack] 0x00007fff93d34aa1 UE4Editor-Engine.dll!UnknownFunction []
+[2021.03.29-01.53.47:511][813]LogOutputDevice: Error: [Callstack] 0x00007fff98520b34 UE4Editor-CoreUObject.dll!UnknownFunction []
+[2021.03.29-01.53.47:511][813]LogOutputDevice: Error: [Callstack] 0x00007fff98794753 UE4Editor-CoreUObject.dll!UnknownFunction []
+[2021.03.29-01.53.47:511][813]LogOutputDevice: Error: [Callstack] 0x00007fff93d6afe5 UE4Editor-Engine.dll!UnknownFunction []
+[2021.03.29-01.53.47:511][813]LogOutputDevice: Error: [Callstack] 0x00007fff7b4b5add UE4Editor-GEPProject.dll!AGEPPlayerController::Init_Implementation() [E:\Github\GEP\GEPProject\Source\GEPProject\Player\GEPPlayerController.cpp:44]
+[2021.03.29-01.53.47:511][813]LogOutputDevice: Error: [Callstack] 0x00007fff98520b34 UE4Editor-CoreUObject.dll!UnknownFunction []
+[2021.03.29-01.53.47:511][813]LogOutputDevice: Error: [Callstack] 0x00007fff98794753 UE4Editor-CoreUObject.dll!UnknownFunction []
+[2021.03.29-01.53.47:511][813]LogOutputDevice: Error: [Callstack] 0x00007fff93d6afe5 UE4Editor-Engine.dll!UnknownFunction []
+[2021.03.29-01.53.47:511][813]LogOutputDevice: Error: [Callstack] 0x00007fff7b4b8a7b UE4Editor-GEPProject.dll!AGEPProjectGameMode::PostLogin() [E:\Github\GEP\GEPProject\Source\GEPProject\GEPProjectGameMode.cpp:43]
+[2021.03.29-01.53.47:511][813]LogOutputDevice: Error: [Callstack] 0x00007fff945f5099 UE4Editor-Engine.dll!UnknownFunction []
+[2021.03.29-01.53.47:511][813]LogOutputDevice: Error: [Callstack] 0x00007fff94644f9d UE4Editor-Engine.dll!UnknownFunction []
+[2021.03.29-01.53.47:511][813]LogOutputDevice: Error: [Callstack] 0x00007fff944443b9 UE4Editor-Engine.dll!UnknownFunction []
+[2021.03.29-01.53.47:511][813]LogOutputDevice: Error: [Callstack] 0x00007fff91e2595c UE4Editor-UnrealEd.dll!UnknownFunction []
+[2021.03.29-01.53.47:511][813]LogOutputDevice: Error: [Callstack] 0x00007fff91e4682c UE4Editor-UnrealEd.dll!UnknownFunction []
+[2021.03.29-01.53.47:511][813]LogOutputDevice: Error: [Callstack] 0x00007fff91e26899 UE4Editor-UnrealEd.dll!UnknownFunction []
+[2021.03.29-01.53.47:511][813]LogOutputDevice: Error: [Callstack] 0x00007fff91e623da UE4Editor-UnrealEd.dll!UnknownFunction []
+[2021.03.29-01.53.47:511][813]LogOutputDevice: Error: [Callstack] 0x00007fff91e6569d UE4Editor-UnrealEd.dll!UnknownFunction []
+[2021.03.29-01.53.47:511][813]LogOutputDevice: Error: [Callstack] 0x00007fff91e65078 UE4Editor-UnrealEd.dll!UnknownFunction []
+[2021.03.29-01.53.47:511][813]LogOutputDevice: Error: [Callstack] 0x00007fff918ea854 UE4Editor-UnrealEd.dll!UnknownFunction []
+[2021.03.29-01.53.47:511][813]LogOutputDevice: Error: [Callstack] 0x00007fff921c37e6 UE4Editor-UnrealEd.dll!UnknownFunction []
+[2021.03.29-01.53.47:511][813]LogOutputDevice: Error: [Callstack] 0x00007ff6cc4a7800 UE4Editor.exe!UnknownFunction []
+[2021.03.29-01.53.47:511][813]LogOutputDevice: Error: [Callstack] 0x00007ff6cc4bba7c UE4Editor.exe!UnknownFunction []
+[2021.03.29-01.53.47:511][813]LogOutputDevice: Error: [Callstack] 0x00007ff6cc4bbb5a UE4Editor.exe!UnknownFunction []
+[2021.03.29-01.53.47:511][813]LogOutputDevice: Error: [Callstack] 0x00007ff6cc4ce31d UE4Editor.exe!UnknownFunction []
+[2021.03.29-01.53.47:511][813]LogOutputDevice: Error: [Callstack] 0x00007ff6cc4d145a UE4Editor.exe!UnknownFunction []
+[2021.03.29-01.53.47:511][813]LogOutputDevice: Error: [Callstack] 0x00007ff8522d6fd4 KERNEL32.DLL!UnknownFunction []
+[2021.03.29-01.53.47:511][813]LogOutputDevice: Error: [Callstack] 0x00007ff852f3cec1 ntdll.dll!UnknownFunction []
+[2021.03.29-01.53.47:511][813]LogOutputDevice: Error: 

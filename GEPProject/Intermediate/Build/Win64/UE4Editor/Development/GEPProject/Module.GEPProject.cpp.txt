@@ -606,12 +606,6 @@ E:\Github\GEP\GEPProject\Source\GEPProject\Weapons\Weapon_GrenadeLauncher.h
 E:\Github\GEP\GEPProject\Source\GEPProject\Weapons\Weapon_Projectile.h
 E:\Github\GEP\GEPProject\Intermediate\Build\Win64\UE4Editor\Inc\GEPProject\Weapon_Projectile.generated.h
 E:\Github\GEP\GEPProject\Intermediate\Build\Win64\UE4Editor\Inc\GEPProject\Weapon_GrenadeLauncher.generated.h
-E:/Github/GEP/GEPProject/Source/GEPProject/Weapons/Weapon_Hitscan.cpp
-E:\epk\UE_4.25\Engine\Source\Editor\BlueprintGraph\Classes\K2Node_GetSubsystem.h
-E:\epk\UE_4.25\Engine\Source\Editor\BlueprintGraph\Classes\K2Node.h
-E:\epk\UE_4.25\Engine\Source\Editor\BlueprintGraph\Public\BlueprintNodeSignature.h
-E:\epk\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\BlueprintGraph\K2Node.generated.h
-E:\epk\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\BlueprintGraph\K2Node_GetSubsystem.generated.h
 E:/Github/GEP/GEPProject/Source/GEPProject/Weapons/Weapon_Hitscan_Auto.cpp
 E:/Github/GEP/GEPProject/Source/GEPProject/Weapons/Weapon_Hitscan_Charge.cpp
 E:/Github/GEP/GEPProject/Source/GEPProject/Weapons/Weapon_Pistol.cpp
