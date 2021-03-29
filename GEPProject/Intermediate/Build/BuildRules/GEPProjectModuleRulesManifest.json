@@ -1,8 +1,0 @@
-{
-	"SourceFiles": [
-		"E:\\Github\\GEP\\GEPProject\\Source\\GEPProject\\GEPProject.Build.cs",
-		"E:\\Github\\GEP\\GEPProject\\Source\\GEPProject.Target.cs",
-		"E:\\Github\\GEP\\GEPProject\\Source\\GEPProjectEditor.Target.cs"
-	],
-	"EngineVersion": "4.25.4"
-}
