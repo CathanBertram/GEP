@@ -10,64 +10,6 @@
   <component name="ChangeListManager">
     <list default="true" id="37f4dc96-c088-407b-80a2-d8740801dcca" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GEPProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GEPProject/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-GEPProject.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Binaries/Win64/UE4Editor-GEPProject.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/GameLevel.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameLevel.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Weapons/BP_GrenadeLauncher.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Weapons/BP_GrenadeLauncher.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Weapons/BP_Weapon_Projectile.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/SourceFileCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/SourceFileCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/GEPProjectEditor/Development/DependencyCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/GEPProjectEditor/Development/DependencyCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/GEPProjectEditor/Development/GEPProjectEditor.uhtmanifest" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/GEPProjectEditor/Development/GEPProjectEditor.uhtmanifest" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/GEPProjectEditor/Development/Makefile.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/GEPProjectEditor/Development/Makefile.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/LiveCodingInfo.json" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/LiveCodingInfo.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/Module.GEPProject.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/Module.GEPProject.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/Module.GEPProject.cpp.old" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/Module.GEPProject.cpp.old" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/Module.GEPProject.cpp.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/Module.GEPProject.cpp.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/UE4Editor-GEPProject.dll.response" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/UE4Editor-GEPProject.dll.response" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/UE4Editor-GEPProject.dll.response.old" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/UE4Editor-GEPProject.dll.response.old" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/UE4Editor-GEPProject.exp" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/UE4Editor-GEPProject.exp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/UE4Editor-GEPProject.lib.response" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/UE4Editor-GEPProject.lib.response" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/UE4Editor-GEPProject.lib.response.old" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/UE4Editor-GEPProject.lib.response.old" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/Weapon_Hitscan.cpp.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/GEPProject/Weapon_Hitscan.cpp.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Inc/GEPProject/Timestamp" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Inc/GEPProject/Timestamp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/CachedAssetRegistry.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/CachedAssetRegistry.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Autosaves/PackageRestoreData.json" beforeDir="false" afterPath="$PROJECT_DIR$/Saved/Autosaves/PackageRestoreData.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_AutoRifleStand_2021-03-19-09-45-52.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_DefaultEnemyLv3_2021-03-19-11-38-48.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_DefaultEnemyLvl2_2021-03-19-11-38-53.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_DefaultEnemy_2021-03-19-11-38-15.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_DefaultEnemy_2021-03-19-13-12-05.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_EnemySpawner_2021-03-19-13-19-10.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_MainUI_2021-03-19-09-55-39.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_MainUI_2021-03-19-11-04-55.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_MainUI_2021-03-19-11-12-18.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_MainUI_2021-03-19-11-18-39.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_MainUI_2021-03-19-11-26-33.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_MainUI_2021-03-19-11-46-03.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_MrStrongBox_2021-03-19-13-19-22.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_PurchaseableWeaponStand_2021-03-19-09-44-40.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_RayGunStand_2021-03-19-09-45-52.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_RevolverStand_2021-03-19-09-45-52.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_RifleStand_2021-03-19-09-45-52.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_ShotgunStand_2021-03-19-09-44-58.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/BP_SmgStand_2021-03-19-09-45-52.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/FirstPersonCharacter_2021-03-19-11-40-29.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/FirstPersonCharacter_2021-03-19-12-30-30.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/FirstPersonCharacter_2021-03-19-12-51-39.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/GameLevel_2021-03-19-09-45-52.umap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/GameLevel_2021-03-19-09-55-14.umap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/GameLevel_2021-03-19-13-20-01.umap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/GameLevel_BuiltData_2021-03-19-09-46-14.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Backup/GameLevel_BuiltData_2021-03-19-13-20-01.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Config/CrashReportClient/UE4CC-Windows-A4DC3CEB4A2F549F13050E98E85BB044/CrashReportClient.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Config/CrashReportClient/UE4CC-Windows-E31DE85543BFCFC0C7C1C6B24E19A643/CrashReportClient.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Config/Windows/EditorPerProjectUserSettings.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Saved/Config/Windows/EditorPerProjectUserSettings.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Config/Windows/Engine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Saved/Config/Windows/Engine.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Config/Windows/Game.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Saved/Config/Windows/Game.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Logs/GEPProject-backup-2021.03.27-18.57.30.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Logs/GEPProject-backup-2021.03.27-19.07.12.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Logs/GEPProject-backup-2021.03.27-22.00.07.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Logs/GEPProject.log" beforeDir="false" afterPath="$PROJECT_DIR$/Saved/Logs/GEPProject.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/GEPProject/Weapons/Weapon_Hitscan.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/GEPProject/Weapons/Weapon_Hitscan.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +17,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/../../../epk/UE_4.25/Engine/Source/Runtime/Engine/Classes/Components/BoxComponent.h" root0="FORCE_HIGHLIGHTING" />
@@ -486,6 +428,8 @@
       <workItem from="1616933198587" duration="623000" />
       <workItem from="1616940596709" duration="1000" />
       <workItem from="1616981589959" duration="1415000" />
+      <workItem from="1616984082214" duration="648000" />
+      <workItem from="1617022783870" duration="644000" />
     </task>
     <servers />
   </component>
