@@ -84,9 +84,6 @@ void AGEPProjectCharacter::Init_Implementation()
 	
 	eventSystemInstance->OnHealthUpdate(healthComponent->GetHealthPercent());
 	eventSystemInstance->OnEnergyUpdate(energyComponent->GetEnergyPercent());
-
-	GEngine->AddOnScreenDebugMessage(-1,3.0f,FColor::Red, "hi");
-	Super::BeginPlay();
 }
 
 APawn* AGEPProjectCharacter::GetAsPawn_Implementation()
@@ -354,6 +351,14 @@ void AGEPProjectCharacter::SwitchWeapon(int i)
 }
 
 
+void AGEPProjectCharacter::CrouchPressed_Implementation()
+{
+	Crouch();
+}
+
+void AGEPProjectCharacter::CrouchReleased_Implementation()
+{
+}
 
 void AGEPProjectCharacter::OnInteract()
 {

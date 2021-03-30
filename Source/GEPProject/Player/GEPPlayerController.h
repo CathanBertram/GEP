@@ -40,6 +40,7 @@ private:
 	void QuickSavePressed();
 	void QuickLoadPressed();
 	void NextWeaponPressed(); void PrevWeaponPressed();
+	void CrouchPressed(); void CrouchReleased();
 	
 	void MoveForward(float value);
 	void MoveRight(float value);

@@ -9,6 +9,8 @@
 #include "Enemy_Base.h"
 #include "EnemySpawner.generated.h"
 
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnEnemyDeath, AEnemy_Base*, enemy);
+
 UCLASS()
 class GEPPROJECT_API AEnemySpawner : public AActor, public IInitable
 {
@@ -18,14 +20,14 @@ public:
 	// Sets default values for this actor's properties
 	AEnemySpawner();
 
-	virtual void BeginPlay() override;
-
 	UFUNCTION(BlueprintCallable,BlueprintNativeEvent)
 	void Init();
 	virtual void Init_Implementation() override;
 
 	UPROPERTY(EditAnywhere)
 	class UBoxComponent* boundingBox;
+
+	FOnEnemyDeath onEnemyDeath;
 
 protected:
 	UPROPERTY(EditAnywhere)
@@ -49,7 +51,7 @@ protected:
 	void GetUpdatedMultipliers();	
 	void SpawnEnemy();
 	UFUNCTION()
-	void EnemyDied();
+	void EnemyDied(AEnemy_Base* enemy);
 	FTimerHandle EnemySpawnTimerHandle;
 
 };

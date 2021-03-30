@@ -4,7 +4,10 @@
 
 #include "CoreMinimal.h"
 
+
+#include "Drone/DroneManager.h"
 #include "Components/Widget.h"
+#include "Enemy/EnemySpawner.h"
 #include "GameFramework/GameModeBase.h"
 #include "Interfaces/GetGEPGamemode.h"
 #include "Upgrades/UpgradeSystem.h"
@@ -49,7 +52,10 @@ protected:
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
 	TArray<AController*> playerControllers;
-
+	
+	AEnemySpawner* enemySpawner;
+	ADroneManager* droneManager;
+	
 	virtual void BeginPlay() override;
 	int currency;
 	float healthPercent;
@@ -65,7 +71,9 @@ protected:
 	void SaveGame();
 	UFUNCTION()
 	void LoadGame();
-
+	UFUNCTION()
+	void EnemyDied(AEnemy_Base* enemy);
+	
 	UPROPERTY(EditAnywhere)
 	UUpgradeSystem* upgradeSystem;
 };

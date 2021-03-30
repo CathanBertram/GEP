@@ -9,7 +9,7 @@
 #include "Sound/SoundCue.h"
 #include "Enemy_Base.generated.h"
 
-DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnDeath);
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnDeath, AEnemy_Base*, enemy);
 
 UCLASS()
 class GEPPROJECT_API AEnemy_Base : public AActor, public IShootable, public IInitableEnemy

@@ -72,6 +72,8 @@ void AGEPPlayerController::SetupInputComponent()
 	InputComponent->BindAction("QuickLoad", IE_Pressed, this, &AGEPPlayerController::QuickLoadPressed);
 	InputComponent->BindAction("NextWeapon", IE_Pressed, this, &AGEPPlayerController::NextWeaponPressed);
 	InputComponent->BindAction("PrevWeapon", IE_Pressed, this, &AGEPPlayerController::PrevWeaponPressed);
+	InputComponent->BindAction("Crouch", IE_Pressed, this, &AGEPPlayerController::CrouchPressed);
+	InputComponent->BindAction("Crouch", IE_Released, this, &AGEPPlayerController::CrouchReleased);
 	
 	InputComponent->BindAxis("MoveForward", this, &AGEPPlayerController::MoveForward);
 	InputComponent->BindAxis("MoveRight", this, &AGEPPlayerController::MoveRight);
@@ -236,6 +238,24 @@ void AGEPPlayerController::PrevWeaponPressed()
 	if (UKismetSystemLibrary::DoesImplementInterface(pawn, UInputable::StaticClass()))
 	{
 		IInputable::Execute_PrevWeaponPressed(pawn);
+	}
+}
+
+void AGEPPlayerController::CrouchPressed()
+{
+	APawn* pawn = GetPawn();
+	if (UKismetSystemLibrary::DoesImplementInterface(pawn, UInputable::StaticClass()))
+	{
+		IInputable::Execute_CrouchPressed(pawn);
+	}
+}
+
+void AGEPPlayerController::CrouchReleased()
+{
+	APawn* pawn = GetPawn();
+	if (UKismetSystemLibrary::DoesImplementInterface(pawn, UInputable::StaticClass()))
+	{
+		IInputable::Execute_CrouchReleased(pawn);
 	}
 }
 

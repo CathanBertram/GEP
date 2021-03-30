@@ -1,62 +1,62 @@
-// Copyright Epic Games, Inc. All Rights Reserved.
+// Fill out your copyright notice in the Description page of Project Settings.
 
 #pragma once
 
 #include "CoreMinimal.h"
-#include "GEPProject/Interfaces/InitableChar.h"
-#include "GEPProject/Interfaces/Inputable.h"
-#include "GEPProject/Interfaces/Pawnable.h"
 #include "GameFramework/Character.h"
-#include "GEPProject/GEPSaveGame.h"
-#include "GEPProject/Component/PlayerHealthComponent.h"
+#include "DroneAIParameters.h"
+#include "BehaviorTree/BehaviorTree.h"
+#include "GEPProject/Interfaces/Interactable.h"
+#include "GEPProject/Player/GEPProjectCharacter.h"
 
 
 
-#include "GEPProjectCharacter.generated.h"
-DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnLocalEnergyUpdate, float, newEnergy);
-UCLASS(config=Game)
-class AGEPProjectCharacter : public ACharacter, public IInputable, public IInitableChar, public IPawnable
+#include "Drone.generated.h"
+
+UCLASS()
+class GEPPROJECT_API ADrone : public ACharacter, public IInteractable, public IInputable
 {
 	GENERATED_BODY()
 
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
-	UChildActorComponent* equippedWeapon;
+public:
+	// Sets default values for this character's properties
+	ADrone();
 
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
-	TArray<TSubclassOf<AActor>> unlockedWeaponArray;
+	UPROPERTY(EditAnywhere)
+	UDroneAIParameters* droneAIParameters;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	UStaticMeshComponent* staticMesh;
+	// UPROPERTY(EditAnywhere)
+	// UArrowComponent* arrowComponent;
+	
+	APawn* player;
 
-	/** First person camera */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
 	class UCameraComponent* FirstPersonCameraComponent;
-
-	UPROPERTY(EditAnywhere)
-	class UPlayerHealthComponent* healthComponent;
-	UPROPERTY(EditAnywhere)
-	class UPlayerEnergyComponent* energyComponent;
-
-public:
-	AGEPProjectCharacter();
-
-	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
-	APawn* GetAsPawn();
-	virtual APawn* GetAsPawn_Implementation() override;
-
-	int GetCurrency(){return currency;}
-
-	UFUNCTION()
-	void UseEnergy(float energyToUse);
 	
-#pragma region InitableChar_Interface
 	UFUNCTION(BlueprintCallable,BlueprintNativeEvent)
+    void OnInteract(AGEPProjectCharacter* character);
+	virtual void OnInteract_Implementation(AGEPProjectCharacter* character) override;
+protected:
+	// Called when the game starts or when spawned
+	virtual void BeginPlay() override;
+
 	void Init();
-	virtual void Init_Implementation() override;
 
-	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
-	AGEPProjectCharacter* GetAsChar();
-	virtual AGEPProjectCharacter* GetAsChar_Implementation() override;
-#pragma endregion
+	UPROPERTY(EditAnywhere)
+	UBehaviorTree* bt;
 
-#pragma region Inputable_Interface
+	UPROPERTY(EditAnywhere)
+	float elevationRate;
+
+	bool crouching;
+	bool jumping;
+
+	void Crouching();
+	void Jumping();
+	
+	class ADroneAIC* aiController;
+	#pragma region Inputable_Interface
 	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
 	void JumpPressed();
 	virtual void JumpPressed_Implementation() override;
@@ -112,7 +112,6 @@ public:
     void CrouchReleased();
 	virtual void CrouchReleased_Implementation() override;
 
-	void OnInteract();
 	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
 	void MoveForward(float value);
 	virtual void MoveForward_Implementation(float value) override;
@@ -132,54 +131,4 @@ public:
 	void Turn(float value);
 	virtual void Turn_Implementation(float value) override;
 #pragma endregion 
-
-	
-	/** Base turn rate, in deg/sec. Other scaling may affect final turn rate. */
-	UPROPERTY(EditAnywhere, Category=Camera)
-	float ControllerTurnRate;
-
-	/** Base look up/down rate, in deg/sec. Other scaling may affect final rate. */
-	UPROPERTY(EditAnywhere, Category=Camera)
-	float ControllerLookUpRate;
-
-	UPROPERTY(EditAnywhere, Category=Camera)
-	float MouseTurnRate;
-
-	/** Base look up/down rate, in deg/sec. Other scaling may affect final rate. */
-	UPROPERTY(EditAnywhere, Category=Camera)
-	float MouseLookUpRate;
-
-private:
-	UPROPERTY(EditAnywhere, Category = "PlayerVariables")
-	float interactRange;
-	
-	void SwitchWeapon(int i);
-	int curWeapon;
-	UPROPERTY(EditAnywhere)
-	int currency;
-	UFUNCTION()
-    void GainCurrency(int curToGain);
-	UFUNCTION()
-    void LoseCurrency(int curToLose);
-	
-	UFUNCTION()
-	void Save(UGEPSaveGame* saveInstance);
-	UFUNCTION()
-    void Load(UGEPSaveGame* saveInstance);
-
-	UFUNCTION()
-	void UnlockWeapon(TSubclassOf<AActor> weaponToUnlock, int cost);
-
-	UFUNCTION()
-	void UpdateEnergy(float newEnergy);
-	FOnLocalEnergyUpdate onLocalEnergyUpdate;
-
-	UFUNCTION()
-	void GetUpdatedMultipliers();
-
-public:
-	/** Returns FirstPersonCameraComponent subobject **/
-	FORCEINLINE class UCameraComponent* GetFirstPersonCameraComponent() const { return FirstPersonCameraComponent; }
-
 };
-

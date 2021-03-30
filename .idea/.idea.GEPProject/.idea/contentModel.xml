@@ -43503,6 +43503,8 @@
       <e p="UE4Game.Target.cs" t="Include" />
     </e>
     <e p="E:\Github\GEP" t="IncludeFlat">
+      <e p=".gitattributes" t="Include" />
+      <e p=".gitignore" t="Include" />
       <e p="Config" t="Include">
         <e p="DefaultEditor.ini" t="Include" />
         <e p="DefaultEditorPerProjectUserSettings.ini" t="Include" />
@@ -43517,7 +43519,6 @@
       <e p="GEPProject.uproject" t="Include" />
       <e p="Intermediate\Build\Unused" t="ExcludeRecursive" />
       <e p="Intermediate\ProjectFiles" t="IncludeRecursive">
-        <e p="GEPProject" t="Include" />
         <e p="GEPProject.vcxproj" t="IncludeRecursive" />
         <e p="UE4.vcxproj" t="IncludeRecursive" />
       </e>
@@ -43531,6 +43532,16 @@
             <e p="PlayerEnergyComponent.h" t="Include" />
             <e p="PlayerHealthComponent.cpp" t="Include" />
             <e p="PlayerHealthComponent.h" t="Include" />
+          </e>
+          <e p="Drone" t="Include">
+            <e p="Drone.cpp" t="Include" />
+            <e p="Drone.h" t="Include" />
+            <e p="DroneAIC.cpp" t="Include" />
+            <e p="DroneAIC.h" t="Include" />
+            <e p="DroneAIParameters.cpp" t="Include" />
+            <e p="DroneAIParameters.h" t="Include" />
+            <e p="DroneManager.cpp" t="Include" />
+            <e p="DroneManager.h" t="Include" />
           </e>
           <e p="Enemy" t="Include">
             <e p="Enemy_Base.cpp" t="Include" />
@@ -43639,6 +43650,7 @@
         <e p="GEPProject.Target.cs" t="Include" />
         <e p="GEPProjectEditor.Target.cs" t="Include" />
       </e>
+      <e p="UIDesign.aseprite" t="Include" />
       <e p="Visualizers" t="Include" />
     </e>
   </component>

@@ -22,11 +22,6 @@ AEnemySpawner::AEnemySpawner()
 	curEnemyCount = 0;
 }
 
-void AEnemySpawner::BeginPlay()
-{
-	Init_Implementation();
-}
-
 void AEnemySpawner::Init_Implementation()
 {
 	//Do init things
@@ -87,7 +82,8 @@ void AEnemySpawner::SpawnEnemy()
 	world->GetTimerManager().SetTimer(EnemySpawnTimerHandle, this, &AEnemySpawner::SpawnEnemy, enemySpawnRate);
 }
 
-void AEnemySpawner::EnemyDied()
+void AEnemySpawner::EnemyDied(AEnemy_Base* enemy)
 {
 	curEnemyCount--;
+	onEnemyDeath.Broadcast(enemy);
 }

@@ -55,7 +55,10 @@ public:
     void NextWeaponPressed();
 	UFUNCTION(BlueprintCallable,BlueprintNativeEvent)
     void PrevWeaponPressed();
-
+	UFUNCTION(BlueprintCallable,BlueprintNativeEvent)
+    void CrouchPressed();
+	UFUNCTION(BlueprintCallable,BlueprintNativeEvent)
+    void CrouchReleased();
 	//Axis Mappings
 	UFUNCTION(BlueprintCallable,BlueprintNativeEvent)
 	void MoveForward(float value);
