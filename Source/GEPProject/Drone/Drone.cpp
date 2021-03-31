@@ -53,6 +53,7 @@ void ADrone::OnInteract_Implementation(AGEPProjectCharacter* character)
 	GetCharacterMovement()->GravityScale = 0.0f;
 	capsuleComponent->SetLinearDamping(0.01f);
 	capsuleComponent->SetAngularDamping(0.0f);
+	staticMesh->SetVisibility(false);
 }
 
 ADrone* ADrone::GetDrone_Implementation()
@@ -94,7 +95,7 @@ void ADrone::Shoot()
 		FCollisionQueryParams collisionParams;
 		collisionParams.TraceTag = traceTag;
 		collisionParams.AddIgnoredActor(this);
-
+		
 		if (world->LineTraceSingleByChannel(hit, start,end, ECC_Visibility, collisionParams))
 		{
 			if (UKismetSystemLibrary::DoesImplementInterface(hit.GetActor(), UShootable::StaticClass()))
@@ -126,6 +127,7 @@ void ADrone::Init()
 	aiController->GetBlackboardComponent()->SetValueAsBool("TargettingEnemy", false);
 	canTargetEnemy = true;
 	canAttack = true;
+
 }
 
 void ADrone::EnemyDied()
@@ -133,6 +135,13 @@ void ADrone::EnemyDied()
 	canTargetEnemy = false;
 	FTimerHandle resetTimer;
 	GetWorldTimerManager().SetTimer(resetTimer, this, &ADrone::ResetCanTarget, targetCooldown);
+}
+
+void ADrone::UpdateValues(float damage, float cooldown, float moveSpeed)
+{
+	attackDamage = damage;
+	targetCooldown = cooldown;
+	droneAIParameters->compMaxForce = moveSpeed;
 }
 
 void ADrone::ResetCanTarget()
@@ -193,6 +202,7 @@ void ADrone::InteractPressed_Implementation()
 	bUseControllerRotationYaw = false;
 	GetCharacterMovement()->bOrientRotationToMovement = true;
 	droneAIParameters->Setup();
+	staticMesh->SetVisibility(true);
 }
 
 void ADrone::InteractReleased_Implementation()

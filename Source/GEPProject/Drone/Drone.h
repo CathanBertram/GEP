@@ -51,6 +51,7 @@ public:
 	void Init();
 	void EnemyDied();
 
+	void UpdateValues(float damage, float cooldown, float moveSpeed);
 protected:
 
 	UPROPERTY(EditAnywhere)
@@ -65,9 +66,8 @@ protected:
 	float range;
 	
 	void ResetCanTarget();
-	UPROPERTY(EditAnywhere)
+	
 	float attackDamage;
-	UPROPERTY(EditAnywhere)
 	float targetCooldown; 
 	UPROPERTY(EditAnywhere)
 	float attackCooldown; 

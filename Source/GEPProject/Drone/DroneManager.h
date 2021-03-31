@@ -39,8 +39,17 @@ protected:
 	UPROPERTY(EditAnywhere)
 	float spawnTimer;
 
+	UFUNCTION()
+	void UpdateDirties();
 	TArray<ADrone*> drones;
 
+	UPROPERTY(EditAnywhere)
+	float droneDamage;
+	UPROPERTY(EditAnywhere)
+	float droneTargettingCooldown;
+	UPROPERTY(EditAnywhere)
+	float droneMovementSpeed;
+	
 	AActor* player;
 	
 	void SpawnDrone();

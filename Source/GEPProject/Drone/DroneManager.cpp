@@ -7,7 +7,12 @@
 
 #include "Drone.h"
 #include "Components/BoxComponent.h"
+#include "GameFramework/GameModeBase.h"
+#include "GEPProject/GEPProjectGameMode.h"
 #include "GEPProject/Interfaces/GetDrone.h"
+#include "GEPProject/Interfaces/GetGEPGamemode.h"
+#include "GEPProject/Upgrades/UpgradeSystem.h"
+#include "Kismet/GameplayStatics.h"
 #include "Kismet/KismetMathLibrary.h"
 #include "Kismet/KismetSystemLibrary.h"
 
@@ -19,6 +24,7 @@ ADroneManager::ADroneManager()
 
 void ADroneManager::Init_Implementation()
 {
+	GetGameInstance()->GetSubsystem<UEventSystem>()->onDirtyDrone.AddDynamic(this, &ADroneManager::UpdateDirties);
 	SpawnDrone();
 }
 
@@ -46,10 +52,31 @@ void ADroneManager::EnemyDied(AEnemy_Base* enemy)
 	}
 }
 
+void ADroneManager::UpdateDirties()
+{
+	UWorld* world = GetWorld();
+	AGameModeBase* tempGamemode = UGameplayStatics::GetGameMode(world);
+	
+	if (tempGamemode->GetClass()->ImplementsInterface(UGetGEPGamemode::StaticClass()))
+	{
+		UUpgradeSystem* upgradeSystem = IGetGEPGamemode::Execute_GetGEPGamemode(tempGamemode)->GetUpgradeSystem();
+		droneDamage += upgradeSystem->GetUpgradeValue(EUpgradeTypes::Drone_AttackDamage);
+		droneTargettingCooldown *= upgradeSystem->GetUpgradeValue(EUpgradeTypes::Drone_AttackCooldown);
+		droneMovementSpeed += upgradeSystem->GetUpgradeValue(EUpgradeTypes::Drone_MovementSpeed);
+		maxDroneCount = upgradeSystem->GetUpgradeValue(EUpgradeTypes::Drone_Amount);
+		//Need To Do Currency Stuff
+	}
+	for (ADrone* drone : drones)
+	{
+		drone->UpdateValues(droneDamage, droneTargettingCooldown, droneMovementSpeed);
+	}
+	SpawnDrone();
+}
+
 void ADroneManager::SpawnDrone()
 {
 	UWorld* const world =  GetWorld();
-	if (droneCount < maxDroneCount)
+	for (int i = droneCount; i < maxDroneCount; ++i)
 	{
 		if (world != nullptr)
 		{
@@ -67,15 +94,14 @@ void ADroneManager::SpawnDrone()
 			if (UKismetSystemLibrary::DoesImplementInterface(tempActor, UGetDrone::StaticClass()))
 			{
 				ADrone* tempDrone = IGetDrone::Execute_GetDrone(tempActor);
-				drones.Add(tempDrone);
 				tempDrone->Init();
+				tempDrone->UpdateValues(droneDamage, droneTargettingCooldown, droneMovementSpeed);
+				drones.Add(tempDrone);
 			}
 				
 			droneCount++;
 		}
 	}
-	FTimerHandle timer;
-	world->GetTimerManager().SetTimer(timer, this, &ADroneManager::SpawnDrone, spawnTimer);
 }
 
 
