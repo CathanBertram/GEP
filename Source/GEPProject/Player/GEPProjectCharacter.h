@@ -8,6 +8,7 @@
 #include "GEPProject/Interfaces/Pawnable.h"
 #include "GameFramework/Character.h"
 #include "GEPProject/GEPSaveGame.h"
+#include "GEPProject/Component/CurrencyComponent.h"
 #include "GEPProject/Component/PlayerHealthComponent.h"
 
 
@@ -33,6 +34,8 @@ class AGEPProjectCharacter : public ACharacter, public IInputable, public IInita
 	class UPlayerHealthComponent* healthComponent;
 	UPROPERTY(EditAnywhere)
 	class UPlayerEnergyComponent* energyComponent;
+	UPROPERTY(EditAnywhere)
+	class UCurrencyComponent* currencyComponent;
 
 public:
 	AGEPProjectCharacter();
@@ -41,7 +44,7 @@ public:
 	APawn* GetAsPawn();
 	virtual APawn* GetAsPawn_Implementation() override;
 
-	int GetCurrency(){return currency;}
+	int GetCurrency(){return currencyComponent->GetCurrency();}
 
 	UFUNCTION()
 	void UseEnergy(float energyToUse);
@@ -139,13 +142,7 @@ private:
 	
 	void SwitchWeapon(int i);
 	int curWeapon;
-	UPROPERTY(EditAnywhere)
-	int currency;
-	UFUNCTION()
-    void GainCurrency(int curToGain);
-	UFUNCTION()
-    void LoseCurrency(int curToLose);
-	
+
 	UFUNCTION()
 	void Save(UGEPSaveGame* saveInstance);
 	UFUNCTION()

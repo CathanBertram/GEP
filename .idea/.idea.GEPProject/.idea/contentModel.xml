@@ -43526,6 +43526,8 @@
       <e p="Source" t="Include">
         <e p="GEPProject" t="Include">
           <e p="Component" t="Include">
+            <e p="CurrencyComponent.cpp" t="Include" />
+            <e p="CurrencyComponent.h" t="Include" />
             <e p="HealthComponent.cpp" t="Include" />
             <e p="HealthComponent.h" t="Include" />
             <e p="PlayerEnergyComponent.cpp" t="Include" />

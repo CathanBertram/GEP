@@ -48,14 +48,13 @@ AGEPProjectCharacter::AGEPProjectCharacter() : Super()
 	energyComponent->SetBaseEnergy(300);
 	energyComponent->SetCurEnergy(300);
 	energyComponent->SetMaxEnergy(300);
+	currencyComponent = CreateDefaultSubobject<UCurrencyComponent>(TEXT("CurrencyComponent"));
 
 }
 
 void AGEPProjectCharacter::Init_Implementation()
 {
 	UEventSystem* eventSystemInstance = GetGameInstance()->GetSubsystem<UEventSystem>();
-	eventSystemInstance->onCurrencyGain.AddDynamic(this, &AGEPProjectCharacter::GainCurrency);
-	eventSystemInstance->onCurrencyLoss.AddDynamic(this, &AGEPProjectCharacter::LoseCurrency);
 	eventSystemInstance->onSave.AddDynamic(this, &AGEPProjectCharacter::Save);
 	eventSystemInstance->onLoad.AddDynamic(this, &AGEPProjectCharacter::Load);
 	eventSystemInstance->onUnlockWeapon.AddDynamic(this, &AGEPProjectCharacter::UnlockWeapon);
@@ -67,6 +66,8 @@ void AGEPProjectCharacter::Init_Implementation()
 	energyComponent->SetEventInstance(eventSystemInstance);
 	energyComponent->Init();
 	energyComponent->onCompEnergyUpdate.AddDynamic(this, &AGEPProjectCharacter::UpdateEnergy);
+
+	currencyComponent->Init(eventSystemInstance);
 	
 	AActor* child = equippedWeapon->GetChildActor();
 	if (UKismetSystemLibrary::DoesImplementInterface(child, UGetWeaponBase::StaticClass()))
@@ -93,7 +94,7 @@ void AGEPProjectCharacter::UseEnergy(float energyToUse)
 
 void AGEPProjectCharacter::Save(UGEPSaveGame* saveInstance)
 {
-	saveInstance->currency = currency;
+	saveInstance->currency = currencyComponent->GetCurrency();
 	saveInstance->transform = GetTransform();
 	saveInstance->unlockedWeapons = unlockedWeaponArray;
 	saveInstance->curHealth = healthComponent->GetCurHealth();
@@ -106,7 +107,7 @@ void AGEPProjectCharacter::Save(UGEPSaveGame* saveInstance)
 
 void AGEPProjectCharacter::Load(UGEPSaveGame* saveInstance)
 {
-	currency = saveInstance->currency;
+	currencyComponent->SetCurrency(saveInstance->currency);
 	SetActorTransform(saveInstance->transform);
 	unlockedWeaponArray = saveInstance->unlockedWeapons;
 	healthComponent->SetMaxHealth(saveInstance->maxHealth);
@@ -115,10 +116,9 @@ void AGEPProjectCharacter::Load(UGEPSaveGame* saveInstance)
 	energyComponent->SetCurEnergy(saveInstance->curEnergy);
 	healthComponent->canBeDamaged = saveInstance->canBeDamaged;
 	energyComponent->constantRegen = saveInstance->constantEnergyRegen;
-
 	
 	UEventSystem* eventSystem = GetGameInstance()->GetSubsystem<UEventSystem>();
-	eventSystem->OnCurrencyUpdate(currency);
+	eventSystem->OnCurrencyUpdate(currencyComponent->GetCurrency());
 	eventSystem->OnHealthUpdate(healthComponent->GetHealthPercent());
 	eventSystem->OnEnergyUpdate(energyComponent->GetEnergyPercent());
 }
@@ -127,10 +127,9 @@ void AGEPProjectCharacter::UnlockWeapon(TSubclassOf<AActor> weaponToUnlock, int 
 {
 	unlockedWeaponArray.Add(weaponToUnlock);
 
-	currency -= cost;
+	currencyComponent->LoseCurrency(cost);
 	UEventSystem* eventSystem = GetGameInstance()->GetSubsystem<UEventSystem>();
 	eventSystem->OnStartSave();
-	eventSystem->OnCurrencyUpdate(currency);
 }
 
 void AGEPProjectCharacter::UpdateEnergy(float newEnergy)
@@ -156,19 +155,8 @@ void AGEPProjectCharacter::GetUpdatedMultipliers()
 		if (upgradeSystem->GetUpgradeValue(Player_ConstantEnergyRegen) > 0)
 			energyComponent->constantRegen = true;
 		//Need To Do Currency Stuff
+		currencyComponent->UpdateValues(upgradeSystem);
 	}
-}
-
-void AGEPProjectCharacter::GainCurrency(int curToGain) 
-{
-	currency += curToGain;
-	GetGameInstance()->GetSubsystem<UEventSystem>()->OnCurrencyUpdate(currency);
-}
-
-void AGEPProjectCharacter::LoseCurrency(int curToLose)
-{
-	currency -= curToLose;
-	GetGameInstance()->GetSubsystem<UEventSystem>()->OnCurrencyUpdate(currency);
 }
 
 AGEPProjectCharacter* AGEPProjectCharacter::GetAsChar_Implementation()

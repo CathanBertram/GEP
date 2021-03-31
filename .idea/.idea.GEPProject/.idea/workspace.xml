@@ -9,15 +9,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="37f4dc96-c088-407b-80a2-d8740801dcca" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GEPProject/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GEPProject/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GEPProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GEPProject/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/BP_GEPGamemode.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BP_GEPGamemode.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Drone/DroneManager.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Drone/DroneManager.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/GameLevel.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameLevel.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/GEPProject/Drone/Drone.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/GEPProject/Drone/Drone.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/GEPProject/Drone/Drone.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/GEPProject/Drone/Drone.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/GEPProject/Drone/DroneManager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/GEPProject/Drone/DroneManager.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/GEPProject/Drone/DroneManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/GEPProject/Drone/DroneManager.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/BP_PlayerCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BP_PlayerCharacter.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Enemies/BP_DefaultEnemyLvl2.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Enemies/BP_DefaultEnemyLvl2.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/UI/BP_MainUI.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/UI/BP_MainUI.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/UI/BP_UpgradeMenu.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/UI/BP_UpgradeMenu.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/GEPProject/Player/GEPProjectCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/GEPProject/Player/GEPProjectCharacter.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/GEPProject/Player/GEPProjectCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/GEPProject/Player/GEPProjectCharacter.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,8 +37,6 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Source/GEPProject/Weapons/Weapon_Raygun.cpp" />
-      <option value="$PROJECT_DIR$/Source/GEPProject/Weapons/Weapon_ChargeRevolver.cpp" />
       <option value="$PROJECT_DIR$/Source/GEPProject/Upgrades/EUpgradeTypes.h" />
       <option value="$PROJECT_DIR$/Source/GEPProject/Component/PlayerEnergyComponent.cpp" />
       <option value="$PROJECT_DIR$/Source/GEPProject/Component/PlayerEnergyComponent.h" />
@@ -80,14 +78,16 @@
       <option value="$PROJECT_DIR$/Source/GEPProject/Enemy/EnemySpawner.cpp" />
       <option value="$PROJECT_DIR$/Source/GEPProject/GEPProjectGameMode.h" />
       <option value="$PROJECT_DIR$/Source/GEPProject/GEPProjectGameMode.cpp" />
-      <option value="$PROJECT_DIR$/Source/GEPProject/Player/GEPProjectCharacter.h" />
       <option value="$PROJECT_DIR$/Source/GEPProject/Player/GEPPlayerController.h" />
-      <option value="$PROJECT_DIR$/Source/GEPProject/Player/GEPProjectCharacter.cpp" />
       <option value="$PROJECT_DIR$/Source/GEPProject/Player/GEPPlayerController.cpp" />
       <option value="$PROJECT_DIR$/Source/GEPProject/Drone/DroneManager.h" />
       <option value="$PROJECT_DIR$/Source/GEPProject/Drone/Drone.h" />
       <option value="$PROJECT_DIR$/Source/GEPProject/Drone/DroneManager.cpp" />
       <option value="$PROJECT_DIR$/Source/GEPProject/Drone/Drone.cpp" />
+      <option value="$PROJECT_DIR$/Source/GEPProject/Player/GEPProjectCharacter.h" />
+      <option value="$PROJECT_DIR$/Source/GEPProject/Player/GEPProjectCharacter.cpp" />
+      <option value="$PROJECT_DIR$/Source/GEPProject/Component/CurrencyComponent.cpp" />
+      <option value="$PROJECT_DIR$/Source/GEPProject/Component/CurrencyComponent.h" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1otT4i5qLtCQz1jfo8j4ib5DORs" />
@@ -405,6 +405,8 @@
       <workItem from="1617110283123" duration="20736000" />
       <workItem from="1617142671859" duration="6785000" />
       <workItem from="1617190649626" duration="2753000" />
+      <workItem from="1617202692184" duration="297000" />
+      <workItem from="1617207375728" duration="3592000" />
     </task>
     <servers />
   </component>
@@ -427,5 +429,16 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Source/GEPProject/Player/GEPProjectCharacter.cpp</url>
+          <line>166</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
