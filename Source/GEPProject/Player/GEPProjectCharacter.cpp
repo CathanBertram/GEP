@@ -28,12 +28,6 @@ AGEPProjectCharacter::AGEPProjectCharacter() : Super()
 	// Set size for collision capsule
 	GetCapsuleComponent()->InitCapsuleSize(55.f, 96.0f);
 
-	// set our turn rates for input
-	ControllerTurnRate = 45.f;
-	ControllerLookUpRate = 45.f;
-	MouseTurnRate = 1.f;
-	MouseLookUpRate = 1.f;
-
 	interactRange = 300.f;
 	
 	// Create a CameraComponent	
@@ -286,25 +280,25 @@ void AGEPProjectCharacter::MoveRight_Implementation(float value)
 void AGEPProjectCharacter::LookUpAtRate_Implementation(float value)
 {
 	if (value != 0.0f)
-		AddControllerPitchInput(value * ControllerLookUpRate * GetWorld()->GetDeltaSeconds());
+		AddControllerPitchInput(value * GetWorld()->GetDeltaSeconds());
 }
 
 void AGEPProjectCharacter::TurnAtRate_Implementation(float value)
 {
 	if (value != 0.0f)
-		AddControllerYawInput(value * ControllerTurnRate * GetWorld()->GetDeltaSeconds());
+		AddControllerYawInput(value * GetWorld()->GetDeltaSeconds());
 }
 
 void AGEPProjectCharacter::LookUp_Implementation(float value)
 {
 	if (value != 0.0f)
-		AddControllerPitchInput(value * MouseLookUpRate);
+		AddControllerPitchInput(value);
 }
 
 void AGEPProjectCharacter::Turn_Implementation(float value)
 {
 	if (value != 0.0f)
-		AddControllerYawInput(value * MouseTurnRate);
+		AddControllerYawInput(value);
 }
 
 

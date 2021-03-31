@@ -10,6 +10,7 @@
 
 #include "DroneManager.generated.h"
 
+class ADrone;
 UCLASS()
 class GEPPROJECT_API ADroneManager : public AActor, public IInitable
 {
@@ -24,6 +25,10 @@ public:
 
 	UPROPERTY(EditAnywhere)
 	class UBoxComponent* boundingBox;
+
+	void SetPlayer(AActor* actor){player = actor;}
+	void EnemySpawned(AActor* enemy);
+	void EnemyDied(AEnemy_Base* enemy);
 protected:
 	UPROPERTY(EditAnywhere)
 	TSubclassOf<AActor> droneToSpawn;
@@ -33,9 +38,11 @@ protected:
 	int droneCount;
 	UPROPERTY(EditAnywhere)
 	float spawnTimer;
+
+	TArray<ADrone*> drones;
+
+	AActor* player;
 	
 	void SpawnDrone();
-
-	void EnemyDied(AEnemy_Base* enemy);
 
 };

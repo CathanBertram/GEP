@@ -35,6 +35,8 @@ public:
 	float compMinDistFromTarget;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	float addedElevation;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	float attackRange;
 
 	ACharacter* owner;
 	

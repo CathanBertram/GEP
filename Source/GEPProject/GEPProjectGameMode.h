@@ -73,6 +73,8 @@ protected:
 	void LoadGame();
 	UFUNCTION()
 	void EnemyDied(AEnemy_Base* enemy);
+	UFUNCTION()
+	void EnemySpawned(AActor* enemy);
 	
 	UPROPERTY(EditAnywhere)
 	UUpgradeSystem* upgradeSystem;

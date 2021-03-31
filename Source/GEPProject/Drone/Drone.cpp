@@ -4,6 +4,7 @@
 #include "Drone.h"
 
 #include "DroneAIC.h"
+#include "BehaviorTree/BlackboardComponent.h"
 #include "Camera/CameraComponent.h"
 #include "Components/CapsuleComponent.h"
 #include "GameFramework/CharacterMovementComponent.h"
@@ -22,7 +23,9 @@ ADrone::ADrone()
 	FirstPersonCameraComponent = CreateDefaultSubobject<UCameraComponent>(TEXT("FirstPersonCamera"));
 	FirstPersonCameraComponent->SetupAttachment(GetCapsuleComponent());
 	FirstPersonCameraComponent->bUsePawnControlRotation = true;
-	
+
+	projSpawn = CreateDefaultSubobject<USceneComponent>(TEXT("GunMuzzle"));
+	projSpawn->SetupAttachment(staticMesh);
 	//arrowComponent = CreateDefaultSubobject<UArrowComponent>(TEXT("ArrownComponent"));
 }
 
@@ -52,12 +55,62 @@ void ADrone::OnInteract_Implementation(AGEPProjectCharacter* character)
 	capsuleComponent->SetAngularDamping(0.0f);
 }
 
-// Called when the game starts or when spawned
-void ADrone::BeginPlay()
+ADrone* ADrone::GetDrone_Implementation()
 {
-	Super::BeginPlay();
-	Init();
+	return this;
 }
+
+void ADrone::UpdateTarget(AActor* newTarget, bool enemy)
+{
+	aiController->GetBlackboardComponent()->SetValueAsObject("Target", newTarget);
+	aiController->GetBlackboardComponent()->SetValueAsBool("TargettingEnemy", enemy);
+	curTarget = newTarget;
+	targettingEnemy = enemy;
+}
+
+void ADrone::Shoot()
+{
+	if (!canAttack)
+		return;
+	
+	canAttack = false;
+
+	UWorld* const world = GetWorld();
+	if (world != nullptr)
+	{	
+		FHitResult hit(ForceInit);
+		APlayerCameraManager* cameraManager = UGameplayStatics::GetPlayerController(world, 0)->PlayerCameraManager;
+		FVector start = GetActorLocation();
+		FVector forward = GetActorForwardVector();
+		//add screen shake maybe
+		
+		UGameplayStatics::PlaySoundAtLocation(world, shootSound, start, GetActorRotation());
+		UGameplayStatics::SpawnEmitterAtLocation(world, muzzleFlash , projSpawn->GetComponentLocation());
+		
+		FVector end = (forward * range) + start;
+
+		const FName traceTag("TraceTag");
+		world->DebugDrawTraceTag = traceTag; //Draws arrow at hit point
+		FCollisionQueryParams collisionParams;
+		collisionParams.TraceTag = traceTag;
+		collisionParams.AddIgnoredActor(this);
+
+		if (world->LineTraceSingleByChannel(hit, start,end, ECC_Visibility, collisionParams))
+		{
+			if (UKismetSystemLibrary::DoesImplementInterface(hit.GetActor(), UShootable::StaticClass()))
+			{
+				IShootable::Execute_GetShot(hit.GetActor());
+			}
+			//Use this to damage enemies
+			UGameplayStatics::ApplyDamage(hit.GetActor(), attackDamage, this->GetInstigatorController(), this, TSubclassOf<UDamageType>(UDamageType::StaticClass()));
+			UGameplayStatics::SpawnEmitterAtLocation(world, hitParticle , hit.Location);	
+		}
+	}
+
+	FTimerHandle timer;
+	GetWorldTimerManager().SetTimer(timer, this, &ADrone::ResetCanAttack, attackCooldown);
+}
+
 
 void ADrone::Init()
 {
@@ -69,6 +122,22 @@ void ADrone::Init()
 	GetCharacterMovement()->bOrientRotationToMovement = true;
 	aiController = Cast<ADroneAIC>(GetController());
 	aiController->SetupAIC(bt, UGameplayStatics::GetPlayerPawn(GetWorld(), 0), droneAIParameters);
+
+	aiController->GetBlackboardComponent()->SetValueAsBool("TargettingEnemy", false);
+	canTargetEnemy = true;
+	canAttack = true;
+}
+
+void ADrone::EnemyDied()
+{
+	canTargetEnemy = false;
+	FTimerHandle resetTimer;
+	GetWorldTimerManager().SetTimer(resetTimer, this, &ADrone::ResetCanTarget, targetCooldown);
+}
+
+void ADrone::ResetCanTarget()
+{
+	canTargetEnemy = true;
 }
 
 void ADrone::Crouching()
@@ -89,6 +158,11 @@ void ADrone::Jumping()
 	GetWorldTimerManager().SetTimer(timer, this, &ADrone::Jumping, 0.05f);
 }
 
+void ADrone::ResetCanAttack()
+{
+	canAttack = true;
+}
+
 void ADrone::JumpPressed_Implementation()
 {
 	jumping = true;
@@ -102,6 +176,7 @@ void ADrone::JumpReleased_Implementation()
 
 void ADrone::FirePressed_Implementation()
 {
+	Shoot();
 }
 
 void ADrone::FireReleased_Implementation()

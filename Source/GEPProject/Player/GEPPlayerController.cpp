@@ -12,7 +12,10 @@
 
 AGEPPlayerController::AGEPPlayerController() : Super()
 {
-	
+	ControllerTurnRate = 45.f;
+	ControllerLookUpRate = 45.f;
+	MouseTurnRate = 1.f;
+	MouseLookUpRate = 1.f;
 }
 
 void AGEPPlayerController::Init_Implementation()
@@ -282,7 +285,7 @@ void AGEPPlayerController::LookUpAtRate(float value)
 	APawn* pawn = GetPawn();
 	if (UKismetSystemLibrary::DoesImplementInterface(pawn, UInputable::StaticClass()))
 	{
-		IInputable::Execute_LookUpAtRate(pawn, value);
+		IInputable::Execute_LookUpAtRate(pawn, value * ControllerLookUpRate);
 	}
 }
 
@@ -291,7 +294,7 @@ void AGEPPlayerController::TurnAtRate(float value)
 	APawn* pawn = GetPawn();
 	if (UKismetSystemLibrary::DoesImplementInterface(pawn, UInputable::StaticClass()))
 	{
-		IInputable::Execute_TurnAtRate(pawn, value);
+		IInputable::Execute_TurnAtRate(pawn, value * ControllerTurnRate);
 	}
 }
 
@@ -300,7 +303,7 @@ void AGEPPlayerController::LookUp(float value)
 	APawn* pawn = GetPawn();
 	if (UKismetSystemLibrary::DoesImplementInterface(pawn, UInputable::StaticClass()))
 	{
-		IInputable::Execute_LookUp(pawn, value);
+		IInputable::Execute_LookUp(pawn, value * MouseTurnRate);
 	}
 }
 
@@ -309,7 +312,7 @@ void AGEPPlayerController::Turn(float value)
 	APawn* pawn = GetPawn();
 	if (UKismetSystemLibrary::DoesImplementInterface(pawn, UInputable::StaticClass()))
 	{
-		IInputable::Execute_Turn(pawn, value);
+		IInputable::Execute_Turn(pawn, value * MouseTurnRate);
 	}
 }
 #pragma endregion 

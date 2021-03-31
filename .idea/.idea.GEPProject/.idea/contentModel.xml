@@ -43565,6 +43565,8 @@
             <e p="Fireable.h" t="Include" />
             <e p="FireReleaseable.cpp" t="Include" />
             <e p="FireReleaseable.h" t="Include" />
+            <e p="GetDrone.cpp" t="Include" />
+            <e p="GetDrone.h" t="Include" />
             <e p="GetGEPGamemode.cpp" t="Include" />
             <e p="GetGEPGamemode.h" t="Include" />
             <e p="GetGEPSaveGame.cpp" t="Include" />

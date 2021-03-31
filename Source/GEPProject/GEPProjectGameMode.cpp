@@ -88,10 +88,13 @@ void AGEPProjectGameMode::BeginPlay()
 	enemySpawner = Cast<AEnemySpawner>(temp);
 	enemySpawner->Init_Implementation();
 	enemySpawner->onEnemyDeath.AddDynamic(this, &AGEPProjectGameMode::EnemyDied);
+	enemySpawner->onEnemySpawned.AddDynamic(this, &AGEPProjectGameMode::EnemySpawned);
 
 	temp = UGameplayStatics::GetActorOfClass(GetWorld(), ADroneManager::StaticClass());
 	droneManager = Cast<ADroneManager>(temp);
 	droneManager->Init_Implementation();
+
+	droneManager->SetPlayer(playerControllers[0]->GetPawn());
 }
 
 void AGEPProjectGameMode::UpdateCurrency(int newCur)
@@ -143,7 +146,12 @@ void AGEPProjectGameMode::LoadGame()
 
 void AGEPProjectGameMode::EnemyDied(AEnemy_Base* enemy)
 {
-	GEngine->AddOnScreenDebugMessage(-1, .5f, FColor::Red, "dead");
+	droneManager->EnemyDied(enemy);
+}
+
+void AGEPProjectGameMode::EnemySpawned(AActor* enemy)
+{
+	droneManager->EnemySpawned(enemy);
 }
 
 

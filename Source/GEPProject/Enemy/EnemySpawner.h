@@ -10,6 +10,7 @@
 #include "EnemySpawner.generated.h"
 
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnEnemyDeath, AEnemy_Base*, enemy);
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnEnemySpawned, AActor*, enemy);
 
 UCLASS()
 class GEPPROJECT_API AEnemySpawner : public AActor, public IInitable
@@ -28,7 +29,7 @@ public:
 	class UBoxComponent* boundingBox;
 
 	FOnEnemyDeath onEnemyDeath;
-
+	FOnEnemySpawned onEnemySpawned;
 protected:
 	UPROPERTY(EditAnywhere)
 	TArray<TSubclassOf<AActor>> enemyList;

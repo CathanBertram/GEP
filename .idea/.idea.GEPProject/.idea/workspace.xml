@@ -11,20 +11,24 @@
     <list default="true" id="37f4dc96-c088-407b-80a2-d8740801dcca" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GEPProject/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GEPProject/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GEPProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GEPProject/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultInput.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultInput.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/AI/BP_BaseAIC.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/AI/BP_BaseAIC.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/AI/BP_FlyingAI.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/AI/BP_FlyingAI.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/AI/BTT_AddForceToLocation.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/AI/BTT_AddForceToLocation.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/AI/BTT_FaceTarget.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/AI/BTT_FaceTarget.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/AI/BTT_LocationAbovePlayer.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/AI/BTT_LocationAbovePlayer.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AI/AIBB.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/AI/AIBB.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AI/BT_FlyingAI.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/AI/BT_FlyingAI.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/BP_GEPPlayerController.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BP_GEPPlayerController.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/BP_PlayerCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BP_PlayerCharacter.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Drone/BP_Drone.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Drone/BP_Drone.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/GameLevel.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameLevel.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/GEPProject/Drone/Drone.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/GEPProject/Drone/Drone.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/GEPProject/Drone/Drone.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/GEPProject/Drone/Drone.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/GEPProject/Drone/DroneAIC.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/GEPProject/Drone/DroneAIC.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/GEPProject/Drone/DroneAIC.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/GEPProject/Drone/DroneAIC.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/GEPProject/Drone/DroneAIParameters.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/GEPProject/Drone/DroneAIParameters.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/GEPProject/Drone/DroneManager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/GEPProject/Drone/DroneManager.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/GEPProject/Drone/DroneManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/GEPProject/Drone/DroneManager.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/GEPProject/Enemy/EnemySpawner.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/GEPProject/Enemy/EnemySpawner.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/GEPProject/Enemy/EnemySpawner.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/GEPProject/Enemy/EnemySpawner.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/GEPProject/Enemy/Enemy_Base.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/GEPProject/Enemy/Enemy_Base.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/GEPProject/Enemy/Enemy_Base.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/GEPProject/Enemy/Enemy_Base.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/GEPProject/GEPProjectGameMode.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/GEPProject/GEPProjectGameMode.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/GEPProject/GEPProjectGameMode.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/GEPProject/GEPProjectGameMode.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/GEPProject/Interfaces/Inputable.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/GEPProject/Interfaces/Inputable.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/GEPProject/Player/GEPPlayerController.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/GEPProject/Player/GEPPlayerController.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/GEPProject/Player/GEPPlayerController.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/GEPProject/Player/GEPPlayerController.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/GEPProject/Player/GEPProjectCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/GEPProject/Player/GEPProjectCharacter.cpp" afterDir="false" />
@@ -40,6 +44,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/../../epk/UE_4.25/Engine/Source/Runtime/Engine/Private/Character.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../epk/UE_4.25/Engine/Source/Runtime/Engine/Private/Collision/WorldCollision.cpp" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winioctl.h" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../epk/UE_4.25/Engine/Source/Runtime/AIModule/Private/BehaviorTree/BlackboardComponent.cpp" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../epk/UE_4.25/Engine/Source/Runtime/Engine/Private/Pawn.cpp" root0="SKIP_HIGHLIGHTING" />
@@ -47,7 +52,6 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Source/GEPProject/Weapons/Weapon_Rifle.cpp" />
       <option value="$PROJECT_DIR$/Source/GEPProject/Weapons/Weapon_Raygun.cpp" />
       <option value="$PROJECT_DIR$/Source/GEPProject/Weapons/Weapon_ChargeRevolver.cpp" />
       <option value="$PROJECT_DIR$/Source/GEPProject/Upgrades/EUpgradeTypes.h" />
@@ -76,28 +80,29 @@
       <option value="$PROJECT_DIR$/Source/GEPProject/Weapons/Weapon_Hitscan.cpp" />
       <option value="$PROJECT_DIR$/Source/GEPProject/Enemy/Enemy_Base.h" />
       <option value="$PROJECT_DIR$/Source/GEPProject/Enemy/Enemy_Base.cpp" />
-      <option value="$PROJECT_DIR$/Source/GEPProject/Enemy/EnemySpawner.h" />
       <option value="$PROJECT_DIR$/Source/GEPProject/DroneManager.cpp" />
       <option value="$PROJECT_DIR$/Source/GEPProject/DroneManager.h" />
       <option value="$PROJECT_DIR$/Source/GEPProject/Drone.cpp" />
       <option value="$PROJECT_DIR$/Source/GEPProject/Drone.h" />
-      <option value="$PROJECT_DIR$/Source/GEPProject/GEPProjectGameMode.h" />
       <option value="$PROJECT_DIR$/Source/GEPProject/DroneAIParameters.h" />
       <option value="$PROJECT_DIR$/Source/GEPProject/DroneAIParameters.cpp" />
-      <option value="$PROJECT_DIR$/Source/GEPProject/Enemy/EnemySpawner.cpp" />
-      <option value="$PROJECT_DIR$/Source/GEPProject/Drone/DroneAIParameters.h" />
-      <option value="$PROJECT_DIR$/Source/GEPProject/GEPProjectGameMode.cpp" />
-      <option value="$PROJECT_DIR$/Source/GEPProject/Drone/DroneManager.h" />
-      <option value="$PROJECT_DIR$/Source/GEPProject/Drone/DroneManager.cpp" />
-      <option value="$PROJECT_DIR$/Source/GEPProject/Drone/DroneAIC.h" />
-      <option value="$PROJECT_DIR$/Source/GEPProject/Drone/DroneAIC.cpp" />
       <option value="$PROJECT_DIR$/Source/GEPProject/Interfaces/Inputable.h" />
-      <option value="$PROJECT_DIR$/Source/GEPProject/Player/GEPProjectCharacter.h" />
+      <option value="$PROJECT_DIR$/Source/GEPProject/Interfaces/GetDrone.h" />
+      <option value="$PROJECT_DIR$/Source/GEPProject/Drone/DroneAIParameters.h" />
+      <option value="$PROJECT_DIR$/Source/GEPProject/Drone/DroneAIC.cpp" />
+      <option value="$PROJECT_DIR$/Source/GEPProject/Drone/DroneAIC.h" />
+      <option value="$PROJECT_DIR$/Source/GEPProject/Enemy/EnemySpawner.h" />
+      <option value="$PROJECT_DIR$/Source/GEPProject/Enemy/EnemySpawner.cpp" />
+      <option value="$PROJECT_DIR$/Source/GEPProject/GEPProjectGameMode.h" />
+      <option value="$PROJECT_DIR$/Source/GEPProject/Drone/DroneManager.cpp" />
+      <option value="$PROJECT_DIR$/Source/GEPProject/Drone/DroneManager.h" />
+      <option value="$PROJECT_DIR$/Source/GEPProject/GEPProjectGameMode.cpp" />
       <option value="$PROJECT_DIR$/Source/GEPProject/Drone/Drone.h" />
-      <option value="$PROJECT_DIR$/Source/GEPProject/Player/GEPProjectCharacter.cpp" />
-      <option value="$PROJECT_DIR$/Source/GEPProject/Player/GEPPlayerController.h" />
-      <option value="$PROJECT_DIR$/Source/GEPProject/Player/GEPPlayerController.cpp" />
       <option value="$PROJECT_DIR$/Source/GEPProject/Drone/Drone.cpp" />
+      <option value="$PROJECT_DIR$/Source/GEPProject/Player/GEPProjectCharacter.h" />
+      <option value="$PROJECT_DIR$/Source/GEPProject/Player/GEPPlayerController.h" />
+      <option value="$PROJECT_DIR$/Source/GEPProject/Player/GEPProjectCharacter.cpp" />
+      <option value="$PROJECT_DIR$/Source/GEPProject/Player/GEPPlayerController.cpp" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1otT4i5qLtCQz1jfo8j4ib5DORs" />
@@ -413,6 +418,7 @@
       <workItem from="1616984082214" duration="648000" />
       <workItem from="1617022783870" duration="644000" />
       <workItem from="1617110283123" duration="20736000" />
+      <workItem from="1617142671859" duration="6785000" />
     </task>
     <servers />
   </component>

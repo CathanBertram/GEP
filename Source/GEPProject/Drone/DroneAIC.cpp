@@ -20,15 +20,15 @@ void ADroneAIC::Init()
 void ADroneAIC::SetupAIC(UBehaviorTree* bt, APawn* pawnTarget, UDroneAIParameters* aiParams)
 {
 	behaviorTree = bt;
-	target = pawnTarget;
+	player = pawnTarget;
 	droneAIParams = aiParams;
 	RunBehaviorTree(behaviorTree);
 	UBlackboardComponent* bb = GetBlackboardComponent();
-	bb->SetValueAsObject("Target", target);
+	bb->SetValueAsObject("Target", player);
 	bb->SetValueAsVector("Origin", GetPawn()->GetActorLocation());
 	bb->SetValueAsFloat("MaxDistToPlayer", droneAIParams->compMaxDistFromTarget);
 	bb->SetValueAsFloat("MinDistToPlayer", droneAIParams->compMinDistFromTarget);
-	
+	bb->SetValueAsFloat("AttackRange", droneAIParams->attackRange);
 }
 
 void ADroneAIC::RunBT()

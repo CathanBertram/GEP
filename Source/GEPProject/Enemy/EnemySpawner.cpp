@@ -71,10 +71,11 @@ void AEnemySpawner::SpawnEnemy()
 			
 					//Bind events
 					tempEnemy->OnDeath.AddDynamic(this, &AEnemySpawner::EnemyDied);
-				
+
 					IInitableEnemy::Execute_Init(tempActor);
 				}
-			
+				onEnemySpawned.Broadcast(tempActor);
+				
 				curEnemyCount++;
 			}
 		}

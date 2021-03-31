@@ -133,22 +133,6 @@ public:
 	virtual void Turn_Implementation(float value) override;
 #pragma endregion 
 
-	
-	/** Base turn rate, in deg/sec. Other scaling may affect final turn rate. */
-	UPROPERTY(EditAnywhere, Category=Camera)
-	float ControllerTurnRate;
-
-	/** Base look up/down rate, in deg/sec. Other scaling may affect final rate. */
-	UPROPERTY(EditAnywhere, Category=Camera)
-	float ControllerLookUpRate;
-
-	UPROPERTY(EditAnywhere, Category=Camera)
-	float MouseTurnRate;
-
-	/** Base look up/down rate, in deg/sec. Other scaling may affect final rate. */
-	UPROPERTY(EditAnywhere, Category=Camera)
-	float MouseLookUpRate;
-
 private:
 	UPROPERTY(EditAnywhere, Category = "PlayerVariables")
 	float interactRange;

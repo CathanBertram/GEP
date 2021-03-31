@@ -24,7 +24,7 @@ class GEPPROJECT_API ADroneAIC : public AAIController
 	UPROPERTY(EditAnywhere)
 	UBehaviorTree* behaviorTree;
 	UPROPERTY(EditAnywhere)
-	APawn* target;
+	APawn* player;
 	UPROPERTY(EditAnywhere)
 	UDroneAIParameters* droneAIParams;
 public:

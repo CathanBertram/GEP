@@ -3,9 +3,11 @@
 #pragma once
 
 #include "CoreMinimal.h"
+
 #include "GameFramework/Character.h"
 #include "DroneAIParameters.h"
 #include "BehaviorTree/BehaviorTree.h"
+#include "GEPProject/Interfaces/GetDrone.h"
 #include "GEPProject/Interfaces/Interactable.h"
 #include "GEPProject/Player/GEPProjectCharacter.h"
 
@@ -14,7 +16,7 @@
 #include "Drone.generated.h"
 
 UCLASS()
-class GEPPROJECT_API ADrone : public ACharacter, public IInteractable, public IInputable
+class GEPPROJECT_API ADrone : public ACharacter, public IInteractable, public IInputable, public IGetDrone
 {
 	GENERATED_BODY()
 
@@ -30,18 +32,47 @@ public:
 	// UArrowComponent* arrowComponent;
 	
 	APawn* player;
-
+	AActor* curTarget;
+	
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
 	class UCameraComponent* FirstPersonCameraComponent;
 	
 	UFUNCTION(BlueprintCallable,BlueprintNativeEvent)
     void OnInteract(AGEPProjectCharacter* character);
 	virtual void OnInteract_Implementation(AGEPProjectCharacter* character) override;
-protected:
-	// Called when the game starts or when spawned
-	virtual void BeginPlay() override;
 
+	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
+	ADrone* GetDrone();
+	virtual ADrone* GetDrone_Implementation() override;
+	bool GetTargettingEnemy() {return targettingEnemy;}
+	bool GetCanTargetEnemy() {return canTargetEnemy;}
+	void UpdateTarget(AActor* newTarget, bool enemy = false);
+	
 	void Init();
+	void EnemyDied();
+
+protected:
+
+	UPROPERTY(EditAnywhere)
+	USoundCue* shootSound;
+	UPROPERTY(EditAnywhere)
+	UParticleSystem* muzzleFlash;
+	UPROPERTY(VisibleDefaultsOnly)
+	class USceneComponent* projSpawn;
+	UPROPERTY(EditAnywhere)
+	UParticleSystem* hitParticle;
+	UPROPERTY(EditAnywhere)
+	float range;
+	
+	void ResetCanTarget();
+	UPROPERTY(EditAnywhere)
+	float attackDamage;
+	UPROPERTY(EditAnywhere)
+	float targetCooldown; 
+	UPROPERTY(EditAnywhere)
+	float attackCooldown; 
+	UFUNCTION(BlueprintCallable)
+	void Shoot();
 
 	UPROPERTY(EditAnywhere)
 	UBehaviorTree* bt;
@@ -51,12 +82,16 @@ protected:
 
 	bool crouching;
 	bool jumping;
-
+	bool targettingEnemy;
+	bool canTargetEnemy;
+	bool canAttack;
 	void Crouching();
 	void Jumping();
-	
+
+	void ResetCanAttack();
 	class ADroneAIC* aiController;
-	#pragma region Inputable_Interface
+	
+#pragma region Inputable_Interface
 	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
 	void JumpPressed();
 	virtual void JumpPressed_Implementation() override;
