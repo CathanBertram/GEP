@@ -11,13 +11,18 @@
     <list default="true" id="37f4dc96-c088-407b-80a2-d8740801dcca" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GEPProject/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GEPProject/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GEPProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GEPProject/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/DefaultInput.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultInput.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/BP_GEPGamemode.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BP_GEPGamemode.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/BP_PlayerCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BP_PlayerCharacter.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Enemies/BP_DefaultEnemyLvl2.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Enemies/BP_DefaultEnemyLvl2.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/UI/BP_MainUI.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/UI/BP_MainUI.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/UI/BP_UpgradeMenu.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/UI/BP_UpgradeMenu.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/GEPProject/Player/GEPProjectCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/GEPProject/Player/GEPProjectCharacter.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/GEPProject/Player/GEPProjectCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/GEPProject/Player/GEPProjectCharacter.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/GEPProject/GEPProjectGameMode.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/GEPProject/GEPProjectGameMode.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/GEPProject/GEPProjectGameMode.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/GEPProject/GEPProjectGameMode.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/GEPProject/GEPSaveGame.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/GEPProject/GEPSaveGame.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/GEPProject/GEPSaveGame.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/GEPProject/GEPSaveGame.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/GEPProject/Player/GEPPlayerController.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/GEPProject/Player/GEPPlayerController.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/GEPProject/Player/GEPPlayerController.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/GEPProject/Player/GEPPlayerController.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/GEPProject/Props/UpgradeStand.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/GEPProject/Props/UpgradeStand.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/GEPProject/Upgrades/UpgradeSystem.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/GEPProject/Upgrades/UpgradeSystem.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/GEPProject/Upgrades/UpgradeSystem.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/GEPProject/Upgrades/UpgradeSystem.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,22 +35,15 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/../../epk/UE_4.25/Engine/Source/Runtime/Engine/Private/Character.cpp" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../epk/UE_4.25/Engine/Source/Runtime/Engine/Private/Collision/WorldCollision.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../epk/UE_4.25/Engine/Source/Runtime/Engine/Private/KismetSystemLibrary.cpp" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winioctl.h" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../epk/UE_4.25/Engine/Source/Runtime/UMG/Private/WidgetBlueprintLibrary.cpp" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../epk/UE_4.25/Engine/Source/Runtime/AIModule/Private/BehaviorTree/BlackboardComponent.cpp" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../epk/UE_4.25/Engine/Source/Runtime/Engine/Private/Pawn.cpp" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../epk/UE_4.25/Engine/Source/Runtime/Engine/Classes/GameFramework/GameModeBase.h" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Source/GEPProject/Upgrades/EUpgradeTypes.h" />
-      <option value="$PROJECT_DIR$/Source/GEPProject/Component/PlayerEnergyComponent.cpp" />
-      <option value="$PROJECT_DIR$/Source/GEPProject/Component/PlayerEnergyComponent.h" />
-      <option value="$PROJECT_DIR$/Source/GEPProject/Upgrades/UpgradeSystem.cpp" />
-      <option value="$PROJECT_DIR$/Source/GEPProject/Weapons/Weapon_Pistol.cpp" />
-      <option value="$PROJECT_DIR$/Source/GEPProject/GEPSaveGame.h" />
-      <option value="$PROJECT_DIR$/Source/GEPProject/Component/PlayerHealthComponent.h" />
-      <option value="$PROJECT_DIR$/Source/GEPProject/Component/PlayerHealthComponent.cpp" />
-      <option value="$PROJECT_DIR$/Source/GEPProject/Weapons/Weapon_GrenadeLauncher.cpp" />
       <option value="$PROJECT_DIR$/Source/GEPProject/Weapons/Weapon_SMG.h" />
       <option value="$PROJECT_DIR$/Source/GEPProject/Weapons/Weapon_Shotgun.h" />
       <option value="$PROJECT_DIR$/Source/GEPProject/Weapons/Weapon_Rifle.h" />
@@ -76,10 +74,6 @@
       <option value="$PROJECT_DIR$/Source/GEPProject/Drone/DroneAIC.h" />
       <option value="$PROJECT_DIR$/Source/GEPProject/Enemy/EnemySpawner.h" />
       <option value="$PROJECT_DIR$/Source/GEPProject/Enemy/EnemySpawner.cpp" />
-      <option value="$PROJECT_DIR$/Source/GEPProject/GEPProjectGameMode.h" />
-      <option value="$PROJECT_DIR$/Source/GEPProject/GEPProjectGameMode.cpp" />
-      <option value="$PROJECT_DIR$/Source/GEPProject/Player/GEPPlayerController.h" />
-      <option value="$PROJECT_DIR$/Source/GEPProject/Player/GEPPlayerController.cpp" />
       <option value="$PROJECT_DIR$/Source/GEPProject/Drone/DroneManager.h" />
       <option value="$PROJECT_DIR$/Source/GEPProject/Drone/Drone.h" />
       <option value="$PROJECT_DIR$/Source/GEPProject/Drone/DroneManager.cpp" />
@@ -88,6 +82,19 @@
       <option value="$PROJECT_DIR$/Source/GEPProject/Player/GEPProjectCharacter.cpp" />
       <option value="$PROJECT_DIR$/Source/GEPProject/Component/CurrencyComponent.cpp" />
       <option value="$PROJECT_DIR$/Source/GEPProject/Component/CurrencyComponent.h" />
+      <option value="$PROJECT_DIR$/Source/GEPProject/Player/GEPPlayerController.cpp" />
+      <option value="$PROJECT_DIR$/Source/GEPProject/Player/GEPPlayerController.h" />
+      <option value="$PROJECT_DIR$/Source/GEPProject/UserInterface/PauseMenuWidget.h" />
+      <option value="$PROJECT_DIR$/Source/GEPProject/GEPProjectGameMode.h" />
+      <option value="$PROJECT_DIR$/Source/GEPProject/UserInterface/PauseMenuWidget.cpp" />
+      <option value="$PROJECT_DIR$/Source/GEPProject/Props/UpgradeStand.cpp" />
+      <option value="$PROJECT_DIR$/Source/GEPProject/GEPSaveGame.cpp" />
+      <option value="$PROJECT_DIR$/Source/GEPProject/GEPSaveGame.h" />
+      <option value="$PROJECT_DIR$/Source/GEPProject/Upgrades/UpgradeSystem.h" />
+      <option value="$PROJECT_DIR$/Source/GEPProject/Upgrades/UpgradeSystem.cpp" />
+      <option value="$PROJECT_DIR$/Source/GEPProject/GEPProjectGameMode.cpp" />
+      <option value="$PROJECT_DIR$/Source/GEPProject/UserInterface/MainMenuWidget.h" />
+      <option value="$PROJECT_DIR$/Source/GEPProject/UserInterface/MainMenuWidget.cpp" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1otT4i5qLtCQz1jfo8j4ib5DORs" />
@@ -407,6 +414,8 @@
       <workItem from="1617190649626" duration="2753000" />
       <workItem from="1617202692184" duration="297000" />
       <workItem from="1617207375728" duration="3592000" />
+      <workItem from="1617712936095" duration="3000" />
+      <workItem from="1617715159243" duration="2983000" />
     </task>
     <servers />
   </component>

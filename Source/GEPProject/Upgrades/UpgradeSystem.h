@@ -24,7 +24,7 @@ public:
 	float GetUpgradeValue(TEnumAsByte<EUpgradeTypes> upgradeType);
 	void Init(UEventSystem* eventSystem);
 	float GetUpgradeCost(TEnumAsByte<EUpgradeTypes> upgradeType);
-	void SetUpgradeArray(TArray<FUpgrade> newUpgrades) {upgrades = newUpgrades;}
+	void SetUpgradeArray(TArray<FUpgrade> newUpgrades);
 	TArray<FUpgrade> GetUpgradeArray() {return upgrades;}
 
 	void UpdateDirties();

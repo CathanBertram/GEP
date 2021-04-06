@@ -77,6 +77,7 @@ void AGEPPlayerController::SetupInputComponent()
 	InputComponent->BindAction("PrevWeapon", IE_Pressed, this, &AGEPPlayerController::PrevWeaponPressed);
 	InputComponent->BindAction("Crouch", IE_Pressed, this, &AGEPPlayerController::CrouchPressed);
 	InputComponent->BindAction("Crouch", IE_Released, this, &AGEPPlayerController::CrouchReleased);
+	InputComponent->BindAction("Pause", IE_Pressed, this, &AGEPPlayerController::OnPause);
 	
 	InputComponent->BindAxis("MoveForward", this, &AGEPPlayerController::MoveForward);
 	InputComponent->BindAxis("MoveRight", this, &AGEPPlayerController::MoveRight);

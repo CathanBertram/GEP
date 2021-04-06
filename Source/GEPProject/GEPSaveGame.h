@@ -41,8 +41,6 @@ public:
 	UPROPERTY(EditAnywhere)
 	TArray<FUpgrade> upgrades;
 	UPROPERTY(EditAnywhere)
-	TArray<AEnemy_Base*> curEnemies;
-	UPROPERTY(EditAnywhere)
 	bool canBeDamaged;
 	UPROPERTY(EditAnywhere)
 	bool constantEnergyRegen;

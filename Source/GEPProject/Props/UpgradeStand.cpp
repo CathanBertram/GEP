@@ -4,6 +4,7 @@
 #include "UpgradeStand.h"
 
 #include "Blueprint/UserWidget.h"
+#include "Blueprint/WidgetBlueprintLibrary.h"
 #include "Kismet/GameplayStatics.h"
 
 AUpgradeStand::AUpgradeStand()
@@ -19,6 +20,7 @@ void AUpgradeStand::OnInteract_Implementation(AGEPProjectCharacter* character)
 	UGameplayStatics::SetGamePaused(world, true);
 	APlayerController* pc =UGameplayStatics::GetPlayerController(world, 0);
 	pc->bShowMouseCursor = true;
+	UWidgetBlueprintLibrary::SetInputMode_GameOnly(pc);
 	upgradeMenu = CreateWidget<UUserWidget>(pc, wUpgradeMenu);
 	if (upgradeMenu)
 	{

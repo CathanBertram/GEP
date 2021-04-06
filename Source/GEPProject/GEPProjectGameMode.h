@@ -55,7 +55,10 @@ protected:
 	
 	AEnemySpawner* enemySpawner;
 	ADroneManager* droneManager;
-	
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=Classes)
+	TSubclassOf<UUserWidget> pauseMenu;
+		
 	virtual void BeginPlay() override;
 	int currency;
 	float healthPercent;
@@ -75,6 +78,9 @@ protected:
 	void EnemyDied(AEnemy_Base* enemy);
 	UFUNCTION()
 	void EnemySpawned(AActor* enemy);
+
+	UFUNCTION()
+	void OnPause(APlayerController* pc);
 	
 	UPROPERTY(EditAnywhere)
 	UUpgradeSystem* upgradeSystem;

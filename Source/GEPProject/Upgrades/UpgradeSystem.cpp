@@ -61,6 +61,13 @@ float UUpgradeSystem::GetUpgradeCost(TEnumAsByte<EUpgradeTypes> upgradeType)
 	return 0;
 }
 
+void UUpgradeSystem::SetUpgradeArray(TArray<FUpgrade> newUpgrades)
+{
+	if(newUpgrades.Num() != upgrades.Num()) return;
+	
+	upgrades = newUpgrades;
+}
+
 void UUpgradeSystem::UpdateDirties()
 {
 	if(playerDirty)

@@ -10,6 +10,8 @@
 /**
  * 
  */
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnPause, APlayerController*, playerController);
+
 UCLASS(Abstract)
 class GEPPROJECT_API AGEPPlayerController : public APlayerController, public IInitablePC
 {
@@ -27,6 +29,7 @@ public:
 	AGEPPlayerController* GetAsPC();
 	virtual AGEPPlayerController* GetAsPC_Implementation() override;
 
+	FOnPause onPause;
 protected:
 	UPROPERTY(EditAnywhere)
 	TSubclassOf<APawn> pawnToSpawn;
@@ -45,6 +48,9 @@ protected:
 	/** Base look up/down rate, in deg/sec. Other scaling may affect final rate. */
 	UPROPERTY(EditAnywhere, Category=Camera)
 	float MouseLookUpRate;
+
+	void OnPause(){onPause.Broadcast(this);}
+	
 private:
 	
 	void JumpPressed(); void JumpReleased();

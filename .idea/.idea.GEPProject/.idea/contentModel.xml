@@ -43616,6 +43616,12 @@
             <e p="UpgradeSystem.cpp" t="Include" />
             <e p="UpgradeSystem.h" t="Include" />
           </e>
+          <e p="UserInterface" t="Include">
+            <e p="MainMenuWidget.cpp" t="Include" />
+            <e p="MainMenuWidget.h" t="Include" />
+            <e p="PauseMenuWidget.cpp" t="Include" />
+            <e p="PauseMenuWidget.h" t="Include" />
+          </e>
           <e p="Weapons" t="Include">
             <e p="EWeaponTypes.cpp" t="Include" />
             <e p="EWeaponTypes.h" t="Include" />

@@ -37,6 +37,8 @@ void AGEPProjectGameMode::PostLogin(APlayerController* NewPlayer)
 		AGEPPlayerController* tempPC = IInitablePC::Execute_GetAsPC(NewPlayer);
 
 		//Bind events
+
+		tempPC->onPause.AddDynamic(this, &AGEPProjectGameMode::OnPause);
 		
 		IInitablePC::Execute_Init(NewPlayer);
 	}
@@ -51,6 +53,7 @@ void AGEPProjectGameMode::Logout(AController* Exiting)
 		AGEPPlayerController* tempPC = IInitablePC::Execute_GetAsPC(Exiting);
 
 		//Unbind events
+		tempPC->onPause.RemoveDynamic(this, &AGEPProjectGameMode::OnPause);
 	}
 	Super::Logout(Exiting);
 }
@@ -95,6 +98,10 @@ void AGEPProjectGameMode::BeginPlay()
 	droneManager->Init_Implementation();
 
 	droneManager->SetPlayer(playerControllers[0]->GetPawn());
+
+
+
+	LoadGame();
 }
 
 void AGEPProjectGameMode::UpdateCurrency(int newCur)
@@ -152,6 +159,17 @@ void AGEPProjectGameMode::EnemyDied(AEnemy_Base* enemy)
 void AGEPProjectGameMode::EnemySpawned(AActor* enemy)
 {
 	droneManager->EnemySpawned(enemy);
+}
+
+void AGEPProjectGameMode::OnPause(APlayerController* pc)
+{
+	GEngine->AddOnScreenDebugMessage(-1, .5f, FColor::Red, "Pause");
+	UWorld* world = GetWorld();
+	UGameplayStatics::SetGamePaused(world, true);
+	pc->bShowMouseCursor = true;
+	UUserWidget* widget = CreateWidget(pc, pauseMenu, "PauseMenu");
+	if(widget)
+		widget->AddToViewport();
 }
 
 
