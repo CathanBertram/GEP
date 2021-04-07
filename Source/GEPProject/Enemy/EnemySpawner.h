@@ -9,7 +9,7 @@
 #include "Enemy_Base.h"
 #include "EnemySpawner.generated.h"
 
-DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnEnemyDeath, AEnemy_Base*, enemy);
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FOnEnemyDeath, AEnemy_Base*, enemy, bool, killed);
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnEnemySpawned, AActor*, enemy);
 
 UCLASS()
@@ -52,7 +52,7 @@ protected:
 	void GetUpdatedMultipliers();	
 	void SpawnEnemy();
 	UFUNCTION()
-	void EnemyDied(AEnemy_Base* enemy);
+	void EnemyDied(AEnemy_Base* enemy, bool killed);
 	FTimerHandle EnemySpawnTimerHandle;
 
 };

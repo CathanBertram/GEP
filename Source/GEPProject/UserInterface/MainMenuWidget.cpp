@@ -11,28 +11,20 @@
 
 void UMainMenuWidget::ContinueGame()
 {
-	if (levelToLoad != "")
-	{
-		FLatentActionInfo latentInfo;
-		UGameplayStatics::LoadStreamLevel(GetOwningPlayer(), levelToLoad, true, true, latentInfo);
-	}
+	UGameplayStatics::OpenLevel(GetWorld(), levelToLoad, true);
 }
 
-void UMainMenuWidget::NewGame()
+void UMainMenuWidget::StartNewGame()
 {
 	USaveGame* tempSave = UGameplayStatics::CreateSaveGameObject(UGEPSaveGame::StaticClass());
-	//Event to save data from other classes
+	UGameplayStatics::SaveGameToSlot(tempSave, TEXT("Save"), 0);
 	if (UKismetSystemLibrary::DoesImplementInterface(tempSave, UGetGEPSaveGame::StaticClass()))
 	{
 		UGEPSaveGame* saveGameInstance = IGetGEPSaveGame::Execute_GetGEPSave(tempSave);
-
-		UGameplayStatics::SaveGameToSlot(saveGameInstance, TEXT("Save"), 0);
+		//Save data from this class
+		saveGameInstance->isNew = true;
 	}
-	if (levelToLoad != "")
-	{
-		FLatentActionInfo latentInfo;
-		UGameplayStatics::LoadStreamLevel(GetOwningPlayer(), levelToLoad, true, true, latentInfo);
-	}
+	UGameplayStatics::OpenLevel(GetWorld(), levelToLoad, true);
 }
 
 void UMainMenuWidget::QuitGame()

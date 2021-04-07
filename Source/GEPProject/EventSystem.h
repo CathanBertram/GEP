@@ -13,6 +13,7 @@
 
 DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnStartSave);
 DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnStartLoad);
+DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnPlayerDeath);
 
 DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnDirtyPlayer);
 DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnDirtyEnemy);
@@ -48,6 +49,8 @@ public:
 	void OnStartLoad() {onStartLoad.Broadcast();}
 	FOnCurrencyGain onCurrencyGain;
 	void OnCurrencyGain(int curToGain) {onCurrencyGain.Broadcast(curToGain);}
+	FOnPlayerDeath onPlayerDeath;
+	void OnPlayerDeath() {onPlayerDeath.Broadcast();}
 
 	FOnCurrencyLoss onCurrencyLoss;
 	void OnCurrencyLoss(int curToLose) {onCurrencyLoss.Broadcast(curToLose);}

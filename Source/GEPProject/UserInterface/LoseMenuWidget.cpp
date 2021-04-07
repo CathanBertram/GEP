@@ -1,14 +1,15 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 
-#include "PauseMenuWidget.h"
+#include "LoseMenuWidget.h"
 
 
 #include "GEPProject/EventSystem.h"
 #include "Kismet/GameplayStatics.h"
 
-void UPauseMenuWidget::ResumeGame()
+void ULoseMenuWidget::LoadFromSave()
 {
+	GetGameInstance()->GetSubsystem<UEventSystem>()->OnStartSave();
 	APlayerController* pc = GetOwningPlayer();
 	UWorld* world = GetWorld();
 	UGameplayStatics::SetGamePaused(world, false);
@@ -16,17 +17,7 @@ void UPauseMenuWidget::ResumeGame()
 	RemoveFromParent();
 }
 
-void UPauseMenuWidget::Save()
-{
-	GetGameInstance()->GetSubsystem<UEventSystem>()->OnStartSave();
-}
-
-void UPauseMenuWidget::Load()
-{
-	GetGameInstance()->GetSubsystem<UEventSystem>()->OnStartLoad();
-}
-
-void UPauseMenuWidget::Quit()
+void ULoseMenuWidget::QuitToMainMenu()
 {
 	if (mainMenu != "")
 	{

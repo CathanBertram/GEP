@@ -9,7 +9,7 @@
 #include "Sound/SoundCue.h"
 #include "Enemy_Base.generated.h"
 
-DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnDeath, AEnemy_Base*, enemy);
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FOnDeath, AEnemy_Base*, enemy, bool, killed);
 
 UCLASS()
 class GEPPROJECT_API AEnemy_Base : public AActor, public IShootable, public IInitableEnemy
@@ -52,7 +52,7 @@ protected:
 	UPROPERTY(EditAnywhere)
 	float damage;
 
-	void Death();
+	void Death(bool killed);
 	
 	UFUNCTION()
 	void ShotDeath();

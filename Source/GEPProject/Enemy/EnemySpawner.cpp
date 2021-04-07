@@ -83,8 +83,8 @@ void AEnemySpawner::SpawnEnemy()
 	world->GetTimerManager().SetTimer(EnemySpawnTimerHandle, this, &AEnemySpawner::SpawnEnemy, enemySpawnRate);
 }
 
-void AEnemySpawner::EnemyDied(AEnemy_Base* enemy)
+void AEnemySpawner::EnemyDied(AEnemy_Base* enemy, bool killed)
 {
 	curEnemyCount--;
-	onEnemyDeath.Broadcast(enemy);
+	onEnemyDeath.Broadcast(enemy, killed);
 }

@@ -40,14 +40,14 @@ void AEnemy_Base::EndOfLifetime()
 	//Take life from player
 	AActor* player = UGameplayStatics::GetPlayerController(GetWorld(), 0)->GetCharacter();
 	UGameplayStatics::ApplyDamage(player, damage, this->GetInstigatorController(), this, TSubclassOf<UDamageType>(UDamageType::StaticClass()));
-	Death();	
+	Death(false);	
 }
 
 
 
-void AEnemy_Base::Death()
+void AEnemy_Base::Death(bool killed)
 {
-	OnDeath.Broadcast(this);
+	OnDeath.Broadcast(this, killed);
 	UGameplayStatics::PlaySoundAtLocation(GetWorld(), explosionSound, GetActorLocation());
 	UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), explosionParticles, GetActorLocation());
 	Destroy(false,false);
@@ -57,7 +57,7 @@ void AEnemy_Base::Death()
 void AEnemy_Base::ShotDeath()
 {
 	GetGameInstance()->GetSubsystem<UEventSystem>()->OnCurrencyGain(currencyToDrop);
-	Death();
+	Death(true);
 }
 
 

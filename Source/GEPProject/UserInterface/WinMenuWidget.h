@@ -4,24 +4,22 @@
 
 #include "CoreMinimal.h"
 #include "Blueprint/UserWidget.h"
-#include "MainMenuWidget.generated.h"
+#include "WinMenuWidget.generated.h"
 
 /**
  * 
  */
 UCLASS()
-class GEPPROJECT_API UMainMenuWidget : public UUserWidget
+class GEPPROJECT_API UWinMenuWidget : public UUserWidget
 {
 	GENERATED_BODY()
+
 	UFUNCTION(BlueprintCallable)
-	void ContinueGame();
-	
+	void Continue();
 	UFUNCTION(BlueprintCallable)
-    void StartNewGame();
-	
-	UFUNCTION(BlueprintCallable)
-    void QuitGame();
+	void QuitToMainMenu();
+
 
 	UPROPERTY(EditAnywhere)
-	FName levelToLoad;
+	FName mainMenu;
 };

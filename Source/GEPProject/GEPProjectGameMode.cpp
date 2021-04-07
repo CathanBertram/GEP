@@ -81,7 +81,7 @@ void AGEPProjectGameMode::BeginPlay()
 	eventSystem->onEnergyUpdate.AddDynamic(this, &AGEPProjectGameMode::UpdateEnergyPercent);
 	eventSystem->onStartSave.AddDynamic(this, &AGEPProjectGameMode::SaveGame);
 	eventSystem->onStartLoad.AddDynamic(this, &AGEPProjectGameMode::LoadGame);
-
+	eventSystem->onPlayerDeath.AddDynamic(this, &AGEPProjectGameMode::PlayerDied);
 	upgradeSystem->Init(eventSystem);
 	UGameplayStatics::RemovePlayer(UGameplayStatics::GetPlayerController(GetWorld(), 0), true);
 
@@ -102,6 +102,7 @@ void AGEPProjectGameMode::BeginPlay()
 
 
 	LoadGame();
+	SaveGame();
 }
 
 void AGEPProjectGameMode::UpdateCurrency(int newCur)
@@ -128,7 +129,10 @@ void AGEPProjectGameMode::SaveGame()
 	{
 		UGEPSaveGame* saveGameInstance = IGetGEPSaveGame::Execute_GetGEPSave(tempSave);
 		//Save data from this class
+		saveGameInstance->isNew = false;
 		saveGameInstance->upgrades = upgradeSystem->GetUpgradeArray();
+		saveGameInstance->numEnemiesKilled = numEnemiesKilled;
+		saveGameInstance->won = won;
 		GetGameInstance()->GetSubsystem<UEventSystem>()->OnSave(saveGameInstance);
 		UGameplayStatics::SaveGameToSlot(saveGameInstance, TEXT("Save"), 0);
 	}
@@ -144,6 +148,8 @@ void AGEPProjectGameMode::LoadGame()
 		{
 			UGEPSaveGame* saveGameInstance = IGetGEPSaveGame::Execute_GetGEPSave(tempSave);
 			//Load data for this class
+			numEnemiesKilled = saveGameInstance->numEnemiesKilled;
+			won = saveGameInstance->won;
 			upgradeSystem->SetUpgradeArray(saveGameInstance->upgrades);
 			upgradeSystem->ForceUpdateDirties();
 			GetGameInstance()->GetSubsystem<UEventSystem>()->OnLoad(saveGameInstance);	
@@ -151,9 +157,18 @@ void AGEPProjectGameMode::LoadGame()
 	}
 }
 
-void AGEPProjectGameMode::EnemyDied(AEnemy_Base* enemy)
+void AGEPProjectGameMode::EnemyDied(AEnemy_Base* enemy, bool killed)
 {
 	droneManager->EnemyDied(enemy);
+	if (killed)
+	{
+		numEnemiesKilled++;
+		if (numEnemiesKilled >= enemiesRequiredToKill && !won)
+		{
+			Win();
+		}
+	}
+	
 }
 
 void AGEPProjectGameMode::EnemySpawned(AActor* enemy)
@@ -163,13 +178,50 @@ void AGEPProjectGameMode::EnemySpawned(AActor* enemy)
 
 void AGEPProjectGameMode::OnPause(APlayerController* pc)
 {
-	GEngine->AddOnScreenDebugMessage(-1, .5f, FColor::Red, "Pause");
 	UWorld* world = GetWorld();
 	UGameplayStatics::SetGamePaused(world, true);
 	pc->bShowMouseCursor = true;
 	UUserWidget* widget = CreateWidget(pc, pauseMenu, "PauseMenu");
 	if(widget)
 		widget->AddToViewport();
+}
+
+void AGEPProjectGameMode::PlayerDied()
+{
+	Lose();
+}
+
+void AGEPProjectGameMode::Win()
+{
+	won = true;
+	GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Red, "Win");
+	UWorld* world = GetWorld();
+	UGameplayStatics::SetGamePaused(world, true);
+
+	if (UKismetSystemLibrary::DoesImplementInterface(playerControllers[0], UInitablePC::StaticClass()))
+	{
+		AGEPPlayerController* pc = IInitablePC::Execute_GetAsPC(playerControllers[0]);
+		pc->bShowMouseCursor = true;
+		UUserWidget* widget = CreateWidget(pc, winMenu, "WinMenu");
+		if(widget)
+			widget->AddToViewport();
+
+	}
+}
+
+void AGEPProjectGameMode::Lose()
+{
+	UWorld* world = GetWorld();
+	UGameplayStatics::SetGamePaused(world, true);
+	if (UKismetSystemLibrary::DoesImplementInterface(playerControllers[0], UInitablePC::StaticClass()))
+	{
+		AGEPPlayerController* pc = IInitablePC::Execute_GetAsPC(playerControllers[0]);
+		pc->bShowMouseCursor = true;
+		UUserWidget* widget = CreateWidget(pc, loseMenu, "LoseMenu");
+		if(widget)
+			widget->AddToViewport();
+
+	}
 }
 
 

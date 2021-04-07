@@ -5,6 +5,8 @@
 #include "CoreMinimal.h"
 #include "GEPProject/Interfaces/InitablePC.h"
 #include "GameFramework/PlayerController.h"
+#include "GEPProject/GEPSaveGame.h"
+
 #include "GEPPlayerController.generated.h"
 
 /**

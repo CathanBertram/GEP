@@ -25,7 +25,9 @@ public:
 	virtual UGEPSaveGame* GetGEPSave_Implementation() override;
 	
 	UPROPERTY(EditAnywhere)
-	FTransform transform;
+	FVector location;
+	UPROPERTY(EditAnywhere)
+	FRotator rotator;
 	UPROPERTY(EditAnywhere)
 	int currency;
 	UPROPERTY(EditAnywhere)
@@ -44,4 +46,10 @@ public:
 	bool canBeDamaged;
 	UPROPERTY(EditAnywhere)
 	bool constantEnergyRegen;
+	UPROPERTY(EditAnywhere)
+	bool isNew;
+	UPROPERTY(EditAnywhere)
+	int numEnemiesKilled;
+	UPROPERTY(EditAnywhere)
+	bool won;
 };

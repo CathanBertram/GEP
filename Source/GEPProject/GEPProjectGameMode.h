@@ -45,6 +45,10 @@ public:
 	float GetUpgradeCost(TEnumAsByte<EUpgradeTypes> upgradeType);
 	UFUNCTION(BlueprintCallable)
 	void UpdateDirties();
+	UFUNCTION(BlueprintCallable)
+	int GetNumEnemiesKilled() {return  numEnemiesKilled;}
+	UFUNCTION(BlueprintCallable)
+    int GetMaxEnemies() {return  enemiesRequiredToKill;}
 	UUpgradeSystem* GetUpgradeSystem(){return upgradeSystem;}
 
 protected:
@@ -58,6 +62,10 @@ protected:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=Classes)
 	TSubclassOf<UUserWidget> pauseMenu;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=Classes)
+	TSubclassOf<UUserWidget> winMenu;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=Classes)
+	TSubclassOf<UUserWidget> loseMenu;
 		
 	virtual void BeginPlay() override;
 	int currency;
@@ -75,13 +83,23 @@ protected:
 	UFUNCTION()
 	void LoadGame();
 	UFUNCTION()
-	void EnemyDied(AEnemy_Base* enemy);
+	void EnemyDied(AEnemy_Base* enemy, bool killed);
 	UFUNCTION()
 	void EnemySpawned(AActor* enemy);
 
 	UFUNCTION()
 	void OnPause(APlayerController* pc);
+
+	UFUNCTION()
+	void PlayerDied();
 	
+	void Win();
+	void Lose();
+	
+	int numEnemiesKilled;
+	UPROPERTY(EditAnywhere)
+	int enemiesRequiredToKill;
+	bool won = false;
 	UPROPERTY(EditAnywhere)
 	UUpgradeSystem* upgradeSystem;
 };

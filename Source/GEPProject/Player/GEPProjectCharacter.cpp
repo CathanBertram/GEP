@@ -62,6 +62,7 @@ void AGEPProjectCharacter::Init_Implementation()
 
 	healthComponent->SetEventInstance(eventSystemInstance);
 	healthComponent->Init();
+	healthComponent->onDeath.AddDynamic(this, &AGEPProjectCharacter::OnDeath);
 	
 	energyComponent->SetEventInstance(eventSystemInstance);
 	energyComponent->Init();
@@ -95,7 +96,8 @@ void AGEPProjectCharacter::UseEnergy(float energyToUse)
 void AGEPProjectCharacter::Save(UGEPSaveGame* saveInstance)
 {
 	saveInstance->currency = currencyComponent->GetCurrency();
-	saveInstance->transform = GetTransform();
+	saveInstance->location = GetActorLocation();
+	saveInstance->rotator = GetActorRotation();
 	saveInstance->unlockedWeapons = unlockedWeaponArray;
 	saveInstance->curHealth = healthComponent->GetCurHealth();
 	saveInstance->maxHealth = healthComponent->GetMaxHealth();
@@ -108,8 +110,14 @@ void AGEPProjectCharacter::Save(UGEPSaveGame* saveInstance)
 void AGEPProjectCharacter::Load(UGEPSaveGame* saveInstance)
 {
 	currencyComponent->SetCurrency(saveInstance->currency);
-	SetActorTransform(saveInstance->transform);
-	unlockedWeaponArray = saveInstance->unlockedWeapons;
+
+	if (!saveInstance->isNew)
+	{
+		SetActorLocation(saveInstance->location);
+		SetActorRotation(saveInstance->rotator);
+	}
+	if(saveInstance->unlockedWeapons.Num() > 0)
+		unlockedWeaponArray = saveInstance->unlockedWeapons;
 	healthComponent->SetMaxHealth(saveInstance->maxHealth);
 	healthComponent->SetCurHealth(saveInstance->curHealth);
 	energyComponent->SetMaxEnergy(saveInstance->maxEnergy);
@@ -157,6 +165,11 @@ void AGEPProjectCharacter::GetUpdatedMultipliers()
 		//Need To Do Currency Stuff
 		currencyComponent->UpdateValues(upgradeSystem);
 	}
+}
+
+void AGEPProjectCharacter::OnDeath()
+{
+	GetGameInstance()->GetSubsystem<UEventSystem>()->OnPlayerDeath();
 }
 
 AGEPProjectCharacter* AGEPProjectCharacter::GetAsChar_Implementation()

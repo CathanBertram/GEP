@@ -22,4 +22,7 @@ class GEPPROJECT_API UPauseMenuWidget : public UUserWidget
 	void Load();
 	UFUNCTION(BlueprintCallable)
 	void Quit();
+	
+	UPROPERTY(EditAnywhere)
+    FName mainMenu;
 };

@@ -90,10 +90,10 @@ void ADrone::Shoot()
 		
 		FVector end = (forward * range) + start;
 
-		const FName traceTag("TraceTag");
-		world->DebugDrawTraceTag = traceTag; //Draws arrow at hit point
+		// const FName traceTag("TraceTag");
+		// world->DebugDrawTraceTag = traceTag; //Draws arrow at hit point
 		FCollisionQueryParams collisionParams;
-		collisionParams.TraceTag = traceTag;
+		// collisionParams.TraceTag = traceTag;
 		collisionParams.AddIgnoredActor(this);
 		
 		if (world->LineTraceSingleByChannel(hit, start,end, ECC_Visibility, collisionParams))

@@ -158,6 +158,10 @@ private:
 	UFUNCTION()
 	void GetUpdatedMultipliers();
 
+	UFUNCTION()
+	void OnDeath();
+	
+
 public:
 	/** Returns FirstPersonCameraComponent subobject **/
 	FORCEINLINE class UCameraComponent* GetFirstPersonCameraComponent() const { return FirstPersonCameraComponent; }

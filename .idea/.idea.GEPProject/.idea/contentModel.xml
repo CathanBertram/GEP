@@ -43594,6 +43594,8 @@
             <e p="Shootable.cpp" t="Include" />
             <e p="Shootable.h" t="Include" />
           </e>
+          <e p="MainMenuGameMode.cpp" t="Include" />
+          <e p="MainMenuGameMode.h" t="Include" />
           <e p="Player" t="Include">
             <e p="GEPPlayerController.cpp" t="Include" />
             <e p="GEPPlayerController.h" t="Include" />
@@ -43617,10 +43619,14 @@
             <e p="UpgradeSystem.h" t="Include" />
           </e>
           <e p="UserInterface" t="Include">
+            <e p="LoseMenuWidget.cpp" t="Include" />
+            <e p="LoseMenuWidget.h" t="Include" />
             <e p="MainMenuWidget.cpp" t="Include" />
             <e p="MainMenuWidget.h" t="Include" />
             <e p="PauseMenuWidget.cpp" t="Include" />
             <e p="PauseMenuWidget.h" t="Include" />
+            <e p="WinMenuWidget.cpp" t="Include" />
+            <e p="WinMenuWidget.h" t="Include" />
           </e>
           <e p="Weapons" t="Include">
             <e p="EWeaponTypes.cpp" t="Include" />
