@@ -10,7 +10,7 @@
 void UPauseMenuWidget::ResumeGame()
 {
 	APlayerController* pc = GetOwningPlayer();
-	UWorld* world = GetWorld();
+	const UWorld* world = GetWorld();
 	UGameplayStatics::SetGamePaused(world, false);
 	pc->bShowMouseCursor = false;
 	RemoveFromParent();

@@ -18,7 +18,7 @@ bool AWeapon_Shotgun::Fire_Implementation()
 	if (curEnergy < energyCost) return false;
 	
 	canShoot = false;
-	UWorld* const world = GetWorld();
+	const UWorld* const world = GetWorld();
 	if (world != nullptr)
 	{	
 		USceneComponent* muzzle = GetGunMuzzle();
@@ -60,7 +60,7 @@ bool AWeapon_Shotgun::Fire_Implementation()
 
 void AWeapon_Shotgun::GetUpdatedDirties()
 {
-	UWorld* world = GetWorld();
+	const UWorld* world = GetWorld();
 	AGameModeBase* tempGamemode = UGameplayStatics::GetGameMode(world);
 	
 	if (tempGamemode->GetClass()->ImplementsInterface(UGetGEPGamemode::StaticClass()))

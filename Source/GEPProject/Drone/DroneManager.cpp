@@ -54,7 +54,7 @@ void ADroneManager::EnemyDied(AEnemy_Base* enemy)
 
 void ADroneManager::UpdateDirties()
 {
-	UWorld* world = GetWorld();
+	const UWorld* world = GetWorld();
 	AGameModeBase* tempGamemode = UGameplayStatics::GetGameMode(world);
 	
 	if (tempGamemode->GetClass()->ImplementsInterface(UGetGEPGamemode::StaticClass()))
@@ -75,7 +75,7 @@ void ADroneManager::UpdateDirties()
 
 void ADroneManager::SpawnDrone()
 {
-	UWorld* const world =  GetWorld();
+	UWorld* const world = GetWorld();
 	for (int i = droneCount; i < maxDroneCount; ++i)
 	{
 		if (world != nullptr)

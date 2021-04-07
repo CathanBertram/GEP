@@ -29,7 +29,7 @@ void AWeapon_Hitscan::Shoot()
 	if (curEnergy < energyCost) return;
 	
 	canShoot = false;
-	UWorld* const world = GetWorld();
+	const UWorld* const world = GetWorld();
 	if (world != nullptr)
 	{	
 		FHitResult hit(ForceInit);
@@ -39,14 +39,10 @@ void AWeapon_Hitscan::Shoot()
 		FVector forward = cameraManager->GetActorForwardVector();
 		//add screen shake maybe
 		
-		UGameplayStatics::PlaySound2D(world, shootSound);
-		UGameplayStatics::SpawnEmitterAtLocation(world, muzzleFlash , muzzle->GetComponentLocation());
+		PlayShootEffects();
 		
 		FVector end = (forward * range) + start;
-		//FVector start = ((muzzle != nullptr) ? muzzle->GetComponentLocation() : GetActorLocation());
-		//FVector end = (((muzzle != nullptr) ? muzzle->GetForwardVector() : GetActorForwardVector()) * 100000);
-		
-		
+
 		// const FName traceTag("TraceTag");
 		// world->DebugDrawTraceTag = traceTag; //Draws arrow at hit point
 		FCollisionQueryParams collisionParams;
@@ -60,7 +56,7 @@ void AWeapon_Hitscan::Shoot()
 			}
 			//Use this to damage enemies
 			UGameplayStatics::ApplyDamage(hit.GetActor(), damage, this->GetInstigatorController(), this, TSubclassOf<UDamageType>(UDamageType::StaticClass()));
-			UGameplayStatics::SpawnEmitterAtLocation(world, hitParticle , hit.Location);	
+			PlayHitEffects(hit.ImpactPoint);
 		}
 	}
 	onShoot.Broadcast(energyCost);

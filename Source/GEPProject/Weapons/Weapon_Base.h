@@ -47,7 +47,7 @@ protected:
 	UPROPERTY(VisibleDefaultsOnly)
 	class USkeletalMeshComponent* gunMesh;
 
-	UPROPERTY(VisibleDefaultsOnly)
+	UPROPERTY(BlueprintReadWrite)
 	class USceneComponent* gunMuzzle;
 
 	UPROPERTY(EditAnywhere, Category = "Weapon Variables")

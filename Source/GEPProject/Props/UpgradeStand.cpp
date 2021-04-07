@@ -16,7 +16,7 @@ AUpgradeStand::AUpgradeStand()
 
 void AUpgradeStand::OnInteract_Implementation(AGEPProjectCharacter* character)
 {
-	UWorld* world = GetWorld();
+	const UWorld* world = GetWorld();
 	UGameplayStatics::SetGamePaused(world, true);
 	APlayerController* pc =UGameplayStatics::GetPlayerController(world, 0);
 	pc->bShowMouseCursor = true;

@@ -23,6 +23,10 @@ protected:
 	UPROPERTY(EditAnywhere, Category = "Weapon Variables")
 	float range;
 
+	UFUNCTION(BlueprintImplementableEvent)
+	void PlayShootEffects();
+	UFUNCTION(BlueprintImplementableEvent)
+	void PlayHitEffects(FVector hitPoint);
 	
 	virtual void Shoot();
 

@@ -63,10 +63,6 @@ AGEPProjectGameMode* AGEPProjectGameMode::GetGEPGamemode_Implementation()
 	return this;
 }
 
-float AGEPProjectGameMode::GetUpgradeCost(TEnumAsByte<EUpgradeTypes> upgradeType)
-{
-	return upgradeSystem->GetUpgradeCost(upgradeType);
-}
 
 void AGEPProjectGameMode::UpdateDirties()
 {
@@ -75,6 +71,8 @@ void AGEPProjectGameMode::UpdateDirties()
 
 void AGEPProjectGameMode::BeginPlay()
 {
+	const UWorld* world = GetWorld();
+	//Bind GameMode to events
 	UEventSystem* eventSystem = GetGameInstance()->GetSubsystem<UEventSystem>();
 	eventSystem->onCurrencyUpdate.AddDynamic(this, &AGEPProjectGameMode::UpdateCurrency);
 	eventSystem->onHealthUpdate.AddDynamic(this, &AGEPProjectGameMode::UpdateHealthPercent);
@@ -82,42 +80,30 @@ void AGEPProjectGameMode::BeginPlay()
 	eventSystem->onStartSave.AddDynamic(this, &AGEPProjectGameMode::SaveGame);
 	eventSystem->onStartLoad.AddDynamic(this, &AGEPProjectGameMode::LoadGame);
 	eventSystem->onPlayerDeath.AddDynamic(this, &AGEPProjectGameMode::PlayerDied);
+
+	//Initialise upgrade system
 	upgradeSystem->Init(eventSystem);
-	UGameplayStatics::RemovePlayer(UGameplayStatics::GetPlayerController(GetWorld(), 0), true);
 
-	UGameplayStatics::CreatePlayer(GetWorld());
+	//Create Player Character
+	UGameplayStatics::RemovePlayer(UGameplayStatics::GetPlayerController(world, 0), true);
+	UGameplayStatics::CreatePlayer(world);
 
-	AActor* temp = UGameplayStatics::GetActorOfClass(GetWorld(), AEnemySpawner::StaticClass());
+	//Get and initialise enemy spawner
+	AActor* temp = UGameplayStatics::GetActorOfClass(world, AEnemySpawner::StaticClass());
 	enemySpawner = Cast<AEnemySpawner>(temp);
 	enemySpawner->Init_Implementation();
 	enemySpawner->onEnemyDeath.AddDynamic(this, &AGEPProjectGameMode::EnemyDied);
 	enemySpawner->onEnemySpawned.AddDynamic(this, &AGEPProjectGameMode::EnemySpawned);
 
+	//Get and initialise drone manager
 	temp = UGameplayStatics::GetActorOfClass(GetWorld(), ADroneManager::StaticClass());
 	droneManager = Cast<ADroneManager>(temp);
 	droneManager->Init_Implementation();
-
 	droneManager->SetPlayer(playerControllers[0]->GetPawn());
 
-
-
+	//Load Game
 	LoadGame();
-	SaveGame();
-}
-
-void AGEPProjectGameMode::UpdateCurrency(int newCur)
-{
-	currency = newCur;
-}
-
-void AGEPProjectGameMode::UpdateHealthPercent(float newHealthPercent)
-{
-	healthPercent = newHealthPercent;
-}
-
-void AGEPProjectGameMode::UpdateEnergyPercent(float newEnergyPercent)
-{
-	energyPercent = newEnergyPercent;
+	SaveGame(); //There was an actual reason this is here but I forgot
 }
 
 void AGEPProjectGameMode::SaveGame()
@@ -157,6 +143,73 @@ void AGEPProjectGameMode::LoadGame()
 	}
 }
 
+void AGEPProjectGameMode::OnPause(APlayerController* pc)
+{
+	const UWorld* world = GetWorld();
+	UGameplayStatics::SetGamePaused(world, true);
+	pc->bShowMouseCursor = true;
+	UUserWidget* widget = CreateWidget(pc, pauseMenu, "PauseMenu");
+	if(widget)
+		widget->AddToViewport();
+}
+
+void AGEPProjectGameMode::PlayerDied()
+{
+	Lose();
+}
+
+void AGEPProjectGameMode::Win()
+{
+	won = true;
+	const UWorld* world = GetWorld();
+	UGameplayStatics::SetGamePaused(world, true);
+
+	if (UKismetSystemLibrary::DoesImplementInterface(playerControllers[0], UInitablePC::StaticClass()))
+	{
+		AGEPPlayerController* pc = IInitablePC::Execute_GetAsPC(playerControllers[0]);
+		pc->bShowMouseCursor = true;
+		UUserWidget* widget = CreateWidget(pc, winMenu, "WinMenu");
+		if(widget)
+			widget->AddToViewport();
+
+	}
+}
+
+void AGEPProjectGameMode::Lose()
+{
+	const UWorld* world = GetWorld();
+	UGameplayStatics::SetGamePaused(world, true);
+	if (UKismetSystemLibrary::DoesImplementInterface(playerControllers[0], UInitablePC::StaticClass()))
+	{
+		AGEPPlayerController* pc = IInitablePC::Execute_GetAsPC(playerControllers[0]);
+		pc->bShowMouseCursor = true;
+		UUserWidget* widget = CreateWidget(pc, loseMenu, "LoseMenu");
+		if(widget)
+			widget->AddToViewport();
+
+	}
+}
+
+void AGEPProjectGameMode::UpdateCurrency(int newCur)
+{
+	currency = newCur;
+}
+
+void AGEPProjectGameMode::UpdateHealthPercent(float newHealthPercent)
+{
+	healthPercent = newHealthPercent;
+}
+
+void AGEPProjectGameMode::UpdateEnergyPercent(float newEnergyPercent)
+{
+	energyPercent = newEnergyPercent;
+}
+
+float AGEPProjectGameMode::GetUpgradeCost(TEnumAsByte<EUpgradeTypes> upgradeType)
+{
+	return upgradeSystem->GetUpgradeCost(upgradeType);
+}
+
 void AGEPProjectGameMode::EnemyDied(AEnemy_Base* enemy, bool killed)
 {
 	droneManager->EnemyDied(enemy);
@@ -175,54 +228,3 @@ void AGEPProjectGameMode::EnemySpawned(AActor* enemy)
 {
 	droneManager->EnemySpawned(enemy);
 }
-
-void AGEPProjectGameMode::OnPause(APlayerController* pc)
-{
-	UWorld* world = GetWorld();
-	UGameplayStatics::SetGamePaused(world, true);
-	pc->bShowMouseCursor = true;
-	UUserWidget* widget = CreateWidget(pc, pauseMenu, "PauseMenu");
-	if(widget)
-		widget->AddToViewport();
-}
-
-void AGEPProjectGameMode::PlayerDied()
-{
-	Lose();
-}
-
-void AGEPProjectGameMode::Win()
-{
-	won = true;
-	GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Red, "Win");
-	UWorld* world = GetWorld();
-	UGameplayStatics::SetGamePaused(world, true);
-
-	if (UKismetSystemLibrary::DoesImplementInterface(playerControllers[0], UInitablePC::StaticClass()))
-	{
-		AGEPPlayerController* pc = IInitablePC::Execute_GetAsPC(playerControllers[0]);
-		pc->bShowMouseCursor = true;
-		UUserWidget* widget = CreateWidget(pc, winMenu, "WinMenu");
-		if(widget)
-			widget->AddToViewport();
-
-	}
-}
-
-void AGEPProjectGameMode::Lose()
-{
-	UWorld* world = GetWorld();
-	UGameplayStatics::SetGamePaused(world, true);
-	if (UKismetSystemLibrary::DoesImplementInterface(playerControllers[0], UInitablePC::StaticClass()))
-	{
-		AGEPPlayerController* pc = IInitablePC::Execute_GetAsPC(playerControllers[0]);
-		pc->bShowMouseCursor = true;
-		UUserWidget* widget = CreateWidget(pc, loseMenu, "LoseMenu");
-		if(widget)
-			widget->AddToViewport();
-
-	}
-}
-
-
-

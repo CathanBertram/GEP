@@ -32,7 +32,7 @@ void AEnemySpawner::Init_Implementation()
 
 void AEnemySpawner::GetUpdatedMultipliers()
 {
-	UWorld* world = GetWorld();
+	const UWorld* world = GetWorld();
 	AGameModeBase* tempGamemode = UGameplayStatics::GetGameMode(world);
 	
 	if (tempGamemode->GetClass()->ImplementsInterface(UGetGEPGamemode::StaticClass()))

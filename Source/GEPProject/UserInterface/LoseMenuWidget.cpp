@@ -11,7 +11,7 @@ void ULoseMenuWidget::LoadFromSave()
 {
 	GetGameInstance()->GetSubsystem<UEventSystem>()->OnStartSave();
 	APlayerController* pc = GetOwningPlayer();
-	UWorld* world = GetWorld();
+	const UWorld* world = GetWorld();
 	UGameplayStatics::SetGamePaused(world, false);
 	pc->bShowMouseCursor = false;
 	RemoveFromParent();

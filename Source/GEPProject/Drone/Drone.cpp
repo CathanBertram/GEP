@@ -76,7 +76,7 @@ void ADrone::Shoot()
 	
 	canAttack = false;
 
-	UWorld* const world = GetWorld();
+	const UWorld* world = GetWorld();
 	if (world != nullptr)
 	{	
 		FHitResult hit(ForceInit);
@@ -102,7 +102,6 @@ void ADrone::Shoot()
 			{
 				IShootable::Execute_GetShot(hit.GetActor());
 			}
-			//Use this to damage enemies
 			UGameplayStatics::ApplyDamage(hit.GetActor(), attackDamage, this->GetInstigatorController(), this, TSubclassOf<UDamageType>(UDamageType::StaticClass()));
 			UGameplayStatics::SpawnEmitterAtLocation(world, hitParticle , hit.Location);	
 		}

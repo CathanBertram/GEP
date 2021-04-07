@@ -7,10 +7,11 @@
 
 void AMainMenuGameMode::BeginPlay()
 {
-	APlayerController* pc = UGameplayStatics::GetPlayerController(GetWorld(), 0);
+	const UWorld* world = GetWorld();
+	APlayerController* pc = UGameplayStatics::GetPlayerController(world, 0);
 	pc->bShowMouseCursor = true;
 	
-	UGameplayStatics::SetGamePaused(GetWorld(), true);
+	UGameplayStatics::SetGamePaused(world, true);
 	UUserWidget* widget = CreateWidget(pc, mainMenu, "MainMenu");
 	if(widget)
 		widget->AddToViewport();

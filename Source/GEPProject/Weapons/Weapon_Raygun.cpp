@@ -11,7 +11,7 @@
 
 void AWeapon_Raygun::GetUpdatedDirties()
 {
-	UWorld* world = GetWorld();
+	const UWorld* world = GetWorld();
 	AGameModeBase* tempGamemode = UGameplayStatics::GetGameMode(world);
 	
 	if (tempGamemode->GetClass()->ImplementsInterface(UGetGEPGamemode::StaticClass()))
