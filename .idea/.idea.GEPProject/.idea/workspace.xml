@@ -9,37 +9,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="37f4dc96-c088-407b-80a2-d8740801dcca" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GEPProject/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GEPProject/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GEPProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GEPProject/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultGame.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultGame.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/BP_GEPGamemode.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BP_GEPGamemode.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Drone/DroneManager.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Drone/DroneManager.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Enemies/BP_DefaultEnemy.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Enemies/BP_DefaultEnemy.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Enemies/BP_DefaultEnemyLv3.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Enemies/BP_DefaultEnemyLv3.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Enemies/BP_DefaultEnemyLvl2.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Enemies/BP_DefaultEnemyLvl2.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/GameLevel.umap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/UI/BP_MainUI.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/UI/BP_MainUI.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/UI/BP_PauseMenu.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/UI/BP_PauseMenu.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/UI/BP_UpgradeMenu.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/UI/BP_UpgradeMenu.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/GEPProject/Drone/Drone.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/GEPProject/Drone/Drone.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/GEPProject/Enemy/EnemySpawner.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/GEPProject/Enemy/EnemySpawner.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/GEPProject/Enemy/EnemySpawner.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/GEPProject/Enemy/EnemySpawner.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/GEPProject/Enemy/Enemy_Base.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/GEPProject/Enemy/Enemy_Base.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/GEPProject/Enemy/Enemy_Base.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/GEPProject/Enemy/Enemy_Base.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/GEPProject/EventSystem.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/GEPProject/EventSystem.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/GEPProject/GEPProjectGameMode.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/GEPProject/GEPProjectGameMode.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/GEPProject/GEPProjectGameMode.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/GEPProject/GEPProjectGameMode.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/GEPProject/GEPSaveGame.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/GEPProject/GEPSaveGame.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/GEPProject/GEPSaveGame.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/GEPProject/GEPSaveGame.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/GEPProject/Player/GEPPlayerController.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/GEPProject/Player/GEPPlayerController.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/GEPProject/Player/GEPPlayerController.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/GEPProject/Player/GEPPlayerController.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/GEPProject/Player/GEPProjectCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/GEPProject/Player/GEPProjectCharacter.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/GEPProject/Player/GEPProjectCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/GEPProject/Player/GEPProjectCharacter.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/GEPProject/UserInterface/MainMenuWidget.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/GEPProject/UserInterface/MainMenuWidget.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/GEPProject/UserInterface/MainMenuWidget.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/GEPProject/UserInterface/MainMenuWidget.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/GEPProject/UserInterface/PauseMenuWidget.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/GEPProject/UserInterface/PauseMenuWidget.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/GEPProject/UserInterface/PauseMenuWidget.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/GEPProject/UserInterface/PauseMenuWidget.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Levels/GameLevel.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/GameLevel.umap" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,37 +34,19 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Source/GEPProject/Weapons/EWeaponTypes.h" />
-      <option value="$PROJECT_DIR$/Source/GEPProject/Weapons/Weapon_Base.h" />
-      <option value="$PROJECT_DIR$/Source/GEPProject/Weapons/GrenadeProjectile.cpp" />
-      <option value="$PROJECT_DIR$/Source/GEPProject/Weapons/Weapon_Projectile.cpp" />
-      <option value="$PROJECT_DIR$/Source/GEPProject/Weapons/Weapon_Shotgun.cpp" />
-      <option value="$PROJECT_DIR$/Source/GEPProject/Weapons/Weapon_Hitscan.cpp" />
-      <option value="$PROJECT_DIR$/Source/GEPProject/DroneManager.cpp" />
-      <option value="$PROJECT_DIR$/Source/GEPProject/DroneManager.h" />
-      <option value="$PROJECT_DIR$/Source/GEPProject/Drone.cpp" />
-      <option value="$PROJECT_DIR$/Source/GEPProject/Drone.h" />
-      <option value="$PROJECT_DIR$/Source/GEPProject/DroneAIParameters.h" />
-      <option value="$PROJECT_DIR$/Source/GEPProject/DroneAIParameters.cpp" />
-      <option value="$PROJECT_DIR$/Source/GEPProject/Interfaces/Inputable.h" />
       <option value="$PROJECT_DIR$/Source/GEPProject/Interfaces/GetDrone.h" />
       <option value="$PROJECT_DIR$/Source/GEPProject/Drone/DroneAIParameters.h" />
       <option value="$PROJECT_DIR$/Source/GEPProject/Drone/DroneAIC.cpp" />
       <option value="$PROJECT_DIR$/Source/GEPProject/Drone/DroneAIC.h" />
       <option value="$PROJECT_DIR$/Source/GEPProject/Drone/DroneManager.h" />
       <option value="$PROJECT_DIR$/Source/GEPProject/Drone/Drone.h" />
-      <option value="$PROJECT_DIR$/Source/GEPProject/Drone/DroneManager.cpp" />
       <option value="$PROJECT_DIR$/Source/GEPProject/Component/CurrencyComponent.cpp" />
       <option value="$PROJECT_DIR$/Source/GEPProject/Component/CurrencyComponent.h" />
-      <option value="$PROJECT_DIR$/Source/GEPProject/Props/UpgradeStand.cpp" />
       <option value="$PROJECT_DIR$/Source/GEPProject/Upgrades/UpgradeSystem.h" />
       <option value="$PROJECT_DIR$/Source/GEPProject/Upgrades/UpgradeSystem.cpp" />
       <option value="$PROJECT_DIR$/Source/GEPProject/UserInterface/PauseMenuWidget.h" />
-      <option value="$PROJECT_DIR$/Source/GEPProject/UserInterface/PauseMenuWidget.cpp" />
       <option value="$PROJECT_DIR$/Source/GEPProject/MainMenuGameMode.h" />
       <option value="$PROJECT_DIR$/Source/GEPProject/UserInterface/MainMenuWidget.h" />
-      <option value="$PROJECT_DIR$/Source/GEPProject/MainMenuGameMode.cpp" />
-      <option value="$PROJECT_DIR$/Source/GEPProject/Drone/Drone.cpp" />
       <option value="$PROJECT_DIR$/Source/GEPProject/UserInterface/MainMenuWidget.cpp" />
       <option value="$PROJECT_DIR$/Source/GEPProject/Player/GEPPlayerController.h" />
       <option value="$PROJECT_DIR$/Source/GEPProject/Player/GEPPlayerController.cpp" />
@@ -101,19 +54,37 @@
       <option value="$PROJECT_DIR$/Source/GEPProject/Enemy/Enemy_Base.cpp" />
       <option value="$PROJECT_DIR$/Source/GEPProject/Enemy/Enemy_Base.h" />
       <option value="$PROJECT_DIR$/Source/GEPProject/Enemy/EnemySpawner.h" />
-      <option value="$PROJECT_DIR$/Source/GEPProject/Enemy/EnemySpawner.cpp" />
       <option value="$PROJECT_DIR$/Source/GEPProject/GEPSaveGame.h" />
       <option value="$PROJECT_DIR$/Source/GEPProject/GEPSaveGame.cpp" />
       <option value="$PROJECT_DIR$/Source/GEPProject/Component/HealthComponent.cpp" />
-      <option value="$PROJECT_DIR$/Source/GEPProject/UserInterface/WinMenuWidget.cpp" />
-      <option value="$PROJECT_DIR$/Source/GEPProject/UserInterface/LoseMenuWidget.cpp" />
       <option value="$PROJECT_DIR$/Source/GEPProject/GEPProjectGameMode.h" />
       <option value="$PROJECT_DIR$/Source/GEPProject/EventSystem.h" />
-      <option value="$PROJECT_DIR$/Source/GEPProject/GEPProjectGameMode.cpp" />
       <option value="$PROJECT_DIR$/Source/GEPProject/Player/GEPProjectCharacter.h" />
       <option value="$PROJECT_DIR$/Source/GEPProject/Player/GEPProjectCharacter.cpp" />
       <option value="$PROJECT_DIR$/Source/GEPProject/UserInterface/LoseMenuWidget.h" />
       <option value="$PROJECT_DIR$/Source/GEPProject/UserInterface/WinMenuWidget.h" />
+      <option value="$PROJECT_DIR$/Source/GEPProject/MainMenuGameMode.cpp" />
+      <option value="$PROJECT_DIR$/Source/GEPProject/GEPProjectGameMode.cpp" />
+      <option value="$PROJECT_DIR$/Source/GEPProject/Weapons/GrenadeProjectile.cpp" />
+      <option value="$PROJECT_DIR$/Source/GEPProject/Weapons/Weapon_AutoRifle.cpp" />
+      <option value="$PROJECT_DIR$/Source/GEPProject/Weapons/Weapon_ChargeRevolver.cpp" />
+      <option value="$PROJECT_DIR$/Source/GEPProject/Weapons/Weapon_GrenadeLauncher.cpp" />
+      <option value="$PROJECT_DIR$/Source/GEPProject/Weapons/Weapon_Pistol.cpp" />
+      <option value="$PROJECT_DIR$/Source/GEPProject/Weapons/Weapon_Raygun.cpp" />
+      <option value="$PROJECT_DIR$/Source/GEPProject/Weapons/Weapon_Rifle.cpp" />
+      <option value="$PROJECT_DIR$/Source/GEPProject/Weapons/Weapon_Shotgun.cpp" />
+      <option value="$PROJECT_DIR$/Source/GEPProject/Weapons/Weapon_SMG.cpp" />
+      <option value="$PROJECT_DIR$/Source/GEPProject/UserInterface/LoseMenuWidget.cpp" />
+      <option value="$PROJECT_DIR$/Source/GEPProject/UserInterface/PauseMenuWidget.cpp" />
+      <option value="$PROJECT_DIR$/Source/GEPProject/UserInterface/WinMenuWidget.cpp" />
+      <option value="$PROJECT_DIR$/Source/GEPProject/Props/UpgradeStand.cpp" />
+      <option value="$PROJECT_DIR$/Source/GEPProject/Drone/Drone.cpp" />
+      <option value="$PROJECT_DIR$/Source/GEPProject/Drone/DroneManager.cpp" />
+      <option value="$PROJECT_DIR$/Source/GEPProject/Weapons/Weapon_Projectile.cpp" />
+      <option value="$PROJECT_DIR$/Source/GEPProject/Enemy/EnemySpawner.cpp" />
+      <option value="$PROJECT_DIR$/Source/GEPProject/Weapons/Weapon_Hitscan.cpp" />
+      <option value="$PROJECT_DIR$/Source/GEPProject/Weapons/Weapon_Hitscan.h" />
+      <option value="$PROJECT_DIR$/Source/GEPProject/Weapons/Weapon_Base.h" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1otT4i5qLtCQz1jfo8j4ib5DORs" />
@@ -438,6 +409,7 @@
       <workItem from="1617729706589" duration="5434000" />
       <workItem from="1617735281007" duration="3678000" />
       <workItem from="1617760750357" duration="3068000" />
+      <workItem from="1617827573985" duration="2132000" />
     </task>
     <servers />
   </component>
