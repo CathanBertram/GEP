@@ -47,7 +47,7 @@ void AEnemySpawner::GetUpdatedMultipliers()
 
 void AEnemySpawner::SpawnEnemy()
 {
-	UWorld* const world =  GetWorld();
+	UWorld* const world = GetWorld();
 	if (curEnemyCount < maxEnemyCount || maxEnemyCount == 0)
 	{
 		int i = FMath::RandRange(0, enemyList.Num() - 1);
@@ -58,7 +58,7 @@ void AEnemySpawner::SpawnEnemy()
 			{
 				FVector origin = boundingBox->GetComponentLocation();
 				FVector extents = boundingBox->GetScaledBoxExtent();
-		
+
 				FVector spawnPosition = UKismetMathLibrary::RandomPointInBoundingBox(origin, extents);
 				FRotator spawnRotation = FRotator::ZeroRotator;
 				FActorSpawnParameters actorSpawnParams;

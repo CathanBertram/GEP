@@ -32,7 +32,6 @@ DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnCurrencyLoss, int, curToLose);
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnCurrencyUpdate, int, newCur);
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnSave, UGEPSaveGame*, saveInstance);
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnLoad, UGEPSaveGame*, saveInstance);
-DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnDamagePlayer, float, damageAmount);
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnHealthUpdate, float, healthPercent);
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnEnergyUpdate, float, energyPercent);
 
@@ -54,9 +53,6 @@ public:
 
 	FOnCurrencyLoss onCurrencyLoss;
 	void OnCurrencyLoss(int curToLose) {onCurrencyLoss.Broadcast(curToLose);}
-
-	FOnDamagePlayer onDamagePlayer;
-	void OnDamagePlayer(float damageAmount) {onDamagePlayer.Broadcast(damageAmount);}
 	
 	FOnCurrencyUpdate onCurrencyUpdate;
 	void OnCurrencyUpdate(int newCur) {onCurrencyUpdate.Broadcast(newCur);}

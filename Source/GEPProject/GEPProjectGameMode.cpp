@@ -96,14 +96,14 @@ void AGEPProjectGameMode::BeginPlay()
 	enemySpawner->onEnemySpawned.AddDynamic(this, &AGEPProjectGameMode::EnemySpawned);
 
 	//Get and initialise drone manager
-	temp = UGameplayStatics::GetActorOfClass(GetWorld(), ADroneManager::StaticClass());
+	temp = UGameplayStatics::GetActorOfClass(world, ADroneManager::StaticClass());
 	droneManager = Cast<ADroneManager>(temp);
 	droneManager->Init_Implementation();
 	droneManager->SetPlayer(playerControllers[0]->GetPawn());
 
 	//Load Game
 	LoadGame();
-	SaveGame(); //There was an actual reason this is here but I forgot
+	SaveGame(); //There was an actual reason this is here but I forgot, I think something to do with guns?
 }
 
 void AGEPProjectGameMode::SaveGame()
