@@ -9,11 +9,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="37f4dc96-c088-407b-80a2-d8740801dcca" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GEPProject/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GEPProject/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GEPProject/.idea/riderModule.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GEPProject/.idea/riderModule.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GEPProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GEPProject/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Levels/GameLevel.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/GameLevel.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/GEPProject/Enemy/EnemySpawner.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/GEPProject/Enemy/EnemySpawner.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/GEPProject/EventSystem.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/GEPProject/EventSystem.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/GEPProject/GEPProjectGameMode.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/GEPProject/GEPProjectGameMode.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,16 +22,18 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/../../epk/UE_4.25/Engine/Source/Runtime/Engine/Private/Character.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/GEPProject/EventSystem.h" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../epk/UE_4.25/Engine/Source/Runtime/Engine/Private/Collision/WorldCollision.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../epk/UE_4.25/Engine/Source/Runtime/Engine/Private/GameplayStatics.cpp" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../epk/UE_4.25/Engine/Source/Runtime/Engine/Private/Actor.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../epk/UE_4.25/Engine/Source/Runtime/Engine/Private/KismetSystemLibrary.cpp" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/um/winioctl.h" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../epk/UE_4.25/Engine/Source/Runtime/UMG/Private/WidgetBlueprintLibrary.cpp" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../epk/UE_4.25/Engine/Source/Runtime/Engine/Classes/Kismet/GameplayStatics.h" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../epk/UE_4.25/Engine/Source/Runtime/AIModule/Private/BehaviorTree/BlackboardComponent.cpp" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../epk/UE_4.25/Engine/Source/Runtime/Engine/Private/Pawn.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../epk/UE_4.25/Engine/Source/Runtime/Engine/Private/Character.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/GEPProject/Player/GEPPlayerController.h" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../epk/UE_4.25/Engine/Source/Runtime/Engine/Private/GameplayStatics.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../epk/UE_4.25/Engine/Source/Runtime/Engine/Private/KismetSystemLibrary.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../epk/UE_4.25/Engine/Source/Runtime/UMG/Private/WidgetBlueprintLibrary.cpp" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../epk/UE_4.25/Engine/Source/Runtime/Engine/Classes/GameFramework/GameModeBase.h" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -420,6 +420,12 @@
       <workItem from="1618232679784" duration="1267000" />
       <workItem from="1618518191736" duration="411000" />
       <workItem from="1618564292559" duration="613000" />
+      <workItem from="1618867517960" duration="85000" />
+      <workItem from="1618867646115" duration="198000" />
+      <workItem from="1618868609287" duration="137000" />
+      <workItem from="1618868888448" duration="60000" />
+      <workItem from="1618869183097" duration="29000" />
+      <workItem from="1618916213514" duration="11000" />
     </task>
     <servers />
   </component>
